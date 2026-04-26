@@ -1,0 +1,77 @@
+# Keyword Clustering
+
+> Group your keyword universe into the page-level units you'll actually build — so each page targets a coherent set of intent-aligned queries instead of a single keyword.
+
+## What it is
+
+Keyword clustering is the process of organising a flat list of keywords into groups where each group can be served by a single page. A cluster is a collection of keywords that share intent and topical meaning, such that one well-built page can rank for all of them. Modern Google ranks pages, not keywords — and the same page often ranks for dozens of variant queries. Clustering is the work of figuring out which keywords belong on the same page.
+
+The opposite of clustering is *one-keyword-per-page* thinking: building a separate page for "running shoes" and "best running shoes" and "running shoes for women." That approach produces thin, cannibalising content. Clustering produces fewer, better pages.
+
+## Why it matters
+
+Clustering is the bridge between research and execution. Without it, a 300-keyword universe becomes a paralysing question: "what pages do I build?" With it, the same universe collapses into 40-60 clusters, each of which is a clear page brief. It also prevents **keyword cannibalisation** — the situation where two pages on your site compete with each other for the same query, both ranking poorly because Google can't decide which to surface.
+
+For a D2C brand, clustering directly determines site architecture. Clusters become collection pages, comparison pages, blog posts, FAQ pages, and product pages. Cluster well and your site structure emerges naturally; cluster poorly and you end up with a scrambled IA where similar pages fight each other.
+
+## Core concepts
+
+- **A cluster = a page** — every cluster represents one page (or one tightly linked page set, like a hub-and-spoke). If you can't imagine writing a single coherent page for the cluster, the cluster is too broad.
+- **Topic + intent define the cluster** — keywords belong together when they share *both* what they're about and *why* someone is searching. "Best running shoes" and "running shoes for sale" are the same topic but different intent — they go in different clusters.
+- **Primary keyword vs supporting keywords** — each cluster has one primary keyword (the highest-volume / most-strategic) that anchors the page's title and H1. Supporting keywords are the long-tail variants the page also targets in body content, H2s, and FAQs.
+- **SERP-similarity clustering** — the most rigorous method: two keywords belong in the same cluster if their top 5-10 SERP results overlap above a threshold (typically 30-40%). This is empirically grounded — if Google ranks the same pages for both, they're effectively the same query.
+- **Hub-and-spoke / pillar-and-cluster** — a related architecture pattern where a broad pillar page covers a cluster topic at a high level and links to spoke pages covering subtopics in depth. Different layer of organisation but compatible with keyword clustering.
+
+## A worked example
+
+> **Scenario:** The D2C cleaning brand has 240 keywords annotated with volume and intent. They need to convert this into a content roadmap.
+>
+> **Step 1.** They split the list by intent. ~95 transactional, ~80 commercial, ~55 informational, ~10 navigational.
+>
+> **Step 2.** Within transactional, they group by product category: 40 keywords for laundry, 25 for dish, 20 for surface cleaners, 10 mixed. Each category becomes a collection page; the highest-volume keyword in each becomes the primary.
+>
+> **Step 3.** Within commercial, they group by query template: 25 keywords are "best [type] [product]" — these cluster into 5 roundup posts (one per category); 15 are "[brand] vs [brand]" comparisons — 5 comparison-page clusters; 10 are "[product] for [persona]" — 3 persona-targeted blog posts; 5 are "[product] reviews" — covered by the brand's existing review system.
+>
+> **Step 4.** Within informational, they group by topic: 15 keywords are about ingredients ("is sodium [X] safe"), 12 about laundry-strip mechanics, 10 about plastic / sustainability, 8 about safety for kids, 10 about how-to / cleaning tips. Each topic group becomes a hub of 1-3 blog posts.
+>
+> **Step 5.** Output: 28 clusters mapped to pages, with primary and supporting keywords for each. Of those, 12 are "build new" and 16 map to pages they already have (some of which need updates).
+
+## How to do it
+
+1. **Start from a classified list.** You need keywords with volume, intent, and page-type tags from [Search Intent](../02.%20Search%20Intent/README.md). Don't cluster a raw keyword dump — you'll mix intents and produce broken clusters.
+2. **Split by intent first.** Cluster within intent buckets, not across them. A transactional and an informational keyword might share words but they need different pages, so they go in different clusters.
+3. **Use SERP overlap as the rigorous test.** Pick the top 20-50 highest-priority keywords. For each pair, check whether the top 10 SERP results overlap by 30%+ — if so, same cluster. Several tools (Keyword Insights, Surfer SERP Analyzer, Lowfruits) automate this. For smaller lists, manual checks for the top keywords are fine.
+4. **Use topical / semantic grouping for the rest.** Below the SERP-overlap threshold of usefulness, group by topic and customer language. "Refillable laundry detergent strips" and "laundry strips refillable" obviously cluster. "Refillable laundry detergent" and "non-toxic laundry detergent" probably cluster. "Refillable laundry detergent" and "best laundry detergent" probably don't (different intent).
+5. **Pick the primary keyword for each cluster.** Highest-volume *and* best-fit-to-intent. Sometimes the highest-volume keyword in a cluster has the wrong intent for the page you're building — pick the next-highest with correct intent.
+6. **Map every cluster to a URL.** New page or existing page. If existing, note the URL. If new, sketch a placeholder slug. This map is the input to your content roadmap and your information architecture.
+7. **Check for cannibalisation.** If two clusters end up mapping to similar pages or to existing URLs that overlap, merge or split until each URL has exactly one cluster. Two pages on your site should never target the same primary keyword.
+8. **Save the artifact.** Spreadsheet or database with columns: cluster ID, cluster name, primary keyword, supporting keywords, intent, page type, target URL (existing or proposed), priority. This is the working roadmap for content and on-page work.
+
+## Common pitfalls
+
+- **Clustering across intent.** "Buy refillable laundry detergent" and "how does refillable laundry detergent work" sound similar but need different pages. Always split by intent first.
+- **Over-clustering (too few clusters).** If you end up with 15 mega-clusters from a 300-keyword list, your pages will try to do too much. Each cluster should map to a coherent page.
+- **Under-clustering (too many clusters).** If every keyword becomes its own cluster, you've just renamed the original list. Aim for 5-15 keywords per cluster on average for content pages, fewer for product pages.
+- **Ignoring existing pages.** New clusters should be checked against your existing URL structure to avoid cannibalisation. Often the right move is to update an existing page rather than build a new one.
+- **Treating cluster names as page titles.** Cluster names are internal labels. The page title comes from the primary keyword + brand voice, not from the cluster name verbatim.
+- **Skipping SERP overlap when it would help.** Manual topical grouping is fine for obvious cases; SERP-overlap testing earns its time on borderline cases. Using it on the top 20% of keywords (by priority) catches most mistakes.
+
+## Skills in this toolkit
+
+- **[cluster-keywords](skills/cluster-keywords/SKILL.md)** — takes a classified keyword list (with intent and ideally page-type tags) and produces a structured cluster map: cluster ID, primary keyword, supporting keywords, page type, target URL, and priority — ready to drop into a content roadmap.
+
+## Related topics
+
+- **[Keyword Research](../01.%20Keyword%20Research/README.md)** — produces the raw list this skill consumes.
+- **[Search Intent](../02.%20Search%20Intent/README.md)** — must run *before* clustering; intent tags are required input.
+- **[Topic Clusters](../../04.%20Content%20SEO/03.%20Topic%20Clusters/)** — applies the pillar-and-cluster pattern to content architecture once keywords are clustered.
+- **[Pillar Pages](../../04.%20Content%20SEO/02.%20Pillar%20Pages/)** — broad cluster topics often become pillars.
+- **[Internal Linking](../../02.%20On-page%20SEO/05.%20Internal%20Linking/)** — clusters drive the internal linking strategy that ties hubs to spokes.
+
+## Further reading
+
+- [Ahrefs — Keyword Clustering for SEO](https://ahrefs.com/blog/keyword-clustering/) — the practical methodology, with examples of SERP-overlap clustering.
+- [Keyword Insights — How SERP Similarity Clustering Works](https://www.keywordinsights.ai/) — vendor-specific but the methodology explanation is the clearest available.
+- [HubSpot — Topic Clusters and the Pillar Page Model](https://blog.hubspot.com/marketing/topic-clusters-seo) — the original pillar-and-cluster article; conceptually load-bearing for the broader pattern.
+- [Aleyda Solis — Content Hub Architecture](https://www.aleydasolis.com/) — practical templates connecting clustering to information architecture.
+- [Animalz — Pillar Pages and Topic Clusters in Practice](https://www.animalz.co/) — strong on the editorial side: how to actually build the pages clustering produces.
