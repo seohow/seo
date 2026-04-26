@@ -68,6 +68,10 @@ These are non-negotiable — deviating creates inconsistency that compounds acro
 
 Before writing a new topic README or skill, read at least one Strategy leaf for tone calibration (e.g. `playbook/01. Strategy/01. Keyword Research/README.md` and one of its skills). The format and depth of that slice was deliberately designed and reviewed; new content should match.
 
+### `.gitkeep` files in unbuilt leaves
+
+Every leaf topic folder that hasn't been populated yet contains a `.gitkeep` file (e.g. `playbook/02. On-page SEO/01. Title/.gitkeep`). It exists only to make the empty folder commit-able to git. **When you populate a leaf** (write its README and at least one skill), **delete the `.gitkeep` from that folder in the same change.** Leaving a `.gitkeep` next to a real README is a small but real piece of clutter and signals "this folder is empty" when it isn't. The progress of the toolkit is partly visible by how many `.gitkeep` files remain — fewer is better.
+
 ## How to add a new category or topic
 
 1. Read this file (you're here) and `templates/README_TEMPLATE.md` + `templates/SKILL_TEMPLATE.md`.
