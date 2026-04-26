@@ -4,7 +4,7 @@
 
 ## What this repo is
 
-A working SEO toolkit for business owners and marketers. Two layers in one repo: a structured curriculum of modern SEO topics (in `docs/`) and installable AI skills (`SKILL.md` files) that plan, execute, or track the work for a specific business. Each business gets its own workspace under `businesses/<slug>/` where the profile and all generated artifacts live colocated.
+A working SEO toolkit for business owners and marketers. Two layers in one repo: a structured curriculum of modern SEO topics (in `playbook/`) and installable AI skills (`SKILL.md` files) that plan, execute, or track the work for a specific business. Each business gets its own workspace under `businesses/<slug>/` where the profile and all generated artifacts live colocated.
 
 The toolkit is designed for extensibility: the frameworks are business-model-agnostic; the examples lean D2C e-commerce in v1 because that's the founder's domain. Adapting to other business types (SaaS, B2B services, local, content/media) should mostly be a matter of populating new business profiles and rewriting examples — the underlying structure stays.
 
@@ -27,7 +27,7 @@ seo/
 │   ├── SKILL_TEMPLATE.md
 │   ├── business_profile_template.md
 │   └── business_claude_template.md
-└── docs/                                ← the curriculum
+└── playbook/                                ← the curriculum
     ├── 01. Strategy/
     │   ├── README.md                    ← category overview
     │   └── <NN>. <Topic>/
@@ -53,7 +53,7 @@ These are non-negotiable — deviating creates inconsistency that compounds acro
 - Follow `templates/SKILL_TEMPLATE.md`. Frontmatter requires `name` (kebab-case) and `description` (specific, slightly pushy to combat under-triggering — see `skill-creator` guidance).
 - Skills go in two places only:
   - **Setup / meta utilities** — repo root under `skills/<skill-name>/SKILL.md` (e.g. `generate-business-profile`).
-  - **Topic-specific skills** — inside the relevant topic folder under `docs/<category>/<topic>/skills/<skill-name>/SKILL.md`.
+  - **Topic-specific skills** — inside the relevant topic folder under `playbook/<category>/<topic>/skills/<skill-name>/SKILL.md`.
 - Two archetypes: **planner** (scopes a project, produces a brief) and **executor** (produces a specific artifact). Some topics need one, some need both, some need a tracker — pick based on what the topic actually requires. Don't force every topic into the same shape.
 - Every topic skill reads inputs from `businesses/<slug>/business_profile.md` and writes outputs to `businesses/<slug>/<artifact-subfolder>/`. The subfolder names are conventionalised — see existing skills for the pattern (`keyword-research/`, `intent-classification/`, `competitor-analysis/`, `clusters/`, `backlog/`, etc.).
 - Skill description should explicitly resolve the slug: list `businesses/`, default to the only folder if there's one, ask if there are multiple, recommend `generate-business-profile` if there are none.
@@ -66,13 +66,13 @@ These are non-negotiable — deviating creates inconsistency that compounds acro
 
 ### Format bar (the slice in `01. Strategy` is the reference)
 
-Before writing a new topic README or skill, read at least one Strategy leaf for tone calibration (e.g. `docs/01. Strategy/01. Keyword Research/README.md` and one of its skills). The format and depth of that slice was deliberately designed and reviewed; new content should match.
+Before writing a new topic README or skill, read at least one Strategy leaf for tone calibration (e.g. `playbook/01. Strategy/01. Keyword Research/README.md` and one of its skills). The format and depth of that slice was deliberately designed and reviewed; new content should match.
 
 ## How to add a new category or topic
 
 1. Read this file (you're here) and `templates/README_TEMPLATE.md` + `templates/SKILL_TEMPLATE.md`.
 2. Read at least one full Strategy leaf for calibration.
-3. Write the category overview README (at `docs/NN. Category/README.md`) before the leaves — it forces you to think about how the leaves fit together.
+3. Write the category overview README (at `playbook/NN. Category/README.md`) before the leaves — it forces you to think about how the leaves fit together.
 4. For each leaf, write the README first, then 1-2 skills. Don't write skills before the README — the README defines the shape of the work.
 5. Cross-link to related topics in other categories (e.g. Internal Linking links to Topic Clusters and Site Architecture).
 6. Update root `README.md` only if the category structure changed (it shouldn't for v1).
@@ -90,7 +90,7 @@ Before writing a new topic README or skill, read at least one Strategy leaf for 
 
 ### 2026-04-26 — Toolkit foundations and Strategy slice complete
 - Decided format: README + 1-2 skills per leaf, parent README per category, examples lean D2C cleaning brand for v1, frameworks stay business-agnostic.
-- Decided structure: `templates/` for templates, `skills/` for setup utilities, `docs/<category>/<topic>/skills/` for topic skills.
+- Decided structure: `templates/` for templates, `skills/` for setup utilities, `playbook/<category>/<topic>/skills/` for topic skills.
 - Decided per-business workspace convention: `businesses/<slug>/` holds profile + artifacts; never store inputs/outputs at repo root.
 - Decided front-door skill: `generate-business-profile` is the entry point and must run before any topic skill is usable.
 - Decided audience: D2C-first examples, but architecture should support adding business types later via different profiles + example overrides.

@@ -25,20 +25,20 @@ Update the profile any time something material changes (new product line, new go
 
 ### 2. Browse the curriculum
 
-The `docs/` folder is the table of contents. It's organised into 10 categories:
+The `playbook/` folder is the table of contents. It's organised into 10 categories:
 
 | # | Category | What it covers |
 |---|---|---|
-| 01 | [Strategy](docs/01.%20Strategy/README.md) | Keyword research, intent, competitor analysis, clustering, quick wins |
-| 02 | [On-page SEO](docs/02.%20On-page%20SEO/) | Titles, descriptions, headers, URLs, internal links, images, content |
-| 03 | [Technical SEO](docs/03.%20Technical%20SEO/) | Crawlability, indexing, site speed, schema, canonicals, sitemaps |
-| 04 | [Content SEO](docs/04.%20Content%20SEO/) | Blog content, pillars, clusters, tools, evergreen, programmatic, refresh |
-| 05 | [Off-page SEO](docs/05.%20Off-page%20SEO/) | Link building, guest posting, digital PR, brand mentions, outreach |
-| 06 | [International SEO](docs/06.%20International%20SEO/) | Hreflang, multi-language, geo-targeting, localisation |
-| 07 | [Analytics](docs/07.%20Analytics/) | GA4, Search Console, rank tracking, traffic analysis, KPIs |
-| 08 | [UX](docs/08.%20UX/) | Page speed, mobile, UX design, A/B testing, conversion funnels |
-| 09 | [AI SEO](docs/09.%20AI%20SEO/) | Content optimisation, NLP, generative SEO, SERP features, LLM visibility |
-| 10 | [Growth](docs/10.%20Growth/) | Topical authority, content scaling, link acquisition, experiments |
+| 01 | [Strategy](playbook/01.%20Strategy/README.md) | Keyword research, intent, competitor analysis, clustering, quick wins |
+| 02 | [On-page SEO](playbook/02.%20On-page%20SEO/) | Titles, descriptions, headers, URLs, internal links, images, content |
+| 03 | [Technical SEO](playbook/03.%20Technical%20SEO/) | Crawlability, indexing, site speed, schema, canonicals, sitemaps |
+| 04 | [Content SEO](playbook/04.%20Content%20SEO/) | Blog content, pillars, clusters, tools, evergreen, programmatic, refresh |
+| 05 | [Off-page SEO](playbook/05.%20Off-page%20SEO/) | Link building, guest posting, digital PR, brand mentions, outreach |
+| 06 | [International SEO](playbook/06.%20International%20SEO/) | Hreflang, multi-language, geo-targeting, localisation |
+| 07 | [Analytics](playbook/07.%20Analytics/) | GA4, Search Console, rank tracking, traffic analysis, KPIs |
+| 08 | [UX](playbook/08.%20UX/) | Page speed, mobile, UX design, A/B testing, conversion funnels |
+| 09 | [AI SEO](playbook/09.%20AI%20SEO/) | Content optimisation, NLP, generative SEO, SERP features, LLM visibility |
+| 10 | [Growth](playbook/10.%20Growth/) | Topical authority, content scaling, link acquisition, experiments |
 
 Each category folder has a `README.md` overview and 4-7 sub-topic folders, each with their own README and skills.
 
@@ -47,10 +47,10 @@ Each category folder has a `README.md` overview and 4-7 sub-topic folders, each 
 There are two kinds of skills in this toolkit:
 
 - **Setup skills** live at the repo root under `skills/`. Today the only one is `generate-business-profile`, but more meta utilities will land here over time.
-- **Topic skills** live inside each topic folder under `docs/<category>/<topic>/skills/`. For example:
+- **Topic skills** live inside each topic folder under `playbook/<category>/<topic>/skills/`. For example:
 
 ```
-docs/01. Strategy/01. Keyword Research/
+playbook/01. Strategy/01. Keyword Research/
 ├── README.md
 └── skills/
     ├── plan-keyword-research/
