@@ -26,7 +26,7 @@ The skill is opinionated about a few things: every win has a definition of done;
 ## Inputs required
 
 1. **Strategy inputs** — any combination of: cluster map (from `cluster-keywords`), competitor opportunity list (from `audit-competitor-seo`), striking-distance keyword list (typically a GSC queries export filtered to positions 11-30), technical audit findings, refresh candidates (existing pages with traffic decay), link prospects.
-2. **Business profile** — read `business_profile.md`. Used to score Impact (alignment to goals) and Fit (does it match the brand and capabilities).
+2. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. The profile drives Impact scoring (alignment to goals in section 7) and Fit scoring (alignment to brand voice in section 8 and team/resourcing constraints).
 3. **Time horizon** — default to 90 days. Ask if the user wants a different horizon (30/60/180).
 4. **Resourcing** — how many hours/week the team can dedicate, who can do content vs technical vs link work. Drives realistic sequencing.
 5. **Scoring framework preference** — ICE (default) or RICE. Ask only if it matters; default to ICE.
@@ -100,6 +100,8 @@ Rows that didn't fit in this horizon, listed for visibility.
 ## Risks and watchouts
 3-5 specific risks for this backlog given the user's business and resourcing. e.g. "Content-gap items rely on a writer who isn't yet hired — if not in place by Wk 3, slide content rows by 4 weeks."
 ```
+
+Save the produced file to `businesses/<slug>/backlog/seo-wins-backlog.md`. Create the `backlog/` sub-folder if it doesn't already exist. After writing, tell the user the file path so they can open it. If the user re-runs this skill later (e.g. quarterly review), the new backlog should overwrite the previous file — but recommend the user keep a dated copy in the same folder if they want history (e.g. `seo-wins-backlog-2026-q3.md`).
 
 ## Quality bar
 

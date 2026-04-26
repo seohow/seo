@@ -22,7 +22,7 @@ One paragraph: what this skill does, what artifact it produces, and the situatio
 
 Before producing output, gather:
 
-1. **Business profile** — read `business_profile.md` if available. If not, ask the user for the relevant sections (list the specific sections this skill needs).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` like this: list the `businesses/` folder; if exactly one business folder exists, use it; if multiple, ask which business this is for; if none, recommend running `generate-business-profile` first and stop. The sections this skill cares about most are: [list specific section numbers]. If any of those are blank or marked unknown, ask the user inline before producing output.
 2. **[Other input]** — what it is, what good looks like, where to get it.
 3. **[Other input]** — what it is, what good looks like, where to get it.
 
@@ -49,6 +49,8 @@ Specify the exact output structure. Be opinionated — a structured, predictable
 ## Section 2
 ...
 ```
+
+Save the produced file to `businesses/<slug>/<artifact-subfolder>/<filename>.md`. Pick a subfolder name that matches the topic (e.g. `keyword-research/`, `competitor-analysis/`, `clusters/`, `backlog/`, `on-page/`, `technical/`). Create the sub-folder if it doesn't already exist. After writing, tell the user the file path so they can open it.
 
 ## Quality bar
 

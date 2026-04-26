@@ -1,9 +1,10 @@
 # SEO Toolkit
 
-A working SEO operating system for business owners and marketers. Two layers in one repo:
+A working SEO operating system for business owners and marketers. Three layers in one repo:
 
 1. **Knowledge** — a structured curriculum of modern SEO, organised by topic. Read the README in any folder to learn what that piece is, why it matters, and how to do it.
-2. **Skills** — installable AI skills that plan, execute, or track the work for you. Each skill takes your `business_profile.md` as input and produces a tailored artifact.
+2. **Skills** — installable AI skills that plan, execute, or track the work for you. Each skill reads your business profile from `businesses/<your-business-slug>/` and produces a tailored artifact saved into the same workspace.
+3. **Memory** — `CLAUDE.md` files at the repo root and inside each business workspace. They capture conventions, decisions, learnings, and constraints so the toolkit gets sharper over time and so any new Claude session has the context it needs to be useful immediately.
 
 The goal is that anyone running a business can go from "I should probably do SEO" to "here is my plan and here is my next deliverable" without hiring an agency.
 
@@ -11,9 +12,16 @@ The goal is that anyone running a business can go from "I should probably do SEO
 
 ## How to use this toolkit
 
-### 1. Fill in your business profile
+### 1. Set up your business workspace
 
-Open [`business_profile.md`](business_profile.md) and complete it. Every skill in this toolkit reads from this file — the more accurate it is, the sharper the output. Treat it as a living document and update it as your business changes.
+Run the [`generate-business-profile`](skills/generate-business-profile/SKILL.md) skill. It will interview you for the inputs, slugify a folder name, and create two files in your new workspace:
+
+- `businesses/<your-business-slug>/business_profile.md` — the structured profile every other skill reads.
+- `businesses/<your-business-slug>/CLAUDE.md` — the working-memory file Claude maintains as decisions, learnings, and constraints surface over time.
+
+If you run SEO for multiple ventures, run the skill once per business. Each gets its own folder; skills will ask which business to operate on if more than one exists.
+
+Update the profile any time something material changes (new product line, new goal, new competitor) by re-running the same skill in update mode. The CLAUDE.md file is preserved across updates — only the profile gets refreshed.
 
 ### 2. Browse the curriculum
 
@@ -36,7 +44,10 @@ Each category folder has a `README.md` overview and 4-7 sub-topic folders, each 
 
 ### 3. Run a skill
 
-Skills live inside each topic folder under `skills/`. For example:
+There are two kinds of skills in this toolkit:
+
+- **Setup skills** live at the repo root under `skills/`. Today the only one is `generate-business-profile`, but more meta utilities will land here over time.
+- **Topic skills** live inside each topic folder under `docs/<category>/<topic>/skills/`. For example:
 
 ```
 docs/01. Strategy/01. Keyword Research/
@@ -50,10 +61,12 @@ docs/01. Strategy/01. Keyword Research/
 
 To use a skill, install it into Claude Code, Cowork, or any Claude product that supports skills, or paste its `SKILL.md` content into a chat with your business profile attached.
 
-There are two archetypes:
+Topic skills come in two archetypes:
 
 - **Planner skills** scope a project and produce a brief or backlog you can run against.
 - **Executor skills** generate a specific artifact — keyword lists, title-tag variants, schema, audit reports.
+
+Every topic skill saves its output into your business workspace at `businesses/<your-business-slug>/<artifact-subfolder>/`, so all the work for a given venture stays together. See [`businesses/README.md`](businesses/README.md) for the full workspace convention.
 
 Skill names use kebab-case so they're easy to invoke (`plan-keyword-research`, `generate-seed-keywords`).
 
@@ -77,9 +90,9 @@ Each topic README ends with cross-links to related topics so you can follow the 
 
 ## Designed for extensibility
 
-The frameworks in this toolkit are business-model-agnostic. Examples currently lean toward D2C e-commerce because that's where v1 was sharpened, but the underlying playbooks apply to SaaS, services, marketplaces, and content businesses. Skills personalise their output by reading your `business_profile.md` — so a SaaS founder and a candle-maker get different keyword recommendations from the same skill.
+The frameworks in this toolkit are business-model-agnostic. Examples currently lean toward D2C e-commerce because that's where v1 was sharpened, but the underlying playbooks apply to SaaS, services, marketplaces, and content businesses. Skills personalise their output by reading the business profile in your workspace — so a SaaS founder and a candle-maker get different keyword recommendations from the same skill.
 
-To adapt the toolkit for a different business type, the simplest path is to maintain a separate `business_profile.md` per venture and let the skills do the rest.
+To work on multiple businesses, register each one with `generate-business-profile`. They'll each live in their own folder under `businesses/`, with profile and artifacts kept colocated so nothing leaks between ventures.
 
 ---
 

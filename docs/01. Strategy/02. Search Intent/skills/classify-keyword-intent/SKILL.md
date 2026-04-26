@@ -26,7 +26,7 @@ The skill applies the four-intent taxonomy (plus local where relevant), maps eac
 ## Inputs required
 
 1. **Keyword list** — a list of keywords. Pasted text, CSV, or a file. Required columns: keyword. Optional but useful: search volume, current ranking, market/geography. Ask for the list if not provided.
-2. **Business profile** — read `business_profile.md` if available; otherwise ask for products/services and geography. Used to disambiguate borderline queries (e.g. is "blueland" navigational for the user, or a competitor mention for a different brand?).
+2. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. The profile is used to disambiguate borderline queries (e.g. is "blueland" navigational for the user, or a competitor mention for a different brand?). If section 6 (competitors) is blank, ask before classifying competitor-branded queries.
 3. **Market and language** — defaults from the profile; ask if not. Intent classification is market-specific.
 
 If the keyword list isn't provided, ask. Don't fabricate keywords.
@@ -91,6 +91,8 @@ Order the table: transactional first, then commercial, then informational, then 
 ## Recommended next steps
 2-4 sentences pointing to clustering, content briefing, and SERP checks for the flagged keywords.
 ```
+
+Save the produced file to `businesses/<slug>/intent-classification/classified-keywords.md`. Create the `intent-classification/` sub-folder if it doesn't already exist. After writing, tell the user the file path so they can open it.
 
 If the list is large (>100 keywords), still produce the full table — it's the working artifact. The user can sort/filter from there.
 

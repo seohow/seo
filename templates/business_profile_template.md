@@ -1,8 +1,10 @@
-# Business Profile
+# Business Profile (template)
 
-Fill this in once. Every skill in this toolkit reads from it so its output is tailored to your business instead of generic.
+This is the template the `generate-business-profile` skill uses to interview you. You don't normally edit this file directly — instead, run the skill and it will produce a filled-in copy at `businesses/<your-business-slug>/business_profile.md`.
 
-When a skill asks for "your business profile," paste this entire file into the conversation, or point Claude at this path.
+Editing this template directly only makes sense if you want to change the questions the toolkit asks across all businesses (e.g. add a section that's specific to your industry).
+
+Every skill in the toolkit reads the per-business profile file produced from this template, so the output of those skills is tailored to a specific business rather than generic.
 
 ---
 
@@ -96,8 +98,9 @@ List 3-5 competitors you'd like to outrank or learn from. Mix direct competitors
 
 When you run a skill in this toolkit, it will:
 
-1. Ask for (or read) your business profile.
-2. Use the relevant sections to tailor its output. A keyword research skill cares most about sections 3, 4, 6, 7. A title-tag skill cares most about 3, 4, 8.
-3. If a section is blank, the skill will either ask for it or note that the output is generic in that respect.
+1. Look in `businesses/` for one or more business folders. If only one exists, it uses that profile by default; if multiple, it asks which business you're working on.
+2. Read `businesses/<business-slug>/business_profile.md` and use the relevant sections to tailor its output. A keyword research skill cares most about sections 3, 4, 6, 7. A title-tag skill cares most about 3, 4, 8.
+3. If a section is blank in the profile, the skill will either ask for it or note that the output is generic in that respect.
+4. Save its output as a new file inside `businesses/<business-slug>/<artifact-subfolder>/`, so all work for a given business stays colocated.
 
-Keep this file updated. The fresher the profile, the sharper the output.
+Keep your business profile updated. The fresher the profile, the sharper the output. To update it, re-run the `generate-business-profile` skill in update mode.

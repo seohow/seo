@@ -27,7 +27,7 @@ A good plan answers: what's the business goal, what seed areas matter, which too
 
 Before producing the plan, gather:
 
-1. **Business profile** — read `business_profile.md` if available. If not, ask the user for: business model, products/services, target customer, primary geography, current SEO maturity, available SEO tools.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` like this: list the `businesses/` folder; if exactly one business folder exists, use it; if multiple, ask which business this is for; if none, recommend running `generate-business-profile` first and stop. The sections this skill cares about most are business model (2), products/services (3), customer (4), and goals (7). If any of those are blank or marked unknown in the profile, ask the user inline before producing output.
 2. **Goal of this research** — why now? Possible goals: launch a new brand, support a new product line, refresh stale strategy, brief a freelancer, find quick-win opportunities. Different goals produce different plans.
 3. **Constraints** — time budget (how many days/weeks), people involved, tool budget, language and geographic scope.
 4. **Existing assets, if any** — past keyword lists, GSC export, current tracked keywords. The plan should build on these rather than start from zero.
@@ -88,6 +88,8 @@ Bulleted list, each with risk → mitigation.
 ## 9. Next steps after this project
 Brief note on what comes after the keyword list exists: intent classification, competitor analysis, clustering, content briefs.
 ```
+
+Save the produced file to `businesses/<slug>/keyword-research/plan.md`. Create the `keyword-research/` sub-folder if it doesn't already exist. After writing, tell the user the file path so they can open it.
 
 ## Quality bar
 

@@ -27,7 +27,7 @@ The skill is opinionated about a few things: split by intent before clustering, 
 ## Inputs required
 
 1. **Keyword list with intent tags** — at minimum, columns for keyword, search volume, and intent (informational / commercial / transactional / navigational / local). Page-type tags are very helpful but optional. CSV, table, or pasted text. If intent is missing, ask the user to run `classify-keyword-intent` first.
-2. **Business profile** — read `business_profile.md`. Used to map clusters to existing/proposed URLs and to filter out-of-scope clusters.
+2. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. The profile is used to map clusters to existing/proposed URLs and to filter out-of-scope clusters. If section 3 (products/services) is blank, ask before mapping clusters to URL paths.
 3. **Existing site structure (optional but valuable)** — a list of existing URLs the clusters might map to. If not provided, the skill produces proposed URLs only and flags the need for a manual mapping pass.
 4. **Tool / method preference (optional)** — whether the user wants SERP-overlap clustering on the top keywords (more rigorous, requires SERP checks) or topical/semantic grouping (faster, less rigorous). Default to topical grouping with a SERP-overlap recommendation for the top ~20%.
 
@@ -101,6 +101,8 @@ List any cases where two clusters mapped to the same existing URL, or where exis
 ## Next steps
 2-3 sentences pointing to content briefing, on-page implementation, and (optionally) SERP-overlap verification for the top P0 clusters.
 ```
+
+Save the produced file to `businesses/<slug>/clusters/cluster-map.md`. Create the `clusters/` sub-folder if it doesn't already exist. After writing, tell the user the file path so they can open it.
 
 ## Quality bar
 

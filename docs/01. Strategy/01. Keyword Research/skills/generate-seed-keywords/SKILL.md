@@ -28,7 +28,7 @@ The reason this skill exists: keyword tools amplify whatever you put in. Feed th
 
 Before producing the list, gather:
 
-1. **Business profile** — read `business_profile.md` if available. The critical sections are: products/services (3), customer (4), competitors (6), goals (7). If the profile is missing, ask for the products, the primary customer's pains, the top 3 questions customers ask before buying, the geography, and 3-5 competitor URLs.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` like this: list the `businesses/` folder; if exactly one business folder exists, use it; if multiple, ask which business this is for; if none, recommend running `generate-business-profile` first and stop. The critical sections for this skill are products/services (3), customer (4), competitors (6), and goals (7). If any of those are blank or marked unknown, ask the user inline before producing seeds.
 2. **Focus area** (optional but useful) — is this for the whole business, or a specific category, product launch, or content theme? A focused seed list outperforms a broad one.
 3. **Language and market** — defaults from the profile if set; ask if not.
 
@@ -90,6 +90,8 @@ The starting points most likely to be high-leverage for this business. Expand th
 ## How to expand these seeds
 Brief, tool-aware instructions for taking this list into the user's keyword tool. Mention: country/language settings, KD filtering relative to their domain rating, the matching-terms / keyword-ideas / questions reports, and the People Also Ask cross-reference.
 ```
+
+Save the produced file to `businesses/<slug>/keyword-research/seed-keywords.md`. Create the `keyword-research/` sub-folder if it doesn't already exist. After writing, tell the user the file path so they can open it.
 
 ## Quality bar
 

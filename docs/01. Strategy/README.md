@@ -4,7 +4,12 @@
 
 ## What this category covers
 
-Strategy is the work you do *before* publishing anything. It answers four questions: **What** are people searching for that you can credibly serve? **Why** are they searching (what do they want)? **Who** is already winning those searches and how? **Where** are the fastest wins for your business right now?
+Strategy is the work you do *before* publishing anything. It answers four questions:
+
+1. **What** are people searching for that you can credibly serve?
+2. **Why** are they searching (what do they want)?
+3. **Who** is already winning those searches and how?
+4. **Where** are the fastest wins for your business right now?
 
 Skip this category and you'll spend months producing content that nobody is looking for, optimising pages for the wrong intent, or chasing keywords your domain has no chance of ranking for. Time and money down the drain. The strategy phase is also where most of the leverage is — a well-chosen target keyword is worth more than a beautifully written piece of content for a keyword nobody types.
 
@@ -29,15 +34,15 @@ If this is your first time doing SEO strategy for the business, work through thi
 
 **Pass 1 — Discovery (1-2 weeks):**
 
-1. Fill in your [`business_profile.md`](../../business_profile.md) at the repo root.
+1. Run [`generate-business-profile`](../../skills/generate-business-profile/SKILL.md) to set up the workspace for the business you're working on. This creates `businesses/<your-business-slug>/business_profile.md`, which every Strategy skill below reads from.
 2. Run **Keyword Research** to produce a raw keyword universe.
 3. Run **Search Intent** classification on the universe to filter and segment.
 4. Run **Competitor Analysis** on 3-5 competitors to understand what good looks like.
 
 **Pass 2 — Planning (3-5 days):**
 
-5. Run **Keyword Clustering** to turn the universe into a content/page map.
-6. Run **SEO Wins** to extract a prioritised backlog you can start executing this quarter.
+1. Run **Keyword Clustering** to turn the universe into a content/page map.
+2. Run **SEO Wins** to extract a prioritised backlog you can start executing this quarter.
 
 The output of this category is a strategy document plus a backlog. From there you move into [On-page SEO](../02.%20On-page%20SEO/) and [Content SEO](../04.%20Content%20SEO/) to execute against the plan.
 

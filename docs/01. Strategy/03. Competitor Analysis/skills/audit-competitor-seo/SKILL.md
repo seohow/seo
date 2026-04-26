@@ -27,7 +27,7 @@ The audit is honest about what can and can't be inferred from the outside. Some 
 ## Inputs required
 
 1. **Competitor target** — a URL or domain. If the user gives just a brand name, ask for the URL.
-2. **Business profile** — read `business_profile.md`. Critical sections: products/services (3), customer (4), competitors (6), goals (7). The audit is a *comparison*, so the user's side has to be specified.
+2. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections for this skill: products/services (3), customer (4), competitors (6), goals (7). The audit is a *comparison*, so the user's side has to be specified — if those sections are blank, ask before starting the audit.
 3. **Tool access** — what the user has. The audit is much richer with Ahrefs/Semrush/Moz access; usable but lighter without. Ask what's available so the methodology matches.
 4. **Focus area (optional)** — whole domain, or a specific section / topic / cluster. If the competitor is large, focusing the audit makes it actionable.
 5. **Keyword universe (optional but valuable)** — if the user has their own keyword universe from prior research, the audit can compare directly. If not, it produces inferred targets from the competitor's ranking keywords.
@@ -94,6 +94,8 @@ Bulleted observations grouped by: schema, internal linking, page templates, tech
 ## 8. Honest limits of this audit
 2-3 sentences on what couldn't be inferred from outside (e.g. internal conversion rates, paid contribution, true revenue from organic). Keeps the user calibrated.
 ```
+
+Save the produced file to `businesses/<slug>/competitor-analysis/audit-<competitor-slug>.md`, where `<competitor-slug>` is the kebab-case form of the competitor's name or domain (e.g. `audit-blueland.md`, `audit-earth-breeze.md`). Create the `competitor-analysis/` sub-folder if it doesn't already exist. After writing, tell the user the file path. If the user runs this skill again on a different competitor, save to a new file in the same folder — don't overwrite.
 
 ## Quality bar
 

@@ -23,7 +23,7 @@ This skill produces a written **project plan** for an SEO competitor analysis. T
 
 ## Inputs required
 
-1. **Business profile** — read `business_profile.md`. Critical sections: business model (2), products/services (3), customer (4), competitors (6), goals (7). If competitors aren't listed, ask for 5-10 candidates plus any aspirational brands.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections for this skill: business model (2), products/services (3), customer (4), competitors (6), goals (7). If section 6 has fewer than 3 competitors listed, ask the user for 5-10 candidates plus any aspirational brands before producing the plan.
 2. **Goal of this analysis** — why now? Common goals: starting SEO, planning a content roadmap, evaluating a market entry, pricing-and-positioning research, link-building target list, agency brief. The plan adapts to the goal.
 3. **Constraints** — time budget (days), tools available, language and geography.
 
@@ -92,6 +92,8 @@ Bulleted, risk → mitigation.
 ## 9. Next steps after this project
 Brief paragraph on how the output feeds into clustering, content briefing, and the SEO wins backlog.
 ```
+
+Save the produced file to `businesses/<slug>/competitor-analysis/plan.md`. Create the `competitor-analysis/` sub-folder if it doesn't already exist. After writing, tell the user the file path so they can open it.
 
 ## Quality bar
 
