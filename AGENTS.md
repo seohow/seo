@@ -194,6 +194,17 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - Three working postures named explicitly: open (allow all), visibility-only (allow retrieval, block training), strict-block (block all). The skills don't impose a posture — the founder chooses; the skills enforce.
 - Technical SEO is now 10 leaves total, considered v1-final.
 
+### 2026-05-01 — Off-page SEO category complete (Category 6 of 10)
+
+- 1 category overview + 8 leaf READMEs + 8 skills shipped.
+- Skill mix: 8 leaves with 1 skill each; the discipline is operational rather than per-page, so each leaf's single skill is the right shape (planner-style for most; design-process style for `design-outreach-process`).
+- Established artifact subfolder names for this category: `off-page/` (single shared subfolder; outputs use slug-stamped filenames like `link-building-plan-2026-Q2.md`, `digital-pr-2026-sun-care-habits.md`, `outreach-manual.md`, `branded-serp-audit-2026-05-01.md`).
+- Off-page is unique among shipped categories in that the *operational* layer (`05. Outreach`) explicitly underpins every other tactical leaf — link building, guest posting, PR, mention recovery, HARO, broken-link all consume the outreach manual. Captured this dependency explicitly in the category overview's workflow.
+- Risk-aware shape across all 8 skills: every skill includes a "what could go wrong" section flagging sender-reputation, deliverability, anchor-text-over-optimisation, scale-ceiling, and platform-dependence risks. Off-page has more downside risk than other categories (paid links / PBNs / spam volume can trigger penalties); skills explicitly forbid those patterns.
+- Dense cross-references inside the category (link building ↔ outreach ↔ digital PR ↔ HARO ↔ broken-link ↔ mention recovery all interlock) and outward to Content SEO (pillars / evergreen / tools as link-worthy assets), Strategy (competitor analysis as prospect-list source), Analytics (measurement of off-page contribution).
+- Branded SERP / reputation work explicitly includes AI Overview / LLM probing as a 2026-shaped responsibility — distinct from the broader brand-mention monitoring leaf (`04. Brand Mentions`) which covers the wider web.
+- `.gitkeep` count: 27 (post-Analytics) → 19 (after Off-page). 19 leaves remaining across 4 categories.
+
 ### 2026-05-01 — Analytics category complete (Category 5 of 10)
 
 - 1 category overview + 6 leaf READMEs + 7 skills shipped.

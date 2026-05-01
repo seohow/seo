@@ -1,0 +1,96 @@
+# HARO and Journalist Outreach
+
+> Reactive PR. Responding to journalist queries on HARO, Qwoted, Connectively, and direct journalist outreach. The steady-yield channel that complements proactive PR — different discipline, different cadence, different outcomes.
+
+## What it is
+
+HARO ("Help A Reporter Out") is a service where journalists post queries — "looking for a dermatologist to comment on mineral sunscreen safety," "seeking small ecommerce founders for a Series A funding piece" — and brands / experts respond with quotes, data, or pitch angles. Qwoted, Connectively (the relaunched HARO), Featured, and ProfNet are similar services. Direct journalist outreach extends the same pattern: brands monitor what specific journalists are writing and pitch them when relevant angles emerge.
+
+The pattern is *reactive* — the journalist sets the topic; the brand provides the answer. Done well at scale, it produces a steady stream of placements with much higher conversion than cold outreach. For Field & Sun, HARO + journalist-watching is plausibly worth 2-5 placements per month at minimal effort once the system is set up.
+
+## Why it matters
+
+Three reasons. First, **reactive outreach has dramatically higher conversion than cold**. Journalists who post HARO queries are *actively looking* for sources; the brand's response converts at 30-50% (vs. 1-3% on cold pitches). The same applies to journalists who've recently written on the topic — they're still in the research / thinking pattern.
+
+Second, **HARO + journalist-watching produces a steady link flow**. Unlike PR campaigns (high-variance, occasional bursts), reactive outreach produces 2-5 placements per month consistently. Steady flow compounds; spikes don't.
+
+Third, **the system is build-once-run-forever**. Once filtering, response templates, and triage are set up, the operational cost is low — 30-60 minutes per day for a marketing team member.
+
+The trade-offs: HARO conversions are mostly Tier 2-3, not Tier 1 (Tier 1 publishers rarely use HARO); the response window is short (often 24-48 hours, sometimes hours); and the platform itself has been somewhat unstable recently (HARO acquired and renamed to Connectively in 2024). Brands that depend on HARO for primary off-page yield are exposed to platform risk.
+
+## Core concepts
+
+- **HARO / Connectively (the platform).** Acquired by Cision in 2017; rebranded to Connectively in 2024. Free tier available; paid for advanced filtering. Daily emails of queries.
+- **Qwoted.** Alternative platform; smaller volume; some brands prefer the UI.
+- **Featured.com.** Newer entrant, founder + expert focused.
+- **ProfNet.** Older Cision-affiliated platform; B2B / industry focus.
+- **Direct journalist watching.** Beyond platform queries: monitoring journalists who've recently covered topics relevant to the brand, then pitching them next-angle ideas.
+- **Query filtering.** Most queries don't fit the brand. A typical day's HARO email has 60-100 queries; 0-3 are fits. Filtering discipline saves time.
+- **Response templates.** Each query type has a response template; personalised per query. Founder + expert credentials; specific data / quote / claim; URLs of supporting assets.
+- **Response window.** Most queries close in 24-72 hours. Email-monitoring cadence matters.
+- **Quality threshold.** Tier 1-2 publication queries get high-effort responses (15-30 min each). Tier 3 / unspecified-publication queries get template-quick responses (3-5 min) or skip.
+- **Anonymous queries.** Some HARO queries don't reveal the publication. Skip unless the topic is *exceptionally* aligned; anonymous queries often turn out to be content-mill / aggregator sites.
+- **Author credibility.** HARO queries that ask for a "dermatologist" or "founder of a [category] brand" require the credentialed person on the brand side. Generic marketing-team responses lose to credentialed responses.
+
+## A worked example
+
+> **Scenario:** Field & Sun has signed up for HARO / Connectively but isn't using it systematically. Founder reads a few queries occasionally; team has landed maybe 2 placements in 12 months. They want a structured system.
+>
+> **Step 1.** Run `set-up-haro-response-system`. Skill produces the operational plan covering platform setup, filtering rules, response templates, triage, monitoring cadence.
+>
+> **Step 2.** Output:
+>
+> - **Platforms:** Connectively (HARO replacement) + Qwoted. Skip Featured for now (overlap; reduce later if useful).
+> - **Filtering rules:** topical (skincare, sun-care, skin-tone diversity, ecommerce), credential (dermatologist queries, founder-of-D2C queries), publication tier (Tier 1-2 priority; Tier 3 case-by-case; skip anonymous).
+> - **Response templates:** 6 templates (dermatologist commentary, founder quote, data citation, product mention, methodology insight, brand fact-check). Each ~150 words; personalised per query.
+> - **Triage:** Founder + dermatologist + marketing manager all on the inbound; marketing manager triages; founder / dermatologist write where credentials needed.
+> - **Cadence:** 30 min/day on weekdays scanning queries; same-day response to qualifying queries.
+> - **Tracking:** placements logged in CRM; monthly conversion-rate review.
+>
+> **Step 3.** Result: 90 days post-system-launch, the brand lands 12 placements (vs ~2 in prior 12 months). Mostly Tier 2 (Cosmopolitan online, Refinery29, Self.com, Allure online); one surprise Tier 1 (Wirecutter sourcing for a sunscreen guide). Steady-state: 4-7 placements / month.
+
+## How to do it
+
+1. **Sign up for platforms.** Connectively (free tier baseline; paid tier $29-149/mo for filtering); Qwoted (mid-tier alternative); optionally Featured.com.
+2. **Set up email-monitoring.** Inbound to a shared marketing inbox; auto-forward / triage rule.
+3. **Define filtering rules.** Topic match + credential match + publication-tier filter.
+4. **Build response templates.** 5-8 templates covering common query patterns.
+5. **Define triage process.** Who reads queries; who responds; who reviews credential-sensitive responses.
+6. **Establish daily cadence.** 30-60 min/day; same-day response window.
+7. **Track placements.** CRM update; per-month conversion-rate review.
+8. **Iterate.** Some platforms / query types convert; others don't. Rebalance.
+9. **Connect to direct journalist watching.** Beyond platforms: monitor named journalists' recent coverage; pitch follow-on angles.
+10. **Quarterly review.** Platform value, response-rate trend, placement quality.
+
+## Common pitfalls
+
+- **No system; ad-hoc reading.** "I'll check HARO when I have time" → 1-2 placements / year. Systemic > ad-hoc.
+- **Responding to anonymous queries.** Often content mills. Skip unless topic-perfect.
+- **Generic responses.** "Hi, here's a quote" without personalisation. Specific quote + credentials + supporting URL converts.
+- **Late responses.** Queries close in 24-72 hours; same-day matters.
+- **Wrong sender / credentials.** Marketing-team response to "dermatologist" query loses every time.
+- **Over-pitching.** Sending the same quote to every related query — journalists notice; reputation damaged.
+- **No tracking.** Without placement / conversion data, optimisation impossible.
+- **Platform dependence.** Building the entire reactive PR programme on one platform is risky (Connectively rebrand showed this).
+- **Skipping direct journalist watching.** HARO is one source; named-journalist monitoring is the higher-quality complement.
+- **Over-investment.** HARO is steady-yield, not exponential. Don't put 60% of off-page hours here.
+
+## Skills in this toolkit
+
+- **[set-up-haro-response-system](skills/set-up-haro-response-system/SKILL.md)** — produces the reactive-PR operational plan: platform selection (Connectively / Qwoted / Featured / ProfNet), email-monitoring + triage, filtering rules (topic / credential / publication-tier), response template library (5-8 templates), daily cadence, placement tracking, direct-journalist-watching extension, quarterly review schedule. Output is the operational system that produces 2-5 placements / month at minimal sustained effort.
+
+## Related topics
+
+- **[01. Link Building](../01.%20Link%20Building/README.md)** — HARO / journalist outreach is one tactical channel within the link-building strategy.
+- **[03. Digital PR](../03.%20Digital%20PR/README.md)** — proactive counterpart; complement to reactive.
+- **[05. Outreach](../05.%20Outreach/README.md)** — operational layer (CRM, templates, sender hygiene shared with HARO).
+- **[04. Brand Mentions](../04.%20Brand%20Mentions/README.md)** — HARO placements often produce mentions worth tracking.
+- **[02. Guest Posting](../02.%20Guest%20Posting/README.md)** — relationship layer overlaps; journalist relationships from HARO often extend to contributor opportunities.
+
+## Further reading
+
+- [Connectively (formerly HARO) — Help](https://www.connectively.us/) — official platform documentation.
+- [Qwoted — Source Guide](https://www.qwoted.com/) — practitioner reference for the Qwoted platform.
+- [Brian Dean / Backlinko — HARO Strategy](https://backlinko.com/) — case studies on response craft.
+- [Sujan Patel — HARO Templates That Land](https://www.sujanpatel.com/) — practitioner templates with response data.
+- [Aleyda Solis — Reactive PR Setup Templates](https://www.aleydasolis.com/) — practical operational templates.
