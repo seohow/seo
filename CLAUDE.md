@@ -68,6 +68,14 @@ These are non-negotiable — deviating creates inconsistency that compounds acro
 
 Before writing a new topic README or skill, read at least one Strategy leaf for tone calibration (e.g. `playbook/01. Strategy/01. Keyword Research/README.md` and one of its skills). The format and depth of that slice was deliberately designed and reviewed; new content should match.
 
+### Canonical sample business (Field & Sun)
+
+The toolkit ships with a fictional sample business at `businesses/field-and-sun/`. Treat this as the Northwind / Adventure Works of the toolkit — the working reference fixture that examples should refer to. Field & Sun is a D2C beauty brand with two hero products (Daily Glow Serum — evergreen; Mineral Sun Drops SPF 50 — seasonal spring/summer) plus a complementary lineup designed to lift AOV and reinforce brand loyalty. Read `businesses/field-and-sun/business_profile.md` and `businesses/field-and-sun/CLAUDE.md` once before writing new examples.
+
+**Going forward, all NEW worked examples in playbook READMEs and skill docs should reference Field & Sun rather than introducing a new fictional brand.** Existing content (the Strategy slice and On-page SEO category) currently uses an earlier "refillable cleaning brand" fixture; that's grandfathered in for now and may be migrated to Field & Sun in a future pass. Don't mix the two within a single category.
+
+When writing examples that reference Field & Sun: pull facts (hero product names, AOV, geography, brand voice, competitors) from the profile rather than inventing them. The point of having a canonical sample is consistency — readers should be able to cross-reference any example against the profile and find the same brand.
+
 ### `.gitkeep` files in unbuilt leaves
 
 Every leaf topic folder that hasn't been populated yet contains a `.gitkeep` file (e.g. `playbook/02. On-page SEO/01. Title/.gitkeep`). It exists only to make the empty folder commit-able to git. **When you populate a leaf** (write its README and at least one skill), **delete the `.gitkeep` from that folder in the same change.** Leaving a `.gitkeep` next to a real README is a small but real piece of clutter and signals "this folder is empty" when it isn't. The progress of the toolkit is partly visible by how many `.gitkeep` files remain — fewer is better.
@@ -121,6 +129,12 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - Decided `docs/` was misleading (implies meta-documentation about the repo) and renamed to `playbook/`.
 - All path references updated. Cross-links between leaves use relative paths so they survived transparently.
 - New convention name pairs cleanly with `skills/` at root: the playbook tells you what to do; the skills do it.
+
+### 2026-05-01 — Field & Sun added as canonical sample business
+- Decided to introduce a fictional sample business that ships with the toolkit and serves as the reference fixture for examples (Northwind / Adventure Works model).
+- Brand: Field & Sun. D2C beauty. Two hero products: Daily Glow Serum (evergreen) and Mineral Sun Drops SPF 50 (seasonal). 6 complementary SKUs for AOV / loyalty.
+- Lives at `businesses/field-and-sun/` with both `business_profile.md` and `CLAUDE.md` populated as worked examples (the CLAUDE.md shows what a healthy working-memory file looks like after a few months of real SEO work).
+- Implication for future authors: NEW examples in playbook content should reference Field & Sun rather than invent a new fictional brand. Existing Strategy + On-page content uses an earlier "refillable cleaning brand" fixture; not retroactively migrated yet — that's a future pass if the user wants consistency across the whole toolkit.
 
 ### 2026-05-01 — Curriculum scope review: 9 leaves added, 5 categories parked
 - Reviewed the 10-category structure for completeness before scaling further. Outcome:
