@@ -1,0 +1,17 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "markdownlint: fix all",
+            "type": "shell",
+            "command": "npx markdownlint-cli2 --fix \"**/*.md\"",
+            "problemMatcher": []
+        },
+        {
+            "label": "markdownlint: check all",
+            "type": "shell",
+            "command": "npx markdownlint-cli2 \"**/*.md\"",
+            "problemMatcher": []
+        }
+    ]
+}
