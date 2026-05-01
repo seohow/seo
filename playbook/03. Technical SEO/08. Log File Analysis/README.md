@@ -1,0 +1,96 @@
+# Log File Analysis
+
+> The diagnostic that tells you what Googlebot actually does on your site — not what crawlers infer, not what GSC samples. Server logs are ground truth, and on sites over a few thousand URLs they surface crawl-budget waste no other tool can see.
+
+## What it is
+
+Log file analysis is the process of parsing your server's access logs (the per-request records every web server keeps) and filtering for search-engine-bot traffic — primarily Googlebot. The output: which URLs Googlebot actually crawls, how often, with what response codes, and how much of its crawl budget gets spent on URLs you don't care about.
+
+This is the only way to see what's happening on the bot side. Crawlers like Screaming Frog show what *should* be crawlable. GSC samples what was crawled. Server logs show what *was* crawled, every request, with timestamps. For larger sites, this is the highest-resolution diagnostic available.
+
+For Field & Sun on Shopify, logs are mostly inaccessible (Shopify abstracts away server logs from merchants). Log file analysis becomes critical when a brand moves to a custom infrastructure (custom Next.js, headless on Vercel/Cloudflare with log access, or any self-hosted stack). For larger ecom sites with complex faceted navigation, log files routinely reveal Googlebot wasting 60-80% of its crawl on parameter URLs and duplicate variants.
+
+## Why it matters
+
+Three reasons. First, **crawl budget is finite, and on large sites it matters**. Googlebot allocates a per-domain crawl budget. Wasted crawl on parameter URLs, faceted navigation, and orphan duplicates is crawl that doesn't reach the pages you care about. Logs tell you the exact ratio.
+
+Second, **logs reveal orphan URLs and unexpected discovery**. A URL Googlebot is hitting that you didn't expect (legacy URL, internal-search results page, accidental sitemap inclusion) is signal — either fix the URL or fix the discovery. Crawlers and GSC don't surface this with the same granularity.
+
+Third, **logs validate every other technical-SEO decision**. Did your robots.txt change reduce crawl on the blocked path? Logs confirm. Did your canonical fix reduce Googlebot's hits on parameter URLs? Logs confirm. Did your sitemap submission accelerate discovery on new pages? Logs confirm. Without logs, every technical change is "ship and pray." With logs, you can measure the effect.
+
+For most D2C brands on Shopify, this category is N/A — you can't access logs, and the platform handles crawl budget reasonably. For brands on custom infra or larger catalogues (>5,000 URLs), log file analysis is one of the highest-leverage diagnostics available.
+
+## Core concepts
+
+- **Server access logs.** Plain-text files (one line per HTTP request) maintained by your web server (Nginx, Apache, custom Node, Vercel Edge logs, Cloudflare logs). Each line includes timestamp, IP, user-agent, URL, status code, bytes, referrer.
+- **Googlebot user-agent identification.** Googlebot identifies itself in the user-agent string (`Googlebot`, `Googlebot-Image`, `Googlebot-News`, `AdsBot-Google`, etc.). User-agent strings can be spoofed; Google publishes the IP ranges Googlebot uses, which lets you verify (reverse-DNS or IP-list match).
+- **Crawl frequency.** How often Googlebot hits a given URL. Highly-trafficked / frequently-updated URLs get hit daily. Long-tail pages may get hit weekly or monthly. Pages getting hit only every few months are at risk of falling out of the index.
+- **Crawl-budget allocation.** Total Googlebot requests per day, divided by URL category (product, collection, blog, parameter URLs, etc.). On healthy sites, the canonical content gets the lion's share. On bloated sites, parameter URLs and duplicates eat the budget.
+- **Status-code distribution from real bot traffic.** What's the ratio of 200 / 301 / 404 / 5xx that Googlebot is actually seeing? A spike in 404s tells you Googlebot is hitting URLs you've removed without redirecting.
+- **Orphan URLs in logs.** URLs Googlebot hits that aren't in the sitemap, aren't internally linked, and aren't expected. Common sources: legacy URLs Google still remembers, leaked staging URLs, third-party links to long-removed paths.
+- **Tools.** Splunk, Screaming Frog Log File Analyser, Botify, OnCrawl, Logz.io. For lightweight cases: a CSV export plus pandas / a spreadsheet pivot can do most of the analysis.
+
+## A worked example
+
+> **Scenario:** A hypothetical brand running custom Next.js on Vercel has 3,400 URLs. Organic traffic has plateaued; new content takes 2-4 weeks to rank. They suspect crawl-budget waste but can't see it from GSC alone. They pull 30 days of Googlebot log data from Vercel's access logs.
+>
+> **Step 1.** Verify Googlebot. Filter access logs for user-agent containing "Googlebot." Verify a sample of IPs against Google's published IP ranges. Discard spoofed traffic.
+>
+> **Step 2.** Tally Googlebot requests by URL pattern. Findings:
+>   - Total Googlebot requests in 30 days: 87,400
+>   - On canonical product pages (`/products/<slug>`): 12,300 (14%)
+>   - On collection pages (`/collections/<slug>`): 4,900 (6%)
+>   - On blog posts: 6,800 (8%)
+>   - On parameter URLs (`/collections/<slug>?filter=...`): 41,200 (47%) — disaster
+>   - On internal-search results (`/search?q=...`): 8,600 (10%) — also disaster
+>   - On other (homepage, static, sitemap, robots): 13,600 (16%)
+>
+> **Step 3.** Diagnose. 57% of Googlebot's crawl is being spent on parameter and search URLs that should be `noindex` + `Disallow` in robots.txt. The canonical content is getting 28% of the budget — half of what it should be.
+>
+> **Step 4.** Implement. Update `robots.txt` to `Disallow: /search` and add canonical tags pointing parameter URLs back to clean collections. Move the parameter-URL canonicals at template level.
+>
+> **Step 5.** Re-pull logs after 30 days. New distribution: parameter URLs down to 8% of crawl, search down to <1%. Canonical content rises to 43% of the budget. New blog posts now appear in the index within 5-7 days instead of 2-4 weeks. Existing pages get re-crawled more frequently (helpful for content refreshes).
+
+## How to do it
+
+1. **Confirm log access.** On Vercel: Logs → Edge / Function logs (paid tier required for retained access). Cloudflare: Logs Push or Logpull (Enterprise). Custom hosting: usually `/var/log/nginx/access.log` or similar. On Shopify / Webflow / WordPress.com: not accessible — skill doesn't apply.
+2. **Pull at least 30 days.** Bot crawl patterns vary day-to-day; one day isn't enough signal. Ideally 30-90 days.
+3. **Filter for Googlebot.** User-agent containing "Googlebot" gets you the main category. Optionally include `Googlebot-Image`, `Googlebot-News`, `AdsBot-Google` if relevant.
+4. **Verify Googlebot identity** for a sample. User-agent strings can be spoofed. Google publishes their IP ranges; reverse-DNS or IP-list match confirms the request actually came from Google. Most professional log-analysis tools do this automatically.
+5. **Tally requests by URL pattern.** Group URLs into buckets — product, collection, blog, parameter, search, sitemap, robots, other. Compute share of crawl per bucket.
+6. **Tally response codes per bucket.** Healthy distribution: 95%+ 200s, modest 301s, near-zero 404s and 5xx. Spikes in 404 / 5xx are flags.
+7. **Identify orphan URLs.** URLs Googlebot is hitting that aren't in the sitemap and aren't internally linked. Investigate each — legacy, unintended discovery, third-party link, etc.
+8. **Identify under-crawled URLs.** Cluster-mapped URLs that Googlebot has hit only once or twice in 30 days. These are at risk of indexing decay. Internal-link them in to lift crawl frequency.
+9. **Diagnose crawl-budget waste.** If parameter URLs / search results / duplicates exceed ~10% of crawl, fix upstream (canonicals, robots.txt, noindex) and re-measure.
+10. **Set quarterly cadence.** Log file analysis at 30-day windows quarterly is the floor. Major changes (theme migration, structure overhaul) warrant a special pull before and after.
+
+## Common pitfalls
+
+- **Trusting unverified Googlebot traffic.** User-agent spoofing is rampant. Always verify against Google's IP ranges for any meaningful-looking finding.
+- **Pulling too short a window.** A single day is noise. 30 days minimum.
+- **Forgetting to exclude internal traffic.** Test environments and CI bots can show up in production logs and skew the picture if not filtered out.
+- **Over-interpreting "Googlebot didn't crawl this URL."** Could mean Google deprioritised it, or could mean your sample window didn't catch a cycle. Cross-reference with GSC URL Inspection.
+- **Treating crawl-budget waste as the only finding.** Logs surface orphans, redirect-chain real-world impact, and 5xx hits — many of which are higher-priority than the budget question.
+- **Ignoring the 5xx spike pattern.** Even a low-percentage 5xx rate from Googlebot is bad — Google interprets repeat 5xx as "site is broken" and reduces crawl. Investigate every 5xx pattern.
+- **Skipping log analysis on sites where it would help.** Sites over 5,000 URLs with custom infra benefit; the audit is straightforward enough that 4-8 hours of analysis often pays back more than any other quarterly technical-SEO task.
+- **Doing log analysis on Shopify / Webflow.** Logs aren't accessible to merchants. The audit doesn't apply. Use other diagnostics (GSC, crawler, on-page audits).
+
+## Skills in this toolkit
+
+- **[analyse-log-files](skills/analyse-log-files/SKILL.md)** — takes a 30-90-day server access log export filtered for Googlebot, plus the site's URL inventory (sitemap + crawler export), and produces a structured analysis: crawl distribution by URL bucket, response-code distribution, orphan URLs, under-crawled URLs, crawl-budget waste estimates, and a prioritised remediation list.
+
+## Related topics
+
+- **[01. Crawlability](../01.%20Crawlability/README.md)** — log analysis often confirms or contradicts what crawl-audit findings predict.
+- **[02. Indexing](../02.%20Indexing/README.md)** — pages Googlebot hits but doesn't index get cross-flagged here.
+- **[05. Canonical Tags](../05.%20Canonical%20Tags/README.md)** — most crawl-budget-waste fixes are canonical or robots-related.
+- **[06. XML Sitemaps](../06.%20XML%20Sitemaps/README.md)** — orphan URLs in logs are often a sitemap-omission diagnostic.
+- **[09. Site Migration](../09.%20Site%20Migration/README.md)** — log analysis pre/post-migration is the gold standard for verifying redirect coverage and recovery.
+
+## Further reading
+
+- [Google Search Central — Manage your crawl budget](https://developers.google.com/search/docs/crawling-indexing/large-site-managing-crawl-budget) — Google's canonical guidance on when crawl budget matters and how to manage it.
+- [Onely — Log File Analysis Comprehensive Guide](https://www.onely.com/blog/) — strong practitioner-level walkthrough; especially good on the parameter-URL waste pattern.
+- [Screaming Frog — Log File Analyser documentation](https://www.screamingfrog.co.uk/log-file-analyser/) — the most-used standalone tool; documentation is good even if you don't use the tool.
+- [Botify Blog — Crawl Budget at Scale](https://www.botify.com/blog/) — enterprise-perspective content on log-driven crawl optimisation.
+- [Aleyda Solis — Log File Analysis Templates](https://www.aleydasolis.com/) — practical pivot-table templates if you're doing analysis in a spreadsheet rather than a dedicated tool.
