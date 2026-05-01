@@ -8,11 +8,11 @@ Keyword research is the process of building a structured inventory of the things
 
 ## Why it matters
 
-Every page on your site either earns search traffic or it doesn't, and what determines whether it does is mostly chosen at this stage — long before anyone writes a word. Targeting the wrong keywords means a year of effort produces a fraction of the traffic it should. Targeting the right ones means even modest content can compound into a meaningful customer-acquisition channel. For a D2C brand, organic search is often the highest-margin acquisition channel you have, and keyword research is the activity that decides how big that channel can get.
+Every page on your site either earns search traffic or it doesn't, and what determines whether it does is mostly chosen at this stage — long before anyone writes a word. Targeting the wrong keywords means a year of effort produces a fraction of the traffic it should. Targeting the right ones means even modest content can compound into a meaningful customer-acquisition channel. For a business, organic search is often the highest-margin acquisition channel you have, and keyword research is the activity that decides how big that channel can get.
 
 ## Core concepts
 
-- **Search volume** — the average number of times a query is searched per month, usually pulled from a tool like Ahrefs, Semrush, or Google Keyword Planner. Treat it as directional, not exact. A keyword with "100" volume might do 30 in a slow month and 250 in a hot month.
+- **Search volume** — the average number of times a query is searched per month, usually pulled from a tool like [Ahrefs](https://ahrefs.com/), [Semrush](https://www.semrush.com/), or [Google Keyword Planner](https://ads.google.com/aw/keywordplanner/home). Treat it as directional, not exact. A keyword with "100" volume might do 30 in a slow month and 250 in a hot month.
 - **Keyword difficulty (KD)** — a tool's estimate of how hard it is to rank in the top 10 for a query, expressed 0–100. Useful for filtering, but always sanity-check by looking at the actual SERP.
 - **Head terms vs. long-tail** — "sunscreen" is a head term: high volume, brutal competition, broad intent. "mineral sunscreen no white cast" is long-tail: lower volume, easier to rank, specific intent. New domains earn traffic on long-tail first and graduate to head terms as authority compounds.
 - **Branded vs. unbranded** — branded queries include your brand name; unbranded don't. Most SEO growth comes from unbranded queries. Branded queries are a measure of brand demand, not SEO performance.
