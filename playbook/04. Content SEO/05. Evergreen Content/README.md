@@ -88,7 +88,7 @@ For Field & Sun: investing in 4-6 truly evergreen pieces over the next 12 months
 - **[03. Topic Clusters](../03.%20Topic%20Clusters/README.md)** — evergreen pieces often function as anchor spokes within a cluster.
 - **[07. Content Refresh](../07.%20Content%20Refresh/README.md)** — evergreen ↔ refresh is the lifecycle pair. Evergreen pieces are the highest-ROI refresh candidates.
 - **[08. Content Briefing](../08.%20Content%20Briefing/README.md)** — `brief-evergreen-content` is a longer-form variant of the standard brief.
-- **[09. AI SEO](../../09.%20AI%20SEO/README.md)** *(planned)* — evergreen content is disproportionately favoured in AI Overviews and LLM citation surfaces.
+- **[09. AI SEO](../../09.%20AI%20SEO/)** *(planned)* — evergreen content is disproportionately favoured in AI Overviews and LLM citation surfaces.
 
 ## Further reading
 

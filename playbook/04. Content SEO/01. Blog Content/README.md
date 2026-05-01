@@ -28,7 +28,7 @@ Third, **blog content is where brand voice and expertise show up most visibly**.
 
 ## A worked example
 
-> **Scenario:** Field & Sun has 28 clusters in `clusters/cluster-map.md`. Of those, 15 are informational and 5 are commercial — 20 cluster's worth of blog-shaped content. They've shipped 25 blog posts to date but coverage is uneven (laundry / sustainability angles over-covered from earlier strategy; sun-care undercovered relative to seasonal demand).
+> **Scenario:** Field & Sun has 28 clusters in `clusters/cluster-map.md`. Of those, 15 are informational and 5 are commercial — 20 cluster's worth of blog-shaped content. They've shipped 25 blog posts to date but coverage is uneven (general skincare and refill-system angles over-covered from earlier strategy; sun-care undercovered relative to seasonal demand).
 >
 > **Step 1.** Run `plan-blog-content`. The skill cross-references the cluster map (which clusters need pages?) with current blog inventory (which clusters already have pages?). Outputs a coverage matrix and a 90-day editorial calendar.
 >

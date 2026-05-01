@@ -26,7 +26,7 @@ The skill is opinionated about a few things: programmatic without unique data is
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), customer (4), goals (7).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), goals (7).
 2. **Use case** — required. What's the proposed programmatic build? "Ingredient glossary," "product comparison library," "city pages for our wholesale program," etc.
 3. **Data source** — required. Where does the data come from? Own database, manually curated, third-party API, scraped public sources. Source dramatically affects viability.
 4. **Page count estimate** — optional. How many pages would the build produce? 30, 300, 30,000? Wildly different decisions.
@@ -158,12 +158,12 @@ If use case + data source are missing, ask. The decision is anchored to a specif
 
 ### Schema
 - Required schema types: [Article + FAQPage + Product + ItemList as applicable].
-- Reference: see [generate-schema-markup](../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md).
+- Reference: see [generate-schema-markup](../../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md).
 
 ### Indexation
 - XML sitemap segmentation: dedicated programmatic sitemap.
 - Index-control rules: pages below data threshold → `noindex`.
-- Reference: see [audit-indexing-status](../../../03.%20Technical%20SEO/02.%20Indexing/skills/audit-indexing-status/SKILL.md).
+- Reference: see [audit-indexing-status](../../../../03.%20Technical%20SEO/02.%20Indexing/skills/audit-indexing-status/SKILL.md).
 
 ## Build cost estimate (if green-light)
 - Engineering: [n] weeks calendar.

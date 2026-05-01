@@ -90,12 +90,12 @@ For Field & Sun: programmatic is plausible for an ingredient glossary; not for p
 ## Related topics
 
 - **[03. Topic Clusters](../03.%20Topic%20Clusters/README.md)** — programmatic templates can sometimes function as cluster spokes (glossary entries within an ingredients cluster).
-- **[03. Technical SEO / 02. Indexing](../../../03.%20Technical%20SEO/02.%20Indexing/README.md)** — index control is critical for programmatic; thin pages should be `noindex`ed.
-- **[03. Technical SEO / 04. Schema Markup](../../../03.%20Technical%20SEO/04.%20Schema%20Markup/README.md)** — most programmatic pages benefit from schema; deploy as part of the template.
-- **[03. Technical SEO / 06. XML Sitemaps](../../../03.%20Technical%20SEO/06.%20XML%20Sitemaps/README.md)** — segment programmatic into its own sitemap for GSC analysis.
-- **[02. On-page SEO / 04. URL Structure](../../../02.%20On-page%20SEO/04.%20URL%20Structure/README.md)** — programmatic URL patterns deserve deliberate design.
-- **[02. On-page SEO / 05. Internal Linking](../../../02.%20On-page%20SEO/05.%20Internal%20Linking/README.md)** — programmatic linking is more complex than editorial; needs orchestrated patterns.
-- **[03. Technical SEO / 08. Log File Analysis](../../../03.%20Technical%20SEO/08.%20Log%20File%20Analysis/README.md)** — programmatic crawl-budget consumption is real; logs help validate.
+- **[03. Technical SEO / 02. Indexing](../../03.%20Technical%20SEO/02.%20Indexing/README.md)** — index control is critical for programmatic; thin pages should be `noindex`ed.
+- **[03. Technical SEO / 04. Schema Markup](../../03.%20Technical%20SEO/04.%20Schema%20Markup/README.md)** — most programmatic pages benefit from schema; deploy as part of the template.
+- **[03. Technical SEO / 06. XML Sitemaps](../../03.%20Technical%20SEO/06.%20XML%20Sitemaps/README.md)** — segment programmatic into its own sitemap for GSC analysis.
+- **[02. On-page SEO / 04. URL Structure](../../02.%20On-page%20SEO/04.%20URL%20Structure/README.md)** — programmatic URL patterns deserve deliberate design.
+- **[02. On-page SEO / 05. Internal Linking](../../02.%20On-page%20SEO/05.%20Internal%20Linking/README.md)** — programmatic linking is more complex than editorial; needs orchestrated patterns.
+- **[03. Technical SEO / 08. Log File Analysis](../../03.%20Technical%20SEO/08.%20Log%20File%20Analysis/README.md)** — programmatic crawl-budget consumption is real; logs help validate.
 
 ## Further reading
 

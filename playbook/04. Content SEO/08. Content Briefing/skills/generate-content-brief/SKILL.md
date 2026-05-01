@@ -49,7 +49,7 @@ If primary keyword is missing, ask. The brief is anchored to a specific keyword.
 6. **Build the outline.** H1 + 5-9 H2s + H3s where genuinely needed. Each H2 has a content hint (1-2 sentences) describing what that section covers. Internal links are specified at the H2 level when the section naturally calls for one.
 7. **Decide word-count target.** Anchored to SERP top 5 average + 10-30%. Most blog posts land 1,200-2,500 words. Evergreen-leaning content can go longer (handled by `brief-evergreen-content`).
 8. **Pick the brand-distinct angle.** What can THIS brand say that the SERP top 10 can't? Specific and provable. For Field & Sun: own product testing on three skin tones, ingredient percentages disclosed, dermatologist-reviewed claims. For other brands: own data, founder expertise, customer stories, market-specific knowledge.
-9. **Encode voice constraints.** Brand voice "do" rules + "don't" rules. For Field & Sun specifically: percentages over claims; no "non-toxic," "clean beauty," "chemical-free"; reference dermatologist review only if accurate; FDA-compliant claims language.
+9. **Encode voice constraints.** Brand voice "do" rules + "don't" rules. For Field & Sun specifically: percentages over claims; avoid vague category language and unsupported safety claims; reference dermatologist review only if accurate; FDA-compliant claims language.
 10. **Plan internal links.** To the cluster's pillar (intro + closing); to 1-2 sibling spokes where contextually relevant; to relevant product pages (PDP / collection) where a transactional opportunity exists. Specify anchor patterns and where in the body each link goes.
 11. **Plan schema.** Article schema baseline; FAQPage if FAQs section is included; HowTo if it's a how-to post (note FAQ rich-result eligibility has narrowed). Reference `generate-schema-markup` skill for implementation.
 12. **Specify required assets.** Hero image; 2-4 in-body images; comparison tables if archetype calls for them; author bio with credentials.
@@ -139,7 +139,7 @@ H2: [Closing — summary or practical action]
 ### Don't
 
 - [Brand-specific anti-patterns pulled from business profile]
-- [E.g. "Avoid 'clean beauty,' 'non-toxic,' 'chemical-free' — these violate Field & Sun voice"]
+- [E.g. "Avoid vague category language and unsupported safety claims — these violate Field & Sun voice"]
 - [E.g. "Avoid superlatives ('best,' 'safest') — fails FDA review"]
 - [E.g. "No medical claims unless dermatologist-reviewed"]
 
@@ -157,8 +157,8 @@ H2: [Closing — summary or practical action]
 - **Article**: required. datePublished, dateModified, author (name + URL), image, mainEntityOfPage.
 - **FAQPage**: if FAQ section is included (recommended for Q&A-shaped post archetypes).
 - **BreadcrumbList**: Home → Blog → [Post].
-- **HowTo**: only if archetype is genuinely how-to AND the steps are sequential / instructional. Skip if the post is mostly explanatory.
-- **Reference**: see [generate-schema-markup](../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md) when implementing.
+- **HowTo**: only if archetype is genuinely how-to and the steps are sequential / instructional. Skip if the post is mostly explanatory.
+- **Reference**: see [generate-schema-markup](../../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md) when implementing.
 
 ## Required assets
 
@@ -216,7 +216,7 @@ Save the produced file to `businesses/<slug>/briefs/<post-slug>.md`. Create the 
 
 - Don't skip the SERP read. Briefs without SERP reads produce content that doesn't fit the actual search environment.
 - Don't write outlines in isolation from the cluster. The post is a spoke (usually); outline reflects that with explicit pillar / sibling links.
-- Don't omit voice constraints for brands with strict voice. Field & Sun's "no clean beauty / non-toxic / chemical-free" rule is brand-defining; the brief must encode it.
+- Don't omit voice constraints for brands with strict voice. Field & Sun's rule against vague category language and unsupported safety claims is brand-defining; the brief must encode it.
 - Don't pad word count past SERP-top-5 + 30%. Long doesn't mean better; matching the SERP's depth target plus a slight edge is the right move.
 - Don't year-stamp evergreen posts. "How does mineral sunscreen work in 2026" ages quickly. Year-stamping is reserved for commercial / "best of" content.
 - Don't propose schema types Google has narrowed (FAQ rich results have narrowed in 2024-25; HowTo rich results similarly). Use them when correct semantically; don't expect rich-result CTR lift.
@@ -239,7 +239,7 @@ Brand angle: Field & Sun's 20% non-nano zinc oxide is publicly disclosed; refere
 
 Outline: H1 + 6 H2s (intro, what zinc oxide is, FDA approval status, daily safety, common myths, FAQ, closing).
 
-Voice constraints: percentages over claims; no "non-toxic / clean beauty / chemical-free"; FDA-compliant claims language.
+Voice constraints: percentages over claims; avoid vague category language and unsupported safety claims; FDA-compliant claims language.
 
 Internal links: → /guides/mineral-sunscreen (intro + closing); → /blog/how-mineral-sunscreen-works (section 2); → /products/spf-30-mineral (section 4).
 

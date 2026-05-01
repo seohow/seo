@@ -18,7 +18,7 @@ Second, **briefs scale the work**. With briefs, the team can commission to multi
 
 Third, **briefs are how strategy survives contact with production**. Strategic decisions — cluster placement, brand-distinct angle, voice constraints, schema requirements — get encoded in the brief. Without that encoding, strategy stays in someone's head and gets lost in the writing process. The brief is where strategy becomes executable.
 
-For Field & Sun specifically: the brand voice constraints (no "clean beauty," no "non-toxic," no "chemical-free," percentages over claims) are fragile. They survive only if every brief encodes them. One brief that omits the constraints produces one post that violates them; multiplied over 30 posts a year, the brand voice erodes.
+For Field & Sun specifically: the brand voice constraints (percentages over claims, no vague category language, no unsupported safety claims) are fragile. They survive only if every brief encodes them. One brief that omits the constraints produces one post that violates them; multiplied over 30 posts a year, the brand voice erodes.
 
 ## Core concepts
 
@@ -45,7 +45,7 @@ For Field & Sun specifically: the brand voice constraints (no "clean beauty," no
 > - **Audience:** 28-45 sun-conscious skincare buyer; cares about ingredients; sceptical of claims; reads the back of the bottle.
 > - **Outline:** H1 + 6 H2s with content hints per section. H2s mirror the spoke-relationship to the pillar.
 > - **Brand-distinct angle:** Field & Sun publishes 20% non-nano zinc oxide percentages publicly; reference own product testing on three skin tones.
-> - **Voice rules:** percentages over claims; no "non-toxic," "clean," "chemical-free"; reference dermatologist review status only if accurate.
+> - **Voice rules:** percentages over claims; avoid vague category language and unsupported safety claims; reference dermatologist review status only if accurate.
 > - **Internal links:** to mineral-sunscreen pillar (intro + closing); to "how mineral sunscreen works" (sibling spoke).
 > - **Schema:** Article + FAQPage if FAQs included.
 > - **Acceptance criteria:** observable list of 8 items.
@@ -86,9 +86,9 @@ For Field & Sun specifically: the brand voice constraints (no "clean beauty," no
 - **[03. Topic Clusters](../03.%20Topic%20Clusters/README.md)** — cluster architecture decides what content to produce; briefs spec how each piece is built.
 - **[05. Evergreen Content](../05.%20Evergreen%20Content/README.md)** — evergreen briefs are longer and emphasise longevity; uses `brief-evergreen-content` instead.
 - **[07. Content Refresh](../07.%20Content%20Refresh/README.md)** — refresh work uses gap-analysis briefs via `plan-content-refresh`; this skill is for new content.
-- **[01. Strategy / 02. Search Intent](../../../01.%20Strategy/02.%20Search%20Intent/README.md)** — intent classification is a brief input.
-- **[01. Strategy / 04. Keyword Clustering](../../../01.%20Strategy/04.%20Keyword%20Clustering/README.md)** — cluster placement is a brief input.
-- **[02. On-page SEO / 07. Content Optimization](../../../02.%20On-page%20SEO/07.%20Content%20Optimization/README.md)** — on-page optimisation happens after the draft; brief inputs to it via the outline.
+- **[01. Strategy / 02. Search Intent](../../01.%20Strategy/02.%20Search%20Intent/README.md)** — intent classification is a brief input.
+- **[01. Strategy / 04. Keyword Clustering](../../01.%20Strategy/04.%20Keyword%20Clustering/README.md)** — cluster placement is a brief input.
+- **[02. On-page SEO / 07. Content Optimization](../../02.%20On-page%20SEO/07.%20Content%20Optimization/README.md)** — on-page optimisation happens after the draft; brief inputs to it via the outline.
 
 ## Further reading
 

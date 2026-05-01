@@ -27,7 +27,7 @@ The skill is opinionated about a few things: not every decayed post deserves a r
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), goals (7), brand voice (8). Strategic-value scoring depends on goals.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), goals (7), brand voice (8). Strategic-value scoring depends on goals.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Cluster-active posts have higher refresh ROI than orphaned posts.
 3. **Content inventory** — read `businesses/<slug>/blog-inventory.md` if it exists, or ask the user to provide a list of URLs. Each post: URL, primary keyword, publish date, last-modified date, target cluster (if known).
 4. **GSC data** — required. 12-month traffic + position trend per URL. If not provided, ask the user to export (URL: gsc → Performance → Pages → Filter to last 16 months → Export CSV).
@@ -121,7 +121,7 @@ If GSC data and content inventory are missing, ask. The analysis is data-driven;
 | URL | Reason | Action | Notes |
 |-----|--------|--------|-------|
 | /blog/2023-summer-trends | Time-bound, decayed, low strategic value | **301 → /collections/sun-care** | Old trend post; redirect to category |
-| /blog/laundry-tips | Off-topic (legacy from earlier brand) | **De-publish (410)** | No good redirect target; was off-strategy from day 1 |
+| /blog/old-winter-skincare-trends | Off-topic seasonal article | **De-publish (410)** | No good redirect target; was off-strategy from day 1 |
 | /blog/skincare-101 | Overlaps with stronger /blog/what-is-mineral-sunscreen | **Merge → /blog/what-is-mineral-sunscreen + 301** | Consolidate; current piece is the canonical |
 
 ### No action — performing well

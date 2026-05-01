@@ -86,10 +86,10 @@ The trade-off: tools are slow and expensive to build (4-12 weeks engineering vs.
 
 - **[03. Topic Clusters](../03.%20Topic%20Clusters/README.md)** — tools work best as part of a cluster, not standalone.
 - **[02. Pillar Pages](../02.%20Pillar%20Pages/README.md)** — pillars are the content hub; tools are sometimes the *interactive* hub of the same cluster.
-- **[02. On-page SEO / 05. Internal Linking](../../../02.%20On-page%20SEO/05.%20Internal%20Linking/README.md)** — tools need linking strategy more than blog content does (they're often the most-linkable page on the site).
-- **[03. Technical SEO / 07. JavaScript SEO](../../../03.%20Technical%20SEO/07.%20JavaScript%20SEO/README.md)** — tools are JS-heavy; rendering / indexing matters.
-- **[03. Technical SEO / 04. Schema Markup](../../../03.%20Technical%20SEO/04.%20Schema%20Markup/README.md)** — Article + WebApplication + FAQPage schema on the tool page.
-- **[09. AI SEO](../../../09.%20AI%20SEO/README.md)** *(planned)* — tools are increasingly cited in AI Overviews when the underlying methodology is public; tool-page SEO and AI search overlap.
+- **[02. On-page SEO / 05. Internal Linking](../../02.%20On-page%20SEO/05.%20Internal%20Linking/README.md)** — tools need linking strategy more than blog content does (they're often the most-linkable page on the site).
+- **[03. Technical SEO / 07. JavaScript SEO](../../03.%20Technical%20SEO/07.%20JavaScript%20SEO/README.md)** — tools are JS-heavy; rendering / indexing matters.
+- **[03. Technical SEO / 04. Schema Markup](../../03.%20Technical%20SEO/04.%20Schema%20Markup/README.md)** — Article + WebApplication + FAQPage schema on the tool page.
+- **[09. AI SEO](../../09.%20AI%20SEO/)** *(planned)* — tools are increasingly cited in AI Overviews when the underlying methodology is public; tool-page SEO and AI search overlap.
 
 ## Further reading
 

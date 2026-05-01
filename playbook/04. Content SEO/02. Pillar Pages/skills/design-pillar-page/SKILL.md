@@ -139,7 +139,7 @@ H2: [Closing — practical action / how to choose]
 - **Article**: datePublished, dateModified, author (name + URL + credentials), image, mainEntityOfPage.
 - **BreadcrumbList**: Home → Guides → [Pillar].
 - **FAQPage**: if FAQs section is included (strongly recommended; 5-10 questions).
-- **Reference**: see [generate-schema-markup](../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md) when implementing.
+- **Reference**: see [generate-schema-markup](../../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md) when implementing.
 
 ## Required assets
 

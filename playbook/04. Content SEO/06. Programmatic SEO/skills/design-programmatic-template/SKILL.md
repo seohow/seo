@@ -25,7 +25,7 @@ The skill is opinionated about a few things: every page needs substantive unique
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), customer (4), brand voice (8).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), brand voice (8).
 2. **Programmatic evaluation** — read `businesses/<slug>/programmatic/<use-case-slug>-evaluation.md` (output of `plan-programmatic-seo`). Required. Confirms the build is green-lit.
 3. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Programmatic pages often anchor to a topic cluster.
 4. **Archetype** — confirmed from the evaluation (glossary, comparison, location, listing, "for [persona]").
@@ -154,7 +154,7 @@ A page **publishes** (status: indexable) only if all of the following are true:
 - `mechanism_explanation` is ≥ 150 words.
 - `faqs` has ≥ 3 Q&A pairs.
 - `related_ingredients` has ≥ 3 entries.
-- For credibility-sensitive content: `dermatologist_note` is populated AND `last_reviewed_by` is set.
+- For credibility-sensitive content: `dermatologist_note` is populated and `last_reviewed_by` is set.
 
 If any condition fails:
 - Page is generated but `noindex,follow` (still findable via internal links, not indexed).
@@ -187,7 +187,7 @@ Per-template schema implementation:
 - Home → [Type Index] → [Entry]
 
 ### Reference
-- See [generate-schema-markup](../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md) for implementation.
+- See [generate-schema-markup](../../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md) for implementation.
 
 ## Internal linking strategy
 

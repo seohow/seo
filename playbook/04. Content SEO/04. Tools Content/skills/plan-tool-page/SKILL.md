@@ -27,7 +27,7 @@ The skill is opinionated about a few things: tools work best when tied to a topi
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), customer (4), goals (7), brand voice (8). Customer's "what do they want to figure out" is the engine of tool ideation.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), goals (7), brand voice (8). Customer's "what do they want to figure out" is the engine of tool ideation.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Tool should anchor to a cluster.
 3. **Tool concept(s)** — required. Either one tool (evaluate + brief) or 2-3 candidate tools (evaluate + recommend one).
 4. **Engineering capacity / budget** — optional but valuable. If the team has 4 weeks of engineering, propose only tools that fit the timeline. If unknown, ask.
@@ -191,7 +191,7 @@ Suggested action: [link to relevant product / pillar]
 - **WebApplication**: applicationCategory: "UtilitiesApplication" / "LifestyleApplication" as appropriate.
 - **FAQPage**: required (FAQ section is included).
 - **BreadcrumbList**: Home → Tools → [Tool].
-- **Reference**: see [generate-schema-markup](../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md) when implementing.
+- **Reference**: see [generate-schema-markup](../../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md) when implementing.
 
 ## Link-acquisition plan
 

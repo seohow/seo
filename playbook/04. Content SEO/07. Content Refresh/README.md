@@ -86,10 +86,10 @@ For Field & Sun: a quarterly refresh sweep across the existing 25 posts is plaus
 - **[01. Blog Content](../01.%20Blog%20Content/README.md)** — refresh and new content compete for the same content-team capacity. Balance them deliberately.
 - **[05. Evergreen Content](../05.%20Evergreen%20Content/README.md)** — evergreen anchors are the highest-ROI refresh candidates. Annual refresh on evergreen is part of the contract.
 - **[03. Topic Clusters](../03.%20Topic%20Clusters/README.md)** — refreshes are an opportunity to wire previously-orphaned posts into clusters.
-- **[02. On-page SEO / 07. Content Optimization](../../../02.%20On-page%20SEO/07.%20Content%20Optimization/README.md)** — refresh execution at the on-page level (title, description, headers, body) uses these skills.
-- **[02. On-page SEO / 05. Internal Linking](../../../02.%20On-page%20SEO/05.%20Internal%20Linking/README.md)** — refresh + internal-link updates go together.
-- **[03. Technical SEO / 09. Site Migration](../../../03.%20Technical%20SEO/09.%20Site%20Migration/README.md)** — replace-and-301 refreshes touch redirect-mapping discipline.
-- **[05. Analytics](../../../05.%20Analytics/README.md)** *(planned)* — GSC data is the trigger for most refresh decisions.
+- **[02. On-page SEO / 07. Content Optimization](../../02.%20On-page%20SEO/07.%20Content%20Optimization/README.md)** — refresh execution at the on-page level (title, description, headers, body) uses these skills.
+- **[02. On-page SEO / 05. Internal Linking](../../02.%20On-page%20SEO/05.%20Internal%20Linking/README.md)** — refresh + internal-link updates go together.
+- **[03. Technical SEO / 09. Site Migration](../../03.%20Technical%20SEO/09.%20Site%20Migration/README.md)** — replace-and-301 refreshes touch redirect-mapping discipline.
+- **[05. Analytics](../../05.%20Analytics/)** *(planned)* — GSC data is the trigger for most refresh decisions.
 
 ## Further reading
 

@@ -69,15 +69,15 @@ It produces inputs for downstream categories:
 
 The full inventory across the 8 sub-topics:
 
-- **plan-blog-content** — produce a 30/60/90-day blog editorial calendar from cluster map + business goals.
-- **design-pillar-page** — produce a pillar-page brief: scope, outline, supporting spoke targets, cross-link strategy.
-- **design-topic-cluster** — convert a hub topic into a pillar + 5-10 spoke architecture.
-- **plan-tool-page** — design a free-tool page (calculator, quiz, finder, generator) tied to a topical cluster.
-- **brief-evergreen-content** — brief a longevity-first piece designed to compound for 3-5 years.
-- **plan-programmatic-seo** — evaluate whether programmatic SEO fits, design the data model + template approach if so.
-- **design-programmatic-template** — produce the actual template + data spec for programmatic page generation.
-- **plan-content-refresh** — analyse existing content for refresh candidates; produce a prioritised refresh backlog.
-- **generate-content-brief** — universal content brief for any single piece (blog post, pillar, evergreen, refresh) — the foundation skill.
+- **[plan-blog-content](01.%20Blog%20Content/skills/plan-blog-content/SKILL.md)** — produce a 30/60/90-day blog editorial calendar from cluster map + business goals.
+- **[design-pillar-page](02.%20Pillar%20Pages/skills/design-pillar-page/SKILL.md)** — produce a pillar-page brief: scope, outline, supporting spoke targets, cross-link strategy.
+- **[design-topic-cluster](03.%20Topic%20Clusters/skills/design-topic-cluster/SKILL.md)** — convert a hub topic into a pillar + 5-10 spoke architecture.
+- **[plan-tool-page](04.%20Tools%20Content/skills/plan-tool-page/SKILL.md)** — design a free-tool page (calculator, quiz, finder, generator) tied to a topical cluster.
+- **[brief-evergreen-content](05.%20Evergreen%20Content/skills/brief-evergreen-content/SKILL.md)** — brief a longevity-first piece designed to compound for 3-5 years.
+- **[plan-programmatic-seo](06.%20Programmatic%20SEO/skills/plan-programmatic-seo/SKILL.md)** — evaluate whether programmatic SEO fits, design the data model + template approach if so.
+- **[design-programmatic-template](06.%20Programmatic%20SEO/skills/design-programmatic-template/SKILL.md)** — produce the actual template + data spec for programmatic page generation.
+- **[plan-content-refresh](07.%20Content%20Refresh/skills/plan-content-refresh/SKILL.md)** — analyse existing content for refresh candidates; produce a prioritised refresh backlog.
+- **[generate-content-brief](08.%20Content%20Briefing/skills/generate-content-brief/SKILL.md)** — universal content brief for any single piece (blog post, pillar, evergreen, refresh) — the foundation skill.
 
 ## Common pitfalls
 

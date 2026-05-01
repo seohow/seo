@@ -84,10 +84,10 @@ For Field & Sun, mapping the cluster architecture before shipping more standalon
 
 - **[02. Pillar Pages](../02.%20Pillar%20Pages/README.md)** — the pillar is one page in the cluster architecture. Pair the two.
 - **[01. Blog Content](../01.%20Blog%20Content/README.md)** — most spokes are blog posts. The editorial calendar should be cluster-aware.
-- **[01. Strategy / 04. Keyword Clustering](../../../01.%20Strategy/04.%20Keyword%20Clustering/README.md)** — provides the cluster map; cluster architecture is the next step on top of it.
-- **[02. On-page SEO / 05. Internal Linking](../../../02.%20On-page%20SEO/05.%20Internal%20Linking/README.md)** — cluster architecture *is* an internal-linking architecture. The two categories overlap heavily.
-- **[02. On-page SEO / 03. Header Structure](../../../02.%20On-page%20SEO/03.%20Header%20Structure/README.md)** — pillar headers should mirror the spoke set; consistent header structure across the cluster is part of the topical-authority signal.
-- **[09. AI SEO / 01. Topical Authority](../../../09.%20AI%20SEO/01.%20Topical%20Authority/README.md)** — clusters are how brands compete in AI Overview and LLM citation surfaces.
+- **[01. Strategy / 04. Keyword Clustering](../../01.%20Strategy/04.%20Keyword%20Clustering/README.md)** — provides the cluster map; cluster architecture is the next step on top of it.
+- **[02. On-page SEO / 05. Internal Linking](../../02.%20On-page%20SEO/05.%20Internal%20Linking/README.md)** — cluster architecture *is* an internal-linking architecture. The two categories overlap heavily.
+- **[02. On-page SEO / 03. Header Structure](../../02.%20On-page%20SEO/03.%20Header%20Structure/README.md)** — pillar headers should mirror the spoke set; consistent header structure across the cluster is part of the topical-authority signal.
+- **[10. Growth / 01. Topical Authority](../../10.%20Growth/01.%20Topical%20Authority/)** — clusters are how brands compete in AI Overview and LLM citation surfaces.
 
 ## Further reading
 

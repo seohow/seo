@@ -27,7 +27,7 @@ The skill is opinionated about a few things: not every piece deserves the evergr
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), customer (4), competitors (6), brand voice (8). Voice + competitive positioning drive the longevity case.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), competitors (6), brand voice (8). Voice + competitive positioning drive the longevity case.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Evergreen pieces typically anchor a cluster.
 3. **Topic + primary keyword** — required. The keyword should be evergreen-leaning (no year stamp, durable search demand).
 4. **Longevity hypothesis** — required. The user's case for why this piece can compound. Skill validates / pushes back.
@@ -153,7 +153,7 @@ H2: Closing
 - [Brand-specific anti-patterns]
 - Avoid year-stamping ("in 2026," "this year," "currently").
 - Avoid trend references ("as TikTok has shown," "the latest").
-- For Field & Sun specifically: no "non-toxic," "clean beauty," "chemical-free."
+- For Field & Sun specifically: avoid rejected category language and claims the founder would not approve.
 - Avoid superlatives that age poorly ("the best," "the most advanced").
 - Avoid time-bound stats without methodology ("57% of dermatologists agree" without source).
 
@@ -209,7 +209,7 @@ H2: Closing
 - **FAQPage**: required (FAQ section is included).
 - **BreadcrumbList**: Home → Blog → [Post].
 - **Author**: full Person schema with credentials, URL to author bio page.
-- **Reference**: see [generate-schema-markup](../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md) when implementing.
+- **Reference**: see [generate-schema-markup](../../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md) when implementing.
 
 ## Compounding-traffic forecast
 
