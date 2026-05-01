@@ -105,6 +105,19 @@ Every leaf topic folder that hasn't been populated yet contains a `.gitkeep` fil
 - Decided `generate-business-profile` drops the stub on workspace creation; users don't have to remember.
 - Decided per-business CLAUDE.md captures: decisions, learnings, constraints/quirks, active experiments — distinct from artifact files (which capture *what was produced*).
 
+### 2026-04-30 — `docs/` renamed to `playbook/`
+- Decided `docs/` was misleading (implies meta-documentation about the repo) and renamed to `playbook/`.
+- All path references updated. Cross-links between leaves use relative paths so they survived transparently.
+- New convention name pairs cleanly with `skills/` at root: the playbook tells you what to do; the skills do it.
+
+### 2026-04-30 — On-page SEO category complete (Category 2 of 10)
+- 1 category overview + 7 leaf READMEs + 9 skills shipped.
+- Skill mix: 1 leaf has 2 skills (URL Structure: planner + executor; Internal Linking: planner + executor); 5 leaves have 1 executor each. URL Structure and Internal Linking warrant the planner because they're site-wide architectural decisions, not per-page operations.
+- Established artifact subfolder names for this category: `titles/`, `descriptions/`, `headers/`, `urls/`, `internal-linking/`, `images/`, `content-optimization/`.
+- Confirmed the format established in Strategy holds at scale across a 7-leaf category. No drift.
+- Cross-category links going forward into Technical SEO, Content SEO, Analytics, UX, AI SEO are placeholders — they'll resolve once those categories are built. This is fine; relative paths work as the categories land.
+- `.gitkeep` count: 53 (toolkit start) → 48 (after Strategy) → 41 (after On-page). 41 leaves remaining across 8 categories.
+
 ## Learnings about working in this repo
 
 *Add notes here as patterns emerge from working sessions. Keep terse. Useful for future Claude sessions navigating the same repo.*
