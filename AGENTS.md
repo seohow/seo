@@ -194,6 +194,18 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - Three working postures named explicitly: open (allow all), visibility-only (allow retrieval, block training), strict-block (block all). The skills don't impose a posture — the founder chooses; the skills enforce.
 - Technical SEO is now 10 leaves total, considered v1-final.
 
+### 2026-05-01 — UX category complete (Category 7 of 10)
+
+- 1 category overview + 6 leaf READMEs + 6 skills shipped.
+- Skill mix: 6 leaves with 1 skill each — most are audits / design-reviews. The `plan-ab-test` skill is per-test (used per candidate test, not as a quarterly cadence) — distinct usage pattern from the other audit skills.
+- Established artifact subfolder names for this category: `ux/` (single shared subfolder; outputs date-stamped or test-slug-stamped: `page-speed-ux-audit-*.md`, `mobile-ux-audit-*.md`, `ux-design-review-*.md`, `ab-test-*.md`, `conversion-funnel-diagnosis-*.md`, `accessibility-audit-*.md`).
+- Distinguished from Technical SEO's overlapping leaves (Site Speed, Indexing) by operating mode: Technical SEO chases ranking thresholds; UX chases felt experience + conversion. Same data sometimes; different remediation lens. Captured this distinction explicitly in 01. Page Speed UX and 02. Mobile Optimization READMEs.
+- The `audit-accessibility` skill includes legal-exposure framing (ADA / EU Accessibility Act) — a category-specific responsibility distinct from the other audit skills. Captures that accessibility is operationally legal-pressure-sensitive in 2026.
+- The `analyse-conversion-funnel` skill explicitly routes findings to specific fix skills (UX design, mobile, page speed, conversion tracking) rather than producing generic recommendations. This routing pattern is portable to future diagnostic skills.
+- The `plan-ab-test` skill includes pre-registration discipline (sample size locked before launch; no mid-test peeking) + A/A instrumentation check + SEO-safety review. Statistical rigor + SEO-safety in one place.
+- Cross-references are dense within category (page speed ↔ mobile ↔ design ↔ funnel ↔ A/B test all interlock) and outward to Technical SEO (CWV, indexing), Analytics (conversion tracking, traffic analysis), Content SEO (pillar UX), Off-page SEO (link-magnet UX).
+- `.gitkeep` count: 19 (post-Off-page) → 13 (after UX). 13 leaves remaining across 3 categories.
+
 ### 2026-05-01 — Off-page SEO category complete (Category 6 of 10)
 
 - 1 category overview + 8 leaf READMEs + 8 skills shipped.
