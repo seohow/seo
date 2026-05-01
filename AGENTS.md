@@ -79,6 +79,22 @@ The per-business working-memory file is still named `CLAUDE.md` for compatibilit
 
 When writing examples that reference Field & Sun: pull facts (hero product names, AOV, geography, brand voice, competitors) from the profile rather than inventing them. The point of having a canonical sample is consistency — readers should be able to cross-reference any example against the profile and find the same brand.
 
+### Example drift prevention
+
+Before finishing any playbook README or skill work, actively check for example drift. Do not rely on memory.
+
+- Every worked example should name or clearly imply **Field & Sun** unless the text is explicitly generic template scaffolding.
+- Do not introduce one-off fictional brands, anonymous "example companies," or legacy categories from the earlier cleaning-brand fixture.
+- Avoid legacy fixture residue: `Refillable Cleaning Co`, laundry strips, dish tabs, surface cleaners, Blueland-as-primary-competitor framing, `/collections/refillable-laundry`, and off-topic laundry examples.
+- Avoid Field & Sun founder-rejected language in playbook examples and skills: `clean beauty`, `non-toxic`, `chemical-free`, `plastic-free`. If a voice constraint needs to be described, use neutral wording like "vague category language" or "unsupported safety claims."
+- When reviewing a category, run a stale-language scan before finishing:
+
+  ```sh
+  rg -n "Refillable|Cleaning Co|laundry|clean beauty|non-toxic|chemical-free|plastic-free" playbook/
+  ```
+
+- For new examples, use facts from `businesses/field-and-sun/business_profile.md` and `businesses/field-and-sun/CLAUDE.md`: Daily Glow Serum, Mineral Sun Drops SPF 50, the complementary skincare lineup, Field & Sun's actual voice rules, current competitors, geography, goals, and artifact history.
+
 ### `.gitkeep` files in unbuilt leaves
 
 Every leaf topic folder that hasn't been populated yet contains a `.gitkeep` file (e.g. `playbook/02. On-page SEO/01. Title/.gitkeep`). It exists only to make the empty folder commit-able to git. **When you populate a leaf** (write its README and at least one skill), **delete the `.gitkeep` from that folder in the same change.** Leaving a `.gitkeep` next to a real README is a small but real piece of clutter and signals "this folder is empty" when it isn't. The progress of the toolkit is partly visible by how many `.gitkeep` files remain — fewer is better.
@@ -211,6 +227,12 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - Decided `AGENTS.md` is the canonical repo-level instruction file for both Codex and Claude CoWork.
 - Root `CLAUDE.md` stays as a compatibility pointer so Claude workflows still find the same instructions.
 - Per-business `CLAUDE.md` files stay under their existing filename for compatibility, but the content is shared working memory for any AI collaborator.
+
+### 2026-05-01 — Example drift checks made explicit
+
+- Added an "Example drift prevention" convention because category reviews kept finding small remnants of the earlier cleaning-brand fixture and literal rejected voice phrases.
+- Future category work should include a stale-language scan before finishing, plus a profile read when creating new examples.
+- Field & Sun remains the only canonical sample business for v1 examples; generic examples are allowed only as templates, not as alternate fictional brands.
 
 ## Learnings about working in this repo
 
