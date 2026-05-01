@@ -160,6 +160,14 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - Renames: `07. Analytics` → `05. Analytics`; `05. Off-page SEO` → `06. Off-page SEO`; `08. UX` → `07. UX`; `06. International SEO` → `08. International SEO`. The other six categories kept their numbers.
 - All cross-links in Strategy + On-page content updated via mass `sed` substitution. Root README's categories table and learning-path numbering both updated. CLAUDE.md doesn't reference category numbers by string, so no changes here aside from this entry.
 
+### 2026-05-01 — Technical SEO category complete (Category 3 of 10)
+- 1 category overview + 9 leaf READMEs + 11 skills shipped.
+- Skill mix: 7 leaves have 1 executor each (audit-style); 2 leaves have planner + executor (Schema Markup: `plan-schema-strategy` + `generate-schema-markup`; Site Migration: `plan-site-migration` + `build-redirect-map`). Schema and Migration earned the planner because they're strategic / project-level, not per-page operations.
+- Established artifact subfolder names for this category: `crawlability/`, `indexing/`, `site-speed/`, `schema/`, `canonicals/`, `sitemaps/`, `javascript-seo/`, `log-analysis/`, `migration/`.
+- Two leaves explicitly call out platform-applicability boundaries — JavaScript SEO doesn't apply to default Shopify (server-rendered); Log File Analysis doesn't apply to platforms without log access (Shopify, Webflow). The skills' "When NOT to use this skill" sections protect against running them in the wrong context.
+- Format from Strategy + On-page held cleanly across 9 leaves. Cross-references are denser in this category — the auditing skills cite each other heavily (canonical / sitemap / indexing audit findings often feed each other) and forward-link to migration as the high-stakes event. This is healthy and matches the way real technical-SEO work happens.
+- `.gitkeep` count: 50 (post-On-page) → 41 (after Technical). 41 leaves remaining across 7 categories.
+
 ### 2026-04-30 — On-page SEO category complete (Category 2 of 10)
 - 1 category overview + 7 leaf READMEs + 9 skills shipped.
 - Skill mix: 1 leaf has 2 skills (URL Structure: planner + executor; Internal Linking: planner + executor); 5 leaves have 1 executor each. URL Structure and Internal Linking warrant the planner because they're site-wide architectural decisions, not per-page operations.
