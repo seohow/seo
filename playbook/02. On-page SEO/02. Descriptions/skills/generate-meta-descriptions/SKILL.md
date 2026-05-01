@@ -137,7 +137,7 @@ Save the produced file to `businesses/<slug>/descriptions/<page-slug-or-batch-na
 - Don't stuff the primary keyword. Once is enough.
 - Don't forget mobile. If the CTA or proof point lives in characters 130-155, mobile users won't see it.
 - Don't promise something the page doesn't deliver. The CTR uplift is short-term; the bounce penalty is permanent.
-- Don't ignore the current title. Description has to complement, not duplicate. If the title says "Plastic-Free Refills," the description shouldn't lead with "Plastic-Free Refills" again.
+- Don't ignore the current title. Description has to complement, not duplicate. If the title says "Mineral Sun Drops SPF 50," the description shouldn't lead with the exact same phrase again.
 - Don't use the same description across many pages. Generic templated descriptions are a Google-rewrites-them-all signal.
 - Don't add year stamps unless the page is genuinely fresh. Year-stamping in descriptions ages worse than year-stamping in titles.
 
@@ -147,14 +147,14 @@ Save the produced file to `businesses/<slug>/descriptions/<page-slug-or-batch-na
 
 **Output (abbreviated):**
 
-SERP read: top 10 descriptions are dominated by benefit + proof combinations ("brightens skin," "vitamin-enriched," "ships next day"). Average length 142 chars. Two listicles read as comparison-led. Brand product pages tend to lead with the benefit and end with the offer.
+SERP read: top 10 descriptions are dominated by benefit + proof combinations ("brightens skin," "vitamin-enriched," "specific ingredient percentages"). Average length 142 chars. Two listicles read as comparison-led. Brand product pages tend to lead with the benefit and end with the offer.
 
-**Variant A — Benefit-led:** "Hydrating serum for radiance — nutrient-rich formula that visibly brightens skin in 7 days. Ships next day, free shipping on orders over $60." (146 chars). Mobile cut at "Hydrating serum for radiance — nutrient-rich formula that visibly brightens skin in 7 days." First-sentence stand-alone: yes. KW: front. Intent fit: yes. Voice: yes. CTA: implicit (Shop). Differentiation: strong (7-day visible result is distinct in this SERP). **Composite: high.**
+**Variant A — Benefit-led:** "Hydrating serum for radiance — 15% vitamin C, 4% niacinamide, and hyaluronic acid in a refillable daily routine." (119 chars). Mobile cut at full length. First-sentence stand-alone: yes. KW: front. Intent fit: yes. Voice: yes. CTA: implicit (Shop). Differentiation: strong (specific percentages are distinct in this SERP). **Composite: high.**
 
-**Variant B — Proof-led:** "Hydrating serum with vitamins + hyaluronic acid. Lightweight, fast-absorbing, dermatologist-approved. Glow in 7 days guaranteed." (139 chars). Mobile cut at full length. First-sentence stand-alone: yes. KW: front. Intent fit: yes. Voice: yes. CTA: implicit. Differentiation: moderate. Composite: medium-high.
+**Variant B — Proof-led:** "Hydrating serum with vitamin C, niacinamide, and hyaluronic acid. Lightweight texture for everyday morning routines." (116 chars). Mobile cut at full length. First-sentence stand-alone: yes. KW: front. Intent fit: yes. Voice: yes. CTA: implicit. Differentiation: moderate. Composite: medium-high.
 
 […2 more variants…]
 
-**Recommendation:** Ship Variant A. It earns the click in this SERP because the 7-day visible result is the most distinct differentiator and fast shipping is the most concrete offer. Variant B is the alternative — keep it on file if A doesn't lift CTR after 30 days; the proof framing (dermatologist-approved) might resonate better with the clinical-skincare customer segment.
+**Recommendation:** Ship Variant A. It earns the click in this SERP because the specific ingredient percentages are distinct, credible, and aligned with Field & Sun's ingredient-led voice. Variant B is the alternative — keep it on file if A doesn't lift CTR after 30 days; the simpler routine framing may resonate better with shoppers who want plain-language skincare guidance.
 
 Implementation checklist: update Shopify, verify, submit URL to GSC, monitor.

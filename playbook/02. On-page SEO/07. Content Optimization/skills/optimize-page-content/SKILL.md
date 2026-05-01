@@ -51,8 +51,8 @@ If cluster, intent, or current content is missing, ask before producing the rewo
    - **Own product testing** — D2C brands can test their own products in conditions publishers can't.
    - **Customer / community evidence** — quotes, reviews, before/afters from real customers.
    - **Founder / expert perspective** — first-person knowledge from a brand insider.
-   - **Market-specific specificity** — e.g. EU-specific regulatory or safety information for an EU brand.
-   - **Niche use cases** — segments the publisher SERP top 5 doesn't serve well (parents, septic-system owners, hard-water regions, etc.).
+   - **Market-specific specificity** — e.g. US / Canada / UK availability or formulation context when that affects how the customer chooses.
+   - **Niche use cases** — segments the publisher SERP top 5 doesn't serve well (darker skin tones, sensitive skin, makeup layering, refill routines, etc.).
    List at least 2-3 angles that this brand can credibly own.
 4. **Plan the rework.** Produce the recommendation as:
    - **Add** — new sections (mapped to missing supporting keywords or missing depth signals). For each, a 1-3 sentence content hint OR (if "draft" mode) the actual section copy.
@@ -197,7 +197,7 @@ Rework plan:
 - New H2 "Does mineral sunscreen leave a white cast?" (covers supporting kw). Content hint: Mineral Sun Drops swatched on three skin tones with photos and observed blendability ratings.
 - New H2 "Mineral vs chemical sunscreen for sensitive skin" with comparison table. Content hint: reactivity profiles, customer feedback themes, recommended formats per skin type.
 - New H2 "Is zinc oxide safe for daily use?" Content hint: FDA OTC monograph status, non-nano vs nano, percentages we use (20% non-nano zinc oxide), link to primary sources.
-- 40-60 word direct answer at the top: "Mineral sunscreens use zinc oxide or titanium dioxide to physically scatter UV; chemical sunscreens absorb it through organic compounds. For sensitive skin, daily skincare layering, and reef-safe contexts, mineral wins; for invisible finish under makeup in humid climates, well-formulated chemical filters can be easier to wear."
+- 40-60 word direct answer at the top: "Mineral sunscreens use zinc oxide or titanium dioxide to scatter and absorb UV; chemical sunscreens use organic filters that absorb UV. For sensitive skin and clear ingredient visibility, mineral can be easier to evaluate; for invisible finish under makeup in humid climates, some chemical formulas can be easier to wear."
 
 **Expand:**
 
@@ -210,7 +210,7 @@ Rework plan:
 
 **Restructure:** Move "Where to buy" from middle to bottom; move comparison table to fold-1.
 
-**Format changes:** Comparison table (mineral vs chemical: UV protection, skin reactivity, reef safety, finish on skin, cost per ml). 5 new swatch / lifestyle photos. FAQ block at bottom.
+**Format changes:** Comparison table (mineral vs chemical: UV filters, skin feel, white-cast risk, reapplication, finish on skin, cost per ml). 5 new swatch / lifestyle photos. FAQ block at bottom.
 
 **E-E-A-T:** Date the swatch methodology ("April 2026 in-house testing on three skin tones"). Add date-stamped swatch photos. Link to 2 primary sources (FDA OTC sunscreen monograph, a peer-reviewed study on zinc oxide UV protection). Add 3 customer quotes from product reviews.
 

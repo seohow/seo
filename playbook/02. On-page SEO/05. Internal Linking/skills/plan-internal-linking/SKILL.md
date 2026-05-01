@@ -36,7 +36,7 @@ If the cluster map is missing, ask before producing the plan. Without clusters t
 
 ## Process
 
-1. **Identify hub topics.** Group clusters by topical proximity. A "hub topic" usually has 4-10 clusters under it (e.g. all the laundry-related clusters; all the dish-related clusters; all the eco/sustainability informational clusters). Each hub becomes a pillar pattern. Recommend 3-7 hubs for a small/medium site; 5-15 for a large site.
+1. **Identify hub topics.** Group clusters by topical proximity. A "hub topic" usually has 4-10 clusters under it (e.g. all the sun-care clusters, all the serum/skincare clusters, all the refill and packaging-waste informational clusters). Each hub becomes a pillar pattern. Recommend 3-7 hubs for a small/medium site; 5-15 for a large site.
 2. **Pick a pillar per hub.** The pillar is the broadest-intent page in the hub. Often a collection page (transactional hubs) or a pillar blog post (informational hubs). If no suitable pillar page exists yet, flag it as "needs new pillar page" and feed back to content planning.
 3. **Map spokes to pillar.** For each hub, list the 4-10 spoke pages — typically a mix of cluster-target pages (collection sub-pages, individual product pages, blog posts). Each spoke targets one cluster from the map.
 4. **Design the linking matrix.** For each hub:
@@ -157,7 +157,7 @@ Save the produced file to `businesses/<slug>/internal-linking/plan.md`. Create t
 
 **Output (abbreviated):**
 
-3 hubs: Sun care (8 spokes — peak-season priority), Serums / skincare (7 spokes), Refills & sustainability (4 spokes). Plus 1 cross-cutting hub: Ingredient education (5 informational spokes that link laterally across the product hubs).
+3 hubs: Sun care (8 spokes — peak-season priority), Serums / skincare (7 spokes), Refills & packaging waste (4 spokes). Plus 1 cross-cutting hub: Ingredient education (5 informational spokes that link laterally across the product hubs).
 
 Pillars:
 

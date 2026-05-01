@@ -68,7 +68,7 @@ For a D2C brand on Shopify or WooCommerce, the default alt-text behaviour is usu
 ## Common pitfalls
 
 - **Empty or auto-generated alt text.** The most common mistake. Default Shopify alt is often the product title, repeated on every image — this tells Google nothing.
-- **Keyword stuffing alt text.** "Tinted mineral sunscreen SPF 50 zinc oxide reef-safe vegan" — reads as spam to Google and to screen-reader users. Describe the image, naturally.
+- **Keyword stuffing alt text.** "Tinted mineral sunscreen SPF 50 zinc oxide no white cast vitamin C" — reads as spam to Google and to screen-reader users. Describe the image, naturally.
 - **Lazy-loading the LCP image.** Tanks mobile LCP scores. The hero / first-fold image must not be lazy-loaded.
 - **Ignoring format.** Serving 4MB JPEGs in 2026 is leaving Core Web Vitals points on the table. Convert to WebP or AVIF.
 - **Serving full-resolution images everywhere.** A 4000×3000 image displayed at 600×400 on mobile wastes 90% of the bytes. Use responsive `srcset` or upload at appropriate dimensions.

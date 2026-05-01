@@ -4,7 +4,7 @@
 
 ## What it is
 
-The title tag is the HTML `<title>` element of a page (`<title>Refillable Laundry Detergent — Brand</title>`). It appears as the clickable blue text in the Google SERP, in browser tabs, and as the default text when the page is shared on social. On most platforms (Shopify, WordPress, Webflow) it's distinct from the H1 — though it's common practice to align them where it makes sense.
+The title tag is the HTML `<title>` element of a page (`<title>Mineral Sun Drops SPF 50 — Field & Sun</title>`). It appears as the clickable blue text in the Google SERP, in browser tabs, and as the default text when the page is shared on social. On most platforms (Shopify, WordPress, Webflow) it's distinct from the H1 — though it's common practice to align them where it makes sense.
 
 Don't confuse it with the **H1**, which is the visible page heading inside the body. They serve different jobs: the title is the SERP-facing label, the H1 is the on-page label. They can match, but they don't have to.
 
@@ -19,8 +19,8 @@ For a D2C brand, getting the title right on a top product or collection page can
 - **Length and truncation** — Google truncates titles at roughly 580 pixels, which translates to about 50-60 characters in most fonts. Beyond that the title is cut with an ellipsis. The first 50-60 characters are what's actually seen and clicked.
 - **Primary keyword placement** — the target cluster's primary keyword should appear in the title, ideally in the first 50 characters. Front-loaded keywords carry more weight.
 - **Brand placement** — convention is `[Page Topic] — [Brand]` or `[Page Topic] | [Brand]`. Brand at the front (`[Brand] — Page Topic`) is fine for the homepage and for highly trusted brands but burns characters on every other page.
-- **Intent alignment** — the title should reflect the intent of the cluster. A commercial-intent page's title reads differently from an informational-intent page's title, even on the same topic ("Best Refillable Laundry Detergents 2026" vs. "How Refillable Laundry Detergents Work").
-- **CTR triggers** — modifiers that lift CTR when used honestly: year ("2026"), specificity ("12-Pack"), comparisons ("vs. Liquid"), benefits ("Plastic-Free"), category modifiers ("for Babies"). Don't stuff — use one, maybe two.
+- **Intent alignment** — the title should reflect the intent of the cluster. A commercial-intent page's title reads differently from an informational-intent page's title, even on the same topic ("Best Mineral Sunscreens 2026" vs. "How Mineral Sunscreen Works").
+- **CTR triggers** — modifiers that lift CTR when used honestly: year ("2026"), specificity ("SPF 50"), comparisons ("vs. chemical sunscreen"), benefits ("no white cast"), category modifiers ("for sensitive skin"). Don't stuff — use one, maybe two.
 - **Google rewrites** — Google sometimes rewrites titles in the SERP if it thinks yours is misleading or under-descriptive. Stay specific and accurate; rewrites are a signal something's off.
 
 ## A worked example
@@ -32,8 +32,8 @@ For a D2C brand, getting the title right on a top product or collection page can
 > **Step 2.** Generate variants:
 >
 > - `Hydrating Serum for Radiance — Daily Glow | Field & Sun`
-> - `Hydrating Serum: Plant-Based Glow Activators`
-> - `Hydrating Serum — Vitamins + Moisture, Ships Next Day`
+> - `Hydrating Serum with Vitamin C + Niacinamide`
+> - `Hydrating Serum — 15% Vitamin C, Daily Glow`
 > - `Luminizing Hydrating Serum — Field & Sun`
 >
 > **Step 3.** Score each: position of primary keyword (front), length (~55 chars), intent fit (transactional → commercial proof points), brand voice (warm, confident), differentiation against the SERP. Pick variant 1.
@@ -57,7 +57,7 @@ For a D2C brand, getting the title right on a top product or collection page can
 
 - **Treating title and H1 as the same.** They serve different roles and can be different — your title is for the SERP audience (must include the keyword + drive a click), your H1 is for the on-page audience (must orient the reader). Often they overlap, but don't force it.
 - **Front-loading the brand.** Putting your brand name first works for the homepage and a handful of name-recognised brands. For everyone else it burns the most valuable real estate.
-- **Stuffing modifiers.** "Best Refillable Plastic-Free Eco Non-Toxic Plant-Based Laundry Detergent 2026 — Brand" is not better than a clean title. One modifier, two at most.
+- **Stuffing modifiers.** "Best Tinted Mineral Sunscreen SPF 50 Zinc Oxide No White Cast 2026 — Brand" is not better than a clean title. One modifier, two at most.
 - **Year-stamping pages that don't need it.** Year modifiers help on commercial / "best of" content. They actively hurt on evergreen product or service pages.
 - **Misleading titles to bait clicks.** Google penalises clickbait. The CTR uplift is short-term; the rewrite or rank drop is long-term.
 - **Optimising titles in isolation from intent.** Same page, different intent → different title. A roundup-intent page's title pattern is "Best X for Y," not "Buy X."

@@ -42,7 +42,7 @@ The work is also where AI assistance produces the largest measurable time saving
 > **Step 3.** Plan the rework:
 >
 > - New H2 covering each missing supporting keyword.
-> - Add a comparison table (mineral vs chemical, side-by-side on UV protection, skin reactivity, reef safety, finish on skin, cost per ml).
+> - Add a comparison table (mineral vs chemical, side-by-side on UV filters, skin feel, white-cast risk, reapplication, finish on skin, cost per ml).
 > - Add a "tested on three skin tones" section: Mineral Sun Drops swatched on light, medium, deep skin — with photos and observed white-cast / blendability ratings.
 > - Add freshness markers (date the swatch test, name the conditions and skin tones tested).
 > - Add a "where mineral falls short" section to address objections honestly (greasy finish on humid days, harder to reapply over makeup). Counter-intuitively, this lifts rankings.

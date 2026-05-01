@@ -122,7 +122,7 @@ For a **batch run** (multiple pages), still produce per-page detail (above), but
 (Variants + scoring + recommendation for each page.)
 ```
 
-Save the produced file to `businesses/<slug>/titles/<page-slug-or-batch-name>.md`. Create the `titles/` sub-folder if it doesn't already exist. For single-page runs name the file after the page slug (e.g. `refillable-laundry-collection.md`); for batches use `batch-<YYYY-MM-DD>.md`. After writing, tell the user the file path so they can open it.
+Save the produced file to `businesses/<slug>/titles/<page-slug-or-batch-name>.md`. Create the `titles/` sub-folder if it doesn't already exist. For single-page runs name the file after the page slug (e.g. `mineral-sun-drops-spf-50.md`); for batches use `batch-<YYYY-MM-DD>.md`. After writing, tell the user the file path so they can open it.
 
 ## Quality bar
 

@@ -186,7 +186,7 @@ H2: How does mineral sunscreen protect your skin? ⭐
   H3: Non-nano vs nano formulations
 
 H2: Mineral vs chemical sunscreen — what's the real difference? ⭐
-    Content hint: Direct comparison table covering ingredients, skin reactivity, reef safety, and finish on skin.
+    Content hint: Direct comparison table covering active filters, skin feel, white-cast risk, reapplication, and finish on skin.
 
 H2: Does mineral sunscreen leave a white cast? ⭐
     Content hint: Honest answer + why some do and others don't + tinted-formula note.

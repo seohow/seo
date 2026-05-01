@@ -30,9 +30,9 @@ For a D2C brand, the meta description is one of the cheapest CTR levers availabl
 >
 > **Step 2.** Generate variants:
 >
-> - "Hydrating serum for radiance — nutrient-rich formula that ships in glass bottles. Ships next day, 30-day returns." (146 chars)
-> - "Hydrating serum that actually works. Vitamin-enriched formula, lightweight texture, and visible glow in 7 days." (139 chars)
-> - "Shop hydrating serum — daily glow activators, fast-absorbing serums. Professional skincare at home." (139 chars)
+> - "Hydrating serum for radiance — 15% vitamin C, 4% niacinamide, and hyaluronic acid in a refillable routine." (119 chars)
+> - "Hydrating serum for dull, uneven-looking skin. Ingredient-led daily formula with vitamin C, niacinamide, and hyaluronic acid." (132 chars)
+> - "Shop Daily Glow Serum — lightweight hydration, vitamin C, and niacinamide for a simple morning skincare routine." (118 chars)
 >
 > **Step 3.** Score each: length within target, primary keyword present, intent fit (commercial proof + transactional offer), voice match, distinct call to action, freshness vs. SERP neighbours.
 >

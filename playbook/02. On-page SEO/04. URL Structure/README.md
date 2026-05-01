@@ -67,7 +67,7 @@ Third — and most expensive when ignored — **URLs are the costliest thing to 
 - **Date-stamped blog URLs.** Visible aging on every URL; complicates content refresh; the URL is wrong as soon as the post is updated. Avoid unless news/timeliness is core.
 - **Duplicate URLs from CMS quirks.** Shopify's collection-prefixed product URLs are a classic example. Pick one canonical version per product/page and enforce it.
 - **Trailing-slash inconsistency.** Pick one. Enforce site-wide.
-- **Capitalised URLs in marketing assets.** Customers click `/Refillable-Laundry` from an email; Google sees a different URL. 301 lowercase variants to the canonical.
+- **Capitalised URLs in marketing assets.** Customers click `/Sun-Care` from an email; Google sees a different URL. 301 lowercase variants to the canonical.
 - **Migrating everything at once.** Risk-concentrated, hard to debug, painful to roll back. Batch by page type.
 
 ## Skills in this toolkit
