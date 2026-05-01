@@ -36,20 +36,20 @@ If you're working through this category for the first time, the highest-leverage
 
 **Pass 2 — Analysis baseline (1-2 weeks):**
 
-3. Run `analyse-search-performance` to baseline current GSC performance — which queries / pages / clusters are working, which aren't.
-4. Run `set-up-rank-tracking` if a third-party tool is in scope. Track the cluster-priority keywords daily.
-5. Run `analyse-traffic-patterns` to baseline GA4 traffic — channel mix, growth / decay trends, page-level winners and losers.
+1. Run `analyse-search-performance` to baseline current GSC performance — which queries / pages / clusters are working, which aren't.
+2. Run `set-up-rank-tracking` if a third-party tool is in scope. Track the cluster-priority keywords daily.
+3. Run `analyse-traffic-patterns` to baseline GA4 traffic — channel mix, growth / decay trends, page-level winners and losers.
 
 **Pass 3 — KPI discipline (ongoing):**
 
-6. Run `define-seo-kpis` to set the right metrics for the business and build the reporting dashboard.
-7. Run `audit-conversion-tracking` to confirm conversion events fire correctly and attribution is set up sensibly.
+1. Run `define-seo-kpis` to set the right metrics for the business and build the reporting dashboard.
+2. Run `audit-conversion-tracking` to confirm conversion events fire correctly and attribution is set up sensibly.
 
 **Pass 4 — Operating cadence (ongoing):**
 
-8. Weekly: scan GSC + rank tracking for anomalies; track top-priority keyword movement.
-9. Monthly: review KPI dashboard; identify decay candidates; feed insights back into Strategy / Content.
-10. Quarterly: full traffic + conversion analysis; refresh KPIs; recalibrate.
+1. Weekly: scan GSC + rank tracking for anomalies; track top-priority keyword movement.
+2. Monthly: review KPI dashboard; identify decay candidates; feed insights back into Strategy / Content.
+3. Quarterly: full traffic + conversion analysis; refresh KPIs; recalibrate.
 
 ## Pre-requisites and dependencies
 

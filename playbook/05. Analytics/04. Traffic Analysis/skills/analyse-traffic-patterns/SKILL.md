@@ -244,6 +244,7 @@ Anomalies: April 12-14 organic dip correlates with public reports of algorithm u
 Triangulation: GA4 revenue $124k vs Shopify $130k → 4.6% discrepancy (within tolerance). Note: DDA attribution; team had been reporting last-click ($96k); standardise.
 
 Top 5 actions:
+
 1. Audit blog → PDP linking (P0; `audit-page-internal-links`).
 2. Investigate mobile checkout (P0; UX handoff).
 3. Refresh refills cluster (P1; `plan-content-refresh`).

@@ -224,14 +224,17 @@ Save the produced file to `businesses/<slug>/analytics/gsc-audit-[YYYY-MM-DD].md
 **Output (abbreviated):**
 
 P0 (1):
+
 - 2 blog posts have accidental `noindex` (`/blog/skincare-routine-basics` and `/blog/spf-myths`); 1 hr fix.
 
 P1 (3):
+
 - Missing Domain property; URL-prefix only; 30 min to add via DNS.
 - 2 PDPs missing `aggregateRating` in Product schema; 2 hrs.
 - 12 blog posts in CWV "Needs improvement" on mobile (mainly hero images > 500KB); ~2 days handoff to image-optimisation.
 
 P2 (2):
+
 - 3 ex-contractors retain Edit access.
 - BigQuery bulk export not configured.
 

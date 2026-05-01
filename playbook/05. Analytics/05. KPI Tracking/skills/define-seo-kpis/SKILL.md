@@ -278,6 +278,7 @@ Save the produced file to `businesses/<slug>/analytics/seo-kpis-[YYYY].md`. Crea
 **Output (abbreviated):**
 
 Executive KPIs (5):
+
 1. Organic-search revenue (DDA-attributed) — target $550k Q2, $700k Q3.
 2. Organic % of total revenue — target 35%.
 3. Organic conversion rate — target 1.8%.
@@ -285,6 +286,7 @@ Executive KPIs (5):
 5. Share of voice on priority cluster head terms — target +5pp QoQ.
 
 Operating KPIs (10):
+
 1. Sun-care cluster sessions (target +50% QoQ).
 2. Skincare-ingredients cluster sessions.
 3. Refills cluster sessions (target stabilise).

@@ -252,17 +252,20 @@ Save the produced file to `businesses/<slug>/analytics/ga4-audit-[YYYY-MM-DD].md
 **Output (abbreviated):**
 
 P0 (3 issues):
+
 - `purchase` event missing `items` — product-level analytics broken; 4 hrs to fix.
 - `add_to_cart` marked as conversion — inflates conversion count; 30 min to unmark.
 - Consent Mode v2 not implemented — ~15% EU users untracked; 2 days dev work.
 
 P1 (4 issues):
+
 - Shopify-GA4 integration missing `view_item` event.
 - 2-month retention; should be 14 months.
 - Looker Studio reports use last-click while GA4 default is DDA — undocumented mismatch.
 - No SEO-specific audiences (organic visitors, cluster-X visitors).
 
 P2 (2 issues):
+
 - 3 ex-employees retain Edit access.
 - BigQuery export disabled; recommended for SEO analysis.
 

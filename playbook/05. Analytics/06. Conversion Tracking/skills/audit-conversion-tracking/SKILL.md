@@ -231,16 +231,19 @@ Save the produced file to `businesses/<slug>/analytics/conversion-tracking-audit
 **Output (abbreviated):**
 
 P0 (3):
+
 - `items` missing on ~15% of purchases (custom checkout flow); 3-5 days dev.
 - `add_to_cart` marked as conversion; 30 min unmark.
 - Consent Mode v2 partial; 1-2 days dev.
 
 P1 (3):
+
 - Looker Studio uses last-click while GA4 default is DDA; $124k vs $147k organic; 4 hrs to align.
 - No cluster attribution; 2-3 days analytics work to add via BigQuery mapping.
 - `view_item_list` event missing in Shopify-GA4 integration.
 
 P2 (2):
+
 - 3 ex-contractors retain GA4 Editor access.
 - Server-side tracking absent; recommended for current scale; 4-6 weeks dev.
 
