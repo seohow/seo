@@ -194,6 +194,17 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - Three working postures named explicitly: open (allow all), visibility-only (allow retrieval, block training), strict-block (block all). The skills don't impose a posture — the founder chooses; the skills enforce.
 - Technical SEO is now 10 leaves total, considered v1-final.
 
+### 2026-05-01 — Analytics category complete (Category 5 of 10)
+
+- 1 category overview + 6 leaf READMEs + 7 skills shipped.
+- Skill mix: 5 leaves with 1 skill each; 1 leaf (Search Console) has 2 skills (`audit-search-console-setup` for configuration + `analyse-search-performance` for query / page performance analysis) because GSC has both setup-audit and analysis surface area distinctly worth their own skill. The pattern matches what we did for Schema Markup and Site Migration in Technical SEO.
+- Established artifact subfolder names for this category: `analytics/` (single shared subfolder; per-skill outputs use date-stamped filenames like `ga4-audit-2026-05-01.md`, `gsc-performance-2026-05-01.md`, `traffic-analysis-2026-05-01.md`, `seo-kpis-2026.md`).
+- Three audit skills (`audit-ga4-setup`, `audit-search-console-setup`, `audit-conversion-tracking`) all use the same P0 / P1 / P2 severity grammar with root-cause / impact / fix / effort / verification per finding. Pattern is portable to future audit-shaped skills.
+- Triangulation as a quality bar: every audit + analysis skill explicitly compares GA4 vs source-of-truth (Shopify / payment processor / CRM), with ≤5% acceptable / 5-10% investigate / >10% likely measurement issue. Captures the discipline that GA4 numbers in isolation aren't auditable.
+- Cadence is named explicitly: weekly (15-30 min) + monthly (60-90 min) + quarterly (3-4 hr) + annual (half-day). Skills feed into the cadence rather than producing one-off outputs. Most skills are quarterly cadence (audit + analysis); `define-seo-kpis` is annual.
+- Cross-references are dense within category (audit GA4 → audit conversion → analyse traffic → define KPIs feed each other) and outward to Technical SEO (indexing, schema, site speed for diagnostic KPIs), Content SEO (refresh prioritisation), Strategy (wins backlog ROI). This matches how analytics actually operates as a feedback layer.
+- `.gitkeep` count: 33 (post-Content SEO) → 27 (after Analytics). 27 leaves remaining across 5 categories.
+
 ### 2026-05-01 — Content SEO category complete (Category 4 of 10)
 
 - 1 category overview + 8 leaf READMEs + 9 skills shipped.

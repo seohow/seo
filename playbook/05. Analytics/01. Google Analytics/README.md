@@ -1,0 +1,108 @@
+# Google Analytics
+
+> The foundational web-analytics platform — GA4. Where on-site behaviour is measured. The single most-checked dashboard in most marketing teams, and the one most likely to be misconfigured.
+
+## What it is
+
+Google Analytics 4 (GA4) is Google's free analytics platform — the successor to Universal Analytics, which sunset in July 2023. GA4 measures how visitors interact with the site: page views, sessions, events (button clicks, video plays, form submits, scroll depth), conversions (purchase, lead, sign-up), and the funnels that connect them. It's the foundation layer of marketing measurement for most brands; even teams using more sophisticated platforms (Amplitude, Mixpanel, Looker) typically run GA4 alongside as the lowest-common-denominator tool.
+
+For Field & Sun, GA4 is where the brand sees how organic-search visitors behave on-site: which pages they land on, which products they look at, how often they convert, what the path-to-purchase looks like. GA4's data feeds the SEO team's understanding of "is the traffic we earn turning into business?" — a question that pure ranking / traffic dashboards can't answer.
+
+## Why it matters
+
+Three reasons. First, **GA4 is the only ground-truth source for on-site behaviour**. GSC tells you what happens *before* the click (impressions, position, CTR). GA4 tells you what happens *after*. Without GA4, the SEO team is flying blind on the most important question — does the traffic do anything useful?
+
+Second, **GA4 is the conversion / revenue-attribution layer**. Linking SEO work to revenue requires GA4 (or equivalent) tracking conversions and attributing them to channels. Without working GA4, every revenue claim ("SEO drove $200k last quarter") is a guess.
+
+Third, **GA4 setup is consistently broken across most sites**. The transition from Universal Analytics to GA4 surfaced configuration issues across the industry: missing events, broken ecommerce data, double-counted conversions, mis-defined audiences. ~50-70% of mid-size sites have at least one material GA4 issue. Auditing before trusting the data isn't optional.
+
+For Field & Sun: investing 1-2 days in a thorough GA4 audit before any reporting decisions is plausibly the highest-ROI analytics work the team can do this quarter.
+
+## Core concepts
+
+- **GA4 vs. Universal Analytics.** GA4 is event-driven (every interaction is an event with parameters). UA was session-driven (sessions had hits). The mental model is different; many teams mis-translated UA reports into GA4 and produced misleading data.
+- **Events and parameters.** Everything in GA4 is an event. Page views are events. Clicks are events. Conversions are events. Each event has parameters (e.g. a `purchase` event has `transaction_id`, `value`, `items`). Custom events are how brands track behaviours specific to their site.
+- **Conversions (formerly "key events").** A conversion is a labelled event that matters for the business — purchase, sign-up, lead form submit, contact. Marking events as conversions powers the "Conversions" reporting throughout GA4.
+- **Audiences.** Definable user segments (e.g. "users who viewed the SPF collection but didn't add to cart"). Audiences power retargeting and segment-based reporting.
+- **Ecommerce tracking.** GA4's built-in ecommerce events (`view_item`, `add_to_cart`, `begin_checkout`, `purchase`) require correct implementation on the storefront. Shopify, WooCommerce, Magento all have official GA4 integrations; custom builds usually need GTM-based implementation.
+- **Attribution model.** GA4's default is "data-driven attribution" (DDA) — Google's algorithm assigns conversion credit across touchpoints. Last-click is also available. Choice of model materially affects how much revenue is credited to organic search.
+- **Reporting interface.** GA4's UI is widely criticised; the most useful reports are accessed via Explorations (custom report builder) or via the Looker Studio integration.
+- **GA4 ↔ GSC integration.** GA4 has a built-in GSC integration that surfaces query-level data alongside GA4 metrics. Underused; valuable.
+- **Data retention.** GA4's default user-data retention is 2 months; can be extended to 14 months. Important for year-over-year comparisons; teams that keep the default lose the ability to do YoY analysis.
+- **Consent Mode v2.** Required in EU / UK; affects how GA4 handles users who reject tracking. Implementation gaps cause material under-reporting.
+
+## A worked example
+
+> **Scenario:** Field & Sun's GA4 was migrated from UA in 2023. Marketing reports "ecommerce conversion rate" each month, but the number has felt off — ~40% lower than what Shopify reports natively, with no obvious reason. Before scaling SEO investment, the team audits GA4.
+>
+> **Step 1.** Run `audit-ga4-setup`. The skill walks through configuration, events, conversions, audiences, ecommerce, attribution, consent.
+>
+> **Step 2.** Findings:
+>
+> - **Property setup:** correct (single property, all subdomains tracked).
+> - **Events:** `purchase` event is firing, but the `items` parameter is missing — purchases are recorded but product-level data isn't. This is why product-page conversion analysis has been impossible.
+> - **Conversions:** `add_to_cart` is marked as a conversion — incorrect (it's a funnel event, not a goal). Inflates the conversion count materially.
+> - **Audiences:** only the default audiences are defined; no SEO-specific audiences (e.g. "organic visitors who viewed SPF").
+> - **Ecommerce:** Shopify-GA4 integration is missing the `view_item` event; product-page views aren't being tracked.
+> - **Attribution:** DDA is on by default; team had been reporting "last-click" numbers from Looker Studio without realising. ~30% of organic-credited revenue actually comes from DDA-credited multi-touch paths.
+> - **Consent Mode:** v2 not implemented; ~15% of EU users not tracked at all.
+>
+> **Step 3.** Fix list (5 days of dev work):
+>
+> - Re-implement `purchase` with full `items` parameter.
+> - Un-mark `add_to_cart` as conversion; mark `begin_checkout` instead.
+> - Define 4 SEO-specific audiences.
+> - Re-deploy Shopify-GA4 integration to fire all 5 ecommerce events.
+> - Standardise on DDA reporting (vs last-click).
+> - Implement Consent Mode v2.
+>
+> **Step 4.** Result: 30 days post-fix, GA4 conversion rate now matches Shopify within 5% (vs the previous 40% gap). Product-level analysis is possible. Organic-search revenue contribution is reported using DDA attribution and reconciled monthly with Shopify.
+
+## How to do it
+
+1. **Verify property setup.** One property per business (cross-subdomain). Domain-level reporting where multi-domain. Internal traffic filtered.
+2. **Audit events.** Are all expected events firing? Are parameters complete? Use GA4 DebugView or GTM Preview to trace.
+3. **Audit conversions.** Are the right events marked as conversions? Are duplicate-fire events not double-counting?
+4. **Audit ecommerce.** All 5 ecommerce events (`view_item_list`, `view_item`, `add_to_cart`, `begin_checkout`, `purchase`) firing with full parameters.
+5. **Define audiences.** SEO-relevant audiences (organic visitors, cluster-X visitors, didn't-convert visitors) for retargeting and segment analysis.
+6. **Configure attribution.** Pick a model — DDA, last-click, or first-click — and report consistently. Different models for different audiences (e.g. DDA for marketing reports; last-click for media buyers) is fine, but document.
+7. **Set retention to 14 months.** Default is 2 months; extend immediately.
+8. **Connect to GSC.** GA4 → Admin → Search Console links. Populates the Search Console reports inside GA4.
+9. **Connect to BigQuery (large sites).** GA4 → BigQuery export is free and gives you raw event-level data. Worth setting up for any site doing meaningful SEO analysis.
+10. **Implement Consent Mode v2.** Required in EU; affects all GA4 measurement.
+11. **Build the reporting layer.** GA4's native reports are limited; most teams report from Looker Studio or BigQuery.
+12. **Re-audit quarterly.** Setup drifts. New site features, new events, removed events all change the data shape.
+
+## Common pitfalls
+
+- **Missing or incomplete `items` parameter on ecommerce events.** Most common GA4 issue; breaks product-level analytics.
+- **`add_to_cart` marked as conversion.** Inflates conversion count; not a goal event.
+- **Internal traffic not filtered.** Office IPs, dev environments, employee browsing skewing data.
+- **Cross-subdomain not configured.** Sessions break across `www.brand.com` → `shop.brand.com`; appears as multiple users / sessions.
+- **Looker Studio reports using last-click while GA4 default is DDA.** The numbers don't match across reports; team thinks data is wrong when actually it's attribution-model mismatch.
+- **2-month data retention.** YoY comparison impossible. Set to 14 months.
+- **No Consent Mode v2 in EU.** 10-30% of EU traffic untracked; reports under-state organic.
+- **Different GA4 properties for different subdomains / brands.** Should usually be one property; multi-property setup splits user journeys.
+- **Trusting `Sessions` instead of `Engaged sessions`.** GA4 changed the session definition; many UA-trained marketers misread the new metric.
+- **Ignoring data sampling.** Large sites hit sampling thresholds in standard reports; BigQuery export bypasses this.
+- **Not backing up data.** GA4 can purge data on retention boundary; export to BigQuery if you need a long-term record.
+
+## Skills in this toolkit
+
+- **[audit-ga4-setup](skills/audit-ga4-setup/SKILL.md)** — produces a structured GA4 configuration audit covering property setup, events, conversions, audiences, ecommerce tracking, attribution model, retention, GSC integration, and Consent Mode. Output is a prioritised fix list with severity (P0 / P1 / P2) and effort estimates. The audit that should run before any GA4-based reporting is trusted.
+
+## Related topics
+
+- **[02. Search Console](../02.%20Search%20Console/README.md)** — GA4 + GSC together are the standard SEO measurement pair. Link them; report on both.
+- **[06. Conversion Tracking](../06.%20Conversion%20Tracking/README.md)** — conversion-event setup is part of GA4 setup; the dedicated leaf goes deeper into attribution / revenue measurement.
+- **[04. Traffic Analysis](../04.%20Traffic%20Analysis/README.md)** — GA4 is the primary data source for traffic-pattern analysis.
+- **[05. KPI Tracking](../05.%20KPI%20Tracking/README.md)** — GA4 metrics feed the KPI dashboard.
+- **[07. UX / 04. A/B Testing](../../07.%20UX/04.%20A%2FB%20Testing/README.md)** *(planned)* — GA4 audiences power experiment targeting in many platforms.
+
+## Further reading
+
+- [Google Analytics 4 — Official Help Center](https://support.google.com/analytics/topic/9143232) — canonical product documentation; comprehensive but dense.
+- [Simo Ahava — GA4 / GTM Implementation Deep-Dives](https://www.simoahava.com/) — the practitioner reference for GA4 implementation. High signal.
+- [Charles Farina — GA4 Migration & Best Practices](https://www.charlesfarina.com/) — strong on the conceptual differences between UA and GA4.
+- [Krista Seiden — GA4 Reporting in Looker Studio](https://www.kristaseiden.com/) — practical templates for GA4 reporting.
+- [Google — GA4 BigQuery Export Schema](https://support.google.com/analytics/answer/7029846) — reference for raw-data analysis in BigQuery.

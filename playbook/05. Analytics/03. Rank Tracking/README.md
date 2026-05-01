@@ -1,0 +1,102 @@
+# Rank Tracking
+
+> Daily-granularity position tracking for the keywords that matter. Complements GSC's average-position data with daily snapshots, competitor visibility, and SERP-feature monitoring. Worth the cost for the right keyword set; expensive theatre for the wrong one.
+
+## What it is
+
+Rank tracking is the practice of tracking the search-engine ranking position of specific keywords on a daily (or near-daily) basis using third-party tools — Ahrefs, Semrush, AccuRanker, Nightwatch, Sistrix, SE Ranking, and dozens more. Each tool maintains its own bot fleet that queries Google (and sometimes Bing) from various locations and stores the results, giving the user a daily / weekly / monthly view of how a keyword's position changes over time.
+
+For Field & Sun, rank tracking is most useful as a complement to GSC: GSC reports *average* position over a date range and lacks SERP-feature visibility (Featured Snippets, AI Overviews, "People Also Ask"); a rank tracker reports *daily* position, who else ranks alongside, and which SERP features the brand is or isn't winning.
+
+## Why it matters
+
+Three reasons. First, **rank tracking gives daily granularity that GSC's averages obscure**. A query that sat at position 5 for 25 days and dropped to 18 for 5 days reports as ~7 average position in GSC. Rank tracking shows the actual decay (position 5 → 18) and the timing — useful when investigating algorithm updates, SERP layout changes, or competitive moves.
+
+Second, **rank tracking surfaces competitor and SERP-feature data GSC can't**. Who else ranks for the brand's target keywords? Are competitors winning Featured Snippets, AI Overviews, "People Also Ask," product carousels, image packs? GSC reports clicks-on-the-brand only; rank tracking maps the full SERP.
+
+Third, **rank tracking provides early-warning signals**. Significant position drops on priority keywords often precede traffic drops by 2-4 weeks. Tracking the right keyword set surfaces problems before they show up in GSC clicks or GA4 sessions.
+
+The trade-off: rank tracking tools are expensive ($100-1,000+/mo for serious use) and the data is only useful at the keyword set the user actually tracks. A poorly chosen keyword set produces dashboards nobody acts on. The discipline is in the keyword selection, not the tool.
+
+## Core concepts
+
+- **The keyword set is the asset, not the tool.** Tools are interchangeable; the curated tracking list is what produces value. 50-200 keywords is typical for a focused brand; >500 starts to dilute attention.
+- **What to track.** Cluster-priority keywords (the head terms for clusters where the brand competes), branded keywords (defensive monitoring), competitor brand-comparison keywords ("[brand] vs [competitor]"), high-revenue commercial keywords, surge candidates from emerging clusters.
+- **Daily vs weekly cadence.** Daily for top 50 priority keywords; weekly for the longer tail. Daily on everything is unnecessarily expensive.
+- **Mobile vs desktop.** Track both where intent meaningfully differs; mobile-first for D2C / consumer brands.
+- **Geographic granularity.** Track in the markets the brand operates. Multi-market brands need multi-market tracking; single-market brands save by tracking only the relevant market.
+- **SERP-feature tracking.** Separate column from position. Tracks whether the brand is in Featured Snippet / AI Overview / Local Pack / Image Pack / Video / Knowledge Panel / Sitelinks. Often more useful than position-only.
+- **Share of voice.** Aggregate metric — what % of total tracked-keyword visibility belongs to the brand vs competitors. Useful at the cluster / category level for executive reporting.
+- **Tool-data consistency.** Different rank trackers report slightly different positions for the same keyword (different bot pools, different times of day, different personalisation handling). Pick one tool and stick with it for trend consistency; don't compare absolute positions across tools.
+- **Daily noise.** Position varies day-to-day even with no real change (Google's testing, geographic noise, personalisation). 7-day rolling average smooths the noise; absolute daily values are noisy.
+- **Priority keyword review cadence.** Quarterly. Keyword priorities shift as the strategy evolves.
+
+## A worked example
+
+> **Scenario:** Field & Sun has been using GSC's Performance report exclusively for SEO measurement. The marketing team wants daily-granularity tracking for the priority sun-care keywords, plus visibility on what competitors are winning.
+>
+> **Step 1.** Run `set-up-rank-tracking`. Skill produces a tracking-project spec: tool recommendation, keyword set, competitors, cadence, geography, integration plan.
+>
+> **Step 2.** Output:
+>
+> - **Tool recommendation:** AccuRanker (mid-range pricing; daily updates; strong SERP-feature coverage). Alternative: Ahrefs / Semrush if the brand needs the broader competitive intelligence and is willing to pay for it.
+> - **Keyword set:** 120 keywords across sun-care (60), skincare-ingredients (35), refills (10), branded (15).
+> - **Competitors:** Supergoop, Saie, ILIA, EltaMD (4 direct + 1 dermatologist-recommended brand).
+> - **Geography:** US (primary market) + UK (secondary).
+> - **Cadence:** daily for top 50; weekly for remaining 70.
+> - **SERP-feature tracking:** Featured Snippet, AI Overview, "People Also Ask," Image Pack on every keyword.
+> - **Integration:** weekly export to Looker Studio for dashboard; alert thresholds (≥5-position drop on priority keywords) set up.
+>
+> **Step 3.** Skill produces the Looker Studio dashboard mockup with cluster-level share-of-voice + competitor comparison.
+>
+> **Step 4.** Result: 60 days post-setup, the team catches a position drop on "is zinc oxide safe daily" (position 6 → 12 over 4 days, which would have shown only as a slight average dip in GSC). Investigation reveals the post lost a Featured Snippet to a competitor; rewrite recovers position within 14 days. Without daily rank tracking, the team would likely have noticed the traffic drop 3-4 weeks later in GSC.
+
+## How to do it
+
+1. **Decide if rank tracking earns its cost.** Rank tracking makes sense when:
+   - The brand has 50+ priority keywords worth daily attention.
+   - Competitors are credible enough that competitive visibility matters.
+   - The team will *actually use* the data weekly (not just pay for the tool).
+   For very small brands (<25 priority keywords, no real competitors), GSC alone is often enough.
+2. **Choose the tool.** Match budget, market coverage, SERP-feature granularity, and integration needs. AccuRanker (specialised, fast), Ahrefs (broader competitive), Semrush (broader marketing suite), Nightwatch / SE Ranking (mid-market value), Sistrix (Europe-strong), Pi Datametrics (enterprise). Tool choice matters less than the keyword set.
+3. **Build the keyword set with `set-up-rank-tracking`.** Pull from cluster map; prioritise by cluster importance + commercial value; cap at 200 for most brands.
+4. **Add competitors.** 3-6 direct competitors typically. Include 1-2 "aspirational" competitors (brands you want to compete with at scale) and 1-2 surprise competitors (publishers, marketplaces — Wirecutter, NYT — that show up unexpectedly).
+5. **Set geography + device.** Single-market brands: one country + mobile-primary. Multi-market: separate tracking projects per market.
+6. **Configure SERP-feature tracking.** At minimum: Featured Snippet, AI Overview, "People Also Ask," Image Pack, Video. Add Local Pack if local SEO is in scope (currently parked).
+7. **Set up alerts.** ≥5-position drops on priority keywords; SERP-feature wins / losses; competitor surges.
+8. **Build the dashboard.** Looker Studio + tool's API. Cluster-level rollup, share-of-voice trends, top winners / decliners weekly.
+9. **Establish review cadence.** Weekly: 15-minute glance at alerts + top movers. Monthly: cluster trends + competitor analysis. Quarterly: keyword-set review (add / remove based on strategy).
+10. **Connect to other tools.** Cross-reference rank-tracking decay signals with GSC clicks, GA4 conversions, refresh backlog.
+
+## Common pitfalls
+
+- **Tracking too many keywords.** Lists of 1,000+ keywords produce dashboards nobody reads. 100-200 priority keywords is the sweet spot for most brands.
+- **No keyword-set review.** Strategy evolves; the keyword set should evolve. Quarterly review is the minimum.
+- **Daily-position obsession.** Daily position is noisy. Use 7-day rolling averages for analysis; daily for alerts only.
+- **Tool-comparison theatre.** Switching tools regularly destroys trend continuity. Pick one and stick.
+- **Treating rank-tracker data as truth when GSC says otherwise.** GSC is closer to ground truth (Google's own data); rank tracker is closer to "real-time signal." When they disagree on a long-term trend, GSC usually wins.
+- **Skipping SERP-feature tracking.** Featured Snippet / AI Overview / "People Also Ask" presence often matters more than position-1 ranking these days. Tools that track only position miss the bigger picture.
+- **No competitor selection.** Tracking 25 random competitors produces noise. 3-6 direct + 1-2 publishers is the right shape.
+- **Over-celebrating position 1.** Position 1 with 0 SERP-feature presence often loses to position 3 with Featured Snippet. The hierarchy is feature-rich position > vanilla position.
+- **Buying the most expensive tool by default.** Mid-tier tools (AccuRanker, Nightwatch) often cover the use case for a fraction of Ahrefs / Semrush cost. Match tool to need.
+- **Not exporting / backing up.** If you change tools, you lose the historical data. Export quarterly to a CSV / data-warehouse for long-term continuity.
+
+## Skills in this toolkit
+
+- **[set-up-rank-tracking](skills/set-up-rank-tracking/SKILL.md)** — produces a rank-tracking project spec: tool recommendation (matched to budget + use case), curated keyword set (pulled from cluster map and ranked by priority), competitor selection, geographic + device + cadence config, SERP-feature tracking plan, alert thresholds, dashboard design, and integration with the broader analytics stack. The setup brief that prevents "we have a tool but nobody uses it." Quarterly cadence to refresh the keyword set.
+
+## Related topics
+
+- **[02. Search Console](../02.%20Search%20Console/README.md)** — GSC and rank tracking are complements, not substitutes. Use both.
+- **[01. Strategy / 04. Keyword Clustering](../../01.%20Strategy/04.%20Keyword%20Clustering/README.md)** — the cluster map is the source of priority keywords for tracking.
+- **[01. Strategy / 03. Competitor Analysis](../../01.%20Strategy/03.%20Competitor%20Analysis/README.md)** — competitor selection for rank tracking matches the strategic competitor set.
+- **[05. KPI Tracking](../05.%20KPI%20Tracking/README.md)** — share-of-voice / cluster-level rank metrics feed the KPI dashboard.
+- **[04. Content SEO / 07. Content Refresh](../../04.%20Content%20SEO/07.%20Content%20Refresh/README.md)** — significant rank drops are refresh triggers.
+
+## Further reading
+
+- [Ahrefs — Rank Tracker Documentation](https://ahrefs.com/rank-tracker) — practical primer on what rank tracking does and how to set it up well.
+- [AccuRanker — How Rank Tracking Works](https://www.accuranker.com/) — strong explainer on the mechanics and on share-of-voice as a metric.
+- [Aleyda Solis — Rank-Tracking Templates and SERP-Feature Strategy](https://www.aleydasolis.com/) — practitioner frameworks for choosing the keyword set.
+- [Marie Haynes — On SERP Features and AI Overviews](https://www.mariehaynes.com/) — strong on the SERP-feature trend and what it means for rank-tracking strategy.
+- [Pi Datametrics — Share of Voice as a Metric](https://www.pi-datametrics.com/) — enterprise-grade framing of category-level visibility tracking.
