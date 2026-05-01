@@ -25,7 +25,7 @@ The skill is opinionated about a few things: real-device testing > emulator (on 
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), customer (4).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4).
 2. **Priority pages** — required. Top organic landing pages, priority PDPs, conversion-funnel pages.
 3. **GSC access** — required. Mobile-usability report.
 4. **Real device** — preferred. iPhone SE / mid-tier Android. Emulator is a baseline.

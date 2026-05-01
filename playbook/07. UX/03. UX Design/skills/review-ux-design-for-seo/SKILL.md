@@ -26,7 +26,7 @@ The skill is opinionated about a few things: above-the-fold determines stay-or-b
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), customer (4), brand voice (8).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), brand voice (8).
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Cluster context informs cluster-spoke linking review.
 3. **Priority templates** — required. 5-10 templates: pillars, tools, top PDPs, top blog posts.
 4. **Search intent per template** — required. What queries does each template rank for; what intent dominates.

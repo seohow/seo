@@ -6,7 +6,7 @@
 
 Web accessibility is the discipline of making web content usable for people with disabilities — visual (low vision, blindness, colour-blindness), motor (limited dexterity, switch-only access), cognitive (dyslexia, attention differences), and auditory (deafness, hearing loss). The standard reference is WCAG (Web Content Accessibility Guidelines), with WCAG 2.1 AA as the operational target for most jurisdictions and WCAG 2.2 AA increasingly required.
 
-Accessibility overlaps with SEO meaningfully (semantic HTML, alt text, heading structure, keyboard navigation, focus management), but it's a distinct discipline with distinct compliance requirements. For Field & Sun, accessibility is both a legal requirement (ADA-compliance for US sales; EU Accessibility Act 2025 for EU) and a UX-quality signal — accessible sites convert better even for non-disabled users (better keyboard nav helps power users; better contrast helps everyone in bright sunlight; semantic HTML helps everyone's screen-reader-and-assistive-tech experience).
+Accessibility overlaps with SEO meaningfully (semantic HTML, alt text, heading structure, keyboard navigation, focus management), but it's a distinct discipline with distinct compliance requirements. For Field & Sun, accessibility is both a legal requirement (ADA-compliance for US sales; EU Accessibility Act 2025 for EU) and a UX-quality signal — accessible sites convert better even for non-disabled users (better keyboard nav helps power users; better contrast helps everyone in bright sunlight; semantic HTML helps screen-reader and assistive-tech experiences).
 
 ## Why it matters
 
@@ -118,7 +118,7 @@ For Field & Sun: a quarterly accessibility audit on priority templates is plausi
 - **[02. On-page SEO / 06. Image Optimization](../../02.%20On-page%20SEO/06.%20Image%20Optimization/README.md)** — alt text overlaps SEO + accessibility.
 - **[02. On-page SEO / 03. Header Structure](../../02.%20On-page%20SEO/03.%20Header%20Structure/README.md)** — heading structure overlaps semantic HTML.
 - **[03. Technical SEO / 02. Indexing](../../03.%20Technical%20SEO/02.%20Indexing/README.md)** — semantic HTML helps both indexing + accessibility.
-- **[09. AI SEO](../../09.%20AI%20SEO/README.md)** *(planned)* — AI agents depend on accessibility-compliant markup to interact with pages.
+- **[09. AI SEO](../../09.%20AI%20SEO/)** *(planned)* — AI agents depend on accessibility-compliant markup to interact with pages.
 
 ## Further reading
 

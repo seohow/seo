@@ -26,7 +26,7 @@ The skill is opinionated about a few things: pre-registered sample size + no mid
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), goals (7).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), goals (7).
 2. **Hypothesis** — required. What's being tested + why + expected outcome.
 3. **Page / template + URL** — required. Where the test runs.
 4. **Current traffic on page** — required. Visitors / month or week.

@@ -64,12 +64,12 @@ It produces inputs for downstream categories:
 
 The full inventory across the 6 sub-topics:
 
-- **audit-page-speed-ux** — UX-focused page-speed audit; perceived speed + INP / interaction lag + remediation.
-- **audit-mobile-ux** — mobile-specific UX issues across priority templates.
-- **review-ux-design-for-seo** — UX-design review of the templates organic visitors land on.
-- **plan-ab-test** — A/B test design for SEO-driven traffic; SEO-safe patterns; sample-size discipline.
-- **analyse-conversion-funnel** — diagnose funnel leaks in the organic-search conversion path.
-- **audit-accessibility** — WCAG 2.1 AA accessibility audit on priority templates.
+- **[audit-page-speed-ux](01.%20Page%20Speed%20UX/skills/audit-page-speed-ux/SKILL.md)** — UX-focused page-speed audit; perceived speed + INP / interaction lag + remediation.
+- **[audit-mobile-ux](02.%20Mobile%20Optimization/skills/audit-mobile-ux/SKILL.md)** — mobile-specific UX issues across priority templates.
+- **[review-ux-design-for-seo](03.%20UX%20Design/skills/review-ux-design-for-seo/SKILL.md)** — UX-design review of the templates organic visitors land on.
+- **[plan-ab-test](04.%20AB%20Testing/skills/plan-ab-test/SKILL.md)** — A/B test design for SEO-driven traffic; SEO-safe patterns; sample-size discipline.
+- **[analyse-conversion-funnel](05.%20Conversion%20Funnels/skills/analyse-conversion-funnel/SKILL.md)** — diagnose funnel leaks in the organic-search conversion path.
+- **[audit-accessibility](06.%20Accessibility/skills/audit-accessibility/SKILL.md)** — WCAG 2.1 AA accessibility audit on priority templates.
 
 ## Common pitfalls
 
