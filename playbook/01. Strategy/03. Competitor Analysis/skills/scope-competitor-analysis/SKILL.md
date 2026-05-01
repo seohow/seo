@@ -113,6 +113,6 @@ Save the produced file to `businesses/<slug>/competitor-analysis/plan.md`. Creat
 
 ## Example
 
-**Input (abbreviated):** D2C refillable cleaning brand, US, has Ahrefs and GSC, founder + part-time marketer, goal is to identify 15 highest-leverage opportunities for Q3 content roadmap.
+**Input (abbreviated):** D2C beauty brand (skincare/sunscreen), US, has Ahrefs and GSC, marketing manager, goal is to identify 15 highest-leverage opportunities for Q2 content roadmap.
 
-**Output (abbreviated):** Plan with 4 competitors (Blueland, Earth Breeze, Branch Basics, Wirecutter) plus 1 community source (r/ZeroWaste). Lenses: keyword gap (primary), SERP pattern (priority terms), content depth (eco-laundry topic), link gap (for outreach). 7-day timeline. Deliverable: synthesis doc + opportunity list with 15+ scored items. Risks: founder bias toward direct competitors only — mitigate by enforcing publisher and community inclusion.
+**Output (abbreviated):** Plan with 4 competitors (Supergoop, Blue Tansy, Drunk Elephant, Wirecutter) plus 1 community source (r/SkincareAddiction). Lenses: keyword gap (primary), SERP pattern (priority terms), content depth (mineral sunscreen topic), link gap (for outreach). 7-day timeline. Deliverable: synthesis doc + opportunity list with 15+ scored items. Risks: founder bias toward direct competitors only — mitigate by enforcing publisher and community inclusion.

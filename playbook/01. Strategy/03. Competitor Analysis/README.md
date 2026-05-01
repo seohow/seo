@@ -6,7 +6,7 @@
 
 SEO competitor analysis is the structured study of the sites already ranking for the keywords you care about. The goal isn't to copy them — it's to understand the *pattern* of why they rank, identify the gaps they're not serving, and surface tactical opportunities you can actually execute against.
 
-Two things to note: your **SEO competitors** are not always your **business competitors**. A D2C cleaning brand competes against Tide for shelf space, but in SEO it competes against Wirecutter, EcoWatch, and Reddit threads. Both lists matter, for different reasons.
+Two things to note: your **SEO competitors** are not always your **business competitors**. A D2C beauty brand competes against Sephora and Ulta for shelf space, but in SEO it competes against The Strategist, Byrdie, NYT Wirecutter, and Reddit threads. Both lists matter, for different reasons.
 
 ## Why it matters
 
@@ -25,17 +25,17 @@ For a D2C brand, this is also where you find the highest-leverage gap opportunit
 
 ## A worked example
 
-> **Scenario:** The D2C refillable cleaning brand wants to understand the SERP they're entering for "non-toxic laundry detergent" and adjacent terms.
+> **Scenario:** The D2C beauty brand wants to understand the SERP they're entering for "best mineral sunscreen" and adjacent skincare terms.
 >
-> **Step 1.** They list five competitors. Two direct (Blueland, Earth Breeze), one aspirational (Branch Basics — bigger brand, similar values), one editorial (Wirecutter), one community (Reddit r/ZeroWaste).
+> **Step 1.** They list five competitors. Two direct (Supergoop, Blue Tansy), one aspirational (Drunk Elephant — bigger brand, similar positioning), one editorial (Wirecutter), one community (Reddit r/SkincareAddiction).
 >
-> **Step 2.** They run an organic keyword overlap report in Ahrefs/Semrush. Blueland and Earth Breeze share ~40% of their keyword universe with the brand's target list. Branch Basics shares 25%. Wirecutter shares 60% — they rank for almost everything commercial in this space.
+> **Step 2.** They run an organic keyword overlap report in Ahrefs/Semrush. Supergoop and Blue Tansy share ~45% of their keyword universe with the brand's target list. Drunk Elephant shares 30%. Wirecutter shares 55% — they rank for almost everything commercial in this space.
 >
-> **Step 3.** They run a content-gap report on Blueland. They find 1,200 keywords Blueland ranks for that the brand doesn't. After filtering for relevance, ~180 are actionable. Top opportunities: "[ingredient] in laundry detergent" explainers, "are laundry strips bad for septic" FAQ, "[brand] vs Tide" comparison.
+> **Step 3.** They run a content-gap report on Supergoop. They find 950 keywords Supergoop ranks for that the brand doesn't. After filtering for relevance, ~170 are actionable. Top opportunities: "[ingredient] in sunscreen" explainers, "does mineral sunscreen leave white cast" FAQ, "mineral sunscreen vs chemical" comparison.
 >
-> **Step 4.** They study the Wirecutter article that ranks #1 for "best laundry detergent." 4,500 words, comparison table, ingredient analysis, photo of every product, expert sources, regularly updated. The pattern is clear: editorial-grade depth wins this SERP.
+> **Step 4.** They study the Wirecutter article that ranks #1 for "best sunscreen." 5,200 words, comparison table, ingredient analysis, photos of products, dermatologist sources, regularly updated. The pattern is clear: editorial-grade depth and expert credibility win this SERP.
 >
-> **Step 5.** They examine Blueland's link profile. Top referring domains include sustainability blogs, parenting publications, and a few "best-of" roundups. They build a target list of 30 publications likely to also link to their brand if pitched correctly.
+> **Step 5.** They examine Supergoop's link profile. Top referring domains include beauty blogs, dermatology publications, and lifestyle roundups. They build a target list of 35 publications likely to also link to their brand if pitched correctly with a skincare angle.
 >
 > **Step 6.** Output: a 5-page competitor analysis doc with keyword gap, content gap, link gap, SERP-pattern observations, and prioritised opportunities.
 

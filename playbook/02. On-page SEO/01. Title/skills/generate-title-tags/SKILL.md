@@ -39,9 +39,9 @@ For each page:
 
 1. **Read the SERP.** Run the page's primary keyword in incognito, target country. Read the top 10 titles. Note: dominant patterns (e.g. "Best [X] for [Y]," product-led, brand-led, year-stamped), the average length, the modifiers in use. The goal isn't to copy — it's to understand the format that's winning so we can differentiate within format.
 2. **Anchor on the cluster + intent.** The primary keyword must appear, ideally in the first 50 characters. Intent dictates the surrounding language:
-   - **Transactional** → product-led, specific (e.g. "Refillable Laundry Detergent — Plastic-Free Refills | Brand").
-   - **Commercial** → comparison or roundup pattern ("Best Refillable Laundry Detergents 2026").
-   - **Informational** → question or how-to pattern ("How Refillable Laundry Detergents Work — Brand").
+   - **Transactional** → product-led, specific (e.g. "Hydrating Serum for Radiance — Daily Glow | Brand").
+   - **Commercial** → comparison or roundup pattern ("Best Hydrating Serums 2026").
+   - **Informational** → question or how-to pattern ("How Hydrating Serums Work — Brand").
    - **Navigational** → brand-led (homepage, login, contact).
 3. **Generate 4-6 variants.** Each from a different angle:
    - **Variant A — Direct + benefit.** Primary keyword + one strong benefit/modifier + brand.
@@ -146,18 +146,18 @@ Save the produced file to `businesses/<slug>/titles/<page-slug-or-batch-name>.md
 
 ## Example
 
-**Input (abbreviated):** Page = `/collections/refillable-laundry`. Current title = `Laundry — Refillable Cleaning Co` (32 chars). Cluster T01 from cluster map: primary = `refillable laundry detergent`, supporting = `refill laundry detergent`, `eco laundry detergent refill`, `zero waste laundry detergent`, `plastic free laundry detergent`. Intent: transactional. Brand voice: warm, confident, plain-language.
+**Input (abbreviated):** Page = `/products/daily-glow-serum`. Current title = `Serum — Field & Sun` (18 chars). Cluster T01 from cluster map: primary = `hydrating serum`, supporting = `glow serum`, `vitamin c serum`, `skin brightening serum`, `radiance serum`. Intent: transactional. Brand voice: warm, confident, plain-language.
 
 **Output (abbreviated):**
 
-SERP read: top 10 are 6 brand collection pages, 2 product detail pages, 2 listicles. Average length 52 chars. Common modifiers: "plastic-free," "refill," "eco." No year stamps in transactional results. Brand-led titles dominate (8 of 10 lead with primary keyword + brand at the end).
+SERP read: top 10 are 6 brand product pages, 2 prestige-brand pages, 2 dermatologist listicles. Average length 54 chars. Common modifiers: "hydrating," "brightening," "glow-boosting." No year stamps in transactional results. Benefit-led titles dominate (8 of 10 lead with primary keyword + benefit at the end).
 
-**Variant A — Direct + benefit:** `Refillable Laundry Detergent — Plastic-Free Refills | Brand` (58 chars). Length ✓, kw front ✓, intent ✓ (transactional/product-led), voice ✓, differentiation moderate (consistent with SERP winners), 1 CTR trigger (plastic-free). **Composite: high.**
+**Variant A — Direct + benefit:** `Hydrating Serum for Radiance — Daily Glow | Field & Sun` (54 chars). Length ✓, kw front ✓, intent ✓ (transactional/product-led), voice ✓, differentiation moderate (consistent with SERP winners), 1 CTR trigger (radiance). **Composite: high.**
 
-**Variant B — Differentiator-led:** `Plant-Based, Plastic-Free Laundry Detergent Refills` (52 chars). Length ✓, kw mid ⚠️ (not front), intent ✓, voice ✓, differentiation strong, 2 CTR triggers. Composite: medium-high.
+**Variant B — Differentiator-led:** `Vitamin-Enriched Hydrating Serum for Bright Skin` (48 chars). Length ✓, kw mid ⚠️ (not front), intent ✓, voice ✓, differentiation strong, 2 CTR triggers. Composite: medium-high.
 
 […3 more variants…]
 
-**Recommendation:** Ship Variant A. It leads with the primary keyword exactly as searchers type it, includes one earned modifier ("plastic-free") that matches the SERP winners, and ends with brand for trust. Variant B is the alternative if A doesn't move CTR after 30 days — keyword placement is the only weak signal there, and we can test whether the stronger differentiation overcomes it.
+**Recommendation:** Ship Variant A. It leads with the primary keyword exactly as searchers type it, includes one earned benefit modifier ("radiance") that matches the SERP winners, and ends with brand for trust. Variant B is the alternative if A doesn't move CTR after 30 days — keyword placement is the only weak signal there, and we can test whether the stronger differentiation overcomes it.
 
 Implementation checklist: update Shopify, verify on live page, submit URL to GSC, monitor 30 days.

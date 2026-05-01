@@ -4,7 +4,7 @@
 
 ## What it is
 
-URL structure is the convention you use for the path component of your site's URLs — everything after the domain. `/collections/refillable-laundry`, `/products/laundry-detergent-strips`, `/blog/how-laundry-strips-work`. It includes the depth (how many path segments), the format (kebab-case vs underscore), the inclusion (or not) of dates, IDs, parameters, and the way categories nest.
+URL structure is the convention you use for the path component of your site's URLs — everything after the domain. `/collections/sun-care`, `/products/mineral-sun-drops-spf-50`, `/blog/how-mineral-sunscreen-works`. It includes the depth (how many path segments), the format (kebab-case vs underscore), the inclusion (or not) of dates, IDs, parameters, and the way categories nest.
 
 Most teams set URL conventions implicitly — the CMS picks defaults and nobody revisits them. The result is technical debt: inconsistent patterns across page types, parameter URLs Google indexes by accident, slugs stuffed with irrelevant words, and migrations that cost ranking when fixed years later.
 
@@ -12,24 +12,24 @@ Most teams set URL conventions implicitly — the CMS picks defaults and nobody 
 
 Three reasons. First, **URLs are a (mild) ranking signal** — keywords in the URL slug carry some weight, especially the primary keyword in a clean position. Not the strongest signal, but cumulatively meaningful across a portfolio.
 
-Second, **URLs are user-facing in the SERP** — they appear under the title and above the description. A clean, readable URL ("/collections/refillable-laundry") earns more clicks than a noisy one ("/c/cat-id-238/?ref=home_nav&sort=popular").
+Second, **URLs are user-facing in the SERP** — they appear under the title and above the description. A clean, readable URL ("/collections/sun-care") earns more clicks than a noisy one ("/c/cat-id-238/?ref=home_nav&sort=popular").
 
 Third — and most expensive when ignored — **URLs are the costliest thing to change after the fact**. A URL change without a 301 redirect drops the page's ranking immediately. With redirects, it usually recovers in 30-90 days, but a portion of equity is lost permanently. Setting good conventions early avoids painful migrations later. For a D2C brand on Shopify, getting the URL structure right at launch saves more pain in year 3 than almost any other decision.
 
 ## Core concepts
 
-- **Depth** — number of segments between the domain and the page. `/refillable-laundry` is depth 1; `/collections/laundry/refillable` is depth 3. Shallower is better up to a point — most ecom sites land at depth 2 (`/collections/<slug>`, `/products/<slug>`, `/blog/<slug>`). Going deeper than 3 rarely helps.
-- **Slug format** — kebab-case (`refillable-laundry-detergent`) is the universal SEO standard. Underscores, camelCase, capitals, and `%20`-encoded spaces all create indexing edge cases or visual ugliness. Always kebab-case.
+- **Depth** — number of segments between the domain and the page. `/sun-care` is depth 1; `/collections/skincare/serums` is depth 3. Shallower is better up to a point — most ecom sites land at depth 2 (`/collections/<slug>`, `/products/<slug>`, `/blog/<slug>`). Going deeper than 3 rarely helps.
+- **Slug format** — kebab-case (`mineral-sun-drops-spf-50`) is the universal SEO standard. Underscores, camelCase, capitals, and `%20`-encoded spaces all create indexing edge cases or visual ugliness. Always kebab-case.
 - **Slug content** — the slug should be the page's primary keyword (or a clean variant), in lowercase, with stop-words removed if they don't change meaning ("the," "a," "of" — usually drop; "for," "vs," "without" — usually keep).
 - **Parameters and query strings** — `?` URLs (filters, sort options, session IDs, UTM tags) should generally not be indexed. Use `rel=canonical` to point parameter URLs back to the clean version, or robots/X-Robots tags to block indexing.
-- **Trailing slashes and case** — pick one convention site-wide and enforce it. `/refillable-laundry` and `/refillable-laundry/` and `/Refillable-Laundry` are three URLs to Google by default. Canonicalise.
-- **Dates in URLs** — dates baked into blog URLs (`/blog/2026/04/how-laundry-strips-work`) age the page visibly and complicate refreshes. Avoid dates in URLs unless news/timeliness is core to the content type.
-- **Category nesting** — `/collections/laundry/refillable` (collection nested under a parent collection) implies a hierarchy that Shopify and most CMSs don't actually enforce. Decide whether you want hierarchy in URLs, then enforce it consistently or flatten.
+- **Trailing slashes and case** — pick one convention site-wide and enforce it. `/sun-care` and `/sun-care/` and `/Sun-Care` are three URLs to Google by default. Canonicalise.
+- **Dates in URLs** — dates baked into blog URLs (`/blog/2026/04/how-mineral-sunscreen-works`) age the page visibly and complicate refreshes. Avoid dates in URLs unless news/timeliness is core to the content type.
+- **Category nesting** — `/collections/skincare/serums` (collection nested under a parent collection) implies a hierarchy that Shopify and most CMSs don't actually enforce. Decide whether you want hierarchy in URLs, then enforce it consistently or flatten.
 - **Migrations need redirects** — every URL change must ship with a 301 redirect from the old URL. Without that, the page restarts from zero. With it, you keep most equity.
 
 ## A worked example
 
-> **Scenario:** The D2C cleaning brand launched on Shopify 8 months ago. URL structure is the platform default. Audit reveals: collection URLs are clean (`/collections/laundry`), but product URLs include parent-collection slug (`/collections/laundry/products/refillable-laundry-strips`), blog URLs include the date (`/blogs/news/2025/12/15/how-laundry-strips-work`), and search/filter URLs are getting indexed (`/collections/laundry?filter=plastic-free`).
+> **Scenario:** Field & Sun launched on Shopify 18 months ago. URL structure is the platform default. Audit reveals: collection URLs are clean (`/collections/sun-care`), but product URLs include parent-collection slug (`/collections/sun-care/products/mineral-sun-drops-spf-50`), blog URLs include the date (`/blogs/news/2025/05/15/how-mineral-sunscreen-works`), and search/filter URLs are getting indexed (`/collections/sun-care?filter=tinted`).
 >
 > **Step 1.** Define new conventions:
 >   - Products: `/products/<slug>` (drop the parent collection prefix to avoid duplication when a product belongs to multiple collections)
@@ -37,13 +37,13 @@ Third — and most expensive when ignored — **URLs are the costliest thing to 
 >   - Blog: `/blog/<slug>` (drop the dates and the `/news/` parent — they age content)
 >   - Filter URLs: `rel=canonical` back to the clean collection
 >
-> **Step 2.** Audit existing URLs against the new conventions. 6 product URLs need migration; 23 blog posts need migration. All collections fine.
+> **Step 2.** Audit existing URLs against the new conventions. 8 product URLs need migration; 23 blog posts need migration. All collections fine.
 >
 > **Step 3.** Build the redirect map: old URL → new URL, status 301. For Shopify this goes in Online Store → Navigation → URL Redirects (or via an app for bulk).
 >
 > **Step 4.** Update internal links sitewide so they point to the new URLs (avoid hop-redirects).
 >
-> **Step 5.** Ship in one batch, request re-indexing in GSC, monitor 60 days. Initial rank dip on 6 of 29 migrated pages, full recovery on 27 within 6 weeks; 2 long-tail pages took 90 days.
+> **Step 5.** Ship in one batch, request re-indexing in GSC, monitor 60 days. Initial rank dip on 6 of 31 migrated pages, full recovery on 29 within 6 weeks; 2 long-tail pages took 90 days.
 
 ## How to do it
 
@@ -62,7 +62,7 @@ Third — and most expensive when ignored — **URLs are the costliest thing to 
 - **Migrating without redirects.** The single most expensive on-page mistake. Every URL change costs ranking unless redirected.
 - **Chain redirects.** `A → B → C → D` instead of `A → D`. Each hop dilutes equity slightly and slows crawl.
 - **Indexing parameter URLs.** Filter, sort, and pagination URLs without canonicals can flood the index with near-duplicates. Use `rel=canonical` or `meta noindex` based on the type.
-- **Slug stuffing.** `/best-refillable-laundry-detergent-strips-eco-friendly-2026-buy-now`. Read it aloud. Stop.
+- **Slug stuffing.** `/best-tinted-mineral-sunscreen-spf-50-zinc-oxide-2026-buy-now`. Read it aloud. Stop.
 - **Date-stamped blog URLs.** Visible aging on every URL; complicates content refresh; the URL is wrong as soon as the post is updated. Avoid unless news/timeliness is core.
 - **Duplicate URLs from CMS quirks.** Shopify's collection-prefixed product URLs are a classic example. Pick one canonical version per product/page and enforce it.
 - **Trailing-slash inconsistency.** Pick one. Enforce site-wide.

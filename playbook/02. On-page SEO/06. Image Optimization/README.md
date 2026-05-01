@@ -28,7 +28,7 @@ For a D2C brand on Shopify or WooCommerce, the default alt-text behaviour is usu
 ## Core concepts
 
 - **Alt text rules** — describe what's in the image, in plain language. Be specific. Don't keyword-stuff. If the image is purely decorative (a divider, a spacer), use an empty `alt=""` attribute (which signals "skip this" to screen readers) — never omit the attribute entirely.
-- **File-name rules** — kebab-case, lowercase, descriptive, optionally including the primary keyword. `refillable-laundry-strips-pack.jpg` beats `IMG_2381.jpg`.
+- **File-name rules** — kebab-case, lowercase, descriptive, optionally including the primary keyword. `mineral-sun-drops-spf-50-tinted.jpg` beats `IMG_2381.jpg`.
 - **Modern formats** — WebP is universally supported now; AVIF is supported in 90%+ of browsers and produces meaningfully smaller files. JPEG and PNG are legacy fallbacks.
 - **Compression target** — most ecommerce images can be compressed to 60-80% of their original quality with no visible change. Tools like Squoosh, ImageOptim, or Shopify's built-in compression handle this automatically when configured.
 - **Dimensions** — never serve a 4000×3000 image into a 600×400 display. Resize at upload, or use responsive serving (srcset).
@@ -38,21 +38,21 @@ For a D2C brand on Shopify or WooCommerce, the default alt-text behaviour is usu
 
 ## A worked example
 
-> **Scenario:** The D2C cleaning brand has 6 product pages. A page-speed audit shows mobile LCP is 4.8s on the laundry-strips PDP (failing — target is under 2.5s). Image weight is 3.2MB, all JPEG, all served at 2400×2400 even though display size is 600×600. Alt text on all 8 images on the page reads "Laundry Strips" verbatim.
+> **Scenario:** Field & Sun has 8 product pages. A page-speed audit shows mobile LCP is 4.8s on the Mineral Sun Drops PDP (failing — target is under 2.5s). Image weight is 3.2MB, all JPEG, all served at 2400×2400 even though display size is 600×600. Alt text on all 8 images on the page reads "Mineral Sun Drops" verbatim.
 >
-> **Step 1.** File-name audit. Source files are `IMG_2381.jpg`, `IMG_2382.jpg`, etc. Renamed to `refillable-laundry-strips-pack.jpg`, `refillable-laundry-strips-detail.jpg`, `refillable-laundry-strips-in-water.jpg`, etc.
+> **Step 1.** File-name audit. Source files are `IMG_2381.jpg`, `IMG_2382.jpg`, etc. Renamed to `mineral-sun-drops-spf-50-bottle.jpg`, `mineral-sun-drops-tinted-finish.jpg`, `mineral-sun-drops-on-skin.jpg`, etc.
 >
 > **Step 2.** Alt-text rewrite. Each image gets a unique, descriptive alt:
->   - Hero: "Pack of 60 refillable laundry detergent strips on a white background"
->   - Lifestyle: "Hand placing a single laundry strip into a washing machine drum"
->   - Detail: "Close-up of the textured surface of a refillable laundry strip"
+>   - Hero: "30ml glass bottle of Mineral Sun Drops SPF 50 with a dropper, on a soft beige background"
+>   - Lifestyle: "Two drops of tinted mineral sunscreen blended into the back of a hand"
+>   - Swatch: "Mineral Sun Drops SPF 50 swatched on three skin tones — light, medium, deep — showing no white cast"
 >   - …etc. No keyword stuffing.
 >
 > **Step 3.** Format + compression. JPEGs converted to WebP. Compression to ~75% quality. Dimensions resized to 1200×1200 (still high-res for retina displays) and `srcset` added for mobile.
 >
 > **Step 4.** Lazy-loading. All non-hero images get `loading="lazy"`. Hero image (LCP) explicitly does NOT get the attribute.
 >
-> **Step 5.** Re-test. Mobile LCP now 2.1s (passing). Image weight dropped from 3.2MB to 480KB. Core Web Vitals pass. Bonus: page enters Google Image Search results for "refillable laundry strips" within 14 days, surfaces in 4 image-search-positioned results within 30 days.
+> **Step 5.** Re-test. Mobile LCP now 2.1s (passing). Image weight dropped from 3.2MB to 480KB. Core Web Vitals pass. Bonus: page enters Google Image Search results for "tinted mineral sunscreen" within 14 days, surfaces in 4 image-search-positioned results within 30 days.
 
 ## How to do it
 
@@ -67,7 +67,7 @@ For a D2C brand on Shopify or WooCommerce, the default alt-text behaviour is usu
 ## Common pitfalls
 
 - **Empty or auto-generated alt text.** The most common mistake. Default Shopify alt is often the product title, repeated on every image — this tells Google nothing.
-- **Keyword stuffing alt text.** "Refillable laundry detergent strips eco-friendly plastic-free non-toxic" — reads as spam to Google and to screen-reader users. Describe the image, naturally.
+- **Keyword stuffing alt text.** "Tinted mineral sunscreen SPF 50 zinc oxide reef-safe vegan" — reads as spam to Google and to screen-reader users. Describe the image, naturally.
 - **Lazy-loading the LCP image.** Tanks mobile LCP scores. The hero / first-fold image must not be lazy-loaded.
 - **Ignoring format.** Serving 4MB JPEGs in 2026 is leaving Core Web Vitals points on the table. Convert to WebP or AVIF.
 - **Serving full-resolution images everywhere.** A 4000×3000 image displayed at 600×400 on mobile wastes 90% of the bytes. Use responsive `srcset` or upload at appropriate dimensions.

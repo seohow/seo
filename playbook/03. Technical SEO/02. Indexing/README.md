@@ -34,7 +34,7 @@ For larger ecom sites, the indexing problem flips: too many URLs are indexed (pa
 
 ## A worked example
 
-> **Scenario:** The D2C cleaning brand audits indexing in GSC. Pages report shows: 612 indexed, 287 not indexed. Click "View" on each not-indexed reason:
+> **Scenario:** Field & Sun audits indexing in GSC. Pages report shows: 612 indexed, 287 not indexed. Click "View" on each not-indexed reason:
 >   - **Crawled – currently not indexed:** 86 URLs. Mostly old blog posts and discontinued product pages.
 >   - **Duplicate without user-selected canonical:** 64 URLs. Mostly Shopify's `/collections/<x>/products/<slug>` duplicates.
 >   - **Soft 404:** 42 URLs. Discontinued products returning 200 with "no longer available" content.

@@ -25,21 +25,21 @@ For a D2C brand, getting the title right on a top product or collection page can
 
 ## A worked example
 
-> **Scenario:** The D2C refillable cleaning brand has a collection page at `/collections/refillable-laundry` ranking position 9 for "refillable laundry detergent" (1,300/mo). The current title is `Laundry — Refillable Cleaning Co`. They want to lift CTR and push to top 5.
+> **Scenario:** The D2C beauty brand Field & Sun has a product page at `/products/daily-glow-serum` ranking position 9 for "hydrating serum" (2,100/mo). The current title is `Serum — Field & Sun`. They want to lift CTR and push to top 5.
 >
-> **Step 1.** Pull the cluster from `clusters/cluster-map.md`. Cluster T01 has primary `refillable laundry detergent`, supporting keywords `refill laundry detergent`, `eco laundry detergent refill`, `zero waste laundry detergent`, `plastic free laundry detergent`. Intent: transactional. Page type: collection.
+> **Step 1.** Pull the cluster from `clusters/cluster-map.md`. Cluster T01 has primary `hydrating serum`, supporting keywords `glow serum`, `vitamin c serum`, `skin brightening serum`, `radiance serum`. Intent: transactional. Page type: product.
 >
 > **Step 2.** Generate variants:
->   - `Refillable Laundry Detergent — Plastic-Free Refills | Refillable Cleaning Co`
->   - `Refillable Laundry Detergent: Zero-Waste Refills + Strips`
->   - `Refillable Laundry Detergent — Eco Refills, Free Shipping`
->   - `Plant-Based Refillable Laundry Detergent — Refillable Cleaning Co`
+>   - `Hydrating Serum for Radiance — Daily Glow | Field & Sun`
+>   - `Hydrating Serum: Plant-Based Glow Activators`
+>   - `Hydrating Serum — Vitamins + Moisture, Ships Next Day`
+>   - `Luminizing Hydrating Serum — Field & Sun`
 >
 > **Step 3.** Score each: position of primary keyword (front), length (~55 chars), intent fit (transactional → commercial proof points), brand voice (warm, confident), differentiation against the SERP. Pick variant 1.
 >
 > **Step 4.** Implement, request indexing in GSC, monitor CTR + position over 30 days.
 >
-> **Step 5.** Result after 4 weeks: position 5, CTR 4.1% (up from 1.8%). Estimated +35 monthly clicks, on a page that previously needed no other changes.
+> **Step 5.** Result after 4 weeks: position 5, CTR 4.1% (up from 1.8%). Estimated +42 monthly clicks, on a page that previously needed no other changes.
 
 ## How to do it
 

@@ -36,7 +36,7 @@ If intent tags or the business profile are missing, ask before clustering.
 ## Process
 
 1. **Split by intent.** First pass, before any topical grouping, partition the input into intent buckets. Cluster within each bucket, never across. This prevents the most common clustering mistake (mixing transactional and informational into the same cluster).
-2. **Within each intent bucket, group by topic.** Walk the keywords looking for shared topical core. Group obvious near-duplicates first ("refillable laundry detergent" / "laundry detergent refillable" / "refill laundry detergent" → one cluster). Then group close-cousins ("refillable laundry strips" / "refillable laundry detergent strips" / "refill laundry strips" → one cluster). Then look for variant patterns ("[product] for [persona]" — these often cluster differently from straight category terms).
+2. **Within each intent bucket, group by topic.** Walk the keywords looking for shared topical core. Group obvious near-duplicates first ("mineral sunscreen" / "sunscreen mineral" / "mineral-based sunscreen" → one cluster). Then group close-cousins ("reef-safe mineral sunscreen" / "reef safe mineral sunscreen" / "mineral sunscreen no white cast" → one cluster). Then look for variant patterns ("[product] for [persona]" — these often cluster differently from straight category terms).
 3. **Apply SERP-overlap test on the top ~20%.** For the top-volume / highest-priority 20% of clusters, where placement matters most, recommend (or perform if SERP data is available) a SERP-overlap check. If two candidate clusters have 40%+ SERP overlap on their primary keywords, merge them. If a single cluster's keywords have <30% SERP overlap among themselves, split.
 4. **Pick a primary keyword per cluster.** Default to highest volume; override when the highest-volume keyword has wrong intent or doesn't best represent the cluster's core. Note the rationale when overriding.
 5. **Map cluster to page type.** Default from the page-type tags in the input. If multiple page types appear in one cluster, that's a signal the cluster needs splitting — page type should be uniform within a cluster.
@@ -70,7 +70,7 @@ If intent tags or the business profile are missing, ask before clustering.
 
 | ID | Cluster name | Primary keyword | Supporting keywords | Volume (sum) | Page type | Target URL | Priority | Status |
 |----|--------------|------------------|---------------------|-------------:|-----------|------------|----------|--------|
-| T01 | ... | ... | ...; ...; ...; ... | ... | Collection | /collections/refillable-laundry | P0 | Existing — needs update |
+| T01 | ... | ... | ...; ...; ...; ... | ... | Collection | /collections/sun-care | P0 | Existing — needs update |
 | ... | ... | ... | ... | ... | ... | ... | ... | ... |
 
 ### Commercial
@@ -123,26 +123,26 @@ Save the produced file to `businesses/<slug>/clusters/cluster-map.md`. Create th
 
 ## Example
 
-**Input (abbreviated):** 18 transactional keywords for the refillable cleaning brand, all related to laundry products.
+**Input (abbreviated):** 18 transactional keywords for Field & Sun (D2C beauty brand), all related to sunscreen products.
 
 | Keyword | Volume | Intent |
 |---------|-------:|--------|
-| refillable laundry detergent | 1,300 | T |
-| refill laundry detergent | 880 | T |
-| laundry detergent refillable | 90 | T |
-| refillable laundry strips | 720 | T |
-| refillable laundry detergent strips | 480 | T |
-| refill laundry strips | 110 | T |
-| eco laundry detergent refill | 260 | T |
-| zero waste laundry detergent | 590 | T |
-| plastic free laundry detergent | 480 | T |
+| buy mineral sunscreen SPF 50 | 420 | T |
+| mineral sunscreen online | 310 | T |
+| mineral sunscreen for face | 190 | T |
+| reef safe sunscreen buy | 280 | T |
+| reef safe sunscreen online | 160 | T |
+| buy reef safe sunscreen | 225 | T |
+| mineral sunscreen sensitive skin | 180 | T |
+| zinc oxide sunscreen | 340 | T |
+| best mineral sunscreen SPF 50 | 290 | T |
 | ... | ... | ... |
 
 **Output (abbreviated):**
 
 | ID | Cluster name | Primary | Supporting | Volume | Page type | Target URL |
 |----|--------------|---------|------------|-------:|-----------|------------|
-| T01 | Refillable laundry detergent (collection) | refillable laundry detergent | refill laundry detergent; laundry detergent refillable; eco laundry detergent refill; zero waste laundry detergent; plastic free laundry detergent | 3,640 | Collection | /collections/refillable-laundry |
-| T02 | Refillable laundry strips (PDP/sub-collection) | refillable laundry strips | refillable laundry detergent strips; refill laundry strips | 1,310 | PDP | /products/refillable-laundry-strips |
+| T01 | Mineral sunscreen (collection) | buy mineral sunscreen SPF 50 | mineral sunscreen online; mineral sunscreen for face; mineral sunscreen sensitive skin; zinc oxide sunscreen; best mineral sunscreen SPF 50 | 1,730 | Collection | /collections/mineral-sunscreen |
+| T02 | Reef-safe sunscreen (PDP/sub-collection) | buy reef safe sunscreen | reef safe sunscreen online; reef safe sunscreen buy | 665 | PDP | /products/reef-safe-sunscreen |
 
-…with deferral list, cannibalisation flags noting that the existing `/collections/laundry` page overlaps T01 and recommending consolidation.
+…with deferral list, cannibalisation flags noting that the existing `/collections/sunscreen` page overlaps T01 and recommending consolidation.

@@ -23,33 +23,33 @@ For a D2C brand, headers do the heaviest lifting on collection pages, comparison
 - **One H1 per page.** Multiple H1s confuse Google and accessibility tools alike. The H1 is the on-page title — singular.
 - **Don't skip levels.** H1 → H3 (with no H2 in between) breaks the outline. The hierarchy should descend cleanly: H1 → H2 → H3 → H4.
 - **H2s are the section signal.** Most ranking value beyond the H1 lives at the H2 level. Treat H2s as the "what would I put in a table of contents?" question.
-- **Question-form H2s win featured snippets.** "How does refillable laundry detergent work?" is more snippet-friendly than "How it works." The literal question matches the literal query.
+- **Question-form H2s win featured snippets.** "How does hydrating serum work on skin?" is more snippet-friendly than "How it works." The literal question matches the literal query.
 - **Semantic, not stylistic.** A page might have a small subtitle that's visually less prominent but is structurally an H2. Use the heading tag for hierarchy, not for size.
 - **Headers carry keyword signal — without stuffing.** H2s should naturally include cluster-related variants (supporting keywords from your cluster map). Don't repeat the primary keyword in every H2; do use the cluster's full vocabulary across the H-structure.
 
 ## A worked example
 
-> **Scenario:** The D2C brand has a blog post at `/blog/how-laundry-strips-work` targeting cluster I03 (informational). Primary: "how do laundry strips work" (1,800/mo). Supporting: "are laundry strips effective," "are laundry strips bad for septic," "do laundry strips actually work," "laundry strips vs liquid." Current structure: H1 = "Laundry Strips," then 9 H2s like "Section 1," "Pros," "Cons," "FAQ" — generic, not query-shaped, snippet-impossible.
+> **Scenario:** The D2C brand has a blog post at `/blog/how-hydrating-serum-works` targeting cluster I03 (informational). Primary: "how does hydrating serum work on skin" (1,800/mo). Supporting: "is hydrating serum good for acne," "vitamin c serum side effects," "can you use serum with moisturizer," "serum vs moisturizer." Current structure: H1 = "Hydrating Serum," then 9 H2s like "Section 1," "Benefits," "Risks," "FAQ" — generic, not query-shaped, snippet-impossible.
 >
 > **Step 1.** Pull the cluster + supporting keywords. Notice 4 of the supporting keywords are themselves common queries with their own People-Also-Ask presence.
 >
 > **Step 2.** Restructure:
->   - H1: "How Do Laundry Strips Work? A Plain-Language Guide"
->   - H2: "What are laundry detergent strips, exactly?"
->   - H2: "How do laundry strips clean clothes?"
->     - H3: "The activation process"
->     - H3: "What's actually in a laundry strip"
->   - H2: "Are laundry strips actually effective?"
->     - H3: "Independent test results"
->     - H3: "Where they fall short (hard water, heavy stains)"
->   - H2: "Laundry strips vs liquid detergent"
->   - H2: "Are laundry strips bad for septic systems?"
->   - H2: "How to use laundry strips"
->   - H2: "Where to buy refillable laundry strips"
+>   - H1: "How Does Hydrating Serum Work on Skin? A Plain-Language Guide"
+>   - H2: "What is a hydrating serum, exactly?"
+>   - H2: "How does hydrating serum hydrate skin?"
+>     - H3: "The absorption process"
+>     - H3: "What's actually in a hydrating serum"
+>   - H2: "Is hydrating serum actually effective?"
+>     - H3: "Clinical test results"
+>     - H3: "Where it falls short (extreme dryness, compromised barriers)"
+>   - H2: "Hydrating serum vs moisturizer"
+>   - H2: "Is hydrating serum good for acne-prone skin?"
+>   - H2: "How to use hydrating serum"
+>   - H2: "Best hydrating serums to buy"
 >
 > **Step 3.** For each question H2, ensure the first 40-60 words after the heading directly answer the question. This is the snippet-pull pattern.
 >
-> **Step 4.** Implement, request indexing. After 30 days the page is now appearing in 3 People Also Ask boxes for related queries and holding a featured snippet on "are laundry strips bad for septic" — net +280 monthly clicks across the cluster.
+> **Step 4.** Implement, request indexing. After 30 days the page is now appearing in 3 People Also Ask boxes for related queries and holding a featured snippet on "is hydrating serum good for acne-prone skin" — net +315 monthly clicks across the cluster.
 
 ## How to do it
 
@@ -69,7 +69,7 @@ For a D2C brand, headers do the heaviest lifting on collection pages, comparison
 - **Generic H2s.** "Introduction," "Features," "Conclusion," "FAQ" — these don't signal anything to Google and don't help users skim. Use specific, keyword-aware section names.
 - **H-tags used for styling.** "I want this text to be small but bold so I'll use H4" — wrong. Use a CSS class. H-tags must reflect document structure.
 - **Skipped levels.** H1 → H3 with no H2 between. Breaks accessibility, confuses parsing.
-- **Stuffed H2s.** "Best Refillable Laundry Detergent: Top 10 Refillable Laundry Detergents Reviewed for 2026 Refillable Laundry Detergent Buyers." Read it aloud — if you can't, neither can a human or Google.
+- **Stuffed H2s.** "Best Hydrating Serum: Top 10 Hydrating Serums Reviewed for 2026 Hydrating Serum Buyers." Read it aloud — if you can't, neither can a human or Google.
 - **Ignoring the snippet pattern.** A page that aspires to rank for an informational query but has no question-form H2s is leaving featured-snippet eligibility on the table.
 - **Treating PDP and blog templates the same.** Product pages have template-locked structure (often correct — Title, Price, Description, Reviews, FAQs as H2s). Blog posts have flexibility. Optimise within each template's constraints.
 

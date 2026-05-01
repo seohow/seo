@@ -123,7 +123,7 @@ H2: [new H2 2]
 - [ ] After 30 days: check for featured-snippet wins, People Also Ask appearances, position change in GSC
 ```
 
-Save the produced file to `businesses/<slug>/headers/<page-slug>.md`. Create the `headers/` sub-folder if it doesn't already exist. Name the file after the page slug (e.g. `how-laundry-strips-work.md`). After writing, tell the user the file path so they can open it.
+Save the produced file to `businesses/<slug>/headers/<page-slug>.md`. Create the `headers/` sub-folder if it doesn't already exist. Name the file after the page slug (e.g. `how-mineral-sunscreen-works.md`). After writing, tell the user the file path so they can open it.
 
 ## Quality bar
 
@@ -148,12 +148,12 @@ Save the produced file to `businesses/<slug>/headers/<page-slug>.md`. Create the
 
 ## Example
 
-**Input (abbreviated):** URL = `/blog/how-laundry-strips-work`. Page type = blog post. Cluster I03: primary `how do laundry strips work` (1,800/mo, informational). Supporting: `are laundry strips effective`, `are laundry strips bad for septic`, `do laundry strips actually work`, `laundry strips vs liquid`. Brand voice = warm, confident, plain-language.
+**Input (abbreviated):** URL = `/blog/how-mineral-sunscreen-works`. Page type = blog post. Cluster I03: primary `how does mineral sunscreen work` (1,200/mo, informational). Supporting: `mineral vs chemical sunscreen`, `does mineral sunscreen leave white cast`, `is zinc oxide safe`, `mineral sunscreen for dark skin`. Brand voice = warm, knowledgeable, plain-language, ingredient-led.
 
 Current outline:
 ```
-H1: Laundry Strips
-H1: Refillable Cleaning Co (banner — duplicate H1)
+H1: Mineral Sunscreen
+H1: Field & Sun (banner — duplicate H1)
 H2: Section 1
 H2: Pros
 H2: Cons
@@ -169,32 +169,30 @@ Strategic: H1 doesn't include primary keyword ✗. 0 of 4 H2s are question-form 
 
 Proposed:
 ```
-H1: How Do Laundry Strips Work? A Plain-Language Guide
+H1: How Does Mineral Sunscreen Work? A Plain-Language Guide
 
-H2: What are laundry detergent strips, exactly? ⭐
+H2: What is mineral sunscreen, exactly? ⭐
     Content hint: 40-60 word direct answer + 2 sentences of context.
 
-H2: How do laundry strips clean clothes? ⭐
-    Content hint: Activation process + ingredient breakdown.
-  H3: The activation process
-  H3: What's actually in a laundry strip
+H2: How does mineral sunscreen protect your skin? ⭐
+    Content hint: Reflection / scattering mechanism + zinc oxide breakdown.
+  H3: How zinc oxide reflects UV
+  H3: Non-nano vs nano formulations
 
-H2: Are laundry strips actually effective? ⭐
-    Content hint: Independent test results, where they fall short.
-  H3: Independent test results
-  H3: Where they fall short (hard water, heavy stains)
+H2: Mineral vs chemical sunscreen — what's the real difference? ⭐
+    Content hint: Direct comparison table covering ingredients, skin reactivity, reef safety, and finish on skin.
 
-H2: Laundry strips vs liquid detergent ⭐
-    Content hint: Direct comparison table + a recommendation.
+H2: Does mineral sunscreen leave a white cast? ⭐
+    Content hint: Honest answer + why some do and others don't + tinted-formula note.
 
-H2: Are laundry strips bad for septic systems? ⭐
-    Content hint: Direct yes/no answer + reasoning + brand-specific notes.
+H2: Is zinc oxide safe for daily use? ⭐
+    Content hint: Direct yes/no answer + reasoning + sensitive-skin notes.
 
-H2: How to use laundry strips
-    Content hint: Step-by-step instructions.
+H2: How to apply mineral sunscreen
+    Content hint: Step-by-step + dose recommendation (the 2-finger rule).
 
-H2: Where to buy refillable laundry strips
+H2: Where to find a good mineral sunscreen
     Content hint: Brand-led collection link + alternatives.
 ```
 
-Diff: H1 1 (was 2), H2 7 (was 4), question-form % 71% (was 0%), supporting-kw coverage 4/4 (was 0/4), snippet candidates 5 (was 0). Implementation checklist included. Saved to `businesses/refillable-cleaning-co/headers/how-laundry-strips-work.md`.
+Diff: H1 1 (was 2), H2 7 (was 4), question-form % 71% (was 0%), supporting-kw coverage 4/4 (was 0/4), snippet candidates 5 (was 0). Implementation checklist included. Saved to `businesses/field-and-sun/headers/how-mineral-sunscreen-works.md`.

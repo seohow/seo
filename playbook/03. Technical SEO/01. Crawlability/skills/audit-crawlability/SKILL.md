@@ -188,7 +188,7 @@ Save the produced file to `businesses/<slug>/crawlability/audit-<YYYY-MM-DD>.md`
 
 ## Example
 
-**Input (abbreviated):** Refillable Cleaning Co. Shopify. 320 URLs from Screaming Frog. Robots.txt blocks `/cart`, `/checkout`, `/admin`, `/search`, and `/products/temp-*`. Cluster map identifies 28 priority pages.
+**Input (abbreviated):** Field & Sun. Shopify. 320 URLs from Screaming Frog. Robots.txt blocks `/cart`, `/checkout`, `/admin`, `/search`, and `/products/temp-*`. Cluster map identifies 28 priority pages.
 
 **Output (abbreviated):**
 
@@ -206,4 +206,4 @@ Crawl depth: 12 URLs at depth 5+. 2 are priority pages — recommend internal-li
 
 Orphan pages: 4 orphans. 1 is a priority blog post — link in from related cluster spokes (P0). 3 are legacy posts — recommend de-publish.
 
-P0 fixes: this week. P1: next 3 weeks. P2: rolling. Implementation checklist included with re-crawl + GSC re-indexing steps. Saved to `businesses/refillable-cleaning-co/crawlability/audit-2026-05-01.md`.
+P0 fixes: this week. P1: next 3 weeks. P2: rolling. Implementation checklist included with re-crawl + GSC re-indexing steps. Saved to `businesses/field-and-sun/crawlability/audit-2026-05-01.md`.

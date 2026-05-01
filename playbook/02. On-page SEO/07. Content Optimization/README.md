@@ -33,23 +33,23 @@ The work is also where AI assistance produces the largest measurable time saving
 
 ## A worked example
 
-> **Scenario:** The D2C brand's blog post `/blog/are-laundry-strips-effective` ranks position 14 for "are laundry strips effective" (1,200/mo). Article is 850 words, 4 H2s, no comparison table, no test results, no specific brand mentions. SERP top 5 are: Wirecutter (4,200 words, comparison table, test methodology, expert quotes), Reddit thread, NYT Wirecutter, a personal blog (1,800 words, photo-rich), and a YouTube video.
+> **Scenario:** Field & Sun's blog post `/blog/mineral-vs-chemical-sunscreen` ranks position 14 for "mineral vs chemical sunscreen" (1,800/mo). Article is 850 words, 4 H2s, no comparison table, no swatch photos, no specific brand-tested observations. SERP top 5 are: NYT Wirecutter (4,200 words, comparison table, test methodology, dermatologist quotes), Reddit thread, The Strategist, a personal skincare blog (1,800 words, photo-rich), and a YouTube video.
 >
-> **Step 1.** SERP read. Wirecutter dominates with a "tested and reviewed" depth signal the brand can't fully match. But angles are open: hard-water-specific results, septic-system safety (covered by sibling post), and brand-specific transparency.
+> **Step 1.** SERP read. Wirecutter dominates with a "tested and reviewed" depth signal Field & Sun can't fully match. But angles are open: skin-tone-specific swatch results (most reviews don't show range), sensitive-skin reactivity, and brand-specific ingredient transparency at percentages.
 >
-> **Step 2.** Cluster cross-check. Cluster I04: primary "are laundry strips effective"; supporting "do laundry strips work in cold water," "laundry strips vs liquid for stains," "laundry strips for hard water," "are laundry strips worth it." Current content addresses 1 of 4 supporting keywords.
+> **Step 2.** Cluster cross-check. Cluster I04: primary "mineral vs chemical sunscreen"; supporting "is mineral sunscreen better," "does mineral sunscreen leave white cast," "mineral sunscreen for sensitive skin," "is zinc oxide safe daily." Current content addresses 1 of 4 supporting keywords.
 >
 > **Step 3.** Plan the rework:
 >   - New H2 covering each missing supporting keyword.
->   - Add a comparison table (laundry strips vs. liquid, side-by-side on cleaning, cold-water performance, scent, packaging, cost).
->   - Add a "tested and observed" section: own brand's strips tested in cold water, hard water, with three stain types — with photos.
->   - Add freshness markers (date the test, name the conditions).
->   - Add a "where they fall short" section to address objections honestly. Counter-intuitively, this lifts rankings.
->   - Update intro: 40-60 word direct answer to "are laundry strips effective" — featured-snippet-eligible.
+>   - Add a comparison table (mineral vs chemical, side-by-side on UV protection, skin reactivity, reef safety, finish on skin, cost per ml).
+>   - Add a "tested on three skin tones" section: Mineral Sun Drops swatched on light, medium, deep skin — with photos and observed white-cast / blendability ratings.
+>   - Add freshness markers (date the swatch test, name the conditions and skin tones tested).
+>   - Add a "where mineral falls short" section to address objections honestly (greasy finish on humid days, harder to reapply over makeup). Counter-intuitively, this lifts rankings.
+>   - Update intro: 40-60 word direct answer to "mineral vs chemical sunscreen — which should I use?" — featured-snippet-eligible.
 >
 > **Step 4.** Implement: rewrite + add 2,400 words, embed comparison table, photograph and add 5 new images (with proper image-optimisation per `audit-images`). Update internal links to pillar + sibling spokes per linking plan.
 >
-> **Step 5.** Result: in 60 days position rose from 14 to 6, page enters featured snippet for "are laundry strips effective," cluster traffic across all 5 keywords goes from ~80/mo to ~480/mo.
+> **Step 5.** Result: in 60 days position rose from 14 to 6, page enters featured snippet for "does mineral sunscreen leave white cast," cluster traffic across all 5 keywords goes from ~80/mo to ~520/mo.
 
 ## How to do it
 

@@ -26,7 +26,7 @@ For a D2C brand, the most common crawlability failures are: an over-aggressive `
 
 ## A worked example
 
-> **Scenario:** The D2C cleaning brand notices in GSC that 12 of their 28 cluster-mapped pages are not in the index. The pages exist; customers can navigate to them. Why?
+> **Scenario:** Field & Sun notices in GSC that 12 of their 28 cluster-mapped pages are not in the index. The pages exist; customers can navigate to them. Why?
 >
 > **Step 1.** Run a crawlability audit using Screaming Frog. Discover:
 >   - 4 pages have a `noindex` meta tag left over from staging (a CMS template flag never flipped at launch).
@@ -60,7 +60,7 @@ For a D2C brand, the most common crawlability failures are: an over-aggressive `
 - **302s where 301s belong.** A 302 (temporary) tells Google not to update its index; a 301 (permanent) tells it to. Migrations and URL changes should always be 301.
 - **Soft-404s.** A page that returns 200 status but says "page not found" or "out of stock" wastes crawl budget. Either fix the page (so it's a real 200), or return a real 404 / 410.
 - **Internal `nofollow`.** Adding `rel="nofollow"` to internal links is almost always a mistake — it stops equity flow inside your own site.
-- **Crawl depth on collection pages.** A common ecom mistake: nesting collections so deeply (`/collections/cleaning/laundry/refillable/strips/...`) that the deepest pages are 6+ clicks from the homepage.
+- **Crawl depth on collection pages.** A common ecom mistake: nesting collections so deeply (`/collections/skincare/serums/vitamin-c/morning-routine/...`) that the deepest pages are 6+ clicks from the homepage.
 - **Robots.txt overreach.** "Block /admin and /cart" is fine. "Block /products with a wildcard pattern" is catastrophic. Test changes carefully.
 - **Auditing once and forgetting.** Crawl issues recur — every CMS update or template change can introduce new ones. Quarterly audits at minimum.
 

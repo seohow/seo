@@ -42,7 +42,7 @@ If products/services or customer pains are missing, ask before producing output.
    - **Customer questions** — question-form queries the customer asks before buying ("how does X work," "is X safe for Y," "X vs Y").
    - **Comparison and modifier queries** — "best X," "cheapest X," "X for [persona]," "X without [thing]," "X near me," "X reviews."
    - **Competitor and alternative queries** — "[competitor] alternative," "[competitor] vs [other competitor]," "[competitor] review."
-   - **Adjacent / top-of-funnel topics** — things the customer reads about *before* they're ready to buy. For a D2C cleaning brand, that's "non-toxic cleaning tips," "how to reduce plastic at home" — informational queries that earn trust upstream of purchase intent.
+   - **Adjacent / top-of-funnel topics** — things the customer reads about *before* they're ready to buy. For a D2C beauty brand, that's "vitamin C serum benefits," "how mineral sunscreen works," "how to layer skincare with SPF" — informational queries that earn trust upstream of purchase intent.
 2. **Generate 8-15 seeds per dimension.** Aim for variety, not exhaustiveness — the tool will expand. Use customer language, not corporate language. If you'd be embarrassed to read it aloud as a customer, rewrite it.
 3. **Tag each seed.** Each seed gets a dimension tag and a quick intent guess (informational / commercial / transactional / navigational). The intent guess is provisional — `classify-keyword-intent` does this properly later.
 4. **Flag the high-priority seeds.** Mark the 10-20 seeds most likely to be the highest-leverage starting points for this business. These are typically: direct product/category names, the top 1-2 customer pain phrases, and "best [category]" / "[category] for [persona]" patterns.
@@ -96,14 +96,14 @@ Save the produced file to `businesses/<slug>/keyword-research/seed-keywords.md`.
 ## Quality bar
 
 - Every seed is plausible — would actually be searched by a real customer.
-- Customer-language phrasing dominates over corporate phrasing. "Non-toxic laundry detergent" beats "sustainable surfactant solutions."
+- Customer-language phrasing dominates over corporate phrasing. "Natural face serum" beats "bioactive peptide complex."
 - All six dimensions are populated, not just products.
 - Priority seeds are explicitly justified.
 - The list is tailored to this business — at least one seed in each dimension references something specific from the business profile (a product name, a competitor, a customer pain).
 
 ## Common mistakes to avoid
 
-- Don't produce only product-name seeds. The most missed dimension is *customer pains and questions* — these are the seeds that unlock long-tail content opportunities.
+- Don't produce only product-name seeds. The most missed dimension is *customer pains and questions* — these are the seeds that unlock long-tail content opportunities. For example, "does mineral sunscreen leave white cast" unlocks more value than just "mineral sunscreen."
 - Don't pad the list. 50 thoughtful seeds beat 200 generic ones.
 - Don't invent competitor names. If the business profile doesn't list competitors, ask.
 - Don't try to estimate volume or difficulty — that's what the keyword tool is for. Stay in your lane.
@@ -111,14 +111,14 @@ Save the produced file to `businesses/<slug>/keyword-research/seed-keywords.md`.
 
 ## Example
 
-**Input (abbreviated):** D2C refillable cleaning brand. Products: laundry detergent strips, dish soap concentrate, all-purpose cleaner refills. Customer: eco-conscious parents. Customer pains: plastic waste from cleaning products, harsh chemicals around kids. Competitors: Blueland, Cleancult, Branch Basics. US market, English.
+**Input (abbreviated):** D2C beauty brand (skincare). Products: Daily Glow Serum, Mineral Sun Drops SPF 50, Bloom Cleanser, complementary serums. Customer: health-conscious women 25–45, concerned with ingredient safety and sun protection. Customer pains: sunscreen that doesn't leave white cast, serums that work for sensitive skin, clean-beauty products. Competitors: Supergoop, Blue Tansy, Drunk Elephant. US market, English.
 
 **Output (abbreviated):**
 
-Priority seeds: refillable laundry detergent, laundry detergent strips, non-toxic all-purpose cleaner, blueland alternative, eco-friendly dish soap, baby-safe cleaning products, refill cleaning products.
+Priority seeds: best mineral sunscreen, mineral sunscreen no white cast, natural face serum, vitamin C serum for sensitive skin, sunscreen for dark skin, daily glow serum alternative, best skincare for mature skin.
 
-Customer pains: plastic-free cleaning, kid-safe cleaning products, no-rinse all purpose cleaner, fragrance-free dish soap, biodegradable laundry detergent.
+Customer pains: mineral sunscreen no chalky finish, reef-safe sunscreen, serum that doesn't oxidize, mineral sunscreen for oily skin, ingredient-led skincare.
 
-Customer questions: are laundry strips as good as liquid, is blueland actually non-toxic, how do refill cleaning products work, what cleaners are safe for babies, can you use dish soap on dishes if you have a septic tank.
+Customer questions: is mineral sunscreen better than chemical, does mineral sunscreen leave white cast, what's the best vitamin C serum, is reef-safe sunscreen worth it, can you use sunscreen under makeup.
 
 […and so on across all six dimensions]

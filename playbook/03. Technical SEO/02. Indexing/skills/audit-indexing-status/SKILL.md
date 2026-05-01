@@ -199,7 +199,7 @@ Save the produced file to `businesses/<slug>/indexing/audit-<YYYY-MM-DD>.md`. Cr
 
 ## Example
 
-**Input (abbreviated):** Refillable Cleaning Co. Shopify. GSC Pages export: 612 indexed, 287 not indexed. Cluster map identifies 28 priority URLs.
+**Input (abbreviated):** Field & Sun. Shopify. GSC Pages export: 612 indexed, 287 not indexed. Cluster map identifies 28 priority URLs.
 
 **Output (abbreviated):**
 
@@ -219,4 +219,4 @@ Noindex review (E): 38 noindex tags. 34 are correct (admin/account); 4 are accid
 
 Sequence: Phase 1 (Wk 1) — A1 template fix + remove 4 accidental noindex. Phase 2 (Wk 2-4) — internal-linking improvements + soft-404 cleanup. Phase 3 (Wk 5-8) — content quality work on the 12 cluster-spoke pages and de-publishing of 33 discontinued products.
 
-Implementation checklist included with re-submission and verification timing. Saved to `businesses/refillable-cleaning-co/indexing/audit-2026-05-01.md`.
+Implementation checklist included with re-submission and verification timing. Saved to `businesses/field-and-sun/indexing/audit-2026-05-01.md`.

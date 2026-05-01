@@ -24,20 +24,20 @@ For a D2C brand, the meta description is one of the cheapest CTR levers availabl
 
 ## A worked example
 
-> **Scenario:** The same `/collections/refillable-laundry` page from the [Title example](../01.%20Title/README.md). After title rewrite it's at position 5. Current meta description is auto-generated from the first paragraph: "Welcome to our laundry collection. Shop our range of refillable laundry products including strips and detergents..." (155 chars, generic, no proof points).
+> **Scenario:** The same `/products/daily-glow-serum` page from the [Title example](../01.%20Title/README.md). After title rewrite it's at position 5. Current meta description is auto-generated from the first paragraph: "Welcome to our serum collection. Shop our range of hydrating serum products including daily glow..." (155 chars, generic, no proof points).
 >
-> **Step 1.** Pull intent and cluster. Transactional, primary "refillable laundry detergent." The SERP at #5 surrounds them with brand collection pages and Wirecutter-style listicles.
+> **Step 1.** Pull intent and cluster. Transactional, primary "hydrating serum." The SERP at #5 surrounds them with brand product pages and prestige-skin listicles.
 >
 > **Step 2.** Generate variants:
->   - "Plastic-free refillable laundry detergent — strips and concentrates that ship in compostable packaging. Free shipping on orders over $40." (146 chars)
->   - "Refillable laundry detergent that actually works. Plant-based formulas, plastic-free packaging, and refills delivered to your door." (139 chars)
->   - "Shop refillable laundry detergent — strips, concentrates, and refills. Eco-conscious cleaning without the harsh chemicals or plastic." (139 chars)
+>   - "Hydrating serum for radiance — nutrient-rich formula that ships in glass bottles. Ships next day, 30-day returns." (146 chars)
+>   - "Hydrating serum that actually works. Vitamin-enriched formula, lightweight texture, and visible glow in 7 days." (139 chars)
+>   - "Shop hydrating serum — daily glow activators, fast-absorbing serums. Professional skincare at home." (139 chars)
 >
 > **Step 3.** Score each: length within target, primary keyword present, intent fit (commercial proof + transactional offer), voice match, distinct call to action, freshness vs. SERP neighbours.
 >
-> **Step 4.** Pick variant 1 — leads with the differentiator (plastic-free), includes the offer (free shipping), and matches a confident-warm brand voice.
+> **Step 4.** Pick variant 1 — leads with the benefit (radiance), includes the offer (fast shipping), and matches a confident-warm brand voice.
 >
-> **Step 5.** Implement, request indexing, monitor CTR. After 30 days CTR is up from 4.1% to 5.4% — additional ~25 monthly clicks at the same position.
+> **Step 5.** Implement, request indexing, monitor CTR. After 30 days CTR is up from 4.1% to 5.4% — additional ~28 monthly clicks at the same position.
 
 ## How to do it
 

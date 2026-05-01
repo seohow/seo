@@ -143,18 +143,18 @@ Save the produced file to `businesses/<slug>/descriptions/<page-slug-or-batch-na
 
 ## Example
 
-**Input (abbreviated):** Page = `/collections/refillable-laundry`. Current title (just rewritten) = `Refillable Laundry Detergent — Plastic-Free Refills | Refillable Cleaning Co`. Current description = "Welcome to our laundry collection. Shop our range of refillable laundry products including strips and detergents and more eco-friendly cleaning options for your home." (170 chars, generic, will be rewritten by Google). Cluster T01: primary `refillable laundry detergent`, transactional intent. Active offer: free shipping over $40, 30-day returns.
+**Input (abbreviated):** Page = `/products/daily-glow-serum`. Current title (just rewritten) = `Hydrating Serum for Radiance — Daily Glow | Field & Sun`. Current description = "Welcome to our serum collection. Shop our range of hydrating serum products including daily glow and more skincare options for your routine." (170 chars, generic, will be rewritten by Google). Cluster T01: primary `hydrating serum`, transactional intent. Active offer: free shipping on orders over $60, 30-day returns.
 
 **Output (abbreviated):**
 
-SERP read: top 10 descriptions are dominated by offer + differentiator combinations ("free shipping," "plastic-free," "subscribe and save"). Average length 142 chars. Two listicles read as comparison-led. Brand collection pages tend to lead with the differentiator and end with the offer.
+SERP read: top 10 descriptions are dominated by benefit + proof combinations ("brightens skin," "vitamin-enriched," "ships next day"). Average length 142 chars. Two listicles read as comparison-led. Brand product pages tend to lead with the benefit and end with the offer.
 
-**Variant A — Differentiator-led:** "Plastic-free refillable laundry detergent — strips and concentrates that ship in compostable packaging. Free shipping on orders over $40." (146 chars). Mobile cut at "Plastic-free refillable laundry detergent — strips and concentrates that ship in compostable packaging." First-sentence stand-alone: yes. KW: front. Intent fit: yes. Voice: yes. CTA: implicit (Shop). Differentiation: strong (compostable packaging is distinct in this SERP). **Composite: high.**
+**Variant A — Benefit-led:** "Hydrating serum for radiance — nutrient-rich formula that visibly brightens skin in 7 days. Ships next day, free shipping on orders over $60." (146 chars). Mobile cut at "Hydrating serum for radiance — nutrient-rich formula that visibly brightens skin in 7 days." First-sentence stand-alone: yes. KW: front. Intent fit: yes. Voice: yes. CTA: implicit (Shop). Differentiation: strong (7-day visible result is distinct in this SERP). **Composite: high.**
 
-**Variant B — Benefit-led:** "Refillable laundry detergent that actually works. Plant-based formulas, plastic-free packaging, and refills delivered to your door." (139 chars). Mobile cut at full length. First-sentence stand-alone: yes. KW: front. Intent fit: yes. Voice: yes. CTA: implicit. Differentiation: moderate. Composite: medium-high.
+**Variant B — Proof-led:** "Hydrating serum with vitamins + hyaluronic acid. Lightweight, fast-absorbing, dermatologist-approved. Glow in 7 days guaranteed." (139 chars). Mobile cut at full length. First-sentence stand-alone: yes. KW: front. Intent fit: yes. Voice: yes. CTA: implicit. Differentiation: moderate. Composite: medium-high.
 
 […2 more variants…]
 
-**Recommendation:** Ship Variant A. It earns the click in this SERP because compostable packaging is the most distinct differentiator and free shipping is the most concrete offer. Variant B is the alternative — keep it on file if A doesn't lift CTR after 30 days; the benefit framing might resonate better with the eco-conscious customer segment.
+**Recommendation:** Ship Variant A. It earns the click in this SERP because the 7-day visible result is the most distinct differentiator and fast shipping is the most concrete offer. Variant B is the alternative — keep it on file if A doesn't lift CTR after 30 days; the proof framing (dermatologist-approved) might resonate better with the clinical-skincare customer segment.
 
 Implementation checklist: update Shopify, verify, submit URL to GSC, monitor.

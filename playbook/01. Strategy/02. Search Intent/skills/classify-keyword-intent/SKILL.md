@@ -114,22 +114,22 @@ If the list is large (>100 keywords), still produce the full table — it's the 
 
 ## Example
 
-**Input (abbreviated):** 5 keywords from the refillable cleaning brand list.
+**Input (abbreviated):** 5 keywords from the D2C beauty brand list.
 
 | Keyword | Volume |
 |---------|-------:|
-| best non-toxic laundry detergent | 2,400 |
-| buy refillable laundry strips | 320 |
-| how do laundry strips work | 1,800 |
-| blueland | 60,500 |
-| eco laundry detergent near me | 90 |
+| best mineral sunscreen | 2,800 |
+| buy mineral sunscreen SPF 50 | 420 |
+| does mineral sunscreen leave white cast | 1,600 |
+| supergoop | 45,200 |
+| mineral sunscreen near me | 110 |
 
 **Output (abbreviated):**
 
 | Keyword | Intent | Page type | Confidence | Notes |
 |---------|--------|-----------|-----------|-------|
-| buy refillable laundry strips | Transactional | Product / collection | High | Map to existing PDP if SKU exists, else collection. |
-| best non-toxic laundry detergent | Commercial | Comparison / roundup blog | High | Brand-led roundup including own product. |
-| eco laundry detergent near me | Local + Commercial | Local landing or store finder | Medium | Mostly Amazon SERP — niche local play. |
-| how do laundry strips work | Informational | Blog post / explainer | High | Top-of-funnel; link to PDPs. |
-| blueland | Navigational | n/a — competitor brand | High | Out of scope unless building a "[competitor] alternative" page. |
+| buy mineral sunscreen SPF 50 | Transactional | Product / collection | High | Map to existing PDP if SKU exists, else collection. |
+| best mineral sunscreen | Commercial | Comparison / roundup blog | High | Brand-led roundup including own product. |
+| mineral sunscreen near me | Local + Commercial | Local landing or store finder | Medium | Mostly Amazon SERP — niche local play. |
+| does mineral sunscreen leave white cast | Informational | Blog post / explainer | High | Top-of-funnel; link to PDPs. |
+| supergoop | Navigational | n/a — competitor brand | High | Out of scope unless building a "[competitor] alternative" page. |

@@ -177,41 +177,41 @@ Save the produced file to `businesses/<slug>/content-optimization/<page-slug>.md
 
 ## Example
 
-**Input (abbreviated):** Page = `/blog/are-laundry-strips-effective`, 850 words, 4 generic H2s ("Pros," "Cons," etc.), no comparison table, no test methodology. Cluster I04: primary `are laundry strips effective` (1,200/mo, informational). Supporting: `do laundry strips work in cold water`, `laundry strips vs liquid for stains`, `laundry strips for hard water`, `are laundry strips worth it`. SERP top 5: Wirecutter (4,200 words, comparison table, methodology), Reddit, NYT Wirecutter, personal blog (1,800 words, photo-rich), YouTube. Output depth: plan.
+**Input (abbreviated):** Page = `/blog/mineral-vs-chemical-sunscreen`, 850 words, 4 generic H2s ("Pros," "Cons," etc.), no comparison table, no swatch photos. Cluster I04: primary `mineral vs chemical sunscreen` (1,800/mo, informational). Supporting: `is mineral sunscreen better`, `does mineral sunscreen leave white cast`, `mineral sunscreen for sensitive skin`, `is zinc oxide safe daily`. SERP top 5: NYT Wirecutter (4,200 words, comparison table, dermatologist quotes), Reddit, The Strategist, personal skincare blog (1,800 words, photo-rich), YouTube. Output depth: plan.
 
 **Output (abbreviated):**
 
 SERP read: top 3 are publisher review content with methodology and comparison tables; positions 4-5 are personal-experience-led. Wirecutter is uncatchable at #1 on resources. Realistic target: positions 4-7.
 
-Current audit: cluster coverage 1/4, intent fidelity partial (lacks the comparison shape), no depth signals, format mismatch (wall-of-text vs SERP's table+test pattern), undated.
+Current audit: cluster coverage 1/4, intent fidelity partial (lacks the comparison shape), no depth signals, format mismatch (wall-of-text vs SERP's table+swatch pattern), undated.
 
-Brand-distinct angles: (1) Own product testing — own brand's strips tested in cold water + hard water + 3 stain types; (2) Septic-system safety angle (cluster sibling exists already, link in); (3) Hard-water specificity (most reviews ignore this).
+Brand-distinct angles: (1) Own product swatch testing — Mineral Sun Drops swatched on light/medium/deep skin tones with photos; (2) Sensitive-skin reactivity from real customer feedback (cluster sibling exists, link in); (3) Ingredient-percentage transparency (most reviews don't list active percentages).
 
 SERP-competition assessment: Top 5 is reachable. Position #1 (Wirecutter) is not. Realistic target: position 4-7 with the rework.
 
 Rework plan:
 
-**Add:** 
-- New H2 "Do laundry strips work in cold water?" (covers supporting kw). Content hint: own brand's tested results in 4 water temperatures, with photos.
-- New H2 "Laundry strips vs liquid for stains" with comparison table. Content hint: side-by-side test on 3 common stains.
-- New H2 "Laundry strips for hard water." Content hint: state the issue (high mineral content reduces detergent efficacy), our brand's reformulation, recommended dosing for hard-water regions.
-- 40-60 word direct answer at the top: "Laundry strips are effective for everyday loads in soft-to-moderate water. Independent and brand testing show they clean comparably to liquid detergent on common stains, but underperform on heavy stains and in hard water without dose adjustment."
+**Add:**
+- New H2 "Does mineral sunscreen leave a white cast?" (covers supporting kw). Content hint: Mineral Sun Drops swatched on three skin tones with photos and observed blendability ratings.
+- New H2 "Mineral vs chemical sunscreen for sensitive skin" with comparison table. Content hint: reactivity profiles, customer feedback themes, recommended formats per skin type.
+- New H2 "Is zinc oxide safe for daily use?" Content hint: FDA OTC monograph status, non-nano vs nano, percentages we use (20% non-nano zinc oxide), link to primary sources.
+- 40-60 word direct answer at the top: "Mineral sunscreens use zinc oxide or titanium dioxide to physically scatter UV; chemical sunscreens absorb it through organic compounds. For sensitive skin, daily skincare layering, and reef-safe contexts, mineral wins; for invisible finish under makeup in humid climates, well-formulated chemical filters can be easier to wear."
 
-**Expand:** 
-- Existing "Pros" section → "Where laundry strips win" with 3 specific use cases.
-- Existing "Cons" section → "Where laundry strips fall short" with honest limits + workarounds.
+**Expand:**
+- Existing "Pros" section → "Where mineral sunscreen wins" with 3 specific use cases.
+- Existing "Cons" section → "Where mineral falls short" with honest limits + workarounds.
 
-**Cut:** 
-- Generic "What are laundry strips?" intro paragraph (covered in sibling post; link instead of duplicate).
+**Cut:**
+- Generic "What is sunscreen?" intro paragraph (covered in sibling post; link instead of duplicate).
 
 **Restructure:** Move "Where to buy" from middle to bottom; move comparison table to fold-1.
 
-**Format changes:** Comparison table (laundry strips vs liquid: cleaning, cold water, scent, packaging, cost). 5 new product-test photos. FAQ block at bottom.
+**Format changes:** Comparison table (mineral vs chemical: UV protection, skin reactivity, reef safety, finish on skin, cost per ml). 5 new swatch / lifestyle photos. FAQ block at bottom.
 
-**E-E-A-T:** Date the methodology ("April 2026 in-house testing"). Add brand-test photos with date stamps. Link to 2 primary sources (a peer-reviewed study on surfactant efficacy, a hard-water mineral data source). Add 3 customer quotes from product reviews.
+**E-E-A-T:** Date the swatch methodology ("April 2026 in-house testing on three skin tones"). Add date-stamped swatch photos. Link to 2 primary sources (FDA OTC sunscreen monograph, a peer-reviewed study on zinc oxide UV protection). Add 3 customer quotes from product reviews.
 
 Word-count target: 850 → ~2,400. Implementation: ~6 hours including photos.
 
 Implementation checklist: rework, run `generate-title-tags` (current title is generic), run `audit-header-structure` for new outline, update internal links to pillar + 2 sibling spokes, run `audit-images` on the 5 new photos, GSC re-index, monitor 60 days, log outcome in business CLAUDE.md.
 
-Saved to `businesses/refillable-cleaning-co/content-optimization/are-laundry-strips-effective.md`.
+Saved to `businesses/field-and-sun/content-optimization/mineral-vs-chemical-sunscreen.md`.

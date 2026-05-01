@@ -20,13 +20,13 @@ Every page on your site either earns search traffic or it doesn't, and what dete
 
 ## A worked example
 
-> **Scenario:** A D2C brand selling sustainable, refillable cleaning products wants to grow organic traffic to product and category pages.
+> **Scenario:** Field & Sun (D2C beauty, skin care serums and sunscreen) wants to grow organic traffic to product pages and content resources.
 >
-> **Step 1.** They list the products themselves: "refillable laundry detergent," "concentrated dish soap," "plant-based all-purpose cleaner." These are *seed keywords*.
+> **Step 1.** They list the products themselves: "Daily Glow Serum," "Mineral Sun Drops SPF 50," "Bloom Cleanser." These are *seed keywords*.
 >
-> **Step 2.** They expand each seed using a tool's "matching terms" report, plus the People Also Ask box on Google. "Refillable laundry detergent" expands into "refillable laundry detergent strips," "best eco laundry detergent," "non-toxic laundry detergent for babies," "laundry detergent without plastic."
+> **Step 2.** They expand each seed using a tool's "matching terms" report, plus the People Also Ask box on Google. "Mineral sunscreen" expands into "tinted mineral sunscreen," "mineral sunscreen no white cast," "best mineral sunscreen for dark skin," "mineral sunscreen with niacinamide."
 >
-> **Step 3.** They look at the SERP for each expanded term. For "best eco laundry detergent" they see a mix of editorial roundups and brand comparison pages — informational intent. For "refillable laundry detergent strips" they see Amazon listings, brand product pages, and one Wirecutter review — commercial/transactional intent.
+> **Step 3.** They look at the SERP for each expanded term. For "mineral sunscreen no white cast" they see product pages, comparison articles, and reviews — commercial/transactional intent. For "how mineral sunscreen works" they see blog posts, explainers, and educational content — informational intent.
 >
 > **Step 4.** They filter the list down to ~80 keywords across volume bands (10–100, 100–1k, 1k+) with a mix of intents. They tag each one with the page type it should map to (product, collection, blog, FAQ).
 >

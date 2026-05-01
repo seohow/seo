@@ -24,9 +24,9 @@ The framing also matters strategically: organic SEO is compounding, but only aft
 
 ## A worked example
 
-> **Scenario:** The refillable cleaning brand has finished keyword research, intent classification, competitor analysis, and clustering. They're sitting on ~30 cluster decisions and a competitor opportunity list of ~15 items. They need to know what to ship in the next 90 days.
+> **Scenario:** Field & Sun (D2C beauty brand) has finished keyword research, intent classification, competitor analysis, and clustering. They're sitting on ~32 cluster decisions and a competitor opportunity list of ~15 items. They need to know what to ship in the next 90 days.
 >
-> **Step 1.** They consolidate inputs into one backlog. Each input becomes one or more rows. Competitor opportunity #1 ("build [ingredient] safety cluster") becomes 4 rows (4 spoke posts). Cluster T01 ("Refillable laundry detergent collection") becomes 1 row.
+> **Step 1.** They consolidate inputs into one backlog. Each input becomes one or more rows. Competitor opportunity #1 ("build [ingredient] science cluster") becomes 4 rows (4 spoke posts). Cluster S01 ("Mineral sunscreen collection") becomes 1 row.
 >
 > **Step 2.** They tag each row with archetype: 12 striking-distance, 18 content gap, 9 on-page, 4 technical, 6 refresh, 5 link.
 >
@@ -34,7 +34,7 @@ The framing also matters strategically: organic SEO is compounding, but only aft
 >
 > **Step 4.** They sort and review. The top 10 rows include 4 striking-distance keywords (cheap title/H1 updates), 3 on-page wins (schema markup additions), 1 collection-page revamp, and 2 informational posts targeting commercial-adjacent gaps.
 >
-> **Step 5.** They sequence into 90 days: weeks 1-2 ship the 4 striking-distance updates plus 3 on-page fixes (~7 wins). Weeks 3-6 build the collection-page revamp and 2 informational posts. Weeks 7-12 tackle the [ingredient] safety cluster and one technical item. The result is a sequenced quarter, not a wishlist.
+> **Step 5.** They sequence into 90 days: weeks 1-2 ship the 4 striking-distance updates plus 3 on-page fixes (~7 wins). Weeks 3-6 build the collection-page revamp and 2 informational posts. Weeks 7-12 tackle the [ingredient] science cluster and one technical item. The result is a sequenced quarter, not a wishlist.
 
 ## How to do it
 

@@ -153,27 +153,27 @@ Save the produced file to `businesses/<slug>/internal-linking/plan.md`. Create t
 
 ## Example
 
-**Input (abbreviated):** Cluster map with 28 clusters. Existing pages: 6 product pages, 5 collection pages, 22 blog posts. Site scale: medium. Goal: lift topical authority around laundry, dish, and surface cleaning.
+**Input (abbreviated):** Cluster map with 28 clusters. Existing pages: 8 product pages, 4 collection pages, 22 blog posts. Site scale: medium. Goal: lift topical authority around sun care, skincare/serums, and refills.
 
 **Output (abbreviated):**
 
-3 hubs: Laundry (8 spokes), Dish (5 spokes), Surface cleaners (4 spokes). Plus 1 cross-cutting hub: Eco / non-toxic education (5 informational spokes that link laterally across the product hubs).
+3 hubs: Sun care (8 spokes — peak-season priority), Serums / skincare (7 spokes), Refills & sustainability (4 spokes). Plus 1 cross-cutting hub: Ingredient education (5 informational spokes that link laterally across the product hubs).
 
 Pillars:
-- Laundry → existing collection page `/collections/refillable-laundry` (P0).
-- Dish → existing collection page `/collections/refillable-dish` (P0).
-- Surface → existing collection `/collections/refillable-all-purpose` (P1).
-- Eco education → needs new pillar blog post `/blog/non-toxic-cleaning-guide` (flagged — content dependency).
+- Sun care → existing collection page `/collections/sun-care` (P0).
+- Serums / skincare → existing collection page `/collections/skincare` (P0).
+- Refills → existing collection `/collections/refills` (P1).
+- Ingredient education → needs new pillar blog post `/blog/skincare-ingredient-guide` (flagged — content dependency).
 
 Linking matrix per hub: pillar links to all spokes (in body + Related module); each spoke links to pillar in intro + body; spokes link to 2-3 sibling spokes contextually.
 
 Orphans: 4 blog posts with no inbound internal links. Recommendation: link 3 in from the relevant hub spokes; de-publish 1 (low traffic, off-topic).
 
 Wave 1 (Wk 1): Add Related-content module to blog template; update breadcrumbs to reflect new hub structure.
-Wave 2 (Wk 2-4): Laundry hub contextual linking (highest-priority — most clusters, most traffic potential).
-Wave 3 (Wk 5-7): Dish + Surface hubs.
-Wave 4 (Wk 8+): Eco education hub once pillar post is live; orphan cleanup.
+Wave 2 (Wk 2-4): Sun care hub contextual linking (highest-priority — peak-season demand approaching).
+Wave 3 (Wk 5-7): Serums + Refills hubs.
+Wave 4 (Wk 8+): Ingredient education hub once pillar post is live; orphan cleanup.
 
-Success metrics: orphans → 0 in 60 days; click depth from 4.2 avg → 3 avg; expect 5-10 of 17 spoke pages to lift in GSC over 30-60 days.
+Success metrics: orphans → 0 in 60 days; click depth from 4.2 avg → 3 avg; expect 5-10 of 19 spoke pages to lift in GSC over 30-60 days.
 
-Saved to `businesses/refillable-cleaning-co/internal-linking/plan.md`.
+Saved to `businesses/field-and-sun/internal-linking/plan.md`.

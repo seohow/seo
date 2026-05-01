@@ -51,7 +51,7 @@ For each image on the page:
    - Include relevant context (e.g. "in a washing machine drum," "on a white background") that helps both Google and screen-reader users.
    - Don't stuff keywords. The primary keyword may appear naturally in 1-2 alt texts on the page; don't repeat across all 8.
    - Match brand voice (warm-conversational vs clinical-expert).
-5. **Generate file-name rewrites.** Kebab-case, descriptive, optionally include the page's primary keyword in 30-50% of files (not all). Examples: `refillable-laundry-strips-pack.webp`, `refillable-laundry-strips-in-machine.webp`.
+5. **Generate file-name rewrites.** Kebab-case, descriptive, optionally include the page's primary keyword in 30-50% of files (not all). Examples: `mineral-sun-drops-spf-50-bottle.webp`, `mineral-sun-drops-on-skin.webp`.
 6. **Recommend format / compression / dimensions.** Specific actions per image:
    - Convert to WebP if currently JPEG/PNG photo.
    - Compress to ~75% quality target.
@@ -162,7 +162,7 @@ Save the produced file to `businesses/<slug>/images/<page-slug>.md`. Create the 
 
 ## Example
 
-**Input (abbreviated):** Page = `/products/refillable-laundry-strips`. 8 images. Hero (LCP) is `IMG_2381.jpg` (2400×2400, 410KB JPEG, alt="Laundry Strips", currently NOT lazy-loaded — correct). Other 7 images are JPEGs at 2400×2400, 380-450KB each, all alt="Laundry Strips", all eager-loaded.
+**Input (abbreviated):** Page = `/products/mineral-sun-drops-spf-50`. 8 images. Hero (LCP) is `IMG_2381.jpg` (2400×2400, 410KB JPEG, alt="Mineral Sun Drops", currently NOT lazy-loaded — correct). Other 7 images are JPEGs at 2400×2400, 380-450KB each, all alt="Mineral Sun Drops", all eager-loaded.
 
 **Output (abbreviated):**
 
@@ -173,9 +173,9 @@ LCP image: `IMG_2381.jpg` — currently eager (correct). Keep eager.
 CMS-level recommendations: enable Shopify's auto-WebP conversion; update PDP template to add `loading="lazy"` to all images except the first.
 
 Per-image:
-- Image 1 (LCP, hero): rename to `refillable-laundry-strips-hero.webp`, new alt "Pack of 60 refillable laundry detergent strips on a white background," resize to 1200×1200 + `srcset`, KEEP eager-loaded.
-- Image 2 (lifestyle): rename to `refillable-laundry-strips-in-machine.webp`, new alt "Hand placing a single laundry strip into a washing machine drum," lazy-load.
-- Image 3 (detail): rename to `refillable-laundry-strips-texture.webp`, new alt "Close-up showing the textured surface of a refillable laundry strip," lazy-load.
+- Image 1 (LCP, hero): rename to `mineral-sun-drops-spf-50-hero.webp`, new alt "30ml glass bottle of Mineral Sun Drops SPF 50 with a dropper, on a soft beige background," resize to 1200×1200 + `srcset`, KEEP eager-loaded.
+- Image 2 (lifestyle): rename to `mineral-sun-drops-blended-on-hand.webp`, new alt "Two drops of tinted mineral sunscreen blended into the back of a hand," lazy-load.
+- Image 3 (swatch): rename to `mineral-sun-drops-three-skin-tones.webp`, new alt "Mineral Sun Drops SPF 50 swatched on three skin tones — light, medium, deep — showing no white cast," lazy-load.
 - … etc for remaining 5 images, each with unique alt text describing what's actually in the photo.
 
-Implementation checklist included. Saved to `businesses/refillable-cleaning-co/images/refillable-laundry-strips.md`.
+Implementation checklist included. Saved to `businesses/field-and-sun/images/mineral-sun-drops-spf-50.md`.

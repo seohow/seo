@@ -8,10 +8,10 @@ Search intent is the goal behind a query. The same word can mean very different 
 
 The standard taxonomy has four buckets:
 
-- **Informational** — the searcher wants to learn something. ("how do laundry strips work")
+- **Informational** — the searcher wants to learn something. ("does mineral sunscreen leave white cast")
 - **Navigational** — the searcher wants a specific website or brand. ("blueland login")
-- **Commercial** — the searcher is investigating before a purchase. ("best non-toxic laundry detergent")
-- **Transactional** — the searcher is ready to act. ("buy refillable laundry detergent")
+- **Commercial** — the searcher is investigating before a purchase. ("best mineral sunscreen")
+- **Transactional** — the searcher is ready to act. ("buy mineral sunscreen SPF 50")
 
 Some practitioners add a fifth — **Local** — for queries with a "near me" or location implication.
 
@@ -31,15 +31,15 @@ For a D2C brand, intent also drives where the keyword sits in the funnel. Inform
 
 ## A worked example
 
-> **Scenario:** A D2C refillable cleaning brand has a list of 200 keywords from their keyword research. They need to know which page type to build for each.
+> **Scenario:** A D2C beauty brand has a list of 220 keywords from their keyword research. They need to know which page type to build for each.
 >
-> **Step 1.** They take "best non-toxic laundry detergent" and Google it. The top 10 results are: Wirecutter roundup, NYT Wirecutter, Good Housekeeping, EWG Skin Deep, a personal blog, a brand listicle, two listicles, an editorial review, and a YouTube video review. **Verdict:** commercial intent, page type = blog comparison/roundup.
+> **Step 1.** They take "best mineral sunscreen" and Google it. The top 10 results are: Wirecutter roundup, NYT Wirecutter, Good Housekeeping, Allure comparison, a personal blog, a brand listicle, two beauty listicles, an editorial review, and a YouTube sunscreen review. **Verdict:** commercial intent, page type = blog comparison/roundup.
 >
-> **Step 2.** They Google "refillable laundry detergent strips." The top 10 are: Blueland product page, Earth Breeze product page, Tru Earth product page, Amazon listings, two brand collection pages, two listicles. **Verdict:** mostly transactional with some commercial, page type = product or collection.
+> **Step 2.** They Google "mineral sunscreen no white cast." The top 10 are: Blue Tansy product page, Supergoop product page, Amazon listings, beauty blog posts about white cast, two brand collection pages, two listicles about white-cast-free sunscreens. **Verdict:** mostly transactional with some commercial, page type = product or collection.
 >
-> **Step 3.** They Google "are laundry strips as good as liquid." Top 10: a Wirecutter article, a Reddit thread, two cleaning blog posts, a brand FAQ, a YouTube explainer. **Verdict:** informational, page type = blog post / FAQ.
+> **Step 3.** They Google "does mineral sunscreen leave white cast." Top 10: a Wirecutter article, a Reddit thread, two skincare blog posts, a brand FAQ, a YouTube explainer. **Verdict:** informational, page type = blog post / FAQ.
 >
-> **Step 4.** They tag each of the 200 keywords with intent and page type. The list now splits cleanly into ~80 product/collection candidates, ~70 blog-post candidates, ~30 FAQ candidates, and ~20 deferrals (low priority or unclear intent).
+> **Step 4.** They tag each of the 220 keywords with intent and page type. The list now splits cleanly into ~90 product/collection candidates, ~75 blog-post candidates, ~35 FAQ candidates, and ~20 deferrals (low priority or unclear intent).
 
 ## How to do it
 

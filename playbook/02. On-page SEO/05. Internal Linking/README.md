@@ -20,13 +20,13 @@ For a D2C brand, internal linking is most often under-invested — the navigatio
 
 ## Core concepts
 
-- **Anchor text** — the clickable text of an internal link. Anchor text is a strong topic signal. "Click here" is wasted; "refillable laundry detergent" passes the topical signal to the linked page.
+- **Anchor text** — the clickable text of an internal link. Anchor text is a strong topic signal. "Click here" is wasted; "tinted mineral sunscreen" passes the topical signal to the linked page.
 - **Topical clusters / hubs** — a cluster of pages on related sub-topics, all linking to and from a central pillar page. The pattern Google rewards. From your `clusters/cluster-map.md`, every cluster has natural internal-linking implications.
 - **Pillar / hub pages** — broad pages that link out to many specific pages on related sub-topics. The "spoke" pages link back to the hub. Hub-and-spoke is the canonical structure for topical depth.
 - **Click depth** — number of clicks from the homepage to a page. Shallower is better; pages 1-3 clicks deep get crawled and ranked best. Pages 5+ clicks deep often need direct internal links from high-authority pages to compensate.
 - **Equity flow** — link equity flows roughly proportionally to position. A header-nav link from every page is enormous; a single in-body link from one page is small. Balance: header nav for navigationally-important pages; contextual in-body links for topically-related pages.
 - **Orphan pages** — pages with zero internal links pointing at them. They exist (in the sitemap, in the CMS), but they're effectively invisible to Google. The first audit deliverable on most sites is the orphan-page list.
-- **Internal anchor diversity** — Google looks at the variety of anchor texts pointing to a page. If 100 internal links all use "refillable laundry detergent" as anchor, Google reads it as suspicious; some natural variation is expected.
+- **Internal anchor diversity** — Google looks at the variety of anchor texts pointing to a page. If 100 internal links all use "tinted mineral sunscreen" as anchor, Google reads it as suspicious; some natural variation is expected.
 
 ## A worked example
 
@@ -34,7 +34,7 @@ For a D2C brand, internal linking is most often under-invested — the navigatio
 >
 > **Step 1.** Audit. Crawl the site (Screaming Frog). Identify: 4 orphan blog posts with zero inbound internal links; 3 collection pages reachable only via the main nav (no contextual links); inconsistent anchor text on the highest-traffic blog post (anchor "click here" on 60% of links).
 >
-> **Step 2.** Plan. From the cluster map, identify the 3 highest-leverage hub topics (laundry, dish, all-purpose). For each hub, design hub-and-spoke linking:
+> **Step 2.** Plan. From the cluster map, identify the 3 highest-leverage hub topics (sun care, serums/skincare, refills). For each hub, design hub-and-spoke linking:
 >   - Pillar = collection page (or new pillar blog post if collection is too commercial).
 >   - Spokes = the 4-7 cluster pages that fit the hub topic.
 >   - Spokes link to pillar; pillar links to all spokes; spokes link to 2-3 sibling spokes contextually.

@@ -83,9 +83,9 @@ If the page types or platform are unclear, ask before producing the document.
 - **Slug source:** product title → kebab-case, drop stop-words.
 - **Slug rules:** primary keyword first; max 50 chars; no SKU codes; no year stamps.
 - **Examples:**
-  - `/products/refillable-laundry-detergent-strips`
-  - `/products/concentrated-dish-soap`
-  - `/products/all-purpose-cleaner-refill`
+  - `/products/mineral-sun-drops-spf-50`
+  - `/products/daily-glow-serum`
+  - `/products/bloom-cleanser`
 - **Edge cases:**
   - Product in multiple collections: keep `/products/<slug>` flat; use breadcrumbs and `rel=canonical` to handle context.
   - Long titles: trim to primary-keyword + 1-2 modifier words.
@@ -93,7 +93,7 @@ If the page types or platform are unclear, ask before producing the document.
 ### Collections / categories
 - **Pattern:** `/collections/<slug>`
 - **Slug source:** category name → kebab-case → primary keyword if different.
-- **Slug rules:** singular vs plural — use plural for category names ("collections/refillable-laundry-products" not "products"); skip the word "products" if the category implies it.
+- **Slug rules:** singular vs plural — use plural for category names ("collections/serums" not "serum"); skip the word "products" if the category implies it.
 - **Examples:** ...
 - **Edge cases:** ...
 
@@ -119,12 +119,12 @@ If the page types or platform are unclear, ask before producing the document.
 ## Forbidden patterns
 
 - Query strings in canonical URLs.
-- Capitalised slugs (`/Refillable-Laundry`).
-- Underscores or camelCase (`/refillable_laundry`, `/refillableLaundry`).
+- Capitalised slugs (`/Sun-Care`).
+- Underscores or camelCase (`/sun_care`, `/sunCare`).
 - Slugs over [n] chars.
 - Date-stamped URLs (except news/timely content).
 - SKU or internal IDs in URLs (`/products/sku-12345`).
-- Stop-word-stuffed slugs (`/the-best-refillable-laundry-detergent-strips-for-you`).
+- Stop-word-stuffed slugs (`/the-best-tinted-mineral-sunscreen-spf-50-for-you`).
 
 ## Migration policy
 - 301 redirect required for every URL change.
@@ -162,22 +162,22 @@ Save the produced file to `businesses/<slug>/urls/conventions.md`. Create the `u
 
 ## Example
 
-**Input (abbreviated):** Refillable Cleaning Co. Shopify. Single market (US, English). Page types: products, collections, blog, FAQ.
+**Input (abbreviated):** Field & Sun. Shopify. Single market (US, English). Page types: products, collections, blog, FAQ.
 
 **Output (abbreviated):**
 
 Cross-cutting rules: kebab-case, lowercase, no trailing slash (Shopify default), no dates in URLs, parameters canonicalised to clean version, single-market so no geographic routing.
 
-Products: `/products/<slug>`, slug = product title kebab-cased with stop-words dropped, max 50 chars. Examples: `/products/refillable-laundry-detergent-strips`, `/products/concentrated-dish-soap`. Edge case: products in multiple collections stay flat at `/products/<slug>` (Shopify creates duplicate `/collections/<x>/products/<slug>` URLs by default — handle with `rel=canonical` pointing at the flat URL).
+Products: `/products/<slug>`, slug = product title kebab-cased with stop-words dropped, max 50 chars. Examples: `/products/mineral-sun-drops-spf-50`, `/products/daily-glow-serum`. Edge case: products in multiple collections stay flat at `/products/<slug>` (Shopify creates duplicate `/collections/<x>/products/<slug>` URLs by default — handle with `rel=canonical` pointing at the flat URL).
 
-Collections: `/collections/<slug>`, slug = primary keyword (e.g. `/collections/refillable-laundry`), drop the word "products" since the category implies it.
+Collections: `/collections/<slug>`, slug = primary keyword (e.g. `/collections/sun-care`), drop the word "products" since the category implies it.
 
 Blog: `/blog/<slug>` (note: NOT Shopify's default `/blogs/news/<slug>` — recommend re-routing the blog handle in Shopify settings to drop the `/news/` parent and switch from `/blogs/` to `/blog/`).
 
 FAQ: `/faq/<slug>` for individual FAQ pages, with a parent index at `/faq` if there are 5+ entries.
 
-Forbidden patterns include `/Refillable-Laundry`, `/products/sku-238`, `/blogs/news/2025/12/15/...`, slugs over 60 chars.
+Forbidden patterns include `/Sun-Care`, `/products/sku-238`, `/blogs/news/2025/12/15/...`, slugs over 60 chars.
 
 Migration policy: 301 always, no chains, internal-link sweep within 7 days, GSC re-index.
 
-Enforcement: Shopify auto-slugification on save; quarterly audit; URL changes require Marketing Lead approval. Saved to `businesses/refillable-cleaning-co/urls/conventions.md`.
+Enforcement: Shopify auto-slugification on save; quarterly audit; URL changes require Marketing Lead approval. Saved to `businesses/field-and-sun/urls/conventions.md`.

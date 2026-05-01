@@ -168,16 +168,16 @@ Save the produced file to `businesses/<slug>/internal-linking/audit-<page-slug>.
 
 ## Example
 
-**Input (abbreviated):** Page = `/blog/how-laundry-strips-work`. Cluster I03 (informational, primary "how do laundry strips work"). Role: spoke under "Eco education" hub. Pillar: `/blog/non-toxic-cleaning-guide` (per linking plan).
+**Input (abbreviated):** Page = `/blog/how-mineral-sunscreen-works`. Cluster I03 (informational, primary "how does mineral sunscreen work"). Role: spoke under "Ingredient education" hub. Pillar: `/blog/skincare-ingredient-guide` (per linking plan).
 
-Inbound (from Screaming Frog): 2 pages link in — homepage footer (anchor: "Laundry strips guide") + blog index page (anchor: "How laundry strips work"). Pillar does NOT link in.
+Inbound (from Screaming Frog): 2 pages link in — homepage footer (anchor: "How sunscreen works") + blog index page (anchor: "How mineral sunscreen works"). Pillar does NOT link in.
 
-Outbound: 3 internal links in body — to `/products/refillable-laundry-strips` (anchor: "Shop refillable laundry strips"), to `/collections/refillable-laundry` (anchor: "refillable laundry"), to `/blog/are-laundry-strips-bad-for-septic` (anchor: "another post"). The "another post" anchor is a fix candidate. No link to pillar.
+Outbound: 3 internal links in body — to `/products/mineral-sun-drops-spf-50` (anchor: "Shop Mineral Sun Drops"), to `/collections/sun-care` (anchor: "sun care"), to `/blog/mineral-vs-chemical-sunscreen` (anchor: "another post"). The "another post" anchor is a fix candidate. No link to pillar.
 
 **Output (abbreviated):**
 
-Inbound coverage: 2/5 recommended. Missing: pillar, 2-3 sibling spokes (`/blog/are-laundry-strips-effective`, `/blog/laundry-strips-vs-liquid`).
-Outbound coverage: 3/5 recommended. Missing: pillar link, sibling-spoke link to `/blog/are-laundry-strips-effective`.
+Inbound coverage: 2/5 recommended. Missing: pillar, 2-3 sibling spokes (`/blog/mineral-vs-chemical-sunscreen`, `/blog/mineral-sunscreen-for-dark-skin`).
+Outbound coverage: 3/5 recommended. Missing: pillar link, sibling-spoke link to `/blog/mineral-vs-chemical-sunscreen`.
 Anchor diversity: partial fail. "another post" must be replaced.
 Mechanical: clean (no broken/redirected outbounds).
 Composite: medium.
@@ -185,15 +185,15 @@ Composite: medium.
 Action list:
 
 P0:
-- Add inbound from `/blog/non-toxic-cleaning-guide` (pillar) → suggested anchor: "how laundry detergent strips work" or "how laundry strips work" (vary across uses).
-- Add outbound from this page → pillar `/blog/non-toxic-cleaning-guide`, in intro paragraph, anchor: "non-toxic cleaning guide" or "complete guide to non-toxic cleaning."
-- Replace "another post" anchor with "are laundry strips safe for septic systems."
+- Add inbound from `/blog/skincare-ingredient-guide` (pillar) → suggested anchor: "how mineral sunscreen works" or "zinc oxide sunscreen explained" (vary across uses).
+- Add outbound from this page → pillar `/blog/skincare-ingredient-guide`, in intro paragraph, anchor: "skincare ingredient guide" or "complete guide to skincare ingredients."
+- Replace "another post" anchor with "mineral vs chemical sunscreen — what's the real difference."
 
 P1:
-- Add inbound from sibling `/blog/are-laundry-strips-effective` and `/blog/laundry-strips-vs-liquid`.
-- Add outbound to `/blog/are-laundry-strips-effective` in the "Are laundry strips actually effective?" section.
+- Add inbound from sibling `/blog/mineral-vs-chemical-sunscreen` and `/blog/mineral-sunscreen-for-dark-skin`.
+- Add outbound to `/blog/mineral-vs-chemical-sunscreen` in the "How does mineral sunscreen compare to chemical?" section.
 
 P2:
-- Consider adding a contextual link to `/products/refillable-laundry-detergent-strips` from the "How to use" section if it's not already there.
+- Consider adding a contextual link to `/products/mineral-sun-drops-spf-50` from the "How to use" section if it's not already there.
 
-Implementation checklist included. Saved to `businesses/refillable-cleaning-co/internal-linking/audit-how-laundry-strips-work.md`.
+Implementation checklist included. Saved to `businesses/field-and-sun/internal-linking/audit-how-mineral-sunscreen-works.md`.

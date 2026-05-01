@@ -24,24 +24,24 @@ For a D2C brand, clustering directly determines site architecture. Clusters beco
 
 ## A worked example
 
-> **Scenario:** The D2C cleaning brand has 240 keywords annotated with volume and intent. They need to convert this into a content roadmap.
+> **Scenario:** The D2C beauty brand has 260 keywords annotated with volume and intent. They need to convert this into a content roadmap.
 >
-> **Step 1.** They split the list by intent. ~95 transactional, ~80 commercial, ~55 informational, ~10 navigational.
+> **Step 1.** They split the list by intent. ~105 transactional, ~85 commercial, ~60 informational, ~10 navigational.
 >
-> **Step 2.** Within transactional, they group by product category: 40 keywords for laundry, 25 for dish, 20 for surface cleaners, 10 mixed. Each category becomes a collection page; the highest-volume keyword in each becomes the primary.
+> **Step 2.** Within transactional, they group by product category: 50 keywords for sunscreen, 30 for serums, 15 for cleansers, 10 mixed. Each category becomes a collection page; the highest-volume keyword in each becomes the primary.
 >
-> **Step 3.** Within commercial, they group by query template: 25 keywords are "best [type] [product]" — these cluster into 5 roundup posts (one per category); 15 are "[brand] vs [brand]" comparisons — 5 comparison-page clusters; 10 are "[product] for [persona]" — 3 persona-targeted blog posts; 5 are "[product] reviews" — covered by the brand's existing review system.
+> **Step 3.** Within commercial, they group by query template: 28 keywords are "best [type] [product]" (e.g., "best mineral sunscreen") — these cluster into 6 roundup posts; 20 are "[brand] vs [brand]" comparisons — 5 comparison-page clusters; 15 are "[product] for [persona]" (e.g., "sunscreen for sensitive skin") — 4 persona-targeted blog posts; 7 are "[product] reviews" — covered by the brand's existing review system.
 >
-> **Step 4.** Within informational, they group by topic: 15 keywords are about ingredients ("is sodium [X] safe"), 12 about laundry-strip mechanics, 10 about plastic / sustainability, 8 about safety for kids, 10 about how-to / cleaning tips. Each topic group becomes a hub of 1-3 blog posts.
+> **Step 4.** Within informational, they group by topic: 18 keywords are about ingredients ("does zinc oxide cause irritation"), 14 about mineral vs. chemical sunscreen, 12 about sun protection science, 8 about application best practices, 8 about product types / formats. Each topic group becomes a hub of 1-3 blog posts.
 >
-> **Step 5.** Output: 28 clusters mapped to pages, with primary and supporting keywords for each. Of those, 12 are "build new" and 16 map to pages they already have (some of which need updates).
+> **Step 5.** Output: 32 clusters mapped to pages, with primary and supporting keywords for each. Of those, 15 are "build new" and 17 map to pages they already have (some of which need updates).
 
 ## How to do it
 
 1. **Start from a classified list.** You need keywords with volume, intent, and page-type tags from [Search Intent](../02.%20Search%20Intent/README.md). Don't cluster a raw keyword dump — you'll mix intents and produce broken clusters.
 2. **Split by intent first.** Cluster within intent buckets, not across them. A transactional and an informational keyword might share words but they need different pages, so they go in different clusters.
 3. **Use SERP overlap as the rigorous test.** Pick the top 20-50 highest-priority keywords. For each pair, check whether the top 10 SERP results overlap by 30%+ — if so, same cluster. Several tools (Keyword Insights, Surfer SERP Analyzer, Lowfruits) automate this. For smaller lists, manual checks for the top keywords are fine.
-4. **Use topical / semantic grouping for the rest.** Below the SERP-overlap threshold of usefulness, group by topic and customer language. "Refillable laundry detergent strips" and "laundry strips refillable" obviously cluster. "Refillable laundry detergent" and "non-toxic laundry detergent" probably cluster. "Refillable laundry detergent" and "best laundry detergent" probably don't (different intent).
+4. **Use topical / semantic grouping for the rest.** Below the SERP-overlap threshold of usefulness, group by topic and customer language. "Mineral sunscreen no white cast" and "no white cast mineral sunscreen" obviously cluster. "Mineral sunscreen" and "reef-safe sunscreen" probably cluster. "Mineral sunscreen" and "best sunscreen" probably don't (different intent).
 5. **Pick the primary keyword for each cluster.** Highest-volume *and* best-fit-to-intent. Sometimes the highest-volume keyword in a cluster has the wrong intent for the page you're building — pick the next-highest with correct intent.
 6. **Map every cluster to a URL.** New page or existing page. If existing, note the URL. If new, sketch a placeholder slug. This map is the input to your content roadmap and your information architecture.
 7. **Check for cannibalisation.** If two clusters end up mapping to similar pages or to existing URLs that overlap, merge or split until each URL has exactly one cluster. Two pages on your site should never target the same primary keyword.
@@ -49,7 +49,7 @@ For a D2C brand, clustering directly determines site architecture. Clusters beco
 
 ## Common pitfalls
 
-- **Clustering across intent.** "Buy refillable laundry detergent" and "how does refillable laundry detergent work" sound similar but need different pages. Always split by intent first.
+- **Clustering across intent.** "Buy mineral sunscreen SPF 50" and "does mineral sunscreen leave white cast" sound similar but need different pages. Always split by intent first.
 - **Over-clustering (too few clusters).** If you end up with 15 mega-clusters from a 300-keyword list, your pages will try to do too much. Each cluster should map to a coherent page.
 - **Under-clustering (too many clusters).** If every keyword becomes its own cluster, you've just renamed the original list. Aim for 5-15 keywords per cluster on average for content pages, fewer for product pages.
 - **Ignoring existing pages.** New clusters should be checked against your existing URL structure to avoid cannibalisation. Often the right move is to update an existing page rather than build a new one.

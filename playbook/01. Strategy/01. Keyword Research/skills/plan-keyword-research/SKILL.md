@@ -109,6 +109,6 @@ Save the produced file to `businesses/<slug>/keyword-research/plan.md`. Create t
 
 ## Example
 
-**Input (abbreviated):** D2C refillable cleaning brand, 8 months old, 6 SKUs, US-only, Shopify, has Ahrefs and GSC, founder + part-time marketer, goal is to plan organic to be 30% of acquisition by end of year, no prior keyword research done.
+**Input (abbreviated):** D2C beauty brand (skincare serums and sunscreen), 18 months old, 8 SKUs, US-only, Shopify, has Ahrefs and GSC, founder + marketing manager, goal is to scale organic to 2x current volume (from 8.4k to 17k monthly sessions), prior keyword research incomplete.
 
-**Output (abbreviated):** A plan with seed areas (refillable laundry, refillable dish, refillable surface cleaners, eco/non-toxic positioning, refill-vs-buy comparisons, top competitor brands, parenting/baby-safe angle), a 10-day timeline split across 5 phases, deliverable spec for a 200-300-keyword Airtable base with 8 columns, acceptance criteria, and risks (small DR limits head-term realism; recommend long-tail focus for first 6 months).
+**Output (abbreviated):** A plan with seed areas (Daily Glow Serum, Mineral Sun Drops SPF 50, complementary serums, skin-type targeting, sunscreen positioning, ingredient-focused content, competitor analysis), a 10-day timeline split across 5 phases, deliverable spec for a 250-350-keyword Airtable base with 8 columns, acceptance criteria, and risks (mid-tier DR requires long-tail and mid-volume focus initially; seasonal SPF demand peaks spring/summer).
