@@ -190,6 +190,7 @@ Save the produced file to `businesses/<slug>/schema/strategy.md`. Create the `sc
 **Output (abbreviated):**
 
 Per-page-type plan:
+
 - PDPs: Product + AggregateRating + Review + BreadcrumbList (P0); FAQPage (P1 on PDPs with FAQs)
 - Collection pages: BreadcrumbList (P0)
 - Blog posts: Article + BreadcrumbList (P0); FAQPage (P1 on posts with question H2s)

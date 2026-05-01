@@ -34,7 +34,7 @@ If the log export or platform access is missing, ask. The skill doesn't simulate
 
 ## Process
 
-1. **Verify Googlebot traffic.** The user-agent must contain a Googlebot identifier. Cross-reference a sample of source IPs against Google's published IP ranges (https://developers.google.com/static/search/apis/ipranges/googlebot.json) — or instruct the user to run their tool's Googlebot-verification step. Discard unverified rows.
+1. **Verify Googlebot traffic.** The user-agent must contain a Googlebot identifier. Cross-reference a sample of source IPs against Google's published IP ranges (<https://developers.google.com/static/search/apis/ipranges/googlebot.json>) — or instruct the user to run their tool's Googlebot-verification step. Discard unverified rows.
 2. **Bucket URLs by pattern.** Common buckets:
    - Homepage
    - Products (`/products/<slug>`)
@@ -199,6 +199,7 @@ Under-crawled: 8 cluster-mapped blog posts hit ≤2 times in 60 days. All in the
 Crawl-frequency distribution: 12% of canonical URLs hit daily, 31% weekly, 24% monthly, 18% rarely (3-month interval), 15% never in window.
 
 P0 remediations:
+
 1. Block `/search` in robots.txt — recovers ~10% budget.
 2. Canonicalise parameter URLs to clean collections at template level — recovers ~30% over 30-60 days.
 3. Investigate the 5xx pattern on one collection — Vercel logs + cache headers.

@@ -39,6 +39,7 @@ For Field & Sun, the practical questions are: does the brand want to be trainabl
   - Common Crawl: `CCBot` (feeds many models indirectly)
   - Bytespider, MJ12bot, Amazonbot, Meta-ExternalAgent, etc.
 - **`llms.txt` format.** Markdown file at site root. Conventional structure:
+
   ```
   # [Site name]
   > Short site description.
@@ -47,6 +48,7 @@ For Field & Sun, the practical questions are: does the brand want to be trainabl
   ## Section 2 (e.g. Optional)
   - [Page title](https://...): one-line description.
   ```
+
   An optional `/llms-full.txt` can include the full Markdown of key pages inline. Both files live at the site root, alongside `robots.txt` and `sitemap.xml`.
 - **`noai` / `noimageai` meta and headers.** Page-level signals. `<meta name="robots" content="noai, noimageai">` declares no AI training and no AI image use. Major model providers' adoption is partial; major search engines mostly don't honour these directly, but publisher coalitions (e.g. some news organisations) use them as part of broader content-rights frameworks.
 - **TDM Reservation Protocol (EU).** A different mechanism — `tdm-reservation` HTTP headers under EU copyright law (Article 4 of the DSM Directive). EU-specific; relevant for EU-based or EU-traffic-significant sites.
@@ -83,11 +85,12 @@ For Field & Sun, the practical questions are: does the brand want to be trainabl
 > Retrieval bots (`ChatGPT-User`, `Claude-Web`, `PerplexityBot`, `OAI-SearchBot`) get no explicit rule — full allow by default.
 >
 > **Step 3.** `llms.txt` generation. The brand publishes 25 blog posts plus product pages. They want LLMs that retrieve to find the canonical description fast. Generate `/llms.txt` with:
->   - Site description (from `business_profile.md` section 1)
->   - "Hero products" section listing the 2 hero PDPs with one-line descriptions
->   - "Skincare guides" section listing the top 8 informational blog posts
->   - "Sun care guides" section listing the 5 sun-care-related blog posts
->   - "About" link
+>
+> - Site description (from `business_profile.md` section 1)
+> - "Hero products" section listing the 2 hero PDPs with one-line descriptions
+> - "Skincare guides" section listing the top 8 informational blog posts
+> - "Sun care guides" section listing the 5 sun-care-related blog posts
+> - "About" link
 >
 > **Step 4.** Page-level meta. No special `noai` directives — site-wide robots.txt covers training. Optionally add `<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">` to encourage rich snippets in AI Overviews.
 >

@@ -29,9 +29,10 @@ For a D2C brand, the meta description is one of the cheapest CTR levers availabl
 > **Step 1.** Pull intent and cluster. Transactional, primary "hydrating serum." The SERP at #5 surrounds them with brand product pages and prestige-skin listicles.
 >
 > **Step 2.** Generate variants:
->   - "Hydrating serum for radiance — nutrient-rich formula that ships in glass bottles. Ships next day, 30-day returns." (146 chars)
->   - "Hydrating serum that actually works. Vitamin-enriched formula, lightweight texture, and visible glow in 7 days." (139 chars)
->   - "Shop hydrating serum — daily glow activators, fast-absorbing serums. Professional skincare at home." (139 chars)
+>
+> - "Hydrating serum for radiance — nutrient-rich formula that ships in glass bottles. Ships next day, 30-day returns." (146 chars)
+> - "Hydrating serum that actually works. Vitamin-enriched formula, lightweight texture, and visible glow in 7 days." (139 chars)
+> - "Shop hydrating serum — daily glow activators, fast-absorbing serums. Professional skincare at home." (139 chars)
 >
 > **Step 3.** Score each: length within target, primary keyword present, intent fit (commercial proof + transactional offer), voice match, distinct call to action, freshness vs. SERP neighbours.
 >

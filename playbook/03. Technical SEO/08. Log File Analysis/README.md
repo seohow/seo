@@ -37,13 +37,14 @@ For most D2C brands on Shopify, this category is N/A — you can't access logs, 
 > **Step 1.** Verify Googlebot. Filter access logs for user-agent containing "Googlebot." Verify a sample of IPs against Google's published IP ranges. Discard spoofed traffic.
 >
 > **Step 2.** Tally Googlebot requests by URL pattern. Findings:
->   - Total Googlebot requests in 30 days: 87,400
->   - On canonical product pages (`/products/<slug>`): 12,300 (14%)
->   - On collection pages (`/collections/<slug>`): 4,900 (6%)
->   - On blog posts: 6,800 (8%)
->   - On parameter URLs (`/collections/<slug>?filter=...`): 41,200 (47%) — disaster
->   - On internal-search results (`/search?q=...`): 8,600 (10%) — also disaster
->   - On other (homepage, static, sitemap, robots): 13,600 (16%)
+>
+> - Total Googlebot requests in 30 days: 87,400
+> - On canonical product pages (`/products/<slug>`): 12,300 (14%)
+> - On collection pages (`/collections/<slug>`): 4,900 (6%)
+> - On blog posts: 6,800 (8%)
+> - On parameter URLs (`/collections/<slug>?filter=...`): 41,200 (47%) — disaster
+> - On internal-search results (`/search?q=...`): 8,600 (10%) — also disaster
+> - On other (homepage, static, sitemap, robots): 13,600 (16%)
 >
 > **Step 3.** Diagnose. 57% of Googlebot's crawl is being spent on parameter and search URLs that should be `noindex` + `Disallow` in robots.txt. The canonical content is getting 28% of the budget — half of what it should be.
 >

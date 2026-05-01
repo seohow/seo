@@ -46,14 +46,14 @@ By the end of pass 1 you should know exactly which of your URLs Google is crawli
 
 **Pass 2 — Performance and structure (1-2 weeks):**
 
-5. Run **Site Speed** audit on top 10-20 pages. Address LCP, INP, and CLS failures.
-6. Run **Schema Markup** strategy + per-page generation. Layer structured data on product, article, FAQ, and breadcrumb elements.
-7. Run **JavaScript SEO** audit if the site is JS-heavy (Next.js, React, Vue without SSR). Validate that Googlebot is rendering what users see.
-8. Run **Log File Analysis** quarterly to surface wasted crawl budget — typically the biggest leverage on large ecom sites.
+1. Run **Site Speed** audit on top 10-20 pages. Address LCP, INP, and CLS failures.
+2. Run **Schema Markup** strategy + per-page generation. Layer structured data on product, article, FAQ, and breadcrumb elements.
+3. Run **JavaScript SEO** audit if the site is JS-heavy (Next.js, React, Vue without SSR). Validate that Googlebot is rendering what users see.
+4. Run **Log File Analysis** quarterly to surface wasted crawl budget — typically the biggest leverage on large ecom sites.
 
 **Event-driven — Site Migration:**
 
-9. Use **Site Migration** when re-platforming, rebranding, moving domains, or doing major URL restructures. Plan ahead; recovery is harder than prevention.
+1. Use **Site Migration** when re-platforming, rebranding, moving domains, or doing major URL restructures. Plan ahead; recovery is harder than prevention.
 
 ## Pre-requisites and dependencies
 

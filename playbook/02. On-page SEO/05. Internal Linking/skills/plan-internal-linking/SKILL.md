@@ -160,6 +160,7 @@ Save the produced file to `businesses/<slug>/internal-linking/plan.md`. Create t
 3 hubs: Sun care (8 spokes — peak-season priority), Serums / skincare (7 spokes), Refills & sustainability (4 spokes). Plus 1 cross-cutting hub: Ingredient education (5 informational spokes that link laterally across the product hubs).
 
 Pillars:
+
 - Sun care → existing collection page `/collections/sun-care` (P0).
 - Serums / skincare → existing collection page `/collections/skincare` (P0).
 - Refills → existing collection `/collections/refills` (P1).

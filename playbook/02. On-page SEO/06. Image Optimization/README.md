@@ -43,10 +43,11 @@ For a D2C brand on Shopify or WooCommerce, the default alt-text behaviour is usu
 > **Step 1.** File-name audit. Source files are `IMG_2381.jpg`, `IMG_2382.jpg`, etc. Renamed to `mineral-sun-drops-spf-50-bottle.jpg`, `mineral-sun-drops-tinted-finish.jpg`, `mineral-sun-drops-on-skin.jpg`, etc.
 >
 > **Step 2.** Alt-text rewrite. Each image gets a unique, descriptive alt:
->   - Hero: "30ml glass bottle of Mineral Sun Drops SPF 50 with a dropper, on a soft beige background"
->   - Lifestyle: "Two drops of tinted mineral sunscreen blended into the back of a hand"
->   - Swatch: "Mineral Sun Drops SPF 50 swatched on three skin tones — light, medium, deep — showing no white cast"
->   - …etc. No keyword stuffing.
+>
+> - Hero: "30ml glass bottle of Mineral Sun Drops SPF 50 with a dropper, on a soft beige background"
+> - Lifestyle: "Two drops of tinted mineral sunscreen blended into the back of a hand"
+> - Swatch: "Mineral Sun Drops SPF 50 swatched on three skin tones — light, medium, deep — showing no white cast"
+> - …etc. No keyword stuffing.
 >
 > **Step 3.** Format + compression. JPEGs converted to WebP. Compression to ~75% quality. Dimensions resized to 1200×1200 (still high-res for retina displays) and `srcset` added for mobile.
 >

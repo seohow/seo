@@ -85,7 +85,9 @@ Brief 2-4 sentence read on the shape of the audit and the highest-leverage fixes
 ## Robots.txt analysis
 
 ```
+
 [Paste of robots.txt with annotations]
+
 ```
 
 Findings:

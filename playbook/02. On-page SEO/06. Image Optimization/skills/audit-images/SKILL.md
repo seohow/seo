@@ -173,6 +173,7 @@ LCP image: `IMG_2381.jpg` — currently eager (correct). Keep eager.
 CMS-level recommendations: enable Shopify's auto-WebP conversion; update PDP template to add `loading="lazy"` to all images except the first.
 
 Per-image:
+
 - Image 1 (LCP, hero): rename to `mineral-sun-drops-spf-50-hero.webp`, new alt "30ml glass bottle of Mineral Sun Drops SPF 50 with a dropper, on a soft beige background," resize to 1200×1200 + `srcset`, KEEP eager-loaded.
 - Image 2 (lifestyle): rename to `mineral-sun-drops-blended-on-hand.webp`, new alt "Two drops of tinted mineral sunscreen blended into the back of a hand," lazy-load.
 - Image 3 (swatch): rename to `mineral-sun-drops-three-skin-tones.webp`, new alt "Mineral Sun Drops SPF 50 swatched on three skin tones — light, medium, deep — showing no white cast," lazy-load.

@@ -35,15 +35,17 @@ For a D2C brand, internal linking is most often under-invested — the navigatio
 > **Step 1.** Audit. Crawl the site (Screaming Frog). Identify: 4 orphan blog posts with zero inbound internal links; 3 collection pages reachable only via the main nav (no contextual links); inconsistent anchor text on the highest-traffic blog post (anchor "click here" on 60% of links).
 >
 > **Step 2.** Plan. From the cluster map, identify the 3 highest-leverage hub topics (sun care, serums/skincare, refills). For each hub, design hub-and-spoke linking:
->   - Pillar = collection page (or new pillar blog post if collection is too commercial).
->   - Spokes = the 4-7 cluster pages that fit the hub topic.
->   - Spokes link to pillar; pillar links to all spokes; spokes link to 2-3 sibling spokes contextually.
+>
+> - Pillar = collection page (or new pillar blog post if collection is too commercial).
+> - Spokes = the 4-7 cluster pages that fit the hub topic.
+> - Spokes link to pillar; pillar links to all spokes; spokes link to 2-3 sibling spokes contextually.
 >
 > **Step 3.** Add linking matrix:
->   - Homepage → 3 pillars (already in nav).
->   - Each pillar → its 4-7 spokes (in body content + a "Related" module).
->   - Each spoke → its pillar (in intro + body) + 2-3 sibling spokes (contextual).
->   - Orphan blog posts → either link them in from related spokes (if topically fit) or de-publish them.
+>
+> - Homepage → 3 pillars (already in nav).
+> - Each pillar → its 4-7 spokes (in body content + a "Related" module).
+> - Each spoke → its pillar (in intro + body) + 2-3 sibling spokes (contextual).
+> - Orphan blog posts → either link them in from related spokes (if topically fit) or de-publish them.
 >
 > **Step 4.** Implement. CMS work to add the related modules; manual contextual linking on the priority cluster pages.
 >

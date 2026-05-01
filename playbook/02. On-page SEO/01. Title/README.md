@@ -30,10 +30,11 @@ For a D2C brand, getting the title right on a top product or collection page can
 > **Step 1.** Pull the cluster from `clusters/cluster-map.md`. Cluster T01 has primary `hydrating serum`, supporting keywords `glow serum`, `vitamin c serum`, `skin brightening serum`, `radiance serum`. Intent: transactional. Page type: product.
 >
 > **Step 2.** Generate variants:
->   - `Hydrating Serum for Radiance — Daily Glow | Field & Sun`
->   - `Hydrating Serum: Plant-Based Glow Activators`
->   - `Hydrating Serum — Vitamins + Moisture, Ships Next Day`
->   - `Luminizing Hydrating Serum — Field & Sun`
+>
+> - `Hydrating Serum for Radiance — Daily Glow | Field & Sun`
+> - `Hydrating Serum: Plant-Based Glow Activators`
+> - `Hydrating Serum — Vitamins + Moisture, Ships Next Day`
+> - `Luminizing Hydrating Serum — Field & Sun`
 >
 > **Step 3.** Score each: position of primary keyword (front), length (~55 chars), intent fit (transactional → commercial proof points), brand voice (warm, confident), differentiation against the SERP. Pick variant 1.
 >

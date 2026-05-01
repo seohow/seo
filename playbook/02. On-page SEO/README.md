@@ -41,13 +41,13 @@ This typically ships in 1-2 weeks and produces measurable lift within 30-60 days
 
 **Pass 2 — Site-level structure (1-2 weeks):**
 
-5. Run **URL Structure** to define site conventions (or audit existing URLs if the site is mature).
-6. Run **Internal Linking** at the strategy level — design hub-and-spoke linking from your cluster map.
+1. Run **URL Structure** to define site conventions (or audit existing URLs if the site is mature).
+2. Run **Internal Linking** at the strategy level — design hub-and-spoke linking from your cluster map.
 
 **Pass 3 — Depth and craft (ongoing):**
 
-7. Run **Image Optimization** as a one-time audit + ongoing process for new pages.
-8. Run **Content Optimization** on individual high-priority pages, one at a time. This is the deepest work and the one where AI assistance produces the biggest time savings.
+1. Run **Image Optimization** as a one-time audit + ongoing process for new pages.
+2. Run **Content Optimization** on individual high-priority pages, one at a time. This is the deepest work and the one where AI assistance produces the biggest time savings.
 
 ## Pre-requisites from Strategy
 

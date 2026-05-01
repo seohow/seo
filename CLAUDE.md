@@ -113,6 +113,7 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 *Capture the decision, the reason, and what it means for future work. Keep entries terse — this isn't a changelog, it's a why-log.*
 
 ### 2026-04-26 — Toolkit foundations and Strategy slice complete
+
 - Decided format: README + 1-2 skills per leaf, parent README per category, examples lean D2C cleaning brand for v1, frameworks stay business-agnostic.
 - Decided structure: `templates/` for templates, `skills/` for setup utilities, `playbook/<category>/<topic>/skills/` for topic skills.
 - Decided per-business workspace convention: `businesses/<slug>/` holds profile + artifacts; never store inputs/outputs at repo root.
@@ -121,28 +122,33 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - Strategy slice (5 leaves, 1 category overview, 7 skills) is the format reference for the remaining 9 categories.
 
 ### 2026-04-26 — Per-business CLAUDE.md introduced
+
 - Decided every business workspace gets its own `CLAUDE.md` from `templates/business_claude_template.md`.
 - Decided `generate-business-profile` drops the stub on workspace creation; users don't have to remember.
 - Decided per-business CLAUDE.md captures: decisions, learnings, constraints/quirks, active experiments — distinct from artifact files (which capture *what was produced*).
 
 ### 2026-04-30 — `docs/` renamed to `playbook/`
+
 - Decided `docs/` was misleading (implies meta-documentation about the repo) and renamed to `playbook/`.
 - All path references updated. Cross-links between leaves use relative paths so they survived transparently.
 - New convention name pairs cleanly with `skills/` at root: the playbook tells you what to do; the skills do it.
 
 ### 2026-05-01 — Field & Sun added as canonical sample business
+
 - Decided to introduce a fictional sample business that ships with the toolkit and serves as the reference fixture for examples (Northwind / Adventure Works model).
 - Brand: Field & Sun. D2C beauty. Two hero products: Daily Glow Serum (evergreen) and Mineral Sun Drops SPF 50 (seasonal). 6 complementary SKUs for AOV / loyalty.
 - Lives at `businesses/field-and-sun/` with both `business_profile.md` and `CLAUDE.md` populated as worked examples (the CLAUDE.md shows what a healthy working-memory file looks like after a few months of real SEO work).
 - All future examples in playbook content should reference Field & Sun.
 
 ### 2026-05-01 — Retroactive migration: Refillable Cleaning Co → Field & Sun
+
 - Migrated all worked examples and inline references across the existing playbook content (Strategy slice + On-page SEO category + Technical SEO Crawlability/Indexing) from the earlier "Refillable Cleaning Co" fixture to Field & Sun.
 - ~30 files touched. Worked-example narrative arcs were preserved (e.g. "page at position 14 → after rework → position 6"); only the specifics changed (laundry strips → mineral sunscreen content, Blueland → Supergoop, /collections/refillable-laundry → /collections/sun-care, etc.).
 - Eliminated all founder-rejected language ("clean beauty," "non-toxic," "chemical-free," "plastic-free") from the playbook content. Brand-voice consistency now matches the profile's section 8.
 - The "grandfathered fixture" phrasing previously in this CLAUDE.md is no longer accurate — the whole toolkit now references one fixture.
 
 ### 2026-05-01 — Curriculum scope review: 9 leaves added, 5 categories parked
+
 - Reviewed the 10-category structure for completeness before scaling further. Outcome:
 - **Parked as future categories** (see "Future categories under consideration" section above): Local SEO, E-commerce SEO as a dedicated category, Video / YouTube SEO, Newsletter, Podcast.
 - **Site Migration** absorbed into Technical SEO as a leaf (`09. Site Migration`) rather than its own category. Reasoning: most teams need it once every 3-5 years; doesn't have category-level density.
@@ -156,11 +162,13 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - The 10-category structure is now considered v1-final. Don't add new categories or leaves without explicit user direction.
 
 ### 2026-05-01 — Categories renumbered to learning-path order
+
 - Decided the canonical numbering should match the *operational sequence* (the suggested learning path) rather than a generic topical taxonomy. Reasoning: nobody learns SEO in topical order; the numbering should walk a reader from beginning to outcome.
 - Renames: `07. Analytics` → `05. Analytics`; `05. Off-page SEO` → `06. Off-page SEO`; `08. UX` → `07. UX`; `06. International SEO` → `08. International SEO`. The other six categories kept their numbers.
 - All cross-links in Strategy + On-page content updated via mass `sed` substitution. Root README's categories table and learning-path numbering both updated. CLAUDE.md doesn't reference category numbers by string, so no changes here aside from this entry.
 
 ### 2026-05-01 — Added 10. AI Crawler Management to Technical SEO
+
 - Added a 10th leaf to Technical SEO covering AI-crawler access decisions (robots.txt for AI bots, `llms.txt` standard, `noai`/`noimageai` meta directives).
 - 1 leaf README + 2 skills shipped: `audit-ai-crawler-access` (executor: validates declared posture against live robots.txt + llms.txt + meta) and `generate-llms-txt` (executor: produces curated `/llms.txt` aligned to the brand's content).
 - Decision: AI-crawler decisions land in Technical SEO (infrastructure layer — robots.txt and root files). Content-side AI work (writing for citation, AI Overview eligibility, LLM visibility monitoring) stays in Category 9 AI SEO. Boundary: "can they reach you" is Technical; "are they citing you" is AI SEO.
@@ -168,6 +176,7 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - Technical SEO is now 10 leaves total, considered v1-final.
 
 ### 2026-05-01 — Technical SEO category complete (Category 3 of 10)
+
 - 1 category overview + 9 leaf READMEs + 11 skills shipped.
 - Skill mix: 7 leaves have 1 executor each (audit-style); 2 leaves have planner + executor (Schema Markup: `plan-schema-strategy` + `generate-schema-markup`; Site Migration: `plan-site-migration` + `build-redirect-map`). Schema and Migration earned the planner because they're strategic / project-level, not per-page operations.
 - Established artifact subfolder names for this category: `crawlability/`, `indexing/`, `site-speed/`, `schema/`, `canonicals/`, `sitemaps/`, `javascript-seo/`, `log-analysis/`, `migration/`.
@@ -176,6 +185,7 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - `.gitkeep` count: 50 (post-On-page) → 41 (after Technical). 41 leaves remaining across 7 categories.
 
 ### 2026-04-30 — On-page SEO category complete (Category 2 of 10)
+
 - 1 category overview + 7 leaf READMEs + 9 skills shipped.
 - Skill mix: 1 leaf has 2 skills (URL Structure: planner + executor; Internal Linking: planner + executor); 5 leaves have 1 executor each. URL Structure and Internal Linking warrant the planner because they're site-wide architectural decisions, not per-page operations.
 - Established artifact subfolder names for this category: `titles/`, `descriptions/`, `headers/`, `urls/`, `internal-linking/`, `images/`, `content-optimization/`.

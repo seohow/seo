@@ -34,18 +34,19 @@ For a D2C brand, headers do the heaviest lifting on collection pages, comparison
 > **Step 1.** Pull the cluster + supporting keywords. Notice 4 of the supporting keywords are themselves common queries with their own People-Also-Ask presence.
 >
 > **Step 2.** Restructure:
->   - H1: "How Does Hydrating Serum Work on Skin? A Plain-Language Guide"
->   - H2: "What is a hydrating serum, exactly?"
->   - H2: "How does hydrating serum hydrate skin?"
->     - H3: "The absorption process"
->     - H3: "What's actually in a hydrating serum"
->   - H2: "Is hydrating serum actually effective?"
->     - H3: "Clinical test results"
->     - H3: "Where it falls short (extreme dryness, compromised barriers)"
->   - H2: "Hydrating serum vs moisturizer"
->   - H2: "Is hydrating serum good for acne-prone skin?"
->   - H2: "How to use hydrating serum"
->   - H2: "Best hydrating serums to buy"
+>
+> - H1: "How Does Hydrating Serum Work on Skin? A Plain-Language Guide"
+> - H2: "What is a hydrating serum, exactly?"
+> - H2: "How does hydrating serum hydrate skin?"
+>   - H3: "The absorption process"
+>   - H3: "What's actually in a hydrating serum"
+> - H2: "Is hydrating serum actually effective?"
+>   - H3: "Clinical test results"
+>   - H3: "Where it falls short (extreme dryness, compromised barriers)"
+> - H2: "Hydrating serum vs moisturizer"
+> - H2: "Is hydrating serum good for acne-prone skin?"
+> - H2: "How to use hydrating serum"
+> - H2: "Best hydrating serums to buy"
 >
 > **Step 3.** For each question H2, ensure the first 40-60 words after the heading directly answer the question. This is the snippet-pull pattern.
 >

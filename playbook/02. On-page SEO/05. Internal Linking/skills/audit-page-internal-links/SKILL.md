@@ -185,15 +185,18 @@ Composite: medium.
 Action list:
 
 P0:
+
 - Add inbound from `/blog/skincare-ingredient-guide` (pillar) → suggested anchor: "how mineral sunscreen works" or "zinc oxide sunscreen explained" (vary across uses).
 - Add outbound from this page → pillar `/blog/skincare-ingredient-guide`, in intro paragraph, anchor: "skincare ingredient guide" or "complete guide to skincare ingredients."
 - Replace "another post" anchor with "mineral vs chemical sunscreen — what's the real difference."
 
 P1:
+
 - Add inbound from sibling `/blog/mineral-vs-chemical-sunscreen` and `/blog/mineral-sunscreen-for-dark-skin`.
 - Add outbound to `/blog/mineral-vs-chemical-sunscreen` in the "How does mineral sunscreen compare to chemical?" section.
 
 P2:
+
 - Consider adding a contextual link to `/products/mineral-sun-drops-spf-50` from the "How to use" section if it's not already there.
 
 Implementation checklist included. Saved to `businesses/field-and-sun/internal-linking/audit-how-mineral-sunscreen-works.md`.

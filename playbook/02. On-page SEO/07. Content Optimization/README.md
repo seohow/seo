@@ -40,12 +40,13 @@ The work is also where AI assistance produces the largest measurable time saving
 > **Step 2.** Cluster cross-check. Cluster I04: primary "mineral vs chemical sunscreen"; supporting "is mineral sunscreen better," "does mineral sunscreen leave white cast," "mineral sunscreen for sensitive skin," "is zinc oxide safe daily." Current content addresses 1 of 4 supporting keywords.
 >
 > **Step 3.** Plan the rework:
->   - New H2 covering each missing supporting keyword.
->   - Add a comparison table (mineral vs chemical, side-by-side on UV protection, skin reactivity, reef safety, finish on skin, cost per ml).
->   - Add a "tested on three skin tones" section: Mineral Sun Drops swatched on light, medium, deep skin — with photos and observed white-cast / blendability ratings.
->   - Add freshness markers (date the swatch test, name the conditions and skin tones tested).
->   - Add a "where mineral falls short" section to address objections honestly (greasy finish on humid days, harder to reapply over makeup). Counter-intuitively, this lifts rankings.
->   - Update intro: 40-60 word direct answer to "mineral vs chemical sunscreen — which should I use?" — featured-snippet-eligible.
+>
+> - New H2 covering each missing supporting keyword.
+> - Add a comparison table (mineral vs chemical, side-by-side on UV protection, skin reactivity, reef safety, finish on skin, cost per ml).
+> - Add a "tested on three skin tones" section: Mineral Sun Drops swatched on light, medium, deep skin — with photos and observed white-cast / blendability ratings.
+> - Add freshness markers (date the swatch test, name the conditions and skin tones tested).
+> - Add a "where mineral falls short" section to address objections honestly (greasy finish on humid days, harder to reapply over makeup). Counter-intuitively, this lifts rankings.
+> - Update intro: 40-60 word direct answer to "mineral vs chemical sunscreen — which should I use?" — featured-snippet-eligible.
 >
 > **Step 4.** Implement: rewrite + add 2,400 words, embed comparison table, photograph and add 5 new images (with proper image-optimisation per `audit-images`). Update internal links to pillar + sibling spokes per linking plan.
 >

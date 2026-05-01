@@ -67,11 +67,13 @@ If the current heading structure or the cluster is missing, ask before producing
 
 ## Current outline
 ```
+
 H1: ...
   H2: ...
     H3: ...
   H2: ...
   ...
+
 ```
 
 ## Mechanical issues
@@ -91,6 +93,7 @@ H1: ...
 ## Proposed outline
 
 ```
+
 H1: [new H1]
 
 H2: [new H2 1] ⭐ [if snippet candidate]
@@ -102,6 +105,7 @@ H2: [new H2 2]
     Content hint: ...
 
 ...
+
 ```
 
 ## Diff summary
@@ -151,6 +155,7 @@ Save the produced file to `businesses/<slug>/headers/<page-slug>.md`. Create the
 **Input (abbreviated):** URL = `/blog/how-mineral-sunscreen-works`. Page type = blog post. Cluster I03: primary `how does mineral sunscreen work` (1,200/mo, informational). Supporting: `mineral vs chemical sunscreen`, `does mineral sunscreen leave white cast`, `is zinc oxide safe`, `mineral sunscreen for dark skin`. Brand voice = warm, knowledgeable, plain-language, ingredient-led.
 
 Current outline:
+
 ```
 H1: Mineral Sunscreen
 H1: Field & Sun (banner — duplicate H1)
@@ -168,6 +173,7 @@ Mechanical: 2 H1s ✗, skipped level (H2→H4) ✗, generic H2s ("Section 1", "P
 Strategic: H1 doesn't include primary keyword ✗. 0 of 4 H2s are question-form (vs. recommended 60-80%) ✗. Supporting-kw coverage: 0/4. Snippet eligibility: no question-form H2s, no eligibility.
 
 Proposed:
+
 ```
 H1: How Does Mineral Sunscreen Work? A Plain-Language Guide
 

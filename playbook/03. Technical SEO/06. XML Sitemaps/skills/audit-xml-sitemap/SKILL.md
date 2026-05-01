@@ -222,6 +222,7 @@ URL-state distribution: 47 of 49 URLs (96%) return 200 + canonical + indexable. 
 `lastmod`: 23 of 25 blog articles have stale `lastmod` from initial publish; 2 articles were updated in 2026 but `lastmod` doesn't reflect this. CMS quirk — re-save the articles to refresh.
 
 Findings:
+
 - **Broken URL:** `/legacy-press` returns 404. Remove from sitemap (delete the page record in Shopify so the sitemap auto-regenerates without it).
 - **Non-indexable URL:** 1 product page has `noindex`. Either remove the noindex (if the product should rank) or remove the page from the sitemap.
 - **Stale lastmod:** 2 articles. Re-save in Shopify to refresh `updated_at` → sitemap regenerates with correct dates.

@@ -44,7 +44,7 @@ For each page:
    - **Primary body copy** — first 1-2 paragraphs of main content should be in source. Flag if only rendered.
    - **Internal navigation links** — primary nav, breadcrumbs, related-content links. Flag if `<a href>` is missing in source.
    - **Schema markup `<script type="application/ld+json">`** — should be in source. Flag if only in rendered.
-   - **Meta tags** (description, robots, canonical, og:* / twitter:* tags) — should be in source.
+   - **Meta tags** (description, robots, canonical, og:*/ twitter:* tags) — should be in source.
 2. **Audit internal links.** Walk the rendered DOM (or source if internal links are server-rendered). For each link:
    - Is it a real `<a href="/url">` anchor? Pass.
    - Is it a `<div>` / `<span>` / `<button>` with an `onClick` handler that programmatically navigates? Fail.
@@ -176,6 +176,7 @@ Status: Concerns. Source covers core SEO-critical content; FAQ section is JS-inj
 Source vs rendered: title/H1/description/canonical all in source ✓. Product schema in source ✓. FAQPage schema in source BUT the actual FAQ Q&A pairs are JS-rendered after a fetch — ✗. Internal links all real `<a href>` ✓. Reviews are JS-rendered (tolerable, accept delay).
 
 JS-injected inventory:
+
 - FAQ accordion: SEO-critical (schema depends on it). Recommendation: move from `useEffect` to `getStaticProps`. Medium effort.
 - Yotpo reviews: tolerable. Recommendation: accept second-wave delay.
 - Recommended products: not SEO-critical. No action.

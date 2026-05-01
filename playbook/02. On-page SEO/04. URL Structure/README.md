@@ -32,10 +32,11 @@ Third — and most expensive when ignored — **URLs are the costliest thing to 
 > **Scenario:** Field & Sun launched on Shopify 18 months ago. URL structure is the platform default. Audit reveals: collection URLs are clean (`/collections/sun-care`), but product URLs include parent-collection slug (`/collections/sun-care/products/mineral-sun-drops-spf-50`), blog URLs include the date (`/blogs/news/2025/05/15/how-mineral-sunscreen-works`), and search/filter URLs are getting indexed (`/collections/sun-care?filter=tinted`).
 >
 > **Step 1.** Define new conventions:
->   - Products: `/products/<slug>` (drop the parent collection prefix to avoid duplication when a product belongs to multiple collections)
->   - Collections: `/collections/<slug>` (keep)
->   - Blog: `/blog/<slug>` (drop the dates and the `/news/` parent — they age content)
->   - Filter URLs: `rel=canonical` back to the clean collection
+>
+> - Products: `/products/<slug>` (drop the parent collection prefix to avoid duplication when a product belongs to multiple collections)
+> - Collections: `/collections/<slug>` (keep)
+> - Blog: `/blog/<slug>` (drop the dates and the `/news/` parent — they age content)
+> - Filter URLs: `rel=canonical` back to the clean collection
 >
 > **Step 2.** Audit existing URLs against the new conventions. 8 product URLs need migration; 23 blog posts need migration. All collections fine.
 >

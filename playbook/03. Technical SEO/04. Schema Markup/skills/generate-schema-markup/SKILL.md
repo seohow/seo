@@ -46,11 +46,13 @@ If the page-data inputs are missing for required properties, ask. The skill will
    - Recommended properties → fill in where data is available; flag any missing as "improvement opportunity" but proceed.
    - Optional / valuable for entity reasoning → fill in where data is available; don't block on these.
 3. **Generate the JSON-LD.** Strict JSON. UTF-8. Wrap in:
+
    ```html
    <script type="application/ld+json">
    { ... }
    </script>
    ```
+
    For pages with multiple schema types, generate multiple `<script>` blocks (one per type) — easier to validate and update than nested `@graph` structures.
 4. **Apply schema-specific best practices:**
    - **Product** — image array with at least 3 images at 1200×1200+. Offers nested as object (single product) or array (variants). Availability uses Schema.org enums (`InStock`, `OutOfStock`, `Discontinued`). priceValidUntil should be a real date, not a placeholder.
@@ -60,8 +62,8 @@ If the page-data inputs are missing for required properties, ask. The skill will
    - **Organization** — `sameAs` should be social profile URLs. logo should be at least 112×112 (Google's minimum).
 5. **For Liquid template output** (Shopify): wrap the JSON-LD in Liquid syntax, pulling values from `{{ product.title }}`, `{{ product.featured_image }}`, `{{ shop.url }}`, etc. Comment which fields pull from where.
 6. **Validate.** Generate two validation steps:
-   - **Rich Results Test** — paste the URL (or the rendered HTML) into https://search.google.com/test/rich-results. Confirms rich-result eligibility per Google's current rules.
-   - **Schema Markup Validator** — paste into https://validator.schema.org. Confirms vocabulary correctness even where rich-result eligibility doesn't apply.
+   - **Rich Results Test** — paste the URL (or the rendered HTML) into <https://search.google.com/test/rich-results>. Confirms rich-result eligibility per Google's current rules.
+   - **Schema Markup Validator** — paste into <https://validator.schema.org>. Confirms vocabulary correctness even where rich-result eligibility doesn't apply.
 7. **Document the property-source mapping.** A table showing where each value came from (page data, profile, hard-coded constant). Helps the dev/CMS team when wiring the template.
 
 ## Output format
@@ -201,6 +203,7 @@ Note any property where data is missing or placeholder.
 3. After 14-28 days, check GSC → Enhancements for the schema types deployed. Expect "Eligible" status with 0 errors.
 
 ## Implementation checklist
+
 - [ ] Add JSON-LD to page `<head>` (or via theme template).
 - [ ] Verify on live page (View Source).
 - [ ] Run Rich Results Test on live URL.
@@ -210,7 +213,9 @@ Note any property where data is missing or placeholder.
 - [ ] Set quarterly re-validation cadence (catch theme updates that break schema).
 
 ## Risks and watchouts
+
 2-4 specific watchouts: e.g. "if Yotpo isn't deployed yet, AggregateRating schema will fail validation — sequence after Yotpo wiring"; "priceValidUntil must update annually, otherwise Google ignores Offer"; "Liquid template version uses `selected_or_first_available_variant` — for products with widely-varying variant prices, consider per-variant schema instead."
+
 ```
 
 Save the produced file to `businesses/<slug>/schema/<page-slug>.md`. Create the `schema/` sub-folder if it doesn't already exist. After writing, tell the user the file path so they can open it.

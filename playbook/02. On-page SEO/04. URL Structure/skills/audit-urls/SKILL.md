@@ -158,6 +158,7 @@ Save the produced file to `businesses/<slug>/urls/audit-<YYYY-MM-DD>.md`. Use th
 Summary: 187 compliant (58%), 41 cosmetic (13%), 78 structural (24%), 14 critical (4%).
 
 Portfolio-level patterns:
+
 - 78 blog URLs use `/blogs/news/YYYY/MM/DD/<slug>` instead of `/blog/<slug>`. Recommendation: CMS-level change to drop `/news/` parent and date stamps; bulk migrate all 78.
 - 14 system URLs (search, cart, account) are appearing in sitemap and being indexed. Recommendation: `noindex` via robots meta; remove from sitemap. P0.
 - 41 product URLs have a duplicate at `/collections/<x>/products/<slug>`. Recommendation: `rel=canonical` on the duplicates pointing to flat product URL. Cosmetic but worth fixing in next sprint.

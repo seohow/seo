@@ -34,6 +34,7 @@ The sitemap also surfaces sitemap-specific problems in GSC's Sitemaps report: pa
 > **Scenario:** Field & Sun audits its sitemap state. The Shopify-default sitemap is at `/sitemap.xml`, which is a sitemap-index pointing to 4 child sitemaps (products, collections, blogs/articles, pages).
 >
 > Findings:
+>
 > - **Sitemap-index has 4 children. Total URLs across all children: 187.** Compared to GSC indexed count (612 for the site overall), 425 indexed URLs are NOT in the sitemap. Most are parameter URLs and Shopify-default duplicate URLs Google picked up via crawl rather than sitemap submission.
 > - **Sitemap product file lists 8 PDPs.** All 8 are canonical, all return 200, all are indexable. Clean.
 > - **Sitemap collection file lists 4 collection pages.** All clean.

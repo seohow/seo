@@ -29,11 +29,12 @@ For a D2C brand, the most common crawlability failures are: an over-aggressive `
 > **Scenario:** Field & Sun notices in GSC that 12 of their 28 cluster-mapped pages are not in the index. The pages exist; customers can navigate to them. Why?
 >
 > **Step 1.** Run a crawlability audit using Screaming Frog. Discover:
->   - 4 pages have a `noindex` meta tag left over from staging (a CMS template flag never flipped at launch).
->   - 3 pages return 302 instead of 301 redirects (set up by a marketer who didn't know the difference).
->   - 2 pages are at depth 6 from the homepage (buried under nested collections) — crawled rarely.
->   - 2 pages return soft-404 (200 status but page content says "Sorry, this product is no longer available").
->   - 1 page is blocked in `robots.txt` because the path matches `Disallow: /products/temp-` and the slug accidentally contains "temp".
+>
+> - 4 pages have a `noindex` meta tag left over from staging (a CMS template flag never flipped at launch).
+> - 3 pages return 302 instead of 301 redirects (set up by a marketer who didn't know the difference).
+> - 2 pages are at depth 6 from the homepage (buried under nested collections) — crawled rarely.
+> - 2 pages return soft-404 (200 status but page content says "Sorry, this product is no longer available").
+> - 1 page is blocked in `robots.txt` because the path matches `Disallow: /products/temp-` and the slug accidentally contains "temp".
 >
 > **Step 2.** Fix in priority order: remove the `noindex` (template fix, ships immediately, 4 pages back); change 302→301 (one-line CMS fix, 3 pages); convert soft-404s to proper 404 + remove from sitemap (2 pages); fix the `robots.txt` disallow pattern (1 page); add internal links to the deep-buried pages from higher-authority pages to shorten depth (2 pages).
 >

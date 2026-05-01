@@ -23,16 +23,19 @@
 *Append chronologically. Format: ### YYYY-MM-DD — title. Capture the decision, the reason, and what it means going forward.*
 
 ### 2026-04-12 — Picked "tinted mineral sunscreen" as the primary cluster for Q3
+
 - Decision: focus the next quarter's content + on-page work on the tinted-mineral-sunscreen cluster (T03), not the higher-volume vitamin-C cluster.
 - Reason: cluster-map analysis showed T03 has stronger intent fit for our hero product (Sun Drops) and lower domain-rating gap relative to the SERP top 5 (DR 28 ours vs DR 35 median for top 5 — vs DR 65+ for vitamin-C cluster).
 - Implication for future work: title/description/header rewrites prioritise this cluster's keywords first; vitamin-C work moves to Q4.
 
 ### 2026-04-18 — Decided NOT to chase "best vitamin c serum" head term
+
 - Decision: drop the head term "best vitamin c serum" (vol 49,500) from the active target list; pursue long-tail variants instead ("vitamin c serum for dark spots," "vitamin c serum sensitive skin," etc.).
 - Reason: SERP top 10 is dominated by Wirecutter, NYT, Byrdie, The Strategist — we cannot out-resource them on commercial review content. Long-tail variants are ranking-attainable at our DR.
 - Implication for future work: any commercial-intent content for vitamin C should target a specific persona or use case, never the head term.
 
 ### 2026-04-24 — Approved Supergoop competitor-audit findings; building "no-white-cast" content cluster
+
 - Decision: ship a 6-post content cluster around "mineral SPF that doesn't leave a white cast" using own-product testing photography on a range of skin tones. Pillar: existing PDP. Spokes: 5 new posts.
 - Reason: Supergoop and ILIA both rank for these queries but the content is generic / not visually evidenced. Our brand-distinct angle (own product photography on real skin tones) is differentiable and customer-resonant.
 - Implication: content writer brief locked in; first post ships May 2026. Internal linking plan updated to feed into Sun Drops PDP.
@@ -62,12 +65,14 @@
 *Tests in flight. Format: ### YYYY-MM-DD started — title.*
 
 ### 2026-04-15 started — FAQPage schema on top 10 PDPs
+
 - Hypothesis: adding FAQPage structured data to PDPs lifts both rich-result eligibility and CTR for product-page queries.
 - Variant(s): top 10 PDPs by traffic get FAQPage schema; remaining ~14 PDPs are control.
 - Measuring: rich-result appearance in GSC + click-through-rate change at 30 and 60 days.
 - Status: running. 30-day check shows 4 of 10 treated PDPs gained rich results in SERP; CTR +12% mobile / +3% desktop on those 4. Will hold until 60-day mark before deciding to roll out across remaining PDPs.
 
 ### 2026-04-22 started — Bundle PDP H1/title experiment
+
 - Hypothesis: leading with the customer outcome ("Your everyday-skin routine") instead of the product list ("Cleanser + Serum + SPF Bundle") in title/H1 lifts add-to-cart rate without hurting SEO rankings.
 - Variant(s): outcome-led title on the Routine Bundle PDP only; product-list title on individual product pages (control).
 - Measuring: add-to-cart rate, conversion rate, position in GSC for the cluster's keywords.

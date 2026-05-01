@@ -11,7 +11,7 @@
 ## 1. Identity
 
 - **Business name:** Field & Sun
-- **Website URL:** https://fieldandsun.com
+- **Website URL:** <https://fieldandsun.com>
 - **One-line description:** Skincare for daily life and bright days — minimalist, ingredient-led, refillable.
 - **Year founded:** 2024
 - **Team size (people working on SEO/marketing):** 3 (founder, marketing lead, part-time content writer)
@@ -79,10 +79,10 @@ Two hero products that drive 70% of revenue, plus 6 complementary SKUs that lift
 
 ## 6. Competitors
 
-- **Direct competitor 1:** Supergoop — https://supergoop.com (mineral SPF leader, broad SKU range)
-- **Direct competitor 2:** Saie Beauty — https://saiehello.com (clean beauty, mineral SPF + complexion overlap)
-- **Direct competitor 3:** ILIA Beauty — https://iliabeauty.com (clean beauty, tinted SPF, similar positioning)
-- **Indirect / aspirational:** Glossier — https://glossier.com (D2C beauty leader, brand-led, larger scale; useful for studying mature-brand patterns even though not direct SKU overlap)
+- **Direct competitor 1:** Supergoop — <https://supergoop.com> (mineral SPF leader, broad SKU range)
+- **Direct competitor 2:** Saie Beauty — <https://saiehello.com> (clean beauty, mineral SPF + complexion overlap)
+- **Direct competitor 3:** ILIA Beauty — <https://iliabeauty.com> (clean beauty, tinted SPF, similar positioning)
+- **Indirect / aspirational:** Glossier — <https://glossier.com> (D2C beauty leader, brand-led, larger scale; useful for studying mature-brand patterns even though not direct SKU overlap)
 - **Content competitor (publishers):** The Strategist (NYMag), NYT Wirecutter, Byrdie, Refinery29 — these dominate SERPs for commercial intent on "best mineral sunscreen" / "best vitamin c serum" queries.
 
 ## 7. Goals
@@ -110,9 +110,9 @@ Two hero products that drive 70% of revenue, plus 6 complementary SKUs that lift
   - Specific percentages and clinical context ("15% L-ascorbic acid," "20% non-nano zinc oxide")
   - "Refillable" (we earned it — pouches really do refill the bottle)
 - **Style references** (URLs of pages whose tone we'd like to emulate):
-  - https://www.versedskin.com/blogs/all (educational, plain-language, ingredient-led)
-  - https://saiehello.com/products (clean copy, no overclaims)
-  - https://theordinary.com (no-nonsense ingredient labelling — too clinical for us, but the discipline is the reference)
+  - <https://www.versedskin.com/blogs/all> (educational, plain-language, ingredient-led)
+  - <https://saiehello.com/products> (clean copy, no overclaims)
+  - <https://theordinary.com> (no-nonsense ingredient labelling — too clinical for us, but the discipline is the reference)
 
 ---
 

@@ -148,6 +148,7 @@ For "**plan**" mode (default):
 ```
 
 For "**draft**" mode (heavier output):
+
 - Same structure as above, but each "Add" and "Expand" item includes the actual prose copy, written in brand voice, ready to paste into the CMS.
 - Cut and Restructure items remain as instructions, not copy.
 
@@ -192,16 +193,19 @@ SERP-competition assessment: Top 5 is reachable. Position #1 (Wirecutter) is not
 Rework plan:
 
 **Add:**
+
 - New H2 "Does mineral sunscreen leave a white cast?" (covers supporting kw). Content hint: Mineral Sun Drops swatched on three skin tones with photos and observed blendability ratings.
 - New H2 "Mineral vs chemical sunscreen for sensitive skin" with comparison table. Content hint: reactivity profiles, customer feedback themes, recommended formats per skin type.
 - New H2 "Is zinc oxide safe for daily use?" Content hint: FDA OTC monograph status, non-nano vs nano, percentages we use (20% non-nano zinc oxide), link to primary sources.
 - 40-60 word direct answer at the top: "Mineral sunscreens use zinc oxide or titanium dioxide to physically scatter UV; chemical sunscreens absorb it through organic compounds. For sensitive skin, daily skincare layering, and reef-safe contexts, mineral wins; for invisible finish under makeup in humid climates, well-formulated chemical filters can be easier to wear."
 
 **Expand:**
+
 - Existing "Pros" section → "Where mineral sunscreen wins" with 3 specific use cases.
 - Existing "Cons" section → "Where mineral falls short" with honest limits + workarounds.
 
 **Cut:**
+
 - Generic "What is sunscreen?" intro paragraph (covered in sibling post; link instead of duplicate).
 
 **Restructure:** Move "Where to buy" from middle to bottom; move comparison table to fold-1.

@@ -23,7 +23,7 @@ For Field & Sun, the priority schema is: Product (every PDP), BreadcrumbList (ev
 - **Schema.org vocabulary** — the open vocabulary defining types (Product, Article, Recipe, etc.) and properties (name, price, author, etc.). Reference: schema.org. Google supports a subset; what's *valid in schema* and what's *eligible for rich results* are not the same set.
 - **JSON-LD** — JavaScript Object Notation for Linked Data. The format Google recommends. Lives in a `<script type="application/ld+json">` tag in `<head>` (or `<body>`). Doesn't affect rendered content.
 - **Required vs recommended properties** — Google's documentation for each rich-result type lists *required* properties (no rich result without them) and *recommended* properties (improve rich-result quality). Hitting required is mandatory; recommended is strongly advised.
-- **Validation: Rich Results Test + Schema Markup Validator** — Google's tools (https://search.google.com/test/rich-results and https://validator.schema.org). The first checks rich-result eligibility; the second checks schema validity. Run both.
+- **Validation: Rich Results Test + Schema Markup Validator** — Google's tools (<https://search.google.com/test/rich-results> and <https://validator.schema.org>). The first checks rich-result eligibility; the second checks schema validity. Run both.
 - **Common rich-result types for ecom** — Product (price, availability, rating), BreadcrumbList (path crumbs in SERP), Review / AggregateRating (stars), FAQPage (question accordion), Article (publication date, author), HowTo (step-by-step), VideoObject (video previews), Organization (knowledge panel signals).
 - **Schema isn't a ranking factor in itself** — it's an eligibility signal. Schema doesn't make a page rank higher; it makes the page eligible for richer SERP treatment, which lifts CTR, which then influences ranking through the click-through-rate signal.
 - **Schema must reflect what's on the page** — markup that claims a product is "in stock" when the page shows "sold out" gets penalised (and rich results get suspended). Same for review counts, prices, and FAQ content. Markup is a description, not an enhancement.
@@ -33,10 +33,11 @@ For Field & Sun, the priority schema is: Product (every PDP), BreadcrumbList (ev
 > **Scenario:** Field & Sun's Mineral Sun Drops PDP ranks position 9 for "tinted mineral sunscreen." Currently has no schema markup. Audit reveals: no Product schema, no AggregateRating, no FAQPage despite having a strong FAQ section, no BreadcrumbList. Result: SERP listing shows just title + meta description, no rich elements. Competitors at positions 1-5 all have full Product schema with stars and price.
 >
 > **Step 1.** Plan the schema strategy. Decide per page type:
->   - PDPs: Product + AggregateRating + Review + BreadcrumbList + FAQPage (where FAQs exist)
->   - Collection pages: BreadcrumbList + ItemList (optional)
->   - Blog posts: Article + BreadcrumbList + FAQPage (where FAQs exist)
->   - Homepage: Organization + WebSite (with SearchAction for sitelinks)
+>
+> - PDPs: Product + AggregateRating + Review + BreadcrumbList + FAQPage (where FAQs exist)
+> - Collection pages: BreadcrumbList + ItemList (optional)
+> - Blog posts: Article + BreadcrumbList + FAQPage (where FAQs exist)
+> - Homepage: Organization + WebSite (with SearchAction for sitelinks)
 >
 > **Step 2.** Generate Product schema for the Mineral Sun Drops PDP. Properties: name ("Mineral Sun Drops SPF 50"), brand (Field & Sun), description, image (5 product photos), sku, offers (price $42, priceCurrency USD, availability InStock, priceValidUntil), aggregateRating (4.7 / 312 reviews), review (top 3 reviews with author + body + reviewRating). Add BreadcrumbList for Home → Sun Care → Mineral Sun Drops. Add FAQPage covering "Does it leave a white cast?", "Is zinc oxide safe for daily use?", "Can I use it under makeup?".
 >

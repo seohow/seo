@@ -183,6 +183,7 @@ No additional chat output beyond the confirmation summary, both file paths, and 
 > **User:** Nope, looks right.
 >
 > **Skill:** Saved two files in your new workspace:
+>
 > - `businesses/refillable-cleaning-co/business_profile.md` — the populated profile.
 > - `businesses/refillable-cleaning-co/CLAUDE.md` — your working-memory file. Future Claude sessions will read this and update it as decisions, learnings, and constraints surface — you don't need to manage it manually unless you want to log something explicitly.
 >

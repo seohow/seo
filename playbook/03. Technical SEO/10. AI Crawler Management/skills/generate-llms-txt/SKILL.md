@@ -58,6 +58,7 @@ If the URL inventory is missing, ask. The skill operates on real URLs.
    Adapt to the actual site. For SaaS: documentation, getting started, API reference, changelog. For content / media: pillar topics, recent investigations, archives.
 5. **Write a one-line description per entry.** 8-15 words. Imagine an LLM trying to decide which URL to retrieve given a user question — the description should make that decision easy. Brand voice from section 8 of the profile. Don't keyword-stuff; describe what the page is and who it's for.
 6. **Format per the llms.txt proposal:**
+
    ```
    # [Site name]
 
@@ -72,7 +73,9 @@ If the URL inventory is missing, ask. The skill operates on real URLs.
 
    - ...
    ```
+
    Wait — the actual format from llmstxt.org is simpler:
+
    ```
    # [Site name]
 
@@ -83,6 +86,7 @@ If the URL inventory is missing, ask. The skill operates on real URLs.
    - [Page title](URL): [one-line description]
    - [Page title](URL): [one-line description]
    ```
+
    Use the standard format. Do NOT double-bracket URLs.
 7. **Optionally generate `llms-full.txt`.** If requested, include the full Markdown of the most-cited pages (homepage, hero PDPs, top 5 blog posts) inline, separated by horizontal rules. Heavier file but more complete for LLMs that want to retrieve content without separate fetches.
 8. **Write the implementation note.** Where the file lives (site root: `/llms.txt`), how to publish on each common platform (Shopify: `Online Store > Files`; Vercel: in `public/` directory; WordPress: at root via FTP or plugin), and the verification step (`curl -I https://yoursite.com/llms.txt` returns 200 with `Content-Type: text/plain`).
@@ -173,6 +177,7 @@ curl https://yoursite.com/llms.txt | head -30
 ## llms-full.txt note
 
 If you also want `llms-full.txt`, run this skill again with the `output preference: full` option. The full version includes inline Markdown of the homepage, hero PDPs, and top 5 blog posts. Heavier file (~50-200KB) but more complete for LLMs that don't fetch URLs separately.
+
 ```
 
 Save the produced files to `businesses/<slug>/ai-crawlers/llms.txt` (and optionally `llms-full.txt`) plus an implementation note at `businesses/<slug>/ai-crawlers/llms-txt-implementation.md`. Create the `ai-crawlers/` sub-folder if it doesn't already exist. After writing, tell the user the file paths so they can open them.

@@ -27,7 +27,7 @@ The skill is opinionated about a few things: trust field data (CrUX) over lab da
 ## Inputs required
 
 1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: business model (2), CMS / platform (5).
-2. **Page URL(s)** — one URL or a list (5-10 max). For each, the user runs PageSpeed Insights at https://pagespeed.web.dev/ and pastes/exports the result.
+2. **Page URL(s)** — one URL or a list (5-10 max). For each, the user runs PageSpeed Insights at <https://pagespeed.web.dev/> and pastes/exports the result.
 3. **PageSpeed Insights data** — required, both lab and field if available. Specifically: the four Core Web Vitals (LCP, INP, CLS) from field data, plus FCP and TTFB; and the lab-data Diagnostics section (LCP element, total blocking time, render-blocking resources, unused JS/CSS, image-related opportunities).
 4. **Image inventory (optional but valuable)** — output of `audit-images` for the same page, OR a list of images with file size, format, and dimensions. If absent, the audit will recommend running `audit-images` as a follow-up.
 5. **Third-party-script list (optional but valuable)** — list of scripts the page loads (chat widgets, review apps, analytics, A/B-test tools, ad pixels). The user can pull this from the Shopify theme's `<head>` injection list, the Network tab in DevTools, or a tool like Request Map Generator. If absent, the audit will flag third-party scripts as a likely cause of INP failures and ask for the list before recommending specific defers.
@@ -176,11 +176,13 @@ Field-data verdict: 3 of 3 Core Web Vitals failing on mobile. Overall: Fail.
 Lab diagnostics: LCP element identified as hero image at 4× display dimensions, JPEG. TBT high (640ms) driven by Yotpo + Gorgias init. CLS driven by missing image dimensions + font swap.
 
 Diagnoses:
+
 - **LCP**: oversized hero image (P0). Convert to WebP at 1200×1200 with `srcset` + `fetchpriority="high"`. Expected: -1.8s.
 - **INP**: third-party scripts on init. Defer Gorgias chat to scroll-or-tap. Async-load Microsoft Clarity. Expected: -90ms.
 - **CLS**: missing image `width`/`height`. Add explicitly site-wide via theme template. Switch font-display to `optional`. Expected: -0.10.
 
 Remediation (top 3):
+
 1. Hero image rework (LCP -1.8s, Low effort, theme + image asset re-upload)
 2. Defer Gorgias chat (INP -80ms, Medium effort, theme JS edit + UX validation)
 3. Explicit image dimensions in PDP template (CLS -0.10, Low effort, theme template)

@@ -197,6 +197,7 @@ Save the produced file to `businesses/<slug>/canonicals/audit-<YYYY-MM-DD>.md`. 
 Distribution: 224 self-canonical (70%), 32 cross-canonical (10%), 0 cross-domain, 56 missing canonical (18%), 8 multiple canonicals (3%).
 
 Findings:
+
 - **Missing canonicals (56 URLs):** all are `/collections/<x>/products/<slug>` Shopify duplicates. Pattern-level fix: update product template to emit canonical to flat `/products/<slug>` regardless of access path. Recovers all 56 URLs.
 - **Multiple canonicals (8 URLs):** all are PDPs where both the theme and a Shopify SEO app are emitting canonical tags. Disable the app's canonical injection (theme has it covered). Removes the 8 duplicates.
 - **Pattern: parameter URLs (~30 URLs):** filter URLs on collection pages self-canonicalise. Update collection template so filter URLs canonicalise to the clean parent. Removes ~30 from the index over 30-60 days.

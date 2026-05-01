@@ -35,20 +35,22 @@ For larger ecom sites, the indexing problem flips: too many URLs are indexed (pa
 ## A worked example
 
 > **Scenario:** Field & Sun audits indexing in GSC. Pages report shows: 612 indexed, 287 not indexed. Click "View" on each not-indexed reason:
->   - **Crawled – currently not indexed:** 86 URLs. Mostly old blog posts and discontinued product pages.
->   - **Duplicate without user-selected canonical:** 64 URLs. Mostly Shopify's `/collections/<x>/products/<slug>` duplicates.
->   - **Soft 404:** 42 URLs. Discontinued products returning 200 with "no longer available" content.
->   - **Excluded by noindex tag:** 38 URLs. Admin and account pages — correct.
->   - **Discovered – currently not indexed:** 31 URLs. Recently launched blog posts not yet crawled.
->   - **Page with redirect:** 18 URLs. Old URLs from prior migration. Correct.
->   - **Not found (404):** 8 URLs. Genuinely removed.
+>
+> - **Crawled – currently not indexed:** 86 URLs. Mostly old blog posts and discontinued product pages.
+> - **Duplicate without user-selected canonical:** 64 URLs. Mostly Shopify's `/collections/<x>/products/<slug>` duplicates.
+> - **Soft 404:** 42 URLs. Discontinued products returning 200 with "no longer available" content.
+> - **Excluded by noindex tag:** 38 URLs. Admin and account pages — correct.
+> - **Discovered – currently not indexed:** 31 URLs. Recently launched blog posts not yet crawled.
+> - **Page with redirect:** 18 URLs. Old URLs from prior migration. Correct.
+> - **Not found (404):** 8 URLs. Genuinely removed.
 >
 > **Step 1.** Categorise findings by action:
->   - 64 canonical duplicates → fix at template level (Shopify product canonical → flat `/products/<slug>`, not collection-prefixed).
->   - 86 "Crawled – not indexed" → audit for thinness / quality. Decide per page: improve content, redirect to a more relevant page, or de-publish.
->   - 42 soft-404s → return real 404 + remove from sitemap. Or, if products will return, create proper "out of stock" template that signals temporary unavailability.
->   - 31 "Discovered – not indexed" → improve internal linking from high-authority pages to push crawl priority.
->   - 38 noindex, 18 redirects, 8 404s → no action; correctly excluded.
+>
+> - 64 canonical duplicates → fix at template level (Shopify product canonical → flat `/products/<slug>`, not collection-prefixed).
+> - 86 "Crawled – not indexed" → audit for thinness / quality. Decide per page: improve content, redirect to a more relevant page, or de-publish.
+> - 42 soft-404s → return real 404 + remove from sitemap. Or, if products will return, create proper "out of stock" template that signals temporary unavailability.
+> - 31 "Discovered – not indexed" → improve internal linking from high-authority pages to push crawl priority.
+> - 38 noindex, 18 redirects, 8 404s → no action; correctly excluded.
 >
 > **Step 2.** Implement in priority order. Canonical template fix first (1 day of dev time, recovers ~64 URLs). Then internal-linking improvements (2-3 days, helps the 31 discovered URLs). Then per-page quality work on the 86 thin pages (ongoing — feed into Content Optimization).
 >

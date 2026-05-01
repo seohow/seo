@@ -67,6 +67,7 @@ If the old URL inventory or the mapping rule is missing, ask. The redirect map o
    - **Apache `.htaccess`**: `Redirect 301 /old/path /new/path` lines.
    - **Cloudflare Page Rules**: rule list (rate-limited; only feasible for small batches).
 8. **Generate verification queries.** A list of representative URL pairs the user can curl-test post-launch:
+
    ```
    curl -I -L https://example.com/blogs/news/how-mineral-sunscreen-works
    # Expect: 301 → 200 at https://example.com/blog/how-mineral-sunscreen-works
@@ -133,7 +134,9 @@ Brief 2-3 sentence read on the shape of the map.
 (In the format requested — Shopify CSV, Vercel JSON, nginx, etc.)
 
 ```
+
 [Format-specific content]
+
 ```
 
 ## Verification queries
@@ -150,6 +153,7 @@ curl -I -L https://example.com/old/url-2
 ```
 
 ## Implementation checklist
+
 - [ ] Validate all new URLs return 200 in staging before push.
 - [ ] Resolve all "Unmapped — needs user review" rows.
 - [ ] Collapse all chains in the "Already-redirected" section.
@@ -159,7 +163,9 @@ curl -I -L https://example.com/old/url-2
 - [ ] Begin recovery monitoring per migration plan.
 
 ## Risks and watchouts
+
 3-5 specific watchouts: e.g. "the convention-based rule misses 3 legacy URLs that don't fit the pattern — manual mapping required for those 3"; "Shopify URL Redirects has a per-account limit; if you exceed it, recommend an app like Easy Redirects or theme-level handling"; "the existing redirect file has 8 chains we collapsed — verify each collapsed redirect post-launch"; "long-tail URLs without traffic but with backlinks are still in the priority tier — backlinks need redirects to preserve link equity even if there's no current click traffic."
+
 ```
 
 Save the produced file to `businesses/<slug>/migration/redirect-map.md`. If the target output format is a separate file (CSV, JSON, etc.), save that too — alongside the Markdown documentation, e.g. `businesses/<slug>/migration/redirects.csv`. Create the `migration/` sub-folder if it doesn't already exist. After writing, tell the user both file paths.
@@ -199,6 +205,7 @@ Per-URL legacy press (3 URLs): all → `/press`.
 
 Implementation-ready Shopify CSV:
 ```
+
 Redirect from,Redirect to
 /blogs/news/mineral-vs-chemical-sunscreen,/blog/mineral-vs-chemical-sunscreen
 /blogs/news/vitamin-c-serum-guide,/blog/vitamin-c-serum-guide
@@ -206,6 +213,7 @@ Redirect from,Redirect to
 /legacy-press/2022-launch,/press
 /legacy-press/founder-feature,/press
 /legacy-press/glow-summit,/press
+
 ```
 
 Verification queries: 5 representative `curl -I -L` commands.
