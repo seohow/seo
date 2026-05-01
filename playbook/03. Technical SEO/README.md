@@ -4,7 +4,7 @@
 
 ## What this category covers
 
-Technical SEO is everything that determines whether your pages can be discovered, parsed, indexed, and served quickly to searchers. It's the layer between *what's on a page* (On-page) and *whether the page is reachable at all*. The nine sub-topics here cover crawl, indexing, performance, structured data, canonical signals, sitemaps, JavaScript-rendered content, log-file diagnostics, and the high-stakes event of a site migration.
+Technical SEO is everything that determines whether your pages can be discovered, parsed, indexed, and served quickly to searchers — by traditional search engines AND by the AI crawlers that increasingly mediate visibility. It's the layer between *what's on a page* (On-page) and *whether the page is reachable at all*. The ten sub-topics here cover crawl, indexing, performance, structured data, canonical signals, sitemaps, JavaScript-rendered content, log-file diagnostics, the high-stakes event of a site migration, and the AI-crawler access decisions that govern how AI systems interact with your content.
 
 For most D2C brands, technical SEO breaks in predictable ways: thin product pages get excluded from the index, parameter URLs flood the index with duplicates, JavaScript-rendered content doesn't get crawled, Core Web Vitals fail on mobile, and migrations lose 20-40% of organic traffic when redirects are botched. Each of these is fixable, but most of them only get fixed when someone audits — defaults are rarely good.
 
@@ -29,6 +29,7 @@ The flow on the left is the lifecycle of a URL through Google: it has to be **cr
 7. **[07. JavaScript SEO](07.%20JavaScript%20SEO/README.md)** — server-side rendering, hydration, dynamic content, and the gap between what users see and what Googlebot crawls on JS-heavy sites.
 8. **[08. Log File Analysis](08.%20Log%20File%20Analysis/README.md)** — the diagnostic that tells you what Googlebot actually does on your site: crawl frequency, status codes, wasted crawl budget on parameter URLs and filters.
 9. **[09. Site Migration](09.%20Site%20Migration/README.md)** — re-platforms, rebrands, domain moves. The event most likely to lose 20-40% of organic traffic if mishandled.
+10. **[10. AI Crawler Management](10.%20AI%20Crawler%20Management/README.md)** — robots.txt rules for AI bots (GPTBot, ClaudeBot, Google-Extended, etc.), `llms.txt` standard, `noai`/`noimageai` directives. The infrastructure layer of the AI-search shift.
 
 ## A suggested workflow
 
@@ -79,6 +80,8 @@ The full inventory across the 9 sub-topics:
 - **analyse-log-files** — process server log file exports to identify Googlebot crawl patterns, wasted budget, and overlooked URLs.
 - **plan-site-migration** — design a structured migration plan: redirect strategy, sequencing, QA checkpoints, recovery monitoring.
 - **build-redirect-map** — produce the old-URL → new-URL mapping with status codes, chain checks, and an implementation order.
+- **audit-ai-crawler-access** — audit robots.txt declarations against the major AI crawlers, validate `llms.txt`, surface gaps between declared posture and actual rules.
+- **generate-llms-txt** — produce a curated `/llms.txt` file (and optionally `/llms-full.txt`) for sites with an open or visibility-only AI-crawler posture.
 
 ## Common pitfalls
 

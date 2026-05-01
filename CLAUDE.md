@@ -160,6 +160,13 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - Renames: `07. Analytics` → `05. Analytics`; `05. Off-page SEO` → `06. Off-page SEO`; `08. UX` → `07. UX`; `06. International SEO` → `08. International SEO`. The other six categories kept their numbers.
 - All cross-links in Strategy + On-page content updated via mass `sed` substitution. Root README's categories table and learning-path numbering both updated. CLAUDE.md doesn't reference category numbers by string, so no changes here aside from this entry.
 
+### 2026-05-01 — Added 10. AI Crawler Management to Technical SEO
+- Added a 10th leaf to Technical SEO covering AI-crawler access decisions (robots.txt for AI bots, `llms.txt` standard, `noai`/`noimageai` meta directives).
+- 1 leaf README + 2 skills shipped: `audit-ai-crawler-access` (executor: validates declared posture against live robots.txt + llms.txt + meta) and `generate-llms-txt` (executor: produces curated `/llms.txt` aligned to the brand's content).
+- Decision: AI-crawler decisions land in Technical SEO (infrastructure layer — robots.txt and root files). Content-side AI work (writing for citation, AI Overview eligibility, LLM visibility monitoring) stays in Category 9 AI SEO. Boundary: "can they reach you" is Technical; "are they citing you" is AI SEO.
+- Three working postures named explicitly: open (allow all), visibility-only (allow retrieval, block training), strict-block (block all). The skills don't impose a posture — the founder chooses; the skills enforce.
+- Technical SEO is now 10 leaves total, considered v1-final.
+
 ### 2026-05-01 — Technical SEO category complete (Category 3 of 10)
 - 1 category overview + 9 leaf READMEs + 11 skills shipped.
 - Skill mix: 7 leaves have 1 executor each (audit-style); 2 leaves have planner + executor (Schema Markup: `plan-schema-strategy` + `generate-schema-markup`; Site Migration: `plan-site-migration` + `build-redirect-map`). Schema and Migration earned the planner because they're strategic / project-level, not per-page operations.

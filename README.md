@@ -31,7 +31,7 @@ The `playbook/` folder is the table of contents. It's organised into 10 categori
 |---|---|---|
 | 01 | [Strategy](playbook/01.%20Strategy/README.md) | Keyword research, intent, competitor analysis, clustering, quick wins |
 | 02 | [On-page SEO](playbook/02.%20On-page%20SEO/) | Titles, descriptions, headers, URLs, internal links, images, content |
-| 03 | [Technical SEO](playbook/03.%20Technical%20SEO/) | Crawlability, indexing, site speed, schema, canonicals, sitemaps, JavaScript SEO, log file analysis, site migration |
+| 03 | [Technical SEO](playbook/03.%20Technical%20SEO/) | Crawlability, indexing, site speed, schema, canonicals, sitemaps, JavaScript SEO, log file analysis, site migration, AI crawler management |
 | 04 | [Content SEO](playbook/04.%20Content%20SEO/) | Blog content, pillars, clusters, tools, evergreen, programmatic, refresh, briefing |
 | 05 | [Analytics](playbook/05.%20Analytics/) | GA4, Search Console, rank tracking, traffic analysis, KPIs, conversion tracking |
 | 06 | [Off-page SEO](playbook/06.%20Off-page%20SEO/) | Link building, guest posting, digital PR, brand mentions, outreach, HARO, broken-link building, reputation management |
