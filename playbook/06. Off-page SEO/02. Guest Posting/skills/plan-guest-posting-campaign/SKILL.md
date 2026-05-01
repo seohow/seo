@@ -146,6 +146,7 @@ If past placements + author roster are missing, ask. The plan is anchored to spe
 
 ### Body template
 ```
+
 Hi [Editor first name],
 
 I read your recent piece on [specific recent article — title + 1-sentence reference], and it sparked a follow-up angle I think your readers would find useful.
@@ -158,6 +159,7 @@ Happy to share an outline + first-paragraph draft if helpful.
 
 Best,
 [Sender name]
+
 ```
 
 ### Length

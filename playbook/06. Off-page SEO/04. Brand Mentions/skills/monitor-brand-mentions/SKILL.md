@@ -180,6 +180,7 @@ If brand-name variants + product list are missing, ask. Keyword set is the found
 
 ### Body
 ```
+
 Hi [Editor first name],
 
 Thanks for including Field & Sun in your recent [piece title]. Really appreciated [specific detail showing you read it].
@@ -190,6 +191,7 @@ Either way, thanks for the coverage.
 
 Best,
 [Sender]
+
 ```
 
 ### Length: 3 paragraphs max

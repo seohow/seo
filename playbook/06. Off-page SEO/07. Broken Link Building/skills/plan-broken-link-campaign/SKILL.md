@@ -69,6 +69,7 @@ If replacement assets list is empty, push back. Channel has no inventory.
    - **Step 7 (follow-up):** Day 5-7 + Day 12-14.
    - **Step 8 (tracking):** placements logged.
 5. **Pitch template.**
+
    ```
    Hi [Name],
 
@@ -81,6 +82,7 @@ If replacement assets list is empty, push back. Channel has no inventory.
    Best,
    [Sender]
    ```
+
    Length: 3-4 short paragraphs.
 6. **Cadence.**
    - Prospecting: 3-4 hrs/week.
@@ -179,6 +181,7 @@ If replacement assets list is empty, push back. Channel has no inventory.
 ## Pitch template
 
 ```
+
 Hi [Name],
 
 I was reading your [piece title or resource page], and noticed the link to [broken target] (in section [X]) is no longer working — looks like the original page was retired.
@@ -189,6 +192,7 @@ Either way — wanted to flag the broken link so you could fix it.
 
 Best,
 [Sender]
+
 ```
 
 ## Cadence + targets

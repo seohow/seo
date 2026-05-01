@@ -160,6 +160,7 @@ If expertise + data inputs are absent, push back: PR campaigns require either an
 
 ### Body template
 ```
+
 Hi [Journalist first name],
 
 I read your recent piece on [specific recent article — title + 1-sentence reference].
@@ -174,6 +175,7 @@ Press kit (under embargo): [URL]
 
 Best,
 [Sender]
+
 ```
 
 ### Length: 3-5 short paragraphs

@@ -259,7 +259,7 @@ Save the produced file to `businesses/<slug>/off-page/outreach-manual.md`. Creat
 
 ## Example
 
-**Input (abbreviated):** Field & Sun. Currently sends from primary domain (sarah@fieldandsun.com); ad-hoc template; no CRM; ~1.5% response rate. Mid-stage D2C; EU + US operations.
+**Input (abbreviated):** Field & Sun. Currently sends from primary domain (<sarah@fieldandsun.com>); ad-hoc template; no CRM; ~1.5% response rate. Mid-stage D2C; EU + US operations.
 
 **Output (abbreviated):**
 

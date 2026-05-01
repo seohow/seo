@@ -42,15 +42,15 @@ If you're working through this category for the first time, the highest-leverage
 
 **Pass 2 — Tactical channels (ongoing):**
 
-4. Run `plan-guest-posting-campaign` for proactive contribution opportunities.
-5. Run `plan-digital-pr-campaign` for the headline-generating angle (original data, expert commentary, newsworthy story).
-6. Run `set-up-haro-response-system` to capture reactive opportunities.
-7. Run `plan-broken-link-campaign` for systematic broken-link prospecting.
+1. Run `plan-guest-posting-campaign` for proactive contribution opportunities.
+2. Run `plan-digital-pr-campaign` for the headline-generating angle (original data, expert commentary, newsworthy story).
+3. Run `set-up-haro-response-system` to capture reactive opportunities.
+4. Run `plan-broken-link-campaign` for systematic broken-link prospecting.
 
 **Pass 3 — Operations (ongoing):**
 
-8. Run `design-outreach-process` once to set up email templates, CRM, follow-up cadence, response handling.
-9. Run `audit-branded-serp` quarterly to monitor reputation.
+1. Run `design-outreach-process` once to set up email templates, CRM, follow-up cadence, response handling.
+2. Run `audit-branded-serp` quarterly to monitor reputation.
 
 ## Pre-requisites and dependencies
 

@@ -150,6 +150,7 @@ If experts + topical scope are missing, ask. The system filters on these.
 - **Structure:** credential intro → specific answer → supporting data → URL.
 - **Body template:**
 ```
+
 Hi [Journalist],
 
 I'm Dr. [Name], a board-certified dermatologist and advisor to Field & Sun. Re your query on [topic]:
@@ -161,6 +162,7 @@ Happy to expand or provide additional sources. More on Field & Sun's three-skin-
 Best,
 Dr. [Name]
 [contact]
+
 ```
 
 ### Template 2: Founder quote
