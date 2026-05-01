@@ -1,6 +1,6 @@
 ---
 name: generate-business-profile
-description: Interviews the user to produce a complete business profile for a specific venture and creates a workspace folder at businesses/<slug>/ containing both business_profile.md (the structured profile) and CLAUDE.md (the working-memory file for that business). Use whenever the user is starting with the SEO toolkit, says "let's set up a new business," "I want to add a brand," "create a profile for [company]," "onboard a new client," asks where to begin with SEO, or wants to update an existing business profile. Also use when any other skill in the toolkit can't find a business profile to operate on, or when the user says they have multiple brands and wants to register one. Do not use to actually do SEO work — this skill only sets up the workspace; downstream skills consume it.
+description: Interviews the user to produce a complete business profile for a specific venture and creates a workspace folder at businesses/<slug>/ containing both business_profile.md (the structured profile) and CLAUDE.md (the working-memory file for that business, shared by AI collaborators). Use whenever the user is starting with the SEO toolkit, says "let's set up a new business," "I want to add a brand," "create a profile for [company]," "onboard a new client," asks where to begin with SEO, or wants to update an existing business profile. Also use when any other skill in the toolkit can't find a business profile to operate on, or when the user says they have multiple brands and wants to register one. Do not use to actually do SEO work — this skill only sets up the workspace; downstream skills consume it.
 ---
 
 # Generate Business Profile
@@ -49,7 +49,7 @@ Ask for the **business name** if not provided. Generate a slug:
 
 Confirm the slug with the user before creating any folders. Examples:
 
-- "Refillable Cleaning Co" → `refillable-cleaning-co`
+- "Field & Sun" → `field-and-sun`
 - "Acme SaaS" → `acme-saas`
 - "Joe's Plumbing" → `joes-plumbing`
 
@@ -97,7 +97,7 @@ Create two files in the workspace:
    *Slug: `<slug>`*
    ```
 
-2. **`businesses/<slug>/CLAUDE.md`** — the per-business working-memory file, populated from `templates/business_claude_template.md`. Pre-fill: business name in the H1 and intro sentence, slug, created date, last-updated date. Leave the Decisions log, Learnings, Constraints/quirks, and Active experiments sections empty (with their inline `*(Empty — populate as ...)*` notes intact). The "How Claude should update this file" and "How the user can interact with this file" sections come straight from the template — keep them verbatim. Don't pre-fill any decisions or learnings, even if the interview surfaced things that *could* be logged — those should accumulate as the user actually works in the workspace, not from the onboarding interview.
+2. **`businesses/<slug>/CLAUDE.md`** — the per-business working-memory file, populated from `templates/business_claude_template.md`. Pre-fill: business name in the H1 and intro sentence, slug, created date, last-updated date. Leave the Decisions log, Learnings, Constraints/quirks, and Active experiments sections empty (with their inline `*(Empty — populate as ...)*` notes intact). The "How AI collaborators should update this file" and "How the user can interact with this file" sections come straight from the template — keep them verbatim. Don't pre-fill any decisions or learnings, even if the interview surfaced things that *could* be logged — those should accumulate as the user actually works in the workspace, not from the onboarding interview.
 
    In **update mode**, do NOT touch the existing CLAUDE.md. It's the user's accumulated memory; only `business_profile.md` gets updated by this skill.
 
@@ -162,15 +162,15 @@ No additional chat output beyond the confirmation summary, both file paths, and 
 
 ## Example interaction (compressed)
 
-> **User:** I want to set up SEO for my refillable cleaning brand.
+> **User:** I want to set up SEO for my D2C beauty brand.
 >
 > **Skill:** Great. Let me grab a few details and we'll build the profile.
 >
 > What's the business called and the website URL?
 >
-> **User:** Refillable Cleaning Co, refillablecleaning.co
+> **User:** Field & Sun, fieldandsun.example
 >
-> **Skill:** Got it. The folder will be `businesses/refillable-cleaning-co/` — sound right?
+> **Skill:** Got it. The folder will be `businesses/field-and-sun/` — sound right?
 >
 > **User:** Yes
 >
@@ -178,13 +178,13 @@ No additional chat output beyond the confirmation summary, both file paths, and 
 >
 > *[continues through 5 batches, ~10-15 messages total]*
 >
-> **Skill:** Here's the summary: D2C refillable cleaning brand, 8 months old, US, Shopify, 6 SKUs across laundry/dish/surface, eco-conscious-parents customer, 3 main pains (plastic waste, harsh chemicals, expense over time), 4 competitors (Blueland, Earth Breeze, Branch Basics, plus Wirecutter as content competitor), Q4 goal of 2x organic sessions, warm-and-confident tone. Anything missing?
+> **Skill:** Here's the summary: D2C beauty brand, US, Shopify, hero products across daily serum and mineral SPF, ingredient-aware customers, 3 main pains (finding gentle daily products, understanding SPF, building a simple routine), 4 competitors (Supergoop, Summer Fridays, Drunk Elephant, plus Byrdie as a content competitor), Q4 goal of 2x organic revenue, warm-and-expert tone. Anything missing?
 >
 > **User:** Nope, looks right.
 >
 > **Skill:** Saved two files in your new workspace:
 >
-> - `businesses/refillable-cleaning-co/business_profile.md` — the populated profile.
-> - `businesses/refillable-cleaning-co/CLAUDE.md` — your working-memory file. Future Claude sessions will read this and update it as decisions, learnings, and constraints surface — you don't need to manage it manually unless you want to log something explicitly.
+> - `businesses/field-and-sun/business_profile.md` — the populated profile.
+> - `businesses/field-and-sun/CLAUDE.md` — your working-memory file. Future AI collaborators will read this and update it as decisions, learnings, and constraints surface — you don't need to manage it manually unless you want to log something explicitly.
 >
-> A few profile sections I marked unknown — current organic sessions, indexed pages, top ranking keywords — pull those from GSC this week so the next round of skills can be precise. Recommended next: run `generate-seed-keywords` for the laundry category to start building your keyword universe, or `plan-keyword-research` if you want a full project plan first.
+> A few profile sections I marked unknown — current organic sessions, indexed pages, top ranking keywords — pull those from GSC this week so the next round of skills can be precise. Recommended next: run `generate-seed-keywords` for the mineral SPF category to start building your keyword universe, or `plan-keyword-research` if you want a full project plan first.

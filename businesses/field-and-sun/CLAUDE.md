@@ -1,6 +1,6 @@
 # CLAUDE.md — Field & Sun
 
-> Working memory for the SEO program for **Field & Sun**. Future Claude sessions read this to orient quickly. Keep entries terse and update as decisions, learnings, constraints, or priorities surface.
+> Working memory for the SEO program for **Field & Sun**. Future AI collaborators read this to orient quickly. Keep entries terse and update as decisions, learnings, constraints, or priorities surface.
 >
 > **Note for readers:** Field & Sun is the canonical sample business that ships with this toolkit. The decisions, learnings, constraints, and experiments below are illustrative — they show what a healthy, populated working-memory file looks like after a few months of real SEO work. Treat them as worked examples, not as actual operational state.
 
@@ -78,9 +78,9 @@
 - Measuring: add-to-cart rate, conversion rate, position in GSC for the cluster's keywords.
 - Status: running. 14-day data inconclusive — wait until 30-day mark.
 
-## How Claude should update this file
+## How AI collaborators should update this file
 
-This file is maintained by Claude as a side-effect of working in this workspace. Specific update rules:
+This file is maintained by AI collaborators as a side-effect of working in this workspace. Specific update rules:
 
 - **Decision made by the user that affects future SEO work** → append to **Decisions log**. Examples: "we'll prioritise the laundry cluster over dish for Q3," "deferred link building until after the rebrand," "the SEO Wins backlog top 5 are owned by the founder, not the marketer."
 - **Non-obvious learning about this business surfaces in conversation or in artifact analysis** → add a bullet to **Learnings**. Examples: "Wirecutter dominates our top 10 commercial SERPs head-to-head — we should focus on adjacent angles instead," "blog refresh ROI here is much higher than new content (probably because indexed depth is shallow)."
@@ -98,8 +98,8 @@ When updating, also bump **Quick context > Last updated**. Keep the file under ~
 
 ## How the user can interact with this file
 
-You don't have to manually edit this file — Claude maintains it. But if you want to:
+You don't have to manually edit this file — the AI collaborator maintains it. But if you want to:
 
-- **Add something explicitly** → tell Claude "log this in CLAUDE.md: [entry]" and Claude will append to the right section.
-- **Correct or remove an entry** → tell Claude "remove the entry about [X]" and Claude will edit accordingly.
+- **Add something explicitly** → tell the AI collaborator "log this in CLAUDE.md: [entry]" and it will append to the right section.
+- **Correct or remove an entry** → tell the AI collaborator "remove the entry about [X]" and it will edit accordingly.
 - **Review the running state** → just open the file. The Quick context section is designed to give you the current state at a glance.

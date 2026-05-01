@@ -4,7 +4,7 @@ A working SEO operating system for business owners and marketers. Three layers i
 
 1. **Knowledge** — a structured curriculum of modern SEO, organised by topic. Read the README in any folder to learn what that piece is, why it matters, and how to do it.
 2. **Skills** — installable AI skills that plan, execute, or track the work for you. Each skill reads your business profile from `businesses/<your-business-slug>/` and produces a tailored artifact saved into the same workspace.
-3. **Memory** — `CLAUDE.md` files at the repo root and inside each business workspace. They capture conventions, decisions, learnings, and constraints so the toolkit gets sharper over time and so any new Claude session has the context it needs to be useful immediately.
+3. **Memory** — `AGENTS.md` at the repo root and `CLAUDE.md` files inside each business workspace. They capture conventions, decisions, learnings, and constraints so the toolkit gets sharper over time and so any new AI collaborator has the context it needs to be useful immediately.
 
 The goal is that anyone running a business can go from "I should probably do SEO" to "here is my plan and here is my next deliverable" without hiring an agency.
 
@@ -17,7 +17,7 @@ The goal is that anyone running a business can go from "I should probably do SEO
 Run the [`generate-business-profile`](skills/generate-business-profile/SKILL.md) skill. It will interview you for the inputs, slugify a folder name, and create two files in your new workspace:
 
 - `businesses/<your-business-slug>/business_profile.md` — the structured profile every other skill reads.
-- `businesses/<your-business-slug>/CLAUDE.md` — the working-memory file Claude maintains as decisions, learnings, and constraints surface over time.
+- `businesses/<your-business-slug>/CLAUDE.md` — the working-memory file AI collaborators maintain as decisions, learnings, and constraints surface over time.
 
 If you run SEO for multiple ventures, run the skill once per business. Each gets its own folder; skills will ask which business to operate on if more than one exists.
 
@@ -59,7 +59,7 @@ playbook/01. Strategy/01. Keyword Research/
         └── SKILL.md
 ```
 
-To use a skill, install it into Claude Code, Cowork, or any Claude product that supports skills, or paste its `SKILL.md` content into a chat with your business profile attached.
+To use a skill, install it into an AI coding/workflow environment that supports skills, or paste its `SKILL.md` content into a chat with your business profile attached.
 
 Topic skills come in two archetypes:
 

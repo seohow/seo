@@ -26,13 +26,13 @@ businesses/
 
 Sub-folders are created on demand by the skills that produce artifacts. You don't need to create them upfront — running the relevant skill will populate the right path.
 
-`business_profile.md` and `CLAUDE.md` are both created up-front by `generate-business-profile`. The profile is the structured input the skills consume; CLAUDE.md is the *working memory* for the business — decisions, learnings, constraints, and active experiments that accumulate over time. Future Claude sessions read CLAUDE.md to orient quickly and update it as new context surfaces. You don't have to manage it manually, but you can — it's a normal Markdown file. See `templates/business_claude_template.md` for the structure.
+`business_profile.md` and `CLAUDE.md` are both created up-front by `generate-business-profile`. The profile is the structured input the skills consume; CLAUDE.md is the *working memory* for the business — decisions, learnings, constraints, and active experiments that accumulate over time. Future AI collaborators read CLAUDE.md to orient quickly and update it as new context surfaces. You don't have to manage it manually, but you can — it's a normal Markdown file. See `templates/business_claude_template.md` for the structure.
 
 ## Naming
 
 Business slugs are kebab-case versions of the business name, with no special characters or whitespace. Examples:
 
-- "Refillable Cleaning Co" → `refillable-cleaning-co`
+- "Field & Sun" → `field-and-sun`
 - "Acme SaaS" → `acme-saas`
 - "Joe's Plumbing" → `joes-plumbing`
 
@@ -43,7 +43,7 @@ The `generate-business-profile` skill handles slugification automatically. If yo
 Two patterns are supported:
 
 1. **One business at a time.** If only one folder exists, every skill defaults to that business — no need to specify each time.
-2. **Multiple businesses.** When more than one folder exists, every skill will ask which business to operate on at the start of the interaction. To make a particular business the default for a session, mention it in your first message ("for refillable-cleaning-co, …") and the skills will pick it up.
+2. **Multiple businesses.** When more than one folder exists, every skill will ask which business to operate on at the start of the interaction. To make a particular business the default for a session, mention it in your first message ("for field-and-sun, ...") and the skills will pick it up.
 
 ## Privacy and version control
 

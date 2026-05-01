@@ -1,6 +1,6 @@
 ---
 name: skill-name-in-kebab-case
-description: One sentence on what the skill produces, followed by explicit triggering contexts. Lead with the output. Then list the kinds of user phrasings that should invoke it. Be specific and a little pushy — Claude tends to under-trigger skills, so make it clear when this one applies. Pattern to follow — "Generates X for a business. Use whenever the user asks for X, mentions [keyword 1], [keyword 2], or wants to [outcome]. Also use when they're working on [adjacent task] and need X as an input."
+description: One sentence on what the skill produces, followed by explicit triggering contexts. Lead with the output. Then list the kinds of user phrasings that should invoke it. Be specific and a little pushy — AI collaborators can under-trigger skills, so make it clear when this one applies. Pattern to follow — "Generates X for a business. Use whenever the user asks for X, mentions [keyword 1], [keyword 2], or wants to [outcome]. Also use when they're working on [adjacent task] and need X as an input."
 ---
 
 # Skill Name (Human-Readable)
@@ -30,7 +30,7 @@ If any required input is missing, ask the user before producing output. Do not i
 
 ## Process
 
-Walk through the steps to produce the output. Use imperative form. Explain *why* at each step so Claude can adapt to edge cases.
+Walk through the steps to produce the output. Use imperative form. Explain *why* at each step so the AI collaborator can adapt to edge cases.
 
 1. **Step.** Do X. The reason this matters is Y.
 2. **Step.** Do X. The reason this matters is Y.
@@ -54,7 +54,7 @@ Save the produced file to `businesses/<slug>/<artifact-subfolder>/<filename>.md`
 
 ## Quality bar
 
-What "good" looks like for this skill's output. List the checks Claude should run before delivering.
+What "good" looks like for this skill's output. List the checks the AI collaborator should run before delivering.
 
 - Output is specific to the user's business (not generic).
 - [Other criterion].
@@ -67,7 +67,7 @@ What "good" looks like for this skill's output. List the checks Claude should ru
 
 ## Example
 
-Optional but recommended. Show a compact before/after or input/output pair so Claude has a concrete target.
+Optional but recommended. Show a compact before/after or input/output pair so the AI collaborator has a concrete target.
 
 **Input:**
 > Brief example input.
