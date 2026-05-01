@@ -134,21 +134,25 @@ For each planned post, a stub that feeds into `generate-content-brief`:
 ```
 
 ## Capacity check
+
 - Total posts in 90-day plan: [n new] + [n refresh] = [total]
 - Team-capacity assumption: [n / month] = [n in 90 days]
 - Reality check: [match / overplanned / underplanned]
 - Recommendation if overplanned: [drop X posts from Wk 9-12 or extend to 120 days].
 
 ## Risks and watchouts
+
 3-5 specific risks: e.g. "Writer A vacation in Wk 5-6 — re-sequence or commission contractor"; "sun-care peak begins Wk 8; Wk 1-7 is the publication window — late posts won't index in time"; "seasonal calendar assumes May launch; if delayed past mid-May, pull peak-cluster posts forward."
 
 ## Implementation checklist
+
 - [ ] Brief Wk 1-2 posts via `generate-content-brief` (run separately for each).
 - [ ] Confirm writer capacity match.
 - [ ] Set up content calendar in [Notion / Airtable / Asana / etc.].
 - [ ] Schedule monthly review of plan vs actual.
 - [ ] Pair refresh efforts with new content per the cadence.
 - [ ] Update the per-business CLAUDE.md decisions log with strategic shifts (priority cluster changes, capacity changes).
+
 ```
 
 Save the produced file to `businesses/<slug>/blog-content/calendar-<YYYY-MM-DD>.md`. Create the `blog-content/` sub-folder if it doesn't already exist. After writing, tell the user the file path so they can open it.

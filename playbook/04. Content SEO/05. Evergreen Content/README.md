@@ -1,0 +1,99 @@
+# Evergreen Content
+
+> Content designed to remain relevant for years. Foundational topics, definitive guides, principle-led explainers. The compounding-value content type — the pieces that earn rank for 18 months and then keep earning for 5 years.
+
+## What it is
+
+Evergreen content is content built for longevity — pieces designed to stay relevant 3-5 years after publication with only minor refreshes. The format is distinct from time-bound or trend-led content (which decays fast) and from utility content (which functions through interaction). Evergreen content earns its keep through compounding: the same piece keeps ranking, keeps earning links, keeps converting, year after year, with annual maintenance.
+
+For Field & Sun, candidate evergreen pieces include "what is mineral sunscreen" (the foundational explainer the brand returns to for 5 years), "how to read a sunscreen ingredient label" (a principle-led teaching piece), and "the science of UV protection" (a definitive guide that remains accurate as long as physics stays the same). Evergreen pieces are typically the brand's *anchor* content — the pieces that establish authority and that other content references back to.
+
+## Why it matters
+
+Three reasons. First, **evergreen content has a fundamentally different ROI curve than time-bound content**. A trend-led post earns 80% of its lifetime traffic in the first 6 months and decays. An evergreen piece earns ~30% in the first 12 months and then maintains or grows for years. Over a 5-year horizon, one well-built evergreen piece often outperforms 5-10 trend-led posts on cumulative traffic.
+
+Second, **evergreen pieces are the strongest backlink magnets in the editorial format**. Pieces designed to remain authoritative — with original research, expert quotes, deep methodology, and durable framing — get cited from textbooks, government pages, university curricula, and other sites' resource lists. Trend-led content rarely earns those citations.
+
+Third, **evergreen content is what makes the cluster pattern compound over time**. A pillar page that's evergreen-shaped retains its rank for 5+ years; a pillar that's trend-led drops out within 18 months. Over a 5-year horizon, the brand's strongest topic-authority signals come from evergreen pillars and evergreen anchor spokes — not from the trendy take of the moment.
+
+For Field & Sun: investing in 4-6 truly evergreen pieces over the next 12 months is plausibly worth more than 30-40 trend-led posts. The compounding wins.
+
+## Core concepts
+
+- **Evergreen ≠ generic.** "Evergreen" doesn't mean "watered-down" or "topic-summary." Evergreen pieces are *deeper* and *more specific* than typical blog content — that's what gives them durability.
+- **Time-bound vs evergreen.** Time-bound content references current events, stats with a date attached, year-stamped recommendations, ongoing trends. Evergreen content references principles, fundamentals, mechanisms, methodology — things that don't change quickly.
+- **Title and URL signals.** Evergreen content rarely uses years in the URL or title. Time-bound content frequently does ("best sunscreens 2026"). The URL is a leading indicator of intent.
+- **Refresh cadence.** Evergreen content gets refreshed annually (minor updates, image refresh, new internal links). Time-bound content gets refreshed quarterly or replaced. Different refresh discipline.
+- **Investment depth.** Evergreen pieces deserve more upfront investment — longer brief, more research time, original assets, expert review. Trying to ship evergreen content on a 6-hour blog-post budget produces shallow evergreen, which doesn't earn the longevity.
+- **Anchor pieces vs supporting pieces.** Most clusters have 1-2 evergreen anchor pieces and a longer tail of more time-bound supporting content. The anchor pieces are where the longevity investment goes.
+- **Evergreen + AI search.** AI Overviews and LLM citations heavily favour authoritative, principle-led content over trend-led content. Evergreen pieces are disproportionately cited in AI surfaces.
+- **Evergreen schema.** Article + Author with credentials + comprehensive `dateModified` discipline. Last-updated visibility matters; readers and Google both want recency signals on evergreen pieces.
+
+## A worked example
+
+> **Scenario:** Field & Sun has 25 published blog posts. Most are time-bound or generic; few have the depth or framing to compound for years. The brand wants to invest in 3-4 anchor evergreen pieces over the next 12 months — pieces designed to be the brand's authoritative reference on key topics.
+>
+> **Step 1.** Run `brief-evergreen-content` for the highest-priority topic: "what is mineral sunscreen" (foundational explainer, sits as a spoke under the sun-care pillar but functions as an evergreen anchor).
+>
+> **Step 2.** Skill output is the longevity-first brief:
+>
+> - **Topic & primary keyword:** "what is mineral sunscreen" (vol 1,400/mo, evergreen-leaning).
+> - **Longevity case:** principles (UV physics, mineral filter mechanism) don't change; brand's three-skin-tone testing methodology is reusable for 5 years.
+> - **Word count:** 2,800 (longer than typical blog post; depth is part of the durability).
+> - **Outline:** principle-first structure (mechanism → ingredients → application → comparison → FAQ).
+> - **Original assets required:** three-skin-tone swatch test photographed in studio; ingredient cross-section diagram (commissioned illustration); methodology box reusable across other Field & Sun content.
+> - **Author:** founder + dermatologist co-byline (E-E-A-T signal, builds credibility for 5 years).
+> - **Refresh plan:** annual refresh checking for new ingredient approvals, methodology updates, fresh internal links to new spokes.
+>
+> **Step 3.** Production: 4 weeks (vs 1-2 weeks for typical post). Photography + illustration commissioned upfront.
+>
+> **Step 4.** Result: 18 months later, the piece ranks position 4 for "what is mineral sunscreen" and 12 long-tail variants. It earns 25+ backlinks (vs ~3 for an average sun-care post). It's cited in two skincare publications' "best of" lists. The piece is the most-trafficked single page in the sun-care cluster two years post-launch.
+
+## How to do it
+
+1. **Identify candidate evergreen topics.** Look for topics where:
+   - Underlying principles don't change (physics, chemistry, mechanism, foundational definitions).
+   - The topic is foundational to the brand's category (anyone in mineral sunscreen needs this content).
+   - The brand can speak with authority + originality (own data, expert review, distinctive methodology).
+   - Search demand is durable (the keyword has been searched for 5+ years and isn't trend-spiking).
+   For Field & Sun: "what is mineral sunscreen," "UV physics explained," "how to read sunscreen labels," "the science of zinc oxide" — all candidates.
+2. **Distinguish from time-bound topics.** "Best sunscreens 2026," "summer skincare trends," "what TikTok says about SPF" — all time-bound. They can be useful but aren't evergreen targets.
+3. **Run `brief-evergreen-content`.** Skill produces the longevity-first brief — deeper than `generate-content-brief`, with explicit longevity case, asset plan, expert review plan, refresh schedule.
+4. **Invest in production.** Evergreen pieces deserve 3-6 weeks (vs 1-2 for typical post). Commission original photography or illustration. Get expert review where credibility matters. Don't shortcut.
+5. **Layer schema with longevity in mind.** Article schema with `dateModified` discipline (update on every refresh, not just publish). Author with credentials. Citation-friendly structure (clear sections, original data points, methodology box).
+6. **Wire into the cluster.** Evergreen pieces are usually anchor spokes under a pillar. Link prominently from pillar; link from sibling spokes that benefit from the foundational reference.
+7. **Monitor longer.** Evergreen pieces take longer to reach peak rank (12-24 months vs 3-6 for typical post). Don't declare success or failure before 12 months.
+8. **Refresh annually.** `plan-content-refresh` quarterly identifies which evergreen pieces need updates. Annual refresh keeps the `dateModified` fresh, internal links current, and content accurate.
+9. **Audit the existing portfolio.** Most established sites have 5-15 underperforming pieces that *could* be evergreen with re-investment. Identify these as refresh candidates rather than de-publishing.
+
+## Common pitfalls
+
+- **Calling something evergreen because it doesn't have a year stamp.** "How does mineral sunscreen work" is potentially evergreen; it's evergreen *only* if shipped with the depth and original framing that gives it durability. Title alone doesn't make a piece evergreen.
+- **Shipping evergreen on a typical blog-post budget.** Evergreen needs 2-3x the production investment of a typical post. Shortcutting produces shallow evergreen that decays like everything else.
+- **No expert review on credibility-sensitive topics.** Evergreen sun-care, ingredient, or methodology content needs dermatologist or chemist review for credibility. AI-only content rarely earns the citation profile that evergreen demands.
+- **Year-stamping the URL or title.** Once you've put `2026` in either, the piece reads dated 14 months later regardless of `dateModified` updates.
+- **Neglecting the refresh cycle.** Evergreen ≠ "set and forget." Annual refresh keeps `dateModified` accurate, internal links current, and the piece factually correct.
+- **Treating every piece as evergreen.** Most clusters need 1-2 anchor evergreen pieces, not 8. Over-evergreening dilutes the editorial calendar's responsiveness to the moment.
+- **Ignoring AI search signals.** Evergreen pieces that lack methodology transparency, named authors, and original data are *less* likely to be cited in AI Overviews than the brand expects. Evergreen requires 2026-shaped depth signals.
+- **Confusing evergreen with old.** A piece written 4 years ago that's never been refreshed isn't evergreen — it's stale. Refresh discipline is what differentiates the two.
+
+## Skills in this toolkit
+
+- **[brief-evergreen-content](skills/brief-evergreen-content/SKILL.md)** — produces the longevity-first content brief. Deeper than `generate-content-brief`: includes the longevity case (why this piece is durable), original-asset plan, expert-review plan, schema with `dateModified` discipline, refresh schedule, and 3-5-year compounding-traffic forecast. Output is the spec a writer + editor + designer can produce a high-investment anchor piece against.
+
+## Related topics
+
+- **[01. Blog Content](../01.%20Blog%20Content/README.md)** — most evergreen pieces sit on the blog; evergreen is a sub-shape of blog content.
+- **[02. Pillar Pages](../02.%20Pillar%20Pages/README.md)** — pillars are usually evergreen by design; many of the same principles apply.
+- **[03. Topic Clusters](../03.%20Topic%20Clusters/README.md)** — evergreen pieces often function as anchor spokes within a cluster.
+- **[07. Content Refresh](../07.%20Content%20Refresh/README.md)** — evergreen ↔ refresh is the lifecycle pair. Evergreen pieces are the highest-ROI refresh candidates.
+- **[08. Content Briefing](../08.%20Content%20Briefing/README.md)** — `brief-evergreen-content` is a longer-form variant of the standard brief.
+- **[09. AI SEO](../../09.%20AI%20SEO/README.md)** *(planned)* — evergreen content is disproportionately favoured in AI Overviews and LLM citation surfaces.
+
+## Further reading
+
+- [Animalz — Evergreen Content as a Strategic Bet](https://www.animalz.co/blog/) — frames evergreen as an investment portfolio decision; useful for prioritising.
+- [Wait But Why — Long-Form Evergreen Posts](https://waitbutwhy.com/) — examples of pieces designed for 10-year durability; the production discipline is instructive.
+- [Tom Critchlow — Evergreen vs. Newsletter Content](https://tomcritchlow.com/) — strategic framing of when each format applies.
+- [Brian Dean / Backlinko — Skyscraper Technique Refined](https://backlinko.com/) — practical walkthrough of evergreen depth signals + link earning.
+- [Stripe Press / a16z Evergreen Articles](https://stripe.press/) — examples of brand-published evergreen content that compounds for years.

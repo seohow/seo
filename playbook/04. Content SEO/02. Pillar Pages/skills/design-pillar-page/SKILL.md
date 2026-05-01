@@ -122,9 +122,11 @@ H2: [Closing — practical action / how to choose]
 ```
 
 ## Brand-distinct angle
+
 1-2 paragraphs on what makes this pillar distinct from the SERP top 10. Specific, provable, brand-anchored.
 
 ## Internal-link plan
+
 | Direction | From → To | Anchor pattern | Where in body |
 |-----------|-----------|----------------|---------------|
 | Out from pillar | This pillar → [spoke 1] | "[anchor variant 1]" / "[anchor variant 2]" | Section 2 body |
@@ -133,18 +135,21 @@ H2: [Closing — practical action / how to choose]
 | Cross-cluster | This pillar → [other pillar] | ... | Closing or relevant section |
 
 ## Schema strategy
+
 - **Article**: datePublished, dateModified, author (name + URL + credentials), image, mainEntityOfPage.
 - **BreadcrumbList**: Home → Guides → [Pillar].
 - **FAQPage**: if FAQs section is included (strongly recommended; 5-10 questions).
 - **Reference**: see [generate-schema-markup](../../../03.%20Technical%20SEO/04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md) when implementing.
 
 ## Required assets
+
 - Hero image (1200×630+, brand-distinct — own product photography, not stock).
 - 3-5 in-body images / diagrams supporting the brand angle (e.g. swatch tests on three skin tones).
 - 1-2 comparison tables if the format calls for them (most pillars benefit from at least one).
 - Author bio with credentials.
 
 ## Word-count breakdown
+
 - Intro / definitional: ~300-500 words
 - Section 2 (Spoke A): ~400-600 words
 - Section 3 (Spoke B): ~400-600 words
@@ -154,6 +159,7 @@ H2: [Closing — practical action / how to choose]
 Total target: [n] words.
 
 ## Acceptance criteria
+
 - [ ] Every required section is present.
 - [ ] Every spoke gets at least one outbound link from the pillar in its relevant section.
 - [ ] Every spoke is updated to link to the pillar in intro paragraph + at least one body section.
@@ -164,6 +170,7 @@ Total target: [n] words.
 - [ ] Author bio shows credentials.
 
 ## Production timeline
+
 - Brief locked: [date]
 - First draft: [date — typically 3-5 weeks for a pillar]
 - Editorial review: [date]
@@ -173,6 +180,7 @@ Total target: [n] words.
 - Internal-link sweep across spokes: within 7 days of launch
 
 ## Implementation checklist
+
 - [ ] Build draft via `generate-content-brief` to get the writer's prose-level brief.
 - [ ] Writer drafts; editorial review.
 - [ ] Photography / illustration commissioned.
@@ -184,7 +192,9 @@ Total target: [n] words.
 - [ ] Schedule annual refresh.
 
 ## Risks and watchouts
+
 3-5 specific risks: e.g. "SERP top 5 is Wirecutter, NYT, EWG — top-3 is unrealistic, target top 10"; "photography requires three-skin-tone swatch test which is a separate ops dependency"; "if vitamin-C cluster is also planned for a pillar, sequence carefully — same writer, same author bio, may want consistent voice"; "if no author bio exists, create one before launch (E-E-A-T signal); takes a week."
+
 ```
 
 Save the produced file to `businesses/<slug>/pillars/<pillar-slug>.md`. Create the `pillars/` sub-folder if it doesn't already exist. After writing, tell the user the file path so they can open it.

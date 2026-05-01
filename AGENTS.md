@@ -178,6 +178,16 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - Three working postures named explicitly: open (allow all), visibility-only (allow retrieval, block training), strict-block (block all). The skills don't impose a posture — the founder chooses; the skills enforce.
 - Technical SEO is now 10 leaves total, considered v1-final.
 
+### 2026-05-01 — Content SEO category complete (Category 4 of 10)
+
+- 1 category overview + 8 leaf READMEs + 9 skills shipped.
+- Skill mix: 7 leaves have 1 skill (planner or executor depending on shape); 1 leaf (Programmatic SEO) has 2 skills (`plan-programmatic-seo` evaluator + `design-programmatic-template` executor) because programmatic uniquely warrants a hard go/no-go gate before template design.
+- Established artifact subfolder names for this category: `editorial-calendar/`, `pillars/`, `topic-clusters/`, `tools/`, `evergreen/`, `programmatic/`, `refresh/`, `briefs/`.
+- `08. Content Briefing` (`generate-content-brief`) is the universal foundation — Pillar / Topic Cluster / Tool / Evergreen / Refresh briefs are all longer-form siblings of the same shape. Reinforces that briefs are the bottleneck across content types, not blog-only.
+- `06. Programmatic SEO` is the only leaf in v1 that explicitly may red-light a request. The evaluator skill is conservative by design (programmatic is the highest-downside content investment), and `design-programmatic-template` requires a green-lit evaluation as its input. Pattern worth replicating where downside risk is severe (future categories: paid-media-adjacent, structured data at scale).
+- Cross-references are dense within this category (cluster ↔ pillar ↔ blog ↔ briefing all interlock) and outward to On-page (URL conventions, internal linking) and Technical SEO (schema, indexation, sitemaps). This matches how real content-led SEO work flows.
+- `.gitkeep` count: 41 (post-Technical) → 33 (after Content SEO). 33 leaves remaining across 6 categories.
+
 ### 2026-05-01 — Technical SEO category complete (Category 3 of 10)
 
 - 1 category overview + 9 leaf READMEs + 11 skills shipped.

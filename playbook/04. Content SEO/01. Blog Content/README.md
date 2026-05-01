@@ -35,11 +35,12 @@ Third, **blog content is where brand voice and expertise show up most visibly**.
 > **Step 2.** Coverage gaps surfaced: 8 informational sun-care clusters (e.g. "how does mineral sunscreen work," "mineral vs chemical sunscreen," "is zinc oxide safe daily") have no current post. Sun-care is the brand's seasonal-peak focus — these gaps are P0.
 >
 > **Step 3.** 90-day calendar:
->   - Wk 1-2: 3 sun-care explainers ("how mineral sunscreen works," "is zinc oxide safe daily," "mineral sunscreen for sensitive skin").
->   - Wk 3-5: 2 comparison posts ("mineral vs chemical sunscreen," "tinted vs untinted mineral sunscreen").
->   - Wk 6-8: 2 ingredient deep-dives ("non-nano zinc oxide explained," "what's actually in our SPF").
->   - Wk 9-12: 2 vitamin-C-cluster posts to start the Q4 rotation.
->   - Plus 2 refresh efforts on existing decayed posts (handled separately by `plan-content-refresh`).
+>
+> - Wk 1-2: 3 sun-care explainers ("how mineral sunscreen works," "is zinc oxide safe daily," "mineral sunscreen for sensitive skin").
+> - Wk 3-5: 2 comparison posts ("mineral vs chemical sunscreen," "tinted vs untinted mineral sunscreen").
+> - Wk 6-8: 2 ingredient deep-dives ("non-nano zinc oxide explained," "what's actually in our SPF").
+> - Wk 9-12: 2 vitamin-C-cluster posts to start the Q4 rotation.
+> - Plus 2 refresh efforts on existing decayed posts (handled separately by `plan-content-refresh`).
 > Total: 9 new posts in 90 days, ~3/month — matches the team's content writer capacity.
 >
 > **Step 4.** Each post in the calendar gets a content brief via `generate-content-brief` before it's written.

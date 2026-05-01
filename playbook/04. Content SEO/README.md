@@ -37,19 +37,19 @@ If you're working through this category for the first time, the highest-leverage
 
 **Pass 2 — Architecture (1-2 weeks):**
 
-2. Run `design-topic-cluster` to convert your cluster map into hub-and-spoke architectures. Decide which clusters get pillars, which spokes, which are blog-only.
-3. Run `design-pillar-page` for the 2-3 highest-priority hub topics. These are the long-form anchor pages.
+1. Run `design-topic-cluster` to convert your cluster map into hub-and-spoke architectures. Decide which clusters get pillars, which spokes, which are blog-only.
+2. Run `design-pillar-page` for the 2-3 highest-priority hub topics. These are the long-form anchor pages.
 
 **Pass 3 — Production (ongoing):**
 
-4. Run `plan-blog-content` to build a 90-day editorial calendar from the cluster map's blog-shaped clusters. Most clusters land here.
-5. Run `brief-evergreen-content` for the topics that warrant deep, longevity-first treatment.
-6. Run `plan-tool-page` if interactive tools fit the brand and the audience.
-7. Run `plan-programmatic-seo` only if you have structured data and a defensible programmatic angle. Most D2C brands don't; the ones that do (multi-SKU, multi-location, multi-variant) earn outsized returns.
+1. Run `plan-blog-content` to build a 90-day editorial calendar from the cluster map's blog-shaped clusters. Most clusters land here.
+2. Run `brief-evergreen-content` for the topics that warrant deep, longevity-first treatment.
+3. Run `plan-tool-page` if interactive tools fit the brand and the audience.
+4. Run `plan-programmatic-seo` only if you have structured data and a defensible programmatic angle. Most D2C brands don't; the ones that do (multi-SKU, multi-location, multi-variant) earn outsized returns.
 
 **Pass 4 — Lifecycle (ongoing):**
 
-8. Run `plan-content-refresh` quarterly on existing content that has decayed traffic. On established sites, refresh ROI often beats new-content ROI.
+1. Run `plan-content-refresh` quarterly on existing content that has decayed traffic. On established sites, refresh ROI often beats new-content ROI.
 
 ## Pre-requisites and dependencies
 
