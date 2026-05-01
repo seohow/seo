@@ -38,7 +38,7 @@ The trade-offs: broken-link building is slow per-pitch (10-30 minutes per prospe
 >
 > **Step 2.** Output:
 >
-> - **Prospect categories:** "skincare resources," "sun protection guide," "dermatologist resources," "mineral sunscreen list," "non-toxic skincare resources" (etc.).
+> - **Prospect categories:** "skincare resources," "sun protection guide," "dermatologist resources," "mineral sunscreen list," "sun-care ingredient resources" (etc.).
 > - **Tooling:** Ahrefs Site Explorer for broken-outbound-link discovery + Wayback Machine for content verification + Lemlist for sending.
 > - **Asset inventory:** mineral-sunscreen pillar (high replacement value), evergreen "what is mineral sunscreen" anchor, three blog spokes.
 > - **Targets:** ~50 prospect pages identified per week of prospecting; ~8-15 broken-link matches; 5-12 conversions/quarter.

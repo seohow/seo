@@ -88,7 +88,7 @@ Third, **defensive work is cheap if proactive, expensive if reactive**. Catching
 - **[03. Digital PR](../03.%20Digital%20PR/README.md)** — positive PR coverage feeds favourable branded-SERP content.
 - **[04. Content SEO / 05. Evergreen Content](../../04.%20Content%20SEO/05.%20Evergreen%20Content/README.md)** — defensive content is often evergreen-shaped.
 - **[02. On-page SEO / 01. Title](../../02.%20On-page%20SEO/01.%20Title/README.md)** — branded titles + descriptions on key landing pages.
-- **[09. AI SEO](../../09.%20AI%20SEO/README.md)** *(planned)* — AI-Overview shaping is the dedicated layer; reputation overlaps.
+- **[09. AI SEO](../../09.%20AI%20SEO/)** *(planned)* — AI-Overview shaping is the dedicated layer; reputation overlaps.
 
 ## Further reading
 

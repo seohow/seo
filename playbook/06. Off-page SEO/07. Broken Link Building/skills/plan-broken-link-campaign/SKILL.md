@@ -25,7 +25,7 @@ The skill is opinionated about a few things: replacement assets must topically m
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), brand voice (8).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), brand voice (8).
 2. **Replacement asset list** — required. Pillar pages, evergreen anchors, tools, comparison pages, key spokes. Without these, the channel has nothing to pitch.
 3. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Prospecting categories align to clusters.
 4. **Existing tooling** — Ahrefs / Semrush / SEO suite. Affects prospecting capacity.
@@ -54,7 +54,7 @@ If replacement assets list is empty, push back. Channel has no inventory.
    - University / .edu pages on the topic (often link-heavy, often broken).
    - Government .gov pages.
    - Non-profit pages.
-   For Field & Sun: "skincare resources," "sun protection guides," "dermatology resources," "best skincare blogs," "mineral sunscreen lists," "non-toxic skincare resources" (etc.; ~15-25 queries).
+   For Field & Sun: "skincare resources," "sun protection guides," "dermatology resources," "best skincare blogs," "mineral sunscreen lists," "sun-care ingredient resources" (etc.; ~15-25 queries).
 3. **Tooling.**
    - **Broken-link discovery:** Ahrefs Site Explorer (broken-outbound-links report) — most efficient. Alternative: Semrush, Sitechecker, Dr. Link Check, Check My Links Chrome extension.
    - **Verification:** Wayback Machine (web.archive.org) — confirms what the broken target was.
@@ -128,7 +128,7 @@ If replacement assets list is empty, push back. Channel has no inventory.
 3. "dermatology resources"
 4. "best skincare blogs"
 5. "mineral sunscreen list"
-6. "non-toxic skincare resources" (etc.)
+6. "sun-care ingredient resources" (etc.)
 ... (15-25 total)
 
 ### Useful prospect-page types

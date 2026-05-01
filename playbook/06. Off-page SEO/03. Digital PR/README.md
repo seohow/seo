@@ -87,7 +87,7 @@ The trade-off: PR campaigns cost 60-200 hours of effort each (data + production 
 - **[05. Outreach](../05.%20Outreach/README.md)** — operational layer for journalist outreach.
 - **[04. Brand Mentions](../04.%20Brand%20Mentions/README.md)** — PR creates mentions; mention recovery converts mentions into links.
 - **[04. Content SEO / 05. Evergreen Content](../../04.%20Content%20SEO/05.%20Evergreen%20Content/README.md)** — original-data reports often function as evergreen anchors.
-- **[09. AI SEO](../../09.%20AI%20SEO/README.md)** *(planned)* — PR-earned coverage feeds AI Overview citation surfaces.
+- **[09. AI SEO](../../09.%20AI%20SEO/)** *(planned)* — PR-earned coverage feeds AI Overview citation surfaces.
 
 ## Further reading
 

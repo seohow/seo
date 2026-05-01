@@ -82,7 +82,7 @@ The trade-off: brand-mention monitoring requires tooling (Google Alerts, Brand24
 - **[05. Outreach](../05.%20Outreach/README.md)** — operational layer (CRM, templates).
 - **[08. Reputation Management](../08.%20Reputation%20Management/README.md)** — negative mentions and broader reputation work.
 - **[03. Digital PR](../03.%20Digital%20PR/README.md)** — PR creates mentions; mention monitoring catches and capitalises on them.
-- **[09. AI SEO](../../09.%20AI%20SEO/README.md)** *(planned)* — brand mention signals feed AI Overview / LLM citation visibility.
+- **[09. AI SEO](../../09.%20AI%20SEO/)** *(planned)* — brand mention signals feed AI Overview / LLM citation visibility.
 
 ## Further reading
 

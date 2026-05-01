@@ -25,7 +25,7 @@ The skill is opinionated about a few things: quality publications only (no conte
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), customer (4), competitors (6), brand voice (8).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), competitors (6), brand voice (8).
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Pitch angles align to clusters.
 3. **Link-building plan** — read `businesses/<slug>/off-page/link-building-plan-*.md` if it exists. Guest posting is one channel within it.
 4. **Past guest posts** — list of previous placements (URL, publication, date, author, link quality). Required for audit step.
