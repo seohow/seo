@@ -92,8 +92,8 @@ For Field & Sun: a 1-day conversion-tracking audit before any major SEO investme
 - **[04. Traffic Analysis](../04.%20Traffic%20Analysis/README.md)** — conversion data is what gives traffic analysis its revenue layer.
 - **[05. KPI Tracking](../05.%20KPI%20Tracking/README.md)** — conversion KPIs are the most important slice of the dashboard.
 - **[01. Strategy / 05. SEO Wins](../../01.%20Strategy/05.%20SEO%20Wins/README.md)** — wins backlog ROI depends on conversion-revenue measurement.
-- **[06. Off-page SEO](../../06.%20Off-page%20SEO/README.md)** — off-page (link building, PR) ROI requires conversion tracking; tracking work is shared.
-- **[07. UX / 04. A/B Testing](../../07.%20UX/04.%20A%2FB%20Testing/README.md)** *(planned)* — A/B test outcome measurement depends on conversion tracking.
+- **[06. Off-page SEO](../../06.%20Off-page%20SEO/)** — off-page (link building, PR) ROI requires conversion tracking; tracking work is shared.
+- **[07. UX / 04. AB Testing](../../07.%20UX/04.%20AB%20Testing/)** *(planned)* — A/B test outcome measurement depends on conversion tracking.
 
 ## Further reading
 

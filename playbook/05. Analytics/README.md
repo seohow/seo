@@ -70,13 +70,13 @@ It produces inputs for downstream categories:
 
 The full inventory across the 6 sub-topics:
 
-- **audit-ga4-setup** — verify GA4 is correctly configured; flag missing events, broken ecommerce, audience gaps.
-- **audit-search-console-setup** — verify GSC verification, sitemap submission, property coverage, IPv6 / domain-property setup.
-- **analyse-search-performance** — produce a structured GSC analysis: top queries, top pages, decline detection, query-cluster intersection.
-- **set-up-rank-tracking** — design a rank-tracking project: which keywords, which competitors, what cadence, how it feeds into the KPI dashboard.
-- **analyse-traffic-patterns** — produce a structured GA4 / traffic analysis: channel mix, growth / decay trends, anomaly detection, segmentation.
-- **define-seo-kpis** — set the right SEO KPIs for the business and design the reporting dashboard.
-- **audit-conversion-tracking** — verify conversion events fire correctly; review attribution model; identify revenue-data leaks.
+- **[audit-ga4-setup](01.%20Google%20Analytics/skills/audit-ga4-setup/SKILL.md)** — verify GA4 is correctly configured; flag missing events, broken ecommerce, audience gaps.
+- **[audit-search-console-setup](02.%20Search%20Console/skills/audit-search-console-setup/SKILL.md)** — verify GSC verification, sitemap submission, property coverage, IPv6 / domain-property setup.
+- **[analyse-search-performance](02.%20Search%20Console/skills/analyse-search-performance/SKILL.md)** — produce a structured GSC analysis: top queries, top pages, decline detection, query-cluster intersection.
+- **[set-up-rank-tracking](03.%20Rank%20Tracking/skills/set-up-rank-tracking/SKILL.md)** — design a rank-tracking project: which keywords, which competitors, what cadence, how it feeds into the KPI dashboard.
+- **[analyse-traffic-patterns](04.%20Traffic%20Analysis/skills/analyse-traffic-patterns/SKILL.md)** — produce a structured GA4 / traffic analysis: channel mix, growth / decay trends, anomaly detection, segmentation.
+- **[define-seo-kpis](05.%20KPI%20Tracking/skills/define-seo-kpis/SKILL.md)** — set the right SEO KPIs for the business and design the reporting dashboard.
+- **[audit-conversion-tracking](06.%20Conversion%20Tracking/skills/audit-conversion-tracking/SKILL.md)** — verify conversion events fire correctly; review attribution model; identify revenue-data leaks.
 
 ## Common pitfalls
 
@@ -96,5 +96,5 @@ Once analytics is operational:
 
 - **[04. Content SEO / 07. Content Refresh](../04.%20Content%20SEO/07.%20Content%20Refresh/README.md)** — decay signals from analytics feed the refresh backlog.
 - **[01. Strategy / 05. SEO Wins](../01.%20Strategy/05.%20SEO%20Wins/README.md)** — close the loop; refresh the wins backlog with what's been shipped and the data that confirms (or contradicts) it worked.
-- **[06. Off-page SEO](../06.%20Off-page%20SEO/README.md)** — link-building ROI is hard to measure without analytics; once it's set up, off-page work has a feedback loop.
-- **[09. AI SEO](../09.%20AI%20SEO/README.md)** *(planned)* — AI Overview / LLM citation visibility requires its own measurement layer; complements the traditional analytics set.
+- **[06. Off-page SEO](../06.%20Off-page%20SEO/)** — link-building ROI is hard to measure without analytics; once it's set up, off-page work has a feedback loop.
+- **[09. AI SEO](../09.%20AI%20SEO/)** *(planned)* — AI Overview / LLM citation visibility requires its own measurement layer; complements the traditional analytics set.

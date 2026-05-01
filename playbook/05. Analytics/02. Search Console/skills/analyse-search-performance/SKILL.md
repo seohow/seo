@@ -26,7 +26,7 @@ The skill is opinionated about a few things: rolling up to cluster level produce
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), goals (7).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), goals (7).
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Cluster rollup is part of the analysis.
 3. **GSC access** — required (or exported CSV / API access).
 4. **Comparison window** — required. Default: last 90 days vs prior 90 days. Alternative: YoY (last 90 days vs same 90 days last year), if data retention covers it.
@@ -53,7 +53,7 @@ If GSC access or comparison window is missing, ask. The analysis is comparative.
    - Pages that lost ≥30% clicks and were getting ≥50 clicks/mo prior — flagged for refresh consideration.
    - Position drops ≥5 positions on previously-top-10 queries — flagged.
 5. **CTR opportunities.**
-   - Queries with position 4-15 AND CTR ≥30% below position-benchmark — title/description rewrite candidates.
+   - Queries with position 4-15 and CTR ≥30% below position-benchmark — title/description rewrite candidates.
    - Position-CTR benchmarks: position 1 ~30%, 2 ~15%, 3 ~10%, 4 ~7%, 5 ~5%, 6-10 ~2-4%, 11-20 ~1-2%. Below-benchmark by ≥30% is the signal.
 6. **Query ↔ page intersection.**
    - Identify cases where multiple pages are competing for the same query (cannibalisation): same query, multiple pages with non-trivial impressions. Flag for canonical / consolidation review.
@@ -112,7 +112,7 @@ If GSC access or comparison window is missing, ask. The analysis is comparative.
 [same shape; "Hypothesis" column flags refresh candidate / SERP shift / etc.]
 
 ## CTR opportunities
-Queries with position 4-15 AND CTR ≥30% below benchmark:
+Queries with position 4-15 and CTR ≥30% below benchmark:
 | Query | Position | CTR | Benchmark CTR | Page | Action |
 |-------|----------|-----|---------------|------|--------|
 | ... | 7 | 1.8% | 4.5% | /blog/... | Rewrite title (`generate-title-tags`) |
@@ -201,7 +201,7 @@ Headline: clicks +24% QoQ driven by sun-care cluster surge (+47%); refills clust
 
 Top winners: "is zinc oxide safe daily" +320% clicks (cluster-effect from new pillar); "mineral sunscreen guide" +∞% (new pillar launched mid-period).
 
-Top decliners: "best refillable laundry" -85% (off-strategy legacy content; recommend prune); "/blog/how-to-apply-mineral-sunscreen" -50% clicks (refresh candidate).
+Top decliners: "winter skincare trends" -85% (off-strategy seasonal content; recommend prune); "/blog/how-to-apply-mineral-sunscreen" -50% clicks (refresh candidate).
 
 CTR opportunities (8): mostly sun-care queries at position 6-12 with CTR < 2.5% (benchmark 3-5%) — title rewrites recommended.
 

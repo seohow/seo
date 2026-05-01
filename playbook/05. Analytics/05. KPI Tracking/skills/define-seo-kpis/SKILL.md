@@ -26,7 +26,7 @@ The skill is opinionated about a few things: 5 executive KPIs + 8-12 operating K
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), goals (7), brand voice (8). Goals are the ladder KPIs roll up to.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), goals (7), brand voice (8). Goals are the ladder KPIs roll up to.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Cluster-level KPIs need the cluster set.
 3. **Existing dashboards** — optional. If present, review for "what to keep, what to consolidate, what to remove."
 4. **Stakeholder list** — required. Who reviews KPIs at what level? Typically: founder / CEO (executive), marketing lead (operating), SEO specialists (diagnostic).

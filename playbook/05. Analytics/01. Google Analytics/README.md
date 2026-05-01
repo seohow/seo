@@ -97,7 +97,7 @@ For Field & Sun: investing 1-2 days in a thorough GA4 audit before any reporting
 - **[06. Conversion Tracking](../06.%20Conversion%20Tracking/README.md)** — conversion-event setup is part of GA4 setup; the dedicated leaf goes deeper into attribution / revenue measurement.
 - **[04. Traffic Analysis](../04.%20Traffic%20Analysis/README.md)** — GA4 is the primary data source for traffic-pattern analysis.
 - **[05. KPI Tracking](../05.%20KPI%20Tracking/README.md)** — GA4 metrics feed the KPI dashboard.
-- **[07. UX / 04. A/B Testing](../../07.%20UX/04.%20A%2FB%20Testing/README.md)** *(planned)* — GA4 audiences power experiment targeting in many platforms.
+- **[07. UX / 04. AB Testing](../../07.%20UX/04.%20AB%20Testing/)** *(planned)* — GA4 audiences power experiment targeting in many platforms.
 
 ## Further reading
 
