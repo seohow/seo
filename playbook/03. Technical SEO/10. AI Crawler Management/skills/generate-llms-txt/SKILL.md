@@ -53,11 +53,11 @@ If the URL inventory is missing, ask. The skill operates on real URLs.
    - All products / collections
    - Skincare guides (informational blog content)
    - Sun care guides
-   - Refills / sustainability
+   - Refills and packaging waste
    - About
    Adapt to the actual site. For SaaS: documentation, getting started, API reference, changelog. For content / media: pillar topics, recent investigations, archives.
 5. **Write a one-line description per entry.** 8-15 words. Imagine an LLM trying to decide which URL to retrieve given a user question — the description should make that decision easy. Brand voice from section 8 of the profile. Don't keyword-stuff; describe what the page is and who it's for.
-6. **Format per the llms.txt proposal:**
+6. **Format per the llms.txt proposal.** Use the standard Markdown shape exactly:
 
    ```
    # [Site name]
@@ -66,7 +66,7 @@ If the URL inventory is missing, ask. The skill operates on real URLs.
 
    ## [Section name 1]
 
-   - [[Page title](URL)](URL): [one-line description]
+   - [Page title](URL): [one-line description]
    - ...
 
    ## [Section name 2]
@@ -74,20 +74,7 @@ If the URL inventory is missing, ask. The skill operates on real URLs.
    - ...
    ```
 
-   Wait — the actual format from llmstxt.org is simpler:
-
-   ```
-   # [Site name]
-
-   > [Site description]
-
-   ## [Section name]
-
-   - [Page title](URL): [one-line description]
-   - [Page title](URL): [one-line description]
-   ```
-
-   Use the standard format. Do NOT double-bracket URLs.
+   Do not double-bracket URLs, and do not add sitemap-style metadata such as priority, change frequency, or lastmod.
 7. **Optionally generate `llms-full.txt`.** If requested, include the full Markdown of the most-cited pages (homepage, hero PDPs, top 5 blog posts) inline, separated by horizontal rules. Heavier file but more complete for LLMs that want to retrieve content without separate fetches.
 8. **Write the implementation note.** Where the file lives (site root: `/llms.txt`), how to publish on each common platform (Shopify: `Online Store > Files`; Vercel: in `public/` directory; WordPress: at root via FTP or plugin), and the verification step (`curl -I https://yoursite.com/llms.txt` returns 200 with `Content-Type: text/plain`).
 
@@ -121,7 +108,7 @@ The skill produces two artifacts:
 
 - [Vitamin C Serum Guide](https://fieldandsun.com/blog/vitamin-c-serum-guide): How to choose and use a Vitamin C serum; ingredient percentages, layering, and skin-type fit.
 - [How Mineral Sunscreen Works](https://fieldandsun.com/blog/how-mineral-sunscreen-works): Plain-language explanation of zinc oxide, non-nano vs nano, and why mineral SPF doesn't sting.
-- [Mineral vs Chemical Sunscreen](https://fieldandsun.com/blog/mineral-vs-chemical-sunscreen): Direct comparison: which to use when, with side-by-side notes on skin reactivity, finish, and reef safety.
+- [Mineral vs Chemical Sunscreen](https://fieldandsun.com/blog/mineral-vs-chemical-sunscreen): Direct comparison: filters, skin feel, white-cast risk, reapplication, and finish.
 - [Mineral Sunscreen for Dark Skin](https://fieldandsun.com/blog/mineral-sunscreen-for-dark-skin): How tinted mineral sunscreens work across skin tones; swatch tests and recommendations.
 - [How to Layer Skincare with SPF](https://fieldandsun.com/blog/how-to-layer-skincare-with-spf): The morning routine sequence and why ordering matters.
 
@@ -184,7 +171,7 @@ Save the produced files to `businesses/<slug>/ai-crawlers/llms.txt` (and optiona
 
 ## Quality bar
 
-- The file follows the llms.txt format exactly: H1 site name, blockquote description, H2 sections, bullet list of `[title](url): description` entries.
+- The file follows the llms.txt format exactly: H1 site name, blockquote description, H2 sections, and bullet entries with a linked page title plus a one-line description.
 - Site description is in brand voice from profile section 8; no generic "we are a beauty brand" language.
 - Every entry has a 8-15 word description; no bare URLs or vague entries.
 - 10-30 entries total — curated, not a sitemap dump.
@@ -199,7 +186,7 @@ Save the produced files to `businesses/<slug>/ai-crawlers/llms.txt` (and optiona
 - Don't include parameter URLs, paginated URLs, or non-canonical variants.
 - Don't include policy / account / system pages unless they're informational about the brand.
 - Don't write generic descriptions ("Our store" / "Read more" / "Learn about us"). Specificity wins.
-- Don't skip brand voice. The descriptions read like brand content; if the founder rejects "clean beauty" elsewhere, it can't appear here.
+- Don't skip brand voice. The descriptions read like brand content; if the founder rejects vague category language, it can't appear here.
 - Don't generate `llms.txt` for a strict-block posture. The file's existence signals "please understand and cite my site," which contradicts blocking AI bots.
 - Don't forget to validate URLs before including. A broken link in `llms.txt` is a noise signal to LLMs.
 - Don't auto-regenerate without curation. The point is human (or curated AI) judgment about which URLs matter.

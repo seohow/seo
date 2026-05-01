@@ -228,7 +228,7 @@ Save the produced file to `businesses/<slug>/schema/<page-slug>.md`. Create the 
 - For Liquid output: `| json` filter is used on every interpolated string to handle escaping; price filtering is correct; image URLs use the right Liquid filter.
 - BreadcrumbList includes the current page as the last item.
 - AggregateRating values match what's actually visible on the page (no inflation).
-- Validation steps reference both Rich Results Test AND Schema Markup Validator.
+- Validation steps reference both Rich Results Test and Schema Markup Validator.
 - Implementation checklist closes with re-validation cadence.
 
 ## Common mistakes to avoid

@@ -54,7 +54,7 @@ For each page:
    - **SEO-critical (must be in source):** H1, main body copy, primary internal links, schema markup, FAQ content if FAQPage schema is in use.
    - **SEO-relevant but tolerable (with caveats):** product reviews, related products, secondary content. JS-inject is OK; expect 14-day-plus delay before this content reflects in SERPs.
    - **Not SEO-relevant:** chat widgets, A/B-test variants, personalised modules, analytics. JS-inject is fine.
-5. **Cross-reference with GSC URL Inspection (if available).** If the user has the "tested page" HTML from URL Inspection, compare it against the page's source AND the user's rendered DOM. The tested-page HTML is what Googlebot actually saw — discrepancies between rendered DOM and tested page reveal first-vs-second-wave indexing gaps.
+5. **Cross-reference with GSC URL Inspection (if available).** If the user has the "tested page" HTML from URL Inspection, compare it against the page's source and the user's rendered DOM. The tested-page HTML is what Googlebot actually saw — discrepancies between rendered DOM and tested page reveal first-vs-second-wave indexing gaps.
 6. **Diagnose and prioritise:**
    - **P0**: SEO-critical content missing from source HTML (H1, main copy, schema).
    - **P0**: Primary internal links are not real `<a href>` anchors.
@@ -171,7 +171,7 @@ Save the produced file to `businesses/<slug>/javascript-seo/<page-slug>.md`. Cre
 
 **Output (abbreviated):**
 
-Status: Concerns. Source covers core SEO-critical content; FAQ section is JS-injected AND failing to render in Googlebot's view, breaking FAQPage schema eligibility.
+Status: Concerns. Source covers core SEO-critical content; FAQ section is JS-injected and failing to render in Googlebot's view, breaking FAQPage schema eligibility.
 
 Source vs rendered: title/H1/description/canonical all in source ✓. Product schema in source ✓. FAQPage schema in source BUT the actual FAQ Q&A pairs are JS-rendered after a fetch — ✗. Internal links all real `<a href>` ✓. Reviews are JS-rendered (tolerable, accept delay).
 

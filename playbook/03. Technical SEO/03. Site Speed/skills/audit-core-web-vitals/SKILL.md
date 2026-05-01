@@ -162,7 +162,7 @@ Save the produced file to `businesses/<slug>/site-speed/<page-slug>.md`. Create 
 - Don't ignore third-party scripts. They're the default cause of INP failures on D2C sites.
 - Don't fix CLS by removing animations. Smooth, expected animations don't count as layout shift; reserve space instead.
 - Don't audit lab data on a fast laptop without mobile-throttled tests. The user's customers aren't on a fast laptop.
-- Don't recommend uninstalling business-critical apps without flagging the trade-off. The chat widget might be slowing the page AND driving 12% of revenue; the user picks.
+- Don't recommend uninstalling business-critical apps without flagging the trade-off. The chat widget might be slowing the page and driving 12% of revenue; the user picks.
 - Don't audit a page without PageSpeed Insights data. The audit operates on real metrics.
 
 ## Example

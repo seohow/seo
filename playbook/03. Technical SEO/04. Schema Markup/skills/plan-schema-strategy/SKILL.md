@@ -143,7 +143,7 @@ If page-type inventory is unclear, ask. The plan is per-page-type; without clear
 - Apps: avoid unless dev capacity is genuinely zero. App-injected schema is harder to debug and adds vendor risk.
 
 ## Validation policy
-- Every schema type validates in Rich Results Test (rich-result eligibility) AND Schema Markup Validator (vocabulary correctness) before going live.
+- Every schema type validates in Rich Results Test (rich-result eligibility) and Schema Markup Validator (vocabulary correctness) before going live.
 - After each wave, monitor GSC Enhancements for the schema types deployed. Expect "Eligible" status within 14-28 days.
 - Set quarterly re-validation cadence to catch template regressions.
 

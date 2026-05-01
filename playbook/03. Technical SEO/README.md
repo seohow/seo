@@ -4,7 +4,7 @@
 
 ## What this category covers
 
-Technical SEO is everything that determines whether your pages can be discovered, parsed, indexed, and served quickly to searchers — by traditional search engines AND by the AI crawlers that increasingly mediate visibility. It's the layer between *what's on a page* (On-page) and *whether the page is reachable at all*. The ten sub-topics here cover crawl, indexing, performance, structured data, canonical signals, sitemaps, JavaScript-rendered content, log-file diagnostics, the high-stakes event of a site migration, and the AI-crawler access decisions that govern how AI systems interact with your content.
+Technical SEO is everything that determines whether your pages can be discovered, parsed, indexed, and served quickly to searchers — by traditional search engines and by the AI crawlers that increasingly mediate visibility. It's the layer between *what's on a page* (On-page) and *whether the page is reachable at all*. The ten sub-topics here cover crawl, indexing, performance, structured data, canonical signals, sitemaps, JavaScript-rendered content, log-file diagnostics, the high-stakes event of a site migration, and the AI-crawler access decisions that govern how AI systems interact with your content.
 
 For most D2C brands, technical SEO breaks in predictable ways: thin product pages get excluded from the index, parameter URLs flood the index with duplicates, JavaScript-rendered content doesn't get crawled, Core Web Vitals fail on mobile, and migrations lose 20-40% of organic traffic when redirects are botched. Each of these is fixable, but most of them only get fixed when someone audits — defaults are rarely good.
 
@@ -16,6 +16,7 @@ Discovery & access      Indexing decisions       Performance       Structure & s
 01. Crawlability    →   02. Indexing         →   03. Site Speed    04. Schema Markup      09. Site Migration
 07. JavaScript SEO      05. Canonical Tags                          06. XML Sitemaps
 08. Log File Analysis
+10. AI Crawler Management
 ```
 
 The flow on the left is the lifecycle of a URL through Google: it has to be **crawlable** before it can be **indexed**, and JavaScript and log analysis are diagnostic tools that sit alongside both. Performance, structured data, and sitemaps are signals you control on the served page or in the site-wide configuration. Migration is a one-off event that touches everything.
@@ -67,21 +68,21 @@ You'll also need access to: Google Search Console (mandatory), a crawler (Scream
 
 ## Skills you'll use in this category
 
-The full inventory across the 9 sub-topics:
+The full inventory across the 10 sub-topics:
 
-- **audit-crawlability** — analyse robots.txt, robots meta, x-robots-tag, response codes, redirect chains, and crawl depth across a list of URLs.
-- **audit-indexing-status** — analyse GSC's Pages report and surface why pages are excluded, prioritised by impact.
-- **audit-core-web-vitals** — analyse a page's LCP, INP, CLS, TTFB, and recommend prioritised performance fixes.
-- **plan-schema-strategy** — produce a site-wide structured-data plan: which schema types per page type, with examples.
-- **generate-schema-markup** — generate JSON-LD schema for a specific page with validation against Google's structured-data requirements.
-- **audit-canonical-tags** — review canonical tags across URLs, surface mismatches, missing canonicals, and circular references.
-- **audit-xml-sitemap** — review the sitemap for non-canonical URLs, missing pages, broken URLs, and structural issues.
-- **audit-javascript-seo** — diagnose JS-rendering issues on a page, compare rendered DOM to source HTML, identify hydration / SSR gaps.
-- **analyse-log-files** — process server log file exports to identify Googlebot crawl patterns, wasted budget, and overlooked URLs.
-- **plan-site-migration** — design a structured migration plan: redirect strategy, sequencing, QA checkpoints, recovery monitoring.
-- **build-redirect-map** — produce the old-URL → new-URL mapping with status codes, chain checks, and an implementation order.
-- **audit-ai-crawler-access** — audit robots.txt declarations against the major AI crawlers, validate `llms.txt`, surface gaps between declared posture and actual rules.
-- **generate-llms-txt** — produce a curated `/llms.txt` file (and optionally `/llms-full.txt`) for sites with an open or visibility-only AI-crawler posture.
+- **[audit-crawlability](01.%20Crawlability/skills/audit-crawlability/SKILL.md)** — analyse robots.txt, robots meta, x-robots-tag, response codes, redirect chains, and crawl depth across a list of URLs.
+- **[audit-indexing-status](02.%20Indexing/skills/audit-indexing-status/SKILL.md)** — analyse GSC's Pages report and surface why pages are excluded, prioritised by impact.
+- **[audit-core-web-vitals](03.%20Site%20Speed/skills/audit-core-web-vitals/SKILL.md)** — analyse a page's LCP, INP, CLS, TTFB, and recommend prioritised performance fixes.
+- **[plan-schema-strategy](04.%20Schema%20Markup/skills/plan-schema-strategy/SKILL.md)** — produce a site-wide structured-data plan: which schema types per page type, with examples.
+- **[generate-schema-markup](04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md)** — generate JSON-LD schema for a specific page with validation against Google's structured-data requirements.
+- **[audit-canonical-tags](05.%20Canonical%20Tags/skills/audit-canonical-tags/SKILL.md)** — review canonical tags across URLs, surface mismatches, missing canonicals, and circular references.
+- **[audit-xml-sitemap](06.%20XML%20Sitemaps/skills/audit-xml-sitemap/SKILL.md)** — review the sitemap for non-canonical URLs, missing pages, broken URLs, and structural issues.
+- **[audit-javascript-seo](07.%20JavaScript%20SEO/skills/audit-javascript-seo/SKILL.md)** — diagnose JS-rendering issues on a page, compare rendered DOM to source HTML, identify hydration / SSR gaps.
+- **[analyse-log-files](08.%20Log%20File%20Analysis/skills/analyse-log-files/SKILL.md)** — process server log file exports to identify Googlebot crawl patterns, wasted budget, and overlooked URLs.
+- **[plan-site-migration](09.%20Site%20Migration/skills/plan-site-migration/SKILL.md)** — design a structured migration plan: redirect strategy, sequencing, QA checkpoints, recovery monitoring.
+- **[build-redirect-map](09.%20Site%20Migration/skills/build-redirect-map/SKILL.md)** — produce the old-URL → new-URL mapping with status codes, chain checks, and an implementation order.
+- **[audit-ai-crawler-access](10.%20AI%20Crawler%20Management/skills/audit-ai-crawler-access/SKILL.md)** — audit robots.txt declarations against the major AI crawlers, validate `llms.txt`, surface gaps between declared posture and actual rules.
+- **[generate-llms-txt](10.%20AI%20Crawler%20Management/skills/generate-llms-txt/SKILL.md)** — produce a curated `/llms.txt` file (and optionally `/llms-full.txt`) for sites with an open or visibility-only AI-crawler posture.
 
 ## Common pitfalls
 
