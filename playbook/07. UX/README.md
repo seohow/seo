@@ -37,13 +37,13 @@ If you're working through this category for the first time, the highest-leverage
 
 **Pass 2 — Architecture (2-4 weeks):**
 
-4. Run `review-ux-design-for-seo` on priority templates — above-fold, hierarchy, CTA placement, cross-page nav.
-5. Run `analyse-conversion-funnel` on the organic-search funnel. Identify leaks.
+1. Run `review-ux-design-for-seo` on priority templates — above-fold, hierarchy, CTA placement, cross-page nav.
+2. Run `analyse-conversion-funnel` on the organic-search funnel. Identify leaks.
 
 **Pass 3 — Experimentation (ongoing):**
 
-6. Run `plan-ab-test` for the highest-impact funnel-leak hypothesis. Run; analyse; ship or kill.
-7. Iterate.
+1. Run `plan-ab-test` for the highest-impact funnel-leak hypothesis. Run; analyse; ship or kill.
+2. Iterate.
 
 ## Pre-requisites and dependencies
 

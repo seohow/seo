@@ -207,6 +207,7 @@ Save the produced file to `businesses/<slug>/ux/page-speed-ux-audit-[YYYY-MM-DD]
 Pages CWV-passing but UX-flagged: 3 (pillar, quiz, top PDP).
 
 Mineral-sunscreen pillar findings:
+
 - Field LCP 2.4s, INP 180ms, CLS 0.05 — all passing.
 - Hero image swap (low-res placeholder → high-res actual ~1.2s after LCP) → perceived flicker.
 - Methodology table CLS issue post-fold (not in CWV measurement window).
