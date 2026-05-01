@@ -72,7 +72,7 @@ For a D2C brand, getting the title right on a top product or collection page can
 - **[03. Header Structure](../03.%20Header%20Structure/README.md)** — H1 often aligns with title, though they don't have to be identical.
 - **[01. Strategy / 04. Keyword Clustering](../../01.%20Strategy/04.%20Keyword%20Clustering/README.md)** — provides the cluster's primary + supporting keywords every title decision references.
 - **[01. Strategy / 02. Search Intent](../../01.%20Strategy/02.%20Search%20Intent/README.md)** — intent dictates the title pattern (commercial → "Best X," transactional → product-led, informational → "How to X").
-- **[07. Analytics / 02. Search Console](../../07.%20Analytics/02.%20Search%20Console/)** — GSC's queries report is where you measure CTR before and after.
+- **[05. Analytics / 02. Search Console](../../05.%20Analytics/02.%20Search%20Console/)** — GSC's queries report is where you measure CTR before and after.
 
 ## Further reading
 

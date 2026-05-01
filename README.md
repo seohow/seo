@@ -31,12 +31,12 @@ The `playbook/` folder is the table of contents. It's organised into 10 categori
 |---|---|---|
 | 01 | [Strategy](playbook/01.%20Strategy/README.md) | Keyword research, intent, competitor analysis, clustering, quick wins |
 | 02 | [On-page SEO](playbook/02.%20On-page%20SEO/) | Titles, descriptions, headers, URLs, internal links, images, content |
-| 03 | [Technical SEO](playbook/03.%20Technical%20SEO/) | Crawlability, indexing, site speed, schema, canonicals, sitemaps |
-| 04 | [Content SEO](playbook/04.%20Content%20SEO/) | Blog content, pillars, clusters, tools, evergreen, programmatic, refresh |
-| 05 | [Off-page SEO](playbook/05.%20Off-page%20SEO/) | Link building, guest posting, digital PR, brand mentions, outreach |
-| 06 | [International SEO](playbook/06.%20International%20SEO/) | Hreflang, multi-language, geo-targeting, localisation |
-| 07 | [Analytics](playbook/07.%20Analytics/) | GA4, Search Console, rank tracking, traffic analysis, KPIs |
-| 08 | [UX](playbook/08.%20UX/) | Page speed, mobile, UX design, A/B testing, conversion funnels |
+| 03 | [Technical SEO](playbook/03.%20Technical%20SEO/) | Crawlability, indexing, site speed, schema, canonicals, sitemaps, JavaScript SEO, log file analysis, site migration |
+| 04 | [Content SEO](playbook/04.%20Content%20SEO/) | Blog content, pillars, clusters, tools, evergreen, programmatic, refresh, briefing |
+| 05 | [Analytics](playbook/05.%20Analytics/) | GA4, Search Console, rank tracking, traffic analysis, KPIs, conversion tracking |
+| 06 | [Off-page SEO](playbook/06.%20Off-page%20SEO/) | Link building, guest posting, digital PR, brand mentions, outreach, HARO, broken-link building, reputation management |
+| 07 | [UX](playbook/07.%20UX/) | Page speed, mobile, UX design, A/B testing, conversion funnels, accessibility |
+| 08 | [International SEO](playbook/08.%20International%20SEO/) | Hreflang, multi-language, geo-targeting, localisation |
 | 09 | [AI SEO](playbook/09.%20AI%20SEO/) | Content optimisation, NLP, generative SEO, SERP features, LLM visibility |
 | 10 | [Growth](playbook/10.%20Growth/) | Topical authority, content scaling, link acquisition, experiments |
 
@@ -80,9 +80,9 @@ If you're new to SEO, work through the toolkit in this order rather than jumping
 2. **On-page SEO** (02) — make the pages you already have rank better.
 3. **Technical SEO** (03) — make sure search engines can actually find and index your work.
 4. **Content SEO** (04) — build the inventory of pages that earn rankings.
-5. **Analytics** (07) — measure what's working before you scale.
-6. **Off-page SEO** (05) — earn the authority that compounds.
-7. **UX** (08), **International** (06), **AI SEO** (09), **Growth** (10) — pick based on where your bottleneck is.
+5. **Analytics** (05) — measure what's working before you scale.
+6. **Off-page SEO** (06) — earn the authority that compounds.
+7. **UX** (07), **International** (08), **AI SEO** (09), **Growth** (10) — pick based on where your bottleneck is.
 
 Each topic README ends with cross-links to related topics so you can follow the thread that matters most for your business.
 

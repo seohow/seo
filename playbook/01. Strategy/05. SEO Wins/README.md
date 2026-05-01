@@ -66,7 +66,7 @@ The framing also matters strategically: organic SEO is compounding, but only aft
 - **[Search Intent](../02.%20Search%20Intent/README.md)** — wins must be intent-aligned.
 - **[Competitor Analysis](../03.%20Competitor%20Analysis/README.md)** — surfaces a large share of content-gap and link wins.
 - **[Keyword Clustering](../04.%20Keyword%20Clustering/README.md)** — clusters become content-build wins.
-- **[Search Console](../../07.%20Analytics/02.%20Search%20Console/)** — the cheapest source of striking-distance wins is GSC's queries report.
+- **[Search Console](../../05.%20Analytics/02.%20Search%20Console/)** — the cheapest source of striking-distance wins is GSC's queries report.
 - **[Content Refresh](../../04.%20Content%20SEO/07.%20Content%20Refresh/)** — the refresh archetype of wins is its own discipline.
 
 ## Further reading

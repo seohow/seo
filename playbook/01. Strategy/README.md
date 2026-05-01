@@ -72,4 +72,4 @@ Once you have a strategy and a wins backlog:
 
 - **[02. On-page SEO](../02.%20On-page%20SEO/)** — execute the on-page improvements your strategy surfaced.
 - **[04. Content SEO](../04.%20Content%20SEO/)** — build the new pages your clusters call for.
-- **[07. Analytics](../07.%20Analytics/)** — set up measurement before you start executing so you know what's working.
+- **[05. Analytics](../05.%20Analytics/)** — set up measurement before you start executing so you know what's working.

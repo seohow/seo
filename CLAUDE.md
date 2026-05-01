@@ -87,6 +87,18 @@ Every leaf topic folder that hasn't been populated yet contains a `.gitkeep` fil
 - Tone or format adjustments → re-read the Strategy slice first; if the change applies retroactively, apply it to the slice and document the reason in the decisions log below.
 - Adding a new business category to the v1 D2C-leaning examples → discuss with the user first; this is a vertical scope expansion, not a tweak.
 
+## Future categories under consideration
+
+These are categories the user has explicitly decided to defer rather than build now. Listed here so future Claude sessions don't accidentally rebuild them, propose them as "missing," or forget they're parked. Revisit only when the user raises them or when the existing curriculum is mostly built.
+
+- **Local SEO** — distinct discipline (Google Business Profile, citations, Local Pack, multi-location). Closes the "local services audience" gap. Not in scope for v1.
+- **E-commerce SEO as a dedicated category** — currently spread across On-page/Technical/Content with D2C-leaning examples. May warrant consolidation later.
+- **Video / YouTube SEO** — separate discipline; would expand toolkit scope beyond web search. Decide based on audience.
+- **Newsletter SEO / discoverability** — promotion, search visibility, archive structure for newsletters as a content channel.
+- **Podcast SEO / discoverability** — show metadata, episode SEO, transcripts, podcast-specific search platforms.
+
+If the user asks "what's missing from this toolkit?" mention these are parked rather than missed. Don't reopen the decision unilaterally.
+
 ## Decisions log
 
 *Append new entries chronologically. Format: ### YYYY-MM-DD — title*
@@ -109,6 +121,24 @@ Every leaf topic folder that hasn't been populated yet contains a `.gitkeep` fil
 - Decided `docs/` was misleading (implies meta-documentation about the repo) and renamed to `playbook/`.
 - All path references updated. Cross-links between leaves use relative paths so they survived transparently.
 - New convention name pairs cleanly with `skills/` at root: the playbook tells you what to do; the skills do it.
+
+### 2026-05-01 — Curriculum scope review: 9 leaves added, 5 categories parked
+- Reviewed the 10-category structure for completeness before scaling further. Outcome:
+- **Parked as future categories** (see "Future categories under consideration" section above): Local SEO, E-commerce SEO as a dedicated category, Video / YouTube SEO, Newsletter, Podcast.
+- **Site Migration** absorbed into Technical SEO as a leaf (`09. Site Migration`) rather than its own category. Reasoning: most teams need it once every 3-5 years; doesn't have category-level density.
+- **Within-category leaves added** to fill gaps before the categories are built:
+  - Technical SEO: `07. JavaScript SEO`, `08. Log File Analysis`, `09. Site Migration` (now 9 leaves total).
+  - Content SEO: `08. Content Briefing` (now 8 leaves total).
+  - Analytics: `06. Conversion Tracking` (covers attribution + conversion, now 6 leaves total).
+  - Off-page SEO: `06. HARO and Journalist Outreach`, `07. Broken Link Building`, `08. Reputation Management` (now 8 leaves total).
+  - UX: `06. Accessibility` (now 6 leaves total).
+- All new leaves shipped as `.gitkeep` placeholders. `.gitkeep` count: 41 → 50.
+- The 10-category structure is now considered v1-final. Don't add new categories or leaves without explicit user direction.
+
+### 2026-05-01 — Categories renumbered to learning-path order
+- Decided the canonical numbering should match the *operational sequence* (the suggested learning path) rather than a generic topical taxonomy. Reasoning: nobody learns SEO in topical order; the numbering should walk a reader from beginning to outcome.
+- Renames: `07. Analytics` → `05. Analytics`; `05. Off-page SEO` → `06. Off-page SEO`; `08. UX` → `07. UX`; `06. International SEO` → `08. International SEO`. The other six categories kept their numbers.
+- All cross-links in Strategy + On-page content updated via mass `sed` substitution. Root README's categories table and learning-path numbering both updated. CLAUDE.md doesn't reference category numbers by string, so no changes here aside from this entry.
 
 ### 2026-04-30 — On-page SEO category complete (Category 2 of 10)
 - 1 category overview + 7 leaf READMEs + 9 skills shipped.

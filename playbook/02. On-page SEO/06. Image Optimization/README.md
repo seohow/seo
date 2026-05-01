@@ -82,8 +82,8 @@ For a D2C brand on Shopify or WooCommerce, the default alt-text behaviour is usu
 ## Related topics
 
 - **[03. Technical SEO / 03. Site Speed](../../03.%20Technical%20SEO/03.%20Site%20Speed/)** — image optimization is the single largest lever for Core Web Vitals on most ecom sites.
-- **[08. UX / 01. Page Speed UX](../../08.%20UX/01.%20Page%20Speed%20UX/)** — performance and the user-experience signal that flows from it.
-- **[08. UX / 02. Mobile Optimization](../../08.%20UX/02.%20Mobile%20Optimization/)** — mobile-first means image optimization first.
+- **[07. UX / 01. Page Speed UX](../../07.%20UX/01.%20Page%20Speed%20UX/)** — performance and the user-experience signal that flows from it.
+- **[07. UX / 02. Mobile Optimization](../../07.%20UX/02.%20Mobile%20Optimization/)** — mobile-first means image optimization first.
 - **[03. Technical SEO / 04. Schema Markup](../../03.%20Technical%20SEO/04.%20Schema%20Markup/)** — image-rich snippets (Product, Recipe) require structured data + optimized images.
 - **[09. AI SEO / 04. SERP Features](../../09.%20AI%20SEO/04.%20SERP%20Features/)** — Google Image Search and image-rich results in AI Overviews.
 

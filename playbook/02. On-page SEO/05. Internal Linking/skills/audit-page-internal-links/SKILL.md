@@ -19,7 +19,7 @@ This skill takes one page (URL + content + a snapshot of its inbound and outboun
 
 - The user wants site-wide internal-linking strategy — use `plan-internal-linking`.
 - The user wants a site crawl for orphans, broken links, redirect chains — use a crawler (Screaming Frog) and reference the output here.
-- The user wants to fix external/backlinks — different topic (covered in `05. Off-page SEO`).
+- The user wants to fix external/backlinks — different topic (covered in `06. Off-page SEO`).
 
 ## Inputs required
 

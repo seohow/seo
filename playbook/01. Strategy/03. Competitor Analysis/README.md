@@ -69,7 +69,7 @@ For a D2C brand, this is also where you find the highest-leverage gap opportunit
 - **[Keyword Research](../01.%20Keyword%20Research/README.md)** — competitor keyword exports often expand the universe by 30–50%.
 - **[Search Intent](../02.%20Search%20Intent/README.md)** — competitor SERPs are the ground truth for intent classification.
 - **[SEO Wins](../05.%20SEO%20Wins/README.md)** — competitor gaps frequently surface as the highest-priority wins.
-- **[Off-page SEO](../../05.%20Off-page%20SEO/)** — link gap analysis directly feeds outreach planning.
+- **[Off-page SEO](../../06.%20Off-page%20SEO/)** — link gap analysis directly feeds outreach planning.
 
 ## Further reading
 

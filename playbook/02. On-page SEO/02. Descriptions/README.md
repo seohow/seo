@@ -69,7 +69,7 @@ For a D2C brand, the meta description is one of the cheapest CTR levers availabl
 - **[01. Title](../01.%20Title/README.md)** — almost always optimised in the same pass; together they make up the SERP-facing CTR layer.
 - **[01. Strategy / 04. Keyword Clustering](../../01.%20Strategy/04.%20Keyword%20Clustering/README.md)** — provides the cluster + supporting keywords every description references.
 - **[01. Strategy / 02. Search Intent](../../01.%20Strategy/02.%20Search%20Intent/README.md)** — intent dictates description shape.
-- **[07. Analytics / 02. Search Console](../../07.%20Analytics/02.%20Search%20Console/)** — GSC's queries report is where CTR change is measured.
+- **[05. Analytics / 02. Search Console](../../05.%20Analytics/02.%20Search%20Console/)** — GSC's queries report is where CTR change is measured.
 
 ## Further reading
 

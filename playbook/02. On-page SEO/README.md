@@ -90,5 +90,5 @@ Once on-page is in good shape across your priority pages:
 
 - **[03. Technical SEO](../03.%20Technical%20SEO/)** — make sure Google can actually crawl, index, and render the work you just did.
 - **[04. Content SEO](../04.%20Content%20SEO/)** — produce *new* pages for the clusters that don't yet have one.
-- **[07. Analytics](../07.%20Analytics/)** — measure rank, click, and traffic uplift on the pages you optimised so the next backlog is informed by evidence.
+- **[05. Analytics](../05.%20Analytics/)** — measure rank, click, and traffic uplift on the pages you optimised so the next backlog is informed by evidence.
 - **[01. Strategy / 05. SEO Wins](../01.%20Strategy/05.%20SEO%20Wins/)** — re-score the backlog as on-page work ships, and queue the next round.
