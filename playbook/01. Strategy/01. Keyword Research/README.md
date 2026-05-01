@@ -14,7 +14,7 @@ Every page on your site either earns search traffic or it doesn't, and what dete
 
 - **Search volume** — the average number of times a query is searched per month, usually pulled from a tool like Ahrefs, Semrush, or Google Keyword Planner. Treat it as directional, not exact. A keyword with "100" volume might do 30 in a slow month and 250 in a hot month.
 - **Keyword difficulty (KD)** — a tool's estimate of how hard it is to rank in the top 10 for a query, expressed 0–100. Useful for filtering, but always sanity-check by looking at the actual SERP.
-- **Head terms vs. long-tail** — "running shoes" is a head term: high volume, brutal competition, broad intent. "best women's running shoes for flat feet" is long-tail: lower volume, easier to rank, specific intent. New domains earn traffic on long-tail first and graduate to head terms as authority compounds.
+- **Head terms vs. long-tail** — "sunscreen" is a head term: high volume, brutal competition, broad intent. "mineral sunscreen no white cast" is long-tail: lower volume, easier to rank, specific intent. New domains earn traffic on long-tail first and graduate to head terms as authority compounds.
 - **Branded vs. unbranded** — branded queries include your brand name; unbranded don't. Most SEO growth comes from unbranded queries. Branded queries are a measure of brand demand, not SEO performance.
 - **Topical relevance** — Google increasingly rewards sites that demonstrate depth in a topic over sites that scatter shot. A keyword's value isn't just its standalone volume; it's also whether ranking for it strengthens or weakens your topical fit.
 
@@ -46,7 +46,7 @@ Every page on your site either earns search traffic or it doesn't, and what dete
 
 - **Starting from the tool, not the business.** It produces an impressive-looking list with no commercial relevance. Always start from products, customers, and competitors — then expand.
 - **Optimising for volume.** A keyword with 5,000 monthly searches that converts at 0.1% is worth less than one with 200 searches that converts at 5%. Volume is a vanity metric without intent and conversion context.
-- **Ignoring difficulty for new domains.** A six-month-old D2C brand will not rank for "running shoes." Filter aggressively on KD relative to your domain rating until you have authority to spend.
+- **Ignoring difficulty for new domains.** A young D2C beauty brand will not rank for "sunscreen" out of the gate. Filter aggressively on KD relative to your domain rating until you have authority to spend.
 - **Treating "no volume" as "no opportunity."** Tools dramatically underreport long-tail volume. A query showing 0–10 monthly searches in a tool can drive meaningful traffic if it's intent-rich and sits in a cluster.
 - **Doing it once and never again.** Search behaviour shifts. Refresh your keyword universe at least quarterly, especially as new product lines launch.
 

@@ -96,7 +96,7 @@ Save the produced file to `businesses/<slug>/keyword-research/seed-keywords.md`.
 ## Quality bar
 
 - Every seed is plausible — would actually be searched by a real customer.
-- Customer-language phrasing dominates over corporate phrasing. "Natural face serum" beats "bioactive peptide complex."
+- Customer-language phrasing dominates over corporate phrasing. "Vitamin C serum for dark spots" beats "bioactive radiance complex."
 - All six dimensions are populated, not just products.
 - Priority seeds are explicitly justified.
 - The list is tailored to this business — at least one seed in each dimension references something specific from the business profile (a product name, a competitor, a customer pain).
@@ -111,14 +111,14 @@ Save the produced file to `businesses/<slug>/keyword-research/seed-keywords.md`.
 
 ## Example
 
-**Input (abbreviated):** D2C beauty brand (skincare). Products: Daily Glow Serum, Mineral Sun Drops SPF 50, Bloom Cleanser, complementary serums. Customer: health-conscious women 25–45, concerned with ingredient safety and sun protection. Customer pains: sunscreen that doesn't leave white cast, serums that work for sensitive skin, clean-beauty products. Competitors: Supergoop, Blue Tansy, Drunk Elephant. US market, English.
+**Input (abbreviated):** Field & Sun, a D2C beauty brand. Products: Daily Glow Serum, Mineral Sun Drops SPF 50, Bloom Cleanser, complementary serums. Customer: skincare-literate women 28-45, concerned with ingredient specifics, sun protection, refill value, and packaging waste. Customer pains: sunscreen that doesn't leave white cast, vitamin C serums that oxidize quickly, and refillable products that should save money without feeling clunky. Competitors: Supergoop, Saie, ILIA, Glossier, Byrdie. US market, English.
 
 **Output (abbreviated):**
 
-Priority seeds: best mineral sunscreen, mineral sunscreen no white cast, natural face serum, vitamin C serum for sensitive skin, sunscreen for dark skin, daily glow serum alternative, best skincare for mature skin.
+Priority seeds: best mineral sunscreen, mineral sunscreen no white cast, vitamin C serum dark spots, vitamin C serum for sensitive skin, sunscreen for dark skin, refillable serum, tinted mineral sunscreen.
 
-Customer pains: mineral sunscreen no chalky finish, reef-safe sunscreen, serum that doesn't oxidize, mineral sunscreen for oily skin, ingredient-led skincare.
+Customer pains: mineral sunscreen no chalky finish, serum that doesn't oxidize, mineral sunscreen for oily skin, refillable serum pouch, ingredient-led skincare.
 
-Customer questions: is mineral sunscreen better than chemical, does mineral sunscreen leave white cast, what's the best vitamin C serum, is reef-safe sunscreen worth it, can you use sunscreen under makeup.
+Customer questions: is mineral sunscreen better than chemical sunscreen, does mineral sunscreen leave white cast, what's the best vitamin C serum for dark spots, how long does vitamin C serum last, can you use sunscreen under makeup.
 
 […and so on across all six dimensions]

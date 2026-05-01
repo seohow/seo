@@ -95,7 +95,7 @@ Bulleted observations grouped by: schema, internal linking, page templates, tech
 2-3 sentences on what couldn't be inferred from outside (e.g. internal conversion rates, paid contribution, true revenue from organic). Keeps the user calibrated.
 ```
 
-Save the produced file to `businesses/<slug>/competitor-analysis/audit-<competitor-slug>.md`, where `<competitor-slug>` is the kebab-case form of the competitor's name or domain (e.g. `audit-blueland.md`, `audit-earth-breeze.md`). Create the `competitor-analysis/` sub-folder if it doesn't already exist. After writing, tell the user the file path. If the user runs this skill again on a different competitor, save to a new file in the same folder — don't overwrite.
+Save the produced file to `businesses/<slug>/competitor-analysis/audit-<competitor-slug>.md`, where `<competitor-slug>` is the kebab-case form of the competitor's name or domain (e.g. `audit-supergoop.md`, `audit-saie.md`). Create the `competitor-analysis/` sub-folder if it doesn't already exist. After writing, tell the user the file path. If the user runs this skill again on a different competitor, save to a new file in the same folder — don't overwrite.
 
 ## Quality bar
 
@@ -104,7 +104,7 @@ Save the produced file to `businesses/<slug>/competitor-analysis/audit-<competit
 - "Why it works" notes go beyond surface (not just "long article" but "long article + comparison table + ingredient-level depth + brand mentions in major publications").
 - The audit is honest about what's inferred vs known.
 - The tone is observational, not adversarial. The competitor isn't the enemy; they're a free market study.
-- The opportunity list maps cleanly to the [SEO Wins](../../05.%20SEO%20Wins/README.md) backlog format.
+- The opportunity list maps cleanly to the [SEO Wins](../../../05.%20SEO%20Wins/README.md) backlog format.
 
 ## Common mistakes to avoid
 
@@ -118,4 +118,4 @@ Save the produced file to `businesses/<slug>/competitor-analysis/audit-<competit
 
 **Input (abbreviated):** Competitor = supergoop.com, focus = sunscreen category. User = a smaller D2C beauty brand (skincare/sunscreen), US, has Ahrefs and GSC.
 
-**Output (abbreviated):** Profile section noting Supergoop is DR 68, ~2.2k indexed pages, mature editorial blog, strong link profile from beauty and dermatology publications, comparison-page pattern is well-developed. Keyword gap with 42 prioritised keywords, dominated by informational ("does mineral sunscreen leave white cast," "reef-safe sunscreen explained") and one comparison cluster ("mineral vs chemical sunscreen"). Top-traffic-page pattern: detailed comparison content + branded category landing pages. Content gap: weak coverage of ingredient-specific deep dives (e.g., zinc oxide benefits, homosalate concerns) and sparse FAQ depth on application and sensitive-skin topics. Link signals: 18 publications linked to Supergoop that are plausible targets for the user. Technical: Supergoop uses Article + Product + FAQPage schema consistently; their internal linking is hub-and-spoke from the sunscreen category. 12 prioritised opportunities, top three: (1) build an "[ingredient] science" cluster, (2) launch a "sensitive skin sunscreen" collection page, (3) outreach to the 18 publication targets with an ingredient-led mineral-sunscreen angle.
+**Output (abbreviated):** Profile section noting Supergoop is DR 68, ~2.2k indexed pages, mature editorial blog, strong link profile from beauty and dermatology publications, comparison-page pattern is well-developed. Keyword gap with 42 prioritised keywords, dominated by informational ("does mineral sunscreen leave white cast," "zinc oxide sunscreen benefits") and one comparison cluster ("mineral vs chemical sunscreen"). Top-traffic-page pattern: detailed comparison content + branded category landing pages. Content gap: weak coverage of ingredient-specific deep dives (e.g., zinc oxide benefits, homosalate concerns) and sparse FAQ depth on application and sensitive-skin topics. Link signals: 18 publications linked to Supergoop that are plausible targets for the user. Technical: Supergoop uses Article + Product + FAQPage schema consistently; their internal linking is hub-and-spoke from the sunscreen category. 12 prioritised opportunities, top three: (1) build an "[ingredient] science" cluster, (2) launch a "sensitive skin sunscreen" collection page, (3) outreach to the 18 publication targets with an ingredient-led mineral-sunscreen angle.

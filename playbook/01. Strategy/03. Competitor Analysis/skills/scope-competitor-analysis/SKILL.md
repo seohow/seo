@@ -48,7 +48,7 @@ If competitors and goal aren't clear, ask before producing output.
    - **Brand and editorial** — tone, expertise signals, freshness cadence.
 4. **Choose the toolchain.** Recommend a primary keyword/backlink tool (Ahrefs/Semrush/Moz), a SERP-checking workflow (manual, plus optional Sistrix/Surfer for SERP-feature analysis), and a workspace for the deliverable (Notion, Sheets, doc).
 5. **Sequence the phases.** Discovery (validate competitor set, confirm SERP overlap) → per-competitor audit (run the chosen lenses) → synthesis (pull cross-competitor patterns) → opportunity prioritisation. Each phase has a definition of done.
-6. **Define the deliverable.** Specify exactly what comes out: a synthesis doc with sections for each lens, a per-competitor sub-doc, and a prioritised opportunity list. The opportunity list is the most important output — it's what feeds [SEO Wins](../../05.%20SEO%20Wins/README.md).
+6. **Define the deliverable.** Specify exactly what comes out: a synthesis doc with sections for each lens, a per-competitor sub-doc, and a prioritised opportunity list. The opportunity list is the most important output — it's what feeds [SEO Wins](../../../05.%20SEO%20Wins/README.md).
 7. **Acceptance criteria.** Objective conditions: every chosen competitor has been audited across the chosen lenses, the synthesis surfaces at least 10 actionable opportunities, each opportunity is scored on impact/effort/fit, the SEO lead has signed off.
 8. **Risks and mitigations.** Predictable failures for this business: a competitor set too broad to study deeply, ignoring publishers in commercial SERPs, copying competitor surface features without understanding the pattern, doing the analysis once and never refreshing.
 
@@ -115,4 +115,4 @@ Save the produced file to `businesses/<slug>/competitor-analysis/plan.md`. Creat
 
 **Input (abbreviated):** D2C beauty brand (skincare/sunscreen), US, has Ahrefs and GSC, marketing manager, goal is to identify 15 highest-leverage opportunities for Q2 content roadmap.
 
-**Output (abbreviated):** Plan with 4 competitors (Supergoop, Blue Tansy, Drunk Elephant, Wirecutter) plus 1 community source (r/SkincareAddiction). Lenses: keyword gap (primary), SERP pattern (priority terms), content depth (mineral sunscreen topic), link gap (for outreach). 7-day timeline. Deliverable: synthesis doc + opportunity list with 15+ scored items. Risks: founder bias toward direct competitors only — mitigate by enforcing publisher and community inclusion.
+**Output (abbreviated):** Plan with 4 competitors (Supergoop, Saie, ILIA, Wirecutter) plus 1 community source (r/SkincareAddiction). Lenses: keyword gap (primary), SERP pattern (priority terms), content depth (mineral sunscreen topic), link gap (for outreach). 7-day timeline. Deliverable: synthesis doc + opportunity list with 15+ scored items. Risks: founder bias toward direct competitors only — mitigate by enforcing publisher and community inclusion.

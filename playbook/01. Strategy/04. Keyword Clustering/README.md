@@ -6,7 +6,7 @@
 
 Keyword clustering is the process of organising a flat list of keywords into groups where each group can be served by a single page. A cluster is a collection of keywords that share intent and topical meaning, such that one well-built page can rank for all of them. Modern Google ranks pages, not keywords — and the same page often ranks for dozens of variant queries. Clustering is the work of figuring out which keywords belong on the same page.
 
-The opposite of clustering is *one-keyword-per-page* thinking: building a separate page for "running shoes" and "best running shoes" and "running shoes for women." That approach produces thin, cannibalising content. Clustering produces fewer, better pages.
+The opposite of clustering is *one-keyword-per-page* thinking: building a separate page for "mineral sunscreen," "best mineral sunscreen," and "mineral sunscreen for face." That approach produces thin, cannibalising content. Clustering produces fewer, better pages.
 
 ## Why it matters
 
@@ -17,7 +17,7 @@ For a D2C brand, clustering directly determines site architecture. Clusters beco
 ## Core concepts
 
 - **A cluster = a page** — every cluster represents one page (or one tightly linked page set, like a hub-and-spoke). If you can't imagine writing a single coherent page for the cluster, the cluster is too broad.
-- **Topic + intent define the cluster** — keywords belong together when they share *both* what they're about and *why* someone is searching. "Best running shoes" and "running shoes for sale" are the same topic but different intent — they go in different clusters.
+- **Topic + intent define the cluster** — keywords belong together when they share *both* what they're about and *why* someone is searching. "Best mineral sunscreen" and "buy mineral sunscreen SPF 50" are the same topic but different intent — they go in different clusters.
 - **Primary keyword vs supporting keywords** — each cluster has one primary keyword (the highest-volume / most-strategic) that anchors the page's title and H1. Supporting keywords are the long-tail variants the page also targets in body content, H2s, and FAQs.
 - **SERP-similarity clustering** — the most rigorous method: two keywords belong in the same cluster if their top 5-10 SERP results overlap above a threshold (typically 30-40%). This is empirically grounded — if Google ranks the same pages for both, they're effectively the same query.
 - **Hub-and-spoke / pillar-and-cluster** — a related architecture pattern where a broad pillar page covers a cluster topic at a high level and links to spoke pages covering subtopics in depth. Different layer of organisation but compatible with keyword clustering.
@@ -41,7 +41,7 @@ For a D2C brand, clustering directly determines site architecture. Clusters beco
 1. **Start from a classified list.** You need keywords with volume, intent, and page-type tags from [Search Intent](../02.%20Search%20Intent/README.md). Don't cluster a raw keyword dump — you'll mix intents and produce broken clusters.
 2. **Split by intent first.** Cluster within intent buckets, not across them. A transactional and an informational keyword might share words but they need different pages, so they go in different clusters.
 3. **Use SERP overlap as the rigorous test.** Pick the top 20-50 highest-priority keywords. For each pair, check whether the top 10 SERP results overlap by 30%+ — if so, same cluster. Several tools (Keyword Insights, Surfer SERP Analyzer, Lowfruits) automate this. For smaller lists, manual checks for the top keywords are fine.
-4. **Use topical / semantic grouping for the rest.** Below the SERP-overlap threshold of usefulness, group by topic and customer language. "Mineral sunscreen no white cast" and "no white cast mineral sunscreen" obviously cluster. "Mineral sunscreen" and "reef-safe sunscreen" probably cluster. "Mineral sunscreen" and "best sunscreen" probably don't (different intent).
+4. **Use topical / semantic grouping for the rest.** Below the SERP-overlap threshold of usefulness, group by topic and customer language. "Mineral sunscreen no white cast" and "no white cast mineral sunscreen" obviously cluster. "Mineral Sun Drops SPF 50" and "Field & Sun SPF 50" probably cluster. "Mineral sunscreen" and "best sunscreen" probably don't (different intent).
 5. **Pick the primary keyword for each cluster.** Highest-volume *and* best-fit-to-intent. Sometimes the highest-volume keyword in a cluster has the wrong intent for the page you're building — pick the next-highest with correct intent.
 6. **Map every cluster to a URL.** New page or existing page. If existing, note the URL. If new, sketch a placeholder slug. This map is the input to your content roadmap and your information architecture.
 7. **Check for cannibalisation.** If two clusters end up mapping to similar pages or to existing URLs that overlap, merge or split until each URL has exactly one cluster. Two pages on your site should never target the same primary keyword.

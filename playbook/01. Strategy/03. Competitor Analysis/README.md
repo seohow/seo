@@ -27,9 +27,9 @@ For a D2C brand, this is also where you find the highest-leverage gap opportunit
 
 > **Scenario:** The D2C beauty brand wants to understand the SERP they're entering for "best mineral sunscreen" and adjacent skincare terms.
 >
-> **Step 1.** They list five competitors. Two direct (Supergoop, Blue Tansy), one aspirational (Drunk Elephant — bigger brand, similar positioning), one editorial (Wirecutter), one community (Reddit r/SkincareAddiction).
+> **Step 1.** They list five competitors. Two direct (Supergoop, Saie), one aspirational (Glossier — bigger D2C beauty brand, useful for mature-brand patterns), one editorial (Wirecutter), one community (Reddit r/SkincareAddiction).
 >
-> **Step 2.** They run an organic keyword overlap report in Ahrefs/Semrush. Supergoop and Blue Tansy share ~45% of their keyword universe with the brand's target list. Drunk Elephant shares 30%. Wirecutter shares 55% — they rank for almost everything commercial in this space.
+> **Step 2.** They run an organic keyword overlap report in Ahrefs/Semrush. Supergoop and Saie share ~45% of their keyword universe with the brand's target list. Glossier shares 30%. Wirecutter shares 55% — they rank for almost everything commercial in this space.
 >
 > **Step 3.** They run a content-gap report on Supergoop. They find 950 keywords Supergoop ranks for that the brand doesn't. After filtering for relevance, ~170 are actionable. Top opportunities: "[ingredient] in sunscreen" explainers, "does mineral sunscreen leave white cast" FAQ, "mineral sunscreen vs chemical" comparison.
 >

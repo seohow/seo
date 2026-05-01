@@ -36,7 +36,7 @@ If intent tags or the business profile are missing, ask before clustering.
 ## Process
 
 1. **Split by intent.** First pass, before any topical grouping, partition the input into intent buckets. Cluster within each bucket, never across. This prevents the most common clustering mistake (mixing transactional and informational into the same cluster).
-2. **Within each intent bucket, group by topic.** Walk the keywords looking for shared topical core. Group obvious near-duplicates first ("mineral sunscreen" / "sunscreen mineral" / "mineral-based sunscreen" → one cluster). Then group close-cousins ("reef-safe mineral sunscreen" / "reef safe mineral sunscreen" / "mineral sunscreen no white cast" → one cluster). Then look for variant patterns ("[product] for [persona]" — these often cluster differently from straight category terms).
+2. **Within each intent bucket, group by topic.** Walk the keywords looking for shared topical core. Group obvious near-duplicates first ("mineral sunscreen" / "sunscreen mineral" / "mineral-based sunscreen" → one cluster). Then group close-cousins ("mineral sunscreen no white cast" / "no white cast sunscreen" / "mineral sunscreen for dark skin" → one cluster). Then look for variant patterns ("[product] for [persona]" — these often cluster differently from straight category terms).
 3. **Apply SERP-overlap test on the top ~20%.** For the top-volume / highest-priority 20% of clusters, where placement matters most, recommend (or perform if SERP data is available) a SERP-overlap check. If two candidate clusters have 40%+ SERP overlap on their primary keywords, merge them. If a single cluster's keywords have <30% SERP overlap among themselves, split.
 4. **Pick a primary keyword per cluster.** Default to highest volume; override when the highest-volume keyword has wrong intent or doesn't best represent the cluster's core. Note the rationale when overriding.
 5. **Map cluster to page type.** Default from the page-type tags in the input. If multiple page types appear in one cluster, that's a signal the cluster needs splitting — page type should be uniform within a cluster.
@@ -130,9 +130,9 @@ Save the produced file to `businesses/<slug>/clusters/cluster-map.md`. Create th
 | buy mineral sunscreen SPF 50 | 420 | T |
 | mineral sunscreen online | 310 | T |
 | mineral sunscreen for face | 190 | T |
-| reef safe sunscreen buy | 280 | T |
-| reef safe sunscreen online | 160 | T |
-| buy reef safe sunscreen | 225 | T |
+| buy tinted mineral sunscreen | 280 | T |
+| tinted mineral sunscreen online | 160 | T |
+| mineral sunscreen no white cast | 225 | T |
 | mineral sunscreen sensitive skin | 180 | T |
 | zinc oxide sunscreen | 340 | T |
 | best mineral sunscreen SPF 50 | 290 | T |
@@ -143,6 +143,6 @@ Save the produced file to `businesses/<slug>/clusters/cluster-map.md`. Create th
 | ID | Cluster name | Primary | Supporting | Volume | Page type | Target URL |
 |----|--------------|---------|------------|-------:|-----------|------------|
 | T01 | Mineral sunscreen (collection) | buy mineral sunscreen SPF 50 | mineral sunscreen online; mineral sunscreen for face; mineral sunscreen sensitive skin; zinc oxide sunscreen; best mineral sunscreen SPF 50 | 1,730 | Collection | /collections/mineral-sunscreen |
-| T02 | Reef-safe sunscreen (PDP/sub-collection) | buy reef safe sunscreen | reef safe sunscreen online; reef safe sunscreen buy | 665 | PDP | /products/reef-safe-sunscreen |
+| T02 | Tinted mineral sunscreen (PDP/sub-collection) | buy tinted mineral sunscreen | tinted mineral sunscreen online; mineral sunscreen no white cast | 665 | PDP | /products/mineral-sun-drops-spf-50 |
 
 …with deferral list, cannibalisation flags noting that the existing `/collections/sunscreen` page overlaps T01 and recommending consolidation.

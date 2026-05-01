@@ -4,12 +4,12 @@
 
 ## What it is
 
-Search intent is the goal behind a query. The same word can mean very different things depending on intent: someone searching "running shoes" might want to learn what type to buy, find a specific brand's product page, compare two models, or buy a pair right now. Each of those is a different intent, and each demands a different page type to rank.
+Search intent is the goal behind a query. The same phrase can mean very different things depending on intent: someone searching "mineral sunscreen" might want to learn how mineral filters work, find a specific brand's product page, compare formulas for darker skin tones, or buy SPF 50 right now. Each of those is a different intent, and each demands a different page type to rank.
 
 The standard taxonomy has four buckets:
 
 - **Informational** — the searcher wants to learn something. ("does mineral sunscreen leave white cast")
-- **Navigational** — the searcher wants a specific website or brand. ("blueland login")
+- **Navigational** — the searcher wants a specific website or brand. ("supergoop login")
 - **Commercial** — the searcher is investigating before a purchase. ("best mineral sunscreen")
 - **Transactional** — the searcher is ready to act. ("buy mineral sunscreen SPF 50")
 
@@ -35,7 +35,7 @@ For a D2C brand, intent also drives where the keyword sits in the funnel. Inform
 >
 > **Step 1.** They take "best mineral sunscreen" and Google it. The top 10 results are: Wirecutter roundup, NYT Wirecutter, Good Housekeeping, Allure comparison, a personal blog, a brand listicle, two beauty listicles, an editorial review, and a YouTube sunscreen review. **Verdict:** commercial intent, page type = blog comparison/roundup.
 >
-> **Step 2.** They Google "mineral sunscreen no white cast." The top 10 are: Blue Tansy product page, Supergoop product page, Amazon listings, beauty blog posts about white cast, two brand collection pages, two listicles about white-cast-free sunscreens. **Verdict:** mostly transactional with some commercial, page type = product or collection.
+> **Step 2.** They Google "mineral sunscreen no white cast." The top 10 are: Saie product page, Supergoop product page, Amazon listings, beauty blog posts about white cast, two brand collection pages, two listicles about white-cast-free sunscreens. **Verdict:** mostly transactional with some commercial, page type = product or collection.
 >
 > **Step 3.** They Google "does mineral sunscreen leave white cast." Top 10: a Wirecutter article, a Reddit thread, two skincare blog posts, a brand FAQ, a YouTube explainer. **Verdict:** informational, page type = blog post / FAQ.
 >

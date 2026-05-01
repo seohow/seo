@@ -44,25 +44,25 @@ If this is your first time doing SEO strategy for the business, work through thi
 1. Run **Keyword Clustering** to turn the universe into a content/page map.
 2. Run **SEO Wins** to extract a prioritised backlog you can start executing this quarter.
 
-The output of this category is a strategy document plus a backlog. From there you move into [On-page SEO](../02.%20On-page%20SEO/) and [Content SEO](../04.%20Content%20SEO/) to execute against the plan.
+The output of this category is a set of strategy artifacts — keyword plan, seed list, intent tags, competitor gaps, cluster map — plus a prioritised backlog. From there you move into [On-page SEO](../02.%20On-page%20SEO/) and [Content SEO](../04.%20Content%20SEO/) to execute against the plan.
 
 ## Skills you'll use in this category
 
 Each sub-topic ships its own skills. The complete list:
 
-- **plan-keyword-research** — scope a keyword research project for your business.
-- **generate-seed-keywords** — produce an initial keyword list from your business profile.
-- **classify-keyword-intent** — tag a keyword list with intent and recommended page type.
-- **scope-competitor-analysis** — define a competitor analysis project: who, what, in how much depth.
-- **audit-competitor-seo** — analyse a competitor URL or domain and produce a gap report.
-- **cluster-keywords** — group a keyword list into topical clusters mapped to pages.
-- **build-seo-wins-backlog** — turn raw findings into a prioritised, ICE-scored backlog.
+- **[plan-keyword-research](01.%20Keyword%20Research/skills/plan-keyword-research/SKILL.md)** — scope a keyword research project for your business.
+- **[generate-seed-keywords](01.%20Keyword%20Research/skills/generate-seed-keywords/SKILL.md)** — produce an initial keyword list from your business profile.
+- **[classify-keyword-intent](02.%20Search%20Intent/skills/classify-keyword-intent/SKILL.md)** — tag a keyword list with intent and recommended page type.
+- **[scope-competitor-analysis](03.%20Competitor%20Analysis/skills/scope-competitor-analysis/SKILL.md)** — define a competitor analysis project: who, what, in how much depth.
+- **[audit-competitor-seo](03.%20Competitor%20Analysis/skills/audit-competitor-seo/SKILL.md)** — analyse a competitor URL or domain and produce a gap report.
+- **[cluster-keywords](04.%20Keyword%20Clustering/skills/cluster-keywords/SKILL.md)** — group a keyword list into topical clusters mapped to pages.
+- **[build-seo-wins-backlog](05.%20SEO%20Wins/skills/build-seo-wins-backlog/SKILL.md)** — turn raw findings into a prioritised, ICE-scored backlog.
 
 ## Common pitfalls
 
 - **Skipping straight to writing.** Founders are biased toward action and skip this phase. The result is months of effort producing content that doesn't rank or convert. Strategy is the leverage point — invest the week.
 - **Ignoring intent.** Targeting a keyword with the wrong page type (e.g. a product page for an informational query) almost guarantees you won't rank, no matter how good the page is.
-- **Over-targeting head terms.** "Running shoes" has 500k searches and zero chance for a new D2C brand. The wins are in long-tail, intent-rich variations and unbranded category-modifier combinations.
+- **Over-targeting head terms.** "Sunscreen" has massive search volume and zero realistic chance for a young D2C beauty brand. The wins are in long-tail, intent-rich variations and unbranded category-modifier combinations.
 - **Treating competitor analysis as inspiration.** The point isn't to copy what competitors do — it's to find the gaps they're not serving and the patterns that explain why they win. Look for *why*, not *what*.
 - **Building a perfect plan and not shipping.** Strategy that doesn't ship is worse than a rough strategy that does. Aim for "good enough to start" in 2-3 weeks, not "comprehensive" in 2-3 months.
 
