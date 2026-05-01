@@ -1,0 +1,84 @@
+# Site Speed
+
+> How fast pages load and how usable they feel while loading. A direct ranking signal, a major conversion lever, and the single most-visible technical-SEO fix on most ecom sites.
+
+## What it is
+
+Site speed is the cluster of metrics describing how quickly a page loads, becomes interactive, and stays stable while loading. Modern SEO measures this through Google's **Core Web Vitals**: three field-data metrics that Google ties directly to the "page experience" ranking signal. They are LCP, INP, and CLS — explained below. Ancillary metrics (TTFB, FCP, TBT) round out the picture.
+
+Site speed is felt by every user, on every page, every visit. A 1-second improvement in LCP on a mobile PDP can shift conversion rate by 3-15% depending on the baseline. It compounds — fixing speed once benefits every visitor going forward, on every device.
+
+## Why it matters
+
+Two reasons. First, **Core Web Vitals are a ranking factor**. Pages that fail Core Web Vitals are deprioritised in search, especially on mobile. Pages that pass don't automatically jump in rank — but they level the playing field with competitors who pass.
+
+Second, and bigger, **page speed drives conversion rate, not just ranking**. Bounce rate roughly doubles between a 1-second and 3-second mobile load. Every D2C founder who's looked at the GA mobile-vs-desktop bounce data knows this intuitively. Fixing speed pays back on both organic *and* paid acquisition simultaneously.
+
+For Field & Sun and most D2C beauty brands on Shopify, the typical site-speed problem is image weight on PDPs and collection pages. Hero images served at 4× display dimensions, JPEG instead of WebP, no lazy-loading on below-fold images, no `srcset` — these are the recurring culprits. The fixes overlap heavily with [Image Optimization](../../02.%20On-page%20SEO/06.%20Image%20Optimization/README.md).
+
+## Core concepts
+
+- **Largest Contentful Paint (LCP)** — time until the largest visible element (usually a hero image or large headline) finishes rendering. Target: **under 2.5s on mobile**. The single most important Core Web Vital for ecom because the hero image is almost always the LCP element.
+- **Interaction to Next Paint (INP)** — time between a user's interaction (tap, click, key press) and the next visible response. Replaced FID in March 2024. Target: **under 200ms**. Most ecom INP failures come from heavy third-party scripts (analytics, chat widgets, A/B-test tools).
+- **Cumulative Layout Shift (CLS)** — total amount of unexpected layout movement during page load (content jumping as images or ads load in). Target: **under 0.1**. Caused by images without explicit dimensions, fonts that swap mid-load, and ad units injected after first paint.
+- **Time to First Byte (TTFB)** — server response time before any rendering starts. Not a Core Web Vital but a precursor to LCP. Target: under 600ms. CDN, hosting tier, and Liquid template complexity drive this on Shopify.
+- **First Contentful Paint (FCP)** — time until the first text or image appears. Target: under 1.8s.
+- **Lab data vs field data** — *Lab* (Lighthouse, PageSpeed Insights "Diagnostics") tests one synthetic load. *Field* (Chrome User Experience Report — CrUX, in PageSpeed's "Discovered" section and GSC) is real-user data over 28 days. Google ranks on field data; lab is the diagnostic tool. They often disagree — trust field for "is this a problem," trust lab for "what's causing it."
+- **Mobile-first measurement** — Google's index is mobile-first; mobile Core Web Vitals are the ranking-relevant ones. Desktop is informational. Audit mobile first.
+
+## A worked example
+
+> **Scenario:** Field & Sun runs PageSpeed Insights on the Mineral Sun Drops PDP. Mobile field data: LCP 4.8s (failing), INP 240ms (failing), CLS 0.15 (failing). All three Core Web Vitals red. The page converts at 1.4% on mobile vs 3.1% on desktop — a typical mobile-conversion gap that speed-mostly-explains.
+>
+> **Step 1.** LCP first. Lab diagnostic shows the LCP element is the hero image (`IMG_2381.jpg`, 2400×2400, 410KB JPEG). Render time is dominated by image download. Fix: convert to WebP, serve at 1200×1200 with `srcset`, mark `fetchpriority="high"`. Estimated LCP saving: ~2 seconds.
+>
+> **Step 2.** INP. Diagnostic shows three third-party scripts firing on first interaction: a chat widget (Gorgias, 180kB), a review widget (Yotpo, 220kB), and a heatmap tool (Microsoft Clarity, 90kB). Two are non-essential during first interaction; defer them with `loading="lazy"` on the chat-widget mount and async-load the heatmap.
+>
+> **Step 3.** CLS. Diagnostic shows the hero image lacks explicit `width` and `height` attributes — content below jumps when the image renders. Add them. Also a custom font swaps in 800ms after first paint causing minor text reflow; switch to `font-display: optional`.
+>
+> **Step 4.** Implement in Shopify theme. Re-test in PageSpeed Insights with both lab (immediate) and field (30 days for CrUX to update). Lab shows LCP 1.9s, INP 110ms, CLS 0.04 — all passing.
+>
+> **Step 5.** After 30 days field data confirms: LCP 2.1s, INP 150ms, CLS 0.05. All three pass. Mobile conversion rate climbs to 2.4% over the same window. Estimated revenue impact: meaningful and immediate.
+
+## How to do it
+
+1. **Pull the Core Web Vitals report from GSC.** Search Console → Experience → Core Web Vitals shows which URLs are failing on mobile and desktop, grouped by issue. Start there, not at PageSpeed Insights — GSC tells you what Google sees across your real users.
+2. **Pick the highest-impact pages first.** PDPs, top collection pages, top blog posts. Fix-once-benefit-every-visitor logic — start where the visitors are.
+3. **Run PageSpeed Insights on each priority page.** Note the field-data Core Web Vitals first (real-user); then read lab data for *what's causing* the failures. Field tells you whether to fix; lab tells you how.
+4. **Identify the LCP element on each page.** PageSpeed Insights labels it explicitly. On ecom PDPs, almost always a hero image or video. Fix the LCP element first — it's the single highest-leverage change.
+5. **Audit images on the priority pages.** Run [`audit-images`](../../02.%20On-page%20SEO/06.%20Image%20Optimization/skills/audit-images/SKILL.md). Image work alone resolves 60-80% of speed issues on most ecom sites.
+6. **Audit third-party scripts.** List every script firing on first interaction. Defer or async-load anything not user-facing on the first screen.
+7. **Implement layout-shift fixes.** Explicit `width`/`height` on every image. `aspect-ratio` CSS where dynamic. `font-display: optional` or `swap` with proper sizing. Reserve space for any deferred ad / widget container.
+8. **Implement and verify.** Push changes through Shopify theme (or whatever the CMS is). Re-run PageSpeed Insights for lab confirmation. Watch GSC Core Web Vitals report for 30 days as field data updates.
+9. **Set forward-going monitoring.** Add a monthly check on GSC Core Web Vitals. New product launches, new template changes, and new third-party-script installs all introduce regressions.
+
+## Common pitfalls
+
+- **Optimising lab data without checking field data.** PageSpeed Insights' lab data can pass while real users still fail (slow devices, weak connections). Field data is the ranking signal; treat lab as the diagnostic tool only.
+- **Ignoring mobile.** Desktop loads on fibre connections. Mobile is half your traffic and the ranking-relevant measurement. Optimise mobile first.
+- **Fixing CLS by removing animations instead of reserving space.** Layout shift is about *unexpected* movement. Smooth, expected animations don't count. Don't over-correct.
+- **Lazy-loading the LCP image.** Tanks LCP because the browser delays loading the most important asset. The hero / first-fold image must be eager-loaded with `fetchpriority="high"`.
+- **Adding "performance optimization" apps that don't measurably help.** Many Shopify apps claim speed wins via heavy JS that ironically slows the site. Measure before/after; uninstall what doesn't help.
+- **Treating speed as a one-off project.** Every new template change, theme update, third-party script install can regress speed. Quarterly Core Web Vitals checks are the floor.
+- **Only fixing speed on PDPs.** Collection pages and blog content also matter — and on a content-led brand, the blog might be your highest-traffic-but-slowest content type.
+- **Ignoring INP because it "looks fine."** INP failures often only show up under heavy third-party load. Test on a mid-tier mobile device with all scripts running, not just on a fast laptop.
+
+## Skills in this toolkit
+
+- **[audit-core-web-vitals](skills/audit-core-web-vitals/SKILL.md)** — analyses one page's PageSpeed Insights results (lab + field) plus image inventory and third-party script list, identifies the LCP element, surfaces the highest-impact fixes for LCP/INP/CLS, and produces a prioritised remediation list with effort estimates and expected metric movement.
+
+## Related topics
+
+- **[02. On-page SEO / 06. Image Optimization](../../02.%20On-page%20SEO/06.%20Image%20Optimization/README.md)** — the single biggest lever on most ecom sites; site-speed audits depend on image work.
+- **[01. Crawlability](../01.%20Crawlability/README.md)** — slow servers (high TTFB) compound into crawl budget waste on large sites.
+- **[07. UX / 01. Page Speed UX](../../07.%20UX/01.%20Page%20Speed%20UX/)** — performance and the user-experience signals that flow from it (conversion, bounce, scroll depth).
+- **[07. UX / 02. Mobile Optimization](../../07.%20UX/02.%20Mobile%20Optimization/)** — mobile-first measurement and the broader mobile experience.
+- **[07. JavaScript SEO](../07.%20JavaScript%20SEO/README.md)** — JS-heavy sites have specific INP and TTI patterns worth diagnosing separately.
+
+## Further reading
+
+- [Google Search Central — Page experience and Core Web Vitals](https://developers.google.com/search/docs/appearance/core-web-vitals) — the canonical Google guidance, including the current thresholds and how Google measures.
+- [Web.dev — Core Web Vitals overview](https://web.dev/articles/vitals) — Google's developer-facing reference; goes deep on what each metric measures and how to fix it.
+- [PageSpeed Insights documentation](https://developer.chrome.com/docs/lighthouse/performance/) — how to read lab results, what each diagnostic means, and the "Discovered URLs" CrUX section.
+- [Shopify Theme Performance — Optimising Core Web Vitals](https://shopify.dev/docs/storefronts/themes/performance) — Shopify-specific guidance on theme-level fixes (relevant to Field & Sun's stack).
+- [Aleyda Solis — Performance Audit Templates](https://www.aleydasolis.com/) — practitioner-level audit templates that scale across multi-page sites.
