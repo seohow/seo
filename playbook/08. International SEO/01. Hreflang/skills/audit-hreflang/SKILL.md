@@ -25,7 +25,7 @@ The skill is opinionated about a few things: `gb` not `uk` (most-common error); 
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), markets / geographic operations.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), markets / geographic operations.
 2. **Markets in scope** — required. List of language-region pairs the brand serves (e.g. `en-us`, `en-gb`, `fr-fr`).
 3. **Implementation method** — required if known (HTML `<link>`, HTTP header, or sitemap-based).
 4. **Priority templates** — required. Homepage, pillar pages, top PDPs, key landing pages.

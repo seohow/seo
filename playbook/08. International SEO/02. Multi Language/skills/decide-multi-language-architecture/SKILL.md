@@ -24,7 +24,7 @@ The skill is opinionated about a few things: most brands should start with subdi
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), customer (4), goals (7).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), goals (7).
 2. **Markets in scope** — required. Current markets + planned new markets.
 3. **Current architecture** — required if existing. Single-domain or already multi-domain.
 4. **CMS / platform** — required. Shopify, WordPress, custom — each has different multi-market support.

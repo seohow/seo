@@ -25,7 +25,7 @@ The skill is opinionated about a few things: machine translation alone is insuff
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`. Critical sections: products/services (3), customer (4), brand voice (8).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), brand voice (8).
 2. **Markets in scope** — required.
 3. **Architecture decision** — required. From `decide-multi-language-architecture`.
 4. **Budget tier** — required. Affects translation method.
@@ -82,7 +82,7 @@ If markets + budget are missing, ask. Localization plan is anchored to specific 
    - **Don't translate keywords literally.**
    - Per market: fresh keyword research.
    - For Field & Sun: French "crème solaire minérale", "écran solaire minéral", "crème solaire bébé minérale" — different volumes, different long-tail intents than English equivalents.
-   - Title tags, meta descriptions, H1s — translated AND locally optimised.
+   - Title tags, meta descriptions, H1s — translated and locally optimised.
    - URL slugs: localized where appropriate (`/fr/guide-creme-solaire-minerale/`).
 9. **Priority template sequence.**
    - Phase 1: homepage, pillar, top PDPs, checkout flow.
@@ -158,7 +158,7 @@ If markets + budget are missing, ask. Localization plan is anchored to specific 
 
 ### France
 - Tone: sophisticated, evidence-led.
-- Banned terms: [translate Field & Sun's "no clean beauty / non-toxic / chemical-free" rules to French equivalents].
+- Banned terms: [translate Field & Sun's rejected category-language and unsupported-claims rules to French equivalents].
 - Preferred terms: [French equivalents of brand voice].
 
 ### Germany
@@ -290,7 +290,7 @@ Cultural adaptation: France emphasises dermatologist credibility; Germany emphas
 
 Regulatory: GDPR, Cookie Directive, EU Accessibility Act (already active) for all 3; Toubon Law (FR) requires French primary; Verbraucherschutz (DE) requires long-form returns; Italian VAT display + shipping language. Legal counsel per market.
 
-Brand voice: per-market style guide drafted; "no clean beauty / non-toxic / chemical-free" rules translated to local-language equivalents.
+Brand voice: per-market style guide drafted; rejected category-language and unsupported-claims rules translated to local-language equivalents.
 
 Currency: EUR with EU number format (€19,99); VAT-inclusive display; payment methods include Klarna (DE major), Bancontact (BE-adjacent), card universally.
 
