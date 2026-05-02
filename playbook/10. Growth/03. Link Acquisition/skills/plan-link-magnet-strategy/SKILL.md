@@ -132,7 +132,7 @@ If topical-authority assessment or defensibility candidates are missing, ask bef
 | 3 | Definitive guide | Iron oxide tinting mechanism guide | Medium (evidence-rich; replicable in principle) | High (mineral cluster) | 4 wk / $Z | 30-50 links | 7 | YES |
 | 4 | Free tool | SPF cost-per-day calculator | High (utility; refillable angle) | High (refill + mineral cluster) | 3 wk / $W | 50-80 links | 8 | YES |
 | 5 | Comparative resource | Mineral SPF formulation database | High (curation + ongoing maintenance) | High (mineral cluster) | 8 wk / $V | 80-120 links | 9 | YES |
-| 6 | Definitive guide | Refillable beauty buyers' guide | Medium-High (multi-brand methodology) | High (refill cluster) | 6 wk / $U | 50-80 links | 7 | YES |
+| 6 | Definitive guide | Refill-focused beauty buyers' guide | Medium-High (multi-brand methodology) | High (refill cluster) | 6 wk / $U | 50-80 links | 7 | YES |
 | 7 | Listicle | Top 10 mineral SPFs of [year] | Low (replicable) | Medium | 1 wk / $T | 5-15 links | 3 | NO |
 | 8 | ... | ... | ... | ... | ... | ... | ... | ... |
 
@@ -257,7 +257,7 @@ Picked 6 assets:
 3. Iron oxide tinting mechanism guide (mineral, definitive guide, 4 wk, ~$3k, link target 30-50).
 4. SPF cost-per-day calculator (mineral + refill, free tool, 3 wk + dev, ~$4k, link target 50-80, indefinite refresh).
 5. Mineral SPF formulation database (mineral, comparative resource, 8 wk, ~$6k, link target 80-120, annual refresh).
-6. Refillable beauty buyers' guide (refills, definitive guide, 6 wk, ~$4k, link target 50-80, biennial refresh).
+6. Refill-focused beauty buyers' guide (refills, definitive guide, 6 wk, ~$4k, link target 50-80, biennial refresh).
 
 Total programme cost: ~$30k production + ~$5k promotion = ~$35k over 12 months.
 Total link target: 310-500 over 24 months.

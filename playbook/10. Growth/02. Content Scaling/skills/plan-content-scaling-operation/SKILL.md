@@ -146,7 +146,7 @@ If target volume or budget constraint is missing, ask. Don't produce a fantasy p
 - **Quality gate:** editorial first-pass acceptance rate ≥80%; pieces below standard go back to writer with feedback.
 
 ### Brand-voice review (NEW STANDALONE STAGE)
-- **Solution:** Marketing lead owns. Voice rubric drafted (tied to profile section 8): ingredient-led; plain-language; specific; warm and knowledgeable; reject "clean beauty" / "non-toxic" / "chemical-free" / "the ultimate" / "miracle" / "transformative" / "anti-aging."
+- **Solution:** Marketing lead owns. Voice rubric drafted (tied to profile section 8): ingredient-led; plain-language; specific; warm and knowledgeable; reject vague category language, unsupported safety claims, and inflated promise language.
 - **Hour budget:** ~30 min/piece.
 - **Quality gate:** voice rubric pass rate ≥95%; below-threshold pieces go back to writer.
 
