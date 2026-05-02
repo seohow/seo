@@ -1,0 +1,37 @@
+{
+  "name": "seo-playbook",
+  "version": "0.1.0",
+  "description": "A marketplace plugin packaging the SEO playbook skills for strategy, on-page, technical, content, analytics, off-page, UX, international, AI SEO, and growth workflows.",
+  "author": {
+    "name": "Samiq"
+  },
+  "homepage": "./README.md",
+  "repository": ".",
+  "license": "UNLICENSED",
+  "keywords": [
+    "seo",
+    "marketing",
+    "content",
+    "analytics",
+    "technical-seo",
+    "ai-seo"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "SEO Playbook",
+    "shortDescription": "Installable SEO strategy and execution skills.",
+    "longDescription": "Packages the repo playbook's SEO skills as a local marketplace plugin for Codex and compatible skill-based agent workflows. Includes skills for keyword strategy, on-page SEO, technical audits, content planning, analytics, off-page SEO, UX, international SEO, AI SEO, and growth.",
+    "developerName": "Samiq",
+    "category": "Marketing",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "defaultPrompt": [
+      "Create an SEO plan for this business.",
+      "Audit this site using the SEO playbook.",
+      "Build a content and growth roadmap."
+    ],
+    "brandColor": "#166534"
+  }
+}

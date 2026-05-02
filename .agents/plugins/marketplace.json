@@ -1,0 +1,20 @@
+{
+  "name": "samiq-seo",
+  "interface": {
+    "displayName": "Samiq SEO"
+  },
+  "plugins": [
+    {
+      "name": "seo-playbook",
+      "source": {
+        "source": "local",
+        "path": "./plugins/seo-playbook"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Marketing"
+    }
+  ]
+}
