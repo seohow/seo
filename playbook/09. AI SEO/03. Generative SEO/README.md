@@ -1,0 +1,116 @@
+# Generative SEO
+
+> Earning citation in AI Overviews, Perplexity, ChatGPT search, Claude search, and Gemini answers. The strategic layer of AI SEO — which queries are worth competing for, what content shape wins citation, and how to defend the ground you take. The highest-leverage and highest-uncertainty leaf in this category.
+
+## What it is
+
+Generative SEO (also called *Generative Engine Optimisation* — GEO — or *Answer Engine Optimisation* — AEO, depending on practitioner) is the discipline of making your content the source AI systems reach for when they synthesise an answer. It's distinct from traditional SEO (rank in the blue links), distinct from content optimisation (write so an AI can extract from you), and distinct from entity optimisation (signal cleanly to the entity graph). Generative SEO is the strategic layer that asks: *which questions are worth being the cited answer to, and what do we have to do — or be — to win?*
+
+The practical reality in 2026 is that AI Overviews now appear on a meaningful share of commercial and informational queries, and brands that get cited in those Overviews earn brand-mention visibility *plus* (often) a citation link the user can click. Perplexity citation behaviour is generous and visible. ChatGPT search and Claude search cite less frequently but more consequentially — an answer that names your brand once carries weight. Each engine has different citation patterns; a generative SEO strategy plans across them rather than chasing one.
+
+For Field & Sun, the strategic question isn't "should we do generative SEO" — it's "which queries do we invest in citation-magnet content for, given that publisher competitors (Wirecutter, Strategist, Byrdie, Refinery29) often dominate AI Overview citations on commercial-intent queries?" The answer requires honest assessment of where the brand has a defensible angle (own-product testing, ingredient-led depth, real customer evidence on diverse skin tones) versus where competing is futile (head-term commercial reviews against Wirecutter's depth). The planner skill in this leaf forces that assessment; the executor skill produces content that stands a chance.
+
+## Why it matters
+
+Three reasons. First, **AI-mediated answers are intercepting demand earlier in the funnel**. A user who would once have clicked through 3-5 search results, formed an opinion, and converted is now getting a synthesised answer from Perplexity / ChatGPT / AI Overview that names a small set of brands. The brands not named lose mindshare and (often) the click.
+
+Second, **the citation game is winnable for ingredient-led D2C brands** where the strategic angle is real (own-product testing, distinctive customer evidence, ingredient depth). Publisher competitors win commercial-review intent, but they lose ingredient-mechanism intent, real-skin-tone evidence, and brand-distinct framing. The trick is honest assessment of where the brand has the angle.
+
+Third, **the leverage compounds**. A page that earns AI Overview citation for a head query tends to also win citation for the long-tail queries in the same cluster. One excellent citation-magnet pillar can earn citation across 8-15 related queries simultaneously. Generative SEO is plump-tail, not long-tail.
+
+## Core concepts
+
+- **Engine-specific citation patterns.**
+  - **AI Overviews (Google):** cites 3-5 sources per Overview; sources tend to be the highest-authority pages also winning featured snippets and high SERP positions. Citation is a card with link + brief excerpt. Tends to favour established publishers + well-structured brand content.
+  - **Perplexity:** generous citation — typically 5-15 sources per answer with inline citation numbers. Easier to earn citation; weight per citation lower. Favours fact-extractable content with clean structure.
+  - **ChatGPT search:** moderate citation — 2-6 sources, inline links. Favours authoritative, well-structured content. Increasingly strict on freshness signals.
+  - **Claude search:** moderate citation — 2-5 sources, inline. Favours clean prose, sourced claims, depth.
+  - **Gemini:** integrated with Google's search and AI Overview infrastructure; citation patterns overlap with AI Overviews.
+- **Citation-magnet content shape.** The patterns that consistently earn citation across engines: definitive opening answers, fact-rich prose, named entities with specifics, inline source citations, comparative tables / structured data, freshness signals, primary research / original data. Content with no original signal (rephrasing what's already on the SERP) tends to be skipped in favour of the original source.
+- **Defensible angle.** What can your brand say or evidence that competitors cannot? Original product testing on real customers, ingredient-mechanism depth, primary research, distinctive editorial voice, founder expertise. Without a defensible angle, citation-magnet content is generic and citation rate stays low.
+- **Query intent vs answer intent.** A query like "best mineral sunscreen" implies a list / review intent. The cited answer in AI Overview is typically a list with brand mentions; winning citation is "be on the list," not "rank #1." Different shape from traditional SEO.
+- **Brand mention vs citation link.** Some AI answers name the brand without linking ("the Field & Sun Mineral Sun Drops are widely recommended"). Others link to a source page with brand mention. Both are valuable; track them separately. Brand-mention-without-link is harder to attribute traffic to but builds awareness.
+- **Citation defensibility.** Once a piece of content is the cited source for a query, it tends to *stay* cited for weeks-to-months until a clearly-better source appears. First-mover advantage on cluster citations is real.
+- **Multi-engine targeting.** Patterns that win across engines (clean prose, sourced claims, original evidence, specific entities) beat patterns optimised for one. Don't over-tune to a single engine's quirks.
+- **Freshness as ranking signal.** Time-sensitive queries (regulatory, ingredient guidance, product comparisons) increasingly favour fresher content. Visible "last updated" + a substantive update reason matter.
+- **Primary research as moat.** Original product testing, customer research, surveys, photographs, before-after evidence — content that can't be paraphrased from elsewhere is the most-citable. Brands that publish primary research earn citation that publisher competitors can't reproduce.
+
+## A worked example
+
+> **Scenario:** Field & Sun wants to compete on the "tinted mineral sunscreen no white cast" topic. Currently the brand ranks 9 organically; AI Overviews and Perplexity for the query cite Wirecutter, Strategist, ILIA Beauty (twice), Supergoop. Field & Sun is mentioned in zero of 5 priority queries in the cluster.
+>
+> **Step 1.** Run `plan-generative-seo-strategy`. The plan assesses:
+>
+> - **Query inventory + intent:** 7 priority queries in cluster (head: "tinted mineral sunscreen"; supporting: "tinted SPF for darker skin tones," "mineral SPF no white cast review," "best tinted SPF for sensitive skin," etc.).
+> - **Engine state:** AI Overviews present on 5 of 7; Perplexity citation on all 7; ChatGPT cites on 4; Claude on 3; Gemini matches AI Overview.
+> - **Competitor citation share:** Wirecutter cited on 6 of 7; ILIA on 5; Supergoop on 4; Strategist on 4; Saie on 3. Field & Sun: 0.
+> - **Defensible angle:** Field & Sun has six months of own-product testing photographs across Fitzpatrick skin types I-VI (rare in the category). Founder is dermatologist-adjacent. Brand voice is ingredient-led, specific, no overclaims. Verdict: angle is real on "no white cast on darker skin tones" specifically; angle is weak on "best mineral SPF generally" (publisher review territory).
+> - **Investment recommendation:** invest in 3 of 7 queries — "tinted mineral sunscreen darker skin tones," "mineral SPF no white cast," "tinted SPF for medium-to-deep skin tones." Skip the head term and the broad commercial-review queries.
+> - **Differentiation strategy:** original photography on 8 customer skin tones (Fitzpatrick II-VI) shot under consistent lighting, side-by-side with 3 competitor products. This is the moat.
+>
+> **Step 2.** Run `design-citation-magnet-content` for the priority topic ("tinted mineral sunscreen for darker skin tones"). Output is a content brief with:
+>
+> - **Question framing:** "Does mineral sunscreen leave a white cast on darker skin tones?"
+> - **Answer block:** definitive opening sentence: "Mineral sunscreens can leave a white cast on darker skin tones, but tinted mineral SPFs — those formulated with iron oxides for visual matching — minimise it on Fitzpatrick III-VI skin types."
+> - **TL;DR:** 4-bullet summary of the article's findings.
+> - **Original evidence:** photography across 8 customer skin tones, with concentrations / formulations and the visible-cast outcome documented per product.
+> - **Comparative table:** Field & Sun Mineral Sun Drops vs ILIA vs Saie vs Supergoop — concentrations, tint shade range, white-cast visibility per Fitzpatrick type.
+> - **Source citations:** FDA OTC Sunscreen Monograph, two peer-reviewed studies on iron oxide tinting, two dermatology references.
+> - **Internal linking:** to Daily Glow Serum PDP, to "no white cast" cluster pillar, to two related spokes.
+> - **Schema:** `Article` with `about` and `mentions`; `ImageObject` for each photograph with descriptive `caption`.
+> - **Freshness:** publish with "Last updated: 2026-05-30" line and update-reason note.
+>
+> **Step 3.** Implement. 3 weeks of writing + photography + design. Publish.
+>
+> **Step 4.** Result at 60 days: AI Overview citation gained on 2 of 3 priority queries. Perplexity citation gained on all 3. ChatGPT search citation gained on 2 of 3. Claude on 1. Brand-mention rate in `audit-llm-visibility` follow-up: 0% → 38% across the priority query set. Organic ranking on the supporting queries: 14-22 → 6-9. The original-photography asset gets quoted / lifted by 2 publishers in subsequent pieces (a brand-mention bonus).
+
+## How to do it
+
+1. **Baseline first.** Run `audit-llm-visibility` to establish current citation share per priority cluster. Without baseline, you can't measure whether the work moved the needle.
+2. **Run `plan-generative-seo-strategy`.** Force the honest assessment: which queries can the brand win citation on, given the competitor landscape and the defensible angle?
+3. **Pick 2-4 priority topics, not 20.** Citation-magnet content is expensive (original evidence, photography, depth). Concentrating investment beats spreading it.
+4. **Audit content readiness on existing pages.** Run `audit-ai-content-readiness` and `audit-entity-optimisation` on any existing pages in the priority topics. Sometimes a rewrite + entity densification beats writing new.
+5. **Run `design-citation-magnet-content` per priority topic.** Output is a content brief specifically structured to earn citation.
+6. **Invest in primary evidence.** Photography, customer testing, surveys, before-after, original data. This is the moat that publishers can't paraphrase.
+7. **Publish with full citation hygiene.** Definitive opening, TL;DR, question-led H2s, inline source citations, freshness signal, schema, internal linking. The Content Optimization and NLP Optimization layers come together here.
+8. **Promote into the citation graph.** Submit to relevant publications (HARO, Off-page leaf 06), get cited by adjacent brands / publishers, build the entity-graph signal that AI systems use to identify authority sources.
+9. **Measure 60-90 days post-publish.** Re-run `audit-llm-visibility`. Track citation rate per engine, brand-mention quality, sentiment.
+10. **Iterate or move on.** If citation rate moves, the angle was real — invest in adjacent topics in the same cluster. If it doesn't, the angle wasn't real or the engines aren't ready for it; redirect to a different cluster.
+
+## Common pitfalls
+
+- **Chasing the head term against publishers.** "Best vitamin c serum" is Wirecutter / NYT territory. A D2C brand cannot out-resource them on commercial review depth. Pick the long-tail or angle queries where the brand has a real defensibility lever.
+- **No primary evidence.** Citation-magnet content without original photography / testing / data is just well-structured paraphrase. AI systems prefer the original source; the original source isn't you.
+- **Generic content with citation polish.** Adding TL;DRs and citations to a generic explainer doesn't earn citation. The content has to *say something* — a position, an evidence, a specific that no other source has.
+- **One-engine optimisation.** Tuning content for Perplexity's quirks at the cost of ChatGPT and AI Overview eligibility loses cross-engine coverage.
+- **No baseline measurement.** Without `audit-llm-visibility` pre/post, the engagement has no feedback loop and can't course-correct.
+- **Schema theatre as substitute for content quality.** Adding elaborate schema to weak content doesn't earn citation. Content quality first; schema reinforces.
+- **Hijacking by AI-generated content.** Producing citation-magnet content with an LLM produces homogenous output that loses to brand-distinct content. The brief is AI-informed; the writing is human.
+- **Over-investing without measurement.** Generative SEO is high-leverage but not free. Pick 2-4 priority topics, measure the impact, and only scale the patterns that worked.
+- **Forgetting brand-voice constraints.** Citation polish doesn't override editorial guardrails. Field & Sun's voice (ingredient-led, plain-language, no "clean beauty" / "non-toxic" framing) holds even in generative-SEO content.
+- **Skipping the planner.** Going directly from "let's do generative SEO" to "write content" without `plan-generative-seo-strategy` produces unfocused work that under-performs.
+
+## Skills in this toolkit
+
+- **[plan-generative-seo-strategy](skills/plan-generative-seo-strategy/SKILL.md)** — strategic plan for which queries / topics the brand should invest citation-magnet content against. Forces honest assessment of competitor citation share, defensible angle, and per-engine state. Output is a prioritised topic investment plan with rationale per pick. Use before any citation-magnet content investment; quarterly cadence per priority cluster.
+- **[design-citation-magnet-content](skills/design-citation-magnet-content/SKILL.md)** — per-topic executor that produces a content brief specifically structured to earn AI citation: question framing, answer-block design, primary-evidence requirements, comparative structure, source citations, schema spec, internal-linking plan. Use after `plan-generative-seo-strategy` has identified the priority topic.
+
+## Related topics
+
+- **[09. AI SEO / 01. Content Optimization](../01.%20Content%20Optimization/README.md)** — prose-level patterns. Citation-magnet content sits on top of clean content optimisation.
+- **[09. AI SEO / 02. NLP Optimization](../02.%20NLP%20Optimization/README.md)** — entity signals are a precondition for citation eligibility.
+- **[09. AI SEO / 04. SERP Features](../04.%20SERP%20Features/README.md)** — AI Overview citation overlaps heavily with featured-snippet territory; coordinate.
+- **[09. AI SEO / 05. LLM Visibility](../05.%20LLM%20Visibility/README.md)** — measurement layer; mandatory baseline + post-investment re-measurement.
+- **[04. Content SEO / 03. Topic Clusters](../../04.%20Content%20SEO/03.%20Topic%20Clusters/README.md)** — cluster-level investment is the right unit; citation lift compounds across the cluster.
+- **[04. Content SEO / 08. Content Briefing](../../04.%20Content%20SEO/08.%20Content%20Briefing/README.md)** — citation-magnet brief is a longer-form sibling of the standard brief.
+- **[01. Strategy / 03. Competitor Analysis](../../01.%20Strategy/03.%20Competitor%20Analysis/README.md)** — competitor citation share is part of the strategic input.
+- **[06. Off-page SEO / 03. Digital PR](../../06.%20Off-page%20SEO/03.%20Digital%20PR/README.md)** — promotion into the citation graph; original-evidence assets earn organic links from publishers, which feed AI authority.
+- **[03. Technical SEO / 10. AI Crawler Management](../../03.%20Technical%20SEO/10.%20AI%20Crawler%20Management/README.md)** — citation requires retrieval-bot access. Verify before investing.
+
+## Further reading
+
+- [Princeton / GEO research paper — Generative Engine Optimization](https://arxiv.org/abs/2311.09735) — the foundational research on GEO patterns; one of the first to quantify citation-rate impact of structural content choices across engines.
+- [Aleyda Solis — Generative SEO playbook](https://www.aleydasolis.com/) — practitioner-level multi-engine strategy framework.
+- [Lily Ray / Amsive — AI search citation research](https://www.amsivedigital.com/insights/seo/) — ongoing citation-pattern analysis across AI Overviews, Perplexity, ChatGPT.
+- [Eli Schwartz — Product-Led SEO and AI search](https://www.elischwartz.co/) — strategic framing of citation as part of broader content moat.
+- [Cyrus Shepard / Zyppy — citation-pattern field studies](https://zyppy.com/seo/) — empirical analysis of which content patterns earn citation.
