@@ -194,6 +194,18 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - Three working postures named explicitly: open (allow all), visibility-only (allow retrieval, block training), strict-block (block all). The skills don't impose a posture — the founder chooses; the skills enforce.
 - Technical SEO is now 10 leaves total, considered v1-final.
 
+### 2026-05-01 — International SEO category complete (Category 8 of 10)
+
+- 1 category overview + 4 leaf READMEs + 4 skills shipped.
+- Skill mix: 4 leaves with 1 skill each. Three are audits / planners; one (`decide-multi-language-architecture`) is a strategic decision document with hard-to-reverse implications worth its own deliberation.
+- Established artifact subfolder names for this category: `international/` (single shared subfolder; outputs date-stamped: `hreflang-audit-*.md`, `architecture-decision-*.md`, `geo-targeting-plan-*.md`, `localisation-plan-*.md`).
+- Smallest category to date (4 leaves vs 6-8 in others). Reflects the narrower scope: international SEO matters when multi-market expansion is in play; not every brand needs all four leaves immediately.
+- The `audit-hreflang` skill explicitly catches the most-common implementation error (`uk` instead of `gb` for the UK). Captures domain-specific knowledge that's well-known but consistently missed.
+- The `decide-multi-language-architecture` skill is the first in the toolkit that explicitly produces a "hard to reverse" decision artefact stored in the per-business CLAUDE.md decisions log. The pattern (subdirectory > subdomain / ccTLD as starting recommendation; ccTLD migration staged in selectively) reflects practitioner consensus.
+- The `plan-localisation` skill includes regulatory framing per market (GDPR, Cookie Directive, EU Accessibility Act, Toubon Law in France, Verbraucherschutz in Germany, Italian VAT display, UK GDPR post-Brexit). Localization is increasingly legal-pressure-sensitive.
+- Cross-references to existing categories: Hreflang ↔ canonical-tags + indexing (Technical SEO); architecture ↔ URL structure + site migration; geo-targeting ↔ off-page (per-market backlinks); localization ↔ keyword research + content briefing + accessibility.
+- `.gitkeep` count: 13 (post-UX) → 9 (after International SEO). 9 leaves remaining across 2 categories (AI SEO 5 + Growth 4).
+
 ### 2026-05-01 — UX category complete (Category 7 of 10)
 
 - 1 category overview + 6 leaf READMEs + 6 skills shipped.

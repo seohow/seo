@@ -1,0 +1,103 @@
+# Hreflang
+
+> The technical signal that tells Google which page is for which language and market. Small implementation mistakes compound across hundreds of pages and silently produce wrong-market rankings. The most failure-prone surface in international SEO.
+
+## What it is
+
+Hreflang is an HTML attribute (or HTTP header / sitemap entry) that tells search engines that a page exists in alternate language or regional versions. A US visitor searching "mineral sunscreen" should land on `fieldandsun.com/en-us/...`; a UK visitor on `fieldandsun.com/en-gb/...`; a French visitor on `fieldandsun.com/fr/...`. Hreflang is the signalling mechanism that makes this happen reliably. Without it (or with wrong implementation), Google guesses — and often guesses wrong, sending UK visitors to US pages with US pricing and US shipping, damaging conversion and trust.
+
+For Field & Sun, Hreflang matters when the brand operates in multiple markets. Currently US + UK; if EU or other markets are added, Hreflang implementation must be in place before Google starts ranking the new market versions, or duplicate-content issues compound.
+
+## Why it matters
+
+Three reasons. First, **Hreflang is the only reliable mechanism for telling Google which version is for which market**. Other signals (ccTLDs, server location, GSC targeting) help but are weaker. Hreflang is the signal Google explicitly built for the use case.
+
+Second, **wrong Hreflang silently degrades all markets**. UK visitors landing on US pages convert at a fraction of UK-version rates. Sometimes the US page outranks the UK page in UK SERPs because Hreflang is wrong. Aggregate analytics hide the leak.
+
+Third, **Hreflang implementations decay**. Sites that ship clean Hreflang then add new pages without Hreflang updates accumulate gaps. Quarterly audit catches the drift.
+
+## Core concepts
+
+- **Hreflang attribute syntax.** `<link rel="alternate" hreflang="en-us" href="https://fieldandsun.com/en-us/...">`. One per language-region pair.
+- **Language codes (ISO 639-1).** `en` (English), `fr` (French), `de` (German), `es` (Spanish), etc.
+- **Region codes (ISO 3166-1 Alpha 2).** `us` (US), `gb` (UK — *not* `uk`), `fr` (France), `de` (Germany), `ca` (Canada).
+- **Combined codes.** `en-us`, `en-gb`, `en-ca`, `fr-fr`, `fr-ca`, `de-de`. Language-region.
+- **Self-referencing.** Every page must include its own Hreflang attribute (point to itself). Common omission.
+- **Return-tag requirement.** If page A includes Hreflang to page B, page B must include Hreflang back to page A. One-way Hreflang is invalid.
+- **x-default.** Special value for the fallback page (usually the page shown to users whose language / region doesn't match any specified version). Highly recommended.
+- **Implementation methods.** HTML `<link>` tag in `<head>` (most common); HTTP header (for non-HTML resources); XML sitemap (for sites with many alternate versions, ~10+ pages × ~10+ markets).
+- **Common errors.** Wrong region code (`uk` instead of `gb`), missing return tag, missing self-reference, missing x-default, mismatched canonical + Hreflang, wrong language for region (e.g. `en` for a French-Canadian page), URL inconsistency (Hreflang URL doesn't match canonical URL).
+- **GSC International Targeting report.** Reports Hreflang errors detected by Google. Underused.
+- **Hreflang doesn't override canonical.** If page A has canonical pointing to page B, Google ignores page A's Hreflang signal entirely. Hreflang and canonical must align.
+
+## A worked example
+
+> **Scenario:** Field & Sun has US + UK markets running. The team thinks Hreflang is implemented but hasn't audited. UK organic traffic is plateaued; team suspects UK visitors are being sent to US pages.
+>
+> **Step 1.** Run `audit-hreflang`. Skill validates implementation across priority pages (homepage, pillar, top PDPs).
+>
+> **Step 2.** Findings:
+>
+> - **Homepage:** Hreflang `en-us` and `en-uk` present, but `en-uk` is wrong code (should be `en-gb`). Google ignores `en-uk`; UK visitors fallback to US version.
+> - **Mineral-sunscreen pillar:** Hreflang implemented but missing self-reference. Google may still parse correctly but it's a flag.
+> - **Top PDPs:** Hreflang missing entirely on US PDPs. UK PDPs have one-way Hreflang (point to US, no return tag).
+> - **No x-default.** Visitors from non-US, non-UK markets get random fallback (usually US version).
+> - **Canonical mismatch:** Some US PDPs have canonical pointing to themselves but Hreflang URL listed as the UK version's URL — confusing signal.
+>
+> **Step 3.** Fix list:
+>
+> - Replace all `en-uk` with `en-gb` site-wide (template-level fix).
+> - Add self-references on every page.
+> - Implement Hreflang on all PDPs (template-level).
+> - Add `x-default` pointing to a market-selector landing page.
+> - Verify canonicals align with Hreflang.
+> - Re-submit affected URLs to GSC for re-crawling.
+>
+> **Step 4.** Result: 30 days post-fix, UK organic traffic to UK URLs +25%; US traffic to US URLs unchanged; UK conversion rate +12% (UK visitors now landing on UK pages with UK pricing / GBP / UK shipping).
+
+## How to do it
+
+1. **Run `audit-hreflang`.** Skill audits implementation across priority templates.
+2. **Decide implementation method.** HTML `<link>` (default for most sites), HTTP header, or XML sitemap. Each template uses one method consistently.
+3. **List all language-region pairs.** Per market: `en-us`, `en-gb`, `fr-fr`, etc. Cap at the markets actually served.
+4. **Implement on every alternate page.** Self-reference + reciprocal references to every other version.
+5. **Add x-default.** Single fallback URL (usually market-selector page or the brand's primary market).
+6. **Validate canonical alignment.** Hreflang URLs must match canonical URLs; canonical pointing elsewhere voids Hreflang.
+7. **Verify in GSC International Targeting report.** Errors flagged here.
+8. **Test with Hreflang-validation tools.** TechnicalSEO.com Hreflang Tester, Merkle Hreflang Tester, Sitebulb.
+9. **Re-audit quarterly.** New pages ship without Hreflang frequently; quarterly catches drift.
+10. **Document in technical-SEO change log.** Hreflang changes have site-wide implications; document.
+
+## Common pitfalls
+
+- **`uk` instead of `gb`.** Most common mistake. UK uses ISO `gb`; Google ignores `uk`.
+- **Missing self-reference.** Every page must include its own Hreflang.
+- **Missing return tags.** A→B without B→A is invalid.
+- **Mismatched URLs.** Hreflang URL must match canonical exactly (https vs http; trailing slash; www vs non-www).
+- **Wrong language code for region.** A French-Canadian page tagged `en-ca` (English-Canada) is a content / signal mismatch.
+- **No x-default.** Visitors from unspecified markets fall back unpredictably.
+- **Hreflang on canonicalised pages.** If a page is canonicalised to another, its Hreflang is ignored.
+- **Only homepage has Hreflang.** International signal must apply to every page that has alternates, not just homepage.
+- **Mixing implementation methods.** HTML tag on some pages, HTTP header on others — confusing.
+- **Hreflang in `<body>` instead of `<head>`.** `<head>` is required.
+- **Sitemap Hreflang for small sites.** Overkill; HTML tag is simpler at small scale.
+
+## Skills in this toolkit
+
+- **[audit-hreflang](skills/audit-hreflang/SKILL.md)** — produces a Hreflang implementation audit covering syntax correctness, region / language code validity (especially `gb` vs `uk`), self-reference + return-tag completeness, x-default presence, canonical alignment, GSC International Targeting findings, and a prioritised remediation list. Output is the operational fix list for international Hreflang. Quarterly cadence.
+
+## Related topics
+
+- **[02. Multi Language](../02.%20Multi%20Language/README.md)** — architecture decision precedes Hreflang.
+- **[03. Geo Targeting](../03.%20Geo%20Targeting/README.md)** — Hreflang is one of several geo-targeting signals.
+- **[03. Technical SEO / 02. Indexing](../../03.%20Technical%20SEO/02.%20Indexing/README.md)** — Hreflang issues surface in GSC indexing.
+- **[03. Technical SEO / 05. Canonical Tags](../../03.%20Technical%20SEO/05.%20Canonical%20Tags/README.md)** — Hreflang and canonical must align.
+- **[03. Technical SEO / 06. XML Sitemaps](../../03.%20Technical%20SEO/06.%20XML%20Sitemaps/README.md)** — sitemap-based Hreflang implementation.
+
+## Further reading
+
+- [Google Search Central — Hreflang Documentation](https://developers.google.com/search/docs/specialized/international/localized-versions) — canonical reference.
+- [Aleyda Solis — International SEO Checklist](https://www.aleydasolis.com/) — practitioner gold standard for Hreflang implementation.
+- [Bill Hartzer — Hreflang Implementation Guide](https://www.billhartzer.com/) — practical walkthroughs with examples.
+- [Merkle Hreflang Tags Tester](https://technicalseo.com/tools/hreflang/) — validation tool.
+- [Sitebulb — Hreflang Audit Documentation](https://sitebulb.com/) — practitioner audit framework.
