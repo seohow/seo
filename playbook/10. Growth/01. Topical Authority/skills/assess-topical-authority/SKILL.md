@@ -272,6 +272,7 @@ Authority graveyard: mixed — Wirecutter dominates head terms, but problem-solu
 Defensibility: real. Fitzpatrick I-VI photography library (200+ photos, consent on file); founder dermatology adjacency; six months of iron oxide tinting formulation work documented. Verdict: real.
 
 Six-dimension current state:
+
 - Coverage breadth: 24% (6 of 25 priority queries) — Thin → Partial.
 - Coverage depth: 30% deep, 40% medium, 30% thin.
 - Link velocity: 1 / Q — flat.

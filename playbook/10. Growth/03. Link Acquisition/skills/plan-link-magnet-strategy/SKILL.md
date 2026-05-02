@@ -251,6 +251,7 @@ Save the produced file to `businesses/<slug>/growth/link-magnet-strategy-[YYYY-Q
 **Output (abbreviated):**
 
 Picked 6 assets:
+
 1. Fitzpatrick I-VI photographic study (mineral, original research, 6 wk, ~$8k, link target 60-100, also citation-magnet for AI SEO Pick 1).
 2. Refill efficacy + waste primary research (refills, original research, 6 wk, ~$5k, link target 40-70).
 3. Iron oxide tinting mechanism guide (mineral, definitive guide, 4 wk, ~$3k, link target 30-50).
