@@ -147,7 +147,7 @@ If the priority keyword set or current SERP data is missing, ask before proceedi
 
 | Query | Feature | Reason | Revisit when |
 |-------|---------|--------|--------------|
-| best mineral sunscreen | Featured snippet | Wirecutter holds; commercial-review territory unwinnable | Brand DR 50+ AND multi-year content moat |
+| best mineral sunscreen | Featured snippet | Wirecutter holds; commercial-review territory unwinnable | Brand DR 50+ and multi-year content moat |
 | best mineral sunscreen | Knowledge panel | Generic head term; no specific entity | Never — wrong query type |
 | mineral sunscreen | Knowledge panel | Generic ingredient term; Wikipedia / Skin Cancer Foundation territory | Never — wrong query type |
 | (head terms × Wirecutter-territory features) | Various | Publisher dominance | When publisher absence opens up |

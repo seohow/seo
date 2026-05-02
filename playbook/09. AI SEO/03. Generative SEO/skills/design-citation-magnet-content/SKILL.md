@@ -85,7 +85,7 @@ If the strategic plan is missing or the topic is on its skip list, refuse with a
     - Citation-pattern notes (e.g. "Perplexity cites generously — 5+ citations means high probability of inclusion if structure is clean; ChatGPT cites sparingly — focus on definitive opening + sourced claims").
 12. **Brand voice constraints.**
     - Quote the relevant section 8 voice rules from the profile.
-    - Field & Sun: ingredient-led, plain-language, specific. Reject "clean beauty," "non-toxic," "chemical-free," "the ultimate," "miracle," "transformative," "anti-aging."
+    - Field & Sun: ingredient-led, plain-language, specific. Reject vague category language, unsupported safety claims, and inflated promise language.
 13. **Quality gates + reviewer checklist.**
     - Pre-publish gates: legal review for claims; brand-voice review; technical-SEO review for schema; primary-evidence consent / rights confirmation.
 14. **Production timeline + capacity check.**
@@ -201,7 +201,7 @@ If the strategic plan is missing or the topic is on its skip list, refuse with a
 - **Review cadence:** quarterly (next: Q3 2026).
 
 ## Brand voice constraints (non-negotiable)
-- Ingredient-led, plain-language, specific. Reject "clean beauty," "non-toxic," "chemical-free," "the ultimate," "miracle," "transformative," "anti-aging."
+- Ingredient-led, plain-language, specific. Reject vague category language, unsupported safety claims, and inflated promise language.
 - Use specific concentrations (15% L-ascorbic acid; 20% non-nano zinc oxide) rather than gestural ingredient claims.
 - Tone: warm, knowledgeable, plain-language. Confident without being preachy.
 
@@ -214,7 +214,7 @@ If the strategic plan is missing or the topic is on its skip list, refuse with a
 - [ ] Schema spec implemented and validated (no schema-content mismatch).
 - [ ] Internal links wired in both directions.
 - [ ] Last-updated date and update-reason note rendered visibly.
-- [ ] Brand voice review passed (no "clean beauty" / "non-toxic" / "chemical-free" residue).
+- [ ] Brand voice review passed (no vague category-language or unsupported-claims residue).
 - [ ] Legal review passed (FDA OTC drug claims; customer photography rights).
 - [ ] Technical SEO review passed (schema validation; canonical alignment; mobile rendering).
 - [ ] Pre-publish QA: read on mobile and desktop; verify TL;DR renders cleanly; verify comparative table is responsive.
@@ -271,7 +271,7 @@ Save the produced file to `businesses/<slug>/ai-seo/citation-magnet-[topic-slug]
 - Don't manufacture FAQ schema — it's schema theatre.
 - Don't propose AI-generated body content — moat is original; LLM rewrites homogenise.
 - Don't skip primary-evidence specification — under-specifying here wastes the budget.
-- Don't drift from brand voice — Field & Sun rejects "clean beauty," "non-toxic," "chemical-free," "the ultimate," "miracle," "transformative," "anti-aging."
+- Don't drift from brand voice — Field & Sun rejects vague category language, unsupported safety claims, and inflated promise language.
 - Don't promise specific citation outcomes — engine behaviour shifts.
 - Don't omit legal review — FDA OTC drug claims and customer-photography rights require it.
 - Don't skip the freshness specification — citation eligibility decays without freshness signals.

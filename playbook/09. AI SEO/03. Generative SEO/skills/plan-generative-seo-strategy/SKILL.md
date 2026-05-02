@@ -175,7 +175,7 @@ If LLM visibility baseline or defensibility candidates are missing, ask before p
 
 | Query | Why we're skipping | Revisit when |
 |-------|--------------------|--------------|
-| best mineral sunscreen (head term) | Wirecutter / Strategist territory; we cannot out-resource publisher review depth | Brand DR reaches 50+ AND we have a multi-year content moat |
+| best mineral sunscreen (head term) | Wirecutter / Strategist territory; we cannot out-resource publisher review depth | Brand DR reaches 50+ and we have a multi-year content moat |
 | best vitamin c serum (head term) | Same — already on the brand's existing skip list per Q2 2026 strategy | — |
 | ... | ... | ... |
 
@@ -212,7 +212,7 @@ Save the produced file to `businesses/<slug>/ai-seo/generative-seo-strategy-[clu
 - Success metrics linkable to `audit-llm-visibility` follow-ups.
 - 2-4 picks (not 10). Concentration over breadth.
 - Plan fits capacity; if it doesn't, recommend cutting picks.
-- Brand voice respected — Field & Sun: ingredient-led, plain-language, no "clean beauty" / "non-toxic" / "chemical-free" framing.
+- Brand voice respected — Field & Sun: ingredient-led, plain-language, no vague category language or unsupported safety claims.
 
 ## Common mistakes to avoid
 

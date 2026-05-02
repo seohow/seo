@@ -228,7 +228,7 @@ Save the produced file to `businesses/<slug>/ai-seo/entity-optimisation-audit-[c
 - Don't sequence remediations alphabetically — leverage-first.
 - Don't drift into prose-level recommendations — that's `audit-ai-content-readiness`.
 - Don't drift into schema-from-scratch — that's `generate-schema-markup` in Technical SEO.
-- Don't forget the cluster's brand-voice context — Field & Sun rejects "clean beauty" / "non-toxic" / "chemical-free" framing.
+- Don't forget the cluster's brand-voice context — Field & Sun rejects vague category language and unsupported safety claims.
 
 ## Example
 

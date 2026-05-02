@@ -170,7 +170,7 @@ Save the produced file to `businesses/<slug>/ai-seo/ai-content-readiness-audit-[
 - Cross-page patterns identified for template-level leverage; don't list 12 page-level fixes for a single template issue.
 - Effort estimates included per fix.
 - Traffic-weighted prioritisation (top organic pages first, not alphabetical).
-- Brand voice maintained — recommendations align with section 8 of the business profile (Field & Sun: ingredient-led, plain-language, specific; reject "clean beauty" / "non-toxic" / "chemical-free" framing).
+- Brand voice maintained — recommendations align with section 8 of the business profile (Field & Sun: ingredient-led, plain-language, specific; reject vague category language and unsupported safety claims).
 - Acceptance criteria + open questions sections present.
 - Output is specific to the business — don't produce a generic "AI SEO best practices" document.
 
@@ -184,7 +184,7 @@ Save the produced file to `businesses/<slug>/ai-seo/ai-content-readiness-audit-[
 - Don't ignore template-level patterns — the leverage is much higher than per-page rework.
 - Don't recommend rewriting with AI tools — the audit identifies changes; humans make them.
 - Don't assume retrieval bots are allowed — flag the prerequisite check on Technical SEO leaf 10 in Risks.
-- Don't drift from Field & Sun voice — no "clean beauty," "non-toxic," "chemical-free" in any suggested rewrite.
+- Don't drift from Field & Sun voice — no vague category language or unsupported safety claims in any suggested rewrite.
 
 ## Example
 

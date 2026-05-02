@@ -87,7 +87,7 @@ Third, **the leverage compounds**. A page that earns AI Overview citation for a 
 - **Schema theatre as substitute for content quality.** Adding elaborate schema to weak content doesn't earn citation. Content quality first; schema reinforces.
 - **Hijacking by AI-generated content.** Producing citation-magnet content with an LLM produces homogenous output that loses to brand-distinct content. The brief is AI-informed; the writing is human.
 - **Over-investing without measurement.** Generative SEO is high-leverage but not free. Pick 2-4 priority topics, measure the impact, and only scale the patterns that worked.
-- **Forgetting brand-voice constraints.** Citation polish doesn't override editorial guardrails. Field & Sun's voice (ingredient-led, plain-language, no "clean beauty" / "non-toxic" framing) holds even in generative-SEO content.
+- **Forgetting brand-voice constraints.** Citation polish doesn't override editorial guardrails. Field & Sun's voice (ingredient-led, plain-language, no vague category language or unsupported safety claims) holds even in generative-SEO content.
 - **Skipping the planner.** Going directly from "let's do generative SEO" to "write content" without `plan-generative-seo-strategy` produces unfocused work that under-performs.
 
 ## Skills in this toolkit
