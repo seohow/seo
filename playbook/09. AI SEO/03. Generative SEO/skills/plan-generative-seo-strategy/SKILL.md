@@ -234,13 +234,16 @@ Save the produced file to `businesses/<slug>/ai-seo/generative-seo-strategy-[clu
 **Output (abbreviated):**
 
 Win-able picks (2):
+
 - **Pick 1: "Mineral sunscreen white cast on darker skin tones"** — original-photography moat. 4 priority queries. 4-6 week investment. Expected brand-mention rate 0% → 40-60% at 90 days.
 - **Pick 2: "Iron oxide tinting mechanism in mineral SPF"** — ingredient-mechanism depth. 3 priority queries. 2-3 week investment. Lower production cost; smaller halo but durable.
 
 Marginal pick (1, defer):
+
 - **Pick 3: "Mineral SPF for sensitive skin"** — partial angle (we have customer evidence but not formulation specifics); revisit after Pick 1 ships.
 
 Skip list (3 explicitly):
+
 - "best mineral sunscreen" — Wirecutter territory.
 - "tinted mineral sunscreen review" — Strategist territory; commercial-review intent.
 - "best SPF for face" — head-term commercial-review; publishers dominate.

@@ -257,6 +257,7 @@ Save the produced file to `businesses/<slug>/ai-seo/llm-visibility-audit-[YYYY-Q
 Overall unbranded mention rate: 4% across all engines.
 
 Per engine:
+
 - Perplexity: 6% (highest — generous citation pattern).
 - AI Overview: 5%.
 - Claude: 4%.
@@ -264,6 +265,7 @@ Per engine:
 - Gemini: 3%.
 
 Per cluster:
+
 - Refills: 50% (only cluster with strong brand presence — explicit "refillable beauty" queries cite Field & Sun positively).
 - Mineral sunscreen: 8% (mostly in-list mentions; opportunity — Pick 1 candidate).
 - Vitamin C: 0% (publisher dominance; skip per generative-SEO strategy).
