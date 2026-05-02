@@ -194,6 +194,48 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - Three working postures named explicitly: open (allow all), visibility-only (allow retrieval, block training), strict-block (block all). The skills don't impose a posture — the founder chooses; the skills enforce.
 - Technical SEO is now 10 leaves total, considered v1-final.
 
+### 2026-05-02 — Growth category complete (Category 10 of 10) — v1 toolkit complete
+
+- 1 category overview + 4 leaf READMEs + 4 skills shipped.
+- Skill mix: 4 leaves with 1 skill each. The category is operational / strategic rather than per-asset, so single-skill-per-leaf matches the shape (each skill is a planner / assessment / design output rather than a per-page executor).
+- Established artifact subfolder name for this category: `growth/` (single shared subfolder; outputs date-stamped or experiment-slug-stamped: `topical-authority-assessment-*.md`, `content-scaling-plan-*.md`, `link-magnet-strategy-*.md`, `seo-experiment-*.md`). Matches the single-subfolder pattern from UX, International, Analytics, AI SEO.
+- Boundaries with adjacent categories restated explicitly throughout the category overview and leaf READMEs:
+  - Topical Authority (Growth) vs Pillar Pages (Content SEO leaf 02): Pillars are the artifact; Topical Authority is the multi-year compounding outcome.
+  - Content Scaling (Growth) vs Content Briefing (Content SEO leaf 08): Briefing is the artifact-level technique; Scaling is the operational system that produces briefs at volume + quality.
+  - Link Acquisition (Growth) vs Link Building (Off-page leaf 01): Link Building is tactical / per-prospect outreach; Link Acquisition is the strategic / asset-driven / programmatic layer that feeds outreach.
+  - SEO Experiments (Growth) vs A/B Testing (UX leaf 04): UX A/B is conversion-focused; SEO Experiments are ranking / citation / feature-focused, with split-pages variant design + 30-90 day windows + SEO-safety review.
+- The category is positioned as the *compounding-growth* layer. The framing is that Strategy / On-page / Technical / Content / Analytics / Off-page / UX / International / AI SEO are the operational layers; Growth is what happens once those are in place and the question shifts from "are we doing SEO correctly" to "are we compounding."
+- `assess-topical-authority` is the integrating skill of the category — its output flows into `plan-content-scaling-operation` (capacity needed), `plan-link-magnet-strategy` (external signal feeding), and `design-seo-experiment` (which interventions to validate). Cross-references are dense within the category and outward to Content / Off-page / AI SEO / Strategy / Analytics.
+- `assess-topical-authority` introduces the **authority-graveyard check** as a mandatory step — clusters dominated by Wikipedia / Wirecutter / Strategist / Healthline / Verywell are skip-by-default unless defensibility is exceptional. Pattern is portable to other strategic-investment skills.
+- `assess-topical-authority` also introduces the **defensibility test** as a hard gate: generic claims ("good ingredients," "customer love") fail; specific levers (named original evidence, named credentials, named primary research) pass. Without a passing defensibility lever, the assessment recommends skip rather than invest.
+- `plan-content-scaling-operation` is opinionated about where teams over-invest (writer count) vs under-invest (briefs, editorial review, brand-voice review as a *standalone stage*, technical SEO review as a *standalone stage*, promotion bandwidth, refresh allocation). The standalone-voice-review and standalone-technical-SEO-review patterns are explicit about "don't bundle into editorial — voice drift goes undetected." Real-world cost ratio is named: ~4-5x current spend for ~3-4x volume + dramatic quality upgrade.
+- `plan-link-magnet-strategy` is opinionated about the **defensibility ladder** — original research / primary data > definitive guides > free tools > comparative resources > visual / data assets > curated lists. Listicles and thin assets are explicitly off the table. Anti-patterns (paid links, PBNs, link exchanges, scaled guest posting, comment-stuffing) are explicitly forbidden in every output.
+- `design-seo-experiment` introduces the **pre-registration discipline** as non-negotiable: hypothesis tightening, pre-registered success / null / inconclusive criteria, A/A reference for baseline variance, split-pages variant design (not split-traffic), confounder tracking, SEO-safety review, rollback plan, and standards-update-path defined for all three outcome paths. Null results are wins. Statistical rigor + SEO-safety + standards-update path → learnings compound.
+- Risk-aware shape across all 4 skills: each surfaces the specific category risks (multi-year-feedback-loop / leadership-patience for Topical Authority; cost-ratio + executive-sponsorship + voice-drift for Content Scaling; production-cost-creep + anti-pattern-resistance for Link Acquisition; pre-registration-discipline + confounder-management for SEO Experiments).
+- `.gitkeep` count: 4 (post-AI SEO) → 0 (after Growth). **v1 toolkit complete.**
+
+### 2026-05-02 — v1 final inventory and structural complete
+
+- **Categories:** 10 (Strategy, On-page SEO, Technical SEO, Content SEO, Analytics, Off-page SEO, UX, International SEO, AI SEO, Growth).
+- **Leaves:** 63 across the 10 categories.
+- **Category overview READMEs:** 10.
+- **Leaf READMEs:** 63.
+- **Playbook skills:** 73.
+- **Repo-level setup skills:** 1 (`generate-business-profile`).
+- **Total skills:** 74.
+- **Templates:** README, SKILL, business profile, business CLAUDE — all in `templates/`.
+- **Sample business:** Field & Sun (canonical fixture; lives at `businesses/field-and-sun/` with profile + CLAUDE.md as worked examples).
+- **`.gitkeep` files:** 0. No empty leaves.
+- **Cross-references:** consistent relative paths (`../`, `../../`) throughout; verified resolving across all 10 categories at category-completion checkpoints.
+
+The toolkit is structurally v1-final. Future work splits into three buckets:
+
+1. **Maintenance.** Periodic re-validation of cross-references; stale-language scans on any updates; voice-rubric updates when Field & Sun profile evolves; tooling-vendor references are time-sensitive (especially LLM-visibility tools, AI-crawler user-agents, schema patterns) — verify at use time.
+2. **Depth additions within v1 categories.** A few leaves could warrant a second skill in v1.5 (e.g. on-page leaf 07 Content Optimization could add a per-cluster optimisation planner; technical leaf 02 Indexing could add a recovery-from-deindexing playbook). Treat as additive within existing structure; don't add new leaves without explicit user direction.
+3. **Parked categories** (see "Future categories under consideration"): Local SEO; E-commerce SEO as dedicated category; Video / YouTube SEO; Newsletter SEO; Podcast SEO. Revisit only when the user raises them or when v1 maintenance is settled.
+
+Don't add new categories or leaves without explicit user direction. The v1 structure is final.
+
 ### 2026-05-02 — AI SEO category complete (Category 9 of 10)
 
 - 1 category overview + 5 leaf READMEs + 6 skills shipped.
