@@ -83,7 +83,7 @@ The trade-off: rank tracking tools are expensive ($100-1,000+/mo for serious use
 
 ## Skills in this toolkit
 
-- **[set-up-rank-tracking](skills/set-up-rank-tracking/SKILL.md)** — produces a rank-tracking project spec: tool recommendation (matched to budget + use case), curated keyword set (pulled from cluster map and ranked by priority), competitor selection, geographic + device + cadence config, SERP-feature tracking plan, alert thresholds, dashboard design, and integration with the broader analytics stack. The setup brief that prevents "we have a tool but nobody uses it." Quarterly cadence to refresh the keyword set.
+- **[set-up-rank-tracking](../../../skills/analytics/set-up-rank-tracking/SKILL.md)** — produces a rank-tracking project spec: tool recommendation (matched to budget + use case), curated keyword set (pulled from cluster map and ranked by priority), competitor selection, geographic + device + cadence config, SERP-feature tracking plan, alert thresholds, dashboard design, and integration with the broader analytics stack. The setup brief that prevents "we have a tool but nobody uses it." Quarterly cadence to refresh the keyword set.
 
 ## Related topics
 

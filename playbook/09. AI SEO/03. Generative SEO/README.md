@@ -92,8 +92,8 @@ Third, **the leverage compounds**. A page that earns AI Overview citation for a 
 
 ## Skills in this toolkit
 
-- **[plan-generative-seo-strategy](skills/plan-generative-seo-strategy/SKILL.md)** — strategic plan for which queries / topics the brand should invest citation-magnet content against. Forces honest assessment of competitor citation share, defensible angle, and per-engine state. Output is a prioritised topic investment plan with rationale per pick. Use before any citation-magnet content investment; quarterly cadence per priority cluster.
-- **[design-citation-magnet-content](skills/design-citation-magnet-content/SKILL.md)** — per-topic executor that produces a content brief specifically structured to earn AI citation: question framing, answer-block design, primary-evidence requirements, comparative structure, source citations, schema spec, internal-linking plan. Use after `plan-generative-seo-strategy` has identified the priority topic.
+- **[plan-generative-seo-strategy](../../../skills/ai/plan-generative-seo-strategy/SKILL.md)** — strategic plan for which queries / topics the brand should invest citation-magnet content against. Forces honest assessment of competitor citation share, defensible angle, and per-engine state. Output is a prioritised topic investment plan with rationale per pick. Use before any citation-magnet content investment; quarterly cadence per priority cluster.
+- **[design-citation-magnet-content](../../../skills/ai/design-citation-magnet-content/SKILL.md)** — per-topic executor that produces a content brief specifically structured to earn AI citation: question framing, answer-block design, primary-evidence requirements, comparative structure, source citations, schema spec, internal-linking plan. Use after `plan-generative-seo-strategy` has identified the priority topic.
 
 ## Related topics
 

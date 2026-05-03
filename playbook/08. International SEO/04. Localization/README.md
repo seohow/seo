@@ -81,7 +81,7 @@ Third, **regulatory compliance is per-market**. EU markets require GDPR, Cookie 
 
 ## Skills in this toolkit
 
-- **[plan-localisation](skills/plan-localisation/SKILL.md)** — produces the per-market localization plan covering translation method (machine / machine+review / human / native-in-house), cultural adaptation strategy, regulatory + legal compliance per market (GDPR, Cookie Directive, EU Accessibility Act, country-specific), brand-voice variation guide, currency + pricing display, date / number formats, SEO-specific keyword research per market (don't translate keywords; research fresh), priority template sequence, quality-control plan (native-speaker review), and translation-memory strategy. Output is the operational plan that engineering, content, and legal can execute against. Run before launching new markets.
+- **[plan-localisation](../../../skills/international/plan-localisation/SKILL.md)** — produces the per-market localization plan covering translation method (machine / machine+review / human / native-in-house), cultural adaptation strategy, regulatory + legal compliance per market (GDPR, Cookie Directive, EU Accessibility Act, country-specific), brand-voice variation guide, currency + pricing display, date / number formats, SEO-specific keyword research per market (don't translate keywords; research fresh), priority template sequence, quality-control plan (native-speaker review), and translation-memory strategy. Output is the operational plan that engineering, content, and legal can execute against. Run before launching new markets.
 
 ## Related topics
 

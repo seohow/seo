@@ -77,7 +77,7 @@ The trade-off: PR campaigns cost 60-200 hours of effort each (data + production 
 
 ## Skills in this toolkit
 
-- **[plan-digital-pr-campaign](skills/plan-digital-pr-campaign/SKILL.md)** — produces a digital PR campaign plan covering angle archetype + newsworthiness validation, data plan (survey design / internal-data analysis / synthesis), asset list (report + summary + chart images + expert quotes + bio), target publication list (Tier 1-3 with named journalists), embargo strategy (exclusive vs. broad), pitch templates, follow-up cadence, success metrics, and risk forecast. Output is the operating brief for a 8-12-week campaign.
+- **[plan-digital-pr-campaign](../../../skills/off-page/plan-digital-pr-campaign/SKILL.md)** — produces a digital PR campaign plan covering angle archetype + newsworthiness validation, data plan (survey design / internal-data analysis / synthesis), asset list (report + summary + chart images + expert quotes + bio), target publication list (Tier 1-3 with named journalists), embargo strategy (exclusive vs. broad), pitch templates, follow-up cadence, success metrics, and risk forecast. Output is the operating brief for a 8-12-week campaign.
 
 ## Related topics
 

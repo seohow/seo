@@ -84,7 +84,7 @@ For Field & Sun: a 1-day conversion-tracking audit before any major SEO investme
 
 ## Skills in this toolkit
 
-- **[audit-conversion-tracking](skills/audit-conversion-tracking/SKILL.md)** — produces a structured conversion-tracking audit covering event implementation, conversion definitions, ecommerce parameters, attribution model, Consent Mode v2 (EU/UK), source-of-truth triangulation, cluster-attribution capability, and server-side tracking. Output is a prioritised fix list with severity, root cause, and effort estimates. The audit that should run before any SEO revenue claim is reported. Quarterly cadence.
+- **[audit-conversion-tracking](../../../skills/analytics/audit-conversion-tracking/SKILL.md)** — produces a structured conversion-tracking audit covering event implementation, conversion definitions, ecommerce parameters, attribution model, Consent Mode v2 (EU/UK), source-of-truth triangulation, cluster-attribution capability, and server-side tracking. Output is a prioritised fix list with severity, root cause, and effort estimates. The audit that should run before any SEO revenue claim is reported. Quarterly cadence.
 
 ## Related topics
 

@@ -80,7 +80,7 @@ The decision involves real trade-offs. There's no universally-right choice; the 
 
 ## Skills in this toolkit
 
-- **[decide-multi-language-architecture](skills/decide-multi-language-architecture/SKILL.md)** — produces the architectural decision document covering trade-off analysis (SEO equity inheritance, operational cost, geo-signal strength, brand integrity, CMS compatibility), market-specific norms, recommendation per market, and migration-cost forecast if change is implied. Output is the decision artefact stored in the per-business CLAUDE.md decisions log. Run before any multi-market expansion.
+- **[decide-multi-language-architecture](../../../skills/international/decide-multi-language-architecture/SKILL.md)** — produces the architectural decision document covering trade-off analysis (SEO equity inheritance, operational cost, geo-signal strength, brand integrity, CMS compatibility), market-specific norms, recommendation per market, and migration-cost forecast if change is implied. Output is the decision artefact stored in the per-business CLAUDE.md decisions log. Run before any multi-market expansion.
 
 ## Related topics
 

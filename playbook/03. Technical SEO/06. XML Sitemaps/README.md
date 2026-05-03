@@ -80,7 +80,7 @@ The sitemap also surfaces sitemap-specific problems in GSC's Sitemaps report: pa
 
 ## Skills in this toolkit
 
-- **[audit-xml-sitemap](skills/audit-xml-sitemap/SKILL.md)** — analyses the sitemap (or sitemap-index + child sitemaps) for non-canonical URLs, broken / `noindex` URLs, stale `lastmod`, missing canonical URLs, and sitemap-index structural issues. Cross-references with GSC Pages export, canonical-audit output, and URL-conventions doc when available. Produces a remediation list with template-level vs per-URL actions.
+- **[audit-xml-sitemap](../../../skills/technical/audit-xml-sitemap/SKILL.md)** — analyses the sitemap (or sitemap-index + child sitemaps) for non-canonical URLs, broken / `noindex` URLs, stale `lastmod`, missing canonical URLs, and sitemap-index structural issues. Cross-references with GSC Pages export, canonical-audit output, and URL-conventions doc when available. Produces a remediation list with template-level vs per-URL actions.
 
 ## Related topics
 

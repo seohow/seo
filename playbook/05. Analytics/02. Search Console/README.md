@@ -92,8 +92,8 @@ For Field & Sun: a weekly 30-minute GSC review by the marketing team is plausibl
 
 ## Skills in this toolkit
 
-- **[audit-search-console-setup](skills/audit-search-console-setup/SKILL.md)** — produces a structured GSC configuration audit covering property type, sitemap submission, coverage status, enhancement reports, integrations, and access control. Output is a prioritised fix list. Should run before any GSC-based reporting is considered trustworthy. Quarterly cadence.
-- **[analyse-search-performance](skills/analyse-search-performance/SKILL.md)** — produces a structured GSC performance analysis: top queries by clicks / impressions / position, decline detection (queries / pages losing position), CTR-opportunity identification, query ↔ page intersection, cluster-level rollup. Output is the report stakeholders read; feeds Strategy + Content SEO refresh decisions.
+- **[audit-search-console-setup](../../../skills/analytics/audit-search-console-setup/SKILL.md)** — produces a structured GSC configuration audit covering property type, sitemap submission, coverage status, enhancement reports, integrations, and access control. Output is a prioritised fix list. Should run before any GSC-based reporting is considered trustworthy. Quarterly cadence.
+- **[analyse-search-performance](../../../skills/analytics/analyse-search-performance/SKILL.md)** — produces a structured GSC performance analysis: top queries by clicks / impressions / position, decline detection (queries / pages losing position), CTR-opportunity identification, query ↔ page intersection, cluster-level rollup. Output is the report stakeholders read; feeds Strategy + Content SEO refresh decisions.
 
 ## Related topics
 

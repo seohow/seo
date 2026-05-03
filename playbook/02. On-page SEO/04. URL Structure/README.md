@@ -72,8 +72,8 @@ Third — and most expensive when ignored — **URLs are the costliest thing to 
 
 ## Skills in this toolkit
 
-- **[define-url-conventions](skills/define-url-conventions/SKILL.md)** — produces a URL-structure convention document for the site: per page type, a pattern + 2-3 example URLs + edge-case notes. Use for new sites or new sections.
-- **[audit-urls](skills/audit-urls/SKILL.md)** — takes a list of existing URLs (from a sitemap, GSC export, or crawler), scores each against best practice and the site's conventions, and produces a prioritised migration list with old-URL → new-URL mappings and redirect notes.
+- **[define-url-conventions](../../../skills/on-page/define-url-conventions/SKILL.md)** — produces a URL-structure convention document for the site: per page type, a pattern + 2-3 example URLs + edge-case notes. Use for new sites or new sections.
+- **[audit-urls](../../../skills/on-page/audit-urls/SKILL.md)** — takes a list of existing URLs (from a sitemap, GSC export, or crawler), scores each against best practice and the site's conventions, and produces a prioritised migration list with old-URL → new-URL mappings and redirect notes.
 
 ## Related topics
 

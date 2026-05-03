@@ -109,7 +109,7 @@ For Field & Sun: a quarterly accessibility audit on priority templates is plausi
 
 ## Skills in this toolkit
 
-- **[audit-accessibility](skills/audit-accessibility/SKILL.md)** — produces a WCAG 2.1 AA accessibility audit covering priority templates. Combines automated tool runs (Axe, WAVE, Lighthouse) with manual testing (keyboard navigation, screen-reader, zoom-to-200%, contrast spot-checks). Output is a prioritised remediation list with severity (critical / high / medium / low), WCAG criterion mapping per issue, fix recommendations, and legal-exposure assessment. Quarterly cadence.
+- **[audit-accessibility](../../../skills/ux/audit-accessibility/SKILL.md)** — produces a WCAG 2.1 AA accessibility audit covering priority templates. Combines automated tool runs (Axe, WAVE, Lighthouse) with manual testing (keyboard navigation, screen-reader, zoom-to-200%, contrast spot-checks). Output is a prioritised remediation list with severity (critical / high / medium / low), WCAG criterion mapping per issue, fix recommendations, and legal-exposure assessment. Quarterly cadence.
 
 ## Related topics
 

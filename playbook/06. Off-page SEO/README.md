@@ -71,14 +71,14 @@ It produces inputs for downstream categories:
 
 The full inventory across the 8 sub-topics:
 
-- **[plan-link-building-campaign](01.%20Link%20Building/skills/plan-link-building-campaign/SKILL.md)** — strategic plan for a quarterly link-building effort, anchored to clusters + business goals.
-- **[plan-guest-posting-campaign](02.%20Guest%20Posting/skills/plan-guest-posting-campaign/SKILL.md)** — guest-post target identification + pitch-angle planning.
-- **[plan-digital-pr-campaign](03.%20Digital%20PR/skills/plan-digital-pr-campaign/SKILL.md)** — design a digital PR campaign around an original-data / expert-commentary / newsworthy angle.
-- **[monitor-brand-mentions](04.%20Brand%20Mentions/skills/monitor-brand-mentions/SKILL.md)** — set up brand-mention tracking + unlinked-mention conversion flow.
-- **[design-outreach-process](05.%20Outreach/skills/design-outreach-process/SKILL.md)** — email templates, CRM, follow-up cadence, response handling.
-- **[set-up-haro-response-system](06.%20HARO%20and%20Journalist%20Outreach/skills/set-up-haro-response-system/SKILL.md)** — reactive PR system: inbox monitoring, response templates, query filtering, response triage.
-- **[plan-broken-link-campaign](07.%20Broken%20Link%20Building/skills/plan-broken-link-campaign/SKILL.md)** — broken-link prospecting + replacement-content pitch.
-- **[audit-branded-serp](08.%20Reputation%20Management/skills/audit-branded-serp/SKILL.md)** — branded-SERP audit + reputation-management plan.
+- **[plan-link-building-campaign](../../skills/off-page/plan-link-building-campaign/SKILL.md)** — strategic plan for a quarterly link-building effort, anchored to clusters + business goals.
+- **[plan-guest-posting-campaign](../../skills/off-page/plan-guest-posting-campaign/SKILL.md)** — guest-post target identification + pitch-angle planning.
+- **[plan-digital-pr-campaign](../../skills/off-page/plan-digital-pr-campaign/SKILL.md)** — design a digital PR campaign around an original-data / expert-commentary / newsworthy angle.
+- **[monitor-brand-mentions](../../skills/off-page/monitor-brand-mentions/SKILL.md)** — set up brand-mention tracking + unlinked-mention conversion flow.
+- **[design-outreach-process](../../skills/off-page/design-outreach-process/SKILL.md)** — email templates, CRM, follow-up cadence, response handling.
+- **[set-up-haro-response-system](../../skills/off-page/set-up-haro-response-system/SKILL.md)** — reactive PR system: inbox monitoring, response templates, query filtering, response triage.
+- **[plan-broken-link-campaign](../../skills/off-page/plan-broken-link-campaign/SKILL.md)** — broken-link prospecting + replacement-content pitch.
+- **[audit-branded-serp](../../skills/off-page/audit-branded-serp/SKILL.md)** — branded-SERP audit + reputation-management plan.
 
 ## Common pitfalls
 

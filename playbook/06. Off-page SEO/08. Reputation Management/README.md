@@ -79,7 +79,7 @@ Third, **defensive work is cheap if proactive, expensive if reactive**. Catching
 
 ## Skills in this toolkit
 
-- **[audit-branded-serp](skills/audit-branded-serp/SKILL.md)** — produces a branded-SERP + reputation audit covering page 1 of "[brand]" search + variants ("reviews," "vs," "is X trustworthy," "complaints"), AI Overview / LLM probe (ChatGPT, Claude, Gemini, Perplexity), review-platform audit (Trustpilot, Google Reviews, Yelp, etc.), surface categorisation (Tier 1-4), defensive content gap identification, recommended actions (publish defensive pages, engage with reviews, AI-Overview shaping content), and quarterly cadence schedule with documented escalation paths. Output is the operating brief for the reputation programme. Quarterly cadence.
+- **[audit-branded-serp](../../../skills/off-page/audit-branded-serp/SKILL.md)** — produces a branded-SERP + reputation audit covering page 1 of "[brand]" search + variants ("reviews," "vs," "is X trustworthy," "complaints"), AI Overview / LLM probe (ChatGPT, Claude, Gemini, Perplexity), review-platform audit (Trustpilot, Google Reviews, Yelp, etc.), surface categorisation (Tier 1-4), defensive content gap identification, recommended actions (publish defensive pages, engage with reviews, AI-Overview shaping content), and quarterly cadence schedule with documented escalation paths. Output is the operating brief for the reputation programme. Quarterly cadence.
 
 ## Related topics
 

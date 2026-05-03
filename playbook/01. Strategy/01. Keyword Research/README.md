@@ -52,8 +52,8 @@ Every page on your site either earns search traffic or it doesn't, and what dete
 
 ## Skills in this toolkit
 
-- **[plan-keyword-research](skills/plan-keyword-research/SKILL.md)** — scopes a keyword research project for your business: which seed lists to start from, which tools to use, what the deliverable should look like, and how long it should take.
-- **[generate-seed-keywords](skills/generate-seed-keywords/SKILL.md)** — produces an initial seed keyword list (50–100 candidates) from your business profile, ready to be expanded in your keyword tool of choice.
+- **[plan-keyword-research](../../../skills/strategy/plan-keyword-research/SKILL.md)** — scopes a keyword research project for your business: which seed lists to start from, which tools to use, what the deliverable should look like, and how long it should take.
+- **[generate-seed-keywords](../../../skills/strategy/generate-seed-keywords/SKILL.md)** — produces an initial seed keyword list (50–100 candidates) from your business profile, ready to be expanded in your keyword tool of choice.
 
 ## Related topics
 

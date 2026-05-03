@@ -80,8 +80,8 @@ Beyond rankings, migration is the technical change most likely to interact badly
 
 ## Skills in this toolkit
 
-- **[plan-site-migration](skills/plan-site-migration/SKILL.md)** — produces a written migration plan: scope (which URLs change, what type of migration), redirect strategy, pre-migration baseline checklist, sequencing (single-shot vs staged), QA gates, recovery monitoring schedule, rollback trigger definition, downstream-system update list, and post-migration documentation requirements. Run this first; the plan is the prerequisite to any other migration work.
-- **[build-redirect-map](skills/build-redirect-map/SKILL.md)** — builds the operational old-URL → new-URL → 301 mapping. Inputs: full URL inventory (sitemap + crawler), the new URL convention or per-URL mapping rules, any existing redirect file. Outputs: the mapping table with chain-detection (no multi-hop), 200-validation status per new URL, batch order for staged rollout, and an implementation-ready file for the CMS or server.
+- **[plan-site-migration](../../../skills/technical/plan-site-migration/SKILL.md)** — produces a written migration plan: scope (which URLs change, what type of migration), redirect strategy, pre-migration baseline checklist, sequencing (single-shot vs staged), QA gates, recovery monitoring schedule, rollback trigger definition, downstream-system update list, and post-migration documentation requirements. Run this first; the plan is the prerequisite to any other migration work.
+- **[build-redirect-map](../../../skills/technical/build-redirect-map/SKILL.md)** — builds the operational old-URL → new-URL → 301 mapping. Inputs: full URL inventory (sitemap + crawler), the new URL convention or per-URL mapping rules, any existing redirect file. Outputs: the mapping table with chain-detection (no multi-hop), 200-validation status per new URL, batch order for staged rollout, and an implementation-ready file for the CMS or server.
 
 ## Related topics
 

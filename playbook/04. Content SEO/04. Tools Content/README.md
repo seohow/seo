@@ -80,7 +80,7 @@ The trade-off: tools are slow and expensive to build (4-12 weeks engineering vs.
 
 ## Skills in this toolkit
 
-- **[plan-tool-page](skills/plan-tool-page/SKILL.md)** — evaluates whether a tool fits the brand and produces the design brief if so. Covers tool archetype, positioning, input / output logic, URL pattern, surrounding content, tech requirements, schema strategy, and link-acquisition plan. Output is the spec engineering + content can build against.
+- **[plan-tool-page](../../../skills/content/plan-tool-page/SKILL.md)** — evaluates whether a tool fits the brand and produces the design brief if so. Covers tool archetype, positioning, input / output logic, URL pattern, surrounding content, tech requirements, schema strategy, and link-acquisition plan. Output is the spec engineering + content can build against.
 
 ## Related topics
 

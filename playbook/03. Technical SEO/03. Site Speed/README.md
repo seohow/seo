@@ -46,7 +46,7 @@ For Field & Sun and most D2C beauty brands on Shopify, the typical site-speed pr
 2. **Pick the highest-impact pages first.** PDPs, top collection pages, top blog posts. Fix-once-benefit-every-visitor logic — start where the visitors are.
 3. **Run PageSpeed Insights on each priority page.** Note the field-data Core Web Vitals first (real-user); then read lab data for *what's causing* the failures. Field tells you whether to fix; lab tells you how.
 4. **Identify the LCP element on each page.** PageSpeed Insights labels it explicitly. On ecom PDPs, almost always a hero image or video. Fix the LCP element first — it's the single highest-leverage change.
-5. **Audit images on the priority pages.** Run [`audit-images`](../../02.%20On-page%20SEO/06.%20Image%20Optimization/skills/audit-images/SKILL.md). Image work alone resolves 60-80% of speed issues on most ecom sites.
+5. **Audit images on the priority pages.** Run [`audit-images`](../../../skills/on-page/audit-images/SKILL.md). Image work alone resolves 60-80% of speed issues on most ecom sites.
 6. **Audit third-party scripts.** List every script firing on first interaction. Defer or async-load anything not user-facing on the first screen.
 7. **Implement layout-shift fixes.** Explicit `width`/`height` on every image. `aspect-ratio` CSS where dynamic. `font-display: optional` or `swap` with proper sizing. Reserve space for any deferred ad / widget container.
 8. **Implement and verify.** Push changes through Shopify theme (or whatever the CMS is). Re-run PageSpeed Insights for lab confirmation. Watch GSC Core Web Vitals report for 30 days as field data updates.
@@ -65,7 +65,7 @@ For Field & Sun and most D2C beauty brands on Shopify, the typical site-speed pr
 
 ## Skills in this toolkit
 
-- **[audit-core-web-vitals](skills/audit-core-web-vitals/SKILL.md)** — analyses one page's PageSpeed Insights results (lab + field) plus image inventory and third-party script list, identifies the LCP element, surfaces the highest-impact fixes for LCP/INP/CLS, and produces a prioritised remediation list with effort estimates and expected metric movement.
+- **[audit-core-web-vitals](../../../skills/technical/audit-core-web-vitals/SKILL.md)** — analyses one page's PageSpeed Insights results (lab + field) plus image inventory and third-party script list, identifies the LCP element, surfaces the highest-impact fixes for LCP/INP/CLS, and produces a prioritised remediation list with effort estimates and expected metric movement.
 
 ## Related topics
 

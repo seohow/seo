@@ -40,19 +40,21 @@ The `playbook/` folder is the table of contents. It's organised into 10 categori
 | 09 | [AI SEO](playbook/09.%20AI%20SEO/) | Content optimisation, NLP, generative SEO, SERP features, LLM visibility |
 | 10 | [Growth](playbook/10.%20Growth/) | Topical authority, content scaling, link acquisition, experiments |
 
-Each category folder has a `README.md` overview and 4-7 sub-topic folders, each with their own README and skills.
+Each category folder has a `README.md` overview and 4-7 sub-topic folders, each with their own README. The runnable skills live in the root [`skills/`](skills/README.md) package and are linked from the relevant playbook pages.
 
 ### 3. Run a skill
 
 There are two kinds of skills in this toolkit:
 
-- **Setup skills** live at the repo root under `skills/`. Today the only one is `generate-business-profile`, but more meta utilities will land here over time.
-- **Topic skills** live inside each topic folder under `playbook/<category>/<topic>/skills/`. For example:
+- **Setup skills** live at the top level of `skills/`. Today the only one is `generate-business-profile`, but more meta utilities can land there over time.
+- **Topic skills** live under registry-friendly category folders in `skills/<category-slug>/<skill-name>/`. For example:
 
 ```
-playbook/01. Strategy/01. Keyword Research/
+skills/
 ├── README.md
-└── skills/
+├── generate-business-profile/
+│   └── SKILL.md
+└── strategy/
     ├── plan-keyword-research/
     │   └── SKILL.md
     └── generate-seed-keywords/

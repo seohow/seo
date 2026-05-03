@@ -76,7 +76,7 @@ For a D2C brand, headers do the heaviest lifting on collection pages, comparison
 
 ## Skills in this toolkit
 
-- **[audit-header-structure](skills/audit-header-structure/SKILL.md)** — analyses a page's current H1/H2/H3 hierarchy, identifies structural issues (multiple H1s, skipped levels, stuffing), and proposes a restructured outline aligned to the page's target cluster, intent, and SERP.
+- **[audit-header-structure](../../../skills/on-page/audit-header-structure/SKILL.md)** — analyses a page's current H1/H2/H3 hierarchy, identifies structural issues (multiple H1s, skipped levels, stuffing), and proposes a restructured outline aligned to the page's target cluster, intent, and SERP.
 
 ## Related topics
 

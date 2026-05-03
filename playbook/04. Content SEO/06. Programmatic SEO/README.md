@@ -84,8 +84,8 @@ For Field & Sun: programmatic is plausible for an ingredient glossary; not for p
 
 ## Skills in this toolkit
 
-- **[plan-programmatic-seo](skills/plan-programmatic-seo/SKILL.md)** — evaluates whether programmatic SEO fits the use case. Tests three viability gates (unique data, structured data, searcher intent), recommends archetype if viable, recommends against if not. Output is a go / no-go decision with reasoning, plus archetype recommendation if green-lit.
-- **[design-programmatic-template](skills/design-programmatic-template/SKILL.md)** — produces the template + data spec for an approved programmatic build. Covers URL pattern, template sections, per-slot data requirements, index-control rules, schema strategy, internal-link plan, and acceptance criteria. The handoff document for engineering.
+- **[plan-programmatic-seo](../../../skills/content/plan-programmatic-seo/SKILL.md)** — evaluates whether programmatic SEO fits the use case. Tests three viability gates (unique data, structured data, searcher intent), recommends archetype if viable, recommends against if not. Output is a go / no-go decision with reasoning, plus archetype recommendation if green-lit.
+- **[design-programmatic-template](../../../skills/content/design-programmatic-template/SKILL.md)** — produces the template + data spec for an approved programmatic build. Covers URL pattern, template sections, per-slot data requirements, index-control rules, schema strategy, internal-link plan, and acceptance criteria. The handoff document for engineering.
 
 ## Related topics
 

@@ -63,7 +63,7 @@ For a D2C brand, the meta description is one of the cheapest CTR levers availabl
 
 ## Skills in this toolkit
 
-- **[generate-meta-descriptions](skills/generate-meta-descriptions/SKILL.md)** — takes a page URL, target cluster, intent, and business profile; produces 3-4 scored description variants with reasoning and a recommendation. Runs at single-page or batch scale.
+- **[generate-meta-descriptions](../../../skills/on-page/generate-meta-descriptions/SKILL.md)** — takes a page URL, target cluster, intent, and business profile; produces 3-4 scored description variants with reasoning and a recommendation. Runs at single-page or batch scale.
 
 ## Related topics
 

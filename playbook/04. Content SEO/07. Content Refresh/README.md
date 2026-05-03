@@ -79,7 +79,7 @@ For Field & Sun: a quarterly refresh sweep across the existing 25 posts is plaus
 
 ## Skills in this toolkit
 
-- **[plan-content-refresh](skills/plan-content-refresh/SKILL.md)** — analyses existing content for refresh candidates and produces a prioritised refresh backlog. Pulls GSC data + cluster map + internal-link state, scores each post on the refresh matrix (decay × value × effort), recommends action per post (refresh / rewrite / replace / prune), and produces refresh briefs for P0 / P1 candidates. Output is the prioritised work list the content team executes against.
+- **[plan-content-refresh](../../../skills/content/plan-content-refresh/SKILL.md)** — analyses existing content for refresh candidates and produces a prioritised refresh backlog. Pulls GSC data + cluster map + internal-link state, scores each post on the refresh matrix (decay × value × effort), recommends action per post (refresh / rewrite / replace / prune), and produces refresh briefs for P0 / P1 candidates. Output is the prioritised work list the content team executes against.
 
 ## Related topics
 

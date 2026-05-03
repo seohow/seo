@@ -89,7 +89,7 @@ For Field & Sun: investing 1-2 days in a thorough GA4 audit before any reporting
 
 ## Skills in this toolkit
 
-- **[audit-ga4-setup](skills/audit-ga4-setup/SKILL.md)** — produces a structured GA4 configuration audit covering property setup, events, conversions, audiences, ecommerce tracking, attribution model, retention, GSC integration, and Consent Mode. Output is a prioritised fix list with severity (P0 / P1 / P2) and effort estimates. The audit that should run before any GA4-based reporting is trusted.
+- **[audit-ga4-setup](../../../skills/analytics/audit-ga4-setup/SKILL.md)** — produces a structured GA4 configuration audit covering property setup, events, conversions, audiences, ecommerce tracking, attribution model, retention, GSC integration, and Consent Mode. Output is a prioritised fix list with severity (P0 / P1 / P2) and effort estimates. The audit that should run before any GA4-based reporting is trusted.
 
 ## Related topics
 

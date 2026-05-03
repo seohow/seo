@@ -77,7 +77,7 @@ For Field & Sun: 4 hours of upfront KPI selection + dashboard build + cadence-es
 
 ## Skills in this toolkit
 
-- **[define-seo-kpis](skills/define-seo-kpis/SKILL.md)** — produces the SEO KPI definition: hierarchy (executive / operating / diagnostic), per-KPI definition + data source + target + owner, dashboard structure (Looker Studio), cadence proposal (weekly / monthly / quarterly), and re-calibration cadence. The artefact that turns "we should track SEO" into "we operate SEO from this dashboard." Annual cadence to refresh.
+- **[define-seo-kpis](../../../skills/analytics/define-seo-kpis/SKILL.md)** — produces the SEO KPI definition: hierarchy (executive / operating / diagnostic), per-KPI definition + data source + target + owner, dashboard structure (Looker Studio), cadence proposal (weekly / monthly / quarterly), and re-calibration cadence. The artefact that turns "we should track SEO" into "we operate SEO from this dashboard." Annual cadence to refresh.
 
 ## Related topics
 

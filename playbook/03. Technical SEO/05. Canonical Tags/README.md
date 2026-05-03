@@ -76,7 +76,7 @@ For Field & Sun on Shopify, the typical canonical issue is the platform creating
 
 ## Skills in this toolkit
 
-- **[audit-canonical-tags](skills/audit-canonical-tags/SKILL.md)** — analyses canonical tags across a URL list (from a crawler export or sitemap), surfaces missing canonicals, conflicts (canonical vs sitemap vs internal links), bad targets (canonicals pointing to 404 / 301 / noindex), and pattern-level issues (parameter URLs, collection-prefixed duplicates). Produces a prioritised remediation list grouped by issue type.
+- **[audit-canonical-tags](../../../skills/technical/audit-canonical-tags/SKILL.md)** — analyses canonical tags across a URL list (from a crawler export or sitemap), surfaces missing canonicals, conflicts (canonical vs sitemap vs internal links), bad targets (canonicals pointing to 404 / 301 / noindex), and pattern-level issues (parameter URLs, collection-prefixed duplicates). Produces a prioritised remediation list grouped by issue type.
 
 ## Related topics
 

@@ -87,7 +87,7 @@ For Field & Sun: a UX-side speed audit on the top 10 organic landing pages is pl
 
 ## Skills in this toolkit
 
-- **[audit-page-speed-ux](skills/audit-page-speed-ux/SKILL.md)** — produces a UX-focused page-speed audit covering field-data CWV, perceived-speed gaps (font swap, image swap, layout-shift below fold, sluggish nav animation, slow modal opens), interaction lag (CTAs, form fields, accordions), rage-click + dead-click patterns from session replay, mobile mid-tier network behaviour, and a prioritised remediation list with conversion-impact estimates. Output is the operational fix list for SEO-driven traffic. Quarterly cadence.
+- **[audit-page-speed-ux](../../../skills/ux/audit-page-speed-ux/SKILL.md)** — produces a UX-focused page-speed audit covering field-data CWV, perceived-speed gaps (font swap, image swap, layout-shift below fold, sluggish nav animation, slow modal opens), interaction lag (CTAs, form fields, accordions), rage-click + dead-click patterns from session replay, mobile mid-tier network behaviour, and a prioritised remediation list with conversion-impact estimates. Output is the operational fix list for SEO-driven traffic. Quarterly cadence.
 
 ## Related topics
 

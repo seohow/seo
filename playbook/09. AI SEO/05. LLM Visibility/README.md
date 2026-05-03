@@ -109,7 +109,7 @@ Third, **competitor share-of-voice is more revealing than absolute citation rate
 
 ## Skills in this toolkit
 
-- **[audit-llm-visibility](skills/audit-llm-visibility/SKILL.md)** — quarterly probe of ChatGPT search, Claude search, Perplexity, Gemini, and Google AI Overviews using a structured query set; captures brand-mention rate, citation link presence, mention quality (4-tier), sentiment, competitor share-of-voice, per-cluster and per-engine breakdowns; produces a longitudinal-trackable audit document with comparisons to prior baselines and recommendations for content / generative-SEO / NLP investment. Mandatory baseline before any AI SEO investment; quarterly cadence thereafter.
+- **[audit-llm-visibility](../../../skills/ai/audit-llm-visibility/SKILL.md)** — quarterly probe of ChatGPT search, Claude search, Perplexity, Gemini, and Google AI Overviews using a structured query set; captures brand-mention rate, citation link presence, mention quality (4-tier), sentiment, competitor share-of-voice, per-cluster and per-engine breakdowns; produces a longitudinal-trackable audit document with comparisons to prior baselines and recommendations for content / generative-SEO / NLP investment. Mandatory baseline before any AI SEO investment; quarterly cadence thereafter.
 
 ## Related topics
 

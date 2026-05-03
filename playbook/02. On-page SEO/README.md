@@ -63,15 +63,15 @@ If the strategy outputs don't exist yet, the on-page skills will ask for the min
 
 The full inventory across the 7 sub-topics:
 
-- **[generate-title-tags](01.%20Title/skills/generate-title-tags/SKILL.md)** — produce title-tag variants for a page, scored on relevance, intent fit, and CTR signal.
-- **[generate-meta-descriptions](02.%20Descriptions/skills/generate-meta-descriptions/SKILL.md)** — produce meta-description variants tuned to intent and brand voice.
-- **[audit-header-structure](03.%20Header%20Structure/skills/audit-header-structure/SKILL.md)** — analyse H1/H2/H3 hierarchy of a page and propose a restructure.
-- **[define-url-conventions](04.%20URL%20Structure/skills/define-url-conventions/SKILL.md)** — produce a URL-structure convention document for the site.
-- **[audit-urls](04.%20URL%20Structure/skills/audit-urls/SKILL.md)** — review existing URLs against conventions, flag cleanup or migration candidates.
-- **[plan-internal-linking](05.%20Internal%20Linking/skills/plan-internal-linking/SKILL.md)** — design a site-wide internal-linking strategy from the cluster map.
-- **[audit-page-internal-links](05.%20Internal%20Linking/skills/audit-page-internal-links/SKILL.md)** — review the links on and to a single page, recommend additions or removals.
-- **[audit-images](06.%20Image%20Optimization/skills/audit-images/SKILL.md)** — analyse a page's images for alt text, file names, dimensions, format, and lazy-loading.
-- **[optimize-page-content](07.%20Content%20Optimization/skills/optimize-page-content/SKILL.md)** — rework a page's body content against a target cluster, intent, and brand voice.
+- **[generate-title-tags](../../skills/on-page/generate-title-tags/SKILL.md)** — produce title-tag variants for a page, scored on relevance, intent fit, and CTR signal.
+- **[generate-meta-descriptions](../../skills/on-page/generate-meta-descriptions/SKILL.md)** — produce meta-description variants tuned to intent and brand voice.
+- **[audit-header-structure](../../skills/on-page/audit-header-structure/SKILL.md)** — analyse H1/H2/H3 hierarchy of a page and propose a restructure.
+- **[define-url-conventions](../../skills/on-page/define-url-conventions/SKILL.md)** — produce a URL-structure convention document for the site.
+- **[audit-urls](../../skills/on-page/audit-urls/SKILL.md)** — review existing URLs against conventions, flag cleanup or migration candidates.
+- **[plan-internal-linking](../../skills/on-page/plan-internal-linking/SKILL.md)** — design a site-wide internal-linking strategy from the cluster map.
+- **[audit-page-internal-links](../../skills/on-page/audit-page-internal-links/SKILL.md)** — review the links on and to a single page, recommend additions or removals.
+- **[audit-images](../../skills/on-page/audit-images/SKILL.md)** — analyse a page's images for alt text, file names, dimensions, format, and lazy-loading.
+- **[optimize-page-content](../../skills/on-page/optimize-page-content/SKILL.md)** — rework a page's body content against a target cluster, intent, and brand voice.
 
 ## Common pitfalls
 

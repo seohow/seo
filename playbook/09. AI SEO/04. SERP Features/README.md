@@ -101,7 +101,7 @@ Third, **feature opportunities are unevenly distributed across the keyword set**
 
 ## Skills in this toolkit
 
-- **[audit-serp-feature-opportunities](skills/audit-serp-feature-opportunities/SKILL.md)** — per-priority-keyword feature audit: maps current feature presence (featured snippet / PAA / AI Overview / image pack / video carousel / shopping pack / knowledge panel / FAQ rich result), assesses reachability per feature given current authority + content state, and produces a prioritised feature-by-feature plan with content / schema / structural requirements per pick. Use when launching a feature-capture program; quarterly cadence per priority cluster.
+- **[audit-serp-feature-opportunities](../../../skills/ai/audit-serp-feature-opportunities/SKILL.md)** — per-priority-keyword feature audit: maps current feature presence (featured snippet / PAA / AI Overview / image pack / video carousel / shopping pack / knowledge panel / FAQ rich result), assesses reachability per feature given current authority + content state, and produces a prioritised feature-by-feature plan with content / schema / structural requirements per pick. Use when launching a feature-capture program; quarterly cadence per priority cluster.
 
 ## Related topics
 

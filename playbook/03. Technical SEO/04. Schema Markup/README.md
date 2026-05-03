@@ -71,8 +71,8 @@ For Field & Sun, the priority schema is: Product (every PDP), BreadcrumbList (ev
 
 ## Skills in this toolkit
 
-- **[plan-schema-strategy](skills/plan-schema-strategy/SKILL.md)** — produces a site-wide structured-data plan: which schema types per page type, which properties are mandatory vs nice-to-have, implementation approach (Liquid template vs app vs hand-coded), and a sequencing plan. Run this first before generating any specific schema.
-- **[generate-schema-markup](skills/generate-schema-markup/SKILL.md)** — generates valid JSON-LD for a specific page (PDP, collection, blog post, FAQ, homepage), with all required properties populated from page data, recommended properties where the data supports it, and explicit validation steps before deploy.
+- **[plan-schema-strategy](../../../skills/technical/plan-schema-strategy/SKILL.md)** — produces a site-wide structured-data plan: which schema types per page type, which properties are mandatory vs nice-to-have, implementation approach (Liquid template vs app vs hand-coded), and a sequencing plan. Run this first before generating any specific schema.
+- **[generate-schema-markup](../../../skills/technical/generate-schema-markup/SKILL.md)** — generates valid JSON-LD for a specific page (PDP, collection, blog post, FAQ, homepage), with all required properties populated from page data, recommended properties where the data supports it, and explicit validation steps before deploy.
 
 ## Related topics
 

@@ -75,10 +75,10 @@ It produces inputs that flow back into:
 
 The full inventory across the 4 sub-topics:
 
-- **[assess-topical-authority](01.%20Topical%20Authority/skills/assess-topical-authority/SKILL.md)** — measures current topical authority per priority cluster (coverage breadth, depth, link profile, citation share, entity-graph signals); identifies the gap to "recognised authority" status; produces a multi-quarter investment plan to close the gap.
-- **[plan-content-scaling-operation](02.%20Content%20Scaling/skills/plan-content-scaling-operation/SKILL.md)** — assesses current content production capacity, identifies bottlenecks (briefs, writers, editorial review, technical implementation, promotion); produces a scaling plan that moves production volume to target without compromising quality or brand voice.
-- **[plan-link-magnet-strategy](03.%20Link%20Acquisition/skills/plan-link-magnet-strategy/SKILL.md)** — identifies link-magnet asset candidates (original research, primary evidence, calculators, definitive guides, free tools); evaluates per-asset link potential; produces a quarterly link-magnet production + promotion plan.
-- **[design-seo-experiment](04.%20SEO%20Experiments/skills/design-seo-experiment/SKILL.md)** — designs a structured SEO experiment with hypothesis, variants, sample / scope, measurement plan, statistical guardrails, SEO-safety review, and pre-registered success criteria; produces the per-experiment brief.
+- **[assess-topical-authority](../../skills/growth/assess-topical-authority/SKILL.md)** — measures current topical authority per priority cluster (coverage breadth, depth, link profile, citation share, entity-graph signals); identifies the gap to "recognised authority" status; produces a multi-quarter investment plan to close the gap.
+- **[plan-content-scaling-operation](../../skills/growth/plan-content-scaling-operation/SKILL.md)** — assesses current content production capacity, identifies bottlenecks (briefs, writers, editorial review, technical implementation, promotion); produces a scaling plan that moves production volume to target without compromising quality or brand voice.
+- **[plan-link-magnet-strategy](../../skills/growth/plan-link-magnet-strategy/SKILL.md)** — identifies link-magnet asset candidates (original research, primary evidence, calculators, definitive guides, free tools); evaluates per-asset link potential; produces a quarterly link-magnet production + promotion plan.
+- **[design-seo-experiment](../../skills/growth/design-seo-experiment/SKILL.md)** — designs a structured SEO experiment with hypothesis, variants, sample / scope, measurement plan, statistical guardrails, SEO-safety review, and pre-registered success criteria; produces the per-experiment brief.
 
 ## Common pitfalls
 

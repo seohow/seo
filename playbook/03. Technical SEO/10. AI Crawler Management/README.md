@@ -129,8 +129,8 @@ For Field & Sun, the practical questions are: does the brand want to be trainabl
 
 ## Skills in this toolkit
 
-- **[audit-ai-crawler-access](skills/audit-ai-crawler-access/SKILL.md)** — analyses the live `robots.txt`, `llms.txt`, and page-level AI directives against the major AI crawlers; surfaces gaps between declared posture and actual rules; produces a remediation list. Use to validate that what the team thinks the policy is matches what the server actually serves.
-- **[generate-llms-txt](skills/generate-llms-txt/SKILL.md)** — produces a valid `/llms.txt` file (and optionally `/llms-full.txt`) from the business profile, sitemap, and curated key URLs. Outputs the file plus an implementation note. Use when the brand has decided on an open or visibility-only posture and wants LLMs to find a clean summary of the site.
+- **[audit-ai-crawler-access](../../../skills/technical/audit-ai-crawler-access/SKILL.md)** — analyses the live `robots.txt`, `llms.txt`, and page-level AI directives against the major AI crawlers; surfaces gaps between declared posture and actual rules; produces a remediation list. Use to validate that what the team thinks the policy is matches what the server actually serves.
+- **[generate-llms-txt](../../../skills/technical/generate-llms-txt/SKILL.md)** — produces a valid `/llms.txt` file (and optionally `/llms-full.txt`) from the business profile, sitemap, and curated key URLs. Outputs the file plus an implementation note. Use when the brand has decided on an open or visibility-only posture and wants LLMs to find a clean summary of the site.
 
 ## Related topics
 

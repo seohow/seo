@@ -90,7 +90,7 @@ For Field & Sun: a UX-design review of the pillar + quiz + top PDPs is plausibly
 
 ## Skills in this toolkit
 
-- **[review-ux-design-for-seo](skills/review-ux-design-for-seo/SKILL.md)** — produces a UX-design review of priority templates covering above-fold composition, headline-promise alignment, CTA hierarchy, IA + cluster-spoke linking, trust signals, intent match, form / interaction components, cross-page-flow design, and a prioritised remediation list with conversion-impact estimates. Output is the design-side fix list — distinct from page-speed (Technical-felt) and mobile (device-felt) audits in focusing on structural design choices.
+- **[review-ux-design-for-seo](../../../skills/ux/review-ux-design-for-seo/SKILL.md)** — produces a UX-design review of priority templates covering above-fold composition, headline-promise alignment, CTA hierarchy, IA + cluster-spoke linking, trust signals, intent match, form / interaction components, cross-page-flow design, and a prioritised remediation list with conversion-impact estimates. Output is the design-side fix list — distinct from page-speed (Technical-felt) and mobile (device-felt) audits in focusing on structural design choices.
 
 ## Related topics
 

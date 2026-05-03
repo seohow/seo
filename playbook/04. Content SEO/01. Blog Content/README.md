@@ -72,7 +72,7 @@ Third, **blog content is where brand voice and expertise show up most visibly**.
 
 ## Skills in this toolkit
 
-- **[plan-blog-content](skills/plan-blog-content/SKILL.md)** — produces a 30/60/90-day editorial calendar from the cluster map. Cross-references current blog inventory, surfaces coverage gaps, sequences posts by priority and seasonality, matches cadence to team capacity. Outputs the calendar plus per-post brief stubs that feed into `generate-content-brief`.
+- **[plan-blog-content](../../../skills/content/plan-blog-content/SKILL.md)** — produces a 30/60/90-day editorial calendar from the cluster map. Cross-references current blog inventory, surfaces coverage gaps, sequences posts by priority and seasonality, matches cadence to team capacity. Outputs the calendar plus per-post brief stubs that feed into `generate-content-brief`.
 
 ## Related topics
 

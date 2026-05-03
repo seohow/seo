@@ -97,7 +97,7 @@ Third, **link-magnet content is brand-distinctive**. Other brands can copy your 
 
 ## Skills in this toolkit
 
-- **[plan-link-magnet-strategy](skills/plan-link-magnet-strategy/SKILL.md)** — produces a quarterly link-magnet asset programme tied to the priority cluster(s); identifies 4-6 asset candidates across the defensibility ladder (original research, definitive guides, free tools, comparative resources, visual / data assets, curated lists); specs each asset (defensibility, production team, timeline, promotion plan, link target, measurement plan); sequences across the production calendar; estimates total cost; defines per-asset KPIs. Use quarterly per priority cluster; annual deeper re-baseline.
+- **[plan-link-magnet-strategy](../../../skills/growth/plan-link-magnet-strategy/SKILL.md)** — produces a quarterly link-magnet asset programme tied to the priority cluster(s); identifies 4-6 asset candidates across the defensibility ladder (original research, definitive guides, free tools, comparative resources, visual / data assets, curated lists); specs each asset (defensibility, production team, timeline, promotion plan, link target, measurement plan); sequences across the production calendar; estimates total cost; defines per-asset KPIs. Use quarterly per priority cluster; annual deeper re-baseline.
 
 ## Related topics
 

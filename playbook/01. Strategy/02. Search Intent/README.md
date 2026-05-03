@@ -61,7 +61,7 @@ For a D2C brand, intent also drives where the keyword sits in the funnel. Inform
 
 ## Skills in this toolkit
 
-- **[classify-keyword-intent](skills/classify-keyword-intent/SKILL.md)** — takes a keyword list and tags each entry with intent (informational / navigational / commercial / transactional / local), a recommended page type, and a confidence note. Flags mixed-intent queries that need a SERP look.
+- **[classify-keyword-intent](../../../skills/strategy/classify-keyword-intent/SKILL.md)** — takes a keyword list and tags each entry with intent (informational / navigational / commercial / transactional / local), a recommended page type, and a confidence note. Flags mixed-intent queries that need a SERP look.
 
 ## Related topics
 

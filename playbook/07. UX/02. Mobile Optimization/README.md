@@ -98,7 +98,7 @@ For Field & Sun: a mobile-UX audit on top organic landing pages is plausibly the
 
 ## Skills in this toolkit
 
-- **[audit-mobile-ux](skills/audit-mobile-ux/SKILL.md)** — produces a mobile UX audit covering touch-target compliance (44×44 minimum), viewport meta, responsive-layout integrity at 375px / 414px / 768px breakpoints, sticky / fixed-element overflow, mobile-form configuration (input types, autocomplete, sticky-keyboard behaviour), modal overflow, hover-state fallbacks, GSC mobile-usability findings, and session-replay friction patterns. Output is the prioritised remediation list with conversion-impact estimates. Quarterly cadence.
+- **[audit-mobile-ux](../../../skills/ux/audit-mobile-ux/SKILL.md)** — produces a mobile UX audit covering touch-target compliance (44×44 minimum), viewport meta, responsive-layout integrity at 375px / 414px / 768px breakpoints, sticky / fixed-element overflow, mobile-form configuration (input types, autocomplete, sticky-keyboard behaviour), modal overflow, hover-state fallbacks, GSC mobile-usability findings, and session-replay friction patterns. Output is the prioritised remediation list with conversion-impact estimates. Quarterly cadence.
 
 ## Related topics
 

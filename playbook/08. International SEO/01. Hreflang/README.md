@@ -84,7 +84,7 @@ Third, **Hreflang implementations decay**. Sites that ship clean Hreflang then a
 
 ## Skills in this toolkit
 
-- **[audit-hreflang](skills/audit-hreflang/SKILL.md)** — produces a Hreflang implementation audit covering syntax correctness, region / language code validity (especially `gb` vs `uk`), self-reference + return-tag completeness, x-default presence, canonical alignment, GSC International Targeting findings, and a prioritised remediation list. Output is the operational fix list for international Hreflang. Quarterly cadence.
+- **[audit-hreflang](../../../skills/international/audit-hreflang/SKILL.md)** — produces a Hreflang implementation audit covering syntax correctness, region / language code validity (especially `gb` vs `uk`), self-reference + return-tag completeness, x-default presence, canonical alignment, GSC International Targeting findings, and a prioritised remediation list. Output is the operational fix list for international Hreflang. Quarterly cadence.
 
 ## Related topics
 

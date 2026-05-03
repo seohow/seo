@@ -60,10 +60,10 @@ It produces inputs for downstream categories:
 
 The full inventory across the 4 sub-topics:
 
-- **[audit-hreflang](01.%20Hreflang/skills/audit-hreflang/SKILL.md)** — validate Hreflang implementation (consistency, return-tags, correct codes, x-default).
-- **[decide-multi-language-architecture](02.%20Multi%20Language/skills/decide-multi-language-architecture/SKILL.md)** — choose between subdomain, subdirectory, or ccTLD; document trade-offs.
-- **[plan-geo-targeting](03.%20Geo%20Targeting/skills/plan-geo-targeting/SKILL.md)** — define market scope, GSC settings, server / ccTLD strategy, market-specific signals.
-- **[plan-localisation](04.%20Localization/skills/plan-localisation/SKILL.md)** — design content adaptation per market; translation method; cultural adaptation; currency / regulatory.
+- **[audit-hreflang](../../skills/international/audit-hreflang/SKILL.md)** — validate Hreflang implementation (consistency, return-tags, correct codes, x-default).
+- **[decide-multi-language-architecture](../../skills/international/decide-multi-language-architecture/SKILL.md)** — choose between subdomain, subdirectory, or ccTLD; document trade-offs.
+- **[plan-geo-targeting](../../skills/international/plan-geo-targeting/SKILL.md)** — define market scope, GSC settings, server / ccTLD strategy, market-specific signals.
+- **[plan-localisation](../../skills/international/plan-localisation/SKILL.md)** — design content adaptation per market; translation method; cultural adaptation; currency / regulatory.
 
 ## Common pitfalls
 

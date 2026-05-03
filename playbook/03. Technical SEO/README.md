@@ -70,19 +70,19 @@ You'll also need access to: Google Search Console (mandatory), a crawler (Scream
 
 The full inventory across the 10 sub-topics:
 
-- **[audit-crawlability](01.%20Crawlability/skills/audit-crawlability/SKILL.md)** — analyse robots.txt, robots meta, x-robots-tag, response codes, redirect chains, and crawl depth across a list of URLs.
-- **[audit-indexing-status](02.%20Indexing/skills/audit-indexing-status/SKILL.md)** — analyse GSC's Pages report and surface why pages are excluded, prioritised by impact.
-- **[audit-core-web-vitals](03.%20Site%20Speed/skills/audit-core-web-vitals/SKILL.md)** — analyse a page's LCP, INP, CLS, TTFB, and recommend prioritised performance fixes.
-- **[plan-schema-strategy](04.%20Schema%20Markup/skills/plan-schema-strategy/SKILL.md)** — produce a site-wide structured-data plan: which schema types per page type, with examples.
-- **[generate-schema-markup](04.%20Schema%20Markup/skills/generate-schema-markup/SKILL.md)** — generate JSON-LD schema for a specific page with validation against Google's structured-data requirements.
-- **[audit-canonical-tags](05.%20Canonical%20Tags/skills/audit-canonical-tags/SKILL.md)** — review canonical tags across URLs, surface mismatches, missing canonicals, and circular references.
-- **[audit-xml-sitemap](06.%20XML%20Sitemaps/skills/audit-xml-sitemap/SKILL.md)** — review the sitemap for non-canonical URLs, missing pages, broken URLs, and structural issues.
-- **[audit-javascript-seo](07.%20JavaScript%20SEO/skills/audit-javascript-seo/SKILL.md)** — diagnose JS-rendering issues on a page, compare rendered DOM to source HTML, identify hydration / SSR gaps.
-- **[analyse-log-files](08.%20Log%20File%20Analysis/skills/analyse-log-files/SKILL.md)** — process server log file exports to identify Googlebot crawl patterns, wasted budget, and overlooked URLs.
-- **[plan-site-migration](09.%20Site%20Migration/skills/plan-site-migration/SKILL.md)** — design a structured migration plan: redirect strategy, sequencing, QA checkpoints, recovery monitoring.
-- **[build-redirect-map](09.%20Site%20Migration/skills/build-redirect-map/SKILL.md)** — produce the old-URL → new-URL mapping with status codes, chain checks, and an implementation order.
-- **[audit-ai-crawler-access](10.%20AI%20Crawler%20Management/skills/audit-ai-crawler-access/SKILL.md)** — audit robots.txt declarations against the major AI crawlers, validate `llms.txt`, surface gaps between declared posture and actual rules.
-- **[generate-llms-txt](10.%20AI%20Crawler%20Management/skills/generate-llms-txt/SKILL.md)** — produce a curated `/llms.txt` file (and optionally `/llms-full.txt`) for sites with an open or visibility-only AI-crawler posture.
+- **[audit-crawlability](../../skills/technical/audit-crawlability/SKILL.md)** — analyse robots.txt, robots meta, x-robots-tag, response codes, redirect chains, and crawl depth across a list of URLs.
+- **[audit-indexing-status](../../skills/technical/audit-indexing-status/SKILL.md)** — analyse GSC's Pages report and surface why pages are excluded, prioritised by impact.
+- **[audit-core-web-vitals](../../skills/technical/audit-core-web-vitals/SKILL.md)** — analyse a page's LCP, INP, CLS, TTFB, and recommend prioritised performance fixes.
+- **[plan-schema-strategy](../../skills/technical/plan-schema-strategy/SKILL.md)** — produce a site-wide structured-data plan: which schema types per page type, with examples.
+- **[generate-schema-markup](../../skills/technical/generate-schema-markup/SKILL.md)** — generate JSON-LD schema for a specific page with validation against Google's structured-data requirements.
+- **[audit-canonical-tags](../../skills/technical/audit-canonical-tags/SKILL.md)** — review canonical tags across URLs, surface mismatches, missing canonicals, and circular references.
+- **[audit-xml-sitemap](../../skills/technical/audit-xml-sitemap/SKILL.md)** — review the sitemap for non-canonical URLs, missing pages, broken URLs, and structural issues.
+- **[audit-javascript-seo](../../skills/technical/audit-javascript-seo/SKILL.md)** — diagnose JS-rendering issues on a page, compare rendered DOM to source HTML, identify hydration / SSR gaps.
+- **[analyse-log-files](../../skills/technical/analyse-log-files/SKILL.md)** — process server log file exports to identify Googlebot crawl patterns, wasted budget, and overlooked URLs.
+- **[plan-site-migration](../../skills/technical/plan-site-migration/SKILL.md)** — design a structured migration plan: redirect strategy, sequencing, QA checkpoints, recovery monitoring.
+- **[build-redirect-map](../../skills/technical/build-redirect-map/SKILL.md)** — produce the old-URL → new-URL mapping with status codes, chain checks, and an implementation order.
+- **[audit-ai-crawler-access](../../skills/technical/audit-ai-crawler-access/SKILL.md)** — audit robots.txt declarations against the major AI crawlers, validate `llms.txt`, surface gaps between declared posture and actual rules.
+- **[generate-llms-txt](../../skills/technical/generate-llms-txt/SKILL.md)** — produce a curated `/llms.txt` file (and optionally `/llms-full.txt`) for sites with an open or visibility-only AI-crawler posture.
 
 ## Common pitfalls
 

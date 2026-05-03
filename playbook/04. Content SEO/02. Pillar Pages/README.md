@@ -72,7 +72,7 @@ For Field & Sun, building 2-3 strong pillars (sun care, skincare ingredients, re
 
 ## Skills in this toolkit
 
-- **[design-pillar-page](skills/design-pillar-page/SKILL.md)** — produces a pillar-page brief: target primary keyword, scope, full H1+H2 outline, target word count, supporting-spoke list, brand-distinct angle, internal-link plan, schema strategy, and acceptance criteria. Output is the spec a writer (human or AI) can produce a draft against.
+- **[design-pillar-page](../../../skills/content/design-pillar-page/SKILL.md)** — produces a pillar-page brief: target primary keyword, scope, full H1+H2 outline, target word count, supporting-spoke list, brand-distinct angle, internal-link plan, schema strategy, and acceptance criteria. Output is the spec a writer (human or AI) can produce a draft against.
 
 ## Related topics
 

@@ -73,12 +73,12 @@ It produces inputs for downstream categories:
 
 The full inventory across the 5 sub-topics:
 
-- **[audit-ai-content-readiness](01.%20Content%20Optimization/skills/audit-ai-content-readiness/SKILL.md)** — audits priority pages against AI-citation patterns (definitive openings, fact-extractable structure, TL;DR presence, source citations, freshness signals); produces a prioritised rewrite list.
-- **[audit-entity-optimisation](02.%20NLP%20Optimization/skills/audit-entity-optimisation/SKILL.md)** — audits entity coverage, internal entity-linking, schema-entity alignment, knowledge-graph signals (Wikipedia / Wikidata mentions, sameAs schema); produces an entity-coverage remediation list.
-- **[plan-generative-seo-strategy](03.%20Generative%20SEO/skills/plan-generative-seo-strategy/SKILL.md)** — strategic plan for which queries / topics to compete on for AI Overview / Perplexity / ChatGPT / Claude / Gemini citation; identifies defensible angles vs publisher competitors; sequences investment.
-- **[design-citation-magnet-content](03.%20Generative%20SEO/skills/design-citation-magnet-content/SKILL.md)** — per-topic executor that produces a content brief specifically structured to earn AI citation: question framing, answer-block design, supporting evidence, source citation, internal-linking plan.
-- **[audit-serp-feature-opportunities](04.%20SERP%20Features/skills/audit-serp-feature-opportunities/SKILL.md)** — per-priority-keyword analysis of which SERP features are present, reachable, and worth competing for; produces a feature-by-feature plan with content / schema / structural requirements.
-- **[audit-llm-visibility](05.%20LLM%20Visibility/skills/audit-llm-visibility/SKILL.md)** — probes ChatGPT, Claude, Perplexity, Gemini, and AI Overviews with a structured query set; captures citation rate, brand-mention quality, sentiment, and competitor share-of-voice; quarterly cadence.
+- **[audit-ai-content-readiness](../../skills/ai/audit-ai-content-readiness/SKILL.md)** — audits priority pages against AI-citation patterns (definitive openings, fact-extractable structure, TL;DR presence, source citations, freshness signals); produces a prioritised rewrite list.
+- **[audit-entity-optimisation](../../skills/ai/audit-entity-optimisation/SKILL.md)** — audits entity coverage, internal entity-linking, schema-entity alignment, knowledge-graph signals (Wikipedia / Wikidata mentions, sameAs schema); produces an entity-coverage remediation list.
+- **[plan-generative-seo-strategy](../../skills/ai/plan-generative-seo-strategy/SKILL.md)** — strategic plan for which queries / topics to compete on for AI Overview / Perplexity / ChatGPT / Claude / Gemini citation; identifies defensible angles vs publisher competitors; sequences investment.
+- **[design-citation-magnet-content](../../skills/ai/design-citation-magnet-content/SKILL.md)** — per-topic executor that produces a content brief specifically structured to earn AI citation: question framing, answer-block design, supporting evidence, source citation, internal-linking plan.
+- **[audit-serp-feature-opportunities](../../skills/ai/audit-serp-feature-opportunities/SKILL.md)** — per-priority-keyword analysis of which SERP features are present, reachable, and worth competing for; produces a feature-by-feature plan with content / schema / structural requirements.
+- **[audit-llm-visibility](../../skills/ai/audit-llm-visibility/SKILL.md)** — probes ChatGPT, Claude, Perplexity, Gemini, and AI Overviews with a structured query set; captures citation rate, brand-mention quality, sentiment, and competitor share-of-voice; quarterly cadence.
 
 ## Common pitfalls
 

@@ -76,7 +76,7 @@ The trade-offs: broken-link building is slow per-pitch (10-30 minutes per prospe
 
 ## Skills in this toolkit
 
-- **[plan-broken-link-campaign](skills/plan-broken-link-campaign/SKILL.md)** — produces the broken-link prospecting + outreach plan: prospect categories (search queries that surface link-rich pages), tooling (Ahrefs / Semrush / Check My Links / Wayback), replacement-asset inventory, pitch template, cadence, conversion targets, quarterly review schedule. Output is the operational plan for a steady-yield off-page channel. Quarterly cadence to refresh prospect categories.
+- **[plan-broken-link-campaign](../../../skills/off-page/plan-broken-link-campaign/SKILL.md)** — produces the broken-link prospecting + outreach plan: prospect categories (search queries that surface link-rich pages), tooling (Ahrefs / Semrush / Check My Links / Wayback), replacement-asset inventory, pitch template, cadence, conversion targets, quarterly review schedule. Output is the operational plan for a steady-yield off-page channel. Quarterly cadence to refresh prospect categories.
 
 ## Related topics
 

@@ -81,7 +81,7 @@ Third, **knowledge-graph eligibility is a citation accelerant**. When a brand or
 
 ## Skills in this toolkit
 
-- **[audit-entity-optimisation](skills/audit-entity-optimisation/SKILL.md)** — audits a topic cluster (or set of pages within one) for entity coverage, entity salience, schema-entity alignment, internal-linking, external authority signals, and knowledge-graph status; produces a prioritised remediation plan covering content, schema, internal-link, and knowledge-graph actions. Use cluster-by-cluster, quarterly cadence, or before launching a new pillar.
+- **[audit-entity-optimisation](../../../skills/ai/audit-entity-optimisation/SKILL.md)** — audits a topic cluster (or set of pages within one) for entity coverage, entity salience, schema-entity alignment, internal-linking, external authority signals, and knowledge-graph status; produces a prioritised remediation plan covering content, schema, internal-link, and knowledge-graph actions. Use cluster-by-cluster, quarterly cadence, or before launching a new pillar.
 
 ## Related topics
 

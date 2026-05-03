@@ -45,10 +45,10 @@ A 4-7 step framework. Numbered. Each step starts with a verb.
 
 ## Skills in this toolkit
 
-Link to every SKILL.md in this folder's `skills/` directory. For each, one line on what it does and when to reach for it.
+Link to every relevant SKILL.md in the root `skills/<category-slug>/` directory. For each, one line on what it does and when to reach for it.
 
-- **[skill-name](skills/skill-name/SKILL.md)** — one-line description of when to use.
-- **[skill-name](skills/skill-name/SKILL.md)** — one-line description of when to use.
+- **[skill-name](../../../skills/category-slug/skill-name/SKILL.md)** — one-line description of when to use.
+- **[skill-name](../../../skills/category-slug/skill-name/SKILL.md)** — one-line description of when to use.
 
 ## Related topics
 

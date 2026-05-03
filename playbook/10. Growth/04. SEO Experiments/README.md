@@ -104,7 +104,7 @@ Third, **experiments protect against false positives**. SEO is full of "I change
 
 ## Skills in this toolkit
 
-- **[design-seo-experiment](skills/design-seo-experiment/SKILL.md)** — designs a structured SEO experiment with pre-registered hypothesis, variants, sample / scope, success and null criteria, confounder tracking plan, A/A reference plan, SEO-safety review, and pre-registered statistical guardrails. Output is the per-experiment brief that locks the design before launch. Use per experiment; cadence: 1-2 experiments per quarter.
+- **[design-seo-experiment](../../../skills/growth/design-seo-experiment/SKILL.md)** — designs a structured SEO experiment with pre-registered hypothesis, variants, sample / scope, success and null criteria, confounder tracking plan, A/A reference plan, SEO-safety review, and pre-registered statistical guardrails. Output is the per-experiment brief that locks the design before launch. Use per experiment; cadence: 1-2 experiments per quarter.
 
 ## Related topics
 

@@ -93,7 +93,7 @@ Third, **targeting wrong market is worse than no targeting**. A US page that ran
 
 ## Skills in this toolkit
 
-- **[plan-geo-targeting](skills/plan-geo-targeting/SKILL.md)** — produces a geo-targeting strategy + audit covering Hreflang reinforcement, GSC International Targeting setting, server / CDN strategy, currency display, local content cues (phone / address / units / spelling), imagery, local backlink-strategy plan, and per-market signal-consistency check. Output is the per-market geo-signal plan with prioritised remediations. Quarterly cadence.
+- **[plan-geo-targeting](../../../skills/international/plan-geo-targeting/SKILL.md)** — produces a geo-targeting strategy + audit covering Hreflang reinforcement, GSC International Targeting setting, server / CDN strategy, currency display, local content cues (phone / address / units / spelling), imagery, local backlink-strategy plan, and per-market signal-consistency check. Output is the per-market geo-signal plan with prioritised remediations. Quarterly cadence.
 
 ## Related topics
 

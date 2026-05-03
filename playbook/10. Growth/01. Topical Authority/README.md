@@ -85,7 +85,7 @@ Third, **topical authority is defensive**. Once a brand has it on a topic, compe
 
 ## Skills in this toolkit
 
-- **[assess-topical-authority](skills/assess-topical-authority/SKILL.md)** — measures current topical authority per priority cluster across coverage breadth, depth, earned link profile, AI citation share, brand-query volume, entity-graph signals; identifies authority graveyards (skip) vs defensibility-real opportunities (invest); produces a multi-quarter investment plan to close the authority gap. Quarterly cadence per priority cluster; annual decision cadence.
+- **[assess-topical-authority](../../../skills/growth/assess-topical-authority/SKILL.md)** — measures current topical authority per priority cluster across coverage breadth, depth, earned link profile, AI citation share, brand-query volume, entity-graph signals; identifies authority graveyards (skip) vs defensibility-real opportunities (invest); produces a multi-quarter investment plan to close the authority gap. Quarterly cadence per priority cluster; annual decision cadence.
 
 ## Related topics
 

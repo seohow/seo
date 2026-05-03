@@ -79,7 +79,7 @@ For Field & Sun: investing in 4-6 truly evergreen pieces over the next 12 months
 
 ## Skills in this toolkit
 
-- **[brief-evergreen-content](skills/brief-evergreen-content/SKILL.md)** — produces the longevity-first content brief. Deeper than `generate-content-brief`: includes the longevity case (why this piece is durable), original-asset plan, expert-review plan, schema with `dateModified` discipline, refresh schedule, and 3-5-year compounding-traffic forecast. Output is the spec a writer + editor + designer can produce a high-investment anchor piece against.
+- **[brief-evergreen-content](../../../skills/content/brief-evergreen-content/SKILL.md)** — produces the longevity-first content brief. Deeper than `generate-content-brief`: includes the longevity case (why this piece is durable), original-asset plan, expert-review plan, schema with `dateModified` discipline, refresh schedule, and 3-5-year compounding-traffic forecast. Output is the spec a writer + editor + designer can produce a high-investment anchor piece against.
 
 ## Related topics
 

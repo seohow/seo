@@ -67,7 +67,7 @@ For a D2C brand, the most common crawlability failures are: an over-aggressive `
 
 ## Skills in this toolkit
 
-- **[audit-crawlability](skills/audit-crawlability/SKILL.md)** — analyses a list of URLs (from a crawler export or sitemap) for robots.txt blocking, meta robots / X-Robots-Tag directives, response codes, redirect chains, and crawl depth. Produces a prioritised remediation list grouped by issue type.
+- **[audit-crawlability](../../../skills/technical/audit-crawlability/SKILL.md)** — analyses a list of URLs (from a crawler export or sitemap) for robots.txt blocking, meta robots / X-Robots-Tag directives, response codes, redirect chains, and crawl depth. Produces a prioritised remediation list grouped by issue type.
 
 ## Related topics
 

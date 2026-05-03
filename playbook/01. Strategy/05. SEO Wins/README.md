@@ -58,7 +58,7 @@ The framing also matters strategically: organic SEO is compounding, but only aft
 
 ## Skills in this toolkit
 
-- **[build-seo-wins-backlog](skills/build-seo-wins-backlog/SKILL.md)** — consolidates the outputs of keyword research, intent classification, competitor analysis, and clustering into a scored, sequenced wins backlog. Tags by archetype, applies ICE/RICE, defines "done" per win, and produces a 90-day sequence.
+- **[build-seo-wins-backlog](../../../skills/strategy/build-seo-wins-backlog/SKILL.md)** — consolidates the outputs of keyword research, intent classification, competitor analysis, and clustering into a scored, sequenced wins backlog. Tags by archetype, applies ICE/RICE, defines "done" per win, and produces a 90-day sequence.
 
 ## Related topics
 

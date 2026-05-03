@@ -70,13 +70,13 @@ It produces inputs for downstream categories:
 
 The full inventory across the 6 sub-topics:
 
-- **[audit-ga4-setup](01.%20Google%20Analytics/skills/audit-ga4-setup/SKILL.md)** — verify GA4 is correctly configured; flag missing events, broken ecommerce, audience gaps.
-- **[audit-search-console-setup](02.%20Search%20Console/skills/audit-search-console-setup/SKILL.md)** — verify GSC verification, sitemap submission, property coverage, IPv6 / domain-property setup.
-- **[analyse-search-performance](02.%20Search%20Console/skills/analyse-search-performance/SKILL.md)** — produce a structured GSC analysis: top queries, top pages, decline detection, query-cluster intersection.
-- **[set-up-rank-tracking](03.%20Rank%20Tracking/skills/set-up-rank-tracking/SKILL.md)** — design a rank-tracking project: which keywords, which competitors, what cadence, how it feeds into the KPI dashboard.
-- **[analyse-traffic-patterns](04.%20Traffic%20Analysis/skills/analyse-traffic-patterns/SKILL.md)** — produce a structured GA4 / traffic analysis: channel mix, growth / decay trends, anomaly detection, segmentation.
-- **[define-seo-kpis](05.%20KPI%20Tracking/skills/define-seo-kpis/SKILL.md)** — set the right SEO KPIs for the business and design the reporting dashboard.
-- **[audit-conversion-tracking](06.%20Conversion%20Tracking/skills/audit-conversion-tracking/SKILL.md)** — verify conversion events fire correctly; review attribution model; identify revenue-data leaks.
+- **[audit-ga4-setup](../../skills/analytics/audit-ga4-setup/SKILL.md)** — verify GA4 is correctly configured; flag missing events, broken ecommerce, audience gaps.
+- **[audit-search-console-setup](../../skills/analytics/audit-search-console-setup/SKILL.md)** — verify GSC verification, sitemap submission, property coverage, IPv6 / domain-property setup.
+- **[analyse-search-performance](../../skills/analytics/analyse-search-performance/SKILL.md)** — produce a structured GSC analysis: top queries, top pages, decline detection, query-cluster intersection.
+- **[set-up-rank-tracking](../../skills/analytics/set-up-rank-tracking/SKILL.md)** — design a rank-tracking project: which keywords, which competitors, what cadence, how it feeds into the KPI dashboard.
+- **[analyse-traffic-patterns](../../skills/analytics/analyse-traffic-patterns/SKILL.md)** — produce a structured GA4 / traffic analysis: channel mix, growth / decay trends, anomaly detection, segmentation.
+- **[define-seo-kpis](../../skills/analytics/define-seo-kpis/SKILL.md)** — set the right SEO KPIs for the business and design the reporting dashboard.
+- **[audit-conversion-tracking](../../skills/analytics/audit-conversion-tracking/SKILL.md)** — verify conversion events fire correctly; review attribution model; identify revenue-data leaks.
 
 ## Common pitfalls
 

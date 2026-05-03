@@ -50,13 +50,13 @@ The output of this category is a set of strategy artifacts — keyword plan, see
 
 Each sub-topic ships its own skills. The complete list:
 
-- **[plan-keyword-research](01.%20Keyword%20Research/skills/plan-keyword-research/SKILL.md)** — scope a keyword research project for your business.
-- **[generate-seed-keywords](01.%20Keyword%20Research/skills/generate-seed-keywords/SKILL.md)** — produce an initial keyword list from your business profile.
-- **[classify-keyword-intent](02.%20Search%20Intent/skills/classify-keyword-intent/SKILL.md)** — tag a keyword list with intent and recommended page type.
-- **[scope-competitor-analysis](03.%20Competitor%20Analysis/skills/scope-competitor-analysis/SKILL.md)** — define a competitor analysis project: who, what, in how much depth.
-- **[audit-competitor-seo](03.%20Competitor%20Analysis/skills/audit-competitor-seo/SKILL.md)** — analyse a competitor URL or domain and produce a gap report.
-- **[cluster-keywords](04.%20Keyword%20Clustering/skills/cluster-keywords/SKILL.md)** — group a keyword list into topical clusters mapped to pages.
-- **[build-seo-wins-backlog](05.%20SEO%20Wins/skills/build-seo-wins-backlog/SKILL.md)** — turn raw findings into a prioritised, ICE-scored backlog.
+- **[plan-keyword-research](../../skills/strategy/plan-keyword-research/SKILL.md)** — scope a keyword research project for your business.
+- **[generate-seed-keywords](../../skills/strategy/generate-seed-keywords/SKILL.md)** — produce an initial keyword list from your business profile.
+- **[classify-keyword-intent](../../skills/strategy/classify-keyword-intent/SKILL.md)** — tag a keyword list with intent and recommended page type.
+- **[scope-competitor-analysis](../../skills/strategy/scope-competitor-analysis/SKILL.md)** — define a competitor analysis project: who, what, in how much depth.
+- **[audit-competitor-seo](../../skills/strategy/audit-competitor-seo/SKILL.md)** — analyse a competitor URL or domain and produce a gap report.
+- **[cluster-keywords](../../skills/strategy/cluster-keywords/SKILL.md)** — group a keyword list into topical clusters mapped to pages.
+- **[build-seo-wins-backlog](../../skills/strategy/build-seo-wins-backlog/SKILL.md)** — turn raw findings into a prioritised, ICE-scored backlog.
 
 ## Common pitfalls
 

@@ -77,7 +77,7 @@ The trade-offs: HARO conversions are mostly Tier 2-3, not Tier 1 (Tier 1 publish
 
 ## Skills in this toolkit
 
-- **[set-up-haro-response-system](skills/set-up-haro-response-system/SKILL.md)** — produces the reactive-PR operational plan: platform selection (Connectively / Qwoted / Featured / ProfNet), email-monitoring + triage, filtering rules (topic / credential / publication-tier), response template library (5-8 templates), daily cadence, placement tracking, direct-journalist-watching extension, quarterly review schedule. Output is the operational system that produces 2-5 placements / month at minimal sustained effort.
+- **[set-up-haro-response-system](../../../skills/off-page/set-up-haro-response-system/SKILL.md)** — produces the reactive-PR operational plan: platform selection (Connectively / Qwoted / Featured / ProfNet), email-monitoring + triage, filtering rules (topic / credential / publication-tier), response template library (5-8 templates), daily cadence, placement tracking, direct-journalist-watching extension, quarterly review schedule. Output is the operational system that produces 2-5 placements / month at minimal sustained effort.
 
 ## Related topics
 

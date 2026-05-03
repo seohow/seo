@@ -78,7 +78,7 @@ For a D2C brand on Shopify or WooCommerce, the default alt-text behaviour is usu
 
 ## Skills in this toolkit
 
-- **[audit-images](skills/audit-images/SKILL.md)** — analyses a page's images on six dimensions (alt text, file names, format, compression/dimensions, responsive serving, lazy-loading), produces a per-image action list, and identifies the LCP image so it doesn't get lazy-loaded by mistake. Runs at single-page or batch scale.
+- **[audit-images](../../../skills/on-page/audit-images/SKILL.md)** — analyses a page's images on six dimensions (alt text, file names, format, compression/dimensions, responsive serving, lazy-loading), produces a per-image action list, and identifies the LCP image so it doesn't get lazy-loaded by mistake. Runs at single-page or batch scale.
 
 ## Related topics
 

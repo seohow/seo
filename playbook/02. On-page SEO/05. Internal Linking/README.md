@@ -75,8 +75,8 @@ For a D2C brand, internal linking is most often under-invested — the navigatio
 
 ## Skills in this toolkit
 
-- **[plan-internal-linking](skills/plan-internal-linking/SKILL.md)** — designs a site-wide internal-linking strategy from the cluster map. Identifies pillars, spokes, the linking matrix between them, and the implementation sequence.
-- **[audit-page-internal-links](skills/audit-page-internal-links/SKILL.md)** — audits a single page's incoming and outgoing internal links: what anchor texts point at it, where it links to, what's missing relative to the cluster strategy. Produces a per-page action list.
+- **[plan-internal-linking](../../../skills/on-page/plan-internal-linking/SKILL.md)** — designs a site-wide internal-linking strategy from the cluster map. Identifies pillars, spokes, the linking matrix between them, and the implementation sequence.
+- **[audit-page-internal-links](../../../skills/on-page/audit-page-internal-links/SKILL.md)** — audits a single page's incoming and outgoing internal links: what anchor texts point at it, where it links to, what's missing relative to the cluster strategy. Produces a per-page action list.
 
 ## Related topics
 

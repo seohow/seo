@@ -74,7 +74,7 @@ The trade-off: brand-mention monitoring requires tooling (Google Alerts, Brand24
 
 ## Skills in this toolkit
 
-- **[monitor-brand-mentions](skills/monitor-brand-mentions/SKILL.md)** — produces a brand-mention monitoring + conversion plan covering tooling selection, alert keyword set, review cadence, quality filter, outreach template, sentiment-tracking schema, backfill plan (90-day historical), and conversion-rate targets. Output is the operating brief for the brand-mention programme. Annual cadence to refresh keywords as products / brand names evolve.
+- **[monitor-brand-mentions](../../../skills/off-page/monitor-brand-mentions/SKILL.md)** — produces a brand-mention monitoring + conversion plan covering tooling selection, alert keyword set, review cadence, quality filter, outreach template, sentiment-tracking schema, backfill plan (90-day historical), and conversion-rate targets. Output is the operating brief for the brand-mention programme. Annual cadence to refresh keywords as products / brand names evolve.
 
 ## Related topics
 

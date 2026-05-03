@@ -61,8 +61,8 @@ For a D2C brand, this is also where you find the highest-leverage gap opportunit
 
 ## Skills in this toolkit
 
-- **[scope-competitor-analysis](skills/scope-competitor-analysis/SKILL.md)** — defines a competitor analysis project: which competitors to include, what to study, how deep, what the deliverable looks like.
-- **[audit-competitor-seo](skills/audit-competitor-seo/SKILL.md)** — analyses a single competitor URL or domain and produces a structured SEO gap report: keyword overlap, content patterns, link signals, and prioritised opportunities.
+- **[scope-competitor-analysis](../../../skills/strategy/scope-competitor-analysis/SKILL.md)** — defines a competitor analysis project: which competitors to include, what to study, how deep, what the deliverable looks like.
+- **[audit-competitor-seo](../../../skills/strategy/audit-competitor-seo/SKILL.md)** — analyses a single competitor URL or domain and produces a structured SEO gap report: keyword overlap, content patterns, link signals, and prioritised opportunities.
 
 ## Related topics
 

@@ -70,7 +70,7 @@ The trade-offs: quality publications are *hard* to get into. Most publications t
 
 ## Skills in this toolkit
 
-- **[plan-guest-posting-campaign](skills/plan-guest-posting-campaign/SKILL.md)** — produces a guest-posting campaign plan: target publications (Tier 1-3 with named editors / contributor pages), pitch angles (4-6 specific, original, timely), author byline strategy, pitch templates, cadence, yield tracking, and quality-filter criteria. Output is the operating brief for proactive guest-post outreach.
+- **[plan-guest-posting-campaign](../../../skills/off-page/plan-guest-posting-campaign/SKILL.md)** — produces a guest-posting campaign plan: target publications (Tier 1-3 with named editors / contributor pages), pitch angles (4-6 specific, original, timely), author byline strategy, pitch templates, cadence, yield tracking, and quality-filter criteria. Output is the operating brief for proactive guest-post outreach.
 
 ## Related topics
 

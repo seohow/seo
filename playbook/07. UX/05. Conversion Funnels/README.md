@@ -92,7 +92,7 @@ For Field & Sun: a funnel diagnosis on the organic-traffic path quarterly, plus 
 
 ## Skills in this toolkit
 
-- **[analyse-conversion-funnel](skills/analyse-conversion-funnel/SKILL.md)** — produces a funnel diagnosis report covering stage-by-stage drop-off (organic-traffic isolated), cohort splits (mobile / desktop, new / returning, cluster, geo), anomaly detection (stage drops vs prior period), correlation with deploys / external events, leak hypotheses per anomalous stage, and routing to fix skills (UX design, mobile, page speed, conversion tracking). Output is the diagnostic + action plan. Quarterly cadence + ad-hoc on suspected anomalies.
+- **[analyse-conversion-funnel](../../../skills/ux/analyse-conversion-funnel/SKILL.md)** — produces a funnel diagnosis report covering stage-by-stage drop-off (organic-traffic isolated), cohort splits (mobile / desktop, new / returning, cluster, geo), anomaly detection (stage drops vs prior period), correlation with deploys / external events, leak hypotheses per anomalous stage, and routing to fix skills (UX design, mobile, page speed, conversion tracking). Output is the diagnostic + action plan. Quarterly cadence + ad-hoc on suspected anomalies.
 
 ## Related topics
 

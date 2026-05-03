@@ -75,7 +75,7 @@ For most ecom on a CMS like Shopify, this category is a watch-out, not a blocker
 
 ## Skills in this toolkit
 
-- **[audit-javascript-seo](skills/audit-javascript-seo/SKILL.md)** — analyses a page (or batch) for JavaScript rendering risks. Compares source HTML against rendered DOM (using user-supplied data from "View Source" + DevTools "Elements" panel, OR GSC URL Inspection's tested-page view). Identifies SEO-critical content that's only in the rendered DOM, audits internal links for real `<a href>` anchors, flags JS redirects, surfaces JS-injected widget content. Produces a prioritised remediation list with specific fixes per finding.
+- **[audit-javascript-seo](../../../skills/technical/audit-javascript-seo/SKILL.md)** — analyses a page (or batch) for JavaScript rendering risks. Compares source HTML against rendered DOM (using user-supplied data from "View Source" + DevTools "Elements" panel, OR GSC URL Inspection's tested-page view). Identifies SEO-critical content that's only in the rendered DOM, audits internal links for real `<a href>` anchors, flags JS redirects, surfaces JS-injected widget content. Produces a prioritised remediation list with specific fixes per finding.
 
 ## Related topics
 

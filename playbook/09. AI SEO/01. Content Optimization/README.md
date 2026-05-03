@@ -81,7 +81,7 @@ Third, **traditional ranking is increasingly downstream of AI Overview eligibili
 
 ## Skills in this toolkit
 
-- **[audit-ai-content-readiness](skills/audit-ai-content-readiness/SKILL.md)** — audits a set of priority pages against the AI-citation patterns above (definitive opening, TL;DR, question-led H2s, source citations, freshness signals, entity proximity, paragraph length); produces a per-page prioritised rewrite list with severity and effort estimates. Use before rewriting; re-use as a quarterly content-health audit; bake the patterns into the brief template afterwards.
+- **[audit-ai-content-readiness](../../../skills/ai/audit-ai-content-readiness/SKILL.md)** — audits a set of priority pages against the AI-citation patterns above (definitive opening, TL;DR, question-led H2s, source citations, freshness signals, entity proximity, paragraph length); produces a per-page prioritised rewrite list with severity and effort estimates. Use before rewriting; re-use as a quarterly content-health audit; bake the patterns into the brief template afterwards.
 
 ## Related topics
 

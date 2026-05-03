@@ -80,7 +80,7 @@ Third, **relationships compound**. The first placement at a publication is the h
 
 ## Skills in this toolkit
 
-- **[design-outreach-process](skills/design-outreach-process/SKILL.md)** — produces the outreach operational blueprint: domain / authentication setup, ESP / tooling choice, sender warming plan, template library (PR / guest / mention-recovery / broken-link / HARO), CRM schema + tooling, follow-up cadence (Day 0 / 4 / 10 / 14), quality controls (pre-send review, response-rate monitoring, deliverability), and compliance checklist (GDPR / CAN-SPAM / PECR). Output is the operational manual that all tactical-channel skills consume. Annual cadence to refresh.
+- **[design-outreach-process](../../../skills/off-page/design-outreach-process/SKILL.md)** — produces the outreach operational blueprint: domain / authentication setup, ESP / tooling choice, sender warming plan, template library (PR / guest / mention-recovery / broken-link / HARO), CRM schema + tooling, follow-up cadence (Day 0 / 4 / 10 / 14), quality controls (pre-send review, response-rate monitoring, deliverability), and compliance checklist (GDPR / CAN-SPAM / PECR). Output is the operational manual that all tactical-channel skills consume. Annual cadence to refresh.
 
 ## Related topics
 

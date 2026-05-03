@@ -85,7 +85,7 @@ For Field & Sun: a quarterly traffic analysis is plausibly the highest-ROI marke
 
 ## Skills in this toolkit
 
-- **[analyse-traffic-patterns](skills/analyse-traffic-patterns/SKILL.md)** — produces a structured QoQ traffic analysis covering channel mix, page-type rollup, cluster-level rollup, segmentation (mobile / desktop, new / returning, geo), funnel analysis, anomaly detection, and a prioritised action list. Output is the report stakeholders engage with — distinguishing analysis from dashboard. Quarterly cadence.
+- **[analyse-traffic-patterns](../../../skills/analytics/analyse-traffic-patterns/SKILL.md)** — produces a structured QoQ traffic analysis covering channel mix, page-type rollup, cluster-level rollup, segmentation (mobile / desktop, new / returning, geo), funnel analysis, anomaly detection, and a prioritised action list. Output is the report stakeholders engage with — distinguishing analysis from dashboard. Quarterly cadence.
 
 ## Related topics
 

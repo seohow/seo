@@ -78,7 +78,7 @@ For most D2C brands on Shopify, this category is N/A — you can't access logs, 
 
 ## Skills in this toolkit
 
-- **[analyse-log-files](skills/analyse-log-files/SKILL.md)** — takes a 30-90-day server access log export filtered for Googlebot, plus the site's URL inventory (sitemap + crawler export), and produces a structured analysis: crawl distribution by URL bucket, response-code distribution, orphan URLs, under-crawled URLs, crawl-budget waste estimates, and a prioritised remediation list.
+- **[analyse-log-files](../../../skills/technical/analyse-log-files/SKILL.md)** — takes a 30-90-day server access log export filtered for Googlebot, plus the site's URL inventory (sitemap + crawler export), and produces a structured analysis: crawl distribution by URL bucket, response-code distribution, orphan URLs, under-crawled URLs, crawl-budget waste estimates, and a prioritised remediation list.
 
 ## Related topics
 

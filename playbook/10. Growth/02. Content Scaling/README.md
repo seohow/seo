@@ -111,7 +111,7 @@ Third, **scaling done well compounds**. Topical authority requires breadth (Grow
 
 ## Skills in this toolkit
 
-- **[plan-content-scaling-operation](skills/plan-content-scaling-operation/SKILL.md)** — audits current content production pipeline, identifies the actual bottleneck (usually not writer count), produces a scaling plan covering brief production, writer bench, editorial review, brand-voice review, technical SEO review, promotion bandwidth, refresh allocation, and cadence; estimates cost; sequences a 90-day rollout. Use before scaling content volume; quarterly cadence as the system matures; annual deep re-audit.
+- **[plan-content-scaling-operation](../../../skills/growth/plan-content-scaling-operation/SKILL.md)** — audits current content production pipeline, identifies the actual bottleneck (usually not writer count), produces a scaling plan covering brief production, writer bench, editorial review, brand-voice review, technical SEO review, promotion bandwidth, refresh allocation, and cadence; estimates cost; sequences a 90-day rollout. Use before scaling content volume; quarterly cadence as the system matures; annual deep re-audit.
 
 ## Related topics
 

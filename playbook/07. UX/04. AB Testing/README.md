@@ -79,7 +79,7 @@ The trade-offs: A/B tests need traffic for statistical power (5-15k visitors per
 
 ## Skills in this toolkit
 
-- **[plan-ab-test](skills/plan-ab-test/SKILL.md)** — produces an A/B test plan covering hypothesis, variants, primary + secondary metrics, sample-size calculation (with MDE), significance threshold, SEO-safety review (no cloaking; canonical preserved), runtime estimate, decision rules (ship / kill / keep), and risks. Output is the operational test brief — the document the team uses to launch + run + decide. Use per-test (not as a quarterly cadence).
+- **[plan-ab-test](../../../skills/ux/plan-ab-test/SKILL.md)** — produces an A/B test plan covering hypothesis, variants, primary + secondary metrics, sample-size calculation (with MDE), significance threshold, SEO-safety review (no cloaking; canonical preserved), runtime estimate, decision rules (ship / kill / keep), and risks. Output is the operational test brief — the document the team uses to launch + run + decide. Use per-test (not as a quarterly cadence).
 
 ## Related topics
 

@@ -84,7 +84,7 @@ For Field & Sun: a quarterly link-building plan focused on pillar pages, origina
 
 ## Skills in this toolkit
 
-- **[plan-link-building-campaign](skills/plan-link-building-campaign/SKILL.md)** — strategic plan for a quarterly / annual link-building effort. Target assets (pillars / tools / evergreen / data), target sites (3-tier list by DR), tactical channels (PR / HARO / guest / broken-link / mention recovery), cadence, success metrics, and risk watchouts. The strategic anchor for the off-page programme; downstream tactical skills (digital PR, HARO, guest posting, broken-link, mention recovery) execute against this plan.
+- **[plan-link-building-campaign](../../../skills/off-page/plan-link-building-campaign/SKILL.md)** — strategic plan for a quarterly / annual link-building effort. Target assets (pillars / tools / evergreen / data), target sites (3-tier list by DR), tactical channels (PR / HARO / guest / broken-link / mention recovery), cadence, success metrics, and risk watchouts. The strategic anchor for the off-page programme; downstream tactical skills (digital PR, HARO, guest posting, broken-link, mention recovery) execute against this plan.
 
 ## Related topics
 

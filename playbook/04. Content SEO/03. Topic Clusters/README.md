@@ -78,7 +78,7 @@ For Field & Sun, mapping the cluster architecture before shipping more standalon
 
 ## Skills in this toolkit
 
-- **[design-topic-cluster](skills/design-topic-cluster/SKILL.md)** — converts a hub topic from the cluster map into a full pillar + spoke architecture. Identifies which spokes exist vs. need to be built, produces the bidirectional linking matrix, flags duplicate / overlapping spokes, and outputs the sequencing plan. The architectural counterpart to `design-pillar-page` (which designs only the pillar itself).
+- **[design-topic-cluster](../../../skills/content/design-topic-cluster/SKILL.md)** — converts a hub topic from the cluster map into a full pillar + spoke architecture. Identifies which spokes exist vs. need to be built, produces the bidirectional linking matrix, flags duplicate / overlapping spokes, and outputs the sequencing plan. The architectural counterpart to `design-pillar-page` (which designs only the pillar itself).
 
 ## Related topics
 

@@ -86,7 +86,7 @@ For larger ecom sites, the indexing problem flips: too many URLs are indexed (pa
 
 ## Skills in this toolkit
 
-- **[audit-indexing-status](skills/audit-indexing-status/SKILL.md)** — analyses a GSC Pages report export (or pasted data), categorises URLs by exclusion reason, cross-references with the cluster map, and produces a prioritised remediation list grouped by action type. Distinguishes accidental from intentional exclusions.
+- **[audit-indexing-status](../../../skills/technical/audit-indexing-status/SKILL.md)** — analyses a GSC Pages report export (or pasted data), categorises URLs by exclusion reason, cross-references with the cluster map, and produces a prioritised remediation list grouped by action type. Distinguishes accidental from intentional exclusions.
 
 ## Related topics
 

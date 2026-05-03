@@ -58,7 +58,7 @@ For a D2C brand, clustering directly determines site architecture. Clusters beco
 
 ## Skills in this toolkit
 
-- **[cluster-keywords](skills/cluster-keywords/SKILL.md)** — takes a classified keyword list (with intent and ideally page-type tags) and produces a structured cluster map: cluster ID, primary keyword, supporting keywords, page type, target URL, and priority — ready to drop into a content roadmap.
+- **[cluster-keywords](../../../skills/strategy/cluster-keywords/SKILL.md)** — takes a classified keyword list (with intent and ideally page-type tags) and produces a structured cluster map: cluster ID, primary keyword, supporting keywords, page type, target URL, and priority — ready to drop into a content roadmap.
 
 ## Related topics
 

@@ -77,7 +77,7 @@ For Field & Sun specifically: the brand voice constraints (percentages over clai
 
 ## Skills in this toolkit
 
-- **[generate-content-brief](skills/generate-content-brief/SKILL.md)** — produces a standard 2-page brief for a single blog post or short-form content piece. Pulls cluster context, SERP read, intent classification, outline, word count, brand-distinct angle, voice constraints, internal-link plan, schema requirements, and acceptance criteria. The universal foundation skill — every other Content SEO skill that produces "long-form content" expects this brief shape downstream.
+- **[generate-content-brief](../../../skills/content/generate-content-brief/SKILL.md)** — produces a standard 2-page brief for a single blog post or short-form content piece. Pulls cluster context, SERP read, intent classification, outline, word count, brand-distinct angle, voice constraints, internal-link plan, schema requirements, and acceptance criteria. The universal foundation skill — every other Content SEO skill that produces "long-form content" expects this brief shape downstream.
 
 ## Related topics
 

@@ -21,8 +21,12 @@ seo/
 │       ├── business_profile.md          ← input (created by generate-business-profile)
 │       ├── CLAUDE.md                    ← per-business working memory (decisions, learnings, quirks)
 │       └── <artifact-subfolders>/       ← outputs from skills
-├── skills/                              ← repo-level setup skills
-│   └── generate-business-profile/SKILL.md
+├── skills/                              ← distributable skill package
+│   ├── README.md                        ← skill catalogue, grouped by playbook category / leaf
+│   ├── generate-business-profile/       ← setup / meta utility
+│   │   └── SKILL.md
+│   └── <category-slug>/<skill-name>/    ← topic skills (category slug omits "SEO")
+│       └── SKILL.md
 ├── templates/                           ← format references
 │   ├── README_TEMPLATE.md
 │   ├── SKILL_TEMPLATE.md
@@ -32,8 +36,7 @@ seo/
     ├── 01. Strategy/
     │   ├── README.md                    ← category overview
     │   └── <NN>. <Topic>/
-    │       ├── README.md                ← leaf topic
-    │       └── skills/<skill-name>/SKILL.md
+    │       └── README.md                ← leaf topic; links to root skills
     └── ... 02–10 (other categories)
 ```
 
@@ -54,7 +57,8 @@ These are non-negotiable — deviating creates inconsistency that compounds acro
 - Follow `templates/SKILL_TEMPLATE.md`. Frontmatter requires `name` (kebab-case) and `description` (specific, slightly pushy to combat under-triggering — see `skill-creator` guidance).
 - Skills go in two places only:
   - **Setup / meta utilities** — repo root under `skills/<skill-name>/SKILL.md` (e.g. `generate-business-profile`).
-  - **Topic-specific skills** — inside the relevant topic folder under `playbook/<category>/<topic>/skills/<skill-name>/SKILL.md`.
+  - **Topic-specific skills** — under `skills/<category-slug>/<skill-name>/SKILL.md`, where `<category-slug>` is the playbook category in lowercase slug form with the repeated `SEO` suffix removed (`on-page`, `technical`, `content`, `off-page`, `international`, `ai`).
+- Keep `skills/README.md` updated whenever adding, moving, renaming, or removing a skill. It is the distributable catalogue for registries like skills.sh and should be grouped by playbook category / leaf, with links back to the category and leaf README.
 - Two archetypes: **planner** (scopes a project, produces a brief) and **executor** (produces a specific artifact). Some topics need one, some need both, some need a tracker — pick based on what the topic actually requires. Don't force every topic into the same shape.
 - Every topic skill reads inputs from `businesses/<slug>/business_profile.md` and writes outputs to `businesses/<slug>/<artifact-subfolder>/`. The subfolder names are conventionalised — see existing skills for the pattern (`keyword-research/`, `intent-classification/`, `competitor-analysis/`, `clusters/`, `backlog/`, etc.).
 - Skill description should explicitly resolve the slug: list `businesses/`, default to the only folder if there's one, ask if there are multiple, recommend `generate-business-profile` if there are none.
@@ -104,9 +108,9 @@ Every leaf topic folder that hasn't been populated yet contains a `.gitkeep` fil
 1. Read this file (you're here) and `templates/README_TEMPLATE.md` + `templates/SKILL_TEMPLATE.md`.
 2. Read at least one full Strategy leaf for calibration.
 3. Write the category overview README (at `playbook/NN. Category/README.md`) before the leaves — it forces you to think about how the leaves fit together.
-4. For each leaf, write the README first, then 1-2 skills. Don't write skills before the README — the README defines the shape of the work.
+4. For each leaf, write the README first, then 1-2 skills under `skills/<category-slug>/<skill-name>/SKILL.md`. Don't write skills before the README — the README defines the shape of the work.
 5. Cross-link to related topics in other categories (e.g. Internal Linking links to Topic Clusters and Site Architecture).
-6. Update root `README.md` only if the category structure changed (it shouldn't for v1).
+6. Update `skills/README.md` so the new skill appears under the right category / leaf and links back to the playbook page. Update root `README.md` only if the category structure changed (it shouldn't for v1).
 
 ## How to update the toolkit (vs. adding to it)
 
@@ -134,7 +138,7 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 ### 2026-04-26 — Toolkit foundations and Strategy slice complete
 
 - Decided format: README + 1-2 skills per leaf, parent README per category, examples lean D2C for v1, frameworks stay business-agnostic.
-- Decided structure: `templates/` for templates, `skills/` for setup utilities, `playbook/<category>/<topic>/skills/` for topic skills.
+- Initial structure at the time: `templates/` for templates, `skills/` for setup utilities, `playbook/<category>/<topic>/skills/` for topic skills. Superseded on 2026-05-03 by the root distributable `skills/<category-slug>/<skill-name>/` package.
 - Decided per-business workspace convention: `businesses/<slug>/` holds profile + artifacts; never store inputs/outputs at repo root.
 - Decided front-door skill: `generate-business-profile` is the entry point and must run before any topic skill is usable.
 - Decided audience: D2C-first examples, but architecture should support adding business types later via different profiles + example overrides.
@@ -336,6 +340,13 @@ Don't add new categories or leaves without explicit user direction. The v1 struc
 - Added an "Example drift prevention" convention because category reviews kept finding small remnants of the earlier cleaning-brand fixture and literal rejected voice phrases.
 - Future category work should include a stale-language scan before finishing, plus a profile read when creating new examples.
 - Field & Sun remains the only canonical sample business for v1 examples; generic examples are allowed only as templates, not as alternate fictional brands.
+
+### 2026-05-03 — Playbook skills moved into distributable root package
+
+- Moved all topic-specific skills out of `playbook/<category>/<topic>/skills/` and into root `skills/<category-slug>/<skill-name>/SKILL.md`.
+- Category slugs are registry-friendly and drop the repeated SEO suffix: `strategy`, `on-page`, `technical`, `content`, `analytics`, `off-page`, `ux`, `international`, `ai`, `growth`.
+- Added `skills/README.md` as the master skill catalogue for registry distribution. It groups skills by playbook category / leaf and links back to the playbook pages.
+- Playbook READMEs now remain the curriculum layer and link outward to root skills. Do not recreate leaf-local `skills/` folders.
 
 ## Learnings about working in this repo
 
