@@ -44,7 +44,7 @@ If this is your first time doing SEO strategy for the business, work through thi
 1. Run **Keyword Clustering** to turn the universe into a content/page map.
 2. Run **SEO Wins** to extract a prioritised backlog you can start executing this quarter.
 
-The output of this category is a set of strategy artifacts — keyword plan, seed list, intent tags, competitor gaps, cluster map — plus a prioritised backlog. From there you move into [On-page SEO](../02.%20On-page%20SEO/) and [Content SEO](../04.%20Content%20SEO/) to execute against the plan.
+The output of this category is a set of strategy artifacts — keyword plan, seed list, intent tags, competitor gaps, cluster map — plus a prioritised backlog. From there you move into [On-page SEO](../02.%20On-page%20SEO/README.md) and [Content SEO](../04.%20Content%20SEO/README.md) to execute against the plan.
 
 ## Skills you'll use in this category
 
@@ -70,6 +70,6 @@ Each sub-topic ships its own skills. The complete list:
 
 Once you have a strategy and a wins backlog:
 
-- **[02. On-page SEO](../02.%20On-page%20SEO/)** — execute the on-page improvements your strategy surfaced.
-- **[04. Content SEO](../04.%20Content%20SEO/)** — build the new pages your clusters call for.
-- **[05. Analytics](../05.%20Analytics/)** — set up measurement before you start executing so you know what's working.
+- **[02. On-page SEO](../02.%20On-page%20SEO/README.md)** — execute the on-page improvements your strategy surfaced.
+- **[04. Content SEO](../04.%20Content%20SEO/README.md)** — build the new pages your clusters call for.
+- **[05. Analytics](../05.%20Analytics/README.md)** — set up measurement before you start executing so you know what's working.

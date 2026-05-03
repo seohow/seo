@@ -84,6 +84,6 @@ Once international setup is shipping:
 
 - **[03. Technical SEO / 02. Indexing](../03. Technical SEO/02. Indexing.md)** — international Hreflang issues surface in GSC indexing reports.
 - **[02. On-page SEO / 04. URL Structure](../02. On-page SEO/04. URL Structure.md)** — multi-market URL conventions live here.
-- **[06. Off-page SEO](../06.%20Off-page%20SEO/)** — per-market link-building requires local publications.
-- **[05. Analytics](../05.%20Analytics/)** — per-market segmentation in GA4 / GSC.
-- **[04. Content SEO](../04.%20Content%20SEO/)** — per-market editorial calendars.
+- **[06. Off-page SEO](../06.%20Off-page%20SEO/README.md)** — per-market link-building requires local publications.
+- **[05. Analytics](../05.%20Analytics/README.md)** — per-market segmentation in GA4 / GSC.
+- **[04. Content SEO](../04.%20Content%20SEO/README.md)** — per-market editorial calendars.

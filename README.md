@@ -30,15 +30,15 @@ The `playbook/` folder is the table of contents. It's organised into 10 categori
 | # | Category | What it covers |
 |---|---|---|
 | 01 | [Strategy](playbook/01.%20Strategy/README.md) | Keyword research, intent, competitor analysis, clustering, quick wins |
-| 02 | [On-page SEO](playbook/02.%20On-page%20SEO/) | Titles, descriptions, headers, URLs, internal links, images, content |
-| 03 | [Technical SEO](playbook/03.%20Technical%20SEO/) | Crawlability, indexing, site speed, schema, canonicals, sitemaps, JavaScript SEO, log file analysis, site migration, AI crawler management |
-| 04 | [Content SEO](playbook/04.%20Content%20SEO/) | Blog content, pillars, clusters, tools, evergreen, programmatic, refresh, briefing |
-| 05 | [Analytics](playbook/05.%20Analytics/) | GA4, Search Console, rank tracking, traffic analysis, KPIs, conversion tracking |
-| 06 | [Off-page SEO](playbook/06.%20Off-page%20SEO/) | Link building, guest posting, digital PR, brand mentions, outreach, HARO, broken-link building, reputation management |
-| 07 | [UX](playbook/07.%20UX/) | Page speed, mobile, UX design, A/B testing, conversion funnels, accessibility |
-| 08 | [International SEO](playbook/08.%20International%20SEO/) | Hreflang, multi-language, geo-targeting, localisation |
-| 09 | [AI SEO](playbook/09.%20AI%20SEO/) | Content optimisation, NLP, generative SEO, SERP features, LLM visibility |
-| 10 | [Growth](playbook/10.%20Growth/) | Topical authority, content scaling, link acquisition, experiments |
+| 02 | [On-page SEO](playbook/02.%20On-page%20SEO/README.md) | Titles, descriptions, headers, URLs, internal links, images, content |
+| 03 | [Technical SEO](playbook/03.%20Technical%20SEO/README.md) | Crawlability, indexing, site speed, schema, canonicals, sitemaps, JavaScript SEO, log file analysis, site migration, AI crawler management |
+| 04 | [Content SEO](playbook/04.%20Content%20SEO/README.md) | Blog content, pillars, clusters, tools, evergreen, programmatic, refresh, briefing |
+| 05 | [Analytics](playbook/05.%20Analytics/README.md) | GA4, Search Console, rank tracking, traffic analysis, KPIs, conversion tracking |
+| 06 | [Off-page SEO](playbook/06.%20Off-page%20SEO/README.md) | Link building, guest posting, digital PR, brand mentions, outreach, HARO, broken-link building, reputation management |
+| 07 | [UX](playbook/07.%20UX/README.md) | Page speed, mobile, UX design, A/B testing, conversion funnels, accessibility |
+| 08 | [International SEO](playbook/08.%20International%20SEO/README.md) | Hreflang, multi-language, geo-targeting, localisation |
+| 09 | [AI SEO](playbook/09.%20AI%20SEO/README.md) | Content optimisation, NLP, generative SEO, SERP features, LLM visibility |
+| 10 | [Growth](playbook/10.%20Growth/README.md) | Topical authority, content scaling, link acquisition, experiments |
 
 Each category folder has a `README.md` overview and one Markdown page per leaf topic. The runnable skills live in the root [`skills/`](skills/README.md) package and are linked from the relevant playbook pages.
 

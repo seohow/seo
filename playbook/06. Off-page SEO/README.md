@@ -64,8 +64,8 @@ The Off-page category consumes outputs from earlier categories:
 It produces inputs for downstream categories:
 
 - Backlinks earned → measured via Analytics ([05. Analytics](../05.%20Analytics/README.md)).
-- Branded reputation → influences AI Overview / LLM citation ([09. AI SEO](../09.%20AI%20SEO/) — planned).
-- Authority signals → feed [10. Growth](../10.%20Growth/) — planned (compound investments).
+- Branded reputation → influences AI Overview / LLM citation ([09. AI SEO](../09.%20AI%20SEO/README.md)).
+- Authority signals → feed [10. Growth](../10.%20Growth/README.md) (compound investments).
 
 ## Skills you'll use in this category
 
@@ -97,7 +97,7 @@ The full inventory across the 8 sub-topics:
 
 Once off-page is operational:
 
-- **[05. Analytics](../05.%20Analytics/)** — measure link velocity, brand-mention growth, branded-search lift, and the contribution to non-branded organic traffic.
-- **[09. AI SEO](../09.%20AI%20SEO/)** *(planned)* — branded reputation is increasingly an input to AI Overview and LLM citation; off-page work compounds with AI-search visibility.
-- **[10. Growth](../10.%20Growth/)** *(planned)* — sustained off-page programmes are part of the compounding-growth flywheel.
+- **[05. Analytics](../05.%20Analytics/README.md)** — measure link velocity, brand-mention growth, branded-search lift, and the contribution to non-branded organic traffic.
+- **[09. AI SEO](../09.%20AI%20SEO/README.md)** — branded reputation is increasingly an input to AI Overview and LLM citation; off-page work compounds with AI-search visibility.
+- **[10. Growth](../10.%20Growth/README.md)** — sustained off-page programmes are part of the compounding-growth flywheel.
 - **[01. Strategy / 05. SEO Wins](../01. Strategy/05. SEO Wins.md)** — close the loop: refresh the wins backlog with what off-page has earned and what's next.

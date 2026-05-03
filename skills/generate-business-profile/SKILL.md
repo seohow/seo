@@ -28,7 +28,7 @@ It supports two modes: **create new** (default — interview from scratch and cr
 
 ## Inputs and prerequisites
 
-1. **Read the template.** Start by reading `templates/business_profile_template.md` to know the section structure. The interview is built around it.
+1. **Read the template.** Start by reading `skills/generate-business-profile/templates/business_profile_template.md` to know the section structure. The interview is built around it.
 2. **Check for existing businesses.** List `businesses/`. If the user hasn't named a business yet, ask. If a folder for that business already exists, ask whether to update the existing profile or pick a different name.
 3. **Mode** — derive from the request:
    - User says "create" / "new" / "set up" → create-new mode.
@@ -59,7 +59,7 @@ If `businesses/<slug>/` already exists, ask whether to update or pick a new slug
 
 Don't dump all 8 sections at once. Walk in roughly five conversational batches, each covering 1-2 sections. After each batch, briefly reflect back what was captured before moving on. This rhythm keeps the user engaged and gives you natural moments to clarify ambiguity.
 
-**Batch 1: Identity + business model (sections 1 and 2).** Business name, URL, one-line description, year founded, team size, business type (D2C / SaaS / marketplace / local services / B2B / content / hybrid), revenue source, AOV/contract value, gross margin, sales cycle. Most of these are factual and quick. Probe the one-line description until it's customer-facing — "we make refillable cleaning products" beats "consumer products company in the cleaning space."
+**Batch 1: Identity + business model (sections 1 and 2).** Business name, URL, one-line description, year founded, team size, business type (D2C / SaaS / marketplace / local services / B2B / content / hybrid), revenue source, AOV/contract value, gross margin, sales cycle. Most of these are factual and quick. Probe the one-line description until it's customer-facing — "skincare for daily life and bright days, ingredient-led and refillable" beats "consumer products company in the personal-care space."
 
 **Batch 2: Products / services + customer (sections 3 and 4).** Product/service categories with hero items. Primary customer description. Top 3 customer pains. Top 3 questions customers ask before buying. Geographic markets. Languages. The customer-pains and customer-questions fields are the most valuable for downstream SEO work — invest the time to get them in the customer's actual language, not corporate language. If the user struggles, prompt: "if a customer was talking to a friend about why they bought this, what would they say?"
 
@@ -85,7 +85,7 @@ Acknowledge the shape of the business and tailor the interview accordingly. Don'
 
 Create two files in the workspace:
 
-1. **`businesses/<slug>/business_profile.md`** — the structured profile, populated from the interview. Use the structure from `templates/business_profile_template.md`. For sections the user marked as "unknown," leave a clear placeholder like `_(not yet known — see [GSC / GA4 / Ahrefs] to pull this)_` rather than blank — this signals the gap to downstream skills.
+1. **`businesses/<slug>/business_profile.md`** — the structured profile, populated from the interview. Use the structure from `skills/generate-business-profile/templates/business_profile_template.md`. For sections the user marked as "unknown," leave a clear placeholder like `_(not yet known — see [GSC / GA4 / Ahrefs] to pull this)_` rather than blank — this signals the gap to downstream skills.
 
    Add a short header:
 
@@ -97,7 +97,7 @@ Create two files in the workspace:
    *Slug: `<slug>`*
    ```
 
-2. **`businesses/<slug>/CLAUDE.md`** — the per-business working-memory file, populated from `templates/business_claude_template.md`. Pre-fill: business name in the H1 and intro sentence, slug, created date, last-updated date. Leave the Decisions log, Learnings, Constraints/quirks, and Active experiments sections empty (with their inline `*(Empty — populate as ...)*` notes intact). The "How AI collaborators should update this file" and "How the user can interact with this file" sections come straight from the template — keep them verbatim. Don't pre-fill any decisions or learnings, even if the interview surfaced things that *could* be logged — those should accumulate as the user actually works in the workspace, not from the onboarding interview.
+2. **`businesses/<slug>/CLAUDE.md`** — the per-business working-memory file, populated from `skills/generate-business-profile/templates/business_claude_template.md`. Pre-fill: business name in the H1 and intro sentence, slug, created date, last-updated date. Leave the Decisions log, Learnings, Constraints/quirks, and Active experiments sections empty (with their inline `*(Empty — populate as ...)*` notes intact). The "How AI collaborators should update this file" and "How the user can interact with this file" sections come straight from the template — keep them verbatim. Don't pre-fill any decisions or learnings, even if the interview surfaced things that *could* be logged — those should accumulate as the user actually works in the workspace, not from the onboarding interview.
 
    In **update mode**, do NOT touch the existing CLAUDE.md. It's the user's accumulated memory; only `business_profile.md` gets updated by this skill.
 
@@ -127,8 +127,8 @@ Don't rewrite the whole file from scratch when updating — preserve the user's 
 
 The output is two Markdown files in the workspace:
 
-1. `businesses/<slug>/business_profile.md` — populated profile. Follows `templates/business_profile_template.md`.
-2. `businesses/<slug>/CLAUDE.md` — populated working-memory stub. Follows `templates/business_claude_template.md`. Empty content sections, but the pre-fill (business name, slug, dates, intro line) is filled in.
+1. `businesses/<slug>/business_profile.md` — populated profile. Follows `skills/generate-business-profile/templates/business_profile_template.md`.
+2. `businesses/<slug>/CLAUDE.md` — populated working-memory stub. Follows `skills/generate-business-profile/templates/business_claude_template.md`. Empty content sections, but the pre-fill (business name, slug, dates, intro line) is filled in.
 
 In create-new mode both files are created. In update mode only `business_profile.md` is touched — CLAUDE.md is preserved as-is.
 
@@ -178,7 +178,7 @@ No additional chat output beyond the confirmation summary, both file paths, and 
 >
 > *[continues through 5 batches, ~10-15 messages total]*
 >
-> **Skill:** Here's the summary: D2C beauty brand, US, Shopify, hero products across daily serum and mineral SPF, ingredient-aware customers, 3 main pains (finding gentle daily products, understanding SPF, building a simple routine), 4 competitors (Supergoop, Summer Fridays, Drunk Elephant, plus Byrdie as a content competitor), Q4 goal of 2x organic revenue, warm-and-expert tone. Anything missing?
+> **Skill:** Here's the summary: D2C beauty brand, US-led, Shopify, hero products across Daily Glow Serum and Mineral Sun Drops SPF 50, ingredient-aware customers, 3 main pains (mineral SPF white cast, vitamin C serum oxidation/cost, beauty packaging waste), 4 competitors (Supergoop, Saie Beauty, ILIA Beauty, plus Byrdie as a content competitor), 6-month goal of 2x organic sessions to ~17,000/mo with organic at 30% of new-customer acquisition, warm and ingredient-led tone. Anything missing?
 >
 > **User:** Nope, looks right.
 >

@@ -96,5 +96,5 @@ Once analytics is operational:
 
 - **[04. Content SEO / 07. Content Refresh](../04. Content SEO/07. Content Refresh.md)** — decay signals from analytics feed the refresh backlog.
 - **[01. Strategy / 05. SEO Wins](../01. Strategy/05. SEO Wins.md)** — close the loop; refresh the wins backlog with what's been shipped and the data that confirms (or contradicts) it worked.
-- **[06. Off-page SEO](../06.%20Off-page%20SEO/)** — link-building ROI is hard to measure without analytics; once it's set up, off-page work has a feedback loop.
-- **[09. AI SEO](../09.%20AI%20SEO/)** *(planned)* — AI Overview / LLM citation visibility requires its own measurement layer; complements the traditional analytics set.
+- **[06. Off-page SEO](../06.%20Off-page%20SEO/README.md)** — link-building ROI is hard to measure without analytics; once it's set up, off-page work has a feedback loop.
+- **[09. AI SEO](../09.%20AI%20SEO/README.md)** — AI Overview / LLM citation visibility requires its own measurement layer; complements the traditional analytics set.

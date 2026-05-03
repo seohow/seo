@@ -100,6 +100,6 @@ Once AI SEO is shipping:
 - **[03. Technical SEO / 10. AI Crawler Management](../03. Technical SEO/10. AI Crawler Management.md)** — the access-layer counterpart. Verify retrieval bots are allowed before investing in citation-magnet content; verify training-bot posture aligns with content-rights stance.
 - **[03. Technical SEO / 04. Schema Markup](../03. Technical SEO/04. Schema Markup.md)** — entity-rich schema is load-bearing for both NLP optimisation and AI Overview eligibility.
 - **[04. Content SEO / 08. Content Briefing](../04. Content SEO/08. Content Briefing.md)** — bake citation-magnet patterns into the standard brief template so new content ships AI-ready by default.
-- **[05. Analytics](../05.%20Analytics/)** — define LLM-referral attribution conventions in GA4 (referral domains, UTM patterns for citation links).
+- **[05. Analytics](../05.%20Analytics/README.md)** — define LLM-referral attribution conventions in GA4 (referral domains, UTM patterns for citation links).
 - **[06. Off-page SEO / 04. Brand Mentions](../06. Off-page SEO/04. Brand Mentions.md)** — LLM citation is a brand-mention surface; coordinate measurement with traditional brand-mention monitoring.
-- **[10. Growth](../10.%20Growth/)** — topical authority and content scaling underpin sustained AI-citation share.
+- **[10. Growth](../10.%20Growth/README.md)** — topical authority and content scaling underpin sustained AI-citation share.

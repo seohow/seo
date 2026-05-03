@@ -20,7 +20,7 @@ The skill is opinionated about a few things: branded SERP variants matter ("revi
 
 - The user wants to monitor brand mentions across the wider web — use `monitor-brand-mentions`.
 - The user wants the broader off-page strategy — use `plan-link-building-campaign`.
-- The user wants AI Overview / LLM citation optimisation at content level — handoff to AI SEO category (planned).
+- The user wants AI Overview / LLM citation optimisation at content level — handoff to the AI SEO category (`audit-llm-visibility`, `plan-generative-seo-strategy`).
 - The user wants to manage social-media presence specifically — out of scope.
 
 ## Inputs required

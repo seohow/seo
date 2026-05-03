@@ -82,7 +82,7 @@
 
 This file is maintained by AI collaborators as a side-effect of working in this workspace. Specific update rules:
 
-- **Decision made by the user that affects future SEO work** → append to **Decisions log**. Examples: "we'll prioritise the laundry cluster over dish for Q3," "deferred link building until after the rebrand," "the SEO Wins backlog top 5 are owned by the founder, not the marketer."
+- **Decision made by the user that affects future SEO work** → append to **Decisions log**. Examples: "we'll prioritise the tinted-mineral cluster over the vitamin-C cluster for Q3," "deferred link building until after the rebrand," "the SEO Wins backlog top 5 are owned by the founder, not the marketer."
 - **Non-obvious learning about this business surfaces in conversation or in artifact analysis** → add a bullet to **Learnings**. Examples: "Wirecutter dominates our top 10 commercial SERPs head-to-head — we should focus on adjacent angles instead," "blog refresh ROI here is much higher than new content (probably because indexed depth is shallow)."
 - **User reinforces a preference or hits a constraint twice or more** → add to **Constraints / quirks**. Examples: "founder dislikes the word 'sustainable'," "Shopify theme doesn't allow per-product canonical overrides," "this brand sells only in EU markets — no US examples in outputs."
 - **An experiment starts** → add to **Active experiments**. **Concludes** → update status with verdict.

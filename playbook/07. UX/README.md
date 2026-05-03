@@ -87,7 +87,7 @@ The full inventory across the 6 sub-topics:
 
 Once UX work is shipping:
 
-- **[05. Analytics](../05.%20Analytics/)** — measure conversion-rate lift, funnel-leak repair, A/B-test outcomes.
+- **[05. Analytics](../05.%20Analytics/README.md)** — measure conversion-rate lift, funnel-leak repair, A/B-test outcomes.
 - **[03. Technical SEO / 03. Site Speed](../03. Technical SEO/03. Site Speed.md)** — UX speed work feeds back into the Technical SEO CWV story.
-- **[06. Off-page SEO](../06.%20Off-page%20SEO/)** — UX-improved pages convert visitors that off-page work delivered.
+- **[06. Off-page SEO](../06.%20Off-page%20SEO/README.md)** — UX-improved pages convert visitors that off-page work delivered.
 - **[01. Strategy / 05. SEO Wins](../01. Strategy/05. SEO Wins.md)** — close the loop; refresh the wins backlog with UX work shipped.

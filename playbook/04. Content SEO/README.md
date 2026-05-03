@@ -94,8 +94,8 @@ The full inventory across the 8 sub-topics:
 
 Once new content is shipping:
 
-- **[02. On-page SEO](../02.%20On-page%20SEO/)** — every new page needs title, description, header, image, and content optimisation.
+- **[02. On-page SEO](../02.%20On-page%20SEO/README.md)** — every new page needs title, description, header, image, and content optimisation.
 - **[03. Technical SEO / 04. Schema Markup](../03. Technical SEO/04. Schema Markup.md)** — schema deployment on the new pages.
 - **[02. On-page SEO / 05. Internal Linking](../02. On-page SEO/05. Internal Linking.md)** — wire new pages into the linking plan.
-- **[05. Analytics](../05.%20Analytics/)** — measure ranking, traffic, and conversion on the new content.
+- **[05. Analytics](../05.%20Analytics/README.md)** — measure ranking, traffic, and conversion on the new content.
 - **[01. Strategy / 05. SEO Wins](../01. Strategy/05. SEO Wins.md)** — close the loop: refresh the wins backlog with what's been shipped and what's next.

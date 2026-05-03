@@ -62,7 +62,7 @@ Most technical-SEO work doesn't strictly require Strategy outputs, but it benefi
 
 - `businesses/<slug>/business_profile.md` — the platform field (Shopify / WordPress / custom Next.js / etc.) determines which technical patterns apply.
 - `businesses/<slug>/clusters/cluster-map.md` — when prioritising indexing, schema, or site-speed work, the cluster map identifies which pages matter most.
-- Output of **[02. On-page SEO](../02.%20On-page%20SEO/)** work — technical SEO ensures the on-page work you shipped can actually be crawled, indexed, and served fast.
+- Output of **[02. On-page SEO](../02.%20On-page%20SEO/README.md)** work — technical SEO ensures the on-page work you shipped can actually be crawled, indexed, and served fast.
 
 You'll also need access to: Google Search Console (mandatory), a crawler (Screaming Frog or Sitebulb), PageSpeed Insights / Lighthouse / WebPageTest, and ideally server log files (for log-file analysis).
 
@@ -99,7 +99,7 @@ The full inventory across the 10 sub-topics:
 
 Once technical SEO is in shape:
 
-- **[04. Content SEO](../04.%20Content%20SEO/)** — produce new pages knowing the technical foundation will pick them up cleanly.
-- **[05. Analytics](../05.%20Analytics/)** — set up the measurement that tells you whether the technical work is paying off.
-- **[02. On-page SEO](../02.%20On-page%20SEO/)** — re-run on-page work knowing pages are now crawlable, indexable, fast, and properly canonicalised.
+- **[04. Content SEO](../04.%20Content%20SEO/README.md)** — produce new pages knowing the technical foundation will pick them up cleanly.
+- **[05. Analytics](../05.%20Analytics/README.md)** — set up the measurement that tells you whether the technical work is paying off.
+- **[02. On-page SEO](../02.%20On-page%20SEO/README.md)** — re-run on-page work knowing pages are now crawlable, indexable, fast, and properly canonicalised.
 - **[01. Strategy / 05. SEO Wins](../01. Strategy/05. SEO Wins.md)** — many technical findings become P0 items in the wins backlog.
