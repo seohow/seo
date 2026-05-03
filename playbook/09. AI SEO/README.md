@@ -22,11 +22,11 @@ Content layer            Signal layer            Output layer            Measure
                           you signal)
 ```
 
-1. **[01. Content Optimization](01.%20Content%20Optimization/README.md)** — writing patterns that AI systems extract cleanly: definitive opening sentences, fact-extractable structure, TL;DRs, source-rich claims, freshness signals. The prose-level layer.
-2. **[02. NLP Optimization](02.%20NLP%20Optimization/README.md)** — entity-rich content, semantic clarity, knowledge-graph alignment, internal-linking that reinforces topical authority. The signal layer that helps both search NLP and LLMs understand what a page is about.
-3. **[03. Generative SEO](03.%20Generative%20SEO/README.md)** — strategic decisions and content patterns for getting cited in AI Overviews, ChatGPT / Claude / Perplexity / Gemini answers. The highest-leverage and highest-uncertainty leaf in this category — which queries are worth competing for, what content shape wins citation, where the brand can defensibly own answer space.
-4. **[04. SERP Features](04.%20SERP%20Features/README.md)** — featured snippets, People Also Ask, knowledge panels, image / video carousels, AI Overview citation cards. Earning the on-SERP real estate that increasingly answers queries pre-click.
-5. **[05. LLM Visibility](05.%20LLM%20Visibility/README.md)** — measurement. Probing major LLMs for brand-relevant queries, tracking citation rate, mention quality, sentiment, and competitor share-of-voice. Quarterly cadence, structured query set, longitudinal tracking.
+1. **[01. Content Optimization](01. Content Optimization.md)** — writing patterns that AI systems extract cleanly: definitive opening sentences, fact-extractable structure, TL;DRs, source-rich claims, freshness signals. The prose-level layer.
+2. **[02. NLP Optimization](02. NLP Optimization.md)** — entity-rich content, semantic clarity, knowledge-graph alignment, internal-linking that reinforces topical authority. The signal layer that helps both search NLP and LLMs understand what a page is about.
+3. **[03. Generative SEO](03. Generative SEO.md)** — strategic decisions and content patterns for getting cited in AI Overviews, ChatGPT / Claude / Perplexity / Gemini answers. The highest-leverage and highest-uncertainty leaf in this category — which queries are worth competing for, what content shape wins citation, where the brand can defensibly own answer space.
+4. **[04. SERP Features](04. SERP Features.md)** — featured snippets, People Also Ask, knowledge panels, image / video carousels, AI Overview citation cards. Earning the on-SERP real estate that increasingly answers queries pre-click.
+5. **[05. LLM Visibility](05. LLM Visibility.md)** — measurement. Probing major LLMs for brand-relevant queries, tracking citation rate, mention quality, sentiment, and competitor share-of-voice. Quarterly cadence, structured query set, longitudinal tracking.
 
 ## A suggested workflow
 
@@ -97,9 +97,9 @@ The full inventory across the 5 sub-topics:
 
 Once AI SEO is shipping:
 
-- **[03. Technical SEO / 10. AI Crawler Management](../03.%20Technical%20SEO/10.%20AI%20Crawler%20Management/README.md)** — the access-layer counterpart. Verify retrieval bots are allowed before investing in citation-magnet content; verify training-bot posture aligns with content-rights stance.
-- **[03. Technical SEO / 04. Schema Markup](../03.%20Technical%20SEO/04.%20Schema%20Markup/README.md)** — entity-rich schema is load-bearing for both NLP optimisation and AI Overview eligibility.
-- **[04. Content SEO / 08. Content Briefing](../04.%20Content%20SEO/08.%20Content%20Briefing/README.md)** — bake citation-magnet patterns into the standard brief template so new content ships AI-ready by default.
+- **[03. Technical SEO / 10. AI Crawler Management](../03. Technical SEO/10. AI Crawler Management.md)** — the access-layer counterpart. Verify retrieval bots are allowed before investing in citation-magnet content; verify training-bot posture aligns with content-rights stance.
+- **[03. Technical SEO / 04. Schema Markup](../03. Technical SEO/04. Schema Markup.md)** — entity-rich schema is load-bearing for both NLP optimisation and AI Overview eligibility.
+- **[04. Content SEO / 08. Content Briefing](../04. Content SEO/08. Content Briefing.md)** — bake citation-magnet patterns into the standard brief template so new content ships AI-ready by default.
 - **[05. Analytics](../05.%20Analytics/)** — define LLM-referral attribution conventions in GA4 (referral domains, UTM patterns for citation links).
-- **[06. Off-page SEO / 04. Brand Mentions](../06.%20Off-page%20SEO/04.%20Brand%20Mentions/README.md)** — LLM citation is a brand-mention surface; coordinate measurement with traditional brand-mention monitoring.
+- **[06. Off-page SEO / 04. Brand Mentions](../06. Off-page SEO/04. Brand Mentions.md)** — LLM citation is a brand-mention surface; coordinate measurement with traditional brand-mention monitoring.
 - **[10. Growth](../10.%20Growth/)** — topical authority and content scaling underpin sustained AI-citation share.

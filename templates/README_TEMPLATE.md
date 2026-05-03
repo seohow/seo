@@ -47,14 +47,14 @@ A 4-7 step framework. Numbered. Each step starts with a verb.
 
 Link to every relevant SKILL.md in the root `skills/<category-slug>/` directory. For each, one line on what it does and when to reach for it.
 
-- **[skill-name](../../../skills/category-slug/skill-name/SKILL.md)** — one-line description of when to use.
-- **[skill-name](../../../skills/category-slug/skill-name/SKILL.md)** — one-line description of when to use.
+- **[skill-name](../../skills/category-slug/skill-name/SKILL.md)** — one-line description of when to use.
+- **[skill-name](../../skills/category-slug/skill-name/SKILL.md)** — one-line description of when to use.
 
 ## Related topics
 
 Cross-links to other parts of the toolkit that depend on or feed into this one.
 
-- **[Other topic](../path/README.md)** — how it connects.
+- **[Other topic](../NN.%20Category/NN.%20Topic.md)** — how it connects.
 
 ## Further reading
 

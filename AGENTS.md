@@ -35,8 +35,7 @@ seo/
 └── playbook/                                ← the curriculum
     ├── 01. Strategy/
     │   ├── README.md                    ← category overview
-    │   └── <NN>. <Topic>/
-    │       └── README.md                ← leaf topic; links to root skills
+    │   └── <NN>. <Topic>.md             ← leaf topic; links to root skills
     └── ... 02–10 (other categories)
 ```
 
@@ -44,7 +43,7 @@ seo/
 
 These are non-negotiable — deviating creates inconsistency that compounds across 50+ topics. If a convention isn't working for a specific case, raise it with the user before deviating.
 
-### Topic READMEs
+### Topic pages
 
 - Follow `templates/README_TEMPLATE.md` exactly. Sections: What it is, Why it matters, Core concepts, A worked example, How to do it, Common pitfalls, Skills in this toolkit, Related topics, Further reading.
 - Examples in v1 use the single Field & Sun sample business for narrative consistency. Don't pick a different example brand mid-toolkit.
@@ -71,7 +70,7 @@ These are non-negotiable — deviating creates inconsistency that compounds acro
 
 ### Format bar (the slice in `01. Strategy` is the reference)
 
-Before writing a new topic README or skill, read at least one Strategy leaf for tone calibration (e.g. `playbook/01. Strategy/01. Keyword Research/README.md` and one of its skills). The format and depth of that slice was deliberately designed and reviewed; new content should match.
+Before writing a new topic page or skill, read at least one Strategy leaf for tone calibration (e.g. `playbook/01. Strategy/01. Keyword Research.md` and one of its skills). The format and depth of that slice was deliberately designed and reviewed; new content should match.
 
 ### Canonical sample business (Field & Sun)
 
@@ -99,16 +98,16 @@ Before finishing any playbook README or skill work, actively check for example d
 
 - For new examples, use facts from `businesses/field-and-sun/business_profile.md` and `businesses/field-and-sun/CLAUDE.md`: Daily Glow Serum, Mineral Sun Drops SPF 50, the complementary skincare lineup, Field & Sun's actual voice rules, current competitors, geography, goals, and artifact history.
 
-### `.gitkeep` files in unbuilt leaves
+### Unbuilt leaves
 
-Every leaf topic folder that hasn't been populated yet contains a `.gitkeep` file (e.g. `playbook/02. On-page SEO/01. Title/.gitkeep`). It exists only to make the empty folder commit-able to git. **When you populate a leaf** (write its README and at least one skill), **delete the `.gitkeep` from that folder in the same change.** Leaving a `.gitkeep` next to a real README is a small but real piece of clutter and signals "this folder is empty" when it isn't. The progress of the toolkit is partly visible by how many `.gitkeep` files remain — fewer is better.
+The playbook now uses flattened leaf pages: `playbook/<category>/<NN>. <Topic>.md`. Do not recreate per-leaf folders or `.gitkeep` placeholders. If a future leaf is explicitly added, create the Markdown page directly in the category folder and add its topic skills under `skills/<category-slug>/`.
 
 ## How to add a new category or topic
 
 1. Read this file (you're here) and `templates/README_TEMPLATE.md` + `templates/SKILL_TEMPLATE.md`.
 2. Read at least one full Strategy leaf for calibration.
 3. Write the category overview README (at `playbook/NN. Category/README.md`) before the leaves — it forces you to think about how the leaves fit together.
-4. For each leaf, write the README first, then 1-2 skills under `skills/<category-slug>/<skill-name>/SKILL.md`. Don't write skills before the README — the README defines the shape of the work.
+4. For each leaf, write the topic page at `playbook/NN. Category/NN. Topic Name.md` first, then 1-2 skills under `skills/<category-slug>/<skill-name>/SKILL.md`. Don't write skills before the topic page — the page defines the shape of the work.
 5. Cross-link to related topics in other categories (e.g. Internal Linking links to Topic Clusters and Site Architecture).
 6. Update `skills/README.md` so the new skill appears under the right category / leaf and links back to the playbook page. Update root `README.md` only if the category structure changed (it shouldn't for v1).
 
@@ -347,6 +346,13 @@ Don't add new categories or leaves without explicit user direction. The v1 struc
 - Category slugs are registry-friendly and drop the repeated SEO suffix: `strategy`, `on-page`, `technical`, `content`, `analytics`, `off-page`, `ux`, `international`, `ai`, `growth`.
 - Added `skills/README.md` as the master skill catalogue for registry distribution. It groups skills by playbook category / leaf and links back to the playbook pages.
 - Playbook READMEs now remain the curriculum layer and link outward to root skills. Do not recreate leaf-local `skills/` folders.
+
+### 2026-05-03 — Playbook leaf folders flattened into Markdown pages
+
+- Flattened all playbook leaves from `playbook/<category>/<leaf>/README.md` to `playbook/<category>/<NN>. <Leaf>.md`.
+- Category folders now contain exactly one `README.md` overview plus sibling leaf Markdown pages. No per-leaf folders remain.
+- Skills category READMEs and all playbook cross-links now point to the flattened leaf pages.
+- Future leaves should be created as direct Markdown pages in the category folder, not as folders with nested READMEs.
 
 ## Learnings about working in this repo
 

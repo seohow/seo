@@ -18,12 +18,12 @@ Data sources               Analysis discipline           Business connection
 03. Rank Tracking         (turning data → decisions)
 ```
 
-1. **[01. Google Analytics](01.%20Google%20Analytics/README.md)** — GA4 setup, event tracking, audience definition, the foundational web-analytics platform. Where on-site behaviour is measured.
-2. **[02. Search Console](02.%20Search%20Console/README.md)** — Google's first-party search data — impressions, clicks, position, query-level performance, indexing status, Core Web Vitals reporting. The most reliable SEO-specific data source available.
-3. **[03. Rank Tracking](03.%20Rank%20Tracking/README.md)** — third-party rank tracking (Ahrefs, Semrush, AccuRanker, etc.). Daily-granularity position data, share-of-voice analysis, competitor tracking. Complements GSC's average-position data with daily snapshots.
-4. **[04. Traffic Analysis](04.%20Traffic%20Analysis/README.md)** — turning raw traffic data into pattern recognition: what's growing, what's decaying, what changed when, which channels matter. The analysis discipline that converts data into decisions.
-5. **[05. KPI Tracking](05.%20KPI%20Tracking/README.md)** — defining the right SEO KPIs for the business, building dashboards, establishing reporting cadence. The discipline of *what to look at, when, and what to do about it*.
-6. **[06. Conversion Tracking](06.%20Conversion%20Tracking/README.md)** — connecting SEO to revenue: conversion event setup, attribution modelling (multi-touch, last-click, linear, data-driven), revenue measurement per cluster / page / channel. The category's connection back to the business P&L.
+1. **[01. Google Analytics](01. Google Analytics.md)** — GA4 setup, event tracking, audience definition, the foundational web-analytics platform. Where on-site behaviour is measured.
+2. **[02. Search Console](02. Search Console.md)** — Google's first-party search data — impressions, clicks, position, query-level performance, indexing status, Core Web Vitals reporting. The most reliable SEO-specific data source available.
+3. **[03. Rank Tracking](03. Rank Tracking.md)** — third-party rank tracking (Ahrefs, Semrush, AccuRanker, etc.). Daily-granularity position data, share-of-voice analysis, competitor tracking. Complements GSC's average-position data with daily snapshots.
+4. **[04. Traffic Analysis](04. Traffic Analysis.md)** — turning raw traffic data into pattern recognition: what's growing, what's decaying, what changed when, which channels matter. The analysis discipline that converts data into decisions.
+5. **[05. KPI Tracking](05. KPI Tracking.md)** — defining the right SEO KPIs for the business, building dashboards, establishing reporting cadence. The discipline of *what to look at, when, and what to do about it*.
+6. **[06. Conversion Tracking](06. Conversion Tracking.md)** — connecting SEO to revenue: conversion event setup, attribution modelling (multi-touch, last-click, linear, data-driven), revenue measurement per cluster / page / channel. The category's connection back to the business P&L.
 
 ## A suggested workflow
 
@@ -61,10 +61,10 @@ The Analytics category consumes outputs from earlier categories:
 
 It produces inputs for downstream categories:
 
-- Decay signals → consumed by **[04. Content SEO / 07. Content Refresh](../04.%20Content%20SEO/07.%20Content%20Refresh/README.md)** for refresh prioritisation.
-- Cluster performance data → consumed by **[01. Strategy / 05. SEO Wins](../01.%20Strategy/05.%20SEO%20Wins/README.md)** for backlog refresh.
+- Decay signals → consumed by **[04. Content SEO / 07. Content Refresh](../04. Content SEO/07. Content Refresh.md)** for refresh prioritisation.
+- Cluster performance data → consumed by **[01. Strategy / 05. SEO Wins](../01. Strategy/05. SEO Wins.md)** for backlog refresh.
 - Conversion data → informs **[01. Strategy](../01.%20Strategy/README.md)** about which clusters are revenue-aligned vs. traffic-only.
-- Indexing / coverage findings → consumed by **[03. Technical SEO / 02. Indexing](../03.%20Technical%20SEO/02.%20Indexing/README.md)** for technical fixes.
+- Indexing / coverage findings → consumed by **[03. Technical SEO / 02. Indexing](../03. Technical SEO/02. Indexing.md)** for technical fixes.
 
 ## Skills you'll use in this category
 
@@ -94,7 +94,7 @@ The full inventory across the 6 sub-topics:
 
 Once analytics is operational:
 
-- **[04. Content SEO / 07. Content Refresh](../04.%20Content%20SEO/07.%20Content%20Refresh/README.md)** — decay signals from analytics feed the refresh backlog.
-- **[01. Strategy / 05. SEO Wins](../01.%20Strategy/05.%20SEO%20Wins/README.md)** — close the loop; refresh the wins backlog with what's been shipped and the data that confirms (or contradicts) it worked.
+- **[04. Content SEO / 07. Content Refresh](../04. Content SEO/07. Content Refresh.md)** — decay signals from analytics feed the refresh backlog.
+- **[01. Strategy / 05. SEO Wins](../01. Strategy/05. SEO Wins.md)** — close the loop; refresh the wins backlog with what's been shipped and the data that confirms (or contradicts) it worked.
 - **[06. Off-page SEO](../06.%20Off-page%20SEO/)** — link-building ROI is hard to measure without analytics; once it's set up, off-page work has a feedback loop.
 - **[09. AI SEO](../09.%20AI%20SEO/)** *(planned)* — AI Overview / LLM citation visibility requires its own measurement layer; complements the traditional analytics set.

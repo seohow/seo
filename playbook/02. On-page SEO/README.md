@@ -18,13 +18,13 @@ Page-level signals                    Site-level signals             Content qua
 03. Header Struct ─┘                  06. Image Optimization
 ```
 
-1. **[01. Title](01.%20Title/README.md)** — the single highest-leverage on-page element. The clickable string in the SERP and Google's strongest signal of what a page is about.
-2. **[02. Descriptions](02.%20Descriptions/README.md)** — the snippet under the title in the SERP. Doesn't directly affect rankings but heavily affects click-through rate, which feeds back into rankings.
-3. **[03. Header Structure](03.%20Header%20Structure/README.md)** — the H1/H2/H3 outline of the page. Tells Google how the content is organised and what each section is about.
-4. **[04. URL Structure](04.%20URL%20Structure/README.md)** — the slug pattern used across the site. A site-level decision that affects every page.
-5. **[05. Internal Linking](05.%20Internal%20Linking/README.md)** — how pages link to each other inside the site. Distributes ranking signal and helps Google understand topical relationships.
-6. **[06. Image Optimization](06.%20Image%20Optimization/README.md)** — alt text, file names, formats, dimensions, lazy-loading. Affects accessibility, page speed, and image-search traffic.
-7. **[07. Content Optimization](07.%20Content%20Optimization/README.md)** — the body content of the page itself: depth, structure, terminology, semantic coverage of the target topic.
+1. **[01. Title](01. Title.md)** — the single highest-leverage on-page element. The clickable string in the SERP and Google's strongest signal of what a page is about.
+2. **[02. Descriptions](02. Descriptions.md)** — the snippet under the title in the SERP. Doesn't directly affect rankings but heavily affects click-through rate, which feeds back into rankings.
+3. **[03. Header Structure](03. Header Structure.md)** — the H1/H2/H3 outline of the page. Tells Google how the content is organised and what each section is about.
+4. **[04. URL Structure](04. URL Structure.md)** — the slug pattern used across the site. A site-level decision that affects every page.
+5. **[05. Internal Linking](05. Internal Linking.md)** — how pages link to each other inside the site. Distributes ranking signal and helps Google understand topical relationships.
+6. **[06. Image Optimization](06. Image Optimization.md)** — alt text, file names, formats, dimensions, lazy-loading. Affects accessibility, page speed, and image-search traffic.
+7. **[07. Content Optimization](07. Content Optimization.md)** — the body content of the page itself: depth, structure, terminology, semantic coverage of the target topic.
 
 ## A suggested workflow
 
@@ -91,4 +91,4 @@ Once on-page is in good shape across your priority pages:
 - **[03. Technical SEO](../03.%20Technical%20SEO/)** — make sure Google can actually crawl, index, and render the work you just did.
 - **[04. Content SEO](../04.%20Content%20SEO/)** — produce *new* pages for the clusters that don't yet have one.
 - **[05. Analytics](../05.%20Analytics/)** — measure rank, click, and traffic uplift on the pages you optimised so the next backlog is informed by evidence.
-- **[01. Strategy / 05. SEO Wins](../01.%20Strategy/05.%20SEO%20Wins/)** — re-score the backlog as on-page work ships, and queue the next round.
+- **[01. Strategy / 05. SEO Wins](../01. Strategy/05. SEO Wins.md)** — re-score the backlog as on-page work ships, and queue the next round.

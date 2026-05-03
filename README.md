@@ -40,7 +40,7 @@ The `playbook/` folder is the table of contents. It's organised into 10 categori
 | 09 | [AI SEO](playbook/09.%20AI%20SEO/) | Content optimisation, NLP, generative SEO, SERP features, LLM visibility |
 | 10 | [Growth](playbook/10.%20Growth/) | Topical authority, content scaling, link acquisition, experiments |
 
-Each category folder has a `README.md` overview and 4-7 sub-topic folders, each with their own README. The runnable skills live in the root [`skills/`](skills/README.md) package and are linked from the relevant playbook pages.
+Each category folder has a `README.md` overview and one Markdown page per leaf topic. The runnable skills live in the root [`skills/`](skills/README.md) package and are linked from the relevant playbook pages.
 
 ### 3. Run a skill
 

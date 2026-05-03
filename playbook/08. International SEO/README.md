@@ -18,10 +18,10 @@ Architecture                Signalling             Adaptation
                              which version)
 ```
 
-1. **[01. Hreflang](01.%20Hreflang/README.md)** — the technical signal that tells Google which page is for which language / market. The most-failure-prone implementation in international SEO; small mistakes compound across hundreds of pages.
-2. **[02. Multi Language](02.%20Multi%20Language/README.md)** — the architectural decision: subdomain (`fr.brand.com`) vs subdirectory (`brand.com/fr/`) vs ccTLD (`brand.fr`). Each has trade-offs in SEO equity, operational cost, and brand integrity. Hard to reverse.
-3. **[03. Geo Targeting](03.%20Geo%20Targeting/README.md)** — telling Google which market a page is for. Combines Hreflang, GSC settings, server location, ccTLD choice, and content cues. Distinct from language targeting.
-4. **[04. Localization](04.%20Localization/README.md)** — the content layer. Translation (machine vs human), cultural adaptation, currency / pricing, regulatory compliance per market, market-specific brand voice. Where international SEO becomes international UX.
+1. **[01. Hreflang](01. Hreflang.md)** — the technical signal that tells Google which page is for which language / market. The most-failure-prone implementation in international SEO; small mistakes compound across hundreds of pages.
+2. **[02. Multi Language](02. Multi Language.md)** — the architectural decision: subdomain (`fr.brand.com`) vs subdirectory (`brand.com/fr/`) vs ccTLD (`brand.fr`). Each has trade-offs in SEO equity, operational cost, and brand integrity. Hard to reverse.
+3. **[03. Geo Targeting](03. Geo Targeting.md)** — telling Google which market a page is for. Combines Hreflang, GSC settings, server location, ccTLD choice, and content cues. Distinct from language targeting.
+4. **[04. Localization](04. Localization.md)** — the content layer. Translation (machine vs human), cultural adaptation, currency / pricing, regulatory compliance per market, market-specific brand voice. Where international SEO becomes international UX.
 
 ## A suggested workflow
 
@@ -82,8 +82,8 @@ The full inventory across the 4 sub-topics:
 
 Once international setup is shipping:
 
-- **[03. Technical SEO / 02. Indexing](../03.%20Technical%20SEO/02.%20Indexing/README.md)** — international Hreflang issues surface in GSC indexing reports.
-- **[02. On-page SEO / 04. URL Structure](../02.%20On-page%20SEO/04.%20URL%20Structure/README.md)** — multi-market URL conventions live here.
+- **[03. Technical SEO / 02. Indexing](../03. Technical SEO/02. Indexing.md)** — international Hreflang issues surface in GSC indexing reports.
+- **[02. On-page SEO / 04. URL Structure](../02. On-page SEO/04. URL Structure.md)** — multi-market URL conventions live here.
 - **[06. Off-page SEO](../06.%20Off-page%20SEO/)** — per-market link-building requires local publications.
 - **[05. Analytics](../05.%20Analytics/)** — per-market segmentation in GA4 / GSC.
 - **[04. Content SEO](../04.%20Content%20SEO/)** — per-market editorial calendars.
