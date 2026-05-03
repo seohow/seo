@@ -25,7 +25,7 @@ Update the profile any time something material changes (new product line, new go
 
 ### 2. Browse the curriculum
 
-The `playbook/` folder is the table of contents. It's organised into 10 categories:
+The [`playbook/`](playbook/README.md) folder is the curriculum. Start with the [playbook README](playbook/README.md) for an intro to SEO and how the categories fit together, or jump straight to a category below:
 
 | # | Category | What it covers |
 |---|---|---|
