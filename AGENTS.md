@@ -24,14 +24,13 @@ seo/
 ├── skills/                              ← distributable skill package
 │   ├── README.md                        ← skill catalogue, grouped by playbook category / leaf
 │   ├── generate-business-profile/       ← setup / meta utility
-│   │   └── SKILL.md
+│   │   ├── SKILL.md
+│   │   └── templates/                   ← business profile + business memory templates
 │   └── <category-slug>/<skill-name>/    ← topic skills (category slug omits "SEO")
 │       └── SKILL.md
 ├── templates/                           ← format references
 │   ├── README_TEMPLATE.md
-│   ├── SKILL_TEMPLATE.md
-│   ├── business_profile_template.md
-│   └── business_claude_template.md
+│   └── SKILL_TEMPLATE.md
 └── playbook/                                ← the curriculum
     ├── 01. Strategy/
     │   ├── README.md                    ← category overview
@@ -57,6 +56,7 @@ These are non-negotiable — deviating creates inconsistency that compounds acro
 - Skills go in two places only:
   - **Setup / meta utilities** — repo root under `skills/<skill-name>/SKILL.md` (e.g. `generate-business-profile`).
   - **Topic-specific skills** — under `skills/<category-slug>/<skill-name>/SKILL.md`, where `<category-slug>` is the playbook category in lowercase slug form with the repeated `SEO` suffix removed (`on-page`, `technical`, `content`, `off-page`, `international`, `ai`).
+- Skill-specific runtime templates or assets should live inside the skill folder that consumes them. Example: `generate-business-profile` owns its business workspace templates at `skills/generate-business-profile/templates/`.
 - Keep `skills/README.md` updated whenever adding, moving, renaming, or removing a skill. It is the distributable catalogue for registries like skills.sh and should be grouped by playbook category / leaf, with links back to the category and leaf README.
 - Two archetypes: **planner** (scopes a project, produces a brief) and **executor** (produces a specific artifact). Some topics need one, some need both, some need a tracker — pick based on what the topic actually requires. Don't force every topic into the same shape.
 - Every topic skill reads inputs from `businesses/<slug>/business_profile.md` and writes outputs to `businesses/<slug>/<artifact-subfolder>/`. The subfolder names are conventionalised — see existing skills for the pattern (`keyword-research/`, `intent-classification/`, `competitor-analysis/`, `clusters/`, `backlog/`, etc.).
@@ -145,7 +145,7 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 
 ### 2026-04-26 — Per-business CLAUDE.md introduced
 
-- Decided every business workspace gets its own `CLAUDE.md` from `templates/business_claude_template.md`.
+- Decided every business workspace gets its own `CLAUDE.md` from `skills/generate-business-profile/templates/business_claude_template.md`.
 - Decided `generate-business-profile` drops the stub on workspace creation; users don't have to remember.
 - Decided per-business CLAUDE.md captures: decisions, learnings, constraints/quirks, active experiments — distinct from artifact files (which capture *what was produced*).
 
@@ -226,7 +226,7 @@ If the user asks "what's missing from this toolkit?" mention these are parked ra
 - **Playbook skills:** 73.
 - **Repo-level setup skills:** 1 (`generate-business-profile`).
 - **Total skills:** 74.
-- **Templates:** README, SKILL, business profile, business CLAUDE — all in `templates/`.
+- **Templates:** README and SKILL authoring templates in root `templates/`; business profile and business CLAUDE runtime templates now live inside `skills/generate-business-profile/templates/`.
 - **Sample business:** Field & Sun (canonical fixture; lives at `businesses/field-and-sun/` with profile + CLAUDE.md as worked examples).
 - **`.gitkeep` files:** 0. No empty leaves.
 - **Cross-references:** consistent relative paths (`../`, `../../`) throughout; verified resolving across all 10 categories at category-completion checkpoints.
@@ -353,6 +353,12 @@ Don't add new categories or leaves without explicit user direction. The v1 struc
 - Category folders now contain exactly one `README.md` overview plus sibling leaf Markdown pages. No per-leaf folders remain.
 - Skills category READMEs and all playbook cross-links now point to the flattened leaf pages.
 - Future leaves should be created as direct Markdown pages in the category folder, not as folders with nested READMEs.
+
+### 2026-05-03 — Business templates moved into generate-business-profile
+
+- Moved `business_profile_template.md` and `business_claude_template.md` out of root `templates/` and into `skills/generate-business-profile/templates/`.
+- Reason: these are runtime dependencies of the setup skill, not general toolkit-authoring templates. Keeping them inside the skill makes the distributable skills package self-contained.
+- Root `templates/` now contains only authoring templates for toolkit pages and skills.
 
 ## Learnings about working in this repo
 
