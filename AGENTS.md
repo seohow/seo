@@ -68,6 +68,15 @@ These are non-negotiable — deviating creates inconsistency that compounds acro
 - Business slugs: lowercase, hyphen-separated, no apostrophes, no leading articles when avoidable. `generate-business-profile` enforces this — match its rules manually if creating a slug by hand.
 - Topic folder names: keep the existing `NN. Topic Name` numbered convention. Don't renumber without coordinating across all cross-links.
 
+### Cross-link URL encoding
+
+All relative cross-links must use `%20` for spaces — never literal spaces. GitHub renders literal spaces in Markdown link URLs as broken links.
+
+- Correct: `[On-page SEO](../02.%20On-page%20SEO/README.md)`
+- Wrong: `[On-page SEO](../02. On-page SEO/README.md)`
+
+This applies to every path segment that contains a space: category folders (`01.%20Strategy/`), leaf files (`03.%20Header%20Structure.md`), and skill paths. When writing new cross-links, encode every space in the URL portion as `%20`. The link text (inside `[…]`) is unaffected — spaces there are fine.
+
 ### Format bar (the slice in `01. Strategy` is the reference)
 
 Before writing a new topic page or skill, read at least one Strategy leaf for tone calibration (e.g. `playbook/01. Strategy/01. Keyword Research.md` and one of its skills). The format and depth of that slice was deliberately designed and reviewed; new content should match.
@@ -353,6 +362,12 @@ Don't add new categories or leaves without explicit user direction. The v1 struc
 - Category folders now contain exactly one `README.md` overview plus sibling leaf Markdown pages. No per-leaf folders remain.
 - Skills category READMEs and all playbook cross-links now point to the flattened leaf pages.
 - Future leaves should be created as direct Markdown pages in the category folder, not as folders with nested READMEs.
+
+### 2026-05-04 — Cross-link URL encoding standardised to %20
+
+- Audited all 85 Markdown files across `playbook/` and `skills/` and found mixed encoding: some links used `%20`, others used literal spaces. GitHub breaks on literal spaces.
+- Mass-fixed all 85 affected files so every relative path uses `%20` for spaces consistently.
+- Added encoding rule to "File naming and slugs" convention above so future linking follows the same standard without needing another audit.
 
 ### 2026-05-03 — Business templates moved into generate-business-profile
 
