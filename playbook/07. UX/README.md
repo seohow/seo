@@ -18,12 +18,12 @@ Performance + access            Conversion architecture          Experimentation
 06. Accessibility
 ```
 
-1. **[01. Page Speed UX](01. Page Speed UX.md)** — speed as humans experience it, not just lab metrics. Field-data CWV, perceived speed, interaction responsiveness. Distinct from Technical SEO's site-speed work in audience and remediation.
-2. **[02. Mobile Optimization](02. Mobile Optimization.md)** — mobile-specific UX (touch targets, viewport, responsive layout, mobile-only failure modes). 60-80% of D2C traffic is mobile; the work compounds.
-3. **[03. UX Design](03. UX Design.md)** — page-shape decisions for SEO-driven traffic: above-the-fold structure, hero / nav / IA, content hierarchy, CTA placement, cross-page navigation.
-4. **[04. A/B Testing](04. AB Testing.md)** — disciplined experimentation for organic-traffic landing pages. SEO-safe testing patterns; sample-size discipline; what to test vs. what's not worth testing.
-5. **[05. Conversion Funnels](05. Conversion Funnels.md)** — funnel diagnosis and optimisation specifically for organic-search visitors. Where the funnel leaks, why, and what to fix.
-6. **[06. Accessibility](06. Accessibility.md)** — WCAG compliance, screen-reader-friendly markup, keyboard navigation. Increasingly legal-required in many jurisdictions; SEO-overlapping (semantic HTML, alt text, headings) but distinct enough to deserve its own discipline.
+1. **[01. Page Speed UX](01.%20Page%20Speed%20UX.md)** — speed as humans experience it, not just lab metrics. Field-data CWV, perceived speed, interaction responsiveness. Distinct from Technical SEO's site-speed work in audience and remediation.
+2. **[02. Mobile Optimization](02.%20Mobile%20Optimization.md)** — mobile-specific UX (touch targets, viewport, responsive layout, mobile-only failure modes). 60-80% of D2C traffic is mobile; the work compounds.
+3. **[03. UX Design](03.%20UX%20Design.md)** — page-shape decisions for SEO-driven traffic: above-the-fold structure, hero / nav / IA, content hierarchy, CTA placement, cross-page navigation.
+4. **[04. A/B Testing](04.%20AB%20Testing.md)** — disciplined experimentation for organic-traffic landing pages. SEO-safe testing patterns; sample-size discipline; what to test vs. what's not worth testing.
+5. **[05. Conversion Funnels](05.%20Conversion%20Funnels.md)** — funnel diagnosis and optimisation specifically for organic-search visitors. Where the funnel leaks, why, and what to fix.
+6. **[06. Accessibility](06.%20Accessibility.md)** — WCAG compliance, screen-reader-friendly markup, keyboard navigation. Increasingly legal-required in many jurisdictions; SEO-overlapping (semantic HTML, alt text, headings) but distinct enough to deserve its own discipline.
 
 ## A suggested workflow
 
@@ -57,7 +57,7 @@ The UX category consumes outputs from earlier categories:
 It produces inputs for downstream categories:
 
 - A/B-tested winners → ship to live; measured via Analytics.
-- Funnel improvements → lift in conversion KPIs ([05. Analytics / 05. KPI Tracking](../05. Analytics/05. KPI Tracking.md)).
+- Funnel improvements → lift in conversion KPIs ([05. Analytics / 05. KPI Tracking](../05.%20Analytics/05.%20KPI%20Tracking.md)).
 - Mobile / accessibility fixes → reflected in Technical SEO's CWV + GSC mobile-usability reports.
 
 ## Skills you'll use in this category
@@ -88,6 +88,6 @@ The full inventory across the 6 sub-topics:
 Once UX work is shipping:
 
 - **[05. Analytics](../05.%20Analytics/README.md)** — measure conversion-rate lift, funnel-leak repair, A/B-test outcomes.
-- **[03. Technical SEO / 03. Site Speed](../03. Technical SEO/03. Site Speed.md)** — UX speed work feeds back into the Technical SEO CWV story.
+- **[03. Technical SEO / 03. Site Speed](../03.%20Technical%20SEO/03.%20Site%20Speed.md)** — UX speed work feeds back into the Technical SEO CWV story.
 - **[06. Off-page SEO](../06.%20Off-page%20SEO/README.md)** — UX-improved pages convert visitors that off-page work delivered.
-- **[01. Strategy / 05. SEO Wins](../01. Strategy/05. SEO Wins.md)** — close the loop; refresh the wins backlog with UX work shipped.
+- **[01. Strategy / 05. SEO Wins](../01.%20Strategy/05.%20SEO%20Wins.md)** — close the loop; refresh the wins backlog with UX work shipped.

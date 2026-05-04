@@ -104,7 +104,7 @@ Save the produced file to `businesses/<slug>/competitor-analysis/audit-<competit
 - "Why it works" notes go beyond surface (not just "long article" but "long article + comparison table + ingredient-level depth + brand mentions in major publications").
 - The audit is honest about what's inferred vs known.
 - The tone is observational, not adversarial. The competitor isn't the enemy; they're a free market study.
-- The opportunity list maps cleanly to the [SEO Wins](../../../playbook/01. Strategy/05. SEO Wins.md) backlog format.
+- The opportunity list maps cleanly to the [SEO Wins](../../../playbook/01.%20Strategy/05.%20SEO%20Wins.md) backlog format.
 
 ## Common mistakes to avoid
 

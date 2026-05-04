@@ -18,14 +18,14 @@ Architecture                Content shapes              Lifecycle              F
                            06. Programmatic SEO
 ```
 
-1. **[01. Blog Content](01. Blog Content.md)** — the editorial workhorse. The largest single category of content most brands ship. Educational, comparison, how-to, roundup, ingredient/feature explainers.
-2. **[02. Pillar Pages](02. Pillar Pages.md)** — comprehensive hub pages that cover a topic broadly and link to spoke pages covering subtopics in depth. The architectural backbone of the topic-cluster pattern.
-3. **[03. Topic Clusters](03. Topic Clusters.md)** — the pillar-and-spoke content architecture. How a hub page and 5-10 supporting pages collectively cover a topic and earn topical authority.
-4. **[04. Tools Content](04. Tools Content.md)** — interactive tools (calculators, quizzes, finders) that earn links and rank for utility queries. Higher build cost but higher long-term value than blog content for the right brands.
-5. **[05. Evergreen Content](05. Evergreen Content.md)** — content designed to remain relevant for years. Foundational topics, definitive guides, principle-led explainers. The compounding-value content type.
-6. **[06. Programmatic SEO](06. Programmatic SEO.md)** — generating large numbers of pages from structured data + a template. The right approach for some businesses (location pages, comparison pages, glossary entries, filterable databases) and the wrong approach for most.
-7. **[07. Content Refresh](07. Content Refresh.md)** — the systematic update of existing content to recover decayed traffic. Often higher ROI than new content for established sites.
-8. **[08. Content Briefing](08. Content Briefing.md)** — the brief is the universal foundation of every content type above. A good brief is the difference between content that ranks and content that doesn't, regardless of who writes it.
+1. **[01. Blog Content](01.%20Blog%20Content.md)** — the editorial workhorse. The largest single category of content most brands ship. Educational, comparison, how-to, roundup, ingredient/feature explainers.
+2. **[02. Pillar Pages](02.%20Pillar%20Pages.md)** — comprehensive hub pages that cover a topic broadly and link to spoke pages covering subtopics in depth. The architectural backbone of the topic-cluster pattern.
+3. **[03. Topic Clusters](03.%20Topic%20Clusters.md)** — the pillar-and-spoke content architecture. How a hub page and 5-10 supporting pages collectively cover a topic and earn topical authority.
+4. **[04. Tools Content](04.%20Tools%20Content.md)** — interactive tools (calculators, quizzes, finders) that earn links and rank for utility queries. Higher build cost but higher long-term value than blog content for the right brands.
+5. **[05. Evergreen Content](05.%20Evergreen%20Content.md)** — content designed to remain relevant for years. Foundational topics, definitive guides, principle-led explainers. The compounding-value content type.
+6. **[06. Programmatic SEO](06.%20Programmatic%20SEO.md)** — generating large numbers of pages from structured data + a template. The right approach for some businesses (location pages, comparison pages, glossary entries, filterable databases) and the wrong approach for most.
+7. **[07. Content Refresh](07.%20Content%20Refresh.md)** — the systematic update of existing content to recover decayed traffic. Often higher ROI than new content for established sites.
+8. **[08. Content Briefing](08.%20Content%20Briefing.md)** — the brief is the universal foundation of every content type above. A good brief is the difference between content that ranks and content that doesn't, regardless of who writes it.
 
 ## A suggested workflow
 
@@ -62,8 +62,8 @@ The Content SEO category consumes outputs from earlier categories:
 It produces inputs for downstream categories:
 
 - New pages → consumed by **[02. On-page SEO](../02.%20On-page%20SEO/README.md)** for title, description, header, content optimisation.
-- New pages → consumed by **[03. Technical SEO / 04. Schema Markup](../03. Technical SEO/04. Schema Markup.md)** for structured-data deployment.
-- New pages → consumed by **[02. On-page SEO / 05. Internal Linking](../02. On-page SEO/05. Internal Linking.md)** to wire into the linking plan.
+- New pages → consumed by **[03. Technical SEO / 04. Schema Markup](../03.%20Technical%20SEO/04.%20Schema%20Markup.md)** for structured-data deployment.
+- New pages → consumed by **[02. On-page SEO / 05. Internal Linking](../02.%20On-page%20SEO/05.%20Internal%20Linking.md)** to wire into the linking plan.
 
 ## Skills you'll use in this category
 
@@ -87,7 +87,7 @@ The full inventory across the 8 sub-topics:
 - **Treating pillar pages as long blog posts.** A pillar is a hub that links out to spokes; a blog post is a leaf in that hub. Different shapes, different goals, different success metrics.
 - **Choosing programmatic SEO when the data isn't there.** Programmatic only works if the underlying data is unique, structured, and useful. Without that it's content spam at scale — Google penalises it accordingly.
 - **Refreshing the wrong pages.** Not every old post deserves a refresh. Prioritise pages with decayed traffic + recoverable intent fit + strategic value. Most other old posts should be de-published or merged.
-- **Producing content faster than the team can promote and link to it.** Content that ships and gets buried earns nothing. Coordinate with [Internal Linking](../02. On-page SEO/05. Internal Linking.md) and Off-page work.
+- **Producing content faster than the team can promote and link to it.** Content that ships and gets buried earns nothing. Coordinate with [Internal Linking](../02.%20On-page%20SEO/05.%20Internal%20Linking.md) and Off-page work.
 - **Ignoring the AI-search shift.** Content that ranks in 2026 looks different from content that ranked in 2022 — more direct answers, more entity-rich structure, more demonstrated experience. Content briefs need to reflect this.
 
 ## Where to go after this
@@ -95,7 +95,7 @@ The full inventory across the 8 sub-topics:
 Once new content is shipping:
 
 - **[02. On-page SEO](../02.%20On-page%20SEO/README.md)** — every new page needs title, description, header, image, and content optimisation.
-- **[03. Technical SEO / 04. Schema Markup](../03. Technical SEO/04. Schema Markup.md)** — schema deployment on the new pages.
-- **[02. On-page SEO / 05. Internal Linking](../02. On-page SEO/05. Internal Linking.md)** — wire new pages into the linking plan.
+- **[03. Technical SEO / 04. Schema Markup](../03.%20Technical%20SEO/04.%20Schema%20Markup.md)** — schema deployment on the new pages.
+- **[02. On-page SEO / 05. Internal Linking](../02.%20On-page%20SEO/05.%20Internal%20Linking.md)** — wire new pages into the linking plan.
 - **[05. Analytics](../05.%20Analytics/README.md)** — measure ranking, traffic, and conversion on the new content.
-- **[01. Strategy / 05. SEO Wins](../01. Strategy/05. SEO Wins.md)** — close the loop: refresh the wins backlog with what's been shipped and what's next.
+- **[01. Strategy / 05. SEO Wins](../01.%20Strategy/05.%20SEO%20Wins.md)** — close the loop: refresh the wins backlog with what's been shipped and what's next.

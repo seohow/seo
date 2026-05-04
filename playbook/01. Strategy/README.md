@@ -22,11 +22,11 @@ Keyword Research  →  Search Intent  →  Competitor Analysis  →  Keyword Clu
    (the demand)      (what they want)    (who's winning)     (how to organise)    (what to do first)
 ```
 
-1. **[01. Keyword Research](01. Keyword Research.md)** — discover the universe of search queries relevant to your business, and learn which ones have real demand and a realistic chance of ranking.
-2. **[02. Search Intent](02. Search Intent.md)** — for each keyword, classify *why* someone is searching it (informational, navigational, commercial, transactional). Intent dictates page type.
-3. **[03. Competitor Analysis](03. Competitor Analysis.md)** — study who is already ranking for your target keywords, what they're doing well, and where the gaps are.
-4. **[04. Keyword Clustering](04. Keyword Clustering.md)** — group your keyword universe into topical clusters so each page targets a coherent set instead of one keyword at a time.
-5. **[05. SEO Wins](05. SEO Wins.md)** — surface the highest-leverage opportunities you can act on this quarter, prioritised by effort, impact, and confidence.
+1. **[01. Keyword Research](01.%20Keyword%20Research.md)** — discover the universe of search queries relevant to your business, and learn which ones have real demand and a realistic chance of ranking.
+2. **[02. Search Intent](02.%20Search%20Intent.md)** — for each keyword, classify *why* someone is searching it (informational, navigational, commercial, transactional). Intent dictates page type.
+3. **[03. Competitor Analysis](03.%20Competitor%20Analysis.md)** — study who is already ranking for your target keywords, what they're doing well, and where the gaps are.
+4. **[04. Keyword Clustering](04.%20Keyword%20Clustering.md)** — group your keyword universe into topical clusters so each page targets a coherent set instead of one keyword at a time.
+5. **[05. SEO Wins](05.%20SEO%20Wins.md)** — surface the highest-leverage opportunities you can act on this quarter, prioritised by effort, impact, and confidence.
 
 ## A suggested workflow
 

@@ -21,16 +21,16 @@ Discovery & access      Indexing decisions       Performance       Structure & s
 
 The flow on the left is the lifecycle of a URL through Google: it has to be **crawlable** before it can be **indexed**, and JavaScript and log analysis are diagnostic tools that sit alongside both. Performance, structured data, and sitemaps are signals you control on the served page or in the site-wide configuration. Migration is a one-off event that touches everything.
 
-1. **[01. Crawlability](01. Crawlability.md)** — robots.txt, robots meta, x-robots-tag, server-response codes, internal linking depth, broken links. Whether Googlebot can reach the page at all.
-2. **[02. Indexing](02. Indexing.md)** — once crawled, whether the page enters Google's index. Indexed-vs-not-indexed status, exclusion reasons, soft-404s, "discovered, not indexed."
-3. **[03. Site Speed](03. Site Speed.md)** — Core Web Vitals (LCP, INP, CLS), TTFB, page-experience signals. The performance layer that affects ranking and conversion.
-4. **[04. Schema Markup](04. Schema Markup.md)** — structured data (JSON-LD) that powers rich results, FAQ snippets, product cards, breadcrumbs, and AI Overview eligibility.
-5. **[05. Canonical Tags](05. Canonical Tags.md)** — the `rel=canonical` signal that resolves duplicate content. Critical for ecom sites with parameter URLs and category-product variants.
-6. **[06. XML Sitemaps](06. XML Sitemaps.md)** — the index of URLs you want Google to crawl. Should reflect canonical pages only and stay clean as the site grows.
-7. **[07. JavaScript SEO](07. JavaScript SEO.md)** — server-side rendering, hydration, dynamic content, and the gap between what users see and what Googlebot crawls on JS-heavy sites.
-8. **[08. Log File Analysis](08. Log File Analysis.md)** — the diagnostic that tells you what Googlebot actually does on your site: crawl frequency, status codes, wasted crawl budget on parameter URLs and filters.
-9. **[09. Site Migration](09. Site Migration.md)** — re-platforms, rebrands, domain moves. The event most likely to lose 20-40% of organic traffic if mishandled.
-10. **[10. AI Crawler Management](10. AI Crawler Management.md)** — robots.txt rules for AI bots (GPTBot, ClaudeBot, Google-Extended, etc.), `llms.txt` standard, `noai`/`noimageai` directives. The infrastructure layer of the AI-search shift.
+1. **[01. Crawlability](01.%20Crawlability.md)** — robots.txt, robots meta, x-robots-tag, server-response codes, internal linking depth, broken links. Whether Googlebot can reach the page at all.
+2. **[02. Indexing](02.%20Indexing.md)** — once crawled, whether the page enters Google's index. Indexed-vs-not-indexed status, exclusion reasons, soft-404s, "discovered, not indexed."
+3. **[03. Site Speed](03.%20Site%20Speed.md)** — Core Web Vitals (LCP, INP, CLS), TTFB, page-experience signals. The performance layer that affects ranking and conversion.
+4. **[04. Schema Markup](04.%20Schema%20Markup.md)** — structured data (JSON-LD) that powers rich results, FAQ snippets, product cards, breadcrumbs, and AI Overview eligibility.
+5. **[05. Canonical Tags](05.%20Canonical%20Tags.md)** — the `rel=canonical` signal that resolves duplicate content. Critical for ecom sites with parameter URLs and category-product variants.
+6. **[06. XML Sitemaps](06.%20XML%20Sitemaps.md)** — the index of URLs you want Google to crawl. Should reflect canonical pages only and stay clean as the site grows.
+7. **[07. JavaScript SEO](07.%20JavaScript%20SEO.md)** — server-side rendering, hydration, dynamic content, and the gap between what users see and what Googlebot crawls on JS-heavy sites.
+8. **[08. Log File Analysis](08.%20Log%20File%20Analysis.md)** — the diagnostic that tells you what Googlebot actually does on your site: crawl frequency, status codes, wasted crawl budget on parameter URLs and filters.
+9. **[09. Site Migration](09.%20Site%20Migration.md)** — re-platforms, rebrands, domain moves. The event most likely to lose 20-40% of organic traffic if mishandled.
+10. **[10. AI Crawler Management](10.%20AI%20Crawler%20Management.md)** — robots.txt rules for AI bots (GPTBot, ClaudeBot, Google-Extended, etc.), `llms.txt` standard, `noai`/`noimageai` directives. The infrastructure layer of the AI-search shift.
 
 ## A suggested workflow
 
@@ -102,4 +102,4 @@ Once technical SEO is in shape:
 - **[04. Content SEO](../04.%20Content%20SEO/README.md)** — produce new pages knowing the technical foundation will pick them up cleanly.
 - **[05. Analytics](../05.%20Analytics/README.md)** — set up the measurement that tells you whether the technical work is paying off.
 - **[02. On-page SEO](../02.%20On-page%20SEO/README.md)** — re-run on-page work knowing pages are now crawlable, indexable, fast, and properly canonicalised.
-- **[01. Strategy / 05. SEO Wins](../01. Strategy/05. SEO Wins.md)** — many technical findings become P0 items in the wins backlog.
+- **[01. Strategy / 05. SEO Wins](../01.%20Strategy/05.%20SEO%20Wins.md)** — many technical findings become P0 items in the wins backlog.

@@ -21,14 +21,14 @@ Strategy + assets       Tactical channels                     Operational + defe
                         07. Broken Link Building
 ```
 
-1. **[01. Link Building](01. Link Building.md)** — the strategic layer: which links matter, which assets earn them, how to plan a link campaign tied to clusters and business goals. The category's anchor.
-2. **[02. Guest Posting](02. Guest Posting.md)** — writing for other publications. A specific tactical channel with its own rules — quality of publication, anchor strategy, contributor relationships.
-3. **[03. Digital PR](03. Digital PR.md)** — earning press coverage, journalist citations, and authority links via newsworthy stories, original data, expert commentary. The highest-value off-page channel for most brands.
-4. **[04. Brand Mentions](04. Brand Mentions.md)** — monitoring where the brand is mentioned (linked or unlinked); converting unlinked mentions into links; tracking sentiment and reach.
-5. **[05. Outreach](05. Outreach.md)** — the operational discipline that powers all of the above. Email templates, prospecting, response handling, relationship management, CRM hygiene.
-6. **[06. HARO and Journalist Outreach](06. HARO and Journalist Outreach.md)** — reactive PR. Responding to journalist queries on HARO, Qwoted, Connectively, and direct journalist outreach. Distinct discipline from proactive PR.
-7. **[07. Broken Link Building](07. Broken Link Building.md)** — finding broken outbound links on other sites and pitching the brand's content as the replacement. A specific tactical pattern with predictable yield.
-8. **[08. Reputation Management](08. Reputation Management.md)** — managing the branded SERP and broader online reputation. Defensive but increasingly strategic — AI Overviews and LLM citations both pull from branded reputation surfaces.
+1. **[01. Link Building](01.%20Link%20Building.md)** — the strategic layer: which links matter, which assets earn them, how to plan a link campaign tied to clusters and business goals. The category's anchor.
+2. **[02. Guest Posting](02.%20Guest%20Posting.md)** — writing for other publications. A specific tactical channel with its own rules — quality of publication, anchor strategy, contributor relationships.
+3. **[03. Digital PR](03.%20Digital%20PR.md)** — earning press coverage, journalist citations, and authority links via newsworthy stories, original data, expert commentary. The highest-value off-page channel for most brands.
+4. **[04. Brand Mentions](04.%20Brand%20Mentions.md)** — monitoring where the brand is mentioned (linked or unlinked); converting unlinked mentions into links; tracking sentiment and reach.
+5. **[05. Outreach](05.%20Outreach.md)** — the operational discipline that powers all of the above. Email templates, prospecting, response handling, relationship management, CRM hygiene.
+6. **[06. HARO and Journalist Outreach](06.%20HARO%20and%20Journalist%20Outreach.md)** — reactive PR. Responding to journalist queries on HARO, Qwoted, Connectively, and direct journalist outreach. Distinct discipline from proactive PR.
+7. **[07. Broken Link Building](07.%20Broken%20Link%20Building.md)** — finding broken outbound links on other sites and pitching the brand's content as the replacement. A specific tactical pattern with predictable yield.
+8. **[08. Reputation Management](08.%20Reputation%20Management.md)** — managing the branded SERP and broader online reputation. Defensive but increasingly strategic — AI Overviews and LLM citations both pull from branded reputation surfaces.
 
 ## A suggested workflow
 
@@ -100,4 +100,4 @@ Once off-page is operational:
 - **[05. Analytics](../05.%20Analytics/README.md)** — measure link velocity, brand-mention growth, branded-search lift, and the contribution to non-branded organic traffic.
 - **[09. AI SEO](../09.%20AI%20SEO/README.md)** — branded reputation is increasingly an input to AI Overview and LLM citation; off-page work compounds with AI-search visibility.
 - **[10. Growth](../10.%20Growth/README.md)** — sustained off-page programmes are part of the compounding-growth flywheel.
-- **[01. Strategy / 05. SEO Wins](../01. Strategy/05. SEO Wins.md)** — close the loop: refresh the wins backlog with what off-page has earned and what's next.
+- **[01. Strategy / 05. SEO Wins](../01.%20Strategy/05.%20SEO%20Wins.md)** — close the loop: refresh the wins backlog with what off-page has earned and what's next.
