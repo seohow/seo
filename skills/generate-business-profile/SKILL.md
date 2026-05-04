@@ -1,6 +1,6 @@
 ---
 name: generate-business-profile
-description: Interviews the user to produce a complete business profile for a specific venture and creates a workspace folder at businesses/<slug>/ containing both business_profile.md (the structured profile) and CLAUDE.md (the working-memory file for that business, shared by AI collaborators). Use whenever the user is starting with the SEO toolkit, says "let's set up a new business," "I want to add a brand," "create a profile for [company]," "onboard a new client," asks where to begin with SEO, or wants to update an existing business profile. Also use when any other skill in the toolkit can't find a business profile to operate on, or when the user says they have multiple brands and wants to register one. Do not use to actually do SEO work — this skill only sets up the workspace; downstream skills consume it.
+description: Interviews the user to produce a complete business profile for a specific venture and creates a workspace folder at businesses/<slug>/ containing business_profile.md (the structured profile), AGENTS.md (the working-memory file for that business, readable by any AI collaborator), and a CLAUDE.md symlink pointing to AGENTS.md. Use whenever the user is starting with the SEO toolkit, says "let's set up a new business," "I want to add a brand," "create a profile for [company]," "onboard a new client," asks where to begin with SEO, or wants to update an existing business profile. Also use when any other skill in the toolkit can't find a business profile to operate on, or when the user says they have multiple brands and wants to register one. Do not use to actually do SEO work — this skill only sets up the workspace; downstream skills consume it.
 ---
 
 # Generate Business Profile
@@ -97,9 +97,11 @@ Create two files in the workspace:
    *Slug: `<slug>`*
    ```
 
-2. **`businesses/<slug>/CLAUDE.md`** — the per-business working-memory file, populated from `skills/generate-business-profile/templates/business_claude_template.md`. Pre-fill: business name in the H1 and intro sentence, slug, created date, last-updated date. Leave the Decisions log, Learnings, Constraints/quirks, and Active experiments sections empty (with their inline `*(Empty — populate as ...)*` notes intact). The "How AI collaborators should update this file" and "How the user can interact with this file" sections come straight from the template — keep them verbatim. Don't pre-fill any decisions or learnings, even if the interview surfaced things that *could* be logged — those should accumulate as the user actually works in the workspace, not from the onboarding interview.
+2. **`businesses/<slug>/AGENTS.md`** — the per-business working-memory file, populated from `skills/generate-business-profile/templates/business_agents_template.md`. Pre-fill: business name in the H1 and intro sentence, slug, created date, last-updated date. Leave the Decisions log, Learnings, Constraints/quirks, and Active experiments sections empty (with their inline `*(Empty — populate as ...)*` notes intact). The "How AI collaborators should update this file" and "How the user can interact with this file" sections come straight from the template — keep them verbatim. Don't pre-fill any decisions or learnings, even if the interview surfaced things that *could* be logged — those should accumulate as the user actually works in the workspace, not from the onboarding interview.
 
-   In **update mode**, do NOT touch the existing CLAUDE.md. It's the user's accumulated memory; only `business_profile.md` gets updated by this skill.
+   Also create **`businesses/<slug>/CLAUDE.md`** as a symlink pointing to `AGENTS.md` (`ln -s AGENTS.md businesses/<slug>/CLAUDE.md`). This keeps Claude-specific workflows that look for `CLAUDE.md` working without making the file Claude-only.
+
+   In **update mode**, do NOT touch the existing AGENTS.md. It's the user's accumulated memory; only `business_profile.md` gets updated by this skill.
 
 ### Phase 5 — Confirm and point to next steps
 
@@ -125,12 +127,13 @@ Don't rewrite the whole file from scratch when updating — preserve the user's 
 
 ## Output format
 
-The output is two Markdown files in the workspace:
+The output of create-new mode is three files in the workspace:
 
 1. `businesses/<slug>/business_profile.md` — populated profile. Follows `skills/generate-business-profile/templates/business_profile_template.md`.
-2. `businesses/<slug>/CLAUDE.md` — populated working-memory stub. Follows `skills/generate-business-profile/templates/business_claude_template.md`. Empty content sections, but the pre-fill (business name, slug, dates, intro line) is filled in.
+2. `businesses/<slug>/AGENTS.md` — populated working-memory stub. Follows `skills/generate-business-profile/templates/business_agents_template.md`. Empty content sections, but the pre-fill (business name, slug, dates, intro line) is filled in.
+3. `businesses/<slug>/CLAUDE.md` — symlink pointing to `AGENTS.md`. Allows Claude-specific workflows to find the file under its expected name without duplicating content.
 
-In create-new mode both files are created. In update mode only `business_profile.md` is touched — CLAUDE.md is preserved as-is.
+In update mode only `business_profile.md` is touched — AGENTS.md (and its CLAUDE.md symlink) are preserved as-is.
 
 No additional chat output beyond the confirmation summary, both file paths, and the suggested next skill.
 
@@ -143,8 +146,8 @@ No additional chat output beyond the confirmation summary, both file paths, and 
 - Goals are concrete (numbers, dates, ranking targets) — not "more traffic."
 - The slug matches the kebab-case convention exactly.
 - The folder is created at `businesses/<slug>/` and nowhere else.
-- Both `business_profile.md` and `CLAUDE.md` exist in the new workspace after create-new mode runs.
-- In update mode, the existing CLAUDE.md is untouched.
+- `business_profile.md`, `AGENTS.md`, and the `CLAUDE.md` symlink all exist in the new workspace after create-new mode runs.
+- In update mode, the existing AGENTS.md is untouched.
 - After writing, the user knows both file paths and the recommended next skill.
 
 ## Common mistakes to avoid
@@ -155,8 +158,8 @@ No additional chat output beyond the confirmation summary, both file paths, and 
 - Don't translate the user's customer-pain language into marketing-speak. Leave it raw.
 - Don't fabricate analytics numbers. If the user doesn't know their organic sessions, mark unknown.
 - Don't silently overwrite an existing folder. Always check `businesses/<slug>/` first; if it exists, ask.
-- Don't overwrite an existing CLAUDE.md in update mode. It's the user's accumulated memory — only the profile gets updated.
-- Don't pre-fill the per-business CLAUDE.md content sections (Decisions, Learnings, Constraints, Experiments) from the interview. Those accumulate from real work, not onboarding.
+- Don't overwrite an existing AGENTS.md in update mode. It's the user's accumulated memory — only the profile gets updated.
+- Don't pre-fill the per-business AGENTS.md content sections (Decisions, Learnings, Constraints, Experiments) from the interview. Those accumulate from real work, not onboarding.
 - Don't forget the header — created/updated dates make the file traceable.
 - Don't pretend to be exhaustive. If the business is unusual (a hybrid, a non-profit, a personal brand), acknowledge the shape and adapt the interview.
 
@@ -185,6 +188,6 @@ No additional chat output beyond the confirmation summary, both file paths, and 
 > **Skill:** Saved two files in your new workspace:
 >
 > - `businesses/field-and-sun/business_profile.md` — the populated profile.
-> - `businesses/field-and-sun/CLAUDE.md` — your working-memory file. Future AI collaborators will read this and update it as decisions, learnings, and constraints surface — you don't need to manage it manually unless you want to log something explicitly.
+> - `businesses/field-and-sun/AGENTS.md` — your working-memory file. Any AI collaborator will read this and update it as decisions, learnings, and constraints surface — you don't need to manage it manually unless you want to log something explicitly. (A `CLAUDE.md` symlink is also created pointing to the same file for Claude-specific workflows.)
 >
 > A few profile sections I marked unknown — current organic sessions, indexed pages, top ranking keywords — pull those from GSC this week so the next round of skills can be precise. Recommended next: run `generate-seed-keywords` for the mineral SPF category to start building your keyword universe, or `plan-keyword-research` if you want a full project plan first.

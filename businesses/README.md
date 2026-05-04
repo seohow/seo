@@ -9,7 +9,8 @@ businesses/
 ├── README.md                          ← you are here
 └── <business-slug>/                   ← one folder per business
     ├── business_profile.md            ← the input profile (created by generate-business-profile)
-    ├── CLAUDE.md                      ← working memory for this business (decisions, learnings, quirks)
+    ├── AGENTS.md                      ← working memory for this business (decisions, learnings, quirks)
+    ├── CLAUDE.md                      ← symlink → AGENTS.md (for Claude-specific workflows)
     ├── keyword-research/
     │   ├── plan.md                    ← from plan-keyword-research
     │   └── seed-keywords.md           ← from generate-seed-keywords
@@ -26,7 +27,7 @@ businesses/
 
 Sub-folders are created on demand by the skills that produce artifacts. You don't need to create them upfront — running the relevant skill will populate the right path.
 
-`business_profile.md` and `CLAUDE.md` are both created up-front by `generate-business-profile`. The profile is the structured input the skills consume; CLAUDE.md is the *working memory* for the business — decisions, learnings, constraints, and active experiments that accumulate over time. Future AI collaborators read CLAUDE.md to orient quickly and update it as new context surfaces. You don't have to manage it manually, but you can — it's a normal Markdown file. See `skills/generate-business-profile/templates/business_claude_template.md` for the structure.
+`business_profile.md` and `AGENTS.md` are both created up-front by `generate-business-profile`, along with a `CLAUDE.md` symlink that points to `AGENTS.md`. The profile is the structured input the skills consume; `AGENTS.md` is the *working memory* for the business — decisions, learnings, constraints, and active experiments that accumulate over time. Any AI collaborator reads it to orient quickly and updates it as new context surfaces. You don't have to manage it manually, but you can — it's a normal Markdown file. See `skills/generate-business-profile/templates/business_agents_template.md` for the structure.
 
 ## Naming
 

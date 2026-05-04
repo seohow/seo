@@ -19,7 +19,8 @@ seo/
 │   ├── README.md                        ← workspace convention
 │   └── <slug>/                          ← one folder per business
 │       ├── business_profile.md          ← input (created by generate-business-profile)
-│       ├── CLAUDE.md                    ← per-business working memory (decisions, learnings, quirks)
+│       ├── AGENTS.md                    ← per-business working memory (decisions, learnings, quirks)
+│       ├── CLAUDE.md                    ← symlink → AGENTS.md (for Claude-specific workflows)
 │       └── <artifact-subfolders>/       ← outputs from skills
 ├── skills/                              ← distributable skill package
 │   ├── README.md                        ← skill catalogue, grouped by playbook category / leaf
@@ -85,7 +86,7 @@ Before writing a new topic page or skill, read at least one Strategy leaf for to
 
 The toolkit ships with a fictional sample business at `businesses/field-and-sun/`. Treat this as the Northwind / Adventure Works of the toolkit — the working reference fixture that examples should refer to. Field & Sun is a D2C beauty brand with two hero products (Daily Glow Serum — evergreen; Mineral Sun Drops SPF 50 — seasonal spring/summer) plus a complementary lineup designed to lift AOV and reinforce brand loyalty. Read `businesses/field-and-sun/business_profile.md` and `businesses/field-and-sun/CLAUDE.md` once before writing new examples.
 
-The per-business working-memory file is still named `CLAUDE.md` for compatibility with existing Claude workflows, but it is not Claude-only. Codex, Claude CoWork, and any future AI collaborator should read and maintain it when decisions, learnings, constraints, or experiments emerge.
+The per-business working-memory file is named `AGENTS.md` — the canonical, agent-agnostic name. A `CLAUDE.md` symlink pointing to it is created alongside for compatibility with Claude-specific workflows. Codex, Claude CoWork, and any future AI collaborator should read and maintain `AGENTS.md` directly.
 
 **All worked examples in playbook READMEs and skill docs reference Field & Sun.** The earlier "refillable cleaning brand" fixture has been fully migrated. Don't introduce a new fictional brand — Field & Sun is the only sample business this toolkit uses, and consistency across categories is the point of having a canonical fixture.
 
