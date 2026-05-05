@@ -1,193 +1,247 @@
 ---
 name: generate-business-profile
-description: Interviews the user to produce a complete business profile for a specific venture and creates a workspace folder at businesses/<slug>/ containing business_profile.md (the structured profile), AGENTS.md (the working-memory file for that business, readable by any AI collaborator), and a CLAUDE.md symlink pointing to AGENTS.md. Use whenever the user is starting with the SEO toolkit, says "let's set up a new business," "I want to add a brand," "create a profile for [company]," "onboard a new client," asks where to begin with SEO, or wants to update an existing business profile. Also use when any other skill in the toolkit can't find a business profile to operate on, or when the user says they have multiple brands and wants to register one. Do not use to actually do SEO work — this skill only sets up the workspace; downstream skills consume it.
+description: Creates or iteratively updates a business profile for use across the SEO toolkit. Use whenever the user is setting up a new business, wants to add or update information about their business, says "let's set up SEO for X," "I want to update my profile," "I launched a new product," "my goals changed," "here's more about my business," or when any other skill can't find a profile to work with. Also use when a profile exists but has gaps that are blocking a downstream skill. Supports three modes — Quick Start (new profile, minimal viable), Patch (add or change specific info), Gap Check (surface what's missing and why it matters).
 ---
 
 # Generate Business Profile
 
-This skill is the front door of the SEO toolkit. It interviews the user, builds a complete `business_profile.md` for one specific venture, and saves it to `businesses/<business-slug>/business_profile.md`. Every other skill in the toolkit reads from this file, so getting it right unlocks the rest of the system.
+This skill creates and maintains the `business_profile.md` that every other toolkit skill reads from. The profile is a **living document** — you're not expected to complete it in one sitting. Start with the minimum needed to run downstream skills, then feed it more detail as your business evolves or as you have the time.
 
-The skill is conversational — it doesn't dump a form on the user and ask them to fill it in. It walks through the eight sections in chunks, suggests answers when it can infer from context, skips sections that don't apply to the business model, and produces a polished, ready-to-use profile at the end.
+The profile has eight sections. Most skills only need three or four of them. You can add a first-draft profile in under five minutes, run keyword research the same day, and come back to fill gaps when it's useful.
 
-It supports two modes: **create new** (default — interview from scratch and create a new workspace folder) and **update existing** (load an existing profile, ask what's changed, write back).
+## Modes
 
-## When to use this skill
+### 1. Quick Start (new business)
 
-- The user is new to the toolkit and `businesses/` is empty.
-- The user wants to add a new business, brand, or client to the toolkit.
-- The user says "let's set up SEO for [company]," "create a profile for X," "onboard a new venture."
-- Another skill needs a business profile and the user hasn't produced one yet.
-- The user wants to update an existing profile (e.g. a new product line launched, the goals changed, the team grew).
-- The user has multiple businesses and wants to add another to the workspace.
+Use when there's no profile yet. Capture the minimum viable set — enough to unlock most downstream skills — in one short conversation. Target: under 10 messages, 5–8 minutes.
 
-## When NOT to use this skill
+**Minimum viable profile (what Quick Start captures):**
 
-- The user wants to do actual SEO work (keyword research, content, audits) — point them at the relevant topic skill once a profile exists.
-- The user wants to consume an existing profile to plan a project — that's the relevant downstream skill (`plan-keyword-research`, `scope-competitor-analysis`, etc.) that reads the profile.
-- The user wants to edit only one section of an existing profile — that's update mode of this same skill, just narrowed.
+| Field | Why it's needed |
+|---|---|
+| Business name + slug | All file paths depend on this |
+| URL | Competitor and audit skills need it |
+| One-line description | Every skill uses this for context |
+| Business type | Tailors the interview and downstream templates |
+| Hero product(s) / service(s) | Keyword and content skills need at least one concrete thing to optimise for |
+| Primary customer | Shapes search intent assumptions |
+| 1–2 customer pains | The most valuable SEO seed material |
+| Primary goal | Prioritisation across all downstream skills |
 
-## Inputs and prerequisites
+Everything else (SEO metrics, full competitor list, brand voice details, secondary goals) is optional at this stage and can be added via Patch mode later.
 
-1. **Read the template.** Start by reading `skills/generate-business-profile/templates/business_profile_template.md` to know the section structure. The interview is built around it.
-2. **Check for existing businesses.** List `businesses/`. If the user hasn't named a business yet, ask. If a folder for that business already exists, ask whether to update the existing profile or pick a different name.
-3. **Mode** — derive from the request:
-   - User says "create" / "new" / "set up" → create-new mode.
-   - User says "update" / "edit" / "refresh" → update-existing mode (load the existing file first).
-   - Ambiguous → check if the named business folder exists and infer; if still ambiguous, ask.
+**Quick Start process:**
 
-## Process
+1. Ask for the business name. Generate and confirm the slug before creating any folders.
+2. Ask three quick questions in one message: URL, one-liner, and business type. Suggest a one-liner if you can infer it; let the user correct it.
+3. Ask about the hero product(s) or service(s) — just names and a sentence each. Don't probe for exhaustive lists.
+4. Ask for the primary customer in one sentence and 1–2 pains in the customer's own language.
+5. Ask for the primary 6-month goal. Push back gently if it's vague ("more traffic" → "traffic to what end — revenue, leads, brand awareness?").
+6. Write the profile. Mark every omitted field with `_(not yet captured — add via Patch mode)_`. Do not leave blank sections.
+7. Create the workspace (profile + AGENTS.md + CLAUDE.md symlink). Confirm paths and suggest the next skill.
 
-### Phase 1 — Identify the business and slug it
+If the user offers more detail during Quick Start, capture it — but don't prompt for it. The goal is to get them to a working profile fast, not to exhaust the section list.
 
-Ask for the **business name** if not provided. Generate a slug:
+---
+
+### 2. Patch (update specific info)
+
+Use when the user wants to add or change something specific: a new product launched, a goal changed, they now have GSC data, a new competitor appeared, their brand voice shifted. Also use when a downstream skill flags a missing field that's blocking its output.
+
+**Patch process:**
+
+1. Identify what's being updated. The user may state it directly ("I launched a new product") or a downstream skill may surface a specific gap ("this skill needs your top 5 ranking keywords to proceed").
+2. Read the existing profile. Briefly confirm the current value of the section being patched (e.g. "Your current hero products are X and Y — you're adding Z, right?").
+3. Ask only what's needed to fill the gap. Don't re-walk the whole section unless the user asks.
+4. Apply the change. Update the `Last updated` date. Preserve everything else.
+5. Confirm the diff verbally: "Updated section 3 — added Mineral Lip Balm SPF 30 to the sun care category. Nothing else changed."
+
+**Common patch triggers:**
+
+- New product or service launched → Section 3
+- Goals changed (new quarter, new strategy) → Section 7
+- New competitor identified → Section 6
+- GSC / analytics data now available → Section 5
+- Brand voice rules evolved → Section 8
+- Customer insight from sales/support → Section 4
+- Business model changed (added subscription, entered new market) → Section 2
+- Anything a downstream skill says is missing
+
+**Important:** Never rewrite the whole profile in Patch mode. Only change the stated section(s).
+
+---
+
+### 3. Gap Check (what's missing and why it matters)
+
+Use when the user asks "what's missing from my profile?" or "what should I fill in next?" or when preparing to run a new category of skills for the first time.
+
+**Gap Check process:**
+
+1. Read the existing profile.
+2. Identify every field marked `_(not yet captured)_` or left blank.
+3. Group gaps by downstream impact — which missing fields block the most skills.
+4. Present 3–5 of the highest-value gaps, ranked by how much they unlock, with a one-sentence explanation for each.
+5. Ask if the user wants to fill any of them now (which triggers Patch mode for those specific fields).
+
+Don't present every gap as equally urgent. Some omissions (like brand voice style references) are nice to have; others (like hero product names) block almost everything.
+
+---
+
+## Determining which mode to use
+
+| Signal | Mode |
+|---|---|
+| No profile exists for the business | Quick Start |
+| User says "create," "set up," "new business," "onboard" | Quick Start |
+| Profile exists and user mentions a specific change | Patch |
+| Profile exists and a downstream skill flagged a gap | Patch |
+| User asks "what's missing" or "what should I add next" | Gap Check |
+| User says "update my profile" with no specific change | Gap Check → then Patch for the gaps they choose |
+| Profile exists but is mostly empty (Quick Start was rushed) | Gap Check → then Patch |
+
+If ambiguous, check whether a profile exists. If yes, default to Patch or Gap Check. If no, use Quick Start.
+
+---
+
+## Slug rules
+
+Generate the slug from the business name:
 
 - Lowercase the name.
 - Replace whitespace and punctuation with single hyphens.
-- Strip leading/trailing hyphens, collapse runs of hyphens.
+- Strip leading/trailing hyphens; collapse consecutive hyphens.
 - Remove apostrophes (don't keep them as letters or hyphens).
-- Strip articles only if the name is unwieldy ("The X Company" → `x-company` is fine, `the-x-company` is also fine — pick the cleaner option and confirm).
+- Strip leading articles only if the result is cleaner ("The Linen Co" → `linen-co` is fine; `the-linen-co` is also acceptable — confirm with the user).
 
-Confirm the slug with the user before creating any folders. Examples:
+Confirm the slug before creating any folders. Examples: "Field & Sun" → `field-and-sun`, "Joe's Plumbing" → `joes-plumbing`, "Acme SaaS" → `acme-saas`.
 
-- "Field & Sun" → `field-and-sun`
-- "Acme SaaS" → `acme-saas`
-- "Joe's Plumbing" → `joes-plumbing`
+If `businesses/<slug>/` already exists, don't silently overwrite — ask whether to update or use a different slug.
 
-If `businesses/<slug>/` already exists, ask whether to update or pick a new slug. Don't silently overwrite.
+---
 
-### Phase 2 — Walk the interview in chunks
+## Inputs
 
-Don't dump all 8 sections at once. Walk in roughly five conversational batches, each covering 1-2 sections. After each batch, briefly reflect back what was captured before moving on. This rhythm keeps the user engaged and gives you natural moments to clarify ambiguity.
+1. **Business name** (Quick Start) or **slug** (Patch / Gap Check) — derive slug from name; confirm before writing.
+2. **Existing profile** (Patch / Gap Check) — read `businesses/<slug>/business_profile.md` before doing anything.
 
-**Batch 1: Identity + business model (sections 1 and 2).** Business name, URL, one-line description, year founded, team size, business type (D2C / SaaS / marketplace / local services / B2B / content / hybrid), revenue source, AOV/contract value, gross margin, sales cycle. Most of these are factual and quick. Probe the one-line description until it's customer-facing — "skincare for daily life and bright days, ingredient-led and refillable" beats "consumer products company in the personal-care space."
+---
 
-**Batch 2: Products / services + customer (sections 3 and 4).** Product/service categories with hero items. Primary customer description. Top 3 customer pains. Top 3 questions customers ask before buying. Geographic markets. Languages. The customer-pains and customer-questions fields are the most valuable for downstream SEO work — invest the time to get them in the customer's actual language, not corporate language. If the user struggles, prompt: "if a customer was talking to a friend about why they bought this, what would they say?"
+## Output files
 
-**Batch 3: Current SEO state + competitors (sections 5 and 6).** Monthly organic sessions, indexed pages, domain rating, top 5 ranking keywords, top 5 highest-traffic landing pages, tools they have access to, CMS / platform. Then 3-5 competitors with URLs, mixed direct + aspirational + content-competitor. If the user doesn't know their numbers from GSC/GA, fine — mark "unknown" and recommend they pull a baseline this week. Don't block the interview on missing analytics.
+### Quick Start — three files created:
 
-**Batch 4: Goals + brand voice (sections 7 and 8).** Primary 6-month SEO goal, secondary goal, constraints, tone, words/phrases to avoid, on-brand words/phrases, style references. Push back on vague goals — "more traffic" isn't a goal; "2x organic revenue by Q4" or "rank top 3 for [keyword cluster]" is. Tone is best illustrated by 2-3 reference URLs the user admires; ask for them.
+1. **`businesses/<slug>/business_profile.md`** — populated from the interview. Follows the template structure (8 sections). Omitted fields marked `_(not yet captured — add via Patch mode)_`, never blank.
 
-**Batch 5: Reflect and write.** Summarise the profile back in 5-7 sentences. Ask if anything's missing or wrong. Then write the file.
-
-### Phase 3 — Adapt the interview to the business model
-
-Some sections matter more or less depending on the business type. Adapt — don't rigidly walk every question:
-
-- **Local services** — section 4's geographic markets becomes critical (specific cities, service areas). Section 3 might just be one service line. Section 6's competitors are local, not national.
-- **SaaS** — section 2's contract value and sales cycle matter more than AOV. Section 3 might be feature areas, not products. Section 6 should include both direct competitors and content/SEO publishers ranking for relevant terms.
-- **B2B services** — sales cycle in section 2 is load-bearing. Section 4's customer pains tend to be operational/financial rather than consumer.
-- **Content / media** — section 3 is content categories or verticals, not products. Section 4's customer pains are information needs. Revenue model in section 2 matters (ads vs subscription).
-- **Marketplace** — section 4 should describe both supply-side and demand-side users. Section 6 may include both other marketplaces and aggregator publishers.
-
-Acknowledge the shape of the business and tailor the interview accordingly. Don't force a SaaS founder to invent an AOV.
-
-### Phase 4 — Write the profile and the workspace memory file
-
-Create two files in the workspace:
-
-1. **`businesses/<slug>/business_profile.md`** — the structured profile, populated from the interview. Use the structure from `skills/generate-business-profile/templates/business_profile_template.md`. For sections the user marked as "unknown," leave a clear placeholder like `_(not yet known — see [GSC / GA4 / Ahrefs] to pull this)_` rather than blank — this signals the gap to downstream skills.
-
-   Add a short header:
-
+   Header format:
    ```markdown
    # Business Profile — [Business Name]
 
    *Created: [date]*
    *Last updated: [date]*
    *Slug: `<slug>`*
+   *Profile completeness: [quick-start / partial / full]*
    ```
 
-2. **`businesses/<slug>/AGENTS.md`** — the per-business working-memory file, populated from `skills/generate-business-profile/templates/business_agents_template.md`. Pre-fill: business name in the H1 and intro sentence, slug, created date, last-updated date. Leave the Decisions log, Learnings, Constraints/quirks, and Active experiments sections empty (with their inline `*(Empty — populate as ...)*` notes intact). The "How AI collaborators should update this file" and "How the user can interact with this file" sections come straight from the template — keep them verbatim. Don't pre-fill any decisions or learnings, even if the interview surfaced things that *could* be logged — those should accumulate as the user actually works in the workspace, not from the onboarding interview.
+   Use `quick-start` when only the minimum viable fields are filled. Update to `partial` or `full` as gaps are filled via Patch mode.
 
-   Also create **`businesses/<slug>/CLAUDE.md`** as a symlink pointing to `AGENTS.md` (`ln -s AGENTS.md businesses/<slug>/CLAUDE.md`). This keeps Claude-specific workflows that look for `CLAUDE.md` working without making the file Claude-only.
+2. **`businesses/<slug>/AGENTS.md`** — working-memory stub from `skills/generate-business-profile/templates/business_agents_template.md`. Pre-fill: business name, slug, created date. Leave Decisions, Learnings, Constraints, and Experiments sections empty with their `*(Empty — populate as ...)*` notes intact. Do not pre-fill from the interview.
 
-   In **update mode**, do NOT touch the existing AGENTS.md. It's the user's accumulated memory; only `business_profile.md` gets updated by this skill.
+3. **`businesses/<slug>/CLAUDE.md`** — symlink pointing to `AGENTS.md` (`ln -s AGENTS.md businesses/<slug>/CLAUDE.md`).
 
-### Phase 5 — Confirm and point to next steps
+### Patch — one file updated:
 
-After writing, tell the user:
+- **`businesses/<slug>/business_profile.md`** — the stated section(s) updated, `Last updated` date refreshed. AGENTS.md and CLAUDE.md are never touched in Patch mode.
 
-1. The exact path of the profile file.
-2. Any gaps marked unknown that they should fill in soon.
-3. The recommended next skill — usually `plan-keyword-research` or `generate-seed-keywords` from the Strategy category, depending on whether they want to scope a project or jump to seed generation.
+### Gap Check — no files written:
 
-If this is the user's first business in the workspace, mention that they can register additional businesses later by running this skill again.
+- Chat output only: ranked list of gaps + offer to fill them now.
 
-## Update mode
-
-When updating an existing profile:
-
-1. Read the existing file at `businesses/<slug>/business_profile.md`.
-2. Briefly summarise what's currently captured (3-5 sentences).
-3. Ask the user what's changed — open question first ("anything new since last update?"), then walk through the 8 sections quickly, asking only about each section: "any updates to [section]?"
-4. Apply the changes. Update the `Last updated` date in the header. Preserve sections that haven't changed.
-5. Confirm the diff to the user verbally (e.g. "I updated sections 3, 6, and 7 — competitors changed, goal shifted, you launched two new categories. Other sections unchanged.").
-
-Don't rewrite the whole file from scratch when updating — preserve the user's existing answers and only change what they tell you has changed.
-
-## Output format
-
-The output of create-new mode is three files in the workspace:
-
-1. `businesses/<slug>/business_profile.md` — populated profile. Follows `skills/generate-business-profile/templates/business_profile_template.md`.
-2. `businesses/<slug>/AGENTS.md` — populated working-memory stub. Follows `skills/generate-business-profile/templates/business_agents_template.md`. Empty content sections, but the pre-fill (business name, slug, dates, intro line) is filled in.
-3. `businesses/<slug>/CLAUDE.md` — symlink pointing to `AGENTS.md`. Allows Claude-specific workflows to find the file under its expected name without duplicating content.
-
-In update mode only `business_profile.md` is touched — AGENTS.md (and its CLAUDE.md symlink) are preserved as-is.
-
-No additional chat output beyond the confirmation summary, both file paths, and the suggested next skill.
+---
 
 ## Quality bar
 
-- Every section is either populated or explicitly marked unknown — no half-filled sections that look like they got abandoned mid-interview.
-- The "one-line description" is customer-facing, not corporate-speak.
-- Customer pains and questions are in the customer's language, not the user's marketing copy.
-- Competitors include URLs, not just names.
-- Goals are concrete (numbers, dates, ranking targets) — not "more traffic."
-- The slug matches the kebab-case convention exactly.
-- The folder is created at `businesses/<slug>/` and nowhere else.
-- `business_profile.md`, `AGENTS.md`, and the `CLAUDE.md` symlink all exist in the new workspace after create-new mode runs.
-- In update mode, the existing AGENTS.md is untouched.
-- After writing, the user knows both file paths and the recommended next skill.
+- Quick Start produces a usable profile in one short conversation — not a mostly-blank file.
+- Omitted fields are explicitly marked, not silently blank.
+- The one-line description is customer-facing, not corporate-speak.
+- Customer pains are in the customer's language, not marketing copy.
+- Goals are concrete. Push back on "more traffic" — "more traffic to what end?"
+- In Patch mode, only the stated section(s) change. Everything else is preserved verbatim.
+- In Gap Check mode, gaps are ranked by downstream impact — not listed exhaustively in section order.
+- The slug is confirmed before any folder is created.
+- `business_profile.md` exists and has a valid header after any write.
+- AGENTS.md is never overwritten in Patch mode.
+
+---
 
 ## Common mistakes to avoid
 
-- Don't dump the whole 8-section template at once and ask the user to fill it in. The interview is the product.
-- Don't skip the slug confirmation. Slug mistakes cause path mismatches across the toolkit.
-- Don't accept "more traffic" as a goal. Push back politely until it's specific.
-- Don't translate the user's customer-pain language into marketing-speak. Leave it raw.
-- Don't fabricate analytics numbers. If the user doesn't know their organic sessions, mark unknown.
-- Don't silently overwrite an existing folder. Always check `businesses/<slug>/` first; if it exists, ask.
-- Don't overwrite an existing AGENTS.md in update mode. It's the user's accumulated memory — only the profile gets updated.
-- Don't pre-fill the per-business AGENTS.md content sections (Decisions, Learnings, Constraints, Experiments) from the interview. Those accumulate from real work, not onboarding.
-- Don't forget the header — created/updated dates make the file traceable.
-- Don't pretend to be exhaustive. If the business is unusual (a hybrid, a non-profit, a personal brand), acknowledge the shape and adapt the interview.
+- Don't run the full 8-section interview as the default. Quick Start stops after the minimum viable fields.
+- Don't leave blank fields — use `_(not yet captured — add via Patch mode)_` as the placeholder.
+- Don't accept "more traffic" as a goal without probing.
+- Don't translate the user's customer-pain language into marketing-speak. Leave it in their words.
+- Don't fabricate analytics numbers. Mark unknown explicitly.
+- Don't silently overwrite an existing folder or profile.
+- Don't touch AGENTS.md in Patch mode.
+- Don't rewrite the whole profile when only one section needs updating.
+- Don't present every gap as urgent in Gap Check mode — rank by actual downstream impact.
+- Don't forget to update the `Last updated` date on every write.
+- Don't forget to update `Profile completeness` in the header as fields fill in.
 
-## Example interaction (compressed)
+---
 
-> **User:** I want to set up SEO for my D2C beauty brand.
+## Example: Quick Start (compressed)
+
+> **User:** I want to start doing SEO for my skincare brand.
 >
-> **Skill:** Great. Let me grab a few details and we'll build the profile.
+> **Skill:** Let's get a profile set up — that's what all the toolkit skills read from. What's the business called and the website URL?
 >
-> What's the business called and the website URL?
+> **User:** Field & Sun, fieldandsun.com
 >
-> **User:** Field & Sun, fieldandsun.example
+> **Skill:** The folder will be `businesses/field-and-sun/` — works for you?
 >
-> **Skill:** Got it. The folder will be `businesses/field-and-sun/` — sound right?
+> **User:** Yes.
 >
-> **User:** Yes
+> **Skill:** Three quick ones: one-sentence description of what Field & Sun does (I'll draft one if easier), business type (D2C e-comm?), and are you selling direct-only or also through other channels?
 >
-> **Skill:** Quick batch on identity and business model: when did you launch, how many people work on SEO/marketing, and what's the business type — D2C e-comm I'm guessing? AOV and gross margin if you know them, plus the typical sales cycle (instant for D2C, longer if there's a club/subscription).
+> **User:** D2C mostly, also on Amazon. "Skincare for daily life and bright days — minimalist, ingredient-led, refillable."
 >
-> *[continues through 5 batches, ~10-15 messages total]*
+> **Skill:** Great description, I'll use that. What are your hero products — just names and a sentence on each?
 >
-> **Skill:** Here's the summary: D2C beauty brand, US-led, Shopify, hero products across Daily Glow Serum and Mineral Sun Drops SPF 50, ingredient-aware customers, 3 main pains (mineral SPF white cast, vitamin C serum oxidation/cost, beauty packaging waste), 4 competitors (Supergoop, Saie Beauty, ILIA Beauty, plus Byrdie as a content competitor), 6-month goal of 2x organic sessions to ~17,000/mo with organic at 30% of new-customer acquisition, warm and ingredient-led tone. Anything missing?
+> **User:** Daily Glow Serum (vitamin C + niacinamide) and Mineral Sun Drops SPF 50. The Serum is our reorder engine, the SPF peaks in spring/summer.
 >
-> **User:** Nope, looks right.
+> **Skill:** Who's the main customer, and what's the top problem they come to you to solve?
 >
-> **Skill:** Saved two files in your new workspace:
+> **User:** Women 28–45, skincare-literate. Big one: most mineral SPFs leave a white cast.
 >
-> - `businesses/field-and-sun/business_profile.md` — the populated profile.
-> - `businesses/field-and-sun/AGENTS.md` — your working-memory file. Any AI collaborator will read this and update it as decisions, learnings, and constraints surface — you don't need to manage it manually unless you want to log something explicitly. (A `CLAUDE.md` symlink is also created pointing to the same file for Claude-specific workflows.)
+> **Skill:** What's the main thing you want SEO to do for you in the next 6 months?
 >
-> A few profile sections I marked unknown — current organic sessions, indexed pages, top ranking keywords — pull those from GSC this week so the next round of skills can be precise. Recommended next: run `generate-seed-keywords` for the mineral SPF category to start building your keyword universe, or `plan-keyword-research` if you want a full project plan first.
+> **User:** Double organic traffic and make search a meaningful acquisition channel.
+>
+> **Skill:** Saved a quick-start profile at `businesses/field-and-sun/business_profile.md`. SEO metrics, full competitor list, brand voice details, and secondary goals are marked for later — fill them via Patch mode when you have them, or run a Gap Check before your next skill session. Recommended next: `generate-seed-keywords` to start building your keyword universe, or `plan-keyword-research` for a full project scope.
+
+---
+
+## Example: Patch
+
+> **User:** I just launched a Glow Mask — weekly exfoliating treatment.
+>
+> **Skill:** Got it. Current product list has Daily Glow Serum and Mineral Sun Drops SPF 50. Adding Glow Mask as a complementary SKU in the skincare category — is it a hero product or a secondary/AOV booster?
+>
+> **User:** AOV booster, bundles well with the Serum.
+>
+> **Skill:** Updated Section 3 in `businesses/field-and-sun/business_profile.md` — Glow Mask added as a complementary SKU. Nothing else changed.
+
+---
+
+## Example: Gap Check
+
+> **User:** What's missing from my profile?
+>
+> **Skill:** Four gaps worth filling before you run more skills:
+>
+> 1. **SEO metrics (Section 5)** — organic sessions, domain rating, top keywords. Blocks: competitor-analysis ranking, keyword difficulty calibration.
+> 2. **Competitors (Section 6)** — you have none listed yet. Blocks: competitor-analysis skill, SERP gap skills.
+> 3. **Brand voice (Section 8)** — no tone guidelines or words to avoid. Blocks: title tag, meta description, and content skills from matching your voice.
+> 4. **Secondary goals (Section 7)** — primary goal is set; secondary is blank. Lower priority — the primary goal unlocks most skills.
+>
+> Want to fill any of these now?
