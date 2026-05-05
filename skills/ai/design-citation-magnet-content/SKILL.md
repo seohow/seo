@@ -26,7 +26,7 @@ The skill is opinionated: the brief requires a green-lit topic from `plan-genera
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `generate-business-profile` first. Sections this skill cares about most: 3 (products), 4 (customer + questions), 6 (competitors), 8 (brand voice — non-negotiable for this skill).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 3 (products), 4 (customer + questions), 6 (competitors), 8 (brand voice — non-negotiable for this skill).
 2. **Strategic plan** — required. Path to the relevant `ai-seo/generative-seo-strategy-*.md`. The brief consumes the plan's defensibility argument, per-engine targets, and investment estimate. If absent, refuse and recommend running `plan-generative-seo-strategy` first.
 3. **Topic** — required. Which pick from the strategic plan is being briefed? Cross-reference the plan's win-able picks; reject if the topic is on the skip list.
 4. **Priority queries** — required. The 2-6 queries this content targets. From the strategic plan.

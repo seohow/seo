@@ -26,7 +26,7 @@ The skill is opinionated about a few things: every planned post targets a cluste
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), goals (7), brand voice (8). Goals (7) drive seasonal sequencing; brand voice (8) shapes archetype selection.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), goals (7), brand voice (8). Goals (7) drive seasonal sequencing; brand voice (8) shapes archetype selection.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Required. Without it, the calendar is guesswork.
 3. **Current blog inventory** — list of currently-published blog posts with URL, primary keyword, cluster (if mapped), publish date, current organic traffic. From sitemap export + GSC. If absent, ask for at least URLs + primary topics.
 4. **Team capacity** — required. Realistic posts per month (in-house writer, contractor, AI-assisted). Most teams ship fewer than they plan; ask for the honest number.

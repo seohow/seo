@@ -27,7 +27,7 @@ The skill is opinionated: scale the system, not just writer count; bottleneck is
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `generate-business-profile` first. Sections this skill cares about most: 7 (goals + constraints — content production budget is in section 7), 8 (brand voice — voice review depends on this).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 7 (goals + constraints — content production budget is in section 7), 8 (brand voice — voice review depends on this).
 2. **Topical-authority plan** — strongly recommended. If `growth/topical-authority-assessment-*.md` exists, consume it for production-volume target. If not, ask user for the volume target.
 3. **Current production state** — required. Current volume per cadence (e.g. 4 posts/month); current writer count + role; current bottleneck (if known); current pipeline stages (topic → brief → draft → review → publish → promote); current cost.
 4. **Target production volume** — required. Target posts / month, broken by content type if applicable (long-form pillar / cluster spoke / refresh / programmatic / commercial PDP copy).

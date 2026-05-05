@@ -24,7 +24,7 @@ The skill is opinionated: every entry has a one-line description, not a bare URL
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: identity (1), products/services (3), customer (4), brand voice (8). Used for the site description and per-entry descriptions.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: identity (1), products/services (3), customer (4), brand voice (8). Used for the site description and per-entry descriptions.
 2. **Site URL inventory** — required. Sources: sitemap, top-traffic pages from GSC, the cluster map (`businesses/<slug>/clusters/cluster-map.md`). The skill will pull from whichever is provided.
 3. **Curation hint (optional but valuable)** — what kinds of URLs the user wants represented. E.g. "all PDPs + top 10 blog posts," "ingredient guides only," "everything except the about and policy pages." If unstated, the skill defaults to: hero PDPs, primary collection pages, top 10-15 informational blog posts, the homepage.
 4. **AI-crawler posture confirmation** — required. Confirm the user is publishing `llms.txt` deliberately (i.e. posture is open or visibility-only). If posture is strict-block, the skill refuses.

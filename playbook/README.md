@@ -61,7 +61,7 @@ If you've run SEO before and just want the answer to a specific question, jump t
 
 The toolkit assumes you're working on a real business, not in the abstract. Examples throughout reference **Field & Sun**, the canonical sample business that ships with the toolkit ([profile here](../businesses/field-and-sun/business_profile.md)). It's a fictional D2C beauty brand with two hero products — Daily Glow Serum and Mineral Sun Drops SPF 50 — built to demonstrate every skill against a fully populated profile. Field & Sun is the *Northwind* of this toolkit: when you see it in a worked example, that's the same brand every time.
 
-When you're ready to apply this to your own venture, run [`generate-business-profile`](../skills/generate-business-profile/SKILL.md) to set up your own workspace under `businesses/<your-slug>/`. Every skill in the toolkit then reads your profile and produces output tailored to your business — your customers, your competitors, your goals, your voice.
+When you're ready to apply this to your own venture, run [`business-profile`](../skills/business-profile/SKILL.md) to set up your own workspace under `businesses/<your-slug>/`. Every skill in the toolkit then reads your profile and produces output tailored to your business — your customers, your competitors, your goals, your voice.
 
 ## Common mistakes the playbook tries to prevent
 

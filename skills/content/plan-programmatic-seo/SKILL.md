@@ -26,7 +26,7 @@ The skill is opinionated about a few things: programmatic without unique data is
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), goals (7).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), goals (7).
 2. **Use case** — required. What's the proposed programmatic build? "Ingredient glossary," "product comparison library," "city pages for our wholesale program," etc.
 3. **Data source** — required. Where does the data come from? Own database, manually curated, third-party API, scraped public sources. Source dramatically affects viability.
 4. **Page count estimate** — optional. How many pages would the build produce? 30, 300, 30,000? Wildly different decisions.

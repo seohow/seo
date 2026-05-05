@@ -26,7 +26,7 @@ The skill applies the four-intent taxonomy (plus local where relevant), maps eac
 ## Inputs required
 
 1. **Keyword list** — a list of keywords. Pasted text, CSV, or a file. Required columns: keyword. Optional but useful: search volume, current ranking, market/geography. Ask for the list if not provided.
-2. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. The profile is used to disambiguate borderline queries (e.g. is "supergoop" navigational for the user, or a competitor mention for a different brand?). If section 6 (competitors) is blank, ask before classifying competitor-branded queries.
+2. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. The profile is used to disambiguate borderline queries (e.g. is "supergoop" navigational for the user, or a competitor mention for a different brand?). If section 6 (competitors) is blank, ask before classifying competitor-branded queries.
 3. **Market and language** — defaults from the profile; ask if not. Intent classification is market-specific.
 
 If the keyword list isn't provided, ask. Don't fabricate keywords.

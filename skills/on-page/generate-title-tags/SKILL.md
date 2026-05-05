@@ -26,7 +26,7 @@ The skill is opinionated: it always produces multiple variants (forces compariso
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections for this skill: products/services (3), customer (4), brand voice (8). If section 8 is blank, ask for the tone in 1-2 sentences before generating variants.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections for this skill: products/services (3), customer (4), brand voice (8). If section 8 is blank, ask for the tone in 1-2 sentences before generating variants.
 2. **Page(s) to optimise** — one URL or a list. For each: the page URL, the page's purpose / what it sells or covers, and the current title (if it exists). If the user has a list of pages without context, ask whether to fetch the current titles from a sitemap export or to operate with just URLs.
 3. **Target cluster** — for each page, the primary keyword and 3-8 supporting keywords. Default source: `businesses/<slug>/clusters/cluster-map.md`. If a cluster doesn't exist for the page, ask the user for the primary keyword (and ideally intent) inline before generating.
 4. **Intent** — informational / commercial / transactional / navigational. Default source: same cluster map. If unclear, run a quick SERP read with the user before generating titles.

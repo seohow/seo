@@ -27,7 +27,7 @@ The skill is opinionated: authority requires sustained 12-24+ month investment; 
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `generate-business-profile` first. Sections this skill cares about most: 3 (products), 5 (current SEO state — DR + ranking baseline), 6 (competitors), 7 (goals + constraints — informs investment horizon), 8 (brand voice — authority work stays on-voice).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 3 (products), 5 (current SEO state — DR + ranking baseline), 6 (competitors), 7 (goals + constraints — informs investment horizon), 8 (brand voice — authority work stays on-voice).
 2. **Priority cluster** — required. Which cluster is being assessed? Cross-reference `clusters/cluster-map.md`. Don't assess multiple clusters in one audit; assess one at a time for depth.
 3. **Cluster query inventory** — required. The full priority query list for the cluster (typically 20-50 queries from keyword research + cluster mapping).
 4. **Existing content** — required. URLs of all pages currently targeting cluster queries.

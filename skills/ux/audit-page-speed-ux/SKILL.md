@@ -25,7 +25,7 @@ The skill is opinionated about a few things: field data > lab data; perceived sp
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4).
 2. **Priority pages** — required. Top organic landing pages (pillars, tools, top blog posts, top PDPs). 5-15 pages typical.
 3. **GSC + CrUX access** — required. Field-data CWV.
 4. **Session-replay tooling** — strongly preferred. Hotjar, Microsoft Clarity (free), FullStory. Without it, rage-click pattern detection is harder.

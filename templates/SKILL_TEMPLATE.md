@@ -22,7 +22,7 @@ One paragraph: what this skill does, what artifact it produces, and the situatio
 
 Before producing output, gather:
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` like this: list the `businesses/` folder; if exactly one business folder exists, use it; if multiple, ask which business this is for; if none, recommend running `generate-business-profile` first and stop. The sections this skill cares about most are: [list specific section numbers]. If any of those are blank or marked unknown, ask the user inline before producing output.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` like this: list the `businesses/` folder; if exactly one business folder exists, use it; if multiple, ask which business this is for; if none, recommend running `business-profile` first and stop. The sections this skill cares about most are: [list specific section numbers]. If any of those are blank or marked unknown, ask the user inline before producing output.
 2. **[Other input]** — what it is, what good looks like, where to get it.
 3. **[Other input]** — what it is, what good looks like, where to get it.
 

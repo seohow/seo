@@ -26,7 +26,7 @@ The skill is opinionated about a few things: every win has a definition of done;
 ## Inputs required
 
 1. **Strategy inputs** — any combination of: cluster map (from `cluster-keywords`), competitor opportunity list (from `audit-competitor-seo`), striking-distance keyword list (typically a GSC queries export filtered to positions 11-30), technical audit findings, refresh candidates (existing pages with traffic decay), link prospects.
-2. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. The profile drives Impact scoring (alignment to goals in section 7) and Fit scoring (alignment to brand voice in section 8 and team/resourcing constraints).
+2. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. The profile drives Impact scoring (alignment to goals in section 7) and Fit scoring (alignment to brand voice in section 8 and team/resourcing constraints).
 3. **Time horizon** — default to 90 days. Ask if the user wants a different horizon (30/60/180).
 4. **Resourcing** — how many hours/week the team can dedicate, who can do content vs technical vs link work. Drives realistic sequencing.
 5. **Scoring framework preference** — ICE (default) or RICE. Ask only if it matters; default to ICE.

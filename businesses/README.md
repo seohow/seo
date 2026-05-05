@@ -8,7 +8,7 @@ This folder is the working workspace for every business you run SEO for. Each bu
 businesses/
 ├── README.md                          ← you are here
 └── <business-slug>/                   ← one folder per business
-    ├── business_profile.md            ← the input profile (created by generate-business-profile)
+    ├── business_profile.md            ← the input profile (created by business-profile)
     ├── AGENTS.md                      ← working memory for this business (decisions, learnings, quirks)
     ├── CLAUDE.md                      ← symlink → AGENTS.md (for Claude-specific workflows)
     ├── keyword-research/
@@ -27,7 +27,7 @@ businesses/
 
 Sub-folders are created on demand by the skills that produce artifacts. You don't need to create them upfront — running the relevant skill will populate the right path.
 
-`business_profile.md` and `AGENTS.md` are both created up-front by `generate-business-profile`, along with a `CLAUDE.md` symlink that points to `AGENTS.md`. The profile is the structured input the skills consume; `AGENTS.md` is the *working memory* for the business — decisions, learnings, constraints, and active experiments that accumulate over time. Any AI collaborator reads it to orient quickly and updates it as new context surfaces. You don't have to manage it manually, but you can — it's a normal Markdown file. See `skills/generate-business-profile/templates/business_agents_template.md` for the structure.
+`business_profile.md` and `AGENTS.md` are both created up-front by `business-profile`, along with a `CLAUDE.md` symlink that points to `AGENTS.md`. The profile is the structured input the skills consume; `AGENTS.md` is the *working memory* for the business — decisions, learnings, constraints, and active experiments that accumulate over time. Any AI collaborator reads it to orient quickly and updates it as new context surfaces. You don't have to manage it manually, but you can — it's a normal Markdown file. See `skills/business-profile/templates/business_agents_template.md` for the structure.
 
 ## Naming
 
@@ -37,7 +37,7 @@ Business slugs are kebab-case versions of the business name, with no special cha
 - "Acme SaaS" → `acme-saas`
 - "Joe's Plumbing" → `joes-plumbing`
 
-The `generate-business-profile` skill handles slugification automatically. If you create a business folder by hand, follow the same pattern.
+The `business-profile` skill handles slugification automatically. If you create a business folder by hand, follow the same pattern.
 
 ## Working with multiple businesses
 
@@ -58,4 +58,4 @@ The toolkit doesn't enforce this — it's your call based on context.
 
 ## Getting started
 
-If `businesses/` is empty, run the `generate-business-profile` skill first. It will interview you for the necessary inputs, slugify a folder name, and create the workspace. After that, every other skill in the toolkit becomes usable for that business.
+If `businesses/` is empty, run the `business-profile` skill first. It will interview you for the necessary inputs, slugify a folder name, and create the workspace. After that, every other skill in the toolkit becomes usable for that business.

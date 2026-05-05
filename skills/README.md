@@ -8,7 +8,7 @@ The wider playbook explains the SEO concepts. This `skills/` package contains th
 
 | Skill | Description |
 |---|---|
-| [generate-business-profile](generate-business-profile/SKILL.md) | Interviews the user, creates `businesses/<slug>/business_profile.md`, and drops the shared per-business `CLAUDE.md` working-memory file. Run this before topic skills if no business profile exists. |
+| [business-profile](business-profile/SKILL.md) | Creates and maintains `businesses/<slug>/business_profile.md` — the shared context file every toolkit skill reads from. Use it to quick-start a new business profile, patch specific sections as your business changes, or run a gap check to see what's missing. Run before topic skills if no profile exists. |
 
 After that, work through the categories in order if you are building an SEO program from scratch, or jump to the category that matches the problem in front of you.
 

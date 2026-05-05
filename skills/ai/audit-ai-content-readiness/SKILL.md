@@ -27,7 +27,7 @@ The skill is opinionated: definitive opening sentences are non-negotiable; TL;DR
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `generate-business-profile` first. Sections this skill cares about most: 3 (products / services), 4 (customer + questions customers ask), 8 (brand voice / editorial guardrails — to ensure rewrite recommendations stay on-voice).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 3 (products / services), 4 (customer + questions customers ask), 8 (brand voice / editorial guardrails — to ensure rewrite recommendations stay on-voice).
 2. **Priority page list** — required. URLs of the pages to audit. If the user doesn't specify, default to the top 10 organic landing pages (from `analytics/traffic-analysis-*.md` or GA4) plus any pillar / cluster-hub pages. Confirm the list before auditing more than 20 pages — audit depth degrades when the list is too long.
 3. **Page content access** — required. The skill needs the actual rendered HTML and prose. Either the user provides URLs the skill can fetch, or pasted page content, or markdown exports.
 4. **Cluster / topic context** — optional but useful. If `clusters/cluster-map.md` exists, use it to understand which queries each page targets; the audit framing differs for commercial pages vs informational pillars.

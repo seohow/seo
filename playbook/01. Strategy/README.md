@@ -34,7 +34,7 @@ If this is your first time doing SEO strategy for the business, work through thi
 
 **Pass 1 — Discovery (1-2 weeks):**
 
-1. Run [`generate-business-profile`](../../skills/generate-business-profile/SKILL.md) to set up the workspace for the business you're working on. This creates `businesses/<your-business-slug>/business_profile.md`, which every Strategy skill below reads from.
+1. Run [`business-profile`](../../skills/business-profile/SKILL.md) to set up the workspace for the business you're working on. This creates `businesses/<your-business-slug>/business_profile.md`, which every Strategy skill below reads from.
 2. Run **Keyword Research** to produce a raw keyword universe.
 3. Run **Search Intent** classification on the universe to filter and segment.
 4. Run **Competitor Analysis** on 3-5 competitors to understand what good looks like.

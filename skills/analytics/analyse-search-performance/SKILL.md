@@ -26,7 +26,7 @@ The skill is opinionated about a few things: rolling up to cluster level produce
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), goals (7).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), goals (7).
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Cluster rollup is part of the analysis.
 3. **GSC access** — required (or exported CSV / API access).
 4. **Comparison window** — required. Default: last 90 days vs prior 90 days. Alternative: YoY (last 90 days vs same 90 days last year), if data retention covers it.

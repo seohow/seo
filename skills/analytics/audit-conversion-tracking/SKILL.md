@@ -25,7 +25,7 @@ The skill is opinionated about a few things: every brand should triangulate agai
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3) for goal-event identification, goals (7).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3) for goal-event identification, goals (7).
 2. **GA4 access** — required. Need to inspect events, conversions, attribution settings.
 3. **Source-of-truth data source** — required for triangulation. Shopify / WooCommerce / payment processor / CRM. 30-day window of conversions and revenue.
 4. **Tag manager / data layer access** — preferred. GTM container (Web + Server-side if applicable).

@@ -27,7 +27,7 @@ The skill is opinionated: it reads the SERP before recommending, it cross-checks
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), competitors (6), brand voice (8). Voice and brand-distinct angles directly drive the rework.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), competitors (6), brand voice (8). Voice and brand-distinct angles directly drive the rework.
 2. **The page** — URL + current body content. The user can paste the content or point at the URL (the skill operates on what's pasted; if only a URL is given, ask for the content). Also useful: current word count, H-structure, last-updated date.
 3. **Target cluster** — primary keyword + 3-8 supporting keywords. Default source: `businesses/<slug>/clusters/cluster-map.md`. If unknown, ask the user for the primary keyword and intent before producing.
 4. **Intent** — informational / commercial / transactional. Default source: same cluster map.

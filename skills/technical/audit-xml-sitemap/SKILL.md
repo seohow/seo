@@ -25,7 +25,7 @@ The skill is opinionated: every sitemap URL should be canonical, return 200, be 
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: CMS / platform (5).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: CMS / platform (5).
 2. **Sitemap source** — the live `sitemap.xml` URL, or pasted sitemap content. If it's a sitemap-index, also pull all child sitemaps. Required.
 3. **Crawler export with canonical metadata (optional but valuable)** — Screaming Frog or similar showing canonical, status, indexability per URL. Without this, the audit can flag sitemap structural issues but can't validate every URL's canonical / indexable status. Ask if available.
 4. **GSC Pages export (optional)** — for the indexed-vs-sitemap cross-reference. URLs indexed but not in sitemap; URLs in sitemap but not indexed.

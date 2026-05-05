@@ -1,9 +1,9 @@
 ---
-name: generate-business-profile
+name: business-profile
 description: Creates or iteratively updates a business profile for use across the SEO toolkit. Use whenever the user is setting up a new business, wants to add or update information about their business, says "let's set up SEO for X," "I want to update my profile," "I launched a new product," "my goals changed," "here's more about my business," or when any other skill can't find a profile to work with. Also use when a profile exists but has gaps that are blocking a downstream skill. Supports three modes — Quick Start (new profile, minimal viable), Patch (add or change specific info), Gap Check (surface what's missing and why it matters).
 ---
 
-# Generate Business Profile
+# Business Profile
 
 This skill creates and maintains the `business_profile.md` that every other toolkit skill reads from. The profile is a **living document** — you're not expected to complete it in one sitting. Start with the minimum needed to run downstream skills, then feed it more detail as your business evolves or as you have the time.
 
@@ -144,7 +144,7 @@ If `businesses/<slug>/` already exists, don't silently overwrite — ask whether
 
    Use `quick-start` when only the minimum viable fields are filled. Update to `partial` or `full` as gaps are filled via Patch mode.
 
-2. **`businesses/<slug>/AGENTS.md`** — working-memory stub from `skills/generate-business-profile/templates/business_agents_template.md`. Pre-fill: business name, slug, created date. Leave Decisions, Learnings, Constraints, and Experiments sections empty with their `*(Empty — populate as ...)*` notes intact. Do not pre-fill from the interview.
+2. **`businesses/<slug>/AGENTS.md`** — working-memory stub from `skills/business-profile/templates/business_agents_template.md`. Pre-fill: business name, slug, created date. Leave Decisions, Learnings, Constraints, and Experiments sections empty with their `*(Empty — populate as ...)*` notes intact. Do not pre-fill from the interview.
 
 3. **`businesses/<slug>/CLAUDE.md`** — symlink pointing to `AGENTS.md` (`ln -s AGENTS.md businesses/<slug>/CLAUDE.md`).
 

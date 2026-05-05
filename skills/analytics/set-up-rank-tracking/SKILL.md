@@ -25,7 +25,7 @@ The skill is opinionated about a few things: 100-200 priority keywords is the ri
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), competitors (6), goals (7), markets (if international).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), competitors (6), goals (7), markets (if international).
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Source of priority keywords; tracking set is a curated subset.
 3. **Competitor analysis** — read `businesses/<slug>/competitor-analysis/scope.md` if it exists. Defines which competitors to track.
 4. **Existing tool** — optional. If the brand already has Ahrefs / Semrush / AccuRanker, the spec configures that tool; otherwise the spec recommends one.

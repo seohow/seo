@@ -25,7 +25,7 @@ A clear convention pays for itself many times over. The cost of inconsistent URL
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), business model (2), CMS/platform (5).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), business model (2), CMS/platform (5).
 2. **Page types in scope** — which content types the site has or will have. Default ecom set: products, collections, blog. Optional: FAQ, comparison, location pages, landing pages, glossary, tools, account pages. Ask if unclear.
 3. **CMS / platform** — Shopify, WooCommerce, Webflow, WordPress, custom. The conventions adapt to platform constraints (e.g. Shopify can't fully drop the `/collections/` and `/products/` prefixes without theme work).
 4. **Geographic / language scope** — single market vs. multi-market. Multi-market introduces hreflang, country/language subfolders or subdomains.

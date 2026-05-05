@@ -25,7 +25,7 @@ The audit is opinionated about a few things: every non-decorative image gets uni
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), brand voice (8). Voice affects alt-text phrasing.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), brand voice (8). Voice affects alt-text phrasing.
 2. **Page(s) to audit** — URL plus the image inventory. The image inventory needs, per image: file name (URL of the image asset), current alt text, current dimensions (intrinsic and display), file size, format (jpg/png/webp/avif), and lazy-loading status. The user can pull this from DevTools (Network + Inspector) or from a Screaming Frog crawl ("Images" report).
 3. **LCP identification** — if the user has run a page-speed test (PageSpeed Insights, Lighthouse, WebPageTest), they should know which image is the LCP. If not, ask which image appears first / largest above the fold and note that the LCP designation is provisional until verified.
 4. **Cluster / page intent** — read `businesses/<slug>/clusters/cluster-map.md` if available. The cluster's primary keyword affects file-name and (lightly) alt-text vocabulary.

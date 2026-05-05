@@ -28,7 +28,7 @@ The skill is opinionated about a few things: every brief starts with a SERP read
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: customer (4), competitors (6), goals (7), brand voice (8). Voice constraints feed directly into the brief.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: customer (4), competitors (6), goals (7), brand voice (8). Voice constraints feed directly into the brief.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. The post's cluster placement determines internal-link plan and topical context. If the post isn't in the map, ask which cluster it belongs to (or whether to add it).
 3. **Post topic** — required. Title or working topic of the post.
 4. **Primary keyword** — required. The single keyword the post primarily targets. Pull volume and difficulty from the cluster map if available.

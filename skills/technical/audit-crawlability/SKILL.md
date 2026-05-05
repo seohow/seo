@@ -24,7 +24,7 @@ This skill takes a URL list (from Screaming Frog, Sitebulb, Ahrefs Site Audit, G
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. The CMS / platform field (section 5) is critical because crawlability defaults vary by platform.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. The CMS / platform field (section 5) is critical because crawlability defaults vary by platform.
 2. **URL list with crawl metadata** — pasted, CSV, or file. Required columns at minimum: URL, status code, indexability (or meta robots value), depth from homepage. Useful additions: response time, X-Robots-Tag, canonical URL, inlinks count, redirect target. From Screaming Frog: the standard "Internal All" export has all of this.
 3. **`robots.txt` file** — the live file at the site's root, pasted or fetched. Required.
 4. **Cluster / priority list (optional)** — from `businesses/<slug>/clusters/cluster-map.md` or the user's priority pages. When known, the audit prioritises issues on these pages.

@@ -27,7 +27,7 @@ The skill is opinionated: link acquisition tied to topical authority compounds; 
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `generate-business-profile` first. Sections this skill cares about most: 3 (products), 6 (competitors), 7 (goals + constraints — informs production budget), 8 (brand voice).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 3 (products), 6 (competitors), 7 (goals + constraints — informs production budget), 8 (brand voice).
 2. **Topical-authority assessment** — required. From `growth/topical-authority-assessment-*.md`. Identifies the priority cluster(s) the asset programme is feeding.
 3. **Cluster context** — required. Cluster query inventory; current pillar / cluster pages; existing original-evidence / research assets (if any).
 4. **Off-page outreach manual** — recommended. From `off-page/outreach-manual.md` if it exists. Asset programme should integrate with the outreach pipeline.

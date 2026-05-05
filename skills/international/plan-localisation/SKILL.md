@@ -25,7 +25,7 @@ The skill is opinionated about a few things: machine translation alone is insuff
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), brand voice (8).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), brand voice (8).
 2. **Markets in scope** — required.
 3. **Architecture decision** — required. From `decide-multi-language-architecture`.
 4. **Budget tier** — required. Affects translation method.

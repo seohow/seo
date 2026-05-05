@@ -18,13 +18,13 @@ seo/
 ├── businesses/                          ← per-business workspaces
 │   ├── README.md                        ← workspace convention
 │   └── <slug>/                          ← one folder per business
-│       ├── business_profile.md          ← input (created by generate-business-profile)
+│       ├── business_profile.md          ← input (created by business-profile)
 │       ├── AGENTS.md                    ← per-business working memory (decisions, learnings, quirks)
 │       ├── CLAUDE.md                    ← symlink → AGENTS.md (for Claude-specific workflows)
 │       └── <artifact-subfolders>/       ← outputs from skills
 ├── skills/                              ← distributable skill package
 │   ├── README.md                        ← skill catalogue, grouped by playbook category / leaf
-│   ├── generate-business-profile/       ← setup / meta utility
+│   ├── business-profile/       ← setup / meta utility
 │   │   ├── SKILL.md
 │   │   └── templates/                   ← business profile + business memory templates
 │   └── <category-slug>/<skill-name>/    ← topic skills (category slug omits "SEO")
@@ -55,18 +55,18 @@ These are non-negotiable — deviating creates inconsistency that compounds acro
 
 - Follow `templates/SKILL_TEMPLATE.md`. Frontmatter requires `name` (kebab-case) and `description` (specific, slightly pushy to combat under-triggering — see `skill-creator` guidance).
 - Skills go in two places only:
-  - **Setup / meta utilities** — repo root under `skills/<skill-name>/SKILL.md` (e.g. `generate-business-profile`).
+  - **Setup / meta utilities** — repo root under `skills/<skill-name>/SKILL.md` (e.g. `business-profile`).
   - **Topic-specific skills** — under `skills/<category-slug>/<skill-name>/SKILL.md`, where `<category-slug>` is the playbook category in lowercase slug form with the repeated `SEO` suffix removed (`on-page`, `technical`, `content`, `off-page`, `international`, `ai`).
-- Skill-specific runtime templates or assets should live inside the skill folder that consumes them. Example: `generate-business-profile` owns its business workspace templates at `skills/generate-business-profile/templates/`.
+- Skill-specific runtime templates or assets should live inside the skill folder that consumes them. Example: `business-profile` owns its business workspace templates at `skills/business-profile/templates/`.
 - Keep `skills/README.md` updated whenever adding, moving, renaming, or removing a skill. It is the distributable catalogue for registries like skills.sh and should be grouped by playbook category / leaf, with links back to the category and leaf README.
 - Two archetypes: **planner** (scopes a project, produces a brief) and **executor** (produces a specific artifact). Some topics need one, some need both, some need a tracker — pick based on what the topic actually requires. Don't force every topic into the same shape.
 - Every topic skill reads inputs from `businesses/<slug>/business_profile.md` and writes outputs to `businesses/<slug>/<artifact-subfolder>/`. The subfolder names are conventionalised — see existing skills for the pattern (`keyword-research/`, `intent-classification/`, `competitor-analysis/`, `clusters/`, `backlog/`, etc.).
-- Skill description should explicitly resolve the slug: list `businesses/`, default to the only folder if there's one, ask if there are multiple, recommend `generate-business-profile` if there are none.
+- Skill description should explicitly resolve the slug: list `businesses/`, default to the only folder if there's one, ask if there are multiple, recommend `business-profile` if there are none.
 
 ### File naming and slugs
 
 - Skill folders: kebab-case (`plan-keyword-research`, not `plan_keyword_research` or `Plan-Keyword-Research`).
-- Business slugs: lowercase, hyphen-separated, no apostrophes, no leading articles when avoidable. `generate-business-profile` enforces this — match its rules manually if creating a slug by hand.
+- Business slugs: lowercase, hyphen-separated, no apostrophes, no leading articles when avoidable. `business-profile` enforces this — match its rules manually if creating a slug by hand.
 - Topic folder names: keep the existing `NN. Topic Name` numbered convention. Don't renumber without coordinating across all cross-links.
 
 ### Cross-link URL encoding
@@ -155,7 +155,7 @@ Current structural state for quick orientation. Update this table when categorie
 | Leaves | 63 |
 | Category overview READMEs | 10 |
 | Playbook skills | 73 |
-| Setup skills (`generate-business-profile`) | 1 |
+| Setup skills (`business-profile`) | 1 |
 | **Total skills** | **74** |
 | Sample businesses | 1 (Field & Sun) |
 | `.gitkeep` files | 0 |

@@ -1,6 +1,6 @@
 # Business Profile (template)
 
-This is the template the `generate-business-profile` skill uses to interview you. You don't normally edit this file directly — instead, run the skill and it will produce a filled-in copy at `businesses/<your-business-slug>/business_profile.md`.
+This is the template the `business-profile` skill uses to interview you. You don't normally edit this file directly — instead, run the skill and it will produce a filled-in copy at `businesses/<your-business-slug>/business_profile.md`.
 
 Editing this template directly only makes sense if you want to change the questions the toolkit asks across all businesses (e.g. add a section that's specific to your industry).
 
@@ -103,4 +103,4 @@ When you run a skill in this toolkit, it will:
 3. If a section is blank in the profile, the skill will either ask for it or note that the output is generic in that respect.
 4. Save its output as a new file inside `businesses/<business-slug>/<artifact-subfolder>/`, so all work for a given business stays colocated.
 
-Keep your business profile updated. The fresher the profile, the sharper the output. To update it, re-run the `generate-business-profile` skill in update mode.
+Keep your business profile updated. The fresher the profile, the sharper the output. To update it, re-run the `business-profile` skill in update mode.

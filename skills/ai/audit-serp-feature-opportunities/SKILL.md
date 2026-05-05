@@ -26,7 +26,7 @@ The skill is opinionated: features dominated by Wikipedia / established publishe
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `generate-business-profile` first. Sections this skill cares about most: 3 (products), 5 (current SEO state), 6 (competitors), 8 (brand voice).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 3 (products), 5 (current SEO state), 6 (competitors), 8 (brand voice).
 2. **Priority keyword set** — required. From `keyword-research/*.md`, `clusters/cluster-map.md`, or user-provided. Typical scope: 8-20 priority queries per audit. Don't audit the whole site at once.
 3. **Current SERP data** — required. Fresh SERP screenshots or rank-tracker exports per priority query, capturing feature presence and current feature holder.
 4. **Existing content** — required for queries where the brand has a page targeting them. Used to assess whether feature capture is a rewrite or a new piece of content.

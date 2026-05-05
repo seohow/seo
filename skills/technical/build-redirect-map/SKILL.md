@@ -24,7 +24,7 @@ The skill is opinionated: every old URL with non-zero traffic in the last 90 day
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: business model (2), CMS / platform (5).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: business model (2), CMS / platform (5).
 2. **Migration plan** — read `businesses/<slug>/migration/plan.md` if it exists. Aligns the redirect map to the planned scope. If absent, recommend running `plan-site-migration` first.
 3. **Old URL inventory** — required. Sources: existing sitemap, crawler export (Screaming Frog), GSC URL list. Pasted, CSV, or file. Required columns: URL. Useful additions: status code, last-modified, traffic / clicks / impressions (last 90 days), backlink count if available.
 4. **New URL convention or per-URL mapping rules** — required. Either:

@@ -25,7 +25,7 @@ The skill is opinionated about a few things: automated tools catch ~30-50% (manu
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4).
 2. **Priority templates** — required. Homepage, pillar, PDP, checkout, quiz / tool, blog, key landing pages.
 3. **Geographic operations** — required. EU / UK presence triggers EU Accessibility Act review; US operations trigger ADA review.
 4. **Conformance target** — typically WCAG 2.1 AA; confirm.

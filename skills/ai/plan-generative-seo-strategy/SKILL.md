@@ -27,7 +27,7 @@ The skill is opinionated: publishers (Wirecutter, Strategist, Byrdie, Refinery29
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `generate-business-profile` first. Sections this skill cares about most: 3 (products / services), 4 (customer pains + questions), 6 (competitors), 7 (goals + constraints — informs realistic investment), 8 (brand voice — citation work stays on-voice).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 3 (products / services), 4 (customer pains + questions), 6 (competitors), 7 (goals + constraints — informs realistic investment), 8 (brand voice — citation work stays on-voice).
 2. **Cluster context** — required. Which cluster(s) is this plan scoped to? Cross-reference `clusters/cluster-map.md` if it exists. Don't plan generative SEO for the whole site at once; cluster-by-cluster is the right unit.
 3. **LLM visibility baseline** — strongly recommended. If `ai-seo/llm-visibility-audit-*.md` exists, consume it. If not, recommend running `audit-llm-visibility` first — without baseline, the plan can't assess whether investment moves the needle.
 4. **Competitor analysis** — recommended. If `competitor-analysis/*.md` exists, use it for competitor citation share + content depth assessment.

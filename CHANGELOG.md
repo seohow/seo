@@ -12,14 +12,14 @@
 - Decided format: README + 1-2 skills per leaf, parent README per category, examples lean D2C for v1, frameworks stay business-agnostic.
 - Initial structure at the time: `templates/` for templates, `skills/` for setup utilities, `playbook/<category>/<topic>/skills/` for topic skills. Superseded on 2026-05-03 by the root distributable `skills/<category-slug>/<skill-name>/` package.
 - Decided per-business workspace convention: `businesses/<slug>/` holds profile + artifacts; never store inputs/outputs at repo root.
-- Decided front-door skill: `generate-business-profile` is the entry point and must run before any topic skill is usable.
+- Decided front-door skill: `business-profile` is the entry point and must run before any topic skill is usable.
 - Decided audience: D2C-first examples, but architecture should support adding business types later via different profiles + example overrides.
 - Strategy slice (5 leaves, 1 category overview, 7 skills) is the format reference for the remaining 9 categories.
 
 ### 2026-04-26 — Per-business CLAUDE.md introduced
 
-- Decided every business workspace gets its own `CLAUDE.md` from `skills/generate-business-profile/templates/business_claude_template.md`.
-- Decided `generate-business-profile` drops the stub on workspace creation; users don't have to remember.
+- Decided every business workspace gets its own `CLAUDE.md` from `skills/business-profile/templates/business_claude_template.md`.
+- Decided `business-profile` drops the stub on workspace creation; users don't have to remember.
 - Decided per-business CLAUDE.md captures: decisions, learnings, constraints/quirks, active experiments — distinct from artifact files (which capture *what was produced*).
 
 ### 2026-04-30 — `docs/` renamed to `playbook/`
@@ -191,9 +191,9 @@
 - **Category overview READMEs:** 10.
 - **Leaf READMEs:** 63.
 - **Playbook skills:** 73.
-- **Repo-level setup skills:** 1 (`generate-business-profile`).
+- **Repo-level setup skills:** 1 (`business-profile`).
 - **Total skills:** 74.
-- **Templates:** README and SKILL authoring templates in root `templates/`; business profile and business CLAUDE runtime templates now live inside `skills/generate-business-profile/templates/`.
+- **Templates:** README and SKILL authoring templates in root `templates/`; business profile and business CLAUDE runtime templates now live inside `skills/business-profile/templates/`.
 - **Sample business:** Field & Sun (canonical fixture; lives at `businesses/field-and-sun/` with profile + CLAUDE.md as worked examples).
 - **`.gitkeep` files:** 0. No empty leaves.
 - The toolkit is structurally v1-final. Future work splits into three buckets:
@@ -215,9 +215,9 @@
 - Skills category READMEs and all playbook cross-links now point to the flattened leaf pages.
 - Future leaves should be created as direct Markdown pages in the category folder, not as folders with nested READMEs.
 
-### 2026-05-03 — Business templates moved into generate-business-profile
+### 2026-05-03 — Business templates moved into business-profile
 
-- Moved `business_profile_template.md` and `business_claude_template.md` out of root `templates/` and into `skills/generate-business-profile/templates/`.
+- Moved `business_profile_template.md` and `business_claude_template.md` out of root `templates/` and into `skills/business-profile/templates/`.
 - Reason: these are runtime dependencies of the setup skill, not general toolkit-authoring templates. Keeping them inside the skill makes the distributable skills package self-contained.
 - Root `templates/` now contains only authoring templates for toolkit pages and skills.
 

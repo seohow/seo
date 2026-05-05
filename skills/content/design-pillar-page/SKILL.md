@@ -26,7 +26,7 @@ The skill is opinionated about a few things: pillars target broad head terms, no
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), competitors (6), goals (7), brand voice (8). Brand voice and brand-distinct angle drive the design.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), competitors (6), goals (7), brand voice (8). Brand voice and brand-distinct angle drive the design.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Required. Identifies which clusters warrant a pillar and what spokes they contain.
 3. **Pillar topic + primary keyword** — required. The user identifies which cluster's pillar they want to design. Skill confirms the head-term primary keyword.
 4. **Existing spoke pages** — list of currently-published or calendar-planned blog posts that would be spokes under this pillar. Use the cluster map + blog calendar.

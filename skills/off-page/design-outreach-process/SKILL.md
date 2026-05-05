@@ -25,7 +25,7 @@ The skill is opinionated about a few things: dedicated subdomain (don't pollute 
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), brand voice (8).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), brand voice (8).
 2. **Current outreach state** — required. Domain used; sender identity; tooling; CRM; response rate (if known).
 3. **Send-volume estimate** — outreach pitches per month / quarter. Affects ESP tier + warming plan.
 4. **Geographic scope** — required. EU / UK presence triggers GDPR / PECR compliance.

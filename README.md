@@ -14,7 +14,7 @@ The goal is that anyone running a business can go from "I should probably do SEO
 
 ### 1. Set up your business workspace
 
-Run the [`generate-business-profile`](skills/generate-business-profile/SKILL.md) skill. It will interview you for the inputs, slugify a folder name, and create two files in your new workspace:
+Run the [`business-profile`](skills/business-profile/SKILL.md) skill. It will interview you for the inputs, slugify a folder name, and create two files in your new workspace:
 
 - `businesses/<your-business-slug>/business_profile.md` — the structured profile every other skill reads.
 - `businesses/<your-business-slug>/CLAUDE.md` — the working-memory file AI collaborators maintain as decisions, learnings, and constraints surface over time.
@@ -46,13 +46,13 @@ Each category folder has a `README.md` overview and one Markdown page per leaf t
 
 There are two kinds of skills in this toolkit:
 
-- **Setup skills** live at the top level of `skills/`. Today the only one is `generate-business-profile`, but more meta utilities can land there over time.
+- **Setup skills** live at the top level of `skills/`. Today the only one is `business-profile`, but more meta utilities can land there over time.
 - **Topic skills** live under registry-friendly category folders in `skills/<category-slug>/<skill-name>/`. For example:
 
 ```
 skills/
 ├── README.md
-├── generate-business-profile/
+├── business-profile/
 │   └── SKILL.md
 └── strategy/
     ├── plan-keyword-research/
@@ -94,7 +94,7 @@ Each topic README ends with cross-links to related topics so you can follow the 
 
 The frameworks in this toolkit are business-model-agnostic. Examples currently lean toward D2C e-commerce because that's where v1 was sharpened, but the underlying playbooks apply to SaaS, services, marketplaces, and content businesses. Skills personalise their output by reading the business profile in your workspace — so a SaaS founder and a candle-maker get different keyword recommendations from the same skill.
 
-To work on multiple businesses, register each one with `generate-business-profile`. They'll each live in their own folder under `businesses/`, with profile and artifacts kept colocated so nothing leaks between ventures.
+To work on multiple businesses, register each one with `business-profile`. They'll each live in their own folder under `businesses/`, with profile and artifacts kept colocated so nothing leaks between ventures.
 
 ---
 

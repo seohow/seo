@@ -27,7 +27,7 @@ The skill is opinionated about a few things: clusters are 1 pillar + 5-10 spokes
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), customer (4), goals (7), brand voice (8).
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), goals (7), brand voice (8).
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Required. The hub topic must be present in the cluster map; if it isn't, ask whether to add it or run `cluster-keywords` first.
 3. **Hub topic / cluster ID** — required. Which cluster is being architected.
 4. **Existing blog inventory** — read `businesses/<slug>/blog-inventory.md` if it exists, or ask the user to list current blog posts. Spokes are usually a mix of existing and to-be-built; the skill identifies which is which.

@@ -26,7 +26,7 @@ The skill is opinionated about a few things: GA4 setup drifts (audit quarterly);
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `generate-business-profile` first. Critical sections: products/services (3), goals (7). Goals shape which conversions matter.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), goals (7). Goals shape which conversions matter.
 2. **GA4 property access** — required (or screenshots / config exports). The skill needs visibility into property setup, events, conversions, audiences, ecommerce, attribution settings.
 3. **Comparison data source** — strongly preferred. Shopify, WooCommerce, internal CRM, payment processor (Stripe). Used to triangulate GA4 conversion / revenue numbers.
 4. **Geographic operations** — optional. EU / UK presence triggers Consent Mode v2 review.
