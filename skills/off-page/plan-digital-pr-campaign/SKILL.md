@@ -1,6 +1,6 @@
 ---
 name: plan-digital-pr-campaign
-description: Use to plan digital pr campaign; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Plans a digital PR campaign: story angle, target publications, supporting data or assets, and outreach plan. Use to earn editorial links and media coverage at scale.
 ---
 
 # Plan Digital PR Campaign

@@ -1,6 +1,6 @@
 ---
 name: audit-accessibility
-description: Use to audit accessibility; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits page accessibility for SEO impact: WCAG issues, alt text, heading structure, colour contrast, and keyboard navigation. Use to fix accessibility gaps that also harm rankings.
 ---
 
 # Audit Accessibility

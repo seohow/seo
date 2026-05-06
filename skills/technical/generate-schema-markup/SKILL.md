@@ -1,6 +1,6 @@
 ---
 name: generate-schema-markup
-description: Use to generate schema markup; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Generates JSON-LD structured data for target page types. Use to implement or improve schema for rich snippets, FAQs, product cards, reviews, or breadcrumbs.
 ---
 
 # Generate Schema Markup

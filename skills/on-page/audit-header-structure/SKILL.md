@@ -1,6 +1,6 @@
 ---
 name: audit-header-structure
-description: Use to audit header structure; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits H1–H6 header hierarchy across a URL set for structure, keyword use, and featured-snippet eligibility. Use to diagnose header issues or improve on-page clarity and structure.
 ---
 
 # Audit Header Structure

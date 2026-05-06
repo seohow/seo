@@ -1,6 +1,6 @@
 ---
 name: audit-search-console-setup
-description: Use to audit search console setup; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits Search Console setup: property verification, sitemaps, data filters, and connections. Use to confirm GSC is correctly configured before using it for analysis or reporting.
 ---
 
 # Audit Search Console Setup

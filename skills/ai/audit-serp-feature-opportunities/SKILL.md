@@ -1,6 +1,6 @@
 ---
 name: audit-serp-feature-opportunities
-description: Use to audit serp feature opportunities; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Identifies SERP feature opportunities — featured snippets, People Also Ask, image packs, knowledge panels — for target keywords. Use to prioritise structured content and markup changes.
 ---
 
 # Audit SERP Feature Opportunities

@@ -1,6 +1,6 @@
 ---
 name: audit-ai-crawler-access
-description: Use to audit ai crawler access; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits robots.txt, meta robots, and HTTP headers for AI crawler permissions. Use to control which AI systems can access or train on the site's content.
 ---
 
 # Audit AI Crawler Access

@@ -1,6 +1,6 @@
 ---
 name: plan-generative-seo-strategy
-description: Use to plan generative seo strategy; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Plans a generative SEO strategy: content types, entity optimisation priorities, citation signals, and measurement approach for AI-mediated search. Use to build a structured AI search roadmap.
 ---
 
 # Plan Generative SEO Strategy

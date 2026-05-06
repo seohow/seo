@@ -1,6 +1,6 @@
 ---
 name: define-seo-kpis
-description: Use to define seo kpis; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Defines the KPI set for an SEO program: metrics, targets, reporting cadence, and owners. Use when starting an SEO program or when current metrics are disconnected from business outcomes.
 ---
 
 # Define SEO KPIs

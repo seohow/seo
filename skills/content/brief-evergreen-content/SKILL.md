@@ -1,6 +1,6 @@
 ---
 name: brief-evergreen-content
-description: Use to brief evergreen content; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a content brief for an evergreen asset: angle, structure, keyword targets, and update triggers. Use to brief content designed to rank and stay relevant for 2+ years.
 ---
 
 # Brief Evergreen Content

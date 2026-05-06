@@ -1,6 +1,6 @@
 ---
 name: plan-link-magnet-strategy
-description: Use to plan link magnet strategy; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Plans a link magnet asset strategy: content type, topic, data or tool angle, promotion plan, and target publications. Use to earn links passively through high-value content.
 ---
 
 # Plan Link-Magnet Strategy

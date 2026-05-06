@@ -1,6 +1,6 @@
 ---
 name: audit-urls
-description: Use to audit urls; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits a URL set for slug quality, keyword alignment, and convention consistency. Use to diagnose URL structure issues or validate a site section before a migration.
 ---
 
 # Audit URLs

@@ -1,6 +1,6 @@
 ---
 name: plan-schema-strategy
-description: Use to plan schema strategy; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Defines a schema markup strategy: which page types to mark up, which schema types to use, and implementation priority. Use before writing schema or auditing existing structured data.
 ---
 
 # Plan Schema Strategy

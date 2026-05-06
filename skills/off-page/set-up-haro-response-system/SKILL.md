@@ -1,6 +1,6 @@
 ---
 name: set-up-haro-response-system
-description: Use to set up haro response system; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Sets up a journalist-query response system: source filters, response templates, and tracking. Use to earn editorial links and mentions from HARO, Qwoted, or similar services.
 ---
 
 # Set Up HARO Response System

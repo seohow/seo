@@ -1,6 +1,6 @@
 ---
 name: generate-llms-txt
-description: Use to generate llms txt; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Generates a /llms.txt file to guide large language models on how to use the site's content. Use when optimising for AI-mediated search or controlling LLM citation behaviour.
 ---
 
 # Generate llms.txt

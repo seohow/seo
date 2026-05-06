@@ -247,6 +247,14 @@
 - Generated `releases/v*/` folders are ignored locally; local packaging is a preflight path, not the canonical release path.
 - Platform compatibility checks currently warn on long descriptions; use `npm run skills:validate -- --strict-platform` before an org deployment that must satisfy Claude.ai's current 200-character description limit.
 
+### 2026-05-06 — All 73 topic skill descriptions rewritten for output-led triggering
+
+- Replaced boilerplate frontmatter descriptions ("Use to [action]; resolves <slug>…") on all 73 topic skills with specific, output-led descriptions that state what the skill produces and include explicit triggering contexts.
+- Format: `[artifact produced]: [key outputs]. Use [when / trigger phrasing].` All descriptions stay under 200 characters and pass `--strict-platform` validation.
+- Reason: the previous descriptions were functionally identical across skills, giving AI collaborators and skills registries no signal to distinguish between adjacent skills (e.g. `audit-ga4-setup` vs `audit-search-console-setup`). Under-triggering and wrong-skill selection were the predictable failure modes.
+- Slug-resolution guidance is already in every skill body — it doesn't need to be in the description metadata.
+- `business-profile` description was not changed; its existing description is already specific and correct.
+
 ### 2026-05-06 — Alpha release readiness checks are strict
 
 - Tightened all skill frontmatter descriptions to stay below the configured 200-character platform limit while keeping slug-resolution guidance in the metadata.

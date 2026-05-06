@@ -1,6 +1,6 @@
 ---
 name: plan-tool-page
-description: Use to plan tool page; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Designs a free-tool or calculator page: tool concept, keyword target, user flow, and SEO rationale. Use to plan a utility page for link acquisition, lead capture, or brand authority.
 ---
 
 # Plan Tool Page

@@ -1,6 +1,6 @@
 ---
 name: plan-guest-posting-campaign
-description: Use to plan guest posting campaign; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Plans a guest posting campaign: target site criteria, pitch angle, content plan, and tracking. Use to build authoritative links through contributed editorial content.
 ---
 
 # Plan Guest-Posting Campaign

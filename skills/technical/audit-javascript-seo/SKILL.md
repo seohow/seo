@@ -1,6 +1,6 @@
 ---
 name: audit-javascript-seo
-description: Use to audit javascript seo; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits JavaScript rendering for SEO impact: content visibility, link discovery, indexing delays, and Core Web Vitals risk. Use for JS-heavy sites or single-page-app frameworks.
 ---
 
 # Audit JavaScript SEO

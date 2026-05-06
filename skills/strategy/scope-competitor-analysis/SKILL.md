@@ -1,6 +1,6 @@
 ---
 name: scope-competitor-analysis
-description: Use to scope competitor analysis; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Scopes a competitor SEO analysis: which competitors to include, what dimensions to study, how deep, and what the deliverable looks like. Use before running competitor audits.
 ---
 
 # Scope Competitor Analysis

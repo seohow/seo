@@ -1,6 +1,6 @@
 ---
 name: audit-core-web-vitals
-description: Use to audit core web vitals; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits Core Web Vitals (LCP, INP, CLS) and produces a prioritised fix list by page group. Use when failing CWV thresholds or preparing a focused site speed sprint.
 ---
 
 # Audit Core Web Vitals

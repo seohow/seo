@@ -1,6 +1,6 @@
 ---
 name: analyse-search-performance
-description: Use to analyse search performance; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a structured GSC performance analysis: patterns, wins, drops, and CTR opportunities by page and query cluster. Use for a quarterly review or to diagnose a traffic change.
 ---
 
 # Analyse Search Performance

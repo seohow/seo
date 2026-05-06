@@ -1,6 +1,6 @@
 ---
 name: design-outreach-process
-description: Use to design outreach process; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Designs an outreach process: prospect criteria, messaging sequence, tracking system, and response playbook. Use to build a repeatable, scalable link acquisition or PR workflow.
 ---
 
 # Design Outreach Process

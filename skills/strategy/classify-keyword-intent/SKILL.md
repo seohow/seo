@@ -1,6 +1,6 @@
 ---
 name: classify-keyword-intent
-description: Use to classify keyword intent; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Tags a keyword list with search intent, recommended page type, and confidence notes. Flags mixed-intent queries. Use after collecting keywords and before clustering or writing content briefs.
 ---
 
 # Classify Keyword Intent

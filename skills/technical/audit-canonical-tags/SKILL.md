@@ -1,6 +1,6 @@
 ---
 name: audit-canonical-tags
-description: Use to audit canonical tags; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits canonical tag implementation across a URL set for self-references, conflicts, and crawl loops. Use to fix duplicate-content issues or validate canonicalisation after a migration.
 ---
 
 # Audit Canonical Tags

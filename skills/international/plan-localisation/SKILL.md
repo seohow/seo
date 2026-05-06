@@ -1,6 +1,6 @@
 ---
 name: plan-localisation
-description: Use to plan localisation; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a per-market localisation plan: translation method, cultural adaptation, regulatory compliance, and SEO keyword strategy per locale. Use before launching in a new language market.
 ---
 
 # Plan Localisation

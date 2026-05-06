@@ -1,6 +1,6 @@
 ---
 name: define-url-conventions
-description: Use to define url conventions; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Defines URL structure conventions: format rules, slug patterns, and folder hierarchy for the business. Use before a site build, redesign, or when inconsistent URLs cause crawl issues.
 ---
 
 # Define URL Conventions

@@ -1,6 +1,6 @@
 ---
 name: cluster-keywords
-description: Use to cluster keywords; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Groups a classified keyword list into a cluster map with primary keyword, supporting terms, page type, target URL, and priority. Use after intent classification and before content planning.
 ---
 
 # Cluster Keywords

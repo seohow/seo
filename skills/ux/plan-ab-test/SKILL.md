@@ -1,6 +1,6 @@
 ---
 name: plan-ab-test
-description: Use to plan ab test; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces an SEO-safe A/B test plan: hypothesis, variants, success metrics, sample size, and decision rules. Use to test on-page changes without duplicate-content or indexing risk.
 ---
 
 # Plan A/B Test

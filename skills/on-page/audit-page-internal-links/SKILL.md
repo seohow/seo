@@ -1,6 +1,6 @@
 ---
 name: audit-page-internal-links
-description: Use to audit page internal links; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits internal links on a specific page: anchor text, relevance, missing links, and link distribution. Use when diagnosing why a page underperforms or planning internal link improvements.
 ---
 
 # Audit Page Internal Links

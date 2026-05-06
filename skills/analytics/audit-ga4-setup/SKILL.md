@@ -1,6 +1,6 @@
 ---
 name: audit-ga4-setup
-description: Use to audit ga4 setup; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits GA4 setup for SEO use: property configuration, filters, event tracking, and landing-page data quality. Use to verify measurement before relying on GA4 for decisions.
 ---
 
 # Audit GA4 Setup

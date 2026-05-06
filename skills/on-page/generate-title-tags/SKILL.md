@@ -1,6 +1,6 @@
 ---
 name: generate-title-tags
-description: Use to generate title tags; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Generates keyword-aligned, click-optimised title tags for a URL set within character limits. Use to write or rewrite title tags in bulk or audit and improve existing titles.
 ---
 
 # Generate Title Tags

@@ -1,6 +1,6 @@
 ---
 name: generate-meta-descriptions
-description: Use to generate meta descriptions; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Generates click-optimised meta descriptions for a URL set using the business's voice and target keywords. Use to write or rewrite meta descriptions in bulk.
 ---
 
 # Generate Meta Descriptions

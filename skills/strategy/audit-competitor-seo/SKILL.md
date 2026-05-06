@@ -1,6 +1,6 @@
 ---
 name: audit-competitor-seo
-description: Use to audit competitor seo; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a competitor SEO gap report: keyword overlap, content patterns, link signals, and prioritised opportunities for one domain. Use to analyse a specific competitor.
 ---
 
 # Audit Competitor SEO

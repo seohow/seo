@@ -1,6 +1,6 @@
 ---
 name: optimize-page-content
-description: Use to optimise page content; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces an optimised version of existing page body copy: keyword integration, readability, and structure improvements. Use to improve a specific underperforming or thin page.
 ---
 
 # Optimize Page Content

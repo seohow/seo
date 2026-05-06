@@ -1,6 +1,6 @@
 ---
 name: audit-images
-description: Use to audit images; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits alt text, file names, compression, and lazy loading across a page set. Use to fix image SEO issues or when accessibility or page-speed improvements are the goal.
 ---
 
 # Audit Images

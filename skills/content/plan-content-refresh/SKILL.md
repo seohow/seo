@@ -1,6 +1,6 @@
 ---
 name: plan-content-refresh
-description: Use to plan content refresh; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a content refresh plan: pages to update, what to change, new keyword targets, and priority order. Use when organic traffic has declined or content has gone stale.
 ---
 
 # Plan Content Refresh

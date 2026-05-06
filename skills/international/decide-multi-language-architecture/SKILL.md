@@ -1,6 +1,6 @@
 ---
 name: decide-multi-language-architecture
-description: Use to decide multi language architecture; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces the multi-language architecture decision: subdomain vs subdirectory vs ccTLD trade-off analysis, recommendation per market, and migration-cost estimate. Use before expanding to new markets.
 ---
 
 # Decide Multi-Language Architecture

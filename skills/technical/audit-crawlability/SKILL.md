@@ -1,6 +1,6 @@
 ---
 name: audit-crawlability
-description: Use to audit crawlability; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits the site's crawlability: robots.txt, internal links, crawl depth, redirect chains, and blocked resources. Use to diagnose crawl issues or before a site launch.
 ---
 
 # Audit Crawlability

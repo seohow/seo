@@ -1,6 +1,6 @@
 ---
 name: audit-branded-serp
-description: Use to audit branded serp; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits the brand's SERP: knowledge panel, review sites, brand-query rankings, and reputation signals. Use to understand and improve how the brand appears in branded searches.
 ---
 
 # Audit Branded SERP

@@ -1,6 +1,6 @@
 ---
 name: design-programmatic-template
-description: Use to design programmatic template; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Designs a programmatic content template: variable map, page structure, per-slot SEO rules, and quality filters. Use when building scalable location, product, or data-driven pages.
 ---
 
 # Design Programmatic Template

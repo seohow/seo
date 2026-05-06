@@ -1,6 +1,6 @@
 ---
 name: build-redirect-map
-description: Use to build redirect map; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a redirect map for a site migration or URL restructure: old URL, new URL, redirect type, and priority. Use before any domain change, redesign, or mass URL restructure.
 ---
 
 # Build Redirect Map

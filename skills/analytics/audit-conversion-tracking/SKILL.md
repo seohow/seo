@@ -1,6 +1,6 @@
 ---
 name: audit-conversion-tracking
-description: Use to audit conversion tracking; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits conversion tracking for SEO: goal events, attribution model, and GA4/GSC connection. Use to verify that SEO is measured against revenue and conversions, not just traffic.
 ---
 
 # Audit Conversion Tracking

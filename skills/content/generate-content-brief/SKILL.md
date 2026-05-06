@@ -1,6 +1,6 @@
 ---
 name: generate-content-brief
-description: Use to generate content brief; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a content brief for a target keyword: angle, structure, headers, intent match, word count, and internal links. Use before writing any new article or landing page.
 ---
 
 # Generate Content Brief

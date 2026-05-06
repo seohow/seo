@@ -1,6 +1,6 @@
 ---
 name: set-up-rank-tracking
-description: Use to set up rank tracking; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Designs a rank tracking setup: keyword set, tool selection, reporting cadence, and alert thresholds. Use when starting rank tracking or auditing whether an existing setup is fit for purpose.
 ---
 
 # Set Up Rank Tracking

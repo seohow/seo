@@ -1,6 +1,6 @@
 ---
 name: generate-seed-keywords
-description: Use to generate seed keywords; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Generates 50–100 seed keywords from the business profile, ready for tool-based expansion. Use when starting keyword research cold or when the initial keyword set is missing.
 ---
 
 # Generate Seed Keywords

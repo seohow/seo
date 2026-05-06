@@ -1,6 +1,6 @@
 ---
 name: assess-topical-authority
-description: Use to assess topical authority; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a topical authority assessment per cluster: coverage gaps, depth vs breadth, defensibility check, and multi-quarter investment plan. Use before committing to cluster investment.
 ---
 
 # Assess Topical Authority

@@ -1,6 +1,6 @@
 ---
 name: audit-xml-sitemap
-description: Use to audit xml sitemap; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits the XML sitemap for errors, excluded pages, non-canonical URLs, and lastmod accuracy. Use before a site launch, migration, or after a major structural content change.
 ---
 
 # Audit XML Sitemap

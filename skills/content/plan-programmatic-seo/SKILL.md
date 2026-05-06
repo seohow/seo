@@ -1,6 +1,6 @@
 ---
 name: plan-programmatic-seo
-description: Use to plan programmatic seo; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a programmatic SEO plan: data source, URL template, page types, indexing strategy, and quality bar. Use before building scalable, data-driven page templates.
 ---
 
 # Plan Programmatic SEO

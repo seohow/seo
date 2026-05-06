@@ -1,6 +1,6 @@
 ---
 name: audit-mobile-ux
-description: Use to audit mobile ux; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits mobile UX for SEO: tap targets, viewport configuration, font sizes, scroll behaviour, and mobile-specific Core Web Vitals. Use to fix mobile experience issues.
 ---
 
 # Audit Mobile UX

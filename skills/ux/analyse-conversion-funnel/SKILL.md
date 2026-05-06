@@ -1,6 +1,6 @@
 ---
 name: analyse-conversion-funnel
-description: Use to analyse conversion funnel; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Analyses the conversion funnel from organic landing page to purchase: drop-off points, friction causes, and prioritised fixes. Use to connect SEO traffic to revenue outcomes.
 ---
 
 # Analyse Conversion Funnel

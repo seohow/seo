@@ -1,6 +1,6 @@
 ---
 name: plan-broken-link-campaign
-description: Use to plan broken link campaign; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Plans a broken-link building campaign: prospecting method, replacement content strategy, outreach template, and success metrics. Use to earn links by replacing dead resources.
 ---
 
 # Plan Broken-Link Campaign

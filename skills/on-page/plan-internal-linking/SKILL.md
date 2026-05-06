@@ -1,6 +1,6 @@
 ---
 name: plan-internal-linking
-description: Use to plan internal linking; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a site-wide internal linking plan: anchor text, target pages, and link placement priorities. Use when building a new site section or improving crawl depth and PageRank flow.
 ---
 
 # Plan Internal Linking

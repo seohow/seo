@@ -1,6 +1,6 @@
 ---
 name: plan-keyword-research
-description: Use to plan keyword research; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a keyword-research project plan: scope, seed areas, tools, deliverable format, and timeline. Use before starting keyword research when the approach and effort need defining first.
 ---
 
 # Plan Keyword Research

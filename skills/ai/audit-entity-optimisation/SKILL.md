@@ -1,6 +1,6 @@
 ---
 name: audit-entity-optimisation
-description: Use to audit entity optimisation; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits entity signals: brand entity definition, knowledge panel, entity mentions, and semantic markup. Use to improve how AI systems understand and represent the brand.
 ---
 
 # Audit Entity Optimisation

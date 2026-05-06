@@ -1,6 +1,6 @@
 ---
 name: design-pillar-page
-description: Use to design pillar page; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Designs a pillar page: topic scope, subtopic map, keyword targets, internal linking structure, and content outline. Use to anchor a topic cluster or own a broad category page.
 ---
 
 # Design Pillar Page

@@ -1,6 +1,6 @@
 ---
 name: build-seo-wins-backlog
-description: Use to build seo wins backlog; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Consolidates keyword, intent, competitor, and cluster outputs into a scored, prioritised 90-day SEO wins backlog. Use when ready to turn research into an ordered action plan.
 ---
 
 # Build SEO Wins Backlog

@@ -1,6 +1,6 @@
 ---
 name: design-seo-experiment
-description: Use to design seo experiment; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Designs a structured SEO experiment: hypothesis, test pages, variant, measurement window, and success criteria. Use to validate an SEO change before rolling it out site-wide.
 ---
 
 # Design SEO Experiment

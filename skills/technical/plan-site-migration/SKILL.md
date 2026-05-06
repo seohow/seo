@@ -1,6 +1,6 @@
 ---
 name: plan-site-migration
-description: Use to plan site migration; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a site migration plan: URL mapping, redirect strategy, pre- and post-launch checklist, and risk register. Use before a domain change, platform move, or CMS migration.
 ---
 
 # Plan Site Migration

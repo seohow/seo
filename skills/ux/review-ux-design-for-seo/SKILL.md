@@ -1,6 +1,6 @@
 ---
 name: review-ux-design-for-seo
-description: Use to review ux design for seo; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Reviews a page design or wireframe for SEO risks: crawlability, heading structure, link patterns, and content accessibility. Use before development handoff or design sign-off.
 ---
 
 # Review UX Design for SEO

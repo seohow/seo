@@ -1,6 +1,6 @@
 ---
 name: plan-link-building-campaign
-description: Use to plan link building campaign; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Plans a link building campaign: strategy type, target site criteria, content assets, outreach sequence, and KPIs. Use to build a structured, measurable link acquisition program.
 ---
 
 # Plan Link-Building Campaign

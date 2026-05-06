@@ -1,6 +1,6 @@
 ---
 name: audit-page-speed-ux
-description: Use to audit page speed ux; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits page speed from a UX perspective: perceived load, interaction delays, layout shifts, and user-facing fixes. Use after Core Web Vitals failures or before a speed sprint.
 ---
 
 # Audit Page Speed UX

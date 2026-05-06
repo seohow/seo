@@ -1,6 +1,6 @@
 ---
 name: audit-ai-content-readiness
-description: Use to audit ai content readiness; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits content for AI search readiness: entity coverage, structured data, E-E-A-T signals, and citation worthiness. Use to prepare content for inclusion in AI-generated search answers.
 ---
 
 # Audit AI Content Readiness

@@ -1,6 +1,6 @@
 ---
 name: design-topic-cluster
-description: Use to design topic cluster; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Designs a topic cluster: pillar topic, cluster articles, supporting keywords, and internal linking map. Use to plan a content hub or expand into a new subject area.
 ---
 
 # Design Topic Cluster

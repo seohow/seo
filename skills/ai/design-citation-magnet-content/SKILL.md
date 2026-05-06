@@ -1,6 +1,6 @@
 ---
 name: design-citation-magnet-content
-description: Use to design citation magnet content; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Designs content structured to earn citations in AI-generated answers: topic, format, entity density, and sourcing signals. Use to build content that LLMs reference and surface.
 ---
 
 # Design Citation-Magnet Content

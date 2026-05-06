@@ -1,6 +1,6 @@
 ---
 name: plan-blog-content
-description: Use to plan blog content; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a blog content calendar: topic ideas, target keywords, intent tags, and publication cadence. Use when planning a blog quarter or building the editorial pipeline.
 ---
 
 # Plan Blog Content

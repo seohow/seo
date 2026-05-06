@@ -1,6 +1,6 @@
 ---
 name: analyse-log-files
-description: Use to analyse log files; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Analyses server log files to reveal crawl frequency, coverage gaps, and crawl waste by URL segment. Use to diagnose crawl budget issues or validate post-migration crawl patterns.
 ---
 
 # Analyse Log Files

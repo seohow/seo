@@ -1,6 +1,6 @@
 ---
 name: audit-indexing-status
-description: Use to audit indexing status; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits which pages are indexed, excluded, or soft-404'd using Search Console data. Use to diagnose indexing drops, clean the index, or verify new content is being indexed.
 ---
 
 # Audit Indexing Status

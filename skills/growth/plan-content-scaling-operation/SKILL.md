@@ -1,6 +1,6 @@
 ---
 name: plan-content-scaling-operation
-description: Use to plan content scaling operation; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Plans a content scaling operation: workflow, team structure, brief templates, quality bar, and production targets. Use when scaling content output beyond what one writer can handle.
 ---
 
 # Plan Content Scaling Operation

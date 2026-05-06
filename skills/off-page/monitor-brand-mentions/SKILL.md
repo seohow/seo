@@ -1,6 +1,6 @@
 ---
 name: monitor-brand-mentions
-description: Use to monitor brand mentions; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Sets up a brand mention monitoring system: sources, alert configuration, triage process, and response playbook. Use to find and convert unlinked mentions into links.
 ---
 
 # Monitor Brand Mentions

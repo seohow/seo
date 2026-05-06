@@ -1,6 +1,6 @@
 ---
 name: audit-hreflang
-description: Use to audit hreflang; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits hreflang implementation: syntax, return tags, x-default presence, and canonical alignment. Use to fix international targeting errors or validate a multi-language setup.
 ---
 
 # Audit Hreflang

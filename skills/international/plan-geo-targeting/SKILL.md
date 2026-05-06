@@ -1,6 +1,6 @@
 ---
 name: plan-geo-targeting
-description: Use to plan geo targeting; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Produces a geo-targeting strategy: GSC International Targeting settings, server signals, local content cues, and per-market signal plan. Use when targeting multiple countries.
 ---
 
 # Plan Geo Targeting

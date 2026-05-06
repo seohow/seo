@@ -1,6 +1,6 @@
 ---
 name: audit-llm-visibility
-description: Use to audit llm visibility; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Audits the brand's visibility in LLM answers (ChatGPT, Perplexity, Gemini) for target queries. Use to measure and improve brand presence in AI-generated search results.
 ---
 
 # Audit LLM Visibility

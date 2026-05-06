@@ -1,6 +1,6 @@
 ---
 name: analyse-traffic-patterns
-description: Use to analyse traffic patterns; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
+description: Analyses GA4 organic traffic: channels, landing pages, trends, and anomalies. Use to understand what's driving traffic changes, spot emerging opportunities, or prepare a monthly report.
 ---
 
 # Analyse Traffic Patterns
