@@ -4,6 +4,26 @@ This is the distributable skills library for the SEO toolkit: a practical set of
 
 The wider playbook explains the SEO concepts. This `skills/` package contains the runnable workflows. Each category folder below has its own README with the skills for that part of the playbook.
 
+## Install
+
+Install the setup skill first:
+
+```sh
+npx skills add seohow/seo
+```
+
+Install a whole category by adding its slug:
+
+```sh
+npx skills add seohow/seo/strategy
+```
+
+Install one skill from a category with `--skill`:
+
+```sh
+npx skills add seohow/seo/strategy --skill plan-keyword-research
+```
+
 ## Start Here
 
 | Skill | Description |

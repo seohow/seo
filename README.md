@@ -62,7 +62,29 @@ skills/
         └── SKILL.md
 ```
 
-To use a skill, install it into an AI coding/workflow environment that supports skills, or paste its `SKILL.md` content into a chat with your business profile attached.
+To install skills with [skills.sh](https://skills.sh), use `npx skills add`:
+
+```sh
+npx skills add seohow/seo
+```
+
+That installs the setup skill, `business-profile`, so you can create your business workspace first.
+
+To install every skill under a category, include the category slug:
+
+```sh
+npx skills add seohow/seo/strategy
+npx skills add seohow/seo/on-page
+npx skills add seohow/seo/technical
+```
+
+To install one specific skill from a category, pass `--skill` with the skill folder name:
+
+```sh
+npx skills add seohow/seo/strategy --skill plan-keyword-research
+```
+
+Supported category slugs are `strategy`, `on-page`, `technical`, `content`, `analytics`, `off-page`, `ux`, `international`, `ai`, and `growth`. You can also paste a skill's `SKILL.md` content into a chat with your business profile attached if your AI environment does not support skill installation.
 
 Topic skills come in two archetypes:
 
