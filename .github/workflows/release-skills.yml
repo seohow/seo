@@ -12,6 +12,11 @@ on:
         required: true
         default: false
         type: boolean
+      prerelease:
+        description: "Mark the GitHub Release as a prerelease"
+        required: true
+        default: false
+        type: boolean
   push:
     tags:
       - "v*"
@@ -44,8 +49,43 @@ jobs:
           echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
           echo "tag=v${VERSION}" >> "$GITHUB_OUTPUT"
 
+          if [[ "${VERSION}" =~ (alpha|beta|rc) ]]; then
+            PRERELEASE="true"
+          elif [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            PRERELEASE="${{ inputs.prerelease }}"
+          else
+            PRERELEASE="false"
+          fi
+          echo "prerelease=${PRERELEASE}" >> "$GITHUB_OUTPUT"
+
+      - name: Resolve release assets
+        id: assets
+        shell: bash
+        run: |
+          node --input-type=module <<'NODE' >> "$GITHUB_OUTPUT"
+          import { readFileSync } from "node:fs";
+
+          const config = JSON.parse(readFileSync("release.config.json", "utf8"));
+          const version = process.env.RELEASE_TAG;
+          const assetGlobs = config.githubRelease?.assetGlobs ?? [
+            "releases/<version>/README.md",
+            "releases/<version>/manifest.json",
+            "releases/<version>/checksums.txt",
+            "releases/<version>/setup/**/*.zip",
+            "releases/<version>/categories/**/*.zip"
+          ];
+
+          console.log("files<<EOF");
+          for (const assetGlob of assetGlobs) {
+            console.log(assetGlob.replaceAll("<version>", version));
+          }
+          console.log("EOF");
+          NODE
+        env:
+          RELEASE_TAG: ${{ steps.version.outputs.tag }}
+
       - name: Validate skill structure
-        run: npm run skills:validate
+        run: npm run skills:validate -- --strict-platform
 
       - name: Package skills
         run: npm run skills:package -- --version "${{ steps.version.outputs.version }}"
@@ -64,11 +104,6 @@ jobs:
           tag_name: ${{ steps.version.outputs.tag }}
           name: SEO Toolkit Skills ${{ steps.version.outputs.tag }}
           draft: false
-          prerelease: false
+          prerelease: ${{ steps.version.outputs.prerelease }}
           fail_on_unmatched_files: true
-          files: |
-            releases/${{ steps.version.outputs.tag }}/README.md
-            releases/${{ steps.version.outputs.tag }}/manifest.json
-            releases/${{ steps.version.outputs.tag }}/checksums.txt
-            releases/${{ steps.version.outputs.tag }}/setup/**/*.zip
-            releases/${{ steps.version.outputs.tag }}/categories/**/*.zip
+          files: ${{ steps.assets.outputs.files }}
