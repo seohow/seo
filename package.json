@@ -1,0 +1,6 @@
+{
+  "scripts": {
+    "skills:validate": "node scripts/validate-skills.mjs",
+    "skills:package": "node scripts/package-skills.mjs"
+  }
+}

@@ -105,3 +105,40 @@ Building your own additions to the toolkit? Two templates to start from:
 
 - [`templates/README_TEMPLATE.md`](templates/README_TEMPLATE.md) — for new topic READMEs.
 - [`templates/SKILL_TEMPLATE.md`](templates/SKILL_TEMPLATE.md) — for new skills.
+
+---
+
+## Releasing skills
+
+Skills are released as individual ZIP files so they can be uploaded one at a time to Claude, ChatGPT, or another Agent Skills-compatible environment. The release output keeps the setup/category/skill folder structure for human navigation:
+
+```text
+releases/
+└── v1.0.0/
+    ├── manifest.json
+    ├── checksums.txt
+    ├── setup/
+    │   └── business-profile/
+    │       └── business-profile-v1.0.0.zip
+    └── categories/
+        └── strategy/
+            └── plan-keyword-research/
+                └── plan-keyword-research-v1.0.0.zip
+```
+
+Each ZIP still contains exactly one skill folder at the archive root, which is the uploadable unit:
+
+```text
+plan-keyword-research-v1.0.0.zip
+└── plan-keyword-research/
+    └── SKILL.md
+```
+
+Run:
+
+```sh
+npm run skills:validate
+npm run skills:package -- --version 1.0.0
+```
+
+The layout is controlled by [`release.config.json`](release.config.json). See [`releases/README.md`](releases/README.md) for the release checklist and GitHub Actions workflow notes.

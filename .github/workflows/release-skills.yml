@@ -1,0 +1,74 @@
+name: Release skills
+
+on:
+  workflow_dispatch:
+    inputs:
+      version:
+        description: "Release version without the leading v, for example 1.0.0"
+        required: true
+        type: string
+      create_github_release:
+        description: "Create or update a GitHub Release for v<version>"
+        required: true
+        default: false
+        type: boolean
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Resolve version
+        id: version
+        shell: bash
+        run: |
+          if [[ "${{ github.event_name }}" == "workflow_dispatch" ]]; then
+            VERSION="${{ inputs.version }}"
+          else
+            VERSION="${GITHUB_REF_NAME#v}"
+          fi
+          echo "version=${VERSION}" >> "$GITHUB_OUTPUT"
+          echo "tag=v${VERSION}" >> "$GITHUB_OUTPUT"
+
+      - name: Validate skill structure
+        run: npm run skills:validate
+
+      - name: Package skills
+        run: npm run skills:package -- --version "${{ steps.version.outputs.version }}"
+
+      - name: Upload release tree artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-skills-${{ steps.version.outputs.tag }}
+          path: releases/${{ steps.version.outputs.tag }}/
+          if-no-files-found: error
+
+      - name: Create or update GitHub Release
+        if: github.event_name == 'push' || inputs.create_github_release == true
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ steps.version.outputs.tag }}
+          name: SEO Toolkit Skills ${{ steps.version.outputs.tag }}
+          draft: false
+          prerelease: false
+          fail_on_unmatched_files: true
+          files: |
+            releases/${{ steps.version.outputs.tag }}/README.md
+            releases/${{ steps.version.outputs.tag }}/manifest.json
+            releases/${{ steps.version.outputs.tag }}/checksums.txt
+            releases/${{ steps.version.outputs.tag }}/setup/**/*.zip
+            releases/${{ steps.version.outputs.tag }}/categories/**/*.zip

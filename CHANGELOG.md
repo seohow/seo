@@ -238,3 +238,10 @@
 - Decided `business-profile` should create a minimum viable profile first, then evolve it through Patch and Gap Check modes across later sessions.
 - Standardised missing profile values as `unknown — not yet captured; add via Patch mode` so downstream skills can detect gaps without treating placeholders as real inputs.
 - Made per-business `AGENTS.md` the canonical working-memory file, with `CLAUDE.md` as a symlink for compatibility. Removed the unused `business_claude_template.md` to avoid future drift.
+
+### 2026-05-06 — Skill release packaging keeps category navigation
+
+- Decided released skill artifacts are tracked in-repo under `releases/v<version>/` and should keep a human-browsable `setup/<skill>/` and `categories/<category>/<skill>/` folder structure.
+- Each ZIP remains a single-skill upload unit with the skill folder at the archive root, because Claude and ChatGPT skill upload flows expect individual Agent Skills rather than bundled category packages.
+- Added release tooling: `release.config.json` defines the release layout, `npm run skills:validate` checks skill structure, `npm run skills:package -- --version <version>` generates ZIPs / `manifest.json` / `checksums.txt` / release README, and `.github/workflows/release-skills.yml` packages releases from tags or manual dispatch.
+- Platform compatibility checks currently warn on long descriptions; use `npm run skills:validate -- --strict-platform` before an org deployment that must satisfy Claude.ai's current 200-character description limit.

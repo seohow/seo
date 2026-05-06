@@ -1,0 +1,21 @@
+{
+  "releaseRoot": "releases",
+  "versionPrefix": "v",
+  "layout": {
+    "setup": "setup/<skill>",
+    "category": "categories/<category>/<skill>",
+    "zipName": "<skill>-<version>.zip"
+  },
+  "platformCompatibility": {
+    "descriptionMaxChars": 200
+  },
+  "githubRelease": {
+    "assetGlobs": [
+      "releases/<version>/README.md",
+      "releases/<version>/manifest.json",
+      "releases/<version>/checksums.txt",
+      "releases/<version>/setup/**/*.zip",
+      "releases/<version>/categories/**/*.zip"
+    ]
+  }
+}
