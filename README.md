@@ -134,11 +134,22 @@ plan-keyword-research-v1.0.0.zip
     └── SKILL.md
 ```
 
-Run:
+### Release flow
 
 ```sh
 npm run skills:validate
 npm run skills:package -- --version 1.0.0
+
+git commit -m "Package SEO toolkit skills v1.0.0"
+git tag v1.0.0
 ```
+
+Pushing a `v*` tag will run the release workflow through Github Actions:
+
+```sh
+git push origin v1.0.0
+```
+
+The workflow validates the skills, packages the browsable release tree, uploads it as a workflow artifact, and creates or updates the GitHub Release for the tag. Do not create the GitHub Release separately with `gh release create` unless the workflow is unavailable and you are intentionally doing a manual recovery.
 
 The layout is controlled by [`release.config.json`](release.config.json). See [`releases/README.md`](releases/README.md) for the release checklist and GitHub Actions workflow notes.
