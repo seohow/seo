@@ -11,18 +11,16 @@ releases/
     ├── manifest.json
     ├── checksums.txt
     ├── setup/
-    │   └── business-profile/
-    │       └── business-profile-v1.0.0.zip
+    │   └── business-profile.zip
     └── categories/
         └── strategy/
-            └── plan-keyword-research/
-                └── plan-keyword-research-v1.0.0.zip
+            └── plan-keyword-research.zip
 ```
 
 Each ZIP still contains one uploadable skill:
 
 ```text
-plan-keyword-research-v1.0.0.zip
+plan-keyword-research.zip
 └── plan-keyword-research/
     └── SKILL.md
 ```
@@ -44,6 +42,6 @@ npm run skills:validate -- --strict-platform
 npm run skills:package -- --version 0.1.0-alpha.1 --output /private/tmp/seo-skill-release-check
 ```
 
-Claude organization provisioning and ChatGPT workspace skill upload/share flows should upload the individual ZIPs from inside the category folders, not the category folder itself.
+Claude organization provisioning and ChatGPT workspace skill upload/share flows should upload the individual ZIPs from the setup/category folders, not the folder itself.
 
 Generated `releases/v*/` folders are ignored locally. The canonical released artifacts live on the GitHub Release created by `.github/workflows/release-skills.yml`.

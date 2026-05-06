@@ -31,7 +31,7 @@ const manifest = {
   version,
   prerelease,
   createdAt: new Date().toISOString(),
-  layout: `${config.layout?.setup ?? "setup/<skill>"}/<zip> and ${config.layout?.category ?? "categories/<category>/<skill>"}/<zip>`,
+  layout: formatLayout(config.layout),
   skills: []
 };
 const checksums = [];
@@ -42,10 +42,10 @@ try {
   for (const skill of skills) {
     const releaseRelativeDir =
       skill.category === "setup"
-        ? renderTemplate(config.layout?.setup ?? "setup/<skill>", skill, versionName)
-        : renderTemplate(config.layout?.category ?? "categories/<category>/<skill>", skill, versionName);
+        ? renderTemplate(config.layout?.setup ?? "setup", skill, versionName)
+        : renderTemplate(config.layout?.category ?? "categories/<category>", skill, versionName);
     const destinationDir = path.join(releaseDir, releaseRelativeDir);
-    const zipName = renderTemplate(config.layout?.zipName ?? "<skill>-<version>.zip", skill, versionName);
+    const zipName = renderTemplate(config.layout?.zipName ?? "<skill>.zip", skill, versionName);
     const zipPath = path.join(destinationDir, zipName);
     const packageRoot = path.join(tempDir, skill.name);
 
@@ -96,6 +96,13 @@ function renderTemplate(template, skill, releaseVersionName) {
     .join(path.sep);
 }
 
+function formatLayout(layoutConfig = {}) {
+  const zipName = layoutConfig.zipName ?? "<skill>.zip";
+  const setupPath = path.posix.join(layoutConfig.setup ?? "setup", zipName);
+  const categoryPath = path.posix.join(layoutConfig.category ?? "categories/<category>", zipName);
+  return `${setupPath} and ${categoryPath}`;
+}
+
 function renderReleaseReadme(releaseVersion, releaseManifest) {
   const byCategory = new Map();
   for (const skill of releaseManifest.skills) {
@@ -115,7 +122,7 @@ function renderReleaseReadme(releaseVersion, releaseManifest) {
 
   const releaseType = releaseManifest.prerelease ? "Prerelease" : "Release";
 
-  return `# SEO Toolkit Skills v${releaseVersion}\n\nStatus: ${releaseType}\n\nThis release keeps ZIPs grouped by setup/category/skill so admins can browse the toolkit before uploading individual skills.\n\nEach ZIP contains exactly one skill folder at its archive root, which is the upload shape expected by Claude Skills and compatible Agent Skills import flows.\n\n${sections}\n`;
+  return `# SEO Toolkit Skills v${releaseVersion}\n\nStatus: ${releaseType}\n\nThis release keeps ZIPs grouped by setup/category so admins can browse the toolkit without an extra folder per skill.\n\nEach ZIP contains exactly one skill folder at its archive root, which is the upload shape expected by Claude Skills and compatible Agent Skills import flows.\n\n${sections}\n`;
 }
 
 function isPrerelease(candidateVersion) {

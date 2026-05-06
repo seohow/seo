@@ -13,9 +13,9 @@ export function readReleaseConfig() {
       releaseRoot: "releases",
       versionPrefix: "v",
       layout: {
-        setup: "setup/<skill>",
-        category: "categories/<category>/<skill>",
-        zipName: "<skill>-<version>.zip"
+        setup: "setup",
+        category: "categories/<category>",
+        zipName: "<skill>.zip"
       },
       platformCompatibility: {
         descriptionMaxChars: 200

@@ -132,7 +132,7 @@ Building your own additions to the toolkit? Two templates to start from:
 
 ## Releasing skills
 
-Skills are released as individual ZIP files so they can be uploaded one at a time to Claude, ChatGPT, or another Agent Skills-compatible environment. The release output keeps the setup/category/skill folder structure for human navigation:
+Skills are released as individual ZIP files so they can be uploaded one at a time to Claude, ChatGPT, or another Agent Skills-compatible environment. The release output keeps ZIPs grouped by setup/category for human navigation:
 
 ```text
 releases/
@@ -140,18 +140,16 @@ releases/
     ├── manifest.json
     ├── checksums.txt
     ├── setup/
-    │   └── business-profile/
-    │       └── business-profile-v1.0.0.zip
+    │   └── business-profile.zip
     └── categories/
         └── strategy/
-            └── plan-keyword-research/
-                └── plan-keyword-research-v1.0.0.zip
+            └── plan-keyword-research.zip
 ```
 
 Each ZIP still contains exactly one skill folder at the archive root, which is the uploadable unit:
 
 ```text
-plan-keyword-research-v1.0.0.zip
+plan-keyword-research.zip
 └── plan-keyword-research/
     └── SKILL.md
 ```
