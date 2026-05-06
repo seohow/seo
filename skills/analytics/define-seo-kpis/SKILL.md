@@ -115,7 +115,7 @@ If business goals + cluster map are missing, ask. KPIs without anchors are vanit
 6. **Document ownership + agenda templates.**
    - Each KPI has an owner who flags / explains movement.
    - Each meeting has an agenda template + decision-log convention.
-   - Decisions get captured back into the per-business CLAUDE.md.
+   - Decisions get captured back into the per-business AGENTS.md.
 
 7. **Recalibration plan.**
    - Quarterly: targets adjusted based on results + new strategic priorities.
@@ -189,7 +189,7 @@ If business goals + cluster map are missing, ask. KPIs without anchors are vanit
   2. Top movers (queries + pages).
   3. Operating KPIs glance.
   4. Action items for the week.
-- **Decision log:** captured in [shared doc / per-business CLAUDE.md].
+- **Decision log:** captured in [shared doc / per-business AGENTS.md].
 
 ### Monthly (60-90 min)
 - **When:** [day, time]

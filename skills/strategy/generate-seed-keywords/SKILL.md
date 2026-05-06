@@ -28,7 +28,7 @@ The reason this skill exists: keyword tools amplify whatever you put in. Feed th
 
 Before producing the list, gather:
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` like this: list the `businesses/` folder; if exactly one business folder exists, use it; if multiple, ask which business this is for; if none, recommend running `business-profile` first and stop. The critical sections for this skill are products/services (3), customer (4), competitors (6), and goals (7). If any of those are blank or marked unknown, ask the user inline before producing seeds.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` like this: list the `businesses/` folder; if exactly one business folder exists, use it; if multiple, ask which business this is for; if none, recommend running `business-profile` first and stop. The critical sections for this skill are products/services (3), customer (4), competitors (6), and goals (7). If any of those are blank, marked unknown, or marked `not yet captured`, ask the user inline before producing seeds.
 2. **Focus area** (optional but useful) — is this for the whole business, or a specific category, product launch, or content theme? A focused seed list outperforms a broad one.
 3. **Language and market** — defaults from the profile if set; ask if not.
 

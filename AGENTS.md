@@ -84,7 +84,7 @@ Before writing a new topic page or skill, read at least one Strategy leaf for to
 
 ### Canonical sample business (Field & Sun)
 
-The toolkit ships with a fictional sample business at `businesses/field-and-sun/`. Treat this as the Northwind / Adventure Works of the toolkit — the working reference fixture that examples should refer to. Field & Sun is a D2C beauty brand with two hero products (Daily Glow Serum — evergreen; Mineral Sun Drops SPF 50 — seasonal spring/summer) plus a complementary lineup designed to lift AOV and reinforce brand loyalty. Read `businesses/field-and-sun/business_profile.md` and `businesses/field-and-sun/CLAUDE.md` once before writing new examples.
+The toolkit ships with a fictional sample business at `businesses/field-and-sun/`. Treat this as the Northwind / Adventure Works of the toolkit — the working reference fixture that examples should refer to. Field & Sun is a D2C beauty brand with two hero products (Daily Glow Serum — evergreen; Mineral Sun Drops SPF 50 — seasonal spring/summer) plus a complementary lineup designed to lift AOV and reinforce brand loyalty. Read `businesses/field-and-sun/business_profile.md` and `businesses/field-and-sun/AGENTS.md` once before writing new examples.
 
 The per-business working-memory file is named `AGENTS.md` — the canonical, agent-agnostic name. A `CLAUDE.md` symlink pointing to it is created alongside for compatibility with Claude-specific workflows. Codex, Claude CoWork, and any future AI collaborator should read and maintain `AGENTS.md` directly.
 
@@ -106,7 +106,7 @@ Before finishing any playbook README or skill work, actively check for example d
   rg -n "Refillable|Cleaning Co|laundry|clean beauty|non-toxic|chemical-free|plastic-free" playbook/
   ```
 
-- For new examples, use facts from `businesses/field-and-sun/business_profile.md` and `businesses/field-and-sun/CLAUDE.md`: Daily Glow Serum, Mineral Sun Drops SPF 50, the complementary skincare lineup, Field & Sun's actual voice rules, current competitors, geography, goals, and artifact history.
+- For new examples, use facts from `businesses/field-and-sun/business_profile.md` and `businesses/field-and-sun/AGENTS.md`: Daily Glow Serum, Mineral Sun Drops SPF 50, the complementary skincare lineup, Field & Sun's actual voice rules, current competitors, geography, goals, and artifact history.
 
 ### Unbuilt leaves
 

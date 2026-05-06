@@ -94,12 +94,12 @@ What *not* to log here:
 - Anything already obvious from `business_profile.md` (the profile is the source of truth for static facts).
 - Speculative ideas that haven't been decided. Use Active experiments only after something is actually being tested.
 
-When updating, also bump **Quick context > Last updated**. Keep the file under ~150 lines — if it's growing past that, the older entries can be archived to `archive/CLAUDE-<YYYY-Q>.md` in the same workspace folder, with the live file holding only the current quarter.
+When updating, also bump **Quick context > Last updated**. Keep the file under ~150 lines — if it's growing past that, the older entries can be archived to `archive/AGENTS-<YYYY-Q>.md` in the same workspace folder, with the live file holding only the current quarter.
 
 ## How the user can interact with this file
 
 You don't have to manually edit this file — the AI collaborator maintains it. But if you want to:
 
-- **Add something explicitly** → tell the AI collaborator "log this in CLAUDE.md: [entry]" and it will append to the right section.
+- **Add something explicitly** → tell the AI collaborator "log this in AGENTS.md: [entry]" and it will append to the right section.
 - **Correct or remove an entry** → tell the AI collaborator "remove the entry about [X]" and it will edit accordingly.
 - **Review the running state** → just open the file. The Quick context section is designed to give you the current state at a glance.

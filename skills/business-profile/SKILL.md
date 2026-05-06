@@ -37,7 +37,7 @@ Everything else (SEO metrics, full competitor list, brand voice details, seconda
 3. Ask about the hero product(s) or service(s) — just names and a sentence each. Don't probe for exhaustive lists.
 4. Ask for the primary customer in one sentence and 1–2 pains in the customer's own language.
 5. Ask for the primary 6-month goal. Push back gently if it's vague ("more traffic" → "traffic to what end — revenue, leads, brand awareness?").
-6. Write the profile. Mark every omitted field with `_(not yet captured — add via Patch mode)_`. Do not leave blank sections.
+6. Write the profile. Mark every omitted field with `_(unknown — not yet captured; add via Patch mode)_`. Do not leave blank sections.
 7. Create the workspace (profile + AGENTS.md + CLAUDE.md symlink). Confirm paths and suggest the next skill.
 
 If the user offers more detail during Quick Start, capture it — but don't prompt for it. The goal is to get them to a working profile fast, not to exhaust the section list.
@@ -78,7 +78,7 @@ Use when the user asks "what's missing from my profile?" or "what should I fill 
 **Gap Check process:**
 
 1. Read the existing profile.
-2. Identify every field marked `_(not yet captured)_` or left blank.
+2. Identify every field marked `unknown`, `not yet captured`, or left blank.
 3. Group gaps by downstream impact — which missing fields block the most skills.
 4. Present 3–5 of the highest-value gaps, ranked by how much they unlock, with a one-sentence explanation for each.
 5. Ask if the user wants to fill any of them now (which triggers Patch mode for those specific fields).
@@ -130,7 +130,7 @@ If `businesses/<slug>/` already exists, don't silently overwrite — ask whether
 
 ### Quick Start — three files created:
 
-1. **`businesses/<slug>/business_profile.md`** — populated from the interview. Follows the template structure (8 sections). Omitted fields marked `_(not yet captured — add via Patch mode)_`, never blank.
+1. **`businesses/<slug>/business_profile.md`** — populated from the interview. Follows the template structure (8 sections). Omitted fields marked `_(unknown — not yet captured; add via Patch mode)_`, never blank.
 
    Header format:
    ```markdown
@@ -176,7 +176,7 @@ If `businesses/<slug>/` already exists, don't silently overwrite — ask whether
 ## Common mistakes to avoid
 
 - Don't run the full 8-section interview as the default. Quick Start stops after the minimum viable fields.
-- Don't leave blank fields — use `_(not yet captured — add via Patch mode)_` as the placeholder.
+- Don't leave blank fields — use `_(unknown — not yet captured; add via Patch mode)_` as the placeholder.
 - Don't accept "more traffic" as a goal without probing.
 - Don't translate the user's customer-pain language into marketing-speak. Leave it in their words.
 - Don't fabricate analytics numbers. Mark unknown explicitly.
@@ -242,6 +242,6 @@ If `businesses/<slug>/` already exists, don't silently overwrite — ask whether
 > 1. **SEO metrics (Section 5)** — organic sessions, domain rating, top keywords. Blocks: competitor-analysis ranking, keyword difficulty calibration.
 > 2. **Competitors (Section 6)** — you have none listed yet. Blocks: competitor-analysis skill, SERP gap skills.
 > 3. **Brand voice (Section 8)** — no tone guidelines or words to avoid. Blocks: title tag, meta description, and content skills from matching your voice.
-> 4. **Secondary goals (Section 7)** — primary goal is set; secondary is blank. Lower priority — the primary goal unlocks most skills.
+> 4. **Secondary goals (Section 7)** — primary goal is set; secondary goal is marked `unknown — not yet captured`. Lower priority — the primary goal unlocks most skills.
 >
 > Want to fill any of these now?

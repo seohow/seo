@@ -144,14 +144,14 @@ Brief 2-4 sentence read of the alignment between intent and actual.
 ### P2 — Hygiene
 - Add comment block to robots.txt grouping AI rules together for readability.
 - Recommend publishing llms.txt if posture is open or visibility-only and brand has informational content.
-- Add posture decision to per-business CLAUDE.md.
+- Add posture decision to per-business AGENTS.md.
 
 ## Implementation checklist
 - [ ] Apply P0 fixes to robots.txt.
 - [ ] If publishing llms.txt: run `generate-llms-txt`.
 - [ ] Validate by re-fetching `robots.txt` and `llms.txt` from production.
 - [ ] If logs are accessible: re-pull in 30 days to verify blocked bots have stopped or reduced.
-- [ ] Document the posture decision in `businesses/<slug>/CLAUDE.md` so future migrations / theme updates don't regress.
+- [ ] Document the posture decision in `businesses/<slug>/AGENTS.md` so future migrations / theme updates don't regress.
 - [ ] Schedule next audit (recommended quarterly — AI bot landscape shifts fast).
 
 ## Risks and watchouts
@@ -195,7 +195,7 @@ P0 remediation: add 7 explicit `User-agent: X` / `Disallow: /` rules to robots.t
 
 P1: none (no over-restrictive cases).
 
-P2: group AI rules in robots.txt with a comment block; document posture in business CLAUDE.md.
+P2: group AI rules in robots.txt with a comment block; document posture in business AGENTS.md.
 
 Implementation checklist included with re-fetch validation. Quarterly re-audit recommended.
 

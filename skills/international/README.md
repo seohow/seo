@@ -18,7 +18,7 @@ Each topic heading links back to the playbook explanation. Each skill link opens
 
 | Skill | Description |
 |---|---|
-| [decide-multi-language-architecture](decide-multi-language-architecture/SKILL.md) | Produces the architectural decision document covering trade-off analysis (SEO equity inheritance, operational cost, geo-signal strength, brand integrity, CMS compatibility), market-specific norms, recommendation per market, and migration-cost forecast if change is implied. Output is the decision artefact stored in the per-business CLAUDE.md decisions log. Run before any multi-market expansion. |
+| [decide-multi-language-architecture](decide-multi-language-architecture/SKILL.md) | Produces the architectural decision document covering trade-off analysis (SEO equity inheritance, operational cost, geo-signal strength, brand integrity, CMS compatibility), market-specific norms, recommendation per market, and migration-cost forecast if change is implied. Output is the decision artefact stored in the per-business AGENTS.md decisions log. Run before any multi-market expansion. |
 
 ## [Geo Targeting](../../playbook/08.%20International%20SEO/03.%20Geo%20Targeting.md)
 

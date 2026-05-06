@@ -25,7 +25,7 @@ The skill always pairs naturally with `generate-title-tags` — both are SERP-fa
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections for this skill: products/services (3), customer (4), brand voice (8). If section 8 is blank, ask for the tone in 1-2 sentences before generating.
+1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections for this skill: products/services (3), customer (4), brand voice (8). If section 8 is blank, marked unknown, or marked `not yet captured`, ask for the tone in 1-2 sentences before generating.
 2. **Page(s) to optimise** — one URL or a list. For each: page URL, page purpose, current description (if known), and current title. The current title matters because the description has to complement it (no redundancy).
 3. **Target cluster** — primary keyword + 3-8 supporting keywords for each page. Default source: `businesses/<slug>/clusters/cluster-map.md`.
 4. **Intent** — informational / commercial / transactional / navigational. Default source: same cluster map.

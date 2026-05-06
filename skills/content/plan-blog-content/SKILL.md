@@ -151,7 +151,7 @@ For each planned post, a stub that feeds into `generate-content-brief`:
 - [ ] Set up content calendar in [Notion / Airtable / Asana / etc.].
 - [ ] Schedule monthly review of plan vs actual.
 - [ ] Pair refresh efforts with new content per the cadence.
-- [ ] Update the per-business CLAUDE.md decisions log with strategic shifts (priority cluster changes, capacity changes).
+- [ ] Update the per-business AGENTS.md decisions log with strategic shifts (priority cluster changes, capacity changes).
 
 ```
 

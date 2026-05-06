@@ -189,7 +189,7 @@ If GA4 access or source-of-truth data is missing, ask. Audit can't proceed witho
 ## Recommendations beyond fixes
 - [ ] Re-audit in 90 days.
 - [ ] Standardise attribution model across all reports.
-- [ ] Document the choice in the per-business CLAUDE.md.
+- [ ] Document the choice in the per-business AGENTS.md.
 - [ ] Set up cluster-attribution before next strategic review.
 - [ ] Schedule quarterly conversion-tracking re-audit.
 

@@ -63,7 +63,7 @@ If cluster, intent, or current content is missing, ask before producing the rewo
    - **E-E-A-T signal additions** — date the examples, name the methodology, add author bio, link to primary sources, add customer quotes with attribution.
 5. **Calibrate the SERP-competition assessment.** State plainly whether the rework can credibly compete with top 5 of the SERP. Sometimes the answer is "yes, with these additions"; sometimes "yes for positions 4-7 but Wirecutter is unbeatable at #1"; sometimes "no, the SERP top 5 are out of reach with current resources — better to target a more specific cluster." Honesty here saves the user from work that won't pay off.
 6. **Write the implementation checklist.** Word-count delta, H-structure changes, sections to write, sections to cut, format additions, photo / asset needs, internal-link updates (cross-reference the linking plan), title/description updates needed (if the rework changes the page's emphasis), re-indexing, monitoring window.
-7. **Document the angle for future reference.** A 2-3 sentence note: "what worked here, what didn't" — to be added to the per-business CLAUDE.md after the page ships and 30-60-day results are in.
+7. **Document the angle for future reference.** A 2-3 sentence note: "what worked here, what didn't" — to be added to the per-business AGENTS.md after the page ships and 30-60-day results are in.
 
 ## Output format
 
@@ -144,7 +144,7 @@ For "**plan**" mode (default):
 - [ ] Add / update images per `audit-images`.
 - [ ] Submit URL to GSC for re-indexing.
 - [ ] Monitor for 30-60 days: rank, clicks, featured-snippet eligibility, time-on-page.
-- [ ] After window closes: log outcome in per-business CLAUDE.md (what worked, what didn't).
+- [ ] After window closes: log outcome in per-business AGENTS.md (what worked, what didn't).
 ```
 
 For "**draft**" mode (heavier output):
@@ -216,6 +216,6 @@ Rework plan:
 
 Word-count target: 850 → ~2,400. Implementation: ~6 hours including photos.
 
-Implementation checklist: rework, run `generate-title-tags` (current title is generic), run `audit-header-structure` for new outline, update internal links to pillar + 2 sibling spokes, run `audit-images` on the 5 new photos, GSC re-index, monitor 60 days, log outcome in business CLAUDE.md.
+Implementation checklist: rework, run `generate-title-tags` (current title is generic), run `audit-header-structure` for new outline, update internal links to pillar + 2 sibling spokes, run `audit-images` on the 5 new photos, GSC re-index, monitor 60 days, log outcome in business AGENTS.md.
 
 Saved to `businesses/field-and-sun/content-optimization/mineral-vs-chemical-sunscreen.md`.

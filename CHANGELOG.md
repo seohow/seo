@@ -232,3 +232,9 @@
 - Moved the Decisions log section out of AGENTS.md and into this file (CHANGELOG.md).
 - Reason: AGENTS.md is instruction-heavy and the log was growing long enough to crowd out the conventions. Separating them keeps AGENTS.md focused on what to do and CHANGELOG.md focused on why decisions were made.
 - AGENTS.md now contains a pointer to this file in place of the log. Future entries go here, not in AGENTS.md.
+
+### 2026-05-06 — Business profile setup made iterative
+
+- Decided `business-profile` should create a minimum viable profile first, then evolve it through Patch and Gap Check modes across later sessions.
+- Standardised missing profile values as `unknown — not yet captured; add via Patch mode` so downstream skills can detect gaps without treating placeholders as real inputs.
+- Made per-business `AGENTS.md` the canonical working-memory file, with `CLAUDE.md` as a symlink for compatibility. Removed the unused `business_claude_template.md` to avoid future drift.

@@ -153,7 +153,7 @@ URLs in sitemap that Googlebot has hit ≤2 times in the window:
 - [ ] Wait 30 days, re-pull logs.
 - [ ] Compare new crawl distribution to baseline; verify shift.
 - [ ] Address P1 fixes.
-- [ ] Document the baseline-vs-after delta in business CLAUDE.md.
+- [ ] Document the baseline-vs-after delta in business AGENTS.md.
 - [ ] Set quarterly log-analysis cadence.
 
 ## Risks and watchouts

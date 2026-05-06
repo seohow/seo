@@ -223,7 +223,7 @@ If LLM visibility baseline / off-page audit / defensibility candidates are missi
 - Entity-graph work: cross-reference `audit-entity-optimisation` (AI SEO leaf 02).
 
 ## Risks + watchouts
-3-5 specific risks. E.g. "Authority work has 6-18 month feedback loops — leadership patience required; document the bet in CLAUDE.md so quarterly pressure doesn't pivot the strategy"; "Defensibility moats erode if competitors invest in the same direction — re-test annually"; "If retrieval bots are blocked at robots.txt, AI citation share dimension is unmeasurable — verify Technical SEO leaf 10 audit before relying on it as a KPI"; "Brand-query volume is a lagging indicator — expect 12+ months of investment before meaningful brand-query growth"; "Entity-graph signals (Wikidata) are reviewer-gated and can be rejected on notability — plan for that contingency."
+3-5 specific risks. E.g. "Authority work has 6-18 month feedback loops — leadership patience required; document the bet in AGENTS.md so quarterly pressure doesn't pivot the strategy"; "Defensibility moats erode if competitors invest in the same direction — re-test annually"; "If retrieval bots are blocked at robots.txt, AI citation share dimension is unmeasurable — verify Technical SEO leaf 10 audit before relying on it as a KPI"; "Brand-query volume is a lagging indicator — expect 12+ months of investment before meaningful brand-query growth"; "Entity-graph signals (Wikidata) are reviewer-gated and can be rejected on notability — plan for that contingency."
 
 ## Open questions
 - [ ] Confirm investment-horizon decision (12 / 18 / 24 months).

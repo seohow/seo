@@ -4,7 +4,7 @@ A working SEO operating system for business owners and marketers. Three layers i
 
 1. **Knowledge** — a structured curriculum of modern SEO, organised by topic. Read the README in any folder to learn what that piece is, why it matters, and how to do it.
 2. **Skills** — installable AI skills that plan, execute, or track the work for you. Each skill reads your business profile from `businesses/<your-business-slug>/` and produces a tailored artifact saved into the same workspace.
-3. **Memory** — `AGENTS.md` at the repo root and `CLAUDE.md` files inside each business workspace. They capture conventions, decisions, learnings, and constraints so the toolkit gets sharper over time and so any new AI collaborator has the context it needs to be useful immediately.
+3. **Memory** — `AGENTS.md` at the repo root and inside each business workspace, with `CLAUDE.md` symlinks for compatibility. They capture conventions, decisions, learnings, and constraints so the toolkit gets sharper over time and so any new AI collaborator has the context it needs to be useful immediately.
 
 The goal is that anyone running a business can go from "I should probably do SEO" to "here is my plan and here is my next deliverable" without hiring an agency.
 
@@ -14,14 +14,15 @@ The goal is that anyone running a business can go from "I should probably do SEO
 
 ### 1. Set up your business workspace
 
-Run the [`business-profile`](skills/business-profile/SKILL.md) skill. It will interview you for the inputs, slugify a folder name, and create two files in your new workspace:
+Run the [`business-profile`](skills/business-profile/SKILL.md) skill. It will quick-start the minimum useful profile, slugify a folder name, and create the core workspace files:
 
 - `businesses/<your-business-slug>/business_profile.md` — the structured profile every other skill reads.
-- `businesses/<your-business-slug>/CLAUDE.md` — the working-memory file AI collaborators maintain as decisions, learnings, and constraints surface over time.
+- `businesses/<your-business-slug>/AGENTS.md` — the working-memory file AI collaborators maintain as decisions, learnings, and constraints surface over time.
+- `businesses/<your-business-slug>/CLAUDE.md` — a compatibility symlink pointing to `AGENTS.md`.
 
 If you run SEO for multiple ventures, run the skill once per business. Each gets its own folder; skills will ask which business to operate on if more than one exists.
 
-Update the profile any time something material changes (new product line, new goal, new competitor) by re-running the same skill in update mode. The CLAUDE.md file is preserved across updates — only the profile gets refreshed.
+Update the profile any time something material changes (new product line, new goal, new competitor) by re-running the same skill in Patch mode. Run Gap Check when you want to see which missing fields are worth filling next. `AGENTS.md` is preserved across profile updates.
 
 ### 2. Browse the curriculum
 

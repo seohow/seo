@@ -99,7 +99,7 @@ If migration scope or target launch date is unclear, ask. Migration plans depend
    - Help-desk macros (if URLs are referenced in customer support replies)
    - External-link cleanup (high-value backlinks pointing at old URLs — prioritise outreach)
 10. **Write the post-migration documentation requirement.** What gets recorded:
-    - Migration date + scope summary added to business CLAUDE.md decisions log.
+    - Migration date + scope summary added to business AGENTS.md decisions log.
     - Baseline → recovery delta documented at day 30, day 60, day 90.
     - Lessons learned (what broke, what surprised, what to do differently next time).
 
@@ -190,9 +190,9 @@ Rollback owner: [name]. Decision must be made within [N hours] of trigger.
 | Partner integrations | [name] | Each partner contacted with new URLs | T-3 days |
 
 ## 10. Post-migration documentation
-- [ ] Migration date + scope added to `businesses/<slug>/CLAUDE.md` decisions log.
+- [ ] Migration date + scope added to `businesses/<slug>/AGENTS.md` decisions log.
 - [ ] Baseline → recovery delta documented at day 30, day 60, day 90.
-- [ ] Lessons learned added to CLAUDE.md learnings.
+- [ ] Lessons learned added to AGENTS.md learnings.
 
 ## Risks and watchouts
 3-5 specific risks for THIS migration: e.g. "Mother's Day promotion launches May 11; migration must be stable by May 4 or rollback"; "Yotpo widget integration is the biggest unknown — if review schema doesn't carry over, expect AggregateRating eligibility loss"; "the Hydrogen storefront has no historical baseline; ranking benchmarks are estimates only"; "external links from Wirecutter point at three legacy URLs — must be in the priority outreach list."
@@ -243,7 +243,7 @@ Rollback triggers: > 10% of priority URLs return 5xx; > 30% of top 50 keywords d
 
 Downstream systems: GA4 (Anna), Klaviyo (Anna), Google Ads (none currently — n/a), help-desk (Sam), external-link backlinks (top 20 list — outreach due T+7).
 
-Documentation: migration entry to CLAUDE.md, day-30/60/90 deltas.
+Documentation: migration entry to AGENTS.md, day-30/60/90 deltas.
 
 Risks: Hydrogen has no historical SEO baseline at Field & Sun (untested infrastructure); Yotpo widget integration must be re-validated post-launch; sun-care peak ends mid-July but heatwave events can extend it — verify with ops before locking Aug 12 date.
 

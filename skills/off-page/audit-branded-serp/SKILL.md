@@ -245,7 +245,7 @@ If brand variants + competitors are missing, ask. Variant audits depend on them.
 - P2: marketing manager.
 
 ### Documentation
-- All escalations logged in `businesses/<slug>/CLAUDE.md` decisions log.
+- All escalations logged in `businesses/<slug>/AGENTS.md` decisions log.
 
 ## Acceptance criteria
 - [ ] Branded SERP page 1 audited.

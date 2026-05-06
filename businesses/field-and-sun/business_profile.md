@@ -3,6 +3,7 @@
 *Created: 2026-05-01*
 *Last updated: 2026-05-01*
 *Slug: `field-and-sun`*
+*Profile completeness: full*
 
 > **This is the canonical sample business.** It exists as the working reference fixture for examples throughout the SEO Toolkit playbook (similar to how Microsoft uses Northwind / Adventure Works). Field & Sun is fictional. Use this profile when you want to see how every skill in the toolkit operates against a fully-populated business.
 
@@ -122,7 +123,7 @@ When you run a skill in this toolkit, it will:
 
 1. Look in `businesses/` for one or more business folders. If only one exists, it uses that profile by default; if multiple, it asks which business you're working on.
 2. Read `businesses/<business-slug>/business_profile.md` and use the relevant sections to tailor its output. A keyword research skill cares most about sections 3, 4, 6, 7. A title-tag skill cares most about 3, 4, 8.
-3. If a section is blank in the profile, the skill will either ask for it or note that the output is generic in that respect.
+3. If a section is marked `unknown — not yet captured`, the skill will either ask for it or note that the output is generic in that respect.
 4. Save its output as a new file inside `businesses/<business-slug>/<artifact-subfolder>/`, so all work for a given business stays colocated.
 
 To see what the skills produce against this profile, run any of them with the slug `field-and-sun` and watch the artifact folders populate.
