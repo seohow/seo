@@ -1,6 +1,6 @@
 ---
 name: cluster-keywords
-description: Takes a classified keyword list (keywords + intent + ideally page-type tags) and produces a structured cluster map — each cluster has a primary keyword, supporting keywords, recommended page type, target URL (existing or proposed), and priority. Use whenever the user asks "how do I group these keywords," "which page should each of these go on," "build me a content roadmap from this list," "is there cannibalisation in my keyword targets," or wants to turn a flat keyword universe into a page-level plan. Also use when migrating from one-keyword-per-page thinking to cluster-based content. Do not use to generate keywords (`generate-seed-keywords`) or to classify intent (`classify-keyword-intent`) — clustering depends on both being done first.
+description: Use to cluster keywords; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Cluster Keywords

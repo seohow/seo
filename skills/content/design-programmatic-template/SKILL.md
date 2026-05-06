@@ -1,6 +1,6 @@
 ---
 name: design-programmatic-template
-description: Produces the template + data spec for an approved programmatic SEO build. Covers URL pattern, page-level template sections, per-slot data requirements (required vs. optional fields), index-control rules (which pages publish vs. `noindex`), schema strategy per page type, internal-link orchestration (hub-and-spoke, peer linking), XML sitemap segmentation, analytics instrumentation, and acceptance criteria. Output is the engineering + content handoff document — the spec the build is implemented against. Use whenever the user has a green-lit programmatic build (from `plan-programmatic-seo`) and is ready to spec the template, OR asks "design our programmatic template," "spec the [archetype] pages," "what does the [glossary / comparison / location] page look like," "what data do we need per page," "how do we internally link the programmatic pages," "build the template for our [use case] pages." This skill assumes the viability evaluation is done; if not, route the user to `plan-programmatic-seo` first. Do not use to evaluate viability (use `plan-programmatic-seo`), to brief editorial content (use `generate-content-brief`), or to build the actual template code (that's engineering's job; this produces the spec).
+description: Use to design programmatic template; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Design Programmatic Template

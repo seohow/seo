@@ -1,4 +1,7 @@
 {
+  "name": "seo-toolkit",
+  "version": "0.1.0-alpha.1",
+  "private": true,
   "scripts": {
     "skills:validate": "node scripts/validate-skills.mjs",
     "skills:package": "node scripts/package-skills.mjs"

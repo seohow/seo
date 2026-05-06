@@ -1,6 +1,6 @@
 ---
 name: set-up-haro-response-system
-description: Produces the reactive-PR operational plan covering platform selection (Connectively / Qwoted / Featured / ProfNet), email-monitoring + triage workflow, filtering rules (topic / credential / publication-tier), response template library (5-8 templates for dermatologist commentary, founder quote, data citation, product mention, methodology insight, etc.), daily monitoring cadence (30-60 min same-day window), placement-tracking schema, direct-journalist-watching extension (named journalists who've recently covered the topic), and quarterly review schedule. Output is the operational system that produces 2-5 placements / month at minimal sustained effort. Use whenever the user asks to "set up HARO," "set up reactive PR," "set up Connectively / Qwoted," "respond to journalist queries," "system for source-of pitches," "we're missing journalist opportunities," or has decided to invest in reactive PR and needs the operational blueprint. Also use as an annual cadence skill — platform landscape shifts (HARO became Connectively in 2024); response templates need refresh as products / experts evolve. Do not use for proactive PR campaigns (use `plan-digital-pr-campaign`), guest-post planning (use `plan-guest-posting-campaign`), or general outreach process design (use `design-outreach-process`).
+description: Use to set up haro response system; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Set Up HARO Response System

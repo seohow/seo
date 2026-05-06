@@ -1,6 +1,6 @@
 ---
 name: audit-llm-visibility
-description: Produces a quarterly LLM visibility audit by probing ChatGPT search, Claude search, Perplexity, Google Gemini, and Google AI Overviews with a structured set of brand-relevant queries, then capturing brand-mention rate, citation link presence, mention quality (named-with-context / named-without-context / in-list / paraphrased-without-mention), sentiment, and competitor share-of-voice. Output is a longitudinal-trackable audit covering per-engine breakdown, per-cluster breakdown, branded-vs-unbranded segmentation, comparison to prior audits, and recommendations for content / generative-SEO / NLP investment based on the gaps identified. Use whenever the user asks to "audit LLM visibility," "track AI search citations," "are we showing up in ChatGPT / Claude / Perplexity / Gemini," "AI Overview brand mentions," "GEO / AEO measurement," "competitor share of voice in AI search," "baseline before AI SEO investment," or runs a quarterly review. The skill is mandatory as a baseline before any generative-SEO investment (cross-reference `plan-generative-seo-strategy`) and is the core measurement skill for AI SEO. Do not use to design content (use `design-citation-magnet-content`), to audit prose-level patterns (use `audit-ai-content-readiness`), or to plan strategic citation investment (use `plan-generative-seo-strategy`).
+description: Use to audit llm visibility; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit LLM Visibility

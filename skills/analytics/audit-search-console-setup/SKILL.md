@@ -1,6 +1,6 @@
 ---
 name: audit-search-console-setup
-description: Produces a structured Google Search Console configuration audit covering property type (Domain vs URL-prefix), verification method, sitemap submission status, coverage / indexing health, Enhancements reports (schema validation, mobile usability, Core Web Vitals field data), GA4 integration, access permissions, and signal hygiene (manual actions, security issues). Output is a prioritised fix list with severity (P0 / P1 / P2), root cause per issue, and effort estimates. Use whenever the user asks to "audit GSC," "check our Search Console setup," "is GSC configured correctly," "verify our search console," "review search console," or has noticed missing data / unexplained gaps in GSC reports. Also use as a quarterly cadence skill — GSC setup drifts (sitemaps go stale, new schema issues surface, CWV regresses) and a quarterly audit catches drift. Do not use to set up GSC from scratch (point the user to Google's verification docs) or to analyse GSC performance data (use `analyse-search-performance`).
+description: Use to audit search console setup; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Search Console Setup

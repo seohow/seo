@@ -1,6 +1,6 @@
 ---
 name: scope-competitor-analysis
-description: Produces a scoped project plan for an SEO competitor analysis — which competitors to study, what to look at, how deep, with which tools, and what the final artifact should contain. Use whenever the user says "I want to study the competition," "let's look at what [competitor] is doing," is starting SEO strategy, planning a quarterly review, briefing a freelancer or agency on competitive research, or asking how to evaluate competitor SEO. Also use when the user has too many competitors to study and needs to pick a manageable set. Do not use to perform the actual analysis — that's `audit-competitor-seo`. This skill produces the brief; the executor produces the audit.
+description: Use to scope competitor analysis; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Scope Competitor Analysis

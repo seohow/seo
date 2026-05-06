@@ -1,6 +1,6 @@
 ---
 name: plan-internal-linking
-description: Designs a site-wide internal-linking strategy from the keyword cluster map — identifies pillar pages, spoke pages, the hub-and-spoke linking matrix between them, anchor-text patterns, and the implementation sequence. Use whenever the user asks for an "internal linking strategy," "plan our internal links," "build a hub-and-spoke structure," "design topical clusters for linking," "improve our site architecture," or has just finished keyword clustering and wants to convert it into a linking plan. Also use when planning a new content section, doing a quarterly architecture review, or trying to lift topical authority around a key topic. Do not use to audit a single page's links — that's `audit-page-internal-links`. Do not use to crawl the site or fix broken links — those are technical-SEO operations.
+description: Use to plan internal linking; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Internal Linking

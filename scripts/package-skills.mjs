@@ -21,6 +21,7 @@ if (!version) {
 
 const skills = discoverSkills();
 const versionName = `${config.versionPrefix ?? "v"}${version}`;
+const prerelease = isPrerelease(version);
 const outputRoot = readOption("--output")
   ? path.resolve(readOption("--output"))
   : path.join(ROOT, config.releaseRoot ?? "releases");
@@ -28,6 +29,7 @@ const releaseDir = path.join(outputRoot, versionName);
 const tempDir = fs.mkdtempSync(path.join(os.tmpdir(), `seo-skills-${version}-`));
 const manifest = {
   version,
+  prerelease,
   createdAt: new Date().toISOString(),
   layout: `${config.layout?.setup ?? "setup/<skill>"}/<zip> and ${config.layout?.category ?? "categories/<category>/<skill>"}/<zip>`,
   skills: []
@@ -111,5 +113,11 @@ function renderReleaseReadme(releaseVersion, releaseManifest) {
     })
     .join("\n\n");
 
-  return `# SEO Toolkit Skills v${releaseVersion}\n\nThis release keeps ZIPs grouped by setup/category/skill so admins can browse the toolkit before uploading individual skills.\n\nEach ZIP contains exactly one skill folder at its archive root, which is the upload shape expected by Claude Skills and compatible Agent Skills import flows.\n\n${sections}\n`;
+  const releaseType = releaseManifest.prerelease ? "Prerelease" : "Release";
+
+  return `# SEO Toolkit Skills v${releaseVersion}\n\nStatus: ${releaseType}\n\nThis release keeps ZIPs grouped by setup/category/skill so admins can browse the toolkit before uploading individual skills.\n\nEach ZIP contains exactly one skill folder at its archive root, which is the upload shape expected by Claude Skills and compatible Agent Skills import flows.\n\n${sections}\n`;
+}
+
+function isPrerelease(candidateVersion) {
+  return /(?:^|[.-])(alpha|beta|rc)(?:[.-]|$)/i.test(candidateVersion);
 }

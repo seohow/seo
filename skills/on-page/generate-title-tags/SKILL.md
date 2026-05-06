@@ -1,6 +1,6 @@
 ---
 name: generate-title-tags
-description: Produces 4-6 scored title-tag variants for a specific page (or list of pages), tuned to the page's target keyword cluster, search intent, brand voice, and the SERP it competes in. Each variant comes with a length check, keyword placement check, intent-fit score, brand-voice fit, and a recommendation. Use whenever the user asks to "rewrite a title," "improve a page's title," "optimize titles for these URLs," "what should the title be for [URL]," or "give me title variants for [topic]." Also use when the user is working on a striking-distance keyword (page ranking 11-30), running a title audit at scale across top pages, or briefing a CMS team on title updates. Do not use to write meta descriptions (`generate-meta-descriptions`) or to restructure on-page headings (`audit-header-structure`) — title tags are the SERP-facing element only.
+description: Use to generate title tags; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Generate Title Tags

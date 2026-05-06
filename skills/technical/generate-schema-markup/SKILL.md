@@ -1,6 +1,6 @@
 ---
 name: generate-schema-markup
-description: Generates valid JSON-LD structured data for a specific page (PDP, collection, blog post, FAQ page, homepage), with all required properties populated from page data, recommended properties where the data supports them, explicit references to Google's current rich-result requirements, and validation steps before deploy. Use whenever the user asks to "generate schema for [URL]," "write Product schema," "create FAQPage JSON-LD," "fix schema errors on [page]," shares a page and asks for structured data, or wants schema for a specific PDP/blog/homepage. Also use when implementing the schema strategy from `plan-schema-strategy` page-by-page. Do not use to plan the site-wide schema strategy — that's `plan-schema-strategy`. Do not invent data the page doesn't actually contain (review counts, availability, prices) — that's penalty territory.
+description: Use to generate schema markup; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Generate Schema Markup

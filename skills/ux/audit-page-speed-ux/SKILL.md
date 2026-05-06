@@ -1,6 +1,6 @@
 ---
 name: audit-page-speed-ux
-description: Produces a UX-focused page-speed audit covering field-data CWV (LCP, INP, CLS from CrUX / GSC), perceived-speed gaps (font swap / FOUT, image swap, post-fold layout shift, sluggish nav animation, slow modal opens), interaction lag (CTAs, form fields, accordions, dropdowns), rage-click / dead-click patterns from session replay (Hotjar / Microsoft Clarity / FullStory), mobile mid-tier network behaviour (4G throttling test), JavaScript bundle audit, and a prioritised remediation list with conversion-impact estimates. Output is the operational fix list for SEO-driven traffic — distinct from Technical SEO's CWV audit by focusing on felt experience and conversion lift, not just ranking signal. Use whenever the user asks to "audit page speed UX," "why does our page feel slow," "improve perceived speed," "fix slow page experience," "investigate UX-speed problems," "users say page is slow but Lighthouse looks fine," or has shipped CWV-passing pages but conversion is below expectation. Also use as a quarterly cadence skill — perceived-speed regressions happen as new components ship; quarterly review catches drift. Do not use for CWV-only ranking work (use Technical SEO's `audit-core-web-vitals`), broader mobile UX (use `audit-mobile-ux`), or to test perceived-speed changes statistically (use `plan-ab-test`).
+description: Use to audit page speed ux; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Page Speed UX

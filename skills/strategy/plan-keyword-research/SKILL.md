@@ -1,6 +1,6 @@
 ---
 name: plan-keyword-research
-description: Produces a scoped keyword research project plan for a specific business — what to research, in what order, with which tools, and what the deliverable should look like. Use whenever the user is starting SEO from scratch, launching a new product line, planning quarterly SEO work, asks how to "do keyword research," wants to "find keywords for my business," or is staring at a blank spreadsheet and doesn't know where to start. Also use when the user has done ad-hoc keyword work before but wants to do it properly this time. Do not use to generate the keywords themselves — that's `generate-seed-keywords` and the expansion that follows.
+description: Use to plan keyword research; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Keyword Research

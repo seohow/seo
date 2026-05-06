@@ -1,6 +1,6 @@
 ---
 name: audit-core-web-vitals
-description: Analyses a page's Core Web Vitals (LCP, INP, CLS) plus TTFB and FCP using a PageSpeed Insights export (or pasted field + lab data) plus an image inventory and third-party-script list, identifies the LCP element, surfaces the highest-impact fixes by metric, and produces a prioritised remediation list with effort estimates and expected metric movement. Use whenever the user asks to "audit page speed," "fix Core Web Vitals on [URL]," "make this page faster," "why is mobile LCP so slow," "diagnose [URL]'s performance," or shares a PageSpeed Insights screenshot/export. Also use when GSC Core Web Vitals report is showing failing URLs, when a site migration or theme change has regressed speed, or when investigating a mobile conversion gap. Do not use to audit images alone (use `audit-images`) or to fix JavaScript-rendering issues specifically (use `audit-javascript-seo`) — this skill is the integrated speed view.
+description: Use to audit core web vitals; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Core Web Vitals

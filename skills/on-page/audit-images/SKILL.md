@@ -1,6 +1,6 @@
 ---
 name: audit-images
-description: Analyses every image on a page (or list of pages) against six dimensions — alt text, file name, format, compression/dimensions, responsive serving, lazy-loading — and produces a per-image action list with rewritten alt text suggestions, file-name rewrites, format/compression recommendations, and an explicit LCP image flag so it doesn't get lazy-loaded. Use whenever the user asks to "audit images on [URL]," "fix alt text," "improve image SEO," "speed up [page]," "optimize product images," or "what should the alt text be for [page]." Also use when running on-page SEO at scale on top product or collection pages, when fixing a Core Web Vitals failure that's image-driven, or when preparing for image-search visibility. Do not use to generate page copy, headers, or meta tags — those are separate skills.
+description: Use to audit images; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Images

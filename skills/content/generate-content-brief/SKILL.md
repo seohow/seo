@@ -1,6 +1,6 @@
 ---
 name: generate-content-brief
-description: Produces a complete content brief for a single blog post or short-form piece — the universal foundation document writers (human or AI) work from to produce a draft. Bundles SERP read, intent classification, audience, outline (H1+H2+H3), word-count target, brand-distinct angle, voice constraints, internal-link plan, schema requirements, asset requirements, and acceptance criteria. Use whenever the user asks to "brief a post," "write a brief for [topic]," "generate a content brief," "spec out the [topic] post," "give me an outline for [keyword]," "what should we cover in [post]," or has a post on their editorial calendar that needs to go to a writer / contractor / AI. This is the universal, foundational content skill — every other Content SEO skill that produces long-form content (pillar, evergreen, refresh) eventually flows through this brief shape. Do not use to plan a 90-day calendar (use `plan-blog-content`), to design a pillar page (use `design-pillar-page`), to architect a cluster (use `design-topic-cluster`), or to brief evergreen content (use `brief-evergreen-content` for longevity-focused work).
+description: Use to generate content brief; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Generate Content Brief

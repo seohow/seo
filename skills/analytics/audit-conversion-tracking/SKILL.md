@@ -1,6 +1,6 @@
 ---
 name: audit-conversion-tracking
-description: Produces a structured conversion-tracking audit covering event implementation (event firing correctness, parameter completeness), conversion / key-event definitions (right events marked; no double-counting), ecommerce parameters (`items`, `transaction_id`, `value`, `currency`), attribution-model choice and report alignment, Consent Mode v2 (EU/UK requirement), source-of-truth triangulation (GA4 vs Shopify / payment processor / CRM), cluster-attribution capability (custom dimension or BigQuery-side mapping), and server-side tracking (where applicable). Output is a prioritised fix list with severity (P0 / P1 / P2), each issue's user-visible impact, root cause, and effort estimate. Use whenever the user asks to "audit conversion tracking," "are our conversions tracking correctly," "GA4 numbers don't match Shopify," "verify our attribution," "review conversion measurement," "check Consent Mode," or before any SEO revenue claim is reported. Also use as a quarterly cadence skill — conversion tracking drifts and a quarterly audit catches drift before reports become unreliable. Do not use to set up conversion tracking from scratch (point the user to GA4 official docs) or to do a quarterly traffic analysis (use `analyse-traffic-patterns`).
+description: Use to audit conversion tracking; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Conversion Tracking

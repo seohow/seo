@@ -1,6 +1,6 @@
 ---
 name: generate-meta-descriptions
-description: Produces 3-4 scored meta-description variants for a specific page (or list of pages), tuned to the page's target cluster, search intent, brand voice, and the SERP it competes in. Each variant comes with length and mobile-truncation checks, primary-keyword presence, intent fit, brand-voice fit, call-to-action quality, and a recommendation. Use whenever the user asks to "rewrite a description," "fix the meta description on [URL]," "optimize descriptions for these pages," "what should the snippet say for [page]," or "generate descriptions to lift CTR." Also use when the user is rewriting titles in batch (descriptions ship in the same pass), when a page's CTR is below SERP average for its position, or when Google is rewriting the description in the SERP and the user wants a version Google will keep. Do not use to generate page titles (`generate-title-tags`) or to write social/OG descriptions — those are separate.
+description: Use to generate meta descriptions; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Generate Meta Descriptions

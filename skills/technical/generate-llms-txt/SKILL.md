@@ -1,6 +1,6 @@
 ---
 name: generate-llms-txt
-description: Produces a valid `/llms.txt` file (and optionally `/llms-full.txt`) from the business profile, sitemap, and curated key URLs. Follows the llms.txt proposal format — site title, description, organised sections of links with one-line descriptions per URL. Use whenever the user asks to "generate llms.txt," "create an llms.txt for our site," "make an LLM-friendly summary of our site," or has decided their AI-crawler posture is open or visibility-only and wants to publish llms.txt. Also use when refreshing a stale llms.txt. Do not use to set robots.txt rules — that's part of `audit-ai-crawler-access`. Do not generate llms.txt for sites with a strict-block AI posture; the file would contradict the intent.
+description: Use to generate llms txt; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Generate llms.txt
@@ -66,7 +66,7 @@ If the URL inventory is missing, ask. The skill operates on real URLs.
 
    ## [Section name 1]
 
-   - [Page title](URL): [one-line description]
+   - [Page title](https://example.com/page): [one-line description]
    - ...
 
    ## [Section name 2]

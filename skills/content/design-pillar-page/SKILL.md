@@ -1,6 +1,6 @@
 ---
 name: design-pillar-page
-description: Produces a pillar-page brief — primary keyword, scope, full H1+H2 outline, target word count, supporting-spoke list, brand-distinct angle, internal-link plan, schema strategy, and acceptance criteria. Output is the spec a writer (human or AI) can produce a draft against. Use whenever the user asks to "design a pillar page," "build a guide page for [topic]," "we need a hub page for [cluster]," "what's the outline for our [topic] guide," or has decided a cluster warrants a pillar and needs the design before writing. Also use when consolidating a set of existing spoke posts into a topic cluster (the pillar is the missing centerpiece). Do not use to write the pillar's body content (that's a writing job, not a design job) or to plan a single blog post (use `plan-blog-content` + `generate-content-brief` for that).
+description: Use to design pillar page; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Design Pillar Page

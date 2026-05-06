@@ -1,6 +1,6 @@
 ---
 name: monitor-brand-mentions
-description: Produces a brand-mention monitoring + conversion plan covering tooling selection (free vs. paid; Google Alerts / Brand24 / Mention / Talkwalker), alert keyword set (brand + variants + products + founder + key terms), review cadence (weekly + monthly + quarterly), quality filter (which mentions are worth conversion outreach), outreach templates (short, polite, specific), sentiment-tracking schema (positive / neutral / negative trends), 90-day historical backfill plan, and conversion-rate targets (50-70%). Output is the operating brief for the brand-mention programme — the lowest-effort, highest-conversion off-page tactic. Use whenever the user asks to "monitor brand mentions," "set up brand monitoring," "convert mentions to links," "track when our brand is mentioned," "find unlinked mentions," "set up Google Alerts for our brand," or has decided to invest in mention-recovery and needs the setup brief. Also use as an annual cadence skill — keywords + tooling + sentiment baselines refresh as the brand evolves. Do not use for branded-SERP monitoring (use `audit-branded-serp`), broader off-page strategy (use `plan-link-building-campaign`), or outreach process design (use `design-outreach-process`).
+description: Use to monitor brand mentions; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Monitor Brand Mentions

@@ -1,6 +1,6 @@
 ---
 name: plan-ab-test
-description: Produces an A/B test plan covering hypothesis statement, variant specification (control + treatment(s)), primary + secondary success metrics, sample-size calculation (with minimum detectable effect / MDE based on current traffic + baseline conversion rate), significance threshold (typically 95% confidence), SEO-safety review (verify no cloaking; canonical preserved across variants; client-side rendering acceptable), runtime estimate, decision rules (ship / kill / keep current with explicit thresholds), pre-registration discipline (sample size locked before launch; no mid-test peeking), A/A instrumentation check plan, business-significance threshold, and risks. Output is the operational test brief. Use whenever the user asks to "plan an A/B test," "set up split test," "test [variant change]," "test our pillar / PDP / quiz design change," "should we A/B test [feature]," "experiment plan for [hypothesis]," or has a candidate design change with ambiguous direction. Also use when filtering candidate tests — some don't warrant testing (bug fixes / obvious wins / low traffic). Do not use for testing infrastructure setup (vendor docs handle that), for A/B test result analysis post-completion (run vendor's own analysis), or for tests on pages with insufficient traffic (recommend skip or aggregate templates).
+description: Use to plan ab test; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan A/B Test

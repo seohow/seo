@@ -1,6 +1,6 @@
 ---
 name: audit-ga4-setup
-description: Produces a structured Google Analytics 4 configuration audit covering property setup, internal-traffic filtering, event tracking, conversion definitions, ecommerce implementation (all 5 events with full parameters), audience definitions, attribution-model choice, data retention, GSC integration, BigQuery export, and Consent Mode v2 (EU). Output is a prioritised fix list with severity (P0 / P1 / P2), each issue's user-visible impact, the root cause, and an effort estimate. Use whenever the user asks to "audit GA4," "check our GA4 setup," "is our analytics tracking correct," "GA4 numbers don't match Shopify / our CRM," "we just migrated to GA4 and want to verify," "review our analytics implementation," or has decayed trust in GA4 data and needs a structured audit. Also use as a quarterly cadence skill — GA4 setup drifts and a quarterly audit catches drift before it corrupts reports. Do not use to set up GA4 from scratch (this is an audit skill; for setup, point the user to GA4's official setup docs) or to analyse GA4 data (use `analyse-traffic-patterns`).
+description: Use to audit ga4 setup; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit GA4 Setup

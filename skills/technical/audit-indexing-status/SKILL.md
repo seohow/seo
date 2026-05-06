@@ -1,6 +1,6 @@
 ---
 name: audit-indexing-status
-description: Analyses a Google Search Console Pages-report export (or pasted data) and produces a structured indexing audit — categorises URLs by exclusion reason, distinguishes accidental from intentional exclusions, cross-references with the cluster map for priority signal, and produces a prioritised remediation list grouped by action type (canonical fixes, content quality, internal linking, soft-404 cleanup, noindex review). Use whenever the user asks "why isn't [page] indexed," "audit our indexing," "look at GSC coverage," "fix exclusion issues," "we have too many pages excluded," or shares a GSC export. Also use when a launch or migration causes an indexing drop, when GSC reports rising "Crawled – not indexed" counts, or as part of a quarterly technical SEO audit. Do not use to diagnose crawl-blocking issues (`audit-crawlability`) or to fix canonicals specifically (`audit-canonical-tags`) — those are upstream/parallel concerns.
+description: Use to audit indexing status; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Indexing Status

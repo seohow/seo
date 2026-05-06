@@ -1,6 +1,6 @@
 ---
 name: plan-content-refresh
-description: Analyses an existing content portfolio for refresh candidates and produces a prioritised refresh backlog with per-post action recommendations (refresh / rewrite / replace / prune). Pulls GSC traffic + ranking data, cross-references the cluster map and internal-link state, scores each post on the refresh matrix (decay severity × strategic value × refresh effort), groups outputs into P0 / P1 / P2 / no-action / prune buckets, and produces refresh briefs for the top-priority candidates. Use whenever the user asks to "plan a content refresh," "audit our blog for decay," "which old posts should we refresh," "what's our refresh backlog look like," "should we update [post]," "we have decaying traffic — where do we start," or has decided to invest in refresh work and needs the prioritised plan. Also use as a quarterly cadence skill — runs every 3 months on established sites to keep refresh discipline operational. Do not use to plan new content (use `plan-blog-content`), to brief a single new piece (use `generate-content-brief`), or to design a cluster from scratch (use `design-topic-cluster`).
+description: Use to plan content refresh; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Content Refresh

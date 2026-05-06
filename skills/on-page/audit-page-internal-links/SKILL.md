@@ -1,6 +1,6 @@
 ---
 name: audit-page-internal-links
-description: Audits a single page's internal links — incoming (which pages link to it, with what anchors) and outgoing (where it links to, with what anchors) — against the site's internal-linking plan and the page's target cluster. Surfaces missing inbound links, weak anchor text, missing outbound contextual links to sibling spokes, and produces a per-page action list. Use whenever the user asks to "audit links on [page]," "check internal linking for [URL]," "what should this page link to," "is this page linked properly," "fix the links on [page]," or shares a page URL and wants link review. Also use for striking-distance pages that might benefit from internal-link reinforcement, or for pages just published that need their links wired up. Do not use to design site-wide architecture — that's `plan-internal-linking`.
+description: Use to audit page internal links; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Page Internal Links

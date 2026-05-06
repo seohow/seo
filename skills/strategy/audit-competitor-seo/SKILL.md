@@ -1,6 +1,6 @@
 ---
 name: audit-competitor-seo
-description: Analyses a single competitor (URL or domain) against the user's business and produces a structured SEO gap report — keyword gap, content patterns, link signals, technical observations, and prioritised opportunities. Use whenever the user says "look at [competitor]," "what is [competitor] doing for SEO," "audit [domain]," "find what [competitor] ranks for that we don't," "compare us to [competitor]," or shares a competitor URL and asks for SEO analysis. Also use when reviewing a competitor's blog, content cluster, or product category. Do not use to plan the broader competitor analysis project — that's `scope-competitor-analysis`. This skill produces the audit; the planner produces the brief.
+description: Use to audit competitor seo; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Competitor SEO

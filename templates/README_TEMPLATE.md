@@ -60,5 +60,5 @@ Cross-links to other parts of the toolkit that depend on or feed into this one.
 
 Maximum 5. High-signal sources only — official docs, foundational research, well-known practitioner essays. No "10 SEO tips" listicles.
 
-- [Title](URL) — one-line note on why this is worth reading.
-- [Title](URL) — one-line note on why this is worth reading.
+- [Title](https://example.com/source) — one-line note on why this is worth reading.
+- [Title](https://example.com/source) — one-line note on why this is worth reading.

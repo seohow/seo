@@ -1,6 +1,6 @@
 ---
 name: audit-crawlability
-description: Analyses a list of URLs (from a crawler export, GSC export, or sitemap) for crawlability issues — robots.txt blocking, meta robots / X-Robots-Tag directives, HTTP response codes, redirect chains and loops, crawl depth, and orphan pages. Produces a prioritised remediation list grouped by issue type with implementation guidance for each finding. Use whenever the user asks to "audit our crawlability," "check why pages aren't being crawled," "find blocked pages," "investigate redirect issues," "look for orphan pages," "review our robots.txt," or shares a crawler export and asks for a crawl audit. Also use when GSC reports a spike in "Discovered – not indexed," "Crawled – not indexed," or coverage errors. Do not use to audit indexing reasons (`audit-indexing-status`) or to fix specific JavaScript rendering issues (`audit-javascript-seo`) — those are downstream concerns.
+description: Use to audit crawlability; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Crawlability

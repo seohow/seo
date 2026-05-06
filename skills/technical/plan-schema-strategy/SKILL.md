@@ -1,6 +1,6 @@
 ---
 name: plan-schema-strategy
-description: Produces a site-wide structured-data plan — which Schema.org types per page type, which properties are mandatory vs nice-to-have, the implementation approach (CMS template vs app vs hand-coded), and a sequencing plan for shipping schema across the site. Use whenever the user asks to "plan our schema," "decide which structured data we need," "set up rich results," "build a schema strategy," or is starting from no/inconsistent structured data and wants a roadmap. Also use when launching a new content type (e.g. starting a recipe blog, adding video content) and needs to decide what schema to ship from day one. Do not use to generate JSON-LD for a specific page — that's `generate-schema-markup`. The strategy plan is the prerequisite; generation happens after.
+description: Use to plan schema strategy; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Schema Strategy

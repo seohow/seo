@@ -1,6 +1,6 @@
 ---
 name: brief-evergreen-content
-description: Produces the longevity-first content brief for an anchor / evergreen piece — content designed to compound for 3-5 years with annual refresh. Deeper than the standard blog brief: explicitly evaluates the longevity case (why this piece can stay relevant), specifies original-asset requirements (photography, illustration, original research), an expert-review plan for credibility, schema with `dateModified` discipline, internal-link plan as an anchor reference, and a refresh schedule. Use whenever the user asks to "brief an evergreen post," "design our anchor piece on [topic]," "we want a definitive guide to [topic]," "what would the canonical [topic] explainer look like," "build the foundational reference for [cluster]," or has identified a topic worth disproportionate investment because of compounding-value potential. Also use when converting a typical underperforming post into an evergreen anchor (refresh + redesign). Do not use to brief a standard blog post (use `generate-content-brief`), to design a pillar (use `design-pillar-page`), or to plan a 90-day calendar (use `plan-blog-content`).
+description: Use to brief evergreen content; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Brief Evergreen Content

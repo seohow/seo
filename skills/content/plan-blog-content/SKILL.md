@@ -1,6 +1,6 @@
 ---
 name: plan-blog-content
-description: Produces a 30/60/90-day blog editorial calendar from the cluster map and current blog inventory. Cross-references which clusters need pages, audits current coverage, surfaces gaps, sequences posts by priority and seasonality, matches cadence to team capacity. Outputs the calendar plus per-post brief stubs (feeding into `generate-content-brief`). Use whenever the user asks to "plan our blog," "build an editorial calendar," "what should we write next," "we need a content calendar," "audit our blog coverage," or shares a cluster map and wants a content plan. Also use quarterly to refresh the calendar as priorities shift. Do not use to write a single post — that's `generate-content-brief` for the brief and the writer (human or AI) for the draft.
+description: Use to plan blog content; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Blog Content

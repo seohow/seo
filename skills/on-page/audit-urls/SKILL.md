@@ -1,6 +1,6 @@
 ---
 name: audit-urls
-description: Takes a list of existing URLs (from a sitemap, GSC export, crawler output, or pasted list) and audits each against best practice and the site's URL conventions. Produces a per-URL scorecard, surfaces patterns of issues across the portfolio, builds a prioritised migration list with old-URL → new-URL mappings, and notes redirect requirements. Use whenever the user says "audit our URLs," "check our URL structure," "find URL issues on our site," "build a URL migration plan," "we have inconsistent URLs," or shares a URL list and asks for a structural review. Also use when planning a re-platform, a CMS migration, or a site cleanup. Do not use to define URL rules from scratch — that's `define-url-conventions`. The audit consumes the conventions doc; the conventions doc has to exist first (or be created in the same session).
+description: Use to audit urls; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit URLs

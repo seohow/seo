@@ -1,6 +1,6 @@
 ---
 name: plan-broken-link-campaign
-description: Produces a broken-link-building campaign plan covering replacement-asset inventory (which pillar / evergreen / tool / blog pages can substitute for broken targets), prospect categories (search queries that surface link-rich resource pages, listicles, roundups), tooling (Ahrefs Site Explorer, Semrush, Check My Links, Wayback Machine, Lemlist), pitch template (lead with broken link, offer replacement, short and polite), cadence (prospecting hours / week + outreach hours / week), conversion targets (5-12% acceptance), placement-tracking schema, and quarterly review schedule. Output is the operational plan for a steady-yield off-page channel — predictable, moderate-effort, mostly Tier 2-3 placements. Use whenever the user asks to "set up broken-link building," "plan broken-link campaign," "find broken links to pitch our content," "we have pillar pages — can we get more links," "scale our off-page work," or has decided to invest in this channel and needs the spec. Also use as a quarterly cadence skill — prospect categories refresh, replacement-asset inventory grows. Do not use for digital PR (use `plan-digital-pr-campaign`), guest posting (use `plan-guest-posting-campaign`), HARO setup (use `set-up-haro-response-system`), or general off-page strategy (use `plan-link-building-campaign`).
+description: Use to plan broken link campaign; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Broken-Link Campaign

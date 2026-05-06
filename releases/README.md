@@ -30,19 +30,19 @@ plan-keyword-research-v1.0.0.zip
 ## Release checklist
 
 1. Commit the source changes that should be released.
-2. Tag the release commit: `git tag v1.0.0`.
-3. Push the tag: `git push origin v1.0.0`.
+2. Tag the release commit: `git tag v0.1.0-alpha.1`.
+3. Push the tag: `git push origin v0.1.0-alpha.1`.
 4. Wait for `.github/workflows/release-skills.yml` to pass.
 5. Download or inspect the GitHub Release assets: generated ZIPs, `manifest.json`, and `checksums.txt`.
+
+Tags whose versions contain `alpha`, `beta`, or `rc` are marked as GitHub prereleases automatically. Stable tags are published as normal releases. Manual `workflow_dispatch` runs can also mark a non-preview version as a prerelease with the `prerelease` input.
 
 Optional local preflight:
 
 ```sh
-npm run skills:validate
-npm run skills:package -- --version 1.0.0 --output /private/tmp/seo-skill-release-check
+npm run skills:validate -- --strict-platform
+npm run skills:package -- --version 0.1.0-alpha.1 --output /private/tmp/seo-skill-release-check
 ```
-
-For platform-strict checks, run `npm run skills:validate -- --strict-platform`.
 
 Claude organization provisioning and ChatGPT workspace skill upload/share flows should upload the individual ZIPs from inside the category folders, not the category folder itself.
 

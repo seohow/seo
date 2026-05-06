@@ -1,6 +1,6 @@
 ---
 name: optimize-page-content
-description: Reworks a single page's body content against its target keyword cluster, search intent, the SERP it competes in, and the brand's voice. Produces a structured rework plan — sections to add, expand, or cut; brand-distinct angles to introduce; format changes (tables, lists, photos, FAQs); E-E-A-T signal recommendations; and either a section-by-section outline or a draft rewrite (user choice). Use whenever the user asks to "rewrite this page," "improve content on [URL]," "make this page rank better," "optimize the body content of [page]," "what's missing from this article," "refresh this post," or shares a page URL plus a target keyword and asks for content work. Also use for striking-distance pages with shallow content, content refresh on decayed posts, and pages that rank for the primary keyword but not its supporting cluster. Do not use to generate page titles, descriptions, or headers — those are separate skills (`generate-title-tags`, `generate-meta-descriptions`, `audit-header-structure`). Do not use to write a brand-new page from scratch — that's content briefing in `04. Content SEO`.
+description: Use to optimise page content; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Optimize Page Content

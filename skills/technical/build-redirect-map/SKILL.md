@@ -1,6 +1,6 @@
 ---
 name: build-redirect-map
-description: Builds the operational old-URL → new-URL → 301 mapping table for a site migration. Inputs the full URL inventory (sitemap + crawler + traffic data), the new URL convention or per-URL mapping rules, and any existing redirect file. Outputs a complete mapping with chain-detection (no multi-hop), 200-validation status per new URL, batch order for staged rollout, and an implementation-ready file for the CMS or server. Use whenever the user is preparing for a site migration and needs the actual redirect file built — re-platform, rebrand, URL restructure, sub-domain consolidation, HTTPS transition. Also use after a partial migration to audit existing redirects for chains and to fill in missing rows. Do not use to plan the migration project — that's `plan-site-migration`. The redirect map is the operational output; the plan is the prerequisite.
+description: Use to build redirect map; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Build Redirect Map

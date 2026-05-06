@@ -246,3 +246,11 @@
 - Added release tooling: `release.config.json` defines the release layout, `npm run skills:validate` checks skill structure, `npm run skills:package -- --version <version>` generates ZIPs / `manifest.json` / `checksums.txt` / release README, and `.github/workflows/release-skills.yml` packages releases from tags or manual dispatch.
 - Generated `releases/v*/` folders are ignored locally; local packaging is a preflight path, not the canonical release path.
 - Platform compatibility checks currently warn on long descriptions; use `npm run skills:validate -- --strict-platform` before an org deployment that must satisfy Claude.ai's current 200-character description limit.
+
+### 2026-05-06 — Alpha release readiness checks are strict
+
+- Tightened all skill frontmatter descriptions to stay below the configured 200-character platform limit while keeping slug-resolution guidance in the metadata.
+- CI now runs `npm run skills:validate -- --strict-platform` before packaging, so incompatible skill metadata blocks a tag release.
+- Tags containing `alpha`, `beta`, or `rc` are marked as GitHub prereleases automatically. Manual dispatch can also mark a stable-looking version as a prerelease.
+- The generated release manifest now records whether the packaged version is a prerelease, and the generated release README displays that status.
+- Root `CLAUDE.md` is now a symlink to `AGENTS.md`, matching the documented compatibility convention and avoiding duplicated repo instructions.

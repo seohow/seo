@@ -1,6 +1,6 @@
 ---
 name: plan-site-migration
-description: Produces a written site-migration plan — scope, redirect strategy, pre-migration baseline checklist, sequencing (single-shot vs staged), QA gates, recovery monitoring schedule, rollback trigger definition, downstream-system update list, and post-migration documentation requirements. Use whenever the user is planning a re-platform, rebrand, domain move, mass URL restructure, sub-domain consolidation, or HTTP→HTTPS migration. Also use when the user mentions "we're moving to [new platform]," "we're rebranding," "we need to restructure URLs across the site," or "we're worried about losing rankings during a migration." Do not use to build the actual redirect file — that's `build-redirect-map`. The plan is the prerequisite; the redirect map is the operational artifact.
+description: Use to plan site migration; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Site Migration

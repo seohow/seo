@@ -1,6 +1,6 @@
 ---
 name: audit-accessibility
-description: Produces a WCAG 2.1 AA accessibility audit covering priority templates. Combines automated tool runs (Axe, WAVE, Lighthouse Accessibility, Pa11y) with manual testing (keyboard navigation across all interactive elements, screen-reader testing on key flows via VoiceOver / NVDA / JAWS, zoom-to-200% layout integrity check, contrast spot-checks). Output is a prioritised remediation list with severity (critical / high / medium / low), WCAG-2.1 criterion mapping per issue (e.g. 1.4.3 Contrast Minimum, 2.1.1 Keyboard, 3.3.2 Labels or Instructions), fix recommendations, conformance estimate, and legal-exposure assessment (ADA / EU Accessibility Act). Use whenever the user asks to "audit accessibility," "WCAG audit," "is our site ADA / accessible," "EU Accessibility Act compliance," "screen-reader test," "accessibility review," or has legal / compliance pressure (ADA lawsuits, EU Accessibility Act 2025 deadline). Also use as a quarterly cadence skill — accessibility regressions ship with new components; quarterly audit catches drift. Do not use for AAA-level requirements (this skill targets AA), broader UX design (use `review-ux-design-for-seo`), or mobile-specific UX (use `audit-mobile-ux` — touch-target sizing overlaps but is its own discipline).
+description: Use to audit accessibility; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Accessibility

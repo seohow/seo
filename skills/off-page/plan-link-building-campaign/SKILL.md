@@ -1,6 +1,6 @@
 ---
 name: plan-link-building-campaign
-description: Produces a strategic link-building campaign plan covering target assets (which pages should earn links — pillars, evergreen anchors, tools, original data), target sites (3-tier list by Domain Rating with named publications), tactical channel mix (digital PR, HARO, guest posting, broken-link, brand-mention recovery), cadence (referring-domain targets per month / quarter), success metrics tied to cluster-level ranking lift (not vanity counts), and risk / compliance guardrails (no paid links, no PBNs, anchor-text diversity). Output is the strategic anchor for the off-page programme; tactical skills execute against this plan. Use whenever the user asks to "plan link building," "build our link strategy," "we need more backlinks — where do we start," "design our off-page campaign," "how do we earn links to [page]," "competitor has more links — what do we do," or has shipped link-worthy assets and is ready to invest in earning links to them. Also use as a quarterly cadence skill — link-building plans should refresh as new assets ship and as channel yield data comes in. Do not use to do tactical execution of a specific channel (use `plan-digital-pr-campaign`, `plan-guest-posting-campaign`, etc.) or to set up outreach process (use `design-outreach-process`).
+description: Use to plan link building campaign; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Link-Building Campaign

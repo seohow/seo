@@ -1,6 +1,6 @@
 ---
 name: analyse-log-files
-description: Takes a 30-90-day server access log export filtered for Googlebot (or raw logs the skill helps filter), plus the site's URL inventory, and produces a structured analysis — crawl distribution by URL bucket, response-code distribution from real bot traffic, orphan-URL detection, under-crawled URLs, crawl-budget waste estimates, and a prioritised remediation list. Use whenever the user has access to server logs and asks to "analyse our logs," "see what Googlebot is doing," "find crawl-budget waste," "investigate why new content takes weeks to rank," or shares a Googlebot-filtered log export. Also use after major changes (migration, robots.txt update, canonical rollout) to verify the change had the intended effect on bot behaviour. Do not use on platforms where logs aren't accessible (Shopify, Webflow, WordPress.com) — the skill doesn't apply.
+description: Use to analyse log files; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Analyse Log Files

@@ -1,6 +1,6 @@
 ---
 name: audit-xml-sitemap
-description: Analyses an XML sitemap (or sitemap-index + child sitemaps) for non-canonical URLs, broken / noindex / robots-blocked entries, stale lastmod dates, missing canonical URLs, and structural issues. Cross-references with GSC Pages data, canonical-audit output, and URL-conventions doc when available. Produces a remediation list grouped by issue type with template-level vs per-URL actions and an implementation checklist. Use whenever the user asks to "audit our sitemap," "check what's in the sitemap," "fix sitemap errors in GSC," "we have URLs in the sitemap that shouldn't be there," "our discovered URLs don't match our sitemap," or shares a sitemap.xml. Also use after a CMS update, theme change, migration, or large content launch when sitemap regressions are likely. Do not use to generate a sitemap manually (CMS auto-generation is the default approach) or to fix indexing reasons (use `audit-indexing-status` for that).
+description: Use to audit xml sitemap; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit XML Sitemap

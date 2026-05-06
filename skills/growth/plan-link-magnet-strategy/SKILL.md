@@ -1,6 +1,6 @@
 ---
 name: plan-link-magnet-strategy
-description: Produces a quarterly link-magnet asset programme tied to the priority topical-authority cluster(s) — identifies 4-6 link-magnet asset candidates across the defensibility ladder (original research / primary data; definitive guides; free tools / calculators; comparative resources; visual / data assets; curated lists / databases), evaluates per-asset defensibility and link potential, specs each asset (defensibility argument, target queries, production team and timeline, promotion plan, anchor publications, link target, measurement plan), sequences across a 12-24 month production calendar, estimates total cost, and defines per-asset KPIs. Use whenever the user asks to "plan link acquisition," "design link-magnet assets," "what assets should we build for links," "link-bait strategy," "link velocity plan," "build assets that earn links," or has a topical-authority play that needs external-signal feeding. Also quarterly cadence per priority cluster. Do not use to plan tactical outreach (use Off-page leaf 01 link-building skills), to design Digital PR pitches (use Off-page leaf 03), to design specific content (use AI SEO `design-citation-magnet-content` or Content SEO `generate-content-brief`), or to assess topical authority strategy (use `assess-topical-authority`).
+description: Use to plan link magnet strategy; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Link-Magnet Strategy

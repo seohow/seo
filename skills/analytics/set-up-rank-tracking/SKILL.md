@@ -1,6 +1,6 @@
 ---
 name: set-up-rank-tracking
-description: Produces a rank-tracking project spec — tool recommendation (matched to budget + use case), curated priority keyword set (pulled from cluster map, capped to 100-200 keywords), competitor selection (3-6 direct + 1-2 publishers), geographic + device + cadence configuration, SERP-feature tracking plan (Featured Snippet, AI Overview, "People Also Ask," etc.), alert thresholds, dashboard design, integration with GSC + GA4, and quarterly review cadence. Output is the setup brief — the document the team uses to configure the tool, not a tool comparison page. Use whenever the user asks to "set up rank tracking," "what should we track in [tool]," "build our rank-tracking project," "which keywords should we monitor daily," "set up Ahrefs / Semrush / AccuRanker," "design our rank-tracking dashboard," or has decided to invest in a rank tracker and needs the setup spec. Also use as a quarterly cadence skill — the keyword set should refresh as strategy evolves. Do not use to analyse rank-tracking data over time (that's part of `analyse-search-performance` + KPI tracking) or to set up GSC (use `audit-search-console-setup`).
+description: Use to set up rank tracking; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Set Up Rank Tracking

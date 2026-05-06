@@ -1,6 +1,6 @@
 ---
 name: audit-mobile-ux
-description: Produces a mobile UX audit covering touch-target compliance (44×44 px WCAG minimum; 48×48 preferred), viewport meta correctness, responsive-layout integrity at 375 / 414 / 768 px breakpoints, sticky / fixed-element overflow (cookie banners, chat widgets, sticky CTAs covering content at small viewports), mobile-form configuration (input types like `type="email"` / `tel`, `inputmode`, `autocomplete`, sticky-keyboard auto-scroll-to-input), modal overflow on small viewports, hover-state fallbacks for touch (tooltips / mega-menus), GSC mobile-usability findings, and session-replay friction patterns (rage clicks on small targets, dead clicks on cover-overlapped elements). Output is the prioritised remediation list with conversion-impact estimates. Use whenever the user asks to "audit mobile UX," "fix mobile experience," "mobile conversion rate is low," "investigate mobile usability," "set up mobile-first design," or has a mobile-vs-desktop conversion gap. Also use as a quarterly cadence skill — mobile regressions ship with new templates. Do not use for mobile page speed only (use `audit-page-speed-ux`), broader UX design (use `review-ux-design-for-seo`), or full WCAG accessibility audit (use `audit-accessibility`).
+description: Use to audit mobile ux; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Mobile UX

@@ -1,6 +1,6 @@
 ---
 name: define-url-conventions
-description: Produces a URL-structure convention document for a site — per page type, a pattern + example URLs + edge-case rules — covering products, collections, blog posts, FAQs, comparisons, location pages, and landing pages. Use whenever the user is launching a new site, adding a new content type, redesigning the IA, asks "what URL structure should we use," "how should we name slugs," "set up our URL conventions," or is briefing a CMS or developer on URL patterns. Also use when the user has inconsistent URL patterns and wants to lock down a forward-going standard before cleaning up legacy URLs. Do not use to audit existing URLs against best practice — that's `audit-urls`. Do not use to plan a redirect migration — that's also `audit-urls`. This skill produces the rules; the audit checks compliance.
+description: Use to define url conventions; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Define URL Conventions

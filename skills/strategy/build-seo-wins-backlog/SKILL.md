@@ -1,6 +1,6 @@
 ---
 name: build-seo-wins-backlog
-description: Consolidates the outputs of keyword research, intent classification, competitor analysis, and clustering into a scored, sequenced SEO wins backlog. Tags each opportunity by archetype (striking-distance, content gap, on-page, technical, refresh, link), applies ICE or RICE scoring, defines "done" per win, and produces a 90-day sequence. Use whenever the user asks "what should we work on first," "turn this into a backlog," "prioritise these opportunities," "build me a 90-day SEO plan," "what are the quick wins," or has finished strategy work and needs to convert it into action. Also use when reviewing existing SEO work and deciding what to ship next quarter. Do not use to do the underlying research — that's covered by the upstream skills (`generate-seed-keywords`, `classify-keyword-intent`, `audit-competitor-seo`, `cluster-keywords`).
+description: Use to build seo wins backlog; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Build SEO Wins Backlog

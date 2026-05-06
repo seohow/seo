@@ -1,6 +1,6 @@
 ---
 name: design-seo-experiment
-description: Designs a single structured SEO experiment with pre-registered hypothesis, variants (treatment vs matched control — typically split-pages, not split-traffic), sample / scope, pre-registered success criteria, pre-registered null criteria, confounder tracking plan, A/A reference / baseline-variance plan, SEO-safety review, statistical guardrails (sample size, effect-size detection, duration), and rollback plan. Output is the per-experiment brief that locks the design before launch — pre-registration is the discipline. Use whenever the user wants to "design an SEO experiment," "test if X works," "pre-register an SEO test," "structured SEO experiment," "title test at scale," "schema A/B test," "TL;DR experiment," "internal-linking test," or any SEO intervention they want to validate before rolling out broadly. Cadence: 1-2 experiments per quarter sustainable. Do not use to design UX A/B tests (use UX leaf 04 `plan-ab-test`), to plan content investment strategy (use `plan-link-magnet-strategy` or `assess-topical-authority`), to design citation-magnet content (use `design-citation-magnet-content` in AI SEO), or to audit existing pages (use the various AI SEO + Technical SEO audit skills).
+description: Use to design seo experiment; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Design SEO Experiment

@@ -1,6 +1,6 @@
 ---
 name: plan-digital-pr-campaign
-description: Produces a digital PR campaign plan covering angle archetype (original data / expert commentary / trend analysis / counter-narrative / "first" claim), newsworthiness validation, data plan (survey design / internal data analysis / public-source synthesis), asset list (report + executive summary + chart images + expert quotes + bio + brand fact sheet), target publication list (Tier 1-3 with named journalists who've covered the topic), embargo / exclusive strategy, pitch templates, follow-up cadence, success metrics (links earned per tier, audience reach, branded-search lift), and risk forecast. Output is the operating brief for a single 8-12-week PR campaign — the highest-yield off-page channel for most brands. Use whenever the user asks to "plan a PR campaign," "design our digital PR," "we want a Tier 1 link / press coverage," "build a PR pitch," "what data report should we publish," "design our PR angle," or has decided to invest in digital PR and needs the campaign spec. Also use when evaluating multiple candidate angles to pick the strongest. Do not use for reactive PR / journalist queries (use `set-up-haro-response-system`), guest posting (use `plan-guest-posting-campaign`), or to design the broader off-page strategy (use `plan-link-building-campaign`).
+description: Use to plan digital pr campaign; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Digital PR Campaign

@@ -1,6 +1,6 @@
 ---
 name: analyse-traffic-patterns
-description: Produces a structured quarterly traffic analysis covering channel mix (organic / direct / paid / social / email), page-type rollup (blog / PDP / collection / landing / tool / programmatic), cluster-level aggregation (mapping pages to clusters from the cluster map), segmentation (mobile vs desktop, new vs returning, geo), funnel analysis (session → engaged → conversion → revenue), anomaly detection (>20% MoM swings on important segments), "what changed" investigation (site / tracking / algorithm / campaign / seasonality / external events), and a prioritised action list with handoffs to other toolkit skills. Output is the analysis report stakeholders read — distinguishing pattern-recognition from dashboard reporting. Use whenever the user asks to "analyse our traffic," "do a quarterly traffic review," "what's happening with our traffic," "why is traffic up / down," "produce the QoQ analysis," "identify traffic patterns," or has data and wants insight beyond the dashboard. Also use as a quarterly cadence skill — the analysis-quality reporting cadence that drives strategic decisions. Do not use for monthly metrics rollup (less analysis, more dashboard — use `define-seo-kpis` to build the dashboard) or to audit GA4 setup (use `audit-ga4-setup`).
+description: Use to analyse traffic patterns; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Analyse Traffic Patterns

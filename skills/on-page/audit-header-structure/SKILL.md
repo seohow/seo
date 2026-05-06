@@ -1,6 +1,6 @@
 ---
 name: audit-header-structure
-description: Analyses a page's current H1/H2/H3 heading structure, flags structural issues (multiple H1s, skipped levels, generic or stuffed H2s, missed featured-snippet patterns), and proposes a restructured outline aligned to the page's target keyword cluster, search intent, and the SERP it competes in. Use whenever the user asks to "audit a page's headings," "fix the H structure on [URL]," "make this page snippet-eligible," "restructure the outline of [page]," or "review the H1/H2 on [URL]." Also use when the user is doing a content refresh, has a page underperforming for an informational/commercial cluster, or is preparing a page for FAQ/HowTo schema. Do not use to write the page's body content (`optimize-page-content`) or to generate the meta title (`generate-title-tags`) — this skill only restructures the heading outline.
+description: Use to audit header structure; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Header Structure

@@ -1,6 +1,6 @@
 ---
 name: audit-ai-content-readiness
-description: Produces a per-page audit of how well existing content is structured for AI extraction and citation by AI Overviews, Perplexity, ChatGPT search, Claude search, and Gemini. Audits priority pages against eight patterns — definitive opening sentence, inverted-pyramid lead, TL;DR / summary block on long content, question-led H2 / H3 headers, inline source citations on factual claims, visible freshness signals (last-updated date), entity proximity (named entities sit near the claims they support), and paragraph length — and produces a prioritised rewrite list with severity (critical / high / medium / low), effort estimate, and template-vs-page-level scope. Use whenever the user asks to "audit content for AI," "make content AI-friendly," "optimise for AI Overviews," "why aren't we showing up in ChatGPT / Perplexity," "AI citation audit," "rewrite for LLM extraction," or has a set of underperforming pages on AI-mediated SERPs. Also use as a quarterly content-health pass and as a pre-publish check baked into the standard content brief. Do not use to choose which queries to compete on (use `plan-generative-seo-strategy`), to design net-new content (use `design-citation-magnet-content`), or to audit entity / schema signals (use `audit-entity-optimisation`).
+description: Use to audit ai content readiness; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit AI Content Readiness

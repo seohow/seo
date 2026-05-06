@@ -1,6 +1,6 @@
 ---
 name: audit-ai-crawler-access
-description: Audits a site's AI-crawler access posture — checks robots.txt declarations against the major AI crawlers (GPTBot, ClaudeBot, Google-Extended, GoogleOther, PerplexityBot, CCBot, Applebot-Extended, Bytespider, ChatGPT-User, Claude-Web, etc.), validates llms.txt presence and quality, audits page-level noai/noimageai meta directives, and surfaces any gap between declared posture and actual config. Produces a remediation list aligned to the user's stated stance (open / visibility-only / strict-block). Use whenever the user asks to "audit AI bot access," "check robots.txt for AI crawlers," "are we blocking GPT/Claude/Gemini training," "validate our llms.txt," "we want to set up AI bot rules," or shares a robots.txt and wants AI-crawler review. Also use after a CMS theme update or migration when crawler rules can regress. Do not use to write content for AI visibility — that's `09. AI SEO / 03. Generative SEO` and `09. AI SEO / 05. LLM Visibility`.
+description: Use to audit ai crawler access; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit AI Crawler Access

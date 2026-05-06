@@ -1,6 +1,6 @@
 ---
 name: design-topic-cluster
-description: Converts a hub topic from the cluster map into a full pillar + spoke architecture. Identifies which spokes exist already vs. need to be built, produces the bidirectional internal-linking matrix (pillar→spokes, spokes→pillar, spoke↔spoke cross-links), flags duplicate or overlapping spokes for merge / re-scope, and outputs a sequencing plan. Use whenever the user asks to "design a topic cluster," "build the cluster around [topic]," "wire up our [topic] hub-and-spoke," "convert these blog posts into a topic cluster," "what should our cluster architecture look like for [topic]," or has decided a cluster is worth building and needs the architectural spec before commissioning content. Also use when consolidating a set of standalone blog posts into a structured cluster (the most common Field & Sun-style scenario). Do not use to design only the pillar (use `design-pillar-page` for that) or to plan blog content broadly (use `plan-blog-content`).
+description: Use to design topic cluster; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Design Topic Cluster

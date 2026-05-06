@@ -1,6 +1,6 @@
 ---
 name: classify-keyword-intent
-description: Tags a keyword list with search intent (informational / navigational / commercial / transactional / local), recommends a page type for each keyword, and flags mixed-intent queries that need SERP verification. Use whenever the user has a keyword list and asks "what type of page should this be," "what's the intent of these keywords," or "how should I sort these for content vs. product pages." Also use when the user is preparing to brief content, needs to map keywords to URL structure, or is splitting a keyword list between SEO and paid. Do not use to generate keywords (that's `generate-seed-keywords`) or to cluster them (that's `cluster-keywords`). This skill produces the intent + page-type tags that are inputs to clustering and content briefing.
+description: Use to classify keyword intent; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Classify Keyword Intent

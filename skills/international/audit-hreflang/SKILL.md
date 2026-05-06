@@ -1,6 +1,6 @@
 ---
 name: audit-hreflang
-description: Produces a Hreflang implementation audit covering syntax correctness, region / language code validity (catches the most common error — `uk` instead of `gb` for the UK), self-reference completeness (every page references itself), return-tag completeness (every A→B has B→A reciprocal), x-default presence, canonical alignment (Hreflang URLs match canonical exactly), URL consistency (https / trailing slash / www), implementation-method consistency (HTML tag vs HTTP header vs sitemap — one method per template), GSC International Targeting findings, and Hreflang-validator tool output (TechnicalSEO Hreflang Tester, Merkle, Sitebulb). Output is a prioritised remediation list with severity (critical / high / medium / low) and WCAG-style criterion mapping per issue. Use whenever the user asks to "audit Hreflang," "check international SEO setup," "is Hreflang correct," "UK visitors landing on US pages," "international ranking issues," "verify multi-language signalling," or operates in multiple markets and hasn't audited recently. Also use as a quarterly cadence skill — Hreflang implementations decay as new pages ship without Hreflang. Do not use to decide multi-language architecture (use `decide-multi-language-architecture`), broader geo-targeting (use `plan-geo-targeting`), or content localisation (use `plan-localisation`).
+description: Use to audit hreflang; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Hreflang

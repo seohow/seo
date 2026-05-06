@@ -1,6 +1,6 @@
 ---
 name: analyse-search-performance
-description: Produces a structured Google Search Console performance analysis covering top queries (clicks / impressions / position), top pages, decline detection (queries / pages losing significant position or impressions), CTR-opportunity identification (queries ranking with below-benchmark CTR), query ↔ page intersection, cluster-level rollup, and a prioritised insight list. Output is the GSC report stakeholders read; feeds Strategy (which clusters to double down on), Content SEO refresh prioritisation (which pages are decaying), and On-page SEO (which queries warrant title / description optimisation). Use whenever the user asks to "analyse search console," "what's working in GSC," "which queries are gaining or losing," "GSC report," "show me top queries," "which pages are declining," "identify CTR opportunities," "GSC quarterly review," or wants pattern-recognition over raw data. Also use as a quarterly cadence skill — quarterly GSC analysis catches decay early and feeds the refresh / wins backlogs. Do not use to audit GSC configuration (use `audit-search-console-setup`) or to set up rank tracking (use `set-up-rank-tracking`).
+description: Use to analyse search performance; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Analyse Search Performance

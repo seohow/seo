@@ -1,6 +1,6 @@
 ---
 name: plan-guest-posting-campaign
-description: Produces a guest-posting campaign plan covering target publications (Tier 1-3 with named publications + editor / contributor-page links + acceptance signals), pitch angles (4-6 specific, original, audience-relevant ideas tied to recent publication coverage), author byline strategy (which expert / founder / dermatologist for which angle), pitch-email templates, cadence (target placements per quarter), yield tracking, and a content-mill quality filter. Output is the operating brief for proactive guest-post outreach. Use whenever the user asks to "plan guest posting," "design our guest-post strategy," "which publications should we pitch," "build a contributor pipeline," "guest blog plan," or has decided to invest in guest posting and needs the campaign spec. Also use as a quarterly cadence skill — pitch angles refresh as news / seasonality / publication coverage changes. Do not use for digital-PR campaigns (use `plan-digital-pr-campaign`), reactive HARO responses (use `set-up-haro-response-system`), or to design the broader off-page strategy (use `plan-link-building-campaign`).
+description: Use to plan guest posting campaign; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Guest-Posting Campaign

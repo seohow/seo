@@ -1,6 +1,6 @@
 ---
 name: business-profile
-description: Creates or iteratively updates a business profile for use across the SEO toolkit. Use whenever the user is setting up a new business, wants to add or update information about their business, says "let's set up SEO for X," "I want to update my profile," "I launched a new product," "my goals changed," "here's more about my business," or when any other skill can't find a profile to work with. Also use when a profile exists but has gaps that are blocking a downstream skill. Supports three modes — Quick Start (new profile, minimal viable), Patch (add or change specific info), Gap Check (surface what's missing and why it matters).
+description: Use to create or patch a business workspace profile; resolves slugs from names and maintains business_profile.md plus AGENTS.md/CLAUDE.md.
 ---
 
 # Business Profile

@@ -1,6 +1,6 @@
 ---
 name: generate-seed-keywords
-description: Produces an initial seed keyword list (50-150 candidates) tailored to a specific business, ready to be expanded in a keyword tool. Use whenever the user needs starting keywords, asks "what keywords should I target," is staring at an empty Ahrefs/Semrush search box, is launching a new product or category, wants to brainstorm SEO angles, or needs to feed a keyword tool with seeds. Also use when the user wants to identify customer-language phrases, question-style queries, or competitor-adjacent terms. Do not use to do tool-based expansion (volume, KD, SERP analysis) — that's for the user to run in their preferred tool. This skill produces the high-quality starter list a tool would otherwise produce poorly from a one-word input.
+description: Use to generate seed keywords; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Generate Seed Keywords

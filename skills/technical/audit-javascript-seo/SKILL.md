@@ -1,6 +1,6 @@
 ---
 name: audit-javascript-seo
-description: Analyses a page for JavaScript rendering risks — compares source HTML against the rendered DOM, identifies SEO-critical content that's only available after JS executes, audits internal links for real `<a href>` anchors vs onClick handlers, flags JS-based redirects, and surfaces JS-injected widget content (reviews, FAQs, chat) that won't reliably index. Produces a prioritised remediation list with specific fixes per finding. Use whenever the user asks to "audit JavaScript SEO," "check if Google can render our pages," "investigate why content isn't indexing on our React/Next.js site," "we have a headless storefront and want to validate SEO," or shares a JS-heavy site URL. Also use when GSC reports "Crawled – currently not indexed" on a JS-heavy site, when FAQPage schema isn't earning rich results despite being present, or when a brand is migrating to a headless front-end. Do not use for pure-Liquid Shopify sites, default WordPress themes, or other server-rendered stacks where JS is decorative — the audit doesn't earn its time there.
+description: Use to audit javascript seo; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit JavaScript SEO

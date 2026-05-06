@@ -1,6 +1,6 @@
 ---
 name: audit-canonical-tags
-description: Analyses canonical tags across a URL list (from a crawler export, sitemap, or pasted data), surfaces missing canonicals, bad targets (canonicalising to 404 / 301 / noindex), pattern-level duplicates (parameter URLs, collection-prefixed duplicates, paginated pages), and signal conflicts between canonical / sitemap / internal links. Produces a prioritised remediation list grouped by issue type with implementation guidance per finding. Use whenever the user asks to "audit our canonicals," "check canonical tags," "fix canonical issues," "we have duplicate URLs in the index," "investigate 'Duplicate, Google chose different canonical' in GSC," or shares a crawler export and wants canonical analysis. Also use after a CMS update, theme change, or migration when canonical regressions are likely. Do not use to debug one specific URL's canonical (use GSC URL Inspection directly) — this skill earns its time at list scale (50+ URLs).
+description: Use to audit canonical tags; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Audit Canonical Tags

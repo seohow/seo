@@ -1,6 +1,6 @@
 ---
 name: decide-multi-language-architecture
-description: Produces the architectural decision document for multi-market SEO covering subdirectory vs subdomain vs ccTLD trade-off analysis (SEO equity inheritance, operational cost, geo-signal strength, brand integrity, market-specific norms, CMS compatibility), per-market recommendation with reasoning, migration-cost forecast if change is implied (currently single-market site moving to multi-market), staging plan (most brands should start subdirectory and migrate selectively to ccTLD when brand presence becomes the bottleneck), and required dependencies (Hreflang, per-market hosting, per-market analytics, per-market off-page strategy). Output is the decision artefact stored in the per-business AGENTS.md decisions log. Use whenever the user asks to "decide multi-language architecture," "subdomain vs subdirectory," "should we use ccTLDs," "international architecture for [market]," "we're expanding to [new markets]," or is about to launch in new markets and needs the architecture decision before any URL choices are baked in. Also use when re-evaluating an existing architecture (every 18-24 months as the brand grows). Do not use to audit Hreflang implementation (use `audit-hreflang`), broader geo-targeting (use `plan-geo-targeting`), or content localisation (use `plan-localisation`).
+description: Use to decide multi language architecture; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Decide Multi-Language Architecture

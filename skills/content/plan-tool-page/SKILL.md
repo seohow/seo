@@ -1,6 +1,6 @@
 ---
 name: plan-tool-page
-description: Evaluates whether a tool (calculator, quiz, finder, generator, comparison, checker) fits the brand and produces the design brief if so. Covers tool archetype, positioning, input / output logic, URL pattern, surrounding content (intro, methodology, FAQ), tech / engineering requirements, schema strategy, link-acquisition plan, and acceptance criteria. Use whenever the user asks to "plan a tool page," "design a calculator / quiz / finder," "we want to build a [tool type] for [topic]," "should we build a [topic] tool," "what would a [topic] quiz look like," "how do we make our [topic] page interactive," or has decided a tool is worth building and needs the design before commissioning engineering. Also use when evaluating multiple candidate tools to decide which to ship first. Do not use to actually build the tool (that's an engineering job; this produces the spec) or to plan a blog post / pillar (use `generate-content-brief` / `design-pillar-page`).
+description: Use to plan tool page; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Tool Page

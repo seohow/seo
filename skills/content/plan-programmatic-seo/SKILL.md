@@ -1,6 +1,6 @@
 ---
 name: plan-programmatic-seo
-description: Evaluates whether a programmatic SEO build fits the use case and produces a go / no-go decision with reasoning. Tests three viability gates (unique data, structured data, real searcher intent), evaluates archetype fit (glossary, comparison, location, listing, "for [persona]" page), estimates page count and search-demand ceiling, identifies thin-content risk, and recommends scope (start at 30-50 pages, scale based on quality). Output is the strategic decision document — green-light with archetype + scope recommendation, or red-light with reasoning. Use whenever the user asks to "evaluate programmatic SEO," "should we build a programmatic [pages]," "we want to scale our content with programmatic," "is programmatic right for [topic / business]," "what would programmatic look like for [use case]," or has heard about programmatic and is considering it. Also use to push back on aggressive programmatic ambitions when the data / intent / quality bar isn't there. Do not use to design the actual template (use `design-programmatic-template` after a green-light) or to plan editorial content (use `plan-blog-content`).
+description: Use to plan programmatic seo; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Plan Programmatic SEO

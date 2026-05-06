@@ -1,6 +1,6 @@
 ---
 name: define-seo-kpis
-description: Produces the SEO KPI definition document — hierarchy (executive / operating / diagnostic levels), per-KPI definition (formula, data source, target, owner, cadence), dashboard structure mockup (Looker Studio), review cadence proposal (weekly / monthly / quarterly meetings with agenda templates), and a recalibration plan. Output is the artefact that turns "we should track SEO" into "we operate SEO from this dashboard." Use whenever the user asks to "define our SEO KPIs," "what should we track," "build our marketing dashboard," "set up SEO reporting," "design a KPI dashboard," "what are the right SEO metrics for us," or has dashboards but needs to consolidate / focus them. Also use as an annual cadence skill — KPIs decay; the set should evolve as strategy evolves. Do not use to audit GA4 / GSC config (use `audit-ga4-setup` / `audit-search-console-setup`) or to do a quarterly traffic analysis (use `analyse-traffic-patterns`).
+description: Use to define seo kpis; resolves <slug> from businesses/, reads business_profile.md, asks if multiple, and writes outputs under the business workspace.
 ---
 
 # Define SEO KPIs
