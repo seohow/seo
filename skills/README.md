@@ -6,7 +6,7 @@ The wider playbook explains the SEO concepts. This `skills/` package contains th
 
 ## Install
 
-Install the setup skill first:
+Install the setup skills first:
 
 ```sh
 npx skills add seohow/seo
@@ -28,7 +28,9 @@ npx skills add seohow/seo/strategy --skill plan-keyword-research
 
 | Skill | Description |
 |---|---|
-| [business-profile](business-profile/SKILL.md) | Creates and maintains `businesses/<slug>/business_profile.md` — the shared context file every toolkit skill reads from. Use it to quick-start a new business profile, patch specific sections as your business changes, or run a gap check to see what's missing. Run before topic skills if no profile exists. |
+| [business-context](business-context/SKILL.md) | Creates and maintains `businesses/<slug>/business_context.md` — the company-wide AI context file used by SEO and non-SEO skills. Run this first for new businesses, products, service lines, or parent-company workspaces. |
+| [seo-foundation](seo-foundation/SKILL.md) | Creates and maintains `businesses/<slug>/seo_foundation.md` — the SEO-specific layer that references the business context and captures goals, baseline, search competitors, platform, and priorities. Run this before topic SEO skills. |
+| [business-profile](business-profile/SKILL.md) | Legacy migration helper for old `business_profile.md` workspaces. Use it to split an existing all-in-one profile into `business_context.md` and `seo_foundation.md`. |
 
 After that, work through the categories in order if you are building an SEO program from scratch, or jump to the category that matches the problem in front of you.
 

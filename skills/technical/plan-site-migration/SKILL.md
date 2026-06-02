@@ -27,7 +27,7 @@ The plan is opinionated about a few things: pre-migration baseline is non-negoti
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: business model (2), products/services (3), CMS / platform (5), goals (7).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: business model (2), products/services (3), CMS / platform (5), goals (7).
 2. **Migration scope** — what's changing. Specifically:
    - Type of migration (re-platform, rebrand, URL restructure, sub-domain consolidation, HTTPS).
    - Source state: current platform, current domain, current URL conventions, approximate URL count.

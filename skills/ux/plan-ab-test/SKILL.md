@@ -26,14 +26,14 @@ The skill is opinionated about a few things: pre-registered sample size + no mid
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), goals (7).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: products/services (3), goals (7).
 2. **Hypothesis** — required. What's being tested + why + expected outcome.
 3. **Page / template + URL** — required. Where the test runs.
 4. **Current traffic on page** — required. Visitors / month or week.
 5. **Baseline conversion rate** — required. Current rate of the primary metric.
 6. **A/B testing tool** — required. Optimizely / VWO / Convert / etc. or stack-specific.
 7. **Conversion-tracking confidence** — required. Reliable per `audit-conversion-tracking`?
-8. **Brand voice constraints** — read from business profile.
+8. **Brand voice constraints** — read from business context and SEO foundation.
 
 If hypothesis + traffic + baseline are missing, ask. Test plan can't be calculated without them.
 

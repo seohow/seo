@@ -60,7 +60,7 @@ By the end of pass 1 you should know exactly which of your URLs Google is crawli
 
 Most technical-SEO work doesn't strictly require Strategy outputs, but it benefits from them:
 
-- `businesses/<slug>/business_profile.md` — the platform field (Shopify / WordPress / custom Next.js / etc.) determines which technical patterns apply.
+- `businesses/<slug>/seo_foundation.md` — the platform field (Shopify / WordPress / custom Next.js / etc.) determines which technical patterns apply.
 - `businesses/<slug>/clusters/cluster-map.md` — when prioritising indexing, schema, or site-speed work, the cluster map identifies which pages matter most.
 - Output of **[02. On-page SEO](../02.%20On-page%20SEO/README.md)** work — technical SEO ensures the on-page work you shipped can actually be crawled, indexed, and served fast.
 

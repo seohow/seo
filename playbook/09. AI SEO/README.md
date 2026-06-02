@@ -55,7 +55,7 @@ If you're working through this category for the first time, the highest-leverage
 
 The AI SEO category consumes outputs from earlier categories:
 
-- `businesses/<slug>/business_profile.md` — products, customer pains, brand voice (sections 3, 4, 8).
+- `businesses/<slug>/business_context.md` — products, customer pains, and brand voice.
 - `businesses/<slug>/clusters/cluster-map.md` — topic clusters identify which queries to compete on.
 - `businesses/<slug>/keyword-research/*` — query inventory + intent classification.
 - `businesses/<slug>/competitor-analysis/*` — competitor citation share is part of the LLM Visibility baseline.

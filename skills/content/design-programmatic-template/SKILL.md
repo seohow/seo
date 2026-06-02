@@ -25,7 +25,7 @@ The skill is opinionated about a few things: every page needs substantive unique
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), brand voice (8).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: products/services, customer, and brand voice from `business_context.md`.
 2. **Programmatic evaluation** — read `businesses/<slug>/programmatic/<use-case-slug>-evaluation.md` (output of `plan-programmatic-seo`). Required. Confirms the build is green-lit.
 3. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Programmatic pages often anchor to a topic cluster.
 4. **Archetype** — confirmed from the evaluation (glossary, comparison, location, listing, "for [persona]").

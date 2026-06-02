@@ -25,13 +25,13 @@ The skill is opinionated about a few things: machine translation alone is insuff
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), brand voice (8).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: products/services, customer, and brand voice from `business_context.md`.
 2. **Markets in scope** — required.
 3. **Architecture decision** — required. From `decide-multi-language-architecture`.
 4. **Budget tier** — required. Affects translation method.
 5. **Existing localized content** — optional. If any market already has content, audit quality.
 6. **Regulatory exposure** — required. EU presence triggers GDPR / Cookie Directive / EU Accessibility Act / country-specific.
-7. **Brand voice constraints** — read from business profile.
+7. **Brand voice constraints** — read from business context and SEO foundation.
 
 If markets + budget are missing, ask. Localization plan is anchored to specific markets with specific budget.
 

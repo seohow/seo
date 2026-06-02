@@ -26,7 +26,7 @@ The skill is opinionated about a few things: 5 executive KPIs + 8-12 operating K
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), goals (7), brand voice (8). Goals are the ladder KPIs roll up to.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: products/services and brand voice from `business_context.md`, plus SEO goals from `seo_foundation.md`. Goals are the ladder KPIs roll up to.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Cluster-level KPIs need the cluster set.
 3. **Existing dashboards** — optional. If present, review for "what to keep, what to consolidate, what to remove."
 4. **Stakeholder list** — required. Who reviews KPIs at what level? Typically: founder / CEO (executive), marketing lead (operating), SEO specialists (diagnostic).
@@ -273,7 +273,7 @@ Save the produced file to `businesses/<slug>/analytics/seo-kpis-[YYYY].md`. Crea
 
 ## Example
 
-**Input (abbreviated):** Field & Sun. Goals (from profile section 7): grow organic revenue from $400k → $700k QoQ; double sun-care cluster traffic; lift PDP organic conversion rate from 1.4% to 1.8%. Cluster map: 28 clusters; 6 priority.
+**Input (abbreviated):** Field & Sun. Goals (from SEO foundation goals and constraints): grow organic revenue from $400k → $700k QoQ; double sun-care cluster traffic; lift PDP organic conversion rate from 1.4% to 1.8%. Cluster map: 28 clusters; 6 priority.
 
 **Output (abbreviated):**
 

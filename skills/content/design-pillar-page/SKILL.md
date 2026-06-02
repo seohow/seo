@@ -26,11 +26,11 @@ The skill is opinionated about a few things: pillars target broad head terms, no
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), competitors (6), goals (7), brand voice (8). Brand voice and brand-distinct angle drive the design.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: products/services, customer, competitors, and brand voice from `business_context.md`, plus SEO goals and search competitors from `seo_foundation.md`. Brand voice and brand-distinct angle drive the design.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Required. Identifies which clusters warrant a pillar and what spokes they contain.
 3. **Pillar topic + primary keyword** — required. The user identifies which cluster's pillar they want to design. Skill confirms the head-term primary keyword.
 4. **Existing spoke pages** — list of currently-published or calendar-planned blog posts that would be spokes under this pillar. Use the cluster map + blog calendar.
-5. **Domain rating + competitive context** — optional but valuable. The pillar's realistic ranking ceiling depends on DR vs. SERP top 5. Pull from the business profile or ask.
+5. **Domain rating + competitive context** — optional but valuable. The pillar's realistic ranking ceiling depends on DR vs. SERP top 5. Pull from the business context and SEO foundation or ask.
 6. **Format preference** — narrative pillar (long-form essay structure, ~3,500-5,500 words) or modular pillar (table-of-contents structure with collapsible sections, ~5,000-8,000 words). Default: narrative for brand voice; modular for technical / reference content.
 
 If cluster map or pillar topic is missing, ask. The brief is anchored to a specific cluster.

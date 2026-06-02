@@ -25,7 +25,7 @@ The output is meant to be implemented directly: a new H1, an ordered list of H2s
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections for this skill: products/services (3), customer (4), brand voice (8). Section 8 affects how H2s are phrased.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields for this skill: products/services, customer, and brand voice from `business_context.md`. Brand voice affects how H2s are phrased.
 2. **The page** — at minimum a URL. Ideally also: the current H1/H2/H3/H4 structure as a list (the user can paste it from their CMS or browser DevTools), and a summary of the body content under each H2 (1-2 sentences each). If only a URL is provided, ask the user to paste the heading list — don't fabricate it.
 3. **Target cluster** — primary keyword + 3-8 supporting keywords for the page. Default source: `businesses/<slug>/clusters/cluster-map.md`. If a cluster doesn't exist, ask for the primary keyword and intent before proceeding.
 4. **Intent** — informational / commercial / transactional. Default source: same cluster map. Intent dictates the recommended H-pattern (question-form vs. functional sections).

@@ -13,7 +13,7 @@ Each topic heading links back to the playbook explanation. Each skill link opens
 | Skill | Description |
 |---|---|
 | [plan-keyword-research](plan-keyword-research/SKILL.md) | Scopes a keyword research project for your business: which seed lists to start from, which tools to use, what the deliverable should look like, and how long it should take. |
-| [generate-seed-keywords](generate-seed-keywords/SKILL.md) | Produces an initial seed keyword list (50–100 candidates) from your business profile, ready to be expanded in your keyword tool of choice. |
+| [generate-seed-keywords](generate-seed-keywords/SKILL.md) | Produces an initial seed keyword list (50–100 candidates) from your business context and SEO foundation, ready to be expanded in your keyword tool of choice. |
 
 ## [Search Intent](../../playbook/01.%20Strategy/02.%20Search%20Intent.md)
 

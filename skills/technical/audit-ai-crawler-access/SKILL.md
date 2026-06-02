@@ -25,7 +25,7 @@ The skill is opinionated: every relevant AI bot needs an explicit decision (allo
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: business model (2), CMS / platform (5).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: business model (2), CMS / platform (5).
 2. **Stated posture** — required. One of:
    - **Open**: allow all AI bots (training + retrieval).
    - **Visibility-only**: allow retrieval bots, block training bots.

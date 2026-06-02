@@ -26,7 +26,7 @@ The skill is opinionated: pre-registration is non-negotiable; split-pages with m
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 5 (current SEO state — for baseline metrics), 7 (constraints — informs feasible experiment scope).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Sections this skill cares about most: 5 (current SEO state — for baseline metrics), 7 (constraints — informs feasible experiment scope).
 2. **Experiment candidate / hypothesis** — required. The intervention being tested + the team's hypothesis. The skill will tighten the phrasing, but the hypothesis itself comes from the user.
 3. **Available pages / sample frame** — required. Which pages are candidates for treatment + control? Need access to enough pages to meet sample size requirements.
 4. **Baseline metric data** — required. Current performance on the metric (CTR, ranking, citation rate, traffic) for the candidate pages over a relevant pre-experiment window. Used for matching + variance estimation.

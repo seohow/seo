@@ -27,7 +27,7 @@ The skill is opinionated: query set must be balanced (branded + unbranded; head 
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 1 (brand identity for branded queries), 3 (products for product-specific queries), 4 (customer pains + questions for unbranded queries), 6 (competitors for share-of-voice), 7 (markets — same query may behave differently in different markets).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Sections this skill cares about most: 1 (brand identity for branded queries), 3 (products for product-specific queries), 4 (customer pains + questions for unbranded queries), 6 (competitors for share-of-voice), 7 (markets — same query may behave differently in different markets).
 2. **Cluster context** — required. Which clusters are in scope? Cross-reference `clusters/cluster-map.md`. Don't audit the whole site at once.
 3. **Query set** — required (or built fresh on first audit). 30-100 queries balanced across:
    - **Branded:** "Field & Sun reviews," "Daily Glow Serum ingredients," "Mineral Sun Drops vs [competitor]."

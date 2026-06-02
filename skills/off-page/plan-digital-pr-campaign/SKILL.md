@@ -25,7 +25,7 @@ The skill is opinionated about a few things: original-data PR is the highest-rel
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), competitors (6), goals (7), brand voice (8).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: products/services, customer, competitors, and brand voice from `business_context.md`, plus SEO goals and search competitors from `seo_foundation.md`.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Campaign should ladder to a priority cluster.
 3. **Link-building plan** — read `businesses/<slug>/off-page/link-building-plan-*.md` if it exists. PR is one channel within it.
 4. **Available expertise** — required. Founder, internal experts, advisors (dermatologist, scientist, etc.), researchers. Affects credibility layer.

@@ -118,6 +118,13 @@
 - Three audit skills (`audit-ga4-setup`, `audit-search-console-setup`, `audit-conversion-tracking`) all use the same P0 / P1 / P2 severity grammar with root-cause / impact / fix / effort / verification per finding. Pattern is portable to future audit-shaped skills.
 - Triangulation as a quality bar: every audit + analysis skill explicitly compares GA4 vs source-of-truth (Shopify / payment processor / CRM), with ≤5% acceptable / 5-10% investigate / >10% likely measurement issue.
 - Cadence is named explicitly: weekly (15-30 min) + monthly (60-90 min) + quarterly (3-4 hr) + annual (half-day). Skills feed into the cadence rather than producing one-off outputs.
+
+### 2026-06-02 — Business profile split into context + SEO foundation
+
+- Decided the old all-in-one `business_profile.md` contract had become overloaded: company facts, product architecture, positioning, brand voice, SEO baseline, SEO goals, CMS constraints, and search competitors were competing inside one file.
+- New setup flow: `business-context` creates `business_context.md` for company-wide AI context; `seo-foundation` creates `seo_foundation.md` for SEO-specific operating context that references the business context.
+- Kept `business-profile` as a legacy migration helper so old workspaces can be split without deleting `business_profile.md`.
+- Parent/product relationships are now first-class. Product workspaces should reference parent context, list inherited facts, and capture entity-specific overrides instead of duplicating parent-company truths.
 - `.gitkeep` count: 33 (post-Content SEO) → 27 (after Analytics). 27 leaves remaining across 5 categories.
 
 ### 2026-05-01 — Off-page SEO category complete (Category 6 of 10)

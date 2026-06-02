@@ -26,7 +26,7 @@ The skill is opinionated: it always produces multiple variants (forces compariso
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections for this skill: products/services (3), customer (4), brand voice (8). If section 8 is blank, marked unknown, or marked `not yet captured`, ask for the tone in 1-2 sentences before generating variants.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields for this skill: products/services, customer, and brand voice from `business_context.md`. If brand voice is blank, marked unknown, or marked `not yet captured`, ask for the tone in 1-2 sentences before generating variants.
 2. **Page(s) to optimise** — one URL or a list. For each: the page URL, the page's purpose / what it sells or covers, and the current title (if it exists). If the user has a list of pages without context, ask whether to fetch the current titles from a sitemap export or to operate with just URLs.
 3. **Target cluster** — for each page, the primary keyword and 3-8 supporting keywords. Default source: `businesses/<slug>/clusters/cluster-map.md`. If a cluster doesn't exist for the page, ask the user for the primary keyword (and ideally intent) inline before generating.
 4. **Intent** — informational / commercial / transactional / navigational. Default source: same cluster map. If unclear, run a quick SERP read with the user before generating titles.
@@ -139,7 +139,7 @@ Save the produced file to `businesses/<slug>/titles/<page-slug-or-batch-name>.md
 - Don't pick the keyword-stuffed variant just because it has the keyword three times. Modern Google reads naturally.
 - Don't ignore the SERP read. Variants that don't match the SERP's dominant pattern often fail to earn clicks regardless of how clever they are.
 - Don't propose titles longer than 60 characters without flagging the truncation explicitly. The variant might still win — but the user should know what gets cut.
-- Don't fabricate a brand voice the user didn't specify. If section 8 of the profile is blank, marked unknown, or marked `not yet captured`, ask. Don't infer.
+- Don't fabricate a brand voice the user didn't specify. If business context brand voice is blank, marked unknown, or marked `not yet captured`, ask. Don't infer.
 - Don't recommend a year-stamped title for evergreen product or service pages. Year stamping is a commercial-content tactic, not a universal one.
 - Don't generate variants for a page without an intent. Intent dictates the pattern; without it, you're guessing.
 - Don't assume the H1 must match the title. They can; they don't have to. Note the relationship in the recommendation if relevant.

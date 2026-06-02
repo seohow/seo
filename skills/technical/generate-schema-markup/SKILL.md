@@ -25,7 +25,7 @@ The skill is opinionated: never fabricate data; always link required-property va
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: identity (1) for Organization data; products/services (3) for Product schema.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: identity (1) for Organization data; products/services (3) for Product schema.
 2. **Schema strategy (optional but valuable)** — read `businesses/<slug>/schema/strategy.md` if it exists. Aligns the generated schema to the strategic plan.
 3. **The page** — URL + the data the schema needs:
    - **For Product schema:** product name, description, images (URLs), SKU, brand, price, currency, availability, review count + average rating (if AggregateRating is included).

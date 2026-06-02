@@ -58,7 +58,7 @@ The Off-page category consumes outputs from earlier categories:
 
 - `businesses/<slug>/clusters/cluster-map.md` — link building should target clusters; non-cluster-aligned links are usually wasted.
 - `businesses/<slug>/competitor-analysis/scope.md` — competitor link profiles are the starting point for prospect lists.
-- `businesses/<slug>/business_profile.md` — sections 4 (customer), 6 (competitors), 7 (goals), 8 (brand voice) all drive off-page strategy.
+- `businesses/<slug>/business_context.md` for customer, commercial competitors, and brand voice, plus `businesses/<slug>/seo_foundation.md` for SEO goals and search competitors all drive off-page strategy.
 - `businesses/<slug>/pillars/` and `businesses/<slug>/tools/` — pillar pages and tool pages are the most-linkable assets; off-page strategy depends on them existing.
 
 It produces inputs for downstream categories:

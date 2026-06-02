@@ -24,7 +24,7 @@ The skill is opinionated: only verified Googlebot traffic counts (user-agent + I
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: business model (2), CMS / platform (5). Confirm logs are accessible on this stack.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: business model (2), CMS / platform (5). Confirm logs are accessible on this stack.
 2. **Log export** — required. CSV, TSV, or pasted log lines. Required columns / fields: timestamp, user-agent, URL, status code. Useful additions: response time, bytes, referrer, source IP. The user pulls this from their hosting provider's log access.
 3. **Time window** — at least 30 days. Ideally 60-90.
 4. **URL inventory (optional but valuable)** — sitemap export + crawler export so the skill can identify orphan URLs (in logs but not in inventory) and under-crawled URLs (in inventory but rarely or never in logs).

@@ -27,7 +27,7 @@ The skill is opinionated about a few things: not every piece deserves the evergr
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), competitors (6), brand voice (8). Voice + competitive positioning drive the longevity case.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: products/services, customer, competitors, and brand voice from the setup files. Voice + competitive positioning drive the longevity case.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Evergreen pieces typically anchor a cluster.
 3. **Topic + primary keyword** — required. The keyword should be evergreen-leaning (no year stamp, durable search demand).
 4. **Longevity hypothesis** — required. The user's case for why this piece can compound. Skill validates / pushes back.

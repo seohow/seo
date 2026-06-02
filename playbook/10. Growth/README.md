@@ -54,7 +54,7 @@ If you're working through this category for the first time, the highest-leverage
 
 The Growth category consumes outputs from earlier categories:
 
-- `businesses/<slug>/business_profile.md` — products, customer pains, competitor landscape, goals, constraints (every section).
+- `businesses/<slug>/business_context.md` for products, customer pains, competitors, and voice, plus `businesses/<slug>/seo_foundation.md` for goals, baseline, and constraints.
 - `businesses/<slug>/clusters/cluster-map.md` — cluster strategy informs topical-authority investment.
 - `businesses/<slug>/keyword-research/*` — query inventory.
 - `businesses/<slug>/competitor-analysis/*` — competitor authority benchmark.

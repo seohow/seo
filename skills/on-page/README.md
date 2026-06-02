@@ -12,13 +12,13 @@ Each topic heading links back to the playbook explanation. Each skill link opens
 
 | Skill | Description |
 |---|---|
-| [generate-title-tags](generate-title-tags/SKILL.md) | Takes a page URL (or proposed page), the target cluster, and the business profile; produces 4-6 scored title-tag variants with explicit reasoning, plus a recommendation. Optionally runs at list scale on a backlog of priority pages. |
+| [generate-title-tags](generate-title-tags/SKILL.md) | Takes a page URL (or proposed page), the target cluster, and the business context and SEO foundation; produces 4-6 scored title-tag variants with explicit reasoning, plus a recommendation. Optionally runs at list scale on a backlog of priority pages. |
 
 ## [Descriptions](../../playbook/02.%20On-page%20SEO/02.%20Descriptions.md)
 
 | Skill | Description |
 |---|---|
-| [generate-meta-descriptions](generate-meta-descriptions/SKILL.md) | Takes a page URL, target cluster, intent, and business profile; produces 3-4 scored description variants with reasoning and a recommendation. Runs at single-page or batch scale. |
+| [generate-meta-descriptions](generate-meta-descriptions/SKILL.md) | Takes a page URL, target cluster, intent, and business context and SEO foundation; produces 3-4 scored description variants with reasoning and a recommendation. Runs at single-page or batch scale. |
 
 ## [Header Structure](../../playbook/02.%20On-page%20SEO/03.%20Header%20Structure.md)
 
@@ -50,4 +50,4 @@ Each topic heading links back to the playbook explanation. Each skill link opens
 
 | Skill | Description |
 |---|---|
-| [optimize-page-content](optimize-page-content/SKILL.md) | Takes a page (URL + current content), the target cluster, the SERP context, and the business profile, and produces a structured rework plan: which sections to add/expand/cut, brand-distinct angles to introduce, format changes, E-E-A-T signal recommendations, and either a section-by-section outline or a draft rewrite (the user picks the depth of output). |
+| [optimize-page-content](optimize-page-content/SKILL.md) | Takes a page (URL + current content), the target cluster, the SERP context, and the business context and SEO foundation, and produces a structured rework plan: which sections to add/expand/cut, brand-distinct angles to introduce, format changes, E-E-A-T signal recommendations, and either a section-by-section outline or a draft rewrite (the user picks the depth of output). |

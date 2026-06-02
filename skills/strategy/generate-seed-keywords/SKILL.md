@@ -1,6 +1,6 @@
 ---
 name: generate-seed-keywords
-description: Generates 50–100 seed keywords from the business profile, ready for tool-based expansion. Use when starting keyword research cold or when the initial keyword set is missing.
+description: Generates 50–100 seed keywords from the business context and SEO foundation, ready for tool-based expansion. Use when starting keyword research cold or when the initial keyword set is missing.
 ---
 
 # Generate Seed Keywords
@@ -28,7 +28,7 @@ The reason this skill exists: keyword tools amplify whatever you put in. Feed th
 
 Before producing the list, gather:
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` like this: list the `businesses/` folder; if exactly one business folder exists, use it; if multiple, ask which business this is for; if none, recommend running `business-profile` first and stop. The critical sections for this skill are products/services (3), customer (4), competitors (6), and goals (7). If any of those are blank, marked unknown, or marked `not yet captured`, ask the user inline before producing seeds.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. The critical fields for this skill are products/services and customer pains from `business_context.md`, plus SEO goals and search competitors from `seo_foundation.md`. If any of those are blank, marked unknown, or marked `not yet captured`, ask the user inline before producing seeds.
 2. **Focus area** (optional but useful) — is this for the whole business, or a specific category, product launch, or content theme? A focused seed list outperforms a broad one.
 3. **Language and market** — defaults from the profile if set; ask if not.
 
@@ -99,13 +99,13 @@ Save the produced file to `businesses/<slug>/keyword-research/seed-keywords.md`.
 - Customer-language phrasing dominates over corporate phrasing. "Vitamin C serum for dark spots" beats "bioactive radiance complex."
 - All six dimensions are populated, not just products.
 - Priority seeds are explicitly justified.
-- The list is tailored to this business — at least one seed in each dimension references something specific from the business profile (a product name, a competitor, a customer pain).
+- The list is tailored to this business — at least one seed in each dimension references something specific from the business context and SEO foundation (a product name, a competitor, a customer pain).
 
 ## Common mistakes to avoid
 
 - Don't produce only product-name seeds. The most missed dimension is *customer pains and questions* — these are the seeds that unlock long-tail content opportunities. For example, "does mineral sunscreen leave white cast" unlocks more value than just "mineral sunscreen."
 - Don't pad the list. 50 thoughtful seeds beat 200 generic ones.
-- Don't invent competitor names. If the business profile doesn't list competitors, ask.
+- Don't invent competitor names. If the business context and SEO foundation doesn't list competitors, ask.
 - Don't try to estimate volume or difficulty — that's what the keyword tool is for. Stay in your lane.
 - Don't translate seeds into a language without confirming. If the market is non-English, ask for the user's preferred starting language.
 

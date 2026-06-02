@@ -57,7 +57,7 @@ The Content SEO category consumes outputs from earlier categories:
 
 - `businesses/<slug>/clusters/cluster-map.md` — defines what to build. Every new page should target a cluster.
 - `businesses/<slug>/intent-classification/classified-keywords.md` — intent dictates page type. Informational → blog/pillar; commercial → comparison/roundup; transactional → product/collection (handled in On-page).
-- `businesses/<slug>/business_profile.md` — sections 4 (customer), 7 (goals), 8 (brand voice) drive the content strategy.
+- `businesses/<slug>/business_context.md` for customer and brand voice, plus `businesses/<slug>/seo_foundation.md` for SEO goals drive the content strategy.
 
 It produces inputs for downstream categories:
 

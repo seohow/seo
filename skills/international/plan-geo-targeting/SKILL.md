@@ -25,7 +25,7 @@ The skill is opinionated about a few things: Hreflang is required but not suffic
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), markets / geographic operations.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: products/services (3), markets / geographic operations.
 2. **Markets in scope** — required.
 3. **Architecture** — required (subdirectory / subdomain / ccTLD per market).
 4. **Existing Hreflang audit** — strongly preferred. From `audit-hreflang`.

@@ -26,7 +26,7 @@ The skill is opinionated about a few things: every win has a definition of done;
 ## Inputs required
 
 1. **Strategy inputs** — any combination of: cluster map (from `cluster-keywords`), competitor opportunity list (from `audit-competitor-seo`), striking-distance keyword list (typically a GSC queries export filtered to positions 11-30), technical audit findings, refresh candidates (existing pages with traffic decay), link prospects.
-2. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. The profile drives Impact scoring (alignment to goals in section 7) and Fit scoring (alignment to brand voice in section 8 and team/resourcing constraints).
+2. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. The setup files drive Impact scoring (alignment to SEO goals) and Fit scoring (alignment to brand voice and team/resourcing constraints).
 3. **Time horizon** — default to 90 days. Ask if the user wants a different horizon (30/60/180).
 4. **Resourcing** — how many hours/week the team can dedicate, who can do content vs technical vs link work. Drives realistic sequencing.
 5. **Scoring framework preference** — ICE (default) or RICE. Ask only if it matters; default to ICE.
@@ -44,7 +44,7 @@ If the only strategy input is a vague "we want more SEO," push back and recommen
    - **Refresh** — existing page with traffic decay; update content, expand sections, re-publish.
    - **Link** — outreach to a specific publication, partnership, or digital PR opportunity.
 3. **Score each row on Impact / Effort / Confidence (ICE).** Use 1-5 scales:
-   - **Impact** — expected traffic / revenue lift if it succeeds. Calibrate against the business profile (a P0 product cluster scoring 5; a low-volume informational refresh scoring 2).
+   - **Impact** — expected traffic / revenue lift if it succeeds. Calibrate against the business context and SEO foundation (a P0 product cluster scoring 5; a low-volume informational refresh scoring 2).
    - **Effort** — total person-hours, where 1 = under a day and 5 = multi-week project. Lower is better.
    - **Confidence** — how sure you are it will work. 5 = high (e.g. striking-distance with strong on-page signals), 1 = speculative.
    - Compute **Score = Impact × Confidence / Effort**. (For RICE: Reach × Impact × Confidence / Effort.) Don't fake precision — Score is for ordering, not absolute valuation.

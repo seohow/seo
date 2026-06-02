@@ -27,11 +27,11 @@ The skill is opinionated about a few things: split by intent before clustering, 
 ## Inputs required
 
 1. **Keyword list with intent tags** — at minimum, columns for keyword, search volume, and intent (informational / commercial / transactional / navigational / local). Page-type tags are very helpful but optional. CSV, table, or pasted text. If intent is missing, ask the user to run `classify-keyword-intent` first.
-2. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. The profile is used to map clusters to existing/proposed URLs and to filter out-of-scope clusters. If section 3 (products/services) is blank, marked unknown, or marked `not yet captured`, ask before mapping clusters to URL paths.
+2. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. The profile is used to map clusters to existing/proposed URLs and to filter out-of-scope clusters. If section 3 (products/services) is blank, marked unknown, or marked `not yet captured`, ask before mapping clusters to URL paths.
 3. **Existing site structure (optional but valuable)** — a list of existing URLs the clusters might map to. If not provided, the skill produces proposed URLs only and flags the need for a manual mapping pass.
 4. **Tool / method preference (optional)** — whether the user wants SERP-overlap clustering on the top keywords (more rigorous, requires SERP checks) or topical/semantic grouping (faster, less rigorous). Default to topical grouping with a SERP-overlap recommendation for the top ~20%.
 
-If intent tags or the business profile are missing, ask before clustering.
+If intent tags or the business context and SEO foundation are missing, ask before clustering.
 
 ## Process
 

@@ -27,7 +27,7 @@ The skill is opinionated: scale the system, not just writer count; bottleneck is
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 7 (goals + constraints — content production budget is in section 7), 8 (brand voice — voice review depends on this).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Fields this skill cares about most: SEO goals and operating constraints from `seo_foundation.md`, plus brand voice from `business_context.md`.
 2. **Topical-authority plan** — strongly recommended. If `growth/topical-authority-assessment-*.md` exists, consume it for production-volume target. If not, ask user for the volume target.
 3. **Current production state** — required. Current volume per cadence (e.g. 4 posts/month); current writer count + role; current bottleneck (if known); current pipeline stages (topic → brief → draft → review → publish → promote); current cost.
 4. **Target production volume** — required. Target posts / month, broken by content type if applicable (long-form pillar / cluster spoke / refresh / programmatic / commercial PDP copy).
@@ -53,7 +53,7 @@ If target volume or budget constraint is missing, ask. Don't produce a fantasy p
    - **Brief production:** content strategist hire (in-house or contracted); brief template v2; AI-assisted research where appropriate.
    - **Writer capacity:** stable bench design (3-5 vetted writers); avoid marketplace cycling; freelancer trial process; voice onboarding plan per writer.
    - **Editorial review:** tiered review (senior on top 25% / pillar / Pick / commercial; mid-level on cluster fill); explicit hour budget per piece.
-   - **Brand-voice review:** standalone step; voice rubric drafted from profile section 8; ~30 min/piece.
+   - **Brand-voice review:** standalone step; voice rubric drafted from business context brand voice; ~30 min/piece.
    - **Technical SEO review:** standalone step; pre-publish checklist (schema, internal linking, on-page, mobile, freshness); ~20 min/piece.
    - **Promotion:** dedicated bandwidth (4-8 hr/week minimum); cross-reference Off-page leaf 05 outreach manual.
    - **Refresh:** 20-30% of total capacity allocated explicitly.
@@ -146,7 +146,7 @@ If target volume or budget constraint is missing, ask. Don't produce a fantasy p
 - **Quality gate:** editorial first-pass acceptance rate ≥80%; pieces below standard go back to writer with feedback.
 
 ### Brand-voice review (NEW STANDALONE STAGE)
-- **Solution:** Marketing lead owns. Voice rubric drafted (tied to profile section 8): ingredient-led; plain-language; specific; warm and knowledgeable; reject vague category language, unsupported safety claims, and inflated promise language.
+- **Solution:** Marketing lead owns. Voice rubric drafted (tied to business context brand voice): ingredient-led; plain-language; specific; warm and knowledgeable; reject vague category language, unsupported safety claims, and inflated promise language.
 - **Hour budget:** ~30 min/piece.
 - **Quality gate:** voice rubric pass rate ≥95%; below-threshold pieces go back to writer.
 
@@ -231,7 +231,7 @@ Save the produced file to `businesses/<slug>/growth/content-scaling-plan-[YYYY-Q
 - Cost estimate detailed by line item.
 - 90-day rollout sequenced.
 - Quarterly KPIs defined with specific targets.
-- Voice rubric reference matches profile section 8 (Field & Sun reject list explicit).
+- Voice rubric reference matches business context brand voice (Field & Sun reject list explicit).
 - Risks + watchouts cover the 4-5x cost ratio + executive sponsorship requirement.
 
 ## Common mistakes to avoid

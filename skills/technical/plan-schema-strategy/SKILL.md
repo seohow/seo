@@ -25,7 +25,7 @@ The strategy is opinionated about a few things: start with the schema types that
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: business model (2), products/services (3), CMS / platform (5).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: business model (2), products/services (3), CMS / platform (5).
 2. **Site page-type inventory** — what page types the site has and approximately how many of each. For Field & Sun's stack: products (8), collections (4), blog posts (~25), FAQ pages, About, Contact. Ask if not clear from the profile.
 3. **Existing rich-result performance (optional but valuable)** — GSC → Enhancements report shows which schema types Google has detected and any errors. If available, references the existing baseline.
 4. **CMS / template constraints** — Shopify Sense theme has limited structured-data hooks; WooCommerce is more flexible; Webflow custom; etc. The plan adapts.

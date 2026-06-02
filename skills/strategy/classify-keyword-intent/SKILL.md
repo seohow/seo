@@ -26,7 +26,7 @@ The skill applies the four-intent taxonomy (plus local where relevant), maps eac
 ## Inputs required
 
 1. **Keyword list** — a list of keywords. Pasted text, CSV, or a file. Required columns: keyword. Optional but useful: search volume, current ranking, market/geography. Ask for the list if not provided.
-2. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. The profile is used to disambiguate borderline queries (e.g. is "supergoop" navigational for the user, or a competitor mention for a different brand?). If section 6 (competitors) is blank, marked unknown, or marked `not yet captured`, ask before classifying competitor-branded queries.
+2. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. The profile is used to disambiguate borderline queries (e.g. is "supergoop" navigational for the user, or a competitor mention for a different brand?). If section 6 (competitors) is blank, marked unknown, or marked `not yet captured`, ask before classifying competitor-branded queries.
 3. **Market and language** — defaults from the profile; ask if not. Intent classification is market-specific.
 
 If the keyword list isn't provided, ask. Don't fabricate keywords.
@@ -49,7 +49,7 @@ If the keyword list isn't provided, ask. Don't fabricate keywords.
    - **High** — taxonomic markers are unambiguous, page type is clear.
    - **Medium** — fits a bucket but borderline; recommend a SERP check before committing.
    - **Mixed** — the query reads as multiple intents; SERP check is required, and the page type may need to be split across two URLs.
-4. **Apply business filters.** Cross-reference with the business profile:
+4. **Apply business filters.** Cross-reference with the business context and SEO foundation:
    - If the brand has no comparison content yet, flag commercial keywords as "needs new content."
    - If a transactional keyword references a product the business doesn't sell, mark it `out of scope`.
    - If a navigational keyword references a competitor, mark it `competitor-branded` — these can occasionally be earned via a "[competitor] alternative" page.

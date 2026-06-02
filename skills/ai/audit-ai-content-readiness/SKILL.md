@@ -27,7 +27,7 @@ The skill is opinionated: definitive opening sentences are non-negotiable; TL;DR
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 3 (products / services), 4 (customer + questions customers ask), 8 (brand voice / editorial guardrails — to ensure rewrite recommendations stay on-voice).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Sections this skill cares about most: 3 (products / services), 4 (customer + questions customers ask), 8 (brand voice / editorial guardrails — to ensure rewrite recommendations stay on-voice).
 2. **Priority page list** — required. URLs of the pages to audit. If the user doesn't specify, default to the top 10 organic landing pages (from `analytics/traffic-analysis-*.md` or GA4) plus any pillar / cluster-hub pages. Confirm the list before auditing more than 20 pages — audit depth degrades when the list is too long.
 3. **Page content access** — required. The skill needs the actual rendered HTML and prose. Either the user provides URLs the skill can fetch, or pasted page content, or markdown exports.
 4. **Cluster / topic context** — optional but useful. If `clusters/cluster-map.md` exists, use it to understand which queries each page targets; the audit framing differs for commercial pages vs informational pillars.
@@ -147,7 +147,7 @@ If the priority page list is missing, ask which pages to audit before proceeding
 ## Acceptance criteria
 - [ ] All Critical fixes shipped on top 5 organic pages.
 - [ ] Template-level fixes (last-updated visibility, brief template) shipped before next content sprint.
-- [ ] Brand voice maintained — rewrites pass through the brand's voice guardrails (section 8 of profile).
+- [ ] Brand voice maintained — rewrites pass through the brand's voice guardrails (business context brand voice).
 - [ ] Re-audit scheduled in 90 days; baseline metrics captured for `audit-llm-visibility` comparison.
 
 ## Risks + watchouts
@@ -170,7 +170,7 @@ Save the produced file to `businesses/<slug>/ai-seo/ai-content-readiness-audit-[
 - Cross-page patterns identified for template-level leverage; don't list 12 page-level fixes for a single template issue.
 - Effort estimates included per fix.
 - Traffic-weighted prioritisation (top organic pages first, not alphabetical).
-- Brand voice maintained — recommendations align with section 8 of the business profile (Field & Sun: ingredient-led, plain-language, specific; reject vague category language and unsupported safety claims).
+- Brand voice maintained — recommendations align with brand voice of the business context and SEO foundation (Field & Sun: ingredient-led, plain-language, specific; reject vague category language and unsupported safety claims).
 - Acceptance criteria + open questions sections present.
 - Output is specific to the business — don't produce a generic "AI SEO best practices" document.
 

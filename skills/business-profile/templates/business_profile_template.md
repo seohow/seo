@@ -5,11 +5,11 @@
 *Slug: `<slug>`*
 *Profile completeness: [quick-start / partial / full]*
 
-This is the template the `business-profile` skill uses to create and iteratively update `businesses/<your-business-slug>/business_profile.md`. The profile is a living document: Quick Start fills the minimum viable fields, Patch mode updates specific sections later, and Gap Check ranks missing fields by downstream impact.
+This is the legacy template the old `business-profile` skill used to create and iteratively update `businesses/<your-business-slug>/business_profile.md`. New work should use `business-context` and `seo-foundation` instead.
 
 Editing this template directly only makes sense if you want to change the profile contract across all businesses.
 
-Every omitted field in a generated profile must be marked `_(unknown — not yet captured; add via Patch mode)_`. Do not leave fields blank. Every skill in the toolkit reads the per-business profile file produced from this template, so the output of those skills is tailored to a specific business rather than generic.
+Every omitted field in a generated legacy profile must be marked `_(unknown — not yet captured; add via Patch mode)_`. Do not leave fields blank. Use this template only when migrating or understanding old workspaces.
 
 ---
 
@@ -108,4 +108,4 @@ When you run a skill in this toolkit, it will:
 3. If a section is marked `unknown — not yet captured`, the skill will either ask for it or note that the output is generic in that respect.
 4. Save its output as a new file inside `businesses/<business-slug>/<artifact-subfolder>/`, so all work for a given business stays colocated.
 
-Keep your business profile updated. The fresher the profile, the sharper the output. To update it, re-run the `business-profile` skill in Patch mode; to decide what to fill next, run Gap Check.
+For new work, keep `business_context.md` and `seo_foundation.md` updated. Use this legacy profile only as a migration source.

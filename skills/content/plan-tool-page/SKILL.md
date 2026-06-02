@@ -27,7 +27,7 @@ The skill is opinionated about a few things: tools work best when tied to a topi
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), goals (7), brand voice (8). Customer's "what do they want to figure out" is the engine of tool ideation.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: products/services, customer, and brand voice from `business_context.md`, plus SEO goals from `seo_foundation.md`. Customer's "what do they want to figure out" is the engine of tool ideation.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Tool should anchor to a cluster.
 3. **Tool concept(s)** — required. Either one tool (evaluate + brief) or 2-3 candidate tools (evaluate + recommend one).
 4. **Engineering capacity / budget** — optional but valuable. If the team has 4 weeks of engineering, propose only tools that fit the timeline. If unknown, ask.

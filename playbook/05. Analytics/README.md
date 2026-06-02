@@ -57,7 +57,7 @@ The Analytics category consumes outputs from earlier categories:
 
 - `businesses/<slug>/clusters/cluster-map.md` — clusters are the analysis unit; KPIs and traffic patterns are most useful at the cluster level, not just the page level.
 - `businesses/<slug>/keyword-research/seed-keywords.md` and `intent-classification/classified-keywords.md` — the keyword universe being measured.
-- `businesses/<slug>/business_profile.md` — sections 7 (goals) and 9 (revenue model if present) drive which KPIs matter.
+- `businesses/<slug>/seo_foundation.md` for goals and `businesses/<slug>/business_context.md` for revenue model drive which KPIs matter.
 
 It produces inputs for downstream categories:
 

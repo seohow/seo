@@ -25,7 +25,7 @@ A clear convention pays for itself many times over. The cost of inconsistent URL
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), business model (2), CMS/platform (5).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: products/services (3), business model (2), CMS/platform (5).
 2. **Page types in scope** — which content types the site has or will have. Default ecom set: products, collections, blog. Optional: FAQ, comparison, location pages, landing pages, glossary, tools, account pages. Ask if unclear.
 3. **CMS / platform** — Shopify, WooCommerce, Webflow, WordPress, custom. The conventions adapt to platform constraints (e.g. Shopify can't fully drop the `/collections/` and `/products/` prefixes without theme work).
 4. **Geographic / language scope** — single market vs. multi-market. Multi-market introduces hreflang, country/language subfolders or subdomains.
@@ -40,7 +40,7 @@ If the page types or platform are unclear, ask before producing the document.
    - **Pattern** — the URL template (e.g. `/products/<slug>` or `/blog/<slug>` or `/collections/<parent-slug>/<child-slug>`).
    - **Slug source** — how the slug is derived (page title? primary keyword? both, with manual override?).
    - **Slug rules** — kebab-case, lowercase, max length (e.g. 50 chars), stop-words to drop, characters to escape.
-   - **Examples** — 2-3 real examples for this site (use products/collections from the business profile).
+   - **Examples** — 2-3 real examples for this site (use products/collections from the business context and SEO foundation).
    - **Edge cases** — what happens when a product is in multiple collections? What about long slugs? Special characters? Non-ASCII?
 3. **Define cross-cutting rules.** These apply across all page types:
    - Trailing slash policy (with or without; pick one and enforce).
@@ -145,7 +145,7 @@ Save the produced file to `businesses/<slug>/urls/conventions.md`. Create the `u
 ## Quality bar
 
 - Every page type relevant to this business has a pattern, slug source, slug rules, examples, and edge cases.
-- Examples use real products/collections from the business profile, not generic placeholders.
+- Examples use real products/collections from the business context and SEO foundation, not generic placeholders.
 - Cross-cutting rules cover trailing slash, case, dates, parameters, and geography explicitly.
 - Forbidden patterns list is concrete, not vague.
 - Migration policy is a hard rule, not a suggestion.

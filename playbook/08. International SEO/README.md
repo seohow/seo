@@ -46,7 +46,7 @@ If you're working through this category for the first time, the highest-leverage
 
 The International SEO category consumes outputs from earlier categories:
 
-- `businesses/<slug>/business_profile.md` — markets in scope (section 7 / new "markets" section if applicable).
+- `businesses/<slug>/business_context.md` for markets served and `businesses/<slug>/seo_foundation.md` for SEO markets in scope.
 - `businesses/<slug>/clusters/cluster-map.md` — cluster strategy may be market-specific or shared.
 - `businesses/<slug>/competitor-analysis/scope.md` — competitors are market-specific; international competitor analysis is a different exercise.
 

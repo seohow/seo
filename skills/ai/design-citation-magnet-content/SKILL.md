@@ -26,7 +26,7 @@ The skill is opinionated: the brief requires a green-lit topic from `plan-genera
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 3 (products), 4 (customer + questions), 6 (competitors), 8 (brand voice — non-negotiable for this skill).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Sections this skill cares about most: 3 (products), 4 (customer + questions), 6 (competitors), 8 (brand voice — non-negotiable for this skill).
 2. **Strategic plan** — required. Path to the relevant `ai-seo/generative-seo-strategy-*.md`. The brief consumes the plan's defensibility argument, per-engine targets, and investment estimate. If absent, refuse and recommend running `plan-generative-seo-strategy` first.
 3. **Topic** — required. Which pick from the strategic plan is being briefed? Cross-reference the plan's win-able picks; reject if the topic is on the skip list.
 4. **Priority queries** — required. The 2-6 queries this content targets. From the strategic plan.
@@ -84,7 +84,7 @@ If the strategic plan is missing or the topic is on its skip list, refuse with a
     - Currently cited sources we're trying to displace or join.
     - Citation-pattern notes (e.g. "Perplexity cites generously — 5+ citations means high probability of inclusion if structure is clean; ChatGPT cites sparingly — focus on definitive opening + sourced claims").
 12. **Brand voice constraints.**
-    - Quote the relevant section 8 voice rules from the profile.
+    - Quote the relevant brand voice voice rules from the profile.
     - Field & Sun: ingredient-led, plain-language, specific. Reject vague category language, unsupported safety claims, and inflated promise language.
 13. **Quality gates + reviewer checklist.**
     - Pre-publish gates: legal review for claims; brand-voice review; technical-SEO review for schema; primary-evidence consent / rights confirmation.
@@ -236,7 +236,7 @@ If the strategic plan is missing or the topic is on its skip list, refuse with a
 - **At 90 days post-publish:** evaluate against strategic plan's expected lift; decide whether to invest in adjacent topics in the cluster.
 
 ## Risks + watchouts
-3-5 specific risks. E.g. "Customer photography consent must be in writing per customer; legal review pre-publish — without consent, the moat asset cannot ship"; "Photographer / production capacity is on the critical path; build a 1-week buffer"; "Schema must validate cleanly — `ImageObject` schema with broken `contentUrl` invalidates the entire article schema"; "The comparative table makes specific claims about competitor products; verify product details from current packaging / brand site to avoid misrepresentation"; "If retrieval bots are blocked at robots.txt, the moat asset cannot be cited — verify Technical SEO leaf 10 audit before publishing"; "FDA OTC drug claim language must be reviewed — Sun Drops cannot be marketed with medical / dermatological claims per profile section 7."
+3-5 specific risks. E.g. "Customer photography consent must be in writing per customer; legal review pre-publish — without consent, the moat asset cannot ship"; "Photographer / production capacity is on the critical path; build a 1-week buffer"; "Schema must validate cleanly — `ImageObject` schema with broken `contentUrl` invalidates the entire article schema"; "The comparative table makes specific claims about competitor products; verify product details from current packaging / brand site to avoid misrepresentation"; "If retrieval bots are blocked at robots.txt, the moat asset cannot be cited — verify Technical SEO leaf 10 audit before publishing"; "FDA OTC drug claim language must be reviewed — Sun Drops cannot be marketed with medical / dermatological claims per SEO foundation goals and constraints."
 
 ## Open questions
 - [ ] Confirm photographer / production capacity for the photography shoot.
@@ -258,7 +258,7 @@ Save the produced file to `businesses/<slug>/ai-seo/citation-magnet-[topic-slug]
 - Schema spec is explicit per type; no schema theatre.
 - Internal-linking plan covers both outbound and inbound.
 - Freshness signals specced (visible last-updated, update-reason, review cadence).
-- Brand voice constraints quoted from profile section 8.
+- Brand voice constraints quoted from business context brand voice.
 - Quality gates / reviewer checklist included.
 - Production timeline matches strategic plan's investment estimate.
 - Success metrics linkable to `audit-llm-visibility` follow-up.

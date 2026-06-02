@@ -26,7 +26,7 @@ The plan is opinionated about a few things: hub-and-spoke is the default structu
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Section 3 (products/services) and section 7 (goals) drive which clusters to prioritise as hubs.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Products/services from `business_context.md` and SEO goals from `seo_foundation.md` drive which clusters to prioritise as hubs.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. The skill consumes this directly. If absent, recommend running `cluster-keywords` first.
 3. **Existing pages list** — a list of currently published pages with URLs, page types, and (if available) the cluster they target. From a sitemap export, GSC export, or Shopify CMS. Helps identify orphan pages and cluster gaps.
 4. **Existing internal-link state (optional but valuable)** — a Screaming Frog or Ahrefs Site Audit export showing internal-link counts per page. Without it, the plan can still be designed but execution priorities are less informed.

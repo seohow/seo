@@ -23,7 +23,7 @@ This skill takes one page (URL + content + a snapshot of its inbound and outboun
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output.
 2. **Internal-linking plan** — read `businesses/<slug>/internal-linking/plan.md` if it exists. The plan defines hubs, pillars, spokes, and the recommended linking matrix. Without it the audit can still run but is less anchored. If absent, recommend running `plan-internal-linking` first or proceed with cluster-level guidance only.
 3. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. The audit cross-references the page against its cluster and the cluster's siblings.
 4. **The page being audited** — URL, page type, target cluster, and current content. Either pasted body content or a summary of the sections.

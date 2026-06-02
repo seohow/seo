@@ -27,12 +27,12 @@ The audit is honest about what can and can't be inferred from the outside. Some 
 ## Inputs required
 
 1. **Competitor target** — a URL or domain. If the user gives just a brand name, ask for the URL.
-2. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections for this skill: products/services (3), customer (4), competitors (6), goals (7). The audit is a *comparison*, so the user's side has to be specified — if those sections are blank, marked unknown, or marked `not yet captured`, ask before starting the audit.
+2. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections for this skill: products/services (3), customer (4), competitors (6), goals (7). The audit is a *comparison*, so the user's side has to be specified — if those sections are blank, marked unknown, or marked `not yet captured`, ask before starting the audit.
 3. **Tool access** — what the user has. The audit is much richer with Ahrefs/Semrush/Moz access; usable but lighter without. Ask what's available so the methodology matches.
 4. **Focus area (optional)** — whole domain, or a specific section / topic / cluster. If the competitor is large, focusing the audit makes it actionable.
 5. **Keyword universe (optional but valuable)** — if the user has their own keyword universe from prior research, the audit can compare directly. If not, it produces inferred targets from the competitor's ranking keywords.
 
-If the URL or business profile is missing, ask before starting. The audit relies on having both sides.
+If the URL or business context and SEO foundation is missing, ask before starting. The audit relies on having both sides.
 
 ## Process
 

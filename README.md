@@ -3,7 +3,7 @@
 A working SEO operating system for business owners and marketers. Three layers in one repo:
 
 1. **Knowledge** — a structured curriculum of modern SEO, organised by topic. Read the README in any folder to learn what that piece is, why it matters, and how to do it.
-2. **Skills** — installable AI skills that plan, execute, or track the work for you. Each skill reads your business profile from `businesses/<your-business-slug>/` and produces a tailored artifact saved into the same workspace.
+2. **Skills** — installable AI skills that plan, execute, or track the work for you. Each skill reads your business context and SEO foundation from `businesses/<your-business-slug>/` and produces a tailored artifact saved into the same workspace.
 3. **Memory** — `AGENTS.md` at the repo root and inside each business workspace, with `CLAUDE.md` symlinks for compatibility. They capture conventions, decisions, learnings, and constraints so the toolkit gets sharper over time and so any new AI collaborator has the context it needs to be useful immediately.
 
 The goal is that anyone running a business can go from "I should probably do SEO" to "here is my plan and here is my next deliverable" without hiring an agency.
@@ -14,15 +14,16 @@ The goal is that anyone running a business can go from "I should probably do SEO
 
 ### 1. Set up your business workspace
 
-Run the [`business-profile`](skills/business-profile/SKILL.md) skill. It will quick-start the minimum useful profile, slugify a folder name, and create the core workspace files:
+Run the [`business-context`](skills/business-context/SKILL.md) skill, then [`seo-foundation`](skills/seo-foundation/SKILL.md). The first creates company-wide AI context; the second creates the SEO-specific layer that references it.
 
-- `businesses/<your-business-slug>/business_profile.md` — the structured profile every other skill reads.
+- `businesses/<your-business-slug>/business_context.md` — durable business context every skill can use.
+- `businesses/<your-business-slug>/seo_foundation.md` — SEO goals, baseline, search competitors, platform, and operating constraints.
 - `businesses/<your-business-slug>/AGENTS.md` — the working-memory file AI collaborators maintain as decisions, learnings, and constraints surface over time.
 - `businesses/<your-business-slug>/CLAUDE.md` — a compatibility symlink pointing to `AGENTS.md`.
 
-If you run SEO for multiple ventures, run the skill once per business. Each gets its own folder; skills will ask which business to operate on if more than one exists.
+If you run SEO for multiple ventures, run the setup skills once per business. Each gets its own folder; skills will ask which business to operate on if more than one exists.
 
-Update the profile any time something material changes (new product line, new goal, new competitor) by re-running the same skill in Patch mode. Run Gap Check when you want to see which missing fields are worth filling next. `AGENTS.md` is preserved across profile updates.
+Update company-wide context with `business-context` Patch mode (new product line, positioning, customer, voice, parent/product relationship). Update SEO-specific context with `seo-foundation` Patch mode (new goal, search baseline, search competitor, CMS/platform, topic priority). Run Gap Check in either skill when you want to see which missing fields are worth filling next. `AGENTS.md` is preserved across updates.
 
 ### 2. Browse the curriculum
 
@@ -47,12 +48,16 @@ Each category folder has a `README.md` overview and one Markdown page per leaf t
 
 There are two kinds of skills in this toolkit:
 
-- **Setup skills** live at the top level of `skills/`. Today the only one is `business-profile`, but more meta utilities can land there over time.
+- **Setup skills** live at the top level of `skills/`. `business-context` creates company-wide context, `seo-foundation` creates the SEO layer, and `business-profile` remains as a legacy migration helper.
 - **Topic skills** live under registry-friendly category folders in `skills/<category-slug>/<skill-name>/`. For example:
 
 ```
 skills/
 ├── README.md
+├── business-context/
+│   └── SKILL.md
+├── seo-foundation/
+│   └── SKILL.md
 ├── business-profile/
 │   └── SKILL.md
 └── strategy/
@@ -68,7 +73,7 @@ To install skills with [skills.sh](https://skills.sh), use `npx skills add`:
 npx skills add seohow/seo
 ```
 
-That installs the setup skill, `business-profile`, so you can create your business workspace first.
+That installs the setup skills, so you can create your business workspace before running topic-specific SEO skills.
 
 To install every skill under a category, include the category slug:
 
@@ -84,7 +89,7 @@ To install one specific skill from a category, pass `--skill` with the skill fol
 npx skills add seohow/seo/strategy --skill plan-keyword-research
 ```
 
-Supported category slugs are `strategy`, `on-page`, `technical`, `content`, `analytics`, `off-page`, `ux`, `international`, `ai`, and `growth`. You can also paste a skill's `SKILL.md` content into a chat with your business profile attached if your AI environment does not support skill installation.
+Supported category slugs are `strategy`, `on-page`, `technical`, `content`, `analytics`, `off-page`, `ux`, `international`, `ai`, and `growth`. You can also paste a skill's `SKILL.md` content into a chat with your business context and SEO foundation attached if your AI environment does not support skill installation.
 
 Topic skills come in two archetypes:
 
@@ -115,9 +120,9 @@ Each topic README ends with cross-links to related topics so you can follow the 
 
 ## Designed for extensibility
 
-The frameworks in this toolkit are business-model-agnostic. Examples currently lean toward D2C e-commerce because that's where v1 was sharpened, but the underlying playbooks apply to SaaS, services, marketplaces, and content businesses. Skills personalise their output by reading the business profile in your workspace — so a SaaS founder and a candle-maker get different keyword recommendations from the same skill.
+The frameworks in this toolkit are business-model-agnostic. Examples currently lean toward D2C e-commerce because that's where v1 was sharpened, but the underlying playbooks apply to SaaS, services, marketplaces, and content businesses. Skills personalise their output by reading the business context and SEO foundation in your workspace — so a SaaS founder and a candle-maker get different keyword recommendations from the same skill.
 
-To work on multiple businesses, register each one with `business-profile`. They'll each live in their own folder under `businesses/`, with profile and artifacts kept colocated so nothing leaks between ventures.
+To work on multiple businesses, register each one with `business-context` and `seo-foundation`. They'll each live in their own folder under `businesses/`, with context, SEO foundation, and artifacts kept colocated so nothing leaks between ventures.
 
 ---
 
@@ -140,6 +145,8 @@ releases/
     ├── manifest.json
     ├── checksums.txt
     ├── setup/
+    │   ├── business-context.zip
+    │   ├── seo-foundation.zip
     │   └── business-profile.zip
     └── categories/
         └── strategy/

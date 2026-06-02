@@ -1,6 +1,6 @@
 # Businesses
 
-This folder is the working workspace for every business you run SEO for. Each business gets its own subfolder. All inputs (the business profile) and all outputs (artifacts produced by skills — keyword lists, competitor audits, cluster maps, backlogs) live inside that subfolder.
+This folder is the working workspace for every business you run SEO for. Each business gets its own subfolder. All inputs (business context and SEO foundation) and all outputs (artifacts produced by skills — keyword lists, competitor audits, cluster maps, backlogs) live inside that subfolder.
 
 ## Convention
 
@@ -8,7 +8,8 @@ This folder is the working workspace for every business you run SEO for. Each bu
 businesses/
 ├── README.md                          ← you are here
 └── <business-slug>/                   ← one folder per business
-    ├── business_profile.md            ← the input profile (created by business-profile)
+    ├── business_context.md            ← company-wide AI context (created by business-context)
+    ├── seo_foundation.md              ← SEO-specific context (created by seo-foundation)
     ├── AGENTS.md                      ← working memory for this business (decisions, learnings, quirks)
     ├── CLAUDE.md                      ← symlink → AGENTS.md (for Claude-specific workflows)
     ├── keyword-research/
@@ -27,7 +28,7 @@ businesses/
 
 Sub-folders are created on demand by the skills that produce artifacts. You don't need to create them upfront — running the relevant skill will populate the right path.
 
-`business_profile.md` and `AGENTS.md` are both created up-front by `business-profile`, along with a `CLAUDE.md` symlink that points to `AGENTS.md`. The profile is the structured input the skills consume; `AGENTS.md` is the *working memory* for the business — decisions, learnings, constraints, and active experiments that accumulate over time. Any AI collaborator reads it to orient quickly and updates it as new context surfaces. You don't have to manage it manually, but you can — it's a normal Markdown file. See `skills/business-profile/templates/business_agents_template.md` for the structure.
+`business_context.md` and `AGENTS.md` are created up-front by `business-context`, along with a `CLAUDE.md` symlink that points to `AGENTS.md`. `seo_foundation.md` is created by `seo-foundation` once the company-wide context exists. `business_context.md` is the durable source for company facts; `seo_foundation.md` is the search-specific layer. `AGENTS.md` is the *working memory* for the business — decisions, learnings, constraints, and active experiments that accumulate over time. Any AI collaborator reads it to orient quickly and updates it as new context surfaces. You don't have to manage it manually, but you can — it's a normal Markdown file. See `skills/business-context/templates/business_agents_template.md` for the structure.
 
 ## Naming
 
@@ -37,7 +38,7 @@ Business slugs are kebab-case versions of the business name, with no special cha
 - "Acme SaaS" → `acme-saas`
 - "Joe's Plumbing" → `joes-plumbing`
 
-The `business-profile` skill handles slugification automatically. If you create a business folder by hand, follow the same pattern.
+The `business-context` skill handles slugification automatically. If you create a business folder by hand, follow the same pattern.
 
 ## Working with multiple businesses
 
@@ -48,7 +49,7 @@ Two patterns are supported:
 
 ## Privacy and version control
 
-Business profiles often contain commercial-sensitive information (keyword strategy, competitor lists, current performance). If you're versioning this repo:
+Business context and SEO foundation files often contain commercial-sensitive information (keyword strategy, competitor lists, current performance). If you're versioning this repo:
 
 - Add `businesses/` to your `.gitignore` if the repo is shared, *or*
 - Use a separate private repo for the `businesses/` folder, *or*
@@ -58,4 +59,4 @@ The toolkit doesn't enforce this — it's your call based on context.
 
 ## Getting started
 
-If `businesses/` is empty, run the `business-profile` skill first. It will interview you for the necessary inputs, slugify a folder name, and create the workspace. After that, every other skill in the toolkit becomes usable for that business.
+If `businesses/` is empty, run the `business-context` skill first. It will interview you for the necessary company-wide inputs, slugify a folder name, and create the workspace. Then run `seo-foundation` to add the search-specific layer before using topic SEO skills.

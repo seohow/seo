@@ -26,7 +26,7 @@ The skill is opinionated about a few things: QoQ + YoY is the default comparison
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), goals (7).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: products/services (3), goals (7).
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Pages → clusters mapping required.
 3. **GA4 access (or exports)** — required. Sessions, users, engaged sessions, conversions, revenue. Last 90 days + prior 90 days minimum.
 4. **GSC access (or exports)** — strongly preferred. Cross-reference impressions / clicks with sessions.

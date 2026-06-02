@@ -34,7 +34,7 @@ If this is your first time doing SEO strategy for the business, work through thi
 
 **Pass 1 — Discovery (1-2 weeks):**
 
-1. Run [`business-profile`](../../skills/business-profile/SKILL.md) to set up the workspace for the business you're working on. This creates `businesses/<your-business-slug>/business_profile.md`, which every Strategy skill below reads from.
+1. Run [`business-context`](../../skills/business-context/SKILL.md), then [`seo-foundation`](../../skills/seo-foundation/SKILL.md), to set up the workspace for the business you're working on. These create `business_context.md` and `seo_foundation.md`, which every Strategy skill below reads from.
 2. Run **Keyword Research** to produce a raw keyword universe.
 3. Run **Search Intent** classification on the universe to filter and segment.
 4. Run **Competitor Analysis** on 3-5 competitors to understand what good looks like.
@@ -51,7 +51,7 @@ The output of this category is a set of strategy artifacts — keyword plan, see
 Each sub-topic ships its own skills. The complete list:
 
 - **[plan-keyword-research](../../skills/strategy/plan-keyword-research/SKILL.md)** — scope a keyword research project for your business.
-- **[generate-seed-keywords](../../skills/strategy/generate-seed-keywords/SKILL.md)** — produce an initial keyword list from your business profile.
+- **[generate-seed-keywords](../../skills/strategy/generate-seed-keywords/SKILL.md)** — produce an initial keyword list from your business context and SEO foundation.
 - **[classify-keyword-intent](../../skills/strategy/classify-keyword-intent/SKILL.md)** — tag a keyword list with intent and recommended page type.
 - **[scope-competitor-analysis](../../skills/strategy/scope-competitor-analysis/SKILL.md)** — define a competitor analysis project: who, what, in how much depth.
 - **[audit-competitor-seo](../../skills/strategy/audit-competitor-seo/SKILL.md)** — analyse a competitor URL or domain and produce a gap report.

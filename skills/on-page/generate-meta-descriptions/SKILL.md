@@ -25,7 +25,7 @@ The skill always pairs naturally with `generate-title-tags` — both are SERP-fa
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections for this skill: products/services (3), customer (4), brand voice (8). If section 8 is blank, marked unknown, or marked `not yet captured`, ask for the tone in 1-2 sentences before generating.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields for this skill: products/services, customer, and brand voice from `business_context.md`. If brand voice is blank, marked unknown, or marked `not yet captured`, ask for the tone in 1-2 sentences before generating.
 2. **Page(s) to optimise** — one URL or a list. For each: page URL, page purpose, current description (if known), and current title. The current title matters because the description has to complement it (no redundancy).
 3. **Target cluster** — primary keyword + 3-8 supporting keywords for each page. Default source: `businesses/<slug>/clusters/cluster-map.md`.
 4. **Intent** — informational / commercial / transactional / navigational. Default source: same cluster map.
@@ -53,7 +53,7 @@ For each page:
    - **First-sentence stand-alone** — does the first 120 chars work as a complete pitch even if the rest is cut? Yes/no.
    - **Primary keyword presence** — present? Naturally placed?
    - **Intent fit** — does the description match the intent's expected shape? Yes/partial/no.
-   - **Brand-voice fit** — matches profile section 8? Yes/partial/no.
+   - **Brand-voice fit** — matches business context brand voice? Yes/partial/no.
    - **Call to action** — strong, clear, single? Yes/no/missing.
    - **SERP differentiation** — what's distinct vs. the top 10 descriptions? One sentence.
    - **Composite** — high / medium / low.

@@ -26,7 +26,7 @@ The skill is opinionated about a few things: every page should have a self-refer
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: business model (2), CMS / platform (5).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: business model (2), CMS / platform (5).
 2. **URL list with canonical metadata** — pasted, CSV, or file. Required columns: URL, canonical URL, status code, indexability (or robots-meta value). Useful additions: response time, inlinks count, in-sitemap (yes/no). Screaming Frog's "Internal All" export has all of this.
 3. **Sitemap (optional but valuable)** — the live `sitemap.xml` (or sitemap-index) so the audit can cross-reference. URLs in the sitemap that aren't canonical, or canonical URLs missing from the sitemap, are surfaced as conflicts.
 4. **Internal-link sample (optional)** — for the priority pages, a sample of inbound internal links. If the audit-page-internal-links output is available for any page, the canonical / internal-link consistency check is sharper.

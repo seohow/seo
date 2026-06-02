@@ -24,7 +24,7 @@ The skill is opinionated: every entry has a one-line description, not a bare URL
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: identity (1), products/services (3), customer (4), brand voice (8). Used for the site description and per-entry descriptions.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: identity, products/services, customer, and brand voice from `business_context.md`. Used for the site description and per-entry descriptions.
 2. **Site URL inventory** — required. Sources: sitemap, top-traffic pages from GSC, the cluster map (`businesses/<slug>/clusters/cluster-map.md`). The skill will pull from whichever is provided.
 3. **Curation hint (optional but valuable)** — what kinds of URLs the user wants represented. E.g. "all PDPs + top 10 blog posts," "ingredient guides only," "everything except the about and policy pages." If unstated, the skill defaults to: hero PDPs, primary collection pages, top 10-15 informational blog posts, the homepage.
 4. **AI-crawler posture confirmation** — required. Confirm the user is publishing `llms.txt` deliberately (i.e. posture is open or visibility-only). If posture is strict-block, the skill refuses.
@@ -47,7 +47,7 @@ If the URL inventory is missing, ask. The skill operates on real URLs.
    - Has self-referencing canonical? Pass.
    - Is in the sitemap? Confirms it's intended-public.
    - Is the canonical version (not a parameter / paginated variant)?
-3. **Write the site description.** Pull from business profile section 1 (identity — one-line description) and section 3 (products/services). 1-3 sentences. Brand voice from section 8.
+3. **Write the site description.** Pull from `business_context.md` identity and products/services. 1-3 sentences. Brand voice.
 4. **Group entries into sections.** Common structure for D2C beauty (Field & Sun shape):
    - Hero products
    - All products / collections
@@ -56,7 +56,7 @@ If the URL inventory is missing, ask. The skill operates on real URLs.
    - Refills and packaging waste
    - About
    Adapt to the actual site. For SaaS: documentation, getting started, API reference, changelog. For content / media: pillar topics, recent investigations, archives.
-5. **Write a one-line description per entry.** 8-15 words. Imagine an LLM trying to decide which URL to retrieve given a user question — the description should make that decision easy. Brand voice from section 8 of the profile. Don't keyword-stuff; describe what the page is and who it's for.
+5. **Write a one-line description per entry.** 8-15 words. Imagine an LLM trying to decide which URL to retrieve given a user question — the description should make that decision easy. Brand voice from business context brand voice. Don't keyword-stuff; describe what the page is and who it's for.
 6. **Format per the llms.txt proposal.** Use the standard Markdown shape exactly:
 
    ```
@@ -172,7 +172,7 @@ Save the produced files to `businesses/<slug>/ai-crawlers/llms.txt` (and optiona
 ## Quality bar
 
 - The file follows the llms.txt format exactly: H1 site name, blockquote description, H2 sections, and bullet entries with a linked page title plus a one-line description.
-- Site description is in brand voice from profile section 8; no generic "we are a beauty brand" language.
+- Site description is in brand voice from business context brand voice; no generic "we are a beauty brand" language.
 - Every entry has a 8-15 word description; no bare URLs or vague entries.
 - 10-30 entries total — curated, not a sitemap dump.
 - Every URL is the canonical version (not a parameter / variant URL).
@@ -198,8 +198,8 @@ Save the produced files to `businesses/<slug>/ai-crawlers/llms.txt` (and optiona
 
 **Output (abbreviated):**
 
-`llms.txt`: 18 entries across 5 sections (Hero products [2], All products [7], Skincare guides [5], Sun care guides [2], About [2]). Site description pulled from profile section 1, in brand voice. Every entry has a one-line description. Every URL validates 200 + canonical.
+`llms.txt`: 18 entries across 5 sections (Hero products [2], All products [7], Skincare guides [5], Sun care guides [2], About [2]). Site description pulled from `business_context.md` identity, in brand voice. Every entry has a one-line description. Every URL validates 200 + canonical.
 
-Implementation note: Shopify-specific instructions (since profile section 5 = Shopify), `curl` verification commands, refresh-cadence reminder.
+Implementation note: Shopify-specific instructions (since profile SEO foundation platform = Shopify), `curl` verification commands, refresh-cadence reminder.
 
 Saved to `businesses/field-and-sun/ai-crawlers/llms.txt` and `businesses/field-and-sun/ai-crawlers/llms-txt-implementation.md`.

@@ -28,7 +28,7 @@ The skill is opinionated about a few things: every brief starts with a SERP read
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: customer (4), competitors (6), goals (7), brand voice (8). Voice constraints feed directly into the brief.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: customer and brand voice from `business_context.md`, plus SEO goals and search competitors from `seo_foundation.md`. Voice constraints feed directly into the brief.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. The post's cluster placement determines internal-link plan and topical context. If the post isn't in the map, ask which cluster it belongs to (or whether to add it).
 3. **Post topic** — required. Title or working topic of the post.
 4. **Primary keyword** — required. The single keyword the post primarily targets. Pull volume and difficulty from the cluster map if available.
@@ -44,7 +44,7 @@ If primary keyword is missing, ask. The brief is anchored to a specific keyword.
 1. **Confirm the post fits the strategy.** Validate it's in the cluster map. If not, flag and ask whether to add to the map first or proceed standalone.
 2. **Read the SERP for the primary keyword.** Note positions 1-5: dominant format (explainer / listicle / how-to / comparison), word counts, depth signals (own research / quotes / images / tables), structural patterns. The brief's outline and word-count target are anchored to this read.
 3. **Classify intent.** Informational / commercial / transactional / navigational. Use the SERP as ground truth; if the top 5 are explainers, the intent is informational regardless of how the keyword reads.
-4. **Profile the audience.** Pull from business profile section 4. Specific: who is this post for, what do they already know, what decision are they trying to make, what scepticism are they bringing.
+4. **Profile the audience.** Pull from `business_context.md` customer context. Specific: who is this post for, what do they already know, what decision are they trying to make, what scepticism are they bringing.
 5. **Pick the post archetype.** Explainer, comparison, how-to, roundup, ingredient deep-dive, opinion. Each archetype has structural conventions; the outline reflects them.
 6. **Build the outline.** H1 + 5-9 H2s + H3s where genuinely needed. Each H2 has a content hint (1-2 sentences) describing what that section covers. Internal links are specified at the H2 level when the section naturally calls for one.
 7. **Decide word-count target.** Anchored to SERP top 5 average + 10-30%. Most blog posts land 1,200-2,500 words. Evergreen-leaning content can go longer (handled by `brief-evergreen-content`).
@@ -132,13 +132,13 @@ H2: [Closing — summary or practical action]
 
 ### Do
 
-- [Brand-specific voice rules pulled from business profile section 8]
+- [Brand-specific voice rules pulled from business context and SEO foundation brand voice]
 - [E.g. "Use percentages instead of claims (20% zinc oxide, not 'high SPF')"]
 - [E.g. "Reference own product testing where applicable"]
 
 ### Don't
 
-- [Brand-specific anti-patterns pulled from business profile]
+- [Brand-specific anti-patterns pulled from business context and SEO foundation]
 - [E.g. "Avoid vague category language and unsupported safety claims — these violate Field & Sun voice"]
 - [E.g. "Avoid superlatives ('best,' 'safest') — fails FDA review"]
 - [E.g. "No medical claims unless dermatologist-reviewed"]

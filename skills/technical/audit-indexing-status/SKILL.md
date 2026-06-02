@@ -26,7 +26,7 @@ The audit is operationally focused: every finding maps to a specific action (tem
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: business model (2), products/services (3), CMS / platform (5).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: business model (2), products/services (3), CMS / platform (5).
 2. **GSC Pages-report data** — exported CSV or pasted. Required columns: URL, status (indexed / not indexed), exclusion reason. Useful additions: last crawl date, referring page (if any), validation status (passed / failed / not started). The user can export from GSC's Pages report.
 3. **Cluster / priority list (optional but valuable)** — from `businesses/<slug>/clusters/cluster-map.md`. When known, the audit prioritises issues affecting cluster-mapped URLs.
 4. **Sitemap (optional but valuable)** — comparing GSC's "indexed" set with the sitemap reveals sitemap drift (sitemap URLs not indexed; indexed URLs not in sitemap).

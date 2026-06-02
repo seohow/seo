@@ -25,7 +25,7 @@ The skill is opinionated about a few things: SEO-critical content (H1, main copy
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: CMS / platform (5). If the platform is server-rendered (Shopify default, WordPress default), confirm with the user that the audit is still warranted — usually it isn't.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: CMS / platform (5). If the platform is server-rendered (Shopify default, WordPress default), confirm with the user that the audit is still warranted — usually it isn't.
 2. **Page URL** — required. Single URL (or small batch).
 3. **Source HTML** — required. The user pulls this with right-click → "View Page Source" in the browser, or `curl -A "Googlebot" <url>` from a terminal. Paste the output (or the head + body skeleton if the full HTML is too long).
 4. **Rendered DOM** — required. The user pulls this from Chrome DevTools → Elements panel (right-click → "Edit as HTML" on the `<html>` element, or copy from the Elements tree). Alternatively, use GSC URL Inspection → "Test live URL" → "View tested page" → HTML — that's the version Googlebot's actually using.

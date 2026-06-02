@@ -6,7 +6,7 @@
 
 A working SEO toolkit for business owners and marketers. Two layers in one repo: a structured curriculum of modern SEO topics (in `playbook/`) and installable AI skills (`SKILL.md` files) that plan, execute, or track the work for a specific business. Each business gets its own workspace under `businesses/<slug>/` where the profile and all generated artifacts live colocated.
 
-The toolkit is designed for extensibility: the frameworks are business-model-agnostic; the examples lean D2C e-commerce in v1 because that's the founder's domain. Adapting to other business types (SaaS, B2B services, local, content/media) should mostly be a matter of populating new business profiles and rewriting examples — the underlying structure stays.
+The toolkit is designed for extensibility: the frameworks are business-model-agnostic; the examples lean D2C e-commerce in v1 because that's the founder's domain. Adapting to other business types (SaaS, B2B services, local, content/media) should mostly be a matter of populating new business contexts / SEO foundations and rewriting examples — the underlying structure stays.
 
 ## Repo layout
 
@@ -18,15 +18,18 @@ seo/
 ├── businesses/                          ← per-business workspaces
 │   ├── README.md                        ← workspace convention
 │   └── <slug>/                          ← one folder per business
-│       ├── business_profile.md          ← input (created by business-profile)
+│       ├── business_context.md          ← company-wide input (created by business-context)
+│       ├── seo_foundation.md            ← SEO-specific input (created by seo-foundation)
 │       ├── AGENTS.md                    ← per-business working memory (decisions, learnings, quirks)
 │       ├── CLAUDE.md                    ← symlink → AGENTS.md (for Claude-specific workflows)
 │       └── <artifact-subfolders>/       ← outputs from skills
 ├── skills/                              ← distributable skill package
 │   ├── README.md                        ← skill catalogue, grouped by playbook category / leaf
-│   ├── business-profile/       ← setup / meta utility
+│   ├── business-context/       ← setup / meta utility
+│   ├── seo-foundation/         ← setup / meta utility
+│   ├── business-profile/       ← legacy migration utility
 │   │   ├── SKILL.md
-│   │   └── templates/                   ← business profile + business memory templates
+│   │   └── templates/                   ← business context + business memory templates
 │   └── <category-slug>/<skill-name>/    ← topic skills (category slug omits "SEO")
 │       └── SKILL.md
 ├── templates/                           ← format references
@@ -55,18 +58,18 @@ These are non-negotiable — deviating creates inconsistency that compounds acro
 
 - Follow `templates/SKILL_TEMPLATE.md`. Frontmatter requires `name` (kebab-case) and `description` (specific, slightly pushy to combat under-triggering — see `skill-creator` guidance).
 - Skills go in two places only:
-  - **Setup / meta utilities** — repo root under `skills/<skill-name>/SKILL.md` (e.g. `business-profile`).
+  - **Setup / meta utilities** — repo root under `skills/<skill-name>/SKILL.md` (e.g. `business-context`, `seo-foundation`; `business-profile` is legacy migration only).
   - **Topic-specific skills** — under `skills/<category-slug>/<skill-name>/SKILL.md`, where `<category-slug>` is the playbook category in lowercase slug form with the repeated `SEO` suffix removed (`on-page`, `technical`, `content`, `off-page`, `international`, `ai`).
-- Skill-specific runtime templates or assets should live inside the skill folder that consumes them. Example: `business-profile` owns its business workspace templates at `skills/business-profile/templates/`.
+- Skill-specific runtime templates or assets should live inside the skill folder that consumes them. Example: `business-context` owns its business workspace templates at `skills/business-context/templates/`.
 - Keep `skills/README.md` updated whenever adding, moving, renaming, or removing a skill. It is the distributable catalogue for registries like skills.sh and should be grouped by playbook category / leaf, with links back to the category and leaf README.
 - Two archetypes: **planner** (scopes a project, produces a brief) and **executor** (produces a specific artifact). Some topics need one, some need both, some need a tracker — pick based on what the topic actually requires. Don't force every topic into the same shape.
-- Every topic skill reads inputs from `businesses/<slug>/business_profile.md` and writes outputs to `businesses/<slug>/<artifact-subfolder>/`. The subfolder names are conventionalised — see existing skills for the pattern (`keyword-research/`, `intent-classification/`, `competitor-analysis/`, `clusters/`, `backlog/`, etc.).
-- Skill description should explicitly resolve the slug: list `businesses/`, default to the only folder if there's one, ask if there are multiple, recommend `business-profile` if there are none.
+- Every topic skill reads inputs from `businesses/<slug>/business_context.md` and, when the work is SEO-specific, `businesses/<slug>/seo_foundation.md`, then writes outputs to `businesses/<slug>/<artifact-subfolder>/`. The subfolder names are conventionalised — see existing skills for the pattern (`keyword-research/`, `intent-classification/`, `competitor-analysis/`, `clusters/`, `backlog/`, etc.).
+- Skill description should explicitly resolve the slug: list `businesses/`, default to the only folder if there's one, ask if there are multiple, recommend `business-context` if there are none, and recommend `seo-foundation` if SEO-specific setup is missing.
 
 ### File naming and slugs
 
 - Skill folders: kebab-case (`plan-keyword-research`, not `plan_keyword_research` or `Plan-Keyword-Research`).
-- Business slugs: lowercase, hyphen-separated, no apostrophes, no leading articles when avoidable. `business-profile` enforces this — match its rules manually if creating a slug by hand.
+- Business slugs: lowercase, hyphen-separated, no apostrophes, no leading articles when avoidable. `business-context` enforces this — match its rules manually if creating a slug by hand.
 - Topic folder names: keep the existing `NN. Topic Name` numbered convention. Don't renumber without coordinating across all cross-links.
 
 ### Cross-link URL encoding
@@ -84,7 +87,7 @@ Before writing a new topic page or skill, read at least one Strategy leaf for to
 
 ### Canonical sample business (Field & Sun)
 
-The toolkit ships with a fictional sample business at `businesses/field-and-sun/`. Treat this as the Northwind / Adventure Works of the toolkit — the working reference fixture that examples should refer to. Field & Sun is a D2C beauty brand with two hero products (Daily Glow Serum — evergreen; Mineral Sun Drops SPF 50 — seasonal spring/summer) plus a complementary lineup designed to lift AOV and reinforce brand loyalty. Read `businesses/field-and-sun/business_profile.md` and `businesses/field-and-sun/AGENTS.md` once before writing new examples.
+The toolkit ships with a fictional sample business at `businesses/field-and-sun/`. Treat this as the Northwind / Adventure Works of the toolkit — the working reference fixture that examples should refer to. Field & Sun is a D2C beauty brand with two hero products (Daily Glow Serum — evergreen; Mineral Sun Drops SPF 50 — seasonal spring/summer) plus a complementary lineup designed to lift AOV and reinforce brand loyalty. Read `businesses/field-and-sun/business_context.md`, `businesses/field-and-sun/seo_foundation.md`, and `businesses/field-and-sun/AGENTS.md` once before writing new examples.
 
 The per-business working-memory file is named `AGENTS.md` — the canonical, agent-agnostic name. A `CLAUDE.md` symlink pointing to it is created alongside for compatibility with Claude-specific workflows. Codex, Claude CoWork, and any future AI collaborator should read and maintain `AGENTS.md` directly.
 
@@ -106,7 +109,7 @@ Before finishing any playbook README or skill work, actively check for example d
   rg -n "Refillable|Cleaning Co|laundry|clean beauty|non-toxic|chemical-free|plastic-free" playbook/
   ```
 
-- For new examples, use facts from `businesses/field-and-sun/business_profile.md` and `businesses/field-and-sun/AGENTS.md`: Daily Glow Serum, Mineral Sun Drops SPF 50, the complementary skincare lineup, Field & Sun's actual voice rules, current competitors, geography, goals, and artifact history.
+- For new examples, use facts from `businesses/field-and-sun/business_context.md`, `businesses/field-and-sun/seo_foundation.md`, and `businesses/field-and-sun/AGENTS.md`: Daily Glow Serum, Mineral Sun Drops SPF 50, the complementary skincare lineup, Field & Sun's actual voice rules, current competitors, geography, goals, and artifact history.
 
 ### Unbuilt leaves
 
@@ -155,8 +158,8 @@ Current structural state for quick orientation. Update this table when categorie
 | Leaves | 63 |
 | Category overview READMEs | 10 |
 | Playbook skills | 73 |
-| Setup skills (`business-profile`) | 1 |
-| **Total skills** | **74** |
+| Setup skills (`business-context`, `seo-foundation`, legacy `business-profile`) | 3 |
+| **Total skills** | **76** |
 | Sample businesses | 1 (Field & Sun) |
 | `.gitkeep` files | 0 |
 

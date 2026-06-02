@@ -27,7 +27,7 @@ The skill is opinionated about a few things: not every decayed post deserves a r
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), goals (7), brand voice (8). Strategic-value scoring depends on goals.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: products/services and brand voice from `business_context.md`, plus SEO goals from `seo_foundation.md`. Strategic-value scoring depends on goals.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Cluster-active posts have higher refresh ROI than orphaned posts.
 3. **Content inventory** — read `businesses/<slug>/blog-inventory.md` if it exists, or ask the user to provide a list of URLs. Each post: URL, primary keyword, publish date, last-modified date, target cluster (if known).
 4. **GSC data** — required. 12-month traffic + position trend per URL. If not provided, ask the user to export (URL: gsc → Performance → Pages → Filter to last 16 months → Export CSV).

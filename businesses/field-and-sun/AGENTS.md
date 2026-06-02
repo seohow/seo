@@ -91,7 +91,7 @@ This file is maintained by AI collaborators as a side-effect of working in this 
 What *not* to log here:
 
 - Routine actions ("ran keyword research today"). The artifact files are the record of what was produced — don't duplicate.
-- Anything already obvious from `business_profile.md` (the profile is the source of truth for static facts).
+- Anything already obvious from `business_context.md` or `seo_foundation.md` (those files are the source of truth for static facts).
 - Speculative ideas that haven't been decided. Use Active experiments only after something is actually being tested.
 
 When updating, also bump **Quick context > Last updated**. Keep the file under ~150 lines — if it's growing past that, the older entries can be archived to `archive/AGENTS-<YYYY-Q>.md` in the same workspace folder, with the live file holding only the current quarter.

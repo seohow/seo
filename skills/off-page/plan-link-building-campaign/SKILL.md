@@ -26,7 +26,7 @@ The skill is opinionated about a few things: link building without link-worthy a
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), competitors (6), goals (7), brand voice (8).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: products/services, customer, competitors, and brand voice from `business_context.md`, plus SEO goals and search competitors from `seo_foundation.md`.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Cluster-level link strategy is the core.
 3. **Existing link-worthy assets** — list pillar pages (`businesses/<slug>/pillars/`), evergreen anchors (`businesses/<slug>/evergreen/`), tools (`businesses/<slug>/tools/`), original-data assets. Required.
 4. **Current link profile** — referring domains, top-linking sites, anchor-text distribution, top linked pages. From Ahrefs / Semrush / GSC Links report.

@@ -26,13 +26,13 @@ The skill is opinionated about a few things: above-the-fold determines stay-or-b
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), brand voice (8).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: products/services, customer, and brand voice from `business_context.md`.
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Cluster context informs cluster-spoke linking review.
 3. **Priority templates** — required. 5-10 templates: pillars, tools, top PDPs, top blog posts.
 4. **Search intent per template** — required. What queries does each template rank for; what intent dominates.
 5. **Conversion data per template** — strongly preferred. CTR pillar→PDP, CR per template, time-on-page, bounce rate.
 6. **Session-replay tooling** — strongly preferred. Hotjar, Microsoft Clarity, FullStory.
-7. **Brand voice constraints** — read from business profile section 8.
+7. **Brand voice constraints** — read from business context and SEO foundation brand voice.
 
 If priority templates + search-intent mapping are missing, ask. The review is anchored to specific templates with specific intent.
 

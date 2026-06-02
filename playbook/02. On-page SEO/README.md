@@ -55,7 +55,7 @@ The On-page work compounds when fed by strategy outputs. Specifically, expect to
 
 - `businesses/<slug>/clusters/cluster-map.md` — every page should target one cluster; on-page elements are tuned to that cluster's primary + supporting keywords.
 - `businesses/<slug>/intent-classification/classified-keywords.md` — intent dictates page type, which dictates the on-page template (a product PDP and a blog post don't have the same H-structure or title pattern).
-- `businesses/<slug>/business_profile.md` section 8 (brand voice) — every output here uses brand-aligned language.
+- `businesses/<slug>/business_context.md` brand voice — every output here uses brand-aligned language.
 
 If the strategy outputs don't exist yet, the on-page skills will ask for the minimum viable inputs (target keyword, intent, page URL, content, brand tone) before producing anything.
 

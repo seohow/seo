@@ -27,7 +27,7 @@ The skill is opinionated: publishers (Wirecutter, Strategist, Byrdie, Refinery29
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 3 (products / services), 4 (customer pains + questions), 6 (competitors), 7 (goals + constraints — informs realistic investment), 8 (brand voice — citation work stays on-voice).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Sections this skill cares about most: 3 (products / services), 4 (customer pains + questions), 6 (competitors), 7 (goals + constraints — informs realistic investment), 8 (brand voice — citation work stays on-voice).
 2. **Cluster context** — required. Which cluster(s) is this plan scoped to? Cross-reference `clusters/cluster-map.md` if it exists. Don't plan generative SEO for the whole site at once; cluster-by-cluster is the right unit.
 3. **LLM visibility baseline** — strongly recommended. If `ai-seo/llm-visibility-audit-*.md` exists, consume it. If not, recommend running `audit-llm-visibility` first — without baseline, the plan can't assess whether investment moves the needle.
 4. **Competitor analysis** — recommended. If `competitor-analysis/*.md` exists, use it for competitor citation share + content depth assessment.
@@ -181,7 +181,7 @@ If LLM visibility baseline or defensibility candidates are missing, ask before p
 
 ## Capacity check
 - **Plan total effort:** [n] weeks of writer + [n] weeks of photographer + [n] of design + [n] of dev.
-- **Available capacity:** per profile section 7 — content writer 4 long-form / month; founder splits time; no dedicated dev.
+- **Available capacity:** per SEO foundation goals and constraints — content writer 4 long-form / month; founder splits time; no dedicated dev.
 - **Verdict:** [plan fits / plan exceeds capacity by X — recommend cutting Pick N or extending timeline].
 
 ## Operating rhythm
@@ -208,7 +208,7 @@ Save the produced file to `businesses/<slug>/ai-seo/generative-seo-strategy-[clu
 - Defensibility assessment is honest — names specific brand angles, names specific non-angles, doesn't paper over absence with marketing language.
 - Win-able / Marginal / Skip classification per query, not just a list of picks.
 - Skip list is explicit (not silent omission). Includes the reason.
-- Investment estimates ground in capacity per profile section 7.
+- Investment estimates ground in capacity per SEO foundation goals and constraints.
 - Success metrics linkable to `audit-llm-visibility` follow-ups.
 - 2-4 picks (not 10). Concentration over breadth.
 - Plan fits capacity; if it doesn't, recommend cutting picks.

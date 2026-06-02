@@ -25,7 +25,7 @@ The skill is opinionated about a few things: organic-traffic visitors are isolat
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), goals (7).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: products/services (3), goals (7).
 2. **Cluster map** — read `businesses/<slug>/clusters/cluster-map.md`. Cluster cohorting depends on it.
 3. **GA4 access (or exports)** — required. Funnel-stage data, segmented by traffic source.
 4. **Comparison window** — required. Default: last 90 days vs prior 90 days.

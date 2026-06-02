@@ -25,7 +25,7 @@ The skill is opinionated about a few things: filtering matters more than respons
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: products/services (3), customer (4), brand voice (8).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical fields: products/services, customer, and brand voice from `business_context.md`.
 2. **Available experts** — required. Founder, in-house experts, dermatologist / advisor, researchers. Affects credential-match opportunities.
 3. **Existing HARO / reactive PR effort** — list past placements + platforms tried.
 4. **Capacity** — required. Hours/day available for query monitoring + responses.

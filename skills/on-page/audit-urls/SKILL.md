@@ -25,7 +25,7 @@ The audit doesn't migrate anything — it produces the spec. Implementation (CMS
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output.
 2. **URL conventions** — read `businesses/<slug>/urls/conventions.md`. If absent, recommend running `define-url-conventions` first; the audit needs a standard to compare against. If the user wants to skip and use only generic best practice, accept but flag that the audit will be less precise.
 3. **URL list** — pasted, CSV, sitemap export, GSC export, or Screaming Frog crawl. Required columns at minimum: URL. Useful additions: page type, indexed/not-indexed, traffic (last 30 days), top query, status code. Ask for the list if not provided.
 4. **Page-type tagging** — if the URL list has a page-type column, use it. If not, infer from URL patterns (e.g. `/products/<slug>` → product) or ask the user to tag a sample.

@@ -26,7 +26,7 @@ The skill is opinionated about a few things: trust field data (CrUX) over lab da
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-profile` first. Critical sections: business model (2), CMS / platform (5).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: business model (2), CMS / platform (5).
 2. **Page URL(s)** — one URL or a list (5-10 max). For each, the user runs PageSpeed Insights at <https://pagespeed.web.dev/> and pastes/exports the result.
 3. **PageSpeed Insights data** — required, both lab and field if available. Specifically: the four Core Web Vitals (LCP, INP, CLS) from field data, plus FCP and TTFB; and the lab-data Diagnostics section (LCP element, total blocking time, render-blocking resources, unused JS/CSS, image-related opportunities).
 4. **Image inventory (optional but valuable)** — output of `audit-images` for the same page, OR a list of images with file size, format, and dimensions. If absent, the audit will recommend running `audit-images` as a follow-up.

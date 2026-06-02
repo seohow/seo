@@ -27,7 +27,7 @@ The skill is opinionated: cluster-level audits beat single-page audits because e
 
 ## Inputs required
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend `business-profile` first. Sections this skill cares about most: 3 (products / services as entities), 4 (customer + topical context), 6 (competitors as entities), 7 (goals — informs cluster prioritisation).
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Sections this skill cares about most: 3 (products / services as entities), 4 (customer + topical context), 6 (competitors as entities), 7 (goals — informs cluster prioritisation).
 2. **Target cluster** — required. Which cluster is being audited? Cross-reference `clusters/cluster-map.md` if it exists. The audit covers the pillar + supporting spokes.
 3. **Cluster pages** — required. URLs and content access for the pillar + spoke pages.
 4. **Competitor SERP data** — strongly recommended. Top 10 organic competitors for the cluster's head term (and 2-3 priority long-tails). Either user-provided or extracted via the `audit-competitors` skill.

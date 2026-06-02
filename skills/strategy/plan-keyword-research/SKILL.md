@@ -27,7 +27,7 @@ A good plan answers: what's the business goal, what seed areas matter, which too
 
 Before producing the plan, gather:
 
-1. **Business profile** — read `businesses/<slug>/business_profile.md`. Resolve `<slug>` like this: list the `businesses/` folder; if exactly one business folder exists, use it; if multiple, ask which business this is for; if none, recommend running `business-profile` first and stop. The sections this skill cares about most are business model (2), products/services (3), customer (4), and goals (7). If any of those are blank, marked unknown, or marked `not yet captured` in the profile, ask the user inline before producing output.
+1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. The sections this skill cares about most are business model (2), products/services (3), customer (4), and goals (7). If any of those are blank, marked unknown, or marked `not yet captured` in the profile, ask the user inline before producing output.
 2. **Goal of this research** — why now? Possible goals: launch a new brand, support a new product line, refresh stale strategy, brief a freelancer, find quick-win opportunities. Different goals produce different plans.
 3. **Constraints** — time budget (how many days/weeks), people involved, tool budget, language and geographic scope.
 4. **Existing assets, if any** — past keyword lists, GSC export, current tracked keywords. The plan should build on these rather than start from zero.
@@ -37,7 +37,7 @@ If any of (1) or (2) are missing, ask before producing output. The plan is only 
 ## Process
 
 1. **Restate the goal in business terms.** Do not start with "we will research keywords." Start with "the goal is to identify the 100-300 keywords most likely to drive qualified organic traffic to [business] over the next 6 months, segmented by [the segmentation that matters here]." This re-framing forces specificity and prevents scope creep.
-2. **Identify the seed areas.** Map the business profile into 4-7 *seed areas* — the topical buckets the research will explore. For a D2C brand, these usually map to: each product category, each customer pain, each competitor, each top-of-funnel topic adjacent to the products. Name them explicitly so the team knows the surface area they're covering.
+2. **Identify the seed areas.** Map the business context and SEO foundation into 4-7 *seed areas* — the topical buckets the research will explore. For a D2C brand, these usually map to: each product category, each customer pain, each competitor, each top-of-funnel topic adjacent to the products. Name them explicitly so the team knows the surface area they're covering.
 3. **Choose the toolchain.** Recommend a primary tool (Ahrefs/Semrush/Moz), a secondary tool for cross-validation (Google Keyword Planner, Google Search Console, AlsoAsked), and a workspace (Notion, Google Sheets, Airtable). If the user has tools already, work with what they have rather than recommending new spend.
 4. **Sequence the work.** Break the project into phases with day-level estimates: Discovery (seeds → expansion → raw universe) → Annotation (volume, KD, intent tag) → Filtering (remove noise, apply business filters) → Tagging (page type) → Review (sign-off with stakeholders). Each phase should have a definition of done.
 5. **Define the deliverable.** Specify exactly what comes out: a structured spreadsheet/database with columns (keyword, volume, KD, intent, page type, cluster placeholder, notes), a one-page strategy summary, and a flagged "quick wins" subset. Concrete deliverable = no ambiguity at handoff.
@@ -93,7 +93,7 @@ Save the produced file to `businesses/<slug>/keyword-research/plan.md`. Create t
 
 ## Quality bar
 
-- The plan is specific to this business, not a generic template. Every section references the business profile.
+- The plan is specific to this business, not a generic template. Every section references the business context and SEO foundation.
 - The timeline is realistic — for a typical D2C brand with one person, 1-2 weeks. Not "1 day" or "2 months."
 - The toolchain matches what the user actually has access to.
 - Acceptance criteria are objective ("200 keywords annotated") not subjective ("a good keyword list").
@@ -101,7 +101,7 @@ Save the produced file to `businesses/<slug>/keyword-research/plan.md`. Create t
 
 ## Common mistakes to avoid
 
-- Don't produce a generic plan that could apply to any business. Every section should reflect the business profile inputs.
+- Don't produce a generic plan that could apply to any business. Every section should reflect the business context and SEO foundation inputs.
 - Don't recommend tools the user doesn't have access to without flagging the cost.
 - Don't underestimate the timeline. Keyword research that's worth doing takes longer than founders expect — be honest.
 - Don't skip the seed areas. Without them, the team has no shared map of what's being explored.
