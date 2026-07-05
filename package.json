@@ -4,6 +4,10 @@
   "private": true,
   "scripts": {
     "skills:validate": "node scripts/validate-skills.mjs",
-    "skills:package": "node scripts/package-skills.mjs"
+    "skills:package": "node scripts/package-skills.mjs",
+    "links:check": "node scripts/check-links.mjs",
+    "consistency:check": "node scripts/check-consistency.mjs",
+    "plugin:package": "node scripts/package-plugin.mjs",
+    "repo:check": "npm run skills:validate && npm run links:check && npm run consistency:check"
   }
 }

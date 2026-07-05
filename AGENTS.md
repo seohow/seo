@@ -15,6 +15,9 @@ seo/
 ├── README.md                            ← user-facing front door
 ├── AGENTS.md                            ← shared agent instructions
 ├── CLAUDE.md                            ← compatibility pointer to AGENTS.md
+├── .claude-plugin/                      ← Claude plugin manifest + marketplace entry (version must match package.json)
+├── package.json                         ← release tooling config (npm scripts)
+├── release.config.json                  ← release layout config (setup/category ZIP structure)
 ├── businesses/                          ← per-business workspaces
 │   ├── README.md                        ← workspace convention
 │   └── <slug>/                          ← one folder per business
@@ -24,18 +27,30 @@ seo/
 │       ├── CLAUDE.md                    ← symlink → AGENTS.md (for Claude-specific workflows)
 │       └── <artifact-subfolders>/       ← outputs from skills
 ├── skills/                              ← distributable skill package
-│   ├── README.md                        ← skill catalogue, grouped by playbook category / leaf
+│   ├── README.md                        ← top-level index: install steps, Start Here table, category table
 │   ├── business-context/       ← setup / meta utility
 │   ├── seo-foundation/         ← setup / meta utility
 │   ├── business-profile/       ← legacy migration utility
 │   │   ├── SKILL.md
 │   │   └── templates/                   ← business context + business memory templates
-│   └── <category-slug>/<skill-name>/    ← topic skills (category slug omits "SEO")
-│       └── SKILL.md
+│   └── <category-slug>/                 ← topic skills (category slug omits "SEO")
+│       ├── README.md                    ← per-category skill catalogue; links back to playbook category/leaf
+│       └── <skill-name>/SKILL.md
 ├── templates/                           ← format references
 │   ├── README_TEMPLATE.md
 │   └── SKILL_TEMPLATE.md
+├── scripts/                             ← skill validation + release packaging
+│   ├── validate-skills.mjs
+│   ├── check-links.mjs                  ← repo-wide markdown link + %20 checker
+│   ├── check-consistency.mjs            ← catalogue sync + stale-language + plugin-manifest checks
+│   ├── package-skills.mjs
+│   ├── package-plugin.mjs               ← builds releases/seo-toolkit.plugin
+│   └── skill-release-lib.mjs
+├── releases/                            ← generated release artifacts (versioned output gitignored)
+├── .github/
+│   └── workflows/release-skills.yml     ← CI release on v* tags
 └── playbook/                                ← the curriculum
+    ├── README.md                        ← curriculum front door
     ├── 01. Strategy/
     │   ├── README.md                    ← category overview
     │   └── <NN>. <Topic>.md             ← leaf topic; links to root skills
@@ -59,9 +74,9 @@ These are non-negotiable — deviating creates inconsistency that compounds acro
 - Follow `templates/SKILL_TEMPLATE.md`. Frontmatter requires `name` (kebab-case) and `description` (specific, slightly pushy to combat under-triggering — see `skill-creator` guidance).
 - Skills go in two places only:
   - **Setup / meta utilities** — repo root under `skills/<skill-name>/SKILL.md` (e.g. `business-context`, `seo-foundation`; `business-profile` is legacy migration only).
-  - **Topic-specific skills** — under `skills/<category-slug>/<skill-name>/SKILL.md`, where `<category-slug>` is the playbook category in lowercase slug form with the repeated `SEO` suffix removed (`on-page`, `technical`, `content`, `off-page`, `international`, `ai`).
+  - **Topic-specific skills** — under `skills/<category-slug>/<skill-name>/SKILL.md`, where `<category-slug>` is the playbook category in lowercase slug form with the repeated `SEO` suffix removed (`strategy`, `on-page`, `technical`, `content`, `analytics`, `off-page`, `ux`, `international`, `ai`, `growth`).
 - Skill-specific runtime templates or assets should live inside the skill folder that consumes them. Example: `business-context` owns its business workspace templates at `skills/business-context/templates/`.
-- Keep `skills/README.md` updated whenever adding, moving, renaming, or removing a skill. It is the distributable catalogue for registries like skills.sh and should be grouped by playbook category / leaf, with links back to the category and leaf README.
+- `skills/README.md` is the top-level index for the distributable catalogue (registries like skills.sh): install instructions, a "Start Here" table for the 3 setup skills, and a category table linking to each per-category catalogue. Each `skills/<category-slug>/README.md` lists that category's skills grouped by leaf, with links back to the playbook category and leaf pages. Keep the relevant `skills/<category-slug>/README.md` updated whenever adding, moving, renaming, or removing a skill. Update `skills/README.md` only when categories themselves change.
 - Two archetypes: **planner** (scopes a project, produces a brief) and **executor** (produces a specific artifact). Some topics need one, some need both, some need a tracker — pick based on what the topic actually requires. Don't force every topic into the same shape.
 - Every topic skill reads inputs from `businesses/<slug>/business_context.md` and, when the work is SEO-specific, `businesses/<slug>/seo_foundation.md`, then writes outputs to `businesses/<slug>/<artifact-subfolder>/`. The subfolder names are conventionalised — see existing skills for the pattern (`keyword-research/`, `intent-classification/`, `competitor-analysis/`, `clusters/`, `backlog/`, etc.).
 - Skill description should explicitly resolve the slug: list `businesses/`, default to the only folder if there's one, ask if there are multiple, recommend `business-context` if there are none, and recommend `seo-foundation` if SEO-specific setup is missing.
@@ -122,7 +137,7 @@ The playbook now uses flattened leaf pages: `playbook/<category>/<NN>. <Topic>.m
 3. Write the category overview README (at `playbook/NN. Category/README.md`) before the leaves — it forces you to think about how the leaves fit together.
 4. For each leaf, write the topic page at `playbook/NN. Category/NN. Topic Name.md` first, then 1-2 skills under `skills/<category-slug>/<skill-name>/SKILL.md`. Don't write skills before the topic page — the page defines the shape of the work.
 5. Cross-link to related topics in other categories (e.g. Internal Linking links to Topic Clusters and Site Architecture).
-6. Update `skills/README.md` so the new skill appears under the right category / leaf and links back to the playbook page. Update root `README.md` only if the category structure changed (it shouldn't for v1).
+6. Update `skills/<category-slug>/README.md` so the new skill appears under the right leaf and links back to the playbook page. Update `skills/README.md` and root `README.md` only if the category structure changed (it shouldn't for v1).
 
 ## How to update the toolkit (vs. adding to it)
 
@@ -148,20 +163,9 @@ All decisions are recorded in [`CHANGELOG.md`](CHANGELOG.md). Append new entries
 
 Format: `### YYYY-MM-DD — title`. Capture the decision, the reason, and what it means for future work. Keep entries terse — it's a why-log, not a task list.
 
-## v1 toolkit inventory (as of 2026-05-02)
+## v1 toolkit inventory
 
-Current structural state for quick orientation. Update this table when categories or skills are added.
-
-| | Count |
-|---|---|
-| Categories | 10 |
-| Leaves | 63 |
-| Category overview READMEs | 10 |
-| Playbook skills | 73 |
-| Setup skills (`business-context`, `seo-foundation`, legacy `business-profile`) | 3 |
-| **Total skills** | **76** |
-| Sample businesses | 1 (Field & Sun) |
-| `.gitkeep` files | 0 |
+Structural state (category, leaf, and skill counts) lives in [`INVENTORY.md`](INVENTORY.md) — a dated ledger. Append a new snapshot row there when categories, leaves, or skills change.
 
 **Categories in learning-path order:** Strategy · On-page SEO · Technical SEO · Content SEO · Analytics · Off-page SEO · UX · International SEO · AI SEO · Growth.
 

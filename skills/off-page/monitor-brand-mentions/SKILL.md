@@ -1,6 +1,6 @@
 ---
 name: monitor-brand-mentions
-description: Sets up a brand mention monitoring system: sources, alert configuration, triage process, and response playbook. Use to find and convert unlinked mentions into links.
+description: Sets up brand-mention monitoring to find unlinked mentions and convert them into links: sources, alerts, triage, outreach. Use when the user wants to track mentions or turn citations into backlinks.
 ---
 
 # Monitor Brand Mentions

@@ -25,12 +25,20 @@ The skill is opinionated: only verified Googlebot traffic counts (user-agent + I
 ## Inputs required
 
 1. **Business context and SEO foundation** — read `businesses/<slug>/business_context.md` and, for SEO-specific work, `businesses/<slug>/seo_foundation.md`. Resolve `<slug>` by listing `businesses/`: if exactly one folder exists, use it; if multiple, ask which business; if none, recommend running `business-context` first. If SEO foundation is missing, recommend running `seo-foundation` before producing output. Critical sections: business model (2), CMS / platform (5). Confirm logs are accessible on this stack.
-2. **Log export** — required. CSV, TSV, or pasted log lines. Required columns / fields: timestamp, user-agent, URL, status code. Useful additions: response time, bytes, referrer, source IP. The user pulls this from their hosting provider's log access.
+2. **Log export** — required. CSV, TSV, or pasted log lines. Required columns / fields: timestamp, user-agent, URL, status code. Useful additions: response time, bytes, referrer, source IP. If the user doesn't have this in hand yet, ask where their site is hosted and point them at the export path: most hosting providers (Vercel, Netlify, AWS, GCP, custom servers) have a log-access or log-drain feature; if a CDN sits in front (Cloudflare, Fastly, Akamai), its logging product (e.g. Cloudflare Logpush) is usually the more complete source. **Shopify does not provide raw server log access** — there's no export, log-drain, or API for it on any plan. On a Shopify-hosted site, this skill's log-analysis scope is out of reach entirely; move to the Google Search Console proxy below or point the user at `audit-indexing-status` / a crawler audit instead.
 3. **Time window** — at least 30 days. Ideally 60-90.
 4. **URL inventory (optional but valuable)** — sitemap export + crawler export so the skill can identify orphan URLs (in logs but not in inventory) and under-crawled URLs (in inventory but rarely or never in logs).
 5. **Specific concerns (optional)** — e.g. "we just shipped a robots.txt change," "blog posts take forever to index," "we suspect parameter URLs are eating budget."
 
 If the log export or platform access is missing, ask. The skill doesn't simulate bot behaviour.
+
+### If raw logs aren't available
+
+Raw logs are the only source with per-request, all-bot detail — but they're not always obtainable (Shopify, restrictive hosting, no admin access to logging). When that's the case:
+
+- **Primary proxy: Google Search Console → Settings → Crawl Stats.** Use this to answer the aggregate questions the skill still can: crawl trend over time, response-code mix (200/301/404/5xx), crawl breakdown by file type (HTML, images, etc.), and Googlebot host/crawl-purpose behaviour. This is a legitimate, if coarser, substitute for the "crawl distribution" and "response-code distribution" sections of the output.
+- **What Crawl Stats can't give you**, and what to tell the user is out of scope when working from it alone: per-URL request-level detail (it's aggregated, not a request log), any non-Google bot's behaviour (Bingbot, GPTBot, etc. — Google-only), exact timestamps or request sequences, and the sampling depth real logs provide for orphan-URL and crawl-frequency analysis. Note these gaps explicitly in the output rather than presenting Crawl-Stats-derived findings with the same confidence as a real log analysis.
+- **Stop rule.** If the user has neither raw log access nor Google Search Console access, the analysis cannot proceed. Say so plainly, recommend getting GSC access at minimum (fastest path) or securing a log export from hosting/CDN if request-level detail is required, and stop. Do not fabricate or simulate crawl data, response codes, or bot behaviour to fill the gap.
 
 ## Process
 

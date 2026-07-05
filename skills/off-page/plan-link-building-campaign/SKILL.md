@@ -1,6 +1,6 @@
 ---
 name: plan-link-building-campaign
-description: Plans a link building campaign: strategy type, target site criteria, content assets, outreach sequence, and KPIs. Use to build a structured, measurable link acquisition program.
+description: Plans a link-building campaign: strategy type, target-site criteria, content assets, outreach sequence, and KPIs. Use when the user wants to build backlinks or grow domain authority systematically.
 ---
 
 # Plan Link-Building Campaign

@@ -91,6 +91,25 @@ npx skills add seohow/seo/strategy --skill plan-keyword-research
 
 Supported category slugs are `strategy`, `on-page`, `technical`, `content`, `analytics`, `off-page`, `ux`, `international`, `ai`, and `growth`. You can also paste a skill's `SKILL.md` content into a chat with your business context and SEO foundation attached if your AI environment does not support skill installation.
 
+#### Install as a Claude plugin
+
+The repo is also an installable Claude plugin (all 76 skills in one install, invoked as `seo-toolkit:<skill-name>`). The manifest lives in [`.claude-plugin/`](.claude-plugin/plugin.json).
+
+In Claude Code, add the repo as a marketplace and install:
+
+```sh
+claude plugin marketplace add seohow/seo
+claude plugin install seo-toolkit
+```
+
+For Claude Cowork (desktop), build the `.plugin` file and share it — recipients install it with one click:
+
+```sh
+npm run plugin:package   # → releases/seo-toolkit.plugin
+```
+
+The plugin bundles the skills, the playbook, and the templates. Your business workspaces (`businesses/`) always live in your own working folder, not in the plugin — run `business-context` after installing to create one.
+
 Topic skills come in two archetypes:
 
 - **Planner skills** scope a project and produce a brief or backlog you can run against.

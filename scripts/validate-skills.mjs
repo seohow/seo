@@ -9,6 +9,29 @@ const skills = discoverSkills();
 const errors = [];
 const warnings = [];
 
+// Sections every SKILL.md must have, per templates/SKILL_TEMPLATE.md. Matching is
+// tolerant (case-insensitive, allows the minor phrasing variants observed across the
+// 76 shipped skills) because the template's wording is a guide, not a literal string.
+const UNIVERSAL_REQUIRED_SECTIONS = [
+  { label: "When to use this skill", pattern: /^when to use/i },
+  { label: "When NOT to use this skill", pattern: /^when not to use/i },
+  { label: "Quality bar", pattern: /^quality bar/i },
+  { label: "Common mistakes to avoid", pattern: /^common mistakes/i },
+  { label: "Example", pattern: /^example/i }
+];
+
+// "Process" and "Output format" are the topic-skill archetype (planner/executor
+// producing an artifact). The three setup/meta utilities (business-context,
+// seo-foundation, business-profile) are structurally different per AGENTS.md: they
+// use "Modes" instead of "Process" and "Output files" instead of "Output format".
+// discoverSkills() already tags these as category "setup", so key the exemption off
+// that instead of hardcoding names.
+const TOPIC_ONLY_REQUIRED_SECTIONS = [
+  { label: "Inputs required", pattern: /^inputs required/i },
+  { label: "Process", pattern: /^process/i },
+  { label: "Output format", pattern: /^output format/i }
+];
+
 if (skills.length === 0) {
   errors.push("No skills found under skills/.");
 }
@@ -36,6 +59,18 @@ for (const skill of skills) {
     else warnings.push(message);
   }
 
+  const requiredSections =
+    skill.category === "setup"
+      ? UNIVERSAL_REQUIRED_SECTIONS
+      : [...UNIVERSAL_REQUIRED_SECTIONS, ...TOPIC_ONLY_REQUIRED_SECTIONS];
+  const headings = findHeadings(content);
+  for (const section of requiredSections) {
+    const found = headings.some((heading) => section.pattern.test(heading));
+    if (!found) {
+      errors.push(`${relativeSkillFile}: missing required section "${section.label}".`);
+    }
+  }
+
   for (const reference of findLocalReferences(content)) {
     const target = path.join(skill.sourceDir, reference);
     if (!fs.existsSync(target)) {
@@ -52,6 +87,13 @@ if (errors.length > 0) {
 }
 
 console.log(`Validated ${skills.length} skills${warnings.length ? ` with ${warnings.length} warning(s)` : ""}.`);
+
+function findHeadings(content) {
+  const headings = [];
+  const headingLines = content.matchAll(/^##\s+(.+?)\s*$/gm);
+  for (const match of headingLines) headings.push(match[1].trim());
+  return headings;
+}
 
 function findLocalReferences(content) {
   const references = new Set();

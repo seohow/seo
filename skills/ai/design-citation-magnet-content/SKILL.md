@@ -1,6 +1,6 @@
 ---
 name: design-citation-magnet-content
-description: Designs content structured to earn citations in AI-generated answers: topic, format, entity density, and sourcing signals. Use to build content that LLMs reference and surface.
+description: Produces a content brief engineered to get cited by ChatGPT, Perplexity, and Google AI Overviews. Use when the user wants content that AI engines reference, cite, or surface in generated answers.
 ---
 
 # Design Citation-Magnet Content

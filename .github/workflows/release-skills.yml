@@ -87,6 +87,12 @@ jobs:
       - name: Validate skill structure
         run: npm run skills:validate -- --strict-platform
 
+      - name: Check repo-wide markdown links
+        run: npm run links:check
+
+      - name: Check catalogue sync and stale language
+        run: npm run consistency:check
+
       - name: Package skills
         run: npm run skills:package -- --version "${{ steps.version.outputs.version }}"
 

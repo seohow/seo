@@ -1,0 +1,34 @@
+{
+  "name": "seo-toolkit",
+  "version": "0.1.0-alpha.1",
+  "description": "A practical SEO toolkit for business owners and marketers: 76 skills that plan, execute, audit, and measure SEO work for a real business — strategy, on-page, technical, content, analytics, off-page, UX, international, AI SEO, and growth — backed by a 63-topic playbook. Run business-context and seo-foundation first, then work through any category.",
+  "author": {
+    "name": "seohow"
+  },
+  "homepage": "https://github.com/seohow/seo",
+  "repository": "https://github.com/seohow/seo",
+  "license": "MIT",
+  "keywords": [
+    "seo",
+    "marketing",
+    "ecommerce",
+    "keyword-research",
+    "content",
+    "technical-seo",
+    "analytics",
+    "ai-seo"
+  ],
+  "skills": [
+    "./skills",
+    "./skills/strategy",
+    "./skills/on-page",
+    "./skills/technical",
+    "./skills/content",
+    "./skills/analytics",
+    "./skills/off-page",
+    "./skills/ux",
+    "./skills/international",
+    "./skills/ai",
+    "./skills/growth"
+  ]
+}

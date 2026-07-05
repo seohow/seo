@@ -1,0 +1,15 @@
+{
+  "name": "seohow",
+  "owner": {
+    "name": "seohow"
+  },
+  "plugins": [
+    {
+      "name": "seo-toolkit",
+      "source": "./",
+      "description": "A practical SEO toolkit: 76 skills that plan, execute, audit, and measure SEO work for a real business, backed by a 63-topic playbook. Covers strategy, on-page, technical, content, analytics, off-page, UX, international, AI SEO, and growth.",
+      "category": "marketing",
+      "tags": ["seo", "marketing", "ecommerce", "content", "analytics"]
+    }
+  ]
+}

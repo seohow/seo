@@ -7,6 +7,8 @@ description: Generates a /llms.txt file to guide large language models on how to
 
 This skill produces a curated `/llms.txt` file — a Markdown summary of the site's content, structured per the llms.txt proposal at llmstxt.org. The output is the file, ready to publish at site root, plus an implementation note. The skill curates rather than dumps — listing the 10-30 highest-value URLs organised into sections, not all 612 indexed URLs.
 
+**Adoption caveat (current as of 2026-07):** `llms.txt` is a community proposal, not a ratified standard, and no major AI search engine — Google, OpenAI, Anthropic, Meta, Mistral — has confirmed consuming it for search or citation; Google has publicly stated its Search team does not use or endorse it. Its most reliable use today is agent / developer-tooling contexts (e.g. AI coding assistants fetching docs). Publish it as low-cost, curated hygiene — not as a dependable AI-visibility lever — and re-verify adoption before promising outcomes.
+
 The skill is opinionated: every entry has a one-line description, not a bare URL; sections reflect the site's actual structure, not a generic template; the description text is in the brand's voice; URLs in the file are validated as 200 / canonical before inclusion.
 
 ## When to use this skill
@@ -140,7 +142,7 @@ The file lives at site root: `https://yoursite.com/llms.txt`. It must be served 
 
 - **Shopify:** Online Store → Files → Upload. Then map a route — Shopify doesn't natively serve files at root, so use a redirect rule or a theme template at `templates/page.llms-txt.liquid` with the content + Liquid `content_for_layout` configured for plain-text response. Easier path: use a Shopify app like Sectionly or Code Block to serve a static file at root.
 - **Vercel / Next.js:** put the file in `public/llms.txt`. Vercel serves it directly at root.
-- **WordPress:** at root via FTP/SFTP, or use a plugin like "Code Snippets" with a custom rewrite rule. Some SEO plugins (Yoast, RankMath) plan native support.
+- **WordPress:** at root via FTP/SFTP, or use a plugin. Major SEO plugins (Yoast, Rank Math) now ship native llms.txt generation — enable it in the plugin's settings rather than hand-managing the file.
 - **Webflow:** use Webflow's hosting custom-code injection or a custom file upload (Workspace plan and above).
 - **Custom (Nginx / Apache):** place at the document root; ensure `Content-Type: text/plain` for `.txt` extensions (most servers default to this).
 

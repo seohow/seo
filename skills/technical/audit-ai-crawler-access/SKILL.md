@@ -43,7 +43,7 @@ If the stated posture or robots.txt is missing, ask. The audit operates on real 
 
 1. **Build the AI-bot reference list.** The skill maintains an internal list of major AI bot user-agents, categorised as training vs retrieval vs both:
    - **Training bots:** `GPTBot` (OpenAI), `ClaudeBot` (Anthropic), `Google-Extended` (Google AI / Gemini training opt-out token), `Applebot-Extended` (Apple AI training), `CCBot` (Common Crawl, indirect to many models), `Bytespider` (ByteDance), `Meta-ExternalAgent` (Meta), `Amazonbot` (Amazon — partial training).
-   - **Retrieval bots:** `ChatGPT-User` (OpenAI live), `OAI-SearchBot` (OpenAI search index), `Claude-Web` / `claude-web` (Anthropic live), `Claude-SearchBot`, `PerplexityBot` (Perplexity live), `Applebot` (Apple/Siri retrieval).
+   - **Retrieval bots:** `ChatGPT-User` (OpenAI live), `OAI-SearchBot` (OpenAI search index), `Claude-User` (Anthropic user-initiated fetch — replaces the deprecated `Claude-Web`), `Claude-SearchBot` (Anthropic search index), `PerplexityBot` (Perplexity search index), `Perplexity-User` (Perplexity user-initiated fetch), `Applebot` (Apple/Siri retrieval).
    - **Mixed / unclear:** `GoogleOther` (non-search Google bot, purpose varies).
    The list shifts; always note "current as of [date], verify against the official source if uncertain."
 2. **Parse `robots.txt`.** For each user-agent block, capture: which bot, what's allowed/disallowed.
@@ -56,8 +56,8 @@ If the stated posture or robots.txt is missing, ask. The audit operates on real 
    - **Match** — actual policy aligns with stated posture. ✓
    - **Gap (more permissive than intent)** — bot has access the stated posture says it shouldn't. P0 fix.
    - **Gap (more restrictive than intent)** — bot is blocked despite intent to allow. P1 fix (less urgent, but unintended visibility loss).
-5. **Audit `llms.txt`:**
-   - Present? If absent and posture is open or visibility-only, recommend publishing.
+5. **Audit `llms.txt`:** (Adoption caveat, current as of 2026-07: `llms.txt` remains a proposal, not a ratified standard, and no major AI engine — Google, OpenAI, Anthropic, Meta, Mistral — has confirmed consuming it for search or citation; Google has publicly said its Search team does not use or endorse it. Treat publishing as low-cost, low-certainty hygiene, not a citation lever. Verify current adoption before recommending.)
+   - Present? If absent and posture is open or visibility-only, publishing is optional — recommend only if the brand wants a curated, low-maintenance content summary; do not present it as a reliable AI-visibility win.
    - Valid Markdown per the llms.txt proposal? Title (H1), description (blockquote or paragraph), section headers (H2s) with bullet lists of links + descriptions.
    - Reasonable size? 10-100 entries is healthy. 500+ suggests dumping a sitemap rather than curating.
    - URLs in `llms.txt` reachable (return 200)? Spot-check.
@@ -102,8 +102,9 @@ Brief 2-4 sentence read of the alignment between intent and actual.
 |-----|-----------|--------------|----------------|-------------------|:------:|--------|
 | OpenAI live | `ChatGPT-User` | allow | (no rule) | allowed (default) | ✓ | none |
 | OpenAI search | `OAI-SearchBot` | allow | (no rule) | allowed | ✓ | none |
-| Anthropic live | `Claude-Web` | allow | (no rule) | allowed | ✓ | none |
-| Perplexity | `PerplexityBot` | allow | (no rule) | allowed | ✓ | none |
+| Anthropic user fetch | `Claude-User` | allow | (no rule) | allowed | ✓ | none |
+| Anthropic search | `Claude-SearchBot` | allow | (no rule) | allowed | ✓ | none |
+| Perplexity search | `PerplexityBot` | allow | (no rule) | allowed | ✓ | none |
 | Apple Siri | `Applebot` | allow | (no rule) | allowed | ✓ | none |
 
 ### Mixed / unclear
@@ -143,7 +144,7 @@ Brief 2-4 sentence read of the alignment between intent and actual.
 
 ### P2 — Hygiene
 - Add comment block to robots.txt grouping AI rules together for readability.
-- Recommend publishing llms.txt if posture is open or visibility-only and brand has informational content.
+- Optionally publish llms.txt if posture is open or visibility-only and brand has informational content — as low-cost hygiene, not a citation lever (no major engine confirmed consuming it as of 2026-07).
 - Add posture decision to per-business AGENTS.md.
 
 ## Implementation checklist

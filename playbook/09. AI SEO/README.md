@@ -1,6 +1,8 @@
 # 09. AI SEO
 
-> Earning visibility, citation, and trust inside AI-mediated search — AI Overviews, ChatGPT search, Claude search, Perplexity, Gemini — and the SERP features that increasingly answer queries before a click happens. The content-side counterpart to Technical SEO's AI Crawler Management.
+> Earning visibility, citation, and trust inside AI-mediated search — AI Overviews, Google AI Mode, ChatGPT search, Claude search, Perplexity, Gemini — and the SERP features that increasingly answer queries before a click happens. The content-side counterpart to Technical SEO's AI Crawler Management.
+
+*Last reviewed: 2026-07 — this category describes the AI-search landscape as of this date. Engines, citation behaviour, and crawler details change fast; re-verify quarterly and update the leaf pages' "Last reviewed" dates when you do.*
 
 ## What this category covers
 
@@ -66,7 +68,7 @@ It produces inputs for downstream categories:
 
 - **Content SEO** — citation-magnet patterns flow into content briefs (`08. Content Briefing`).
 - **On-page SEO** — TL;DR / answer-block patterns affect title, description, H-structure conventions.
-- **Analytics** — LLM-citation traffic appears differently in GA4 (zero-click brand mentions, referral from chat.openai.com / perplexity.ai / claude.ai). Define attribution conventions.
+- **Analytics** — LLM-citation traffic appears differently in GA4 (zero-click brand mentions, referral from chatgpt.com / perplexity.ai / claude.ai / gemini.google.com / copilot.microsoft.com; GA4 now also has a native "AI Assistant" channel, though a large share of AI referrals still land in Direct with no referrer). Define attribution conventions.
 - **Off-page SEO** — high-citation pages tend to also earn organic links. AI SEO and Off-page reinforce each other.
 
 ## Skills you'll use in this category
@@ -88,7 +90,7 @@ The full inventory across the 5 sub-topics:
 - **Optimising for one engine.** AI Overviews, Perplexity, ChatGPT, Claude, and Gemini have overlapping but distinct citation behaviour. Patterns that win in Perplexity (which cites generously, often with links) don't always win in ChatGPT (which often paraphrases without citing). Plan multi-engine, measure per engine.
 - **Forgetting that crawler access is a precondition.** If the brand has blocked retrieval bots at robots.txt (Technical SEO leaf 10), no amount of citation-optimisation will help — the bots can't see the content. Verify access posture first.
 - **Schema theatre.** Stuffing pages with elaborate schema that doesn't match content (`Product` schema on a blog post, `FAQPage` schema with fake questions) signals manipulation to both Google and LLMs. Schema must be honest and aligned with on-page content.
-- **Chasing every new AI search engine.** New tools launch monthly. Focus measurement on the four that have meaningful query share (ChatGPT, Claude, Perplexity, Gemini / AI Overviews). Add others if they show up in your customer-research data, not because they're new.
+- **Chasing every new AI search engine.** New tools launch monthly. Focus measurement on the surfaces with meaningful query share — ChatGPT, Claude, Perplexity, Gemini / Google AI Overviews and AI Mode, and (increasingly) Microsoft Copilot. Add others if they show up in your customer-research data, not because they're new.
 - **Neglecting freshness signals.** LLMs increasingly weight content recency for time-sensitive queries (product comparisons, ingredient guidance, regulatory topics). Old content with no last-updated signal loses to fresher competitors even when it's more authoritative.
 - **No measurement = no feedback loop.** Without quarterly LLM visibility audits, the category's impact is unknowable and the brand can't course-correct. The measurement skill is non-optional.
 - **Treating AI Overviews as a separate game.** AI Overviews increasingly cite the same pages that win featured snippets — the content-pattern overlap is high. Run SERP Features and Generative SEO work in coordination, not as parallel programs.
