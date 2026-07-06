@@ -84,6 +84,9 @@ jobs:
         env:
           RELEASE_TAG: ${{ steps.version.outputs.tag }}
 
+      - name: Stamp release version
+        run: npm run version:set -- --version "${{ steps.version.outputs.version }}"
+
       - name: Validate skill structure
         run: npm run skills:validate -- --strict-platform
 
@@ -96,11 +99,21 @@ jobs:
       - name: Package skills
         run: npm run skills:package -- --version "${{ steps.version.outputs.version }}"
 
+      - name: Package plugin
+        run: npm run plugin:package
+
       - name: Upload release tree artifact
         uses: actions/upload-artifact@v4
         with:
           name: seo-skills-${{ steps.version.outputs.tag }}
           path: releases/${{ steps.version.outputs.tag }}/
+          if-no-files-found: error
+
+      - name: Upload plugin artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: seo-toolkit-plugin-${{ steps.version.outputs.tag }}
+          path: releases/seo-toolkit.plugin
           if-no-files-found: error
 
       - name: Create or update GitHub Release

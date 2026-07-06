@@ -7,6 +7,7 @@
     "skills:package": "node scripts/package-skills.mjs",
     "links:check": "node scripts/check-links.mjs",
     "consistency:check": "node scripts/check-consistency.mjs",
+    "version:set": "node scripts/set-version.mjs",
     "plugin:package": "node scripts/package-plugin.mjs",
     "repo:check": "npm run skills:validate && npm run links:check && npm run consistency:check"
   }

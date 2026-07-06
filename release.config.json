@@ -15,7 +15,8 @@
       "releases/<version>/manifest.json",
       "releases/<version>/checksums.txt",
       "releases/<version>/setup/*.zip",
-      "releases/<version>/categories/**/*.zip"
+      "releases/<version>/categories/**/*.zip",
+      "releases/seo-toolkit.plugin"
     ]
   }
 }
