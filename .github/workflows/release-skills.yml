@@ -84,9 +84,6 @@ jobs:
         env:
           RELEASE_TAG: ${{ steps.version.outputs.tag }}
 
-      - name: Stamp release version
-        run: npm run version:set -- --version "${{ steps.version.outputs.version }}"
-
       - name: Validate skill structure
         run: npm run skills:validate -- --strict-platform
 

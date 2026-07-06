@@ -182,12 +182,21 @@ plan-keyword-research.zip
 
 ### Release flow
 
+Cut a release with one command. It refuses to run on a dirty tree or a version that already has a tag, bumps the version in `package.json` and `.claude-plugin/plugin.json`, runs `repo:check`, commits the bump, tags it, and pushes both the commit and the tag:
+
 ```sh
-git tag v0.1.0-alpha.1
-git push origin v0.1.0-alpha.1
+npm run release 0.1.0-alpha.1
 ```
 
-This assumes the source changes for the release have already been committed. Pushing a `v*` tag is the release trigger: GitHub Actions validates the skills, packages the browsable release tree, uploads it as a workflow artifact, and creates or updates the GitHub Release for the tag. Versions containing `alpha`, `beta`, or `rc` are marked as GitHub prereleases automatically.
+The version is a positional argument. Add `--dry-run` to preview every step without changing anything:
+
+```sh
+npm run release 0.1.0-alpha.1 --dry-run
+```
+
+Because the version bump is committed before the tag, the tag always points at a commit whose files already carry that version — nothing is stamped after the fact.
+
+Pushing the `v*` tag is the release trigger: GitHub Actions validates the skills, packages the browsable release tree and the installable `.plugin` (both at the tag version), uploads them as workflow artifacts, and creates or updates the GitHub Release for the tag with those assets attached. Versions containing `alpha`, `beta`, or `rc` are marked as GitHub prereleases automatically.
 
 Use local packaging only as a preflight check:
 
